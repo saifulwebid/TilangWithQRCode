@@ -1,1 +1,50 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="71fe000c-9ccf-4985-aa0c-bfa766eead82" name="Penilangan" linkedPackageId="afed60f1-2889-4b90-a819-a9a5ce6cb283" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="edd79eab-9206-423e-84e9-14130f0f345f">
+      <profileInstance Id="fec4b38b-0691-463f-b1a0-3a79326d4a8e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="17422000-5ded-4b3a-94b7-e394db40c330">
+      <profileInstance Id="161d9691-3adc-49d9-9aeb-b2ec67da3d94" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ee2830ae-5e10-483e-9703-5abb7f9cefde" name="Polisi" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f5a16907-11b2-4010-b049-fd109462d09e" />
+        <targetEnds>
+          <association Id="964cb694-5277-4fac-a9bd-58872ac1e383" isDerived="false" sourceEndRoleName="Polisi" targetEndRoleName="Menyimpan Data Pelanggar di surat tilang ke dalam Data Base" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6b43356d-f8a0-4e59-a3c0-09f9e0ad88de" LastKnownName="Menyimpan Data Pelanggar di surat tilang ke dalam Data Base" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc4f2784-4a5a-4a66-a588-ee70ae010968" name="Polisi" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c1addea0-86b4-474a-81fd-73b52a3c930b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="35b6918e-a7a5-4b0c-8d4a-7b8aae29006f" name="Menyimpan Data Pelanggar di surat tilang ke dalam Data Base" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dc2aa7f7-7a4a-44cc-82f1-3e4f49bc9aac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b5c07028-4170-4d9a-b914-f31e946287b8" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6b43356d-f8a0-4e59-a3c0-09f9e0ad88de" name="Menyimpan Data Pelanggar di surat tilang ke dalam Data Base" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4819807a-8e1d-4850-ade1-2f4b9800acae" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="afed60f1-2889-4b90-a819-a9a5ce6cb283" name="ModelingProject">
+    <elementDefinition Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd" />
+  </package>
+</useCaseModelRoot>

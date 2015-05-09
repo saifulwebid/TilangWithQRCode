@@ -1,1 +1,22 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Penilangan">
+  <useCaseModelRootMoniker Id="71fe000c-9ccf-4985-aa0c-bfa766eead82" />
+  <nestedChildShapes>
+    <actorShape Id="0aabde19-0287-44e3-a149-6d4de97bce64" absoluteBounds="1, 1.25, 0.75, 1" isReference="false" heightOffset="0">
+      <actorMoniker Id="ee2830ae-5e10-483e-9703-5abb7f9cefde" LastKnownName="Polisi" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="d90252ad-0b97-4620-b1ea-cff06401d5be" absoluteBounds="3.375, 1.25, 1.625, 1" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="6b43356d-f8a0-4e59-a3c0-09f9e0ad88de" LastKnownName="Menyimpan Data Pelanggar di surat tilang ke dalam Data Base" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.75 : 1.75); (3.375 : 1.75)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="964cb694-5277-4fac-a9bd-58872ac1e383" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="0aabde19-0287-44e3-a149-6d4de97bce64" />
+        <useCaseShapeMoniker Id="d90252ad-0b97-4620-b1ea-cff06401d5be" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

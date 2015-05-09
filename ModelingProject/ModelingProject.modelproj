@@ -22,6 +22,13 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Sequence Diagram\ClassDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence Diagram\ClassDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence Diagram\ClassDiagram.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Sequence Diagram\PembuatanSIMKedua.sequencediagram">
       <SubType>Content</SubType>
     </Content>
@@ -35,6 +42,13 @@
     <Content Include="Sequence Diagram\PembuatanSIMOrangBaru.sequencediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>Sequence Diagram\PembuatanSIMOrangBaru.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Sequence Diagram\SequenceDiagram_SuratTilang.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence Diagram\SequenceDiagram_SuratTilang.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence Diagram\SequenceDiagram_SuratTilang.sequencediagram</DependentUpon>
     </Content>
     <Content Include="Use Case Diagram\PembuatanSIM.usecasediagram">
       <SubType>Content</SubType>
