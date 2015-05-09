@@ -41,7 +41,15 @@
     <useCaseModelRootHasTypes>
       <useCase Id="ada8440b-a306-47f4-b923-d465264cd715" name="Melihat Statistik Pelanggaran" isAbstract="false" isLeaf="false">
         <elementDefinition Id="41787c7f-78ce-4450-976a-b3426f9aefbf" />
+        <subjects>
+          <subsystemMoniker Id="b2c9cea9-8708-4028-b225-09c3470275d3" LastKnownName="Statistik Pelanggaran" />
+        </subjects>
       </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="b2c9cea9-8708-4028-b225-09c3470275d3" name="Statistik Pelanggaran" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9cdf09bc-c1a4-465a-a122-246fde68b475" />
+      </subsystem>
     </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="a192f273-a9bc-4d5c-9f2a-91e632eef038" name="ModelingProject">
