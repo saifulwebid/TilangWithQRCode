@@ -36,6 +36,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence Diagram\PembuatanSIMOrangBaru.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="Sequence Diagram\RekapTilang.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence Diagram\RekapTilang.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence Diagram\RekapTilang.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="Use Case Diagram\PembuatanSIM.usecasediagram">
       <SubType>Content</SubType>
     </Content>
