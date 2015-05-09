@@ -50,6 +50,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Use Case Diagram\Penilangan.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="Use Case Diagram\RekapTilang.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Case Diagram\RekapTilang.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Case Diagram\RekapTilang.usecasediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ClassDiagram.classdiagram">
       <SubType>Content</SubType>

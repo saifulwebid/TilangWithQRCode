@@ -1080,6 +1080,232 @@
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="1c06f7ed-f8c1-42c5-9519-7dac998da61a"
+        name="Jaksa"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="562653cc-07be-4860-964b-2c0d421d5bc9"
+            isDerived="false"
+            sourceEndRoleName="Jaksa"
+            targetEndRoleName="Melihat Data Pelanggar"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6c737350-3272-49aa-afeb-c0777d74e356"
+              LastKnownName="Melihat Data Pelanggar"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3bfdd017-80e6-494c-b1bc-2723a0a1d186"
+                  name="Jaksa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c40cd4fd-a1a2-4c25-a82b-94785abaebb6"
+                  name="Melihat Data Pelanggar"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3745262e-5b66-48fe-b86f-17342735ba0b"
+            isDerived="false"
+            sourceEndRoleName="Jaksa"
+            targetEndRoleName="Menentukan Hukuman"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ce5da986-64a0-48fc-981b-6f4a7b7eb90f"
+              LastKnownName="Menentukan Hukuman"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="413cca45-b986-456e-9b2e-75b22994740f"
+                  name="Jaksa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="03358c26-28a5-47e8-a1b2-a7623d2bd522"
+                  name="Menentukan Hukuman"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="486aceed-3a7f-4661-b557-a5bc9dc42c8c"
+        name="Terdakwa"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="1bfca2de-1fb8-4554-9a25-75d4c1625314"
+            isDerived="false"
+            sourceEndRoleName="Terdakwa"
+            targetEndRoleName="Melihat Data Pelanggar"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6c737350-3272-49aa-afeb-c0777d74e356"
+              LastKnownName="Melihat Data Pelanggar"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6f486a3d-1096-40c7-ae0c-9591eb312997"
+                  name="Terdakwa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a8fd5d8f-a83b-43f5-b89f-659c82424559"
+                  name="Melihat Data Pelanggar"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8133a6e8-d2c8-491c-9187-b17195b08431"
+            isDerived="false"
+            sourceEndRoleName="Terdakwa"
+            targetEndRoleName="Melihat Hukuman"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d085d1b6-9478-4095-8a0f-1ce718384d4c"
+              LastKnownName="Melihat Hukuman"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="21199207-35ef-4025-88df-9a2786c299d0"
+                  name="Terdakwa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="01b583a1-18a8-4dec-b6af-0c85d687029f"
+                  name="Melihat Hukuman"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6c737350-3272-49aa-afeb-c0777d74e356"
+        name="Melihat Data Pelanggar"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6fe548f4-0f88-4044-9760-42755c5bb408"
+            LastKnownName="Rekap Tilang"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ce5da986-64a0-48fc-981b-6f4a7b7eb90f"
+        name="Menentukan Hukuman"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6fe548f4-0f88-4044-9760-42755c5bb408"
+            LastKnownName="Rekap Tilang"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="6fe548f4-0f88-4044-9760-42755c5bb408"
+        name="Rekap Tilang"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d085d1b6-9478-4095-8a0f-1ce718384d4c"
+        name="Melihat Hukuman"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6fe548f4-0f88-4044-9760-42755c5bb408"
+            LastKnownName="Rekap Tilang"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
