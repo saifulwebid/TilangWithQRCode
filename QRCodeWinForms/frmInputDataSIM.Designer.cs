@@ -230,7 +230,7 @@
             this.Controls.Add(this.btnSimpan);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmInputDataSIM";
-            this.Text = "InputDataSIM";
+            this.Text = "Input Data SIM";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
