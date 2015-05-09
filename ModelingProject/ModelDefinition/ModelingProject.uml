@@ -1360,7 +1360,14 @@
         Id="41787c7f-78ce-4450-976a-b3426f9aefbf"
         name="Melihat Statistik Pelanggaran"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9cdf09bc-c1a4-465a-a122-246fde68b475"
+            LastKnownName="Statistik Pelanggaran"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <interaction
@@ -1923,6 +1930,14 @@
       <executionEvent
         Id="4cc01a0a-c2fc-4a01-ba2c-efa378608a64"
         name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="9cdf09bc-c1a4-465a-a122-246fde68b475"
+        name="Statistik Pelanggaran"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
