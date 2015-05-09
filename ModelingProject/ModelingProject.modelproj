@@ -43,13 +43,6 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence Diagram\PembuatanSIMOrangBaru.sequencediagram</DependentUpon>
     </Content>
-    <Content Include="Sequence Diagram\SequenceDiagram_SuratTilang.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Sequence Diagram\SequenceDiagram_SuratTilang.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Sequence Diagram\SequenceDiagram_SuratTilang.sequencediagram</DependentUpon>
-    </Content>
     <Content Include="Use Case Diagram\PembuatanSIM.usecasediagram">
       <SubType>Content</SubType>
     </Content>
@@ -63,6 +56,20 @@
     <Content Include="Use Case Diagram\Penilangan.usecasediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>Use Case Diagram\Penilangan.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Use Case Diagram\RekapTilang.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Case Diagram\RekapTilang.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Case Diagram\RekapTilang.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Use Case Diagram\StatistikPelanggaran.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Case Diagram\StatistikPelanggaran.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Case Diagram\StatistikPelanggaran.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ClassDiagram.classdiagram">

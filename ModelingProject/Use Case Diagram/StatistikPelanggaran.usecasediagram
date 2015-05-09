@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7b4b4a03-9004-4b4b-834b-13f05623e4af" name="StatistikPelanggaran" linkedPackageId="a192f273-a9bc-4d5c-9f2a-91e632eef038" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="1114e413-d173-4790-a2d1-4caa0f9cdcc6">
+      <profileInstance Id="803d22dd-3f26-417d-9c4a-ee37e2796d80" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f47cc1e4-73c4-49e6-9b7d-1b4168793b8e">
+      <profileInstance Id="a39d3426-6753-403d-bf1c-0d28188b3dd2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="f35d43cd-7981-4283-a1a4-c7ef84c549b3" name="Polisi" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a145d36f-5ffd-4d03-9d6e-e8420e890984" />
+        <targetEnds>
+          <association Id="71fc5bed-fd94-4666-8c4c-d9f11dbd75a8" isDerived="false" sourceEndRoleName="Polisi" targetEndRoleName="Melihat Statistik Pelanggaran" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ada8440b-a306-47f4-b923-d465264cd715" LastKnownName="Melihat Statistik Pelanggaran" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bfdad0cb-5fb1-4152-8573-774a8b29784e" name="Polisi" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a24e17d0-b6dc-460c-815a-c37439b1083f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4bdc9c67-2818-44ff-b035-629597edf2ec" name="Melihat Statistik Pelanggaran" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3c7d53ae-e761-470d-a9a0-40dbb78b192f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="226cf25d-9915-40d2-8d8e-43d267e44b58" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ada8440b-a306-47f4-b923-d465264cd715" name="Melihat Statistik Pelanggaran" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="41787c7f-78ce-4450-976a-b3426f9aefbf" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="a192f273-a9bc-4d5c-9f2a-91e632eef038" name="ModelingProject">
+    <elementDefinition Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd" />
+  </package>
+</useCaseModelRoot>
