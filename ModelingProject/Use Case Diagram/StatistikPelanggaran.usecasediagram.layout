@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="StatistikPelanggaran">
-  <useCaseModelRootMoniker Id="a5675e9c-934e-40ba-a5db-d12e3de6631a" />
+  <useCaseModelRootMoniker Id="7b4b4a03-9004-4b4b-834b-13f05623e4af" />
   <nestedChildShapes>
-    <useCaseShape Id="027ad323-fa2b-4c64-bf56-1a30912a1595" absoluteBounds="5.25, 2, 1.25, 1" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="fd1356c1-0549-437c-ac25-4e762d3ef06a" LastKnownName="Melihat Statistik Pelanggaran" />
-      <relativeChildShapes />
-    </useCaseShape>
-    <actorShape Id="0e73eed0-d349-4df7-811f-cfd4ab2b9b75" absoluteBounds="2.75, 2.375, 0.5, 0.5" isReference="false" heightOffset="0">
-      <actorMoniker Id="0fef6483-39d8-488c-87b9-442f0bd3ac25" LastKnownName="Polisi" />
+    <actorShape Id="80045adc-4b41-4893-bfe6-4ce81270add1" absoluteBounds="1.5, 2, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="f35d43cd-7981-4283-a1a4-c7ef84c549b3" LastKnownName="Polisi" />
       <relativeChildShapes />
     </actorShape>
-    <useCaseAssociationConnector edgePoints="[(3.25 : 2.61413043478261); (5.25092098720867 : 2.52713387012136)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
-      <associationMoniker Id="21ed7d69-a1a2-4780-a045-37c50ba8bf58" />
+    <useCaseShape Id="8831b78a-f99a-45d4-a47d-b26d16cc9dcd" absoluteBounds="4.375, 1.875, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ada8440b-a306-47f4-b923-d465264cd715" LastKnownName="Melihat Statistik Pelanggaran" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 2.25); (4.375 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="71fc5bed-fd94-4666-8c4c-d9f11dbd75a8" />
       <relativeChildShapes />
       <nodes>
-        <actorShapeMoniker Id="0e73eed0-d349-4df7-811f-cfd4ab2b9b75" />
-        <useCaseShapeMoniker Id="027ad323-fa2b-4c64-bf56-1a30912a1595" />
+        <actorShapeMoniker Id="80045adc-4b41-4893-bfe6-4ce81270add1" />
+        <useCaseShapeMoniker Id="8831b78a-f99a-45d4-a47d-b26d16cc9dcd" />
       </nodes>
     </useCaseAssociationConnector>
   </nestedChildShapes>

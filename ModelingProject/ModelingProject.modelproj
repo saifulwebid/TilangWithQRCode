@@ -57,6 +57,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Use Case Diagram\RekapTilang.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="Use Case Diagram\StatistikPelanggaran.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Case Diagram\StatistikPelanggaran.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Case Diagram\StatistikPelanggaran.usecasediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ClassDiagram.classdiagram">
       <SubType>Content</SubType>
