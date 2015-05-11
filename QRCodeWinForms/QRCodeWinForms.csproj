@@ -32,12 +32,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>.\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>.\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="QRCoder">
-      <HintPath>..\..\..\..\Downloads\C# For Project\QRCoder.dll</HintPath>
+      <HintPath>.\QRCoder.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +53,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="zxing">
+      <HintPath>.\zxing.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="frmSuratTilang.cs">
@@ -54,6 +64,7 @@
     <Compile Include="frmSuratTilang.Designer.cs">
       <DependentUpon>frmSuratTilang.cs</DependentUpon>
     </Compile>
+    <Compile Include="CameraDevices.cs" />
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,10 +77,46 @@
     <Compile Include="frmBanyakPelanggaran.Designer.cs">
       <DependentUpon>frmBanyakPelanggaran.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInputDataSIM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputDataSIM.Designer.cs">
+      <DependentUpon>frmInputDataSIM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScanSIM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScanSIM.Designer.cs">
+      <DependentUpon>frmScanSIM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatistikPelanggaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatistikPelanggaran.Designer.cs">
+      <DependentUpon>frmStatistikPelanggaran.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmSIMViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSIMViewer.Designer.cs">
+      <DependentUpon>frmSIMViewer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmBanyakPelanggaran.resx">
       <DependentUpon>frmBanyakPelanggaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputDataSIM.resx">
+      <DependentUpon>frmInputDataSIM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScanSIM.resx">
+      <DependentUpon>frmScanSIM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatistikPelanggaran.resx">
+      <DependentUpon>frmStatistikPelanggaran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSuratTilang.resx">
       <DependentUpon>frmSuratTilang.cs</DependentUpon>
@@ -83,6 +130,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmSIMViewer.resx">
+      <DependentUpon>frmSIMViewer.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
