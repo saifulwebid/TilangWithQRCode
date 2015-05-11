@@ -22,55 +22,6 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="Sequence Diagram\PembuatanSIMKedua.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Sequence Diagram\PembuatanSIMKedua.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Sequence Diagram\PembuatanSIMKedua.sequencediagram</DependentUpon>
-    </Content>
-    <Content Include="Sequence Diagram\PembuatanSIMOrangBaru.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Sequence Diagram\PembuatanSIMOrangBaru.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Sequence Diagram\PembuatanSIMOrangBaru.sequencediagram</DependentUpon>
-    </Content>
-    <Content Include="Sequence Diagram\StatistikPelanggaran.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Sequence Diagram\StatistikPelanggaran.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Sequence Diagram\StatistikPelanggaran.sequencediagram</DependentUpon>
-    </Content>
-    <Content Include="Use Case Diagram\PembuatanSIM.usecasediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Use Case Diagram\PembuatanSIM.usecasediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Use Case Diagram\PembuatanSIM.usecasediagram</DependentUpon>
-    </Content>
-    <Content Include="Use Case Diagram\Penilangan.usecasediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Use Case Diagram\Penilangan.usecasediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Use Case Diagram\Penilangan.usecasediagram</DependentUpon>
-    </Content>
-    <Content Include="Use Case Diagram\RekapTilang.usecasediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Use Case Diagram\RekapTilang.usecasediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Use Case Diagram\RekapTilang.usecasediagram</DependentUpon>
-    </Content>
-    <Content Include="Use Case Diagram\StatistikPelanggaran.usecasediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Use Case Diagram\StatistikPelanggaran.usecasediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Use Case Diagram\StatistikPelanggaran.usecasediagram</DependentUpon>
-    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ClassDiagram.classdiagram">
       <SubType>Content</SubType>
@@ -82,7 +33,5 @@
     <Content Include="ModelDefinition\ModelingProject.uml">
       <SubType>Content</SubType>
     </Content>
-    <Folder Include="Use Case Diagram" />
-    <Folder Include="Sequence Diagram" />
   </ItemGroup>
 </Project>

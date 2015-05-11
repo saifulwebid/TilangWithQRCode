@@ -90,17 +90,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SIMViewer.cs">
+    <Compile Include="frmSIMViewer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SIMViewer.Designer.cs">
-      <DependentUpon>SIMViewer.cs</DependentUpon>
+    <Compile Include="frmSIMViewer.Designer.cs">
+      <DependentUpon>frmSIMViewer.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmBanyakPelanggaran.resx">
       <DependentUpon>frmBanyakPelanggaran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInputDataSIM.resx">
       <DependentUpon>frmInputDataSIM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmScanSIM.resx">
       <DependentUpon>frmScanSIM.cs</DependentUpon>
@@ -117,8 +120,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SIMViewer.resx">
-      <DependentUpon>SIMViewer.cs</DependentUpon>
+    <EmbeddedResource Include="frmSIMViewer.resx">
+      <DependentUpon>frmSIMViewer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
