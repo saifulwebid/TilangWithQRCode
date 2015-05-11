@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>.\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>.\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="QRCoder">
       <HintPath>.\QRCoder.dll</HintPath>
     </Reference>
@@ -46,8 +52,12 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="zxing">
+      <HintPath>.\zxing.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CameraDevices.cs" />
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +75,12 @@
     </Compile>
     <Compile Include="frmInputDataSIM.Designer.cs">
       <DependentUpon>frmInputDataSIM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScanSIM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScanSIM.Designer.cs">
+      <DependentUpon>frmScanSIM.cs</DependentUpon>
     </Compile>
     <Compile Include="frmStatistikPelanggaran.cs">
       <SubType>Form</SubType>
@@ -85,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInputDataSIM.resx">
       <DependentUpon>frmInputDataSIM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScanSIM.resx">
+      <DependentUpon>frmScanSIM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStatistikPelanggaran.resx">
       <DependentUpon>frmStatistikPelanggaran.cs</DependentUpon>
