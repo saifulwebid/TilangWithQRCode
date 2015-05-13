@@ -58,6 +58,9 @@
             this.txtNoKTPPelanggar = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtTanggalLahir = new System.Windows.Forms.TextBox();
+            this.cbxPendidikan = new System.Windows.Forms.ComboBox();
+            this.cbxPekerjaan = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtAngkaPinalti = new System.Windows.Forms.TextBox();
             this.txtBankSetor = new System.Windows.Forms.TextBox();
@@ -177,9 +180,6 @@
             this.label43 = new System.Windows.Forms.Label();
             this.btnScanQRCode = new System.Windows.Forms.Button();
             this.btnSimpanData = new System.Windows.Forms.Button();
-            this.cbxPekerjaan = new System.Windows.Forms.ComboBox();
-            this.cbxPendidikan = new System.Windows.Forms.ComboBox();
-            this.txtTanggalLahir = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -492,6 +492,31 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "DATA PELANGGAR";
+            // 
+            // txtTanggalLahir
+            // 
+            this.txtTanggalLahir.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtTanggalLahir.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtTanggalLahir.Location = new System.Drawing.Point(293, 144);
+            this.txtTanggalLahir.Name = "txtTanggalLahir";
+            this.txtTanggalLahir.Size = new System.Drawing.Size(100, 20);
+            this.txtTanggalLahir.TabIndex = 33;
+            // 
+            // cbxPendidikan
+            // 
+            this.cbxPendidikan.FormattingEnabled = true;
+            this.cbxPendidikan.Location = new System.Drawing.Point(87, 99);
+            this.cbxPendidikan.Name = "cbxPendidikan";
+            this.cbxPendidikan.Size = new System.Drawing.Size(121, 21);
+            this.cbxPendidikan.TabIndex = 32;
+            // 
+            // cbxPekerjaan
+            // 
+            this.cbxPekerjaan.FormattingEnabled = true;
+            this.cbxPekerjaan.Location = new System.Drawing.Point(87, 73);
+            this.cbxPekerjaan.Name = "cbxPekerjaan";
+            this.cbxPekerjaan.Size = new System.Drawing.Size(121, 21);
+            this.cbxPekerjaan.TabIndex = 31;
             // 
             // groupBox4
             // 
@@ -843,7 +868,7 @@
             // 
             // txtGolSIM
             // 
-            this.txtGolSIM.BackColor = System.Drawing.SystemColors.Control;
+            this.txtGolSIM.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtGolSIM.Location = new System.Drawing.Point(69, 17);
             this.txtGolSIM.Name = "txtGolSIM";
             this.txtGolSIM.Size = new System.Drawing.Size(100, 20);
@@ -851,7 +876,7 @@
             // 
             // txtNoSIM
             // 
-            this.txtNoSIM.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNoSIM.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtNoSIM.Location = new System.Drawing.Point(200, 17);
             this.txtNoSIM.Name = "txtNoSIM";
             this.txtNoSIM.Size = new System.Drawing.Size(100, 20);
@@ -878,7 +903,7 @@
             // 
             // dtpTanggalLanggar
             // 
-            this.dtpTanggalLanggar.Location = new System.Drawing.Point(463, 17);
+            this.dtpTanggalLanggar.Location = new System.Drawing.Point(461, 17);
             this.dtpTanggalLanggar.Name = "dtpTanggalLanggar";
             this.dtpTanggalLanggar.Size = new System.Drawing.Size(180, 20);
             this.dtpTanggalLanggar.TabIndex = 6;
@@ -1669,37 +1694,12 @@
             this.btnSimpanData.Text = "Simpan Data";
             this.btnSimpanData.UseVisualStyleBackColor = true;
             // 
-            // cbxPekerjaan
-            // 
-            this.cbxPekerjaan.FormattingEnabled = true;
-            this.cbxPekerjaan.Location = new System.Drawing.Point(87, 73);
-            this.cbxPekerjaan.Name = "cbxPekerjaan";
-            this.cbxPekerjaan.Size = new System.Drawing.Size(121, 21);
-            this.cbxPekerjaan.TabIndex = 31;
-            // 
-            // cbxPendidikan
-            // 
-            this.cbxPendidikan.FormattingEnabled = true;
-            this.cbxPendidikan.Location = new System.Drawing.Point(87, 99);
-            this.cbxPendidikan.Name = "cbxPendidikan";
-            this.cbxPendidikan.Size = new System.Drawing.Size(121, 21);
-            this.cbxPendidikan.TabIndex = 32;
-            // 
-            // txtTanggalLahir
-            // 
-            this.txtTanggalLahir.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtTanggalLahir.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtTanggalLahir.Location = new System.Drawing.Point(293, 144);
-            this.txtTanggalLahir.Name = "txtTanggalLahir";
-            this.txtTanggalLahir.Size = new System.Drawing.Size(100, 20);
-            this.txtTanggalLahir.TabIndex = 33;
-            // 
             // frmSuratTilang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1161, 741);
+            this.ClientSize = new System.Drawing.Size(1161, 733);
             this.Controls.Add(this.btnSimpanData);
             this.Controls.Add(this.btnScanQRCode);
             this.Controls.Add(this.groupBox11);

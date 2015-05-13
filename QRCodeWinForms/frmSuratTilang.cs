@@ -14,6 +14,8 @@ namespace QRCodeWinForms
 {
     public partial class frmSuratTilang : Form
     {
+        string ResultString;
+        
         public frmSuratTilang()
         {
             InitializeComponent();
@@ -83,7 +85,9 @@ namespace QRCodeWinForms
             cbxPekerjaan.Items.Add("POLRI");
             cbxPekerjaan.Items.Add("PELAJAR");
             cbxPekerjaan.Items.Add("MHS");
+            cbxPekerjaan.Items.Add("LAINNYA");
 
+            cbxPendidikan.DropDownStyle = ComboBoxStyle.DropDown;
             cbxPendidikan.Items.Add("SD");
             cbxPendidikan.Items.Add("SLTP");
             cbxPendidikan.Items.Add("SLTA");
@@ -92,7 +96,6 @@ namespace QRCodeWinForms
 
         private void TampilData()
         {
-            string ResultString = "3277032811798239#791151586708#A#UTOM#PANGKAL PINANG#100879#Komp.DPRD No.1/3 Ciwaruga Bandung#2#3#L";
             string[] Split = ResultString.Split('#');
             CultureInfo provider = CultureInfo.InvariantCulture;
             DateTime parseddate;
@@ -132,6 +135,8 @@ namespace QRCodeWinForms
                         break;
                    case "6": cbxPekerjaan.Text = "MHS";
                         break;
+                   case "7": cbxPekerjaan.Text = "LAINNYA";
+                        break;
                 }
                 //kolom pendidikan pelanggar
                switch (Split[8])
@@ -154,6 +159,9 @@ namespace QRCodeWinForms
 
         private void btnScanQRCode_Click(object sender, EventArgs e)
         {
+            frmScanSIM f2 = new frmScanSIM();
+            f2.ShowDialog();
+            ResultString = f2.GetData;
             TampilData();
         }
 
