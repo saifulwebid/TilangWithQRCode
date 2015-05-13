@@ -92,8 +92,11 @@ namespace QRCodeWinForms
 
         private void TampilData()
         {
-            string ResultString = "3277032811798239#791151586708#A#UTOM#PANGKAL PINANG#281179#Komp.DPRD No.1/3 Ciwaruga Bandung#2#3#L";
+            string ResultString = "3277032811798239#791151586708#A#UTOM#PANGKAL PINANG#100879#Komp.DPRD No.1/3 Ciwaruga Bandung#2#3#L";
             string[] Split = ResultString.Split('#');
+            CultureInfo provider = CultureInfo.InvariantCulture;
+            DateTime parseddate;
+            provider = new CultureInfo("id-ID");
             try
             {
                 txtNamaPelanggar.Text = Split[3];
@@ -102,21 +105,46 @@ namespace QRCodeWinForms
                 txtNoSIM.Text = Split[1];
                 txtTempatPelanggar.Text = Split[4];
                 txtGolSIM.Text = Split[2];
-                txtTanggalLahir.Text = Convert.ToString(Convert.ToDateTime(DateTime.ParseExact(Split[5],"dd MMMM yyyy",CultureInfo.InvariantCulture)));
+                //merubah supaya tanggalnya jadi bukan angka lagi
+                if(DateTime.TryParseExact(Split[5],"ddMMyy",null,DateTimeStyles.None,out parseddate)){
+                txtTanggalLahir.Text = parseddate.ToString("dd MMMM yyyy",provider);
+                }
+                txtUmurPelanggar.Text = Convert.ToString(ConvertUmur(parseddate));
+                //kolom jenis kelamin
                 if (Split[9] == "L")
                 {
                     rbtLK.Checked = true;
                 }
                 else
                 { rbtPR.Checked = true; }
-              //  switch (Split[6])
-               // {
-                 //   case "1" :   cbxPekerjaan.Text 
-                //}
-              //  DateTime ttl = DateTime.ParseExact(Split[5], "ddmmyyyy", CultureInfo.InvariantCulture);
-               // txtUmurPelanggar.Text = Convert.ToString(ConvertUmur(ttl));
-
-                
+                //kolom pekerjaan pelanggar
+               switch(Split[7])
+                {
+                   case "1": cbxPekerjaan.Text = "PNS";
+                        break;
+                   case "2": cbxPekerjaan.Text = "SWASTA";
+                        break;
+                   case "3": cbxPekerjaan.Text = "TNI";
+                        break;
+                   case "4": cbxPekerjaan.Text = "POLRI";
+                        break;
+                   case "5": cbxPekerjaan.Text = "PELAJAR";
+                        break;
+                   case "6": cbxPekerjaan.Text = "MHS";
+                        break;
+                }
+                //kolom pendidikan pelanggar
+               switch (Split[8])
+               {
+                   case "1": cbxPendidikan.Text = "SD";
+                       break;
+                   case "2": cbxPendidikan.Text = "SLTP";
+                       break;
+                   case "3": cbxPendidikan.Text = "SLTA";
+                       break;
+                   case "4": cbxPendidikan.Text = "PT";
+                       break;
+               }                
             }
             catch
             {
@@ -130,14 +158,20 @@ namespace QRCodeWinForms
         }
 
         private static int ConvertUmur(DateTime ttl)
-       {
+        {
             DateTime currentdate = new DateTime();
             currentdate = DateTime.Today;
-            int age =   currentdate.Year - ttl.Year;
-            if (ttl > currentdate.AddYears(-age)) age--;
-            return age;
+            int age;
+
+            if (currentdate.Month >= ttl.Month && currentdate.Date >= ttl.Date)
+            {
+                return currentdate.Year - ttl.Year + 1;
+            }
+            else 
+            {
+                return currentdate.Year - ttl.Year;
+            }
 
         }
-
     }
 }
