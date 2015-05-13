@@ -38,6 +38,9 @@
     <Reference Include="AForge.Video.DirectShow">
       <HintPath>.\AForge.Video.DirectShow.dll</HintPath>
     </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\..\..\..\Documents\Visual Studio 2013\Projects\CreateContentSheet\lib\EPPlus\2.7.0.1\EPPlus.dll</HintPath>
+    </Reference>
     <Reference Include="QRCoder">
       <HintPath>.\QRCoder.dll</HintPath>
     </Reference>
@@ -58,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExcelHelper.cs" />
     <Compile Include="frmSuratTilang.cs">
       <SubType>Form</SubType>
     </Compile>
