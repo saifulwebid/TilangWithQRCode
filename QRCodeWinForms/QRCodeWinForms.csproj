@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataPelanggaran.cs" />
     <Compile Include="ExcelHelper.cs" />
     <Compile Include="frmSuratTilang.cs">
       <SubType>Form</SubType>
@@ -99,6 +100,8 @@
     <Compile Include="frmStatistikPelanggaran.Designer.cs">
       <DependentUpon>frmStatistikPelanggaran.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pasal.cs" />
+    <Compile Include="Penduduk.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmSIMViewer.cs">
@@ -107,6 +110,7 @@
     <Compile Include="frmSIMViewer.Designer.cs">
       <DependentUpon>frmSIMViewer.cs</DependentUpon>
     </Compile>
+    <Compile Include="SIM.cs" />
     <EmbeddedResource Include="frmBanyakPelanggaran.resx">
       <DependentUpon>frmBanyakPelanggaran.cs</DependentUpon>
     </EmbeddedResource>
