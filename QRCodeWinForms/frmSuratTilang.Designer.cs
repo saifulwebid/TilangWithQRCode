@@ -180,6 +180,7 @@
             this.label43 = new System.Windows.Forms.Label();
             this.btnScanQRCode = new System.Windows.Forms.Button();
             this.btnSimpanData = new System.Windows.Forms.Button();
+            this.rbt1jt = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -521,6 +522,7 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.White;
+            this.groupBox4.Controls.Add(this.rbt1jt);
             this.groupBox4.Controls.Add(this.txtAngkaPinalti);
             this.groupBox4.Controls.Add(this.txtBankSetor);
             this.groupBox4.Controls.Add(this.label53);
@@ -578,7 +580,7 @@
             // rbtDenda750K
             // 
             this.rbtDenda750K.AutoSize = true;
-            this.rbtDenda750K.Location = new System.Drawing.Point(218, 98);
+            this.rbtDenda750K.Location = new System.Drawing.Point(212, 98);
             this.rbtDenda750K.Name = "rbtDenda750K";
             this.rbtDenda750K.Size = new System.Drawing.Size(96, 17);
             this.rbtDenda750K.TabIndex = 12;
@@ -589,7 +591,7 @@
             // rbtDenda250K
             // 
             this.rbtDenda250K.AutoSize = true;
-            this.rbtDenda250K.Location = new System.Drawing.Point(218, 80);
+            this.rbtDenda250K.Location = new System.Drawing.Point(212, 80);
             this.rbtDenda250K.Name = "rbtDenda250K";
             this.rbtDenda250K.Size = new System.Drawing.Size(96, 17);
             this.rbtDenda250K.TabIndex = 11;
@@ -600,7 +602,7 @@
             // rbtDenda500K
             // 
             this.rbtDenda500K.AutoSize = true;
-            this.rbtDenda500K.Location = new System.Drawing.Point(121, 99);
+            this.rbtDenda500K.Location = new System.Drawing.Point(115, 99);
             this.rbtDenda500K.Name = "rbtDenda500K";
             this.rbtDenda500K.Size = new System.Drawing.Size(96, 17);
             this.rbtDenda500K.TabIndex = 10;
@@ -612,7 +614,7 @@
             // rbtDenda100K
             // 
             this.rbtDenda100K.AutoSize = true;
-            this.rbtDenda100K.Location = new System.Drawing.Point(121, 80);
+            this.rbtDenda100K.Location = new System.Drawing.Point(115, 80);
             this.rbtDenda100K.Name = "rbtDenda100K";
             this.rbtDenda100K.Size = new System.Drawing.Size(96, 17);
             this.rbtDenda100K.TabIndex = 9;
@@ -1677,7 +1679,7 @@
             // 
             // btnScanQRCode
             // 
-            this.btnScanQRCode.Location = new System.Drawing.Point(1074, 263);
+            this.btnScanQRCode.Location = new System.Drawing.Point(1082, 263);
             this.btnScanQRCode.Name = "btnScanQRCode";
             this.btnScanQRCode.Size = new System.Drawing.Size(75, 43);
             this.btnScanQRCode.TabIndex = 14;
@@ -1687,12 +1689,23 @@
             // 
             // btnSimpanData
             // 
-            this.btnSimpanData.Location = new System.Drawing.Point(1074, 319);
+            this.btnSimpanData.Location = new System.Drawing.Point(1082, 319);
             this.btnSimpanData.Name = "btnSimpanData";
             this.btnSimpanData.Size = new System.Drawing.Size(75, 51);
             this.btnSimpanData.TabIndex = 15;
             this.btnSimpanData.Text = "Simpan Data";
             this.btnSimpanData.UseVisualStyleBackColor = true;
+            // 
+            // rbt1jt
+            // 
+            this.rbt1jt.AutoSize = true;
+            this.rbt1jt.Location = new System.Drawing.Point(309, 80);
+            this.rbt1jt.Name = "rbt1jt";
+            this.rbt1jt.Size = new System.Drawing.Size(105, 17);
+            this.rbt1jt.TabIndex = 17;
+            this.rbt1jt.TabStop = true;
+            this.rbt1jt.Text = "Rp 1.000.000,00";
+            this.rbt1jt.UseVisualStyleBackColor = true;
             // 
             // frmSuratTilang
             // 
@@ -1895,6 +1908,7 @@
         private System.Windows.Forms.ComboBox cbxPekerjaan;
         private System.Windows.Forms.ComboBox cbxPendidikan;
         private System.Windows.Forms.TextBox txtTanggalLahir;
+        private System.Windows.Forms.RadioButton rbt1jt;
 
 
 
