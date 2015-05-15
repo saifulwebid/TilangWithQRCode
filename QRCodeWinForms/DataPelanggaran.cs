@@ -189,5 +189,9 @@ namespace QRCodeWinForms
             get { return _wilayahHukum; }
             set { _wilayahHukum = value; }
         }
+        public void Save(DataPelanggaran dapel)
+        {
+            ExcelHelper.SaveDataPelanggaran(dapel);
+        }
     }
 }

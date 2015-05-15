@@ -7,9 +7,9 @@ using OfficeOpenXml;
 
 namespace QRCodeWinForms
 {
-    public class ExcelHelper
+    class ExcelHelper
     {
-        static List<SIM> GetAllSIM()
+        public static List<SIM> GetAllSIM()
         {
             const string fileName = "data\\DataGabungan.xlsm";
             const int startRow = 1;
@@ -82,7 +82,7 @@ namespace QRCodeWinForms
             }
             return null;
         }
-        static void SaveDataSIM(SIM dataSIM)
+        public static void SaveDataSIM(SIM dataSIM)
         {
             const string fileName = "data\\DataGabungan.xlsm";
             const int startRow = 1;
@@ -132,7 +132,7 @@ namespace QRCodeWinForms
                 }
             }
         }
-        static void SaveDataPelanggaran(DataPelanggaran dapel)
+        public static void SaveDataPelanggaran(DataPelanggaran dapel)
         {
             const string fileName = "data\\DataGabungan.xlsm";
             const int startRow = 1;

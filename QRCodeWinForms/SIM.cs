@@ -57,5 +57,9 @@ namespace QRCodeWinForms
             get { return _isNew; }
             set { _isNew = value; }
         }
+        public void Save(SIM dataSIM)
+        {
+            ExcelHelper.SaveDataSIM(dataSIM);
+        }
     }
 }
