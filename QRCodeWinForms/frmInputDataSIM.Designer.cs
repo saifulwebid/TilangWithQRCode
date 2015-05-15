@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNoKTP = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtJenisKelamin = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtGolongan = new System.Windows.Forms.TextBox();
             this.dtpTanggalLahir = new System.Windows.Forms.DateTimePicker();
@@ -49,10 +53,6 @@
             this.txtNama = new System.Windows.Forms.TextBox();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.btnTampilkan = new System.Windows.Forms.Button();
-            this.txtJenisKelamin = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtNoKTP = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +86,38 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data Pribadi Pengemudi";
+            // 
+            // txtNoKTP
+            // 
+            this.txtNoKTP.Location = new System.Drawing.Point(124, 19);
+            this.txtNoKTP.Name = "txtNoKTP";
+            this.txtNoKTP.Size = new System.Drawing.Size(126, 20);
+            this.txtNoKTP.TabIndex = 22;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 22);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(62, 13);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Nomor KTP";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 204);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(71, 13);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Jenis Kelamin";
+            // 
+            // txtJenisKelamin
+            // 
+            this.txtJenisKelamin.Location = new System.Drawing.Point(124, 201);
+            this.txtJenisKelamin.Name = "txtJenisKelamin";
+            this.txtJenisKelamin.Size = new System.Drawing.Size(126, 20);
+            this.txtJenisKelamin.TabIndex = 19;
             // 
             // label9
             // 
@@ -249,38 +281,7 @@
             this.btnTampilkan.TabIndex = 2;
             this.btnTampilkan.Text = "Tampilkan SIM";
             this.btnTampilkan.UseVisualStyleBackColor = true;
-            // 
-            // txtJenisKelamin
-            // 
-            this.txtJenisKelamin.Location = new System.Drawing.Point(124, 201);
-            this.txtJenisKelamin.Name = "txtJenisKelamin";
-            this.txtJenisKelamin.Size = new System.Drawing.Size(126, 20);
-            this.txtJenisKelamin.TabIndex = 19;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(7, 204);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(71, 13);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "Jenis Kelamin";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 22);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 13);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Nomor KTP";
-            // 
-            // txtNoKTP
-            // 
-            this.txtNoKTP.Location = new System.Drawing.Point(124, 19);
-            this.txtNoKTP.Name = "txtNoKTP";
-            this.txtNoKTP.Size = new System.Drawing.Size(126, 20);
-            this.txtNoKTP.TabIndex = 22;
+            this.btnTampilkan.Click += new System.EventHandler(this.btnTampilkan_Click);
             // 
             // frmInputDataSIM
             // 

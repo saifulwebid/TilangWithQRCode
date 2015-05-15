@@ -12,22 +12,28 @@ namespace QRCodeWinForms
 {
     public partial class frmSIMViewer : Form
     {
+        SIM tampilSIM;
         public frmSIMViewer()
         {
             InitializeComponent();
         }
 
+        public frmSIMViewer(SIM additem)
+        {
+            InitializeComponent();
+            tampilSIM = additem;
+        }
+
         private void SIMViewer_Load(object sender, EventArgs e)
         {
-            lblNama.Text = "ANDRE FEBRIANTO";
-            lblAlamat.Text = "Jalan Mahoni I no. D8 Lagadar Margaasih";
-            lblTempatLahir.Text = "Bandung";
-            lblTanggalLahir.Text = "10 Februari 1996";
-            lblPendidikan.Text = "Mahasiswa";
-            lblPekerjaan.Text = "Pelajar";
-            lblNoSIM.Text = "960213310073";
-            lblMasaBerlaku.Text = "10 Maret 2018";
-            
+            lblNama.Text = tampilSIM.Nama;
+            lblAlamat.Text = tampilSIM.Alamat;
+            lblTempatLahir.Text = tampilSIM.TempatLahir;
+            lblTanggalLahir.Text = tampilSIM.TanggalLahir.ToLongDateString();
+            lblPendidikan.Text = tampilSIM.Pendidikan;
+            lblPekerjaan.Text = tampilSIM.Pekerjaan;
+            lblNoSIM.Text = tampilSIM.NomorSIM;
+            lblMasaBerlaku.Text = "10 Maret 2018 (edit)";
         }
     }
 }

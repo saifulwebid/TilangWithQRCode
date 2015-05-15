@@ -12,6 +12,7 @@ namespace QRCodeWinForms
 {
     public partial class frmInputDataSIM : Form
     {
+        
         SIM additem = new SIM();
         public frmInputDataSIM()
         {
@@ -36,6 +37,13 @@ namespace QRCodeWinForms
             additem.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir);
             additem.Pemilik.JenisKelamin = txtJenisKelamin.Text;
             additem.Pemilik.NomorKTP = txtNoKTP.Text;
+        }
+
+        private void btnTampilkan_Click(object sender, EventArgs e)
+        {
+            
+            frmSIMViewer f2 = new frmSIMViewer(additem);
+            f2.ShowDialog();
         }
     }
 }
