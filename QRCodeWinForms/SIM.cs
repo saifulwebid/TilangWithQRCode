@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace QRCodeWinForms
 {
-    public class SIM : Penduduk
+    public class SIM
     {
         private string _golongan;
         private string _nomorSIM;
-        private Penduduk _pemilik;
+        private Penduduk _pemilik = new Penduduk();
         private DateTime _tanggalBuat;
         private DateTime _tanggalHabis;
         private bool _isNew;
 
         public SIM()
-        { }
+        {  }
 
         public SIM(string gol, string noSIM, Penduduk pemilik, DateTime tanggalbuat, bool status)
         {

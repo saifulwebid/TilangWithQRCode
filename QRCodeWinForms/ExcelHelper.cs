@@ -61,13 +61,16 @@ namespace QRCodeWinForms
                                         listDataSIM.Add(new SIM
                                         {
                                             Golongan = col1Value.ToString(),
-                                            Nama = col2Value.ToString(),
-                                            TempatLahir = col3Value.ToString(),
-                                            TanggalLahir = Convert.ToDateTime(col4Value),
-                                            Alamat = col5Value.ToString(),
-                                            Pekerjaan = col6Value.ToString(),
-                                            Pendidikan = col7Value.ToString(),
-                                            JenisKelamin = col8Value.ToString()
+                                            Pemilik = new Penduduk
+                                            {
+                                                Nama = col2Value.ToString(),
+                                                TempatLahir = col3Value.ToString(),
+                                                TanggalLahir = Convert.ToDateTime(col4Value),
+                                                Alamat = col5Value.ToString(),
+                                                Pekerjaan = col6Value.ToString(),
+                                                Pendidikan = col7Value.ToString(),
+                                                JenisKelamin = col8Value.ToString()
+                                            }
                                         });
                                     }
                                 }
@@ -115,13 +118,13 @@ namespace QRCodeWinForms
                             {
                                 int rowNumber = currentWorksheet.Dimension.End.Row;
                                 currentWorksheet.Cells[rowNumber, 1].Value = dataSIM.Golongan;
-                                currentWorksheet.Cells[rowNumber, 2].Value = dataSIM.Nama;
-                                currentWorksheet.Cells[rowNumber, 3].Value = dataSIM.TempatLahir;
-                                currentWorksheet.Cells[rowNumber, 4].Value = dataSIM.TanggalLahir;
-                                currentWorksheet.Cells[rowNumber, 5].Value = dataSIM.Alamat;
-                                currentWorksheet.Cells[rowNumber, 6].Value = dataSIM.Pekerjaan;
-                                currentWorksheet.Cells[rowNumber, 7].Value = dataSIM.Pendidikan;
-                                currentWorksheet.Cells[rowNumber, 8].Value = dataSIM.JenisKelamin;
+                                currentWorksheet.Cells[rowNumber, 2].Value = dataSIM.Pemilik.Nama;
+                                currentWorksheet.Cells[rowNumber, 3].Value = dataSIM.Pemilik.TempatLahir;
+                                currentWorksheet.Cells[rowNumber, 4].Value = dataSIM.Pemilik.TanggalLahir;
+                                currentWorksheet.Cells[rowNumber, 5].Value = dataSIM.Pemilik.Alamat;
+                                currentWorksheet.Cells[rowNumber, 6].Value = dataSIM.Pemilik.Pekerjaan;
+                                currentWorksheet.Cells[rowNumber, 7].Value = dataSIM.Pemilik.Pendidikan;
+                                currentWorksheet.Cells[rowNumber, 8].Value = dataSIM.Pemilik.JenisKelamin;
                             }
                         }
                     }
@@ -212,16 +215,16 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 2].Value = dapel.NomorRegister;
                                 currentWorksheet.Cells[rowNumber, 3].Value = dapel.Kesatuan;
                                 currentWorksheet.Cells[rowNumber, 4].Value = dapel.NomorTilang;
-                                currentWorksheet.Cells[rowNumber, 5].Value = dapel.Nama;
-                                currentWorksheet.Cells[rowNumber, 6].Value = dapel.JenisKelamin;
-                                currentWorksheet.Cells[rowNumber, 7].Value = dapel.Alamat;
-                                currentWorksheet.Cells[rowNumber, 8].Value = dapel.Pekerjaan;
-                                currentWorksheet.Cells[rowNumber, 9].Value = dapel.Pendidikan;
-                                currentWorksheet.Cells[rowNumber, 10].Value = dapel.TempatLahir;
-                                currentWorksheet.Cells[rowNumber, 11].Value = dapel.TanggalLahir;
-                                currentWorksheet.Cells[rowNumber, 12].Value = dapel.Golongan;
-                                currentWorksheet.Cells[rowNumber, 13].Value = dapel.NomorKTP;
-                                currentWorksheet.Cells[rowNumber, 14].Value = dapel.NomorSIM;
+                                currentWorksheet.Cells[rowNumber, 5].Value = dapel.Pelanggar.Pemilik.Nama;
+                                currentWorksheet.Cells[rowNumber, 6].Value = dapel.Pelanggar.Pemilik.JenisKelamin;
+                                currentWorksheet.Cells[rowNumber, 7].Value = dapel.Pelanggar.Pemilik.Alamat;
+                                currentWorksheet.Cells[rowNumber, 8].Value = dapel.Pelanggar.Pemilik.Pekerjaan;
+                                currentWorksheet.Cells[rowNumber, 9].Value = dapel.Pelanggar.Pemilik.Pendidikan;
+                                currentWorksheet.Cells[rowNumber, 10].Value = dapel.Pelanggar.Pemilik.TempatLahir;
+                                currentWorksheet.Cells[rowNumber, 11].Value = dapel.Pelanggar.Pemilik.TanggalLahir;
+                                currentWorksheet.Cells[rowNumber, 12].Value = dapel.Pelanggar.Golongan;
+                                currentWorksheet.Cells[rowNumber, 13].Value = dapel.Pelanggar.Pemilik.NomorKTP;
+                                currentWorksheet.Cells[rowNumber, 14].Value = dapel.Pelanggar.NomorSIM;
                                 //currentWorksheet.Cells[rowNumber, 15].Value = dapel.SATPAS;
                                 currentWorksheet.Cells[rowNumber, 16].Value = dapel.NomorRegister;
                                 currentWorksheet.Cells[rowNumber, 17].Value = dapel.SamsatKendaraan;

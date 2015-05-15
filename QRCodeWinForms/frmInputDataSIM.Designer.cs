@@ -32,9 +32,7 @@
             this.txtNoKTP = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtJenisKelamin = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtGolongan = new System.Windows.Forms.TextBox();
             this.dtpTanggalLahir = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -46,24 +44,28 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dtpTanggalPembuatan = new System.Windows.Forms.DateTimePicker();
             this.txtNoSIM = new System.Windows.Forms.TextBox();
-            this.txtPekerjaan = new System.Windows.Forms.TextBox();
-            this.txtPendidikan = new System.Windows.Forms.TextBox();
             this.txtTempatLahir = new System.Windows.Forms.TextBox();
             this.txtAlamat = new System.Windows.Forms.TextBox();
             this.txtNama = new System.Windows.Forms.TextBox();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.btnTampilkan = new System.Windows.Forms.Button();
+            this.cmbGolongan = new System.Windows.Forms.ComboBox();
+            this.cmbJenisKelamin = new System.Windows.Forms.ComboBox();
+            this.cmbPekerjaan = new System.Windows.Forms.ComboBox();
+            this.cmbPendidikan = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbPendidikan);
+            this.groupBox1.Controls.Add(this.cmbPekerjaan);
+            this.groupBox1.Controls.Add(this.cmbJenisKelamin);
+            this.groupBox1.Controls.Add(this.cmbGolongan);
             this.groupBox1.Controls.Add(this.txtNoKTP);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.txtJenisKelamin);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.txtGolongan);
             this.groupBox1.Controls.Add(this.dtpTanggalLahir);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
@@ -75,8 +77,6 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.dtpTanggalPembuatan);
             this.groupBox1.Controls.Add(this.txtNoSIM);
-            this.groupBox1.Controls.Add(this.txtPekerjaan);
-            this.groupBox1.Controls.Add(this.txtPendidikan);
             this.groupBox1.Controls.Add(this.txtTempatLahir);
             this.groupBox1.Controls.Add(this.txtAlamat);
             this.groupBox1.Controls.Add(this.txtNama);
@@ -112,13 +112,6 @@
             this.label10.TabIndex = 20;
             this.label10.Text = "Jenis Kelamin";
             // 
-            // txtJenisKelamin
-            // 
-            this.txtJenisKelamin.Location = new System.Drawing.Point(124, 201);
-            this.txtJenisKelamin.Name = "txtJenisKelamin";
-            this.txtJenisKelamin.Size = new System.Drawing.Size(126, 20);
-            this.txtJenisKelamin.TabIndex = 19;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -127,13 +120,6 @@
             this.label9.Size = new System.Drawing.Size(53, 13);
             this.label9.TabIndex = 18;
             this.label9.Text = "Golongan";
-            // 
-            // txtGolongan
-            // 
-            this.txtGolongan.Location = new System.Drawing.Point(124, 253);
-            this.txtGolongan.Name = "txtGolongan";
-            this.txtGolongan.Size = new System.Drawing.Size(40, 20);
-            this.txtGolongan.TabIndex = 17;
             // 
             // dtpTanggalLahir
             // 
@@ -228,20 +214,6 @@
             this.txtNoSIM.Size = new System.Drawing.Size(126, 20);
             this.txtNoSIM.TabIndex = 7;
             // 
-            // txtPekerjaan
-            // 
-            this.txtPekerjaan.Location = new System.Drawing.Point(124, 175);
-            this.txtPekerjaan.Name = "txtPekerjaan";
-            this.txtPekerjaan.Size = new System.Drawing.Size(126, 20);
-            this.txtPekerjaan.TabIndex = 6;
-            // 
-            // txtPendidikan
-            // 
-            this.txtPendidikan.Location = new System.Drawing.Point(124, 149);
-            this.txtPendidikan.Name = "txtPendidikan";
-            this.txtPendidikan.Size = new System.Drawing.Size(126, 20);
-            this.txtPendidikan.TabIndex = 5;
-            // 
             // txtTempatLahir
             // 
             this.txtTempatLahir.Location = new System.Drawing.Point(124, 97);
@@ -283,6 +255,38 @@
             this.btnTampilkan.UseVisualStyleBackColor = true;
             this.btnTampilkan.Click += new System.EventHandler(this.btnTampilkan_Click);
             // 
+            // cmbGolongan
+            // 
+            this.cmbGolongan.FormattingEnabled = true;
+            this.cmbGolongan.Location = new System.Drawing.Point(124, 253);
+            this.cmbGolongan.Name = "cmbGolongan";
+            this.cmbGolongan.Size = new System.Drawing.Size(82, 21);
+            this.cmbGolongan.TabIndex = 23;
+            // 
+            // cmbJenisKelamin
+            // 
+            this.cmbJenisKelamin.FormattingEnabled = true;
+            this.cmbJenisKelamin.Location = new System.Drawing.Point(124, 201);
+            this.cmbJenisKelamin.Name = "cmbJenisKelamin";
+            this.cmbJenisKelamin.Size = new System.Drawing.Size(82, 21);
+            this.cmbJenisKelamin.TabIndex = 24;
+            // 
+            // cmbPekerjaan
+            // 
+            this.cmbPekerjaan.FormattingEnabled = true;
+            this.cmbPekerjaan.Location = new System.Drawing.Point(124, 175);
+            this.cmbPekerjaan.Name = "cmbPekerjaan";
+            this.cmbPekerjaan.Size = new System.Drawing.Size(100, 21);
+            this.cmbPekerjaan.TabIndex = 25;
+            // 
+            // cmbPendidikan
+            // 
+            this.cmbPendidikan.FormattingEnabled = true;
+            this.cmbPendidikan.Location = new System.Drawing.Point(124, 149);
+            this.cmbPendidikan.Name = "cmbPendidikan";
+            this.cmbPendidikan.Size = new System.Drawing.Size(112, 21);
+            this.cmbPendidikan.TabIndex = 26;
+            // 
             // frmInputDataSIM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -314,18 +318,18 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dtpTanggalPembuatan;
         private System.Windows.Forms.TextBox txtNoSIM;
-        private System.Windows.Forms.TextBox txtPekerjaan;
-        private System.Windows.Forms.TextBox txtPendidikan;
         private System.Windows.Forms.TextBox txtTempatLahir;
         private System.Windows.Forms.TextBox txtAlamat;
         private System.Windows.Forms.TextBox txtNama;
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnTampilkan;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtGolongan;
         private System.Windows.Forms.TextBox txtNoKTP;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtJenisKelamin;
+        private System.Windows.Forms.ComboBox cmbJenisKelamin;
+        private System.Windows.Forms.ComboBox cmbGolongan;
+        private System.Windows.Forms.ComboBox cmbPendidikan;
+        private System.Windows.Forms.ComboBox cmbPekerjaan;
     }
 }

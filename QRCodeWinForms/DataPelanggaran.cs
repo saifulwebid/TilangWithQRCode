@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QRCodeWinForms
 {
-    public class DataPelanggaran : SIM
+    public class DataPelanggaran
     {
         private string _alamatWakil;
         private double _angkaPinaltiPelanggaran;
@@ -30,8 +30,8 @@ namespace QRCodeWinForms
         private string _nomorRangkaKendaraan;
         private string _nomorRegister;
         private string _nomorTilang;
-        private Pasal _pasalPelanggaran;
-        private SIM _pelanggar;
+        private Pasal _pasalPelanggaran = new Pasal();
+        private SIM _pelanggar = new SIM();
         private bool _pernyataanHadirSendiri;
         private string _samsatKendaraan;
         private string _umurWakil;

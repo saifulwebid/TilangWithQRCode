@@ -50,9 +50,9 @@
             this.lblPekerjaan = new System.Windows.Forms.Label();
             this.lblNoSIM = new System.Windows.Forms.Label();
             this.lblMasaBerlaku = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblGolongan = new System.Windows.Forms.Label();
             this.lblRegional = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblJenisKelamin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictFoto)).BeginInit();
@@ -83,7 +83,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 128);
+            this.label2.Location = new System.Drawing.Point(8, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 4;
@@ -161,7 +161,7 @@
             // 
             this.pictFoto.Location = new System.Drawing.Point(402, 125);
             this.pictFoto.Name = "pictFoto";
-            this.pictFoto.Size = new System.Drawing.Size(126, 181);
+            this.pictFoto.Size = new System.Drawing.Size(135, 181);
             this.pictFoto.TabIndex = 19;
             this.pictFoto.TabStop = false;
             // 
@@ -202,7 +202,7 @@
             // 
             this.lblAlamat.AutoSize = true;
             this.lblAlamat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlamat.Location = new System.Drawing.Point(79, 128);
+            this.lblAlamat.Location = new System.Drawing.Point(76, 125);
             this.lblAlamat.Name = "lblAlamat";
             this.lblAlamat.Size = new System.Drawing.Size(0, 13);
             this.lblAlamat.TabIndex = 28;
@@ -261,16 +261,15 @@
             this.lblMasaBerlaku.Size = new System.Drawing.Size(0, 13);
             this.lblMasaBerlaku.TabIndex = 34;
             // 
-            // label11
+            // lblGolongan
             // 
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(450, 12);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 59);
-            this.label11.TabIndex = 35;
-            this.label11.Text = "A";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblGolongan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblGolongan.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGolongan.Location = new System.Drawing.Point(450, 12);
+            this.lblGolongan.Name = "lblGolongan";
+            this.lblGolongan.Size = new System.Drawing.Size(87, 59);
+            this.lblGolongan.TabIndex = 35;
+            this.lblGolongan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblRegional
             // 
@@ -278,30 +277,29 @@
             this.lblRegional.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegional.Location = new System.Drawing.Point(450, 71);
             this.lblRegional.Name = "lblRegional";
-            this.lblRegional.Size = new System.Drawing.Size(79, 17);
+            this.lblRegional.Size = new System.Drawing.Size(87, 17);
             this.lblRegional.TabIndex = 36;
             this.lblRegional.Text = "JABAR";
             this.lblRegional.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label12
+            // lblJenisKelamin
             // 
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(450, 100);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(79, 17);
-            this.label12.TabIndex = 37;
-            this.label12.Text = "PRIA";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblJenisKelamin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJenisKelamin.Location = new System.Drawing.Point(450, 100);
+            this.lblJenisKelamin.Name = "lblJenisKelamin";
+            this.lblJenisKelamin.Size = new System.Drawing.Size(87, 17);
+            this.lblJenisKelamin.TabIndex = 37;
+            this.lblJenisKelamin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // frmSIMViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(541, 334);
-            this.Controls.Add(this.label12);
+            this.ClientSize = new System.Drawing.Size(547, 334);
+            this.Controls.Add(this.lblJenisKelamin);
             this.Controls.Add(this.lblRegional);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lblGolongan);
             this.Controls.Add(this.lblMasaBerlaku);
             this.Controls.Add(this.lblNoSIM);
             this.Controls.Add(this.lblPekerjaan);
@@ -357,8 +355,8 @@
         private System.Windows.Forms.Label lblPekerjaan;
         private System.Windows.Forms.Label lblNoSIM;
         private System.Windows.Forms.Label lblMasaBerlaku;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblGolongan;
         private System.Windows.Forms.Label lblRegional;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblJenisKelamin;
     }
 }

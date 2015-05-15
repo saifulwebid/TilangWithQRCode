@@ -21,21 +21,28 @@ namespace QRCodeWinForms
 
         private void frmInputDataSIM_Load(object sender, EventArgs e)
         {
-
+            List<string> jeniskelamin = new List<string> { "Laki-Laki", "Perempuan" };
+            cmbJenisKelamin.DataSource = jeniskelamin;
+            List<string> golSIM = new List<string> {"A", "B1", "B2", "C", "D", "A Umum", "B1 Umum", "B2 Umum" };
+            cmbGolongan.DataSource = golSIM;
+            List<string> pendidikan = new List<string> {"SD", "SMP", "SMA", "Perguruan Tinggi" };
+            cmbPendidikan.DataSource = pendidikan;
+            List<string> pekerjaan = new List<string> {"PNS", "SWASTA", "TNI", "POLRI", "PELAJAR", "MAHASISWA", "Lain-Lain" };
+            cmbPekerjaan.DataSource = pekerjaan;
         }
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
             additem.NomorSIM = txtNoSIM.Text;
-            additem.Golongan = txtGolongan.Text;
-            additem.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan);
+            additem.Golongan = cmbGolongan.Text;
+            additem.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
             additem.Pemilik.Nama = txtNama.Text;
-            additem.Pemilik.Pekerjaan = txtPekerjaan.Text;
-            additem.Pemilik.Pendidikan = txtPendidikan.Text;
+            additem.Pemilik.Pekerjaan = cmbPekerjaan.Text;
+            additem.Pemilik.Pendidikan = cmbPendidikan.Text;
             additem.Pemilik.TempatLahir = txtTempatLahir.Text;
             additem.Pemilik.Alamat = txtAlamat.Text;
-            additem.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir);
-            additem.Pemilik.JenisKelamin = txtJenisKelamin.Text;
+            additem.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
+            additem.Pemilik.JenisKelamin = cmbJenisKelamin.Text;
             additem.Pemilik.NomorKTP = txtNoKTP.Text;
         }
 
