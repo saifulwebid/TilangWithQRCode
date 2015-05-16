@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QRCoder;
 
 namespace QRCodeWinForms
 {
@@ -43,6 +44,19 @@ namespace QRCodeWinForms
             {
                 lblJenisKelamin.Text = "WANITA";
             }
+
+            GenerateQrCode();
+        }
+
+        void GenerateQrCode()
+        {
+            /*  Isi dari qrcode,Revisi lagi dibagian ini nanti */
+            string input = tampilSIM.Pemilik.NomorKTP + '#' + tampilSIM.NomorSIM + '#' + tampilSIM.Golongan + '#' + tampilSIM.Pemilik.Nama + '#' + tampilSIM.Pemilik.TempatLahir + '#' + tampilSIM.Pemilik.TanggalLahir + '#' + tampilSIM.Pemilik.Alamat + '#' + tampilSIM.Pemilik.Pekerjaan + '#' + tampilSIM.Pemilik.Pendidikan + '#' + tampilSIM.Pemilik.JenisKelamin;
+            
+            /*Generate qr code dari input ke picturebox*/
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeGenerator.QRCode qrCode = qrGenerator.CreateQrCode(input, QRCodeGenerator.ECCLevel.M); //ECC Level merupakan error correction
+            pictureBox2.BackgroundImage = qrCode.GetGraphic(10); //10 adalah besar pixel dari qr code
         }
     }
 }
