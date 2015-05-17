@@ -189,61 +189,70 @@ namespace QRCodeWinForms
 
         private void btnSimpanData_Click(object sender, EventArgs e)
         {
-            datpel.WaktuPelanggaran = Convert.ToDateTime(dtpTanggalLanggar.Text);
-            datpel.NomorRegister = txtNoRegPenyidikan.Text;
-            datpel.Kesatuan = txtKesatuan.Text;
-            datpel.NomorTilang = txtNoRegTilang.Text;
-            datpel.Pelanggar.Pemilik.Nama = txtNamaPelanggar.Text;
-            datpel.Pelanggar.Pemilik.Alamat = txtAlamatPelanggar.Text;
-            datpel.Pelanggar.Pemilik.Pekerjaan = cbxPekerjaan.Text;
-            datpel.Pelanggar.Pemilik.Pendidikan = cbxPendidikan.Text;
-            datpel.Pelanggar.Pemilik.TempatLahir = txtTempatPelanggar.Text;
-            datpel.Pelanggar.Pemilik.TanggalLahir = Convert.ToDateTime(txtTanggalLahir.Text);
-            datpel.Pelanggar.Golongan = txtGolSIM.Text;
-            datpel.Pelanggar.Pemilik.NomorKTP = txtNoKTPPelanggar.Text;
-            datpel.Pelanggar.NomorSIM = txtNoSIM.Text;
-            datpel.SATPAS = textBox4.Text;
-            datpel.NomorRegister = textBox12.Text;
-            datpel.SamsatKendaraan = textBox13.Text;
-            datpel.JenisKendaraan = textBox14.Text;
-            datpel.MerekKendaraan = textBox15.Text;
-            datpel.NOKA = textBox16.Text;
-            datpel.NOSIN = textBox17.Text;
-            datpel.LokasiPelanggaran = txtJalan.Text;
-            datpel.PatokanLokasi = txtPatokan.Text;
-            datpel.WilayahHukum = txtWilayahHukum.Text;
-            datpel.DisitaRanmor = tbxSKSita.Text;
-            datpel.DisitaDiterbitkanOleh = txtTerbitSK.Text;
-            datpel.DisitaMasaBerlaku = Convert.ToDateTime(dtpBerlakuSK.Text);
-            datpel.BarangSita2 = textBox1.Text;
-            datpel.PenerbitPemda = txtTerbitPemda.Text;
-            datpel.BerlakuBarang2 = Convert.ToDateTime(dtpBerlakuPemda.Text);
-            datpel.LokasiSidang = txtPengadilan.Text;
-           /* datpel.WaktuSidang.Day = Convert.ToDateTime(dateTimePicker2.day);
-            datpel.WaktuSidang.Date;
-            datpel.WaktuSidang.Hour;*/
-            datpel.NamaPenyidik = txtNamaPenyidik.Text;
-            datpel.PangkatPenyidik = txtPangkatPenyidik.Text;
-            datpel.KesatuanPenyidik = txtKesatuanPenyidik.Text;
-            datpel.TempatPengambilan = txtTempatAmbil.Text;
-            datpel.PasalPelanggaran.NomorPasal = txtPasal.Text;
-            datpel.PasalPelanggaran.DendaMaksimal = Convert.ToDouble(txtDenda.Text);
-            datpel.TempatSetorDenda = txtDenda.Text;
-            datpel.AngkaPinaltiPelanggaran = Convert.ToDouble(txtAngkaPinalti.Text);
-            if(rbtHadirSendiri.Checked == true)
+            try
             {
-                datpel.PernyataanHadirSendiri = true;
-            }
-            else
-            {
-                datpel.PernyataanHadirSendiri = false;
-            }
-            datpel.NamaWakil = txtNamaWali.Text;
-            datpel.UmurWakil = txtUmurWali.Text;
-            datpel.AlamatWakil = txtAlamatWali.Text;
-            datpel.BankSisaDenda = txtBankSisaDenda.Text;
+                datpel.WaktuPelanggaran = Convert.ToDateTime(dtpTanggalLanggar.Text);
+                datpel.NomorRegister = txtNoRegPenyidikan.Text;
+                datpel.Kesatuan = txtKesatuan.Text;
+                datpel.NomorTilang = txtNoRegTilang.Text;
+                datpel.Pelanggar.Pemilik.Nama = txtNamaPelanggar.Text;
+                datpel.Pelanggar.Pemilik.Alamat = txtAlamatPelanggar.Text;
+                datpel.Pelanggar.Pemilik.Pekerjaan = cbxPekerjaan.Text;
+                datpel.Pelanggar.Pemilik.Pendidikan = cbxPendidikan.Text;
+                datpel.Pelanggar.Pemilik.TempatLahir = txtTempatPelanggar.Text;
+                datpel.Pelanggar.Pemilik.TanggalLahir = Convert.ToDateTime(txtTanggalLahir.Text);
+                datpel.Pelanggar.Golongan = txtGolSIM.Text;
+                datpel.Pelanggar.Pemilik.NomorKTP = txtNoKTPPelanggar.Text;
+                datpel.Pelanggar.NomorSIM = txtNoSIM.Text;
+                datpel.SATPAS = textBox4.Text;
+                datpel.NomorRegister = textBox12.Text;
+                datpel.SamsatKendaraan = textBox13.Text;
+                datpel.JenisKendaraan = textBox14.Text;
+                datpel.MerekKendaraan = textBox15.Text;
+                datpel.NOKA = textBox16.Text;
+                datpel.NOSIN = textBox17.Text;
+                datpel.LokasiPelanggaran = txtJalan.Text;
+                datpel.PatokanLokasi = txtPatokan.Text;
+                datpel.WilayahHukum = txtWilayahHukum.Text;
+                datpel.DisitaRanmor = tbxSKSita.Text;
+                datpel.DisitaDiterbitkanOleh = txtTerbitSK.Text;
+                datpel.DisitaMasaBerlaku = Convert.ToDateTime(dtpBerlakuSK.Text);
+                datpel.BarangSita2 = textBox1.Text;
+                datpel.PenerbitPemda = txtTerbitPemda.Text;
+                datpel.BerlakuBarang2 = Convert.ToDateTime(dtpBerlakuPemda.Text);
+                datpel.LokasiSidang = txtPengadilan.Text;
+                /* datpel.WaktuSidang.Day = Convert.ToDateTime(dateTimePicker2.day);
+                 datpel.WaktuSidang.Date;
+                 datpel.WaktuSidang.Hour;*/
+                datpel.NamaPenyidik = txtNamaPenyidik.Text;
+                datpel.PangkatPenyidik = txtPangkatPenyidik.Text;
+                datpel.KesatuanPenyidik = txtKesatuanPenyidik.Text;
+                datpel.TempatPengambilan = txtTempatAmbil.Text;
+                datpel.PasalPelanggaran.NomorPasal = txtPasal.Text;
+                datpel.PasalPelanggaran.DendaMaksimal = Convert.ToDouble(txtDenda.Text);
+                datpel.TempatSetorDenda = txtDenda.Text;
+                datpel.AngkaPinaltiPelanggaran = Convert.ToDouble(txtAngkaPinalti.Text);
+                if (rbtHadirSendiri.Checked == true)
+                {
+                    datpel.PernyataanHadirSendiri = true;
+                }
+                else
+                {
+                    datpel.PernyataanHadirSendiri = false;
+                }
+                datpel.NamaWakil = txtNamaWali.Text;
+                datpel.UmurWakil = txtUmurWali.Text;
+                datpel.AlamatWakil = txtAlamatWali.Text;
+                datpel.BankSisaDenda = txtBankSisaDenda.Text;
 
-            datpel.Save(datpel);
+                datpel.Save(datpel);
+                MessageBox.Show("Penyimpanan Data Pelanggaran Berhasil!");
+
+            }
+            catch
+            {
+               MessageBox.Show("Penyimpanan Data Pelanggaran Gagal!");
+            } 
         }
     }
 }
