@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QRCodeWinForms
 {
-    public class SIM
+    public class SIM : Penduduk
     {
         private string _golongan;
         private string _nomorSIM;
@@ -60,6 +60,10 @@ namespace QRCodeWinForms
         public void Save(SIM dataSIM)
         {
             ExcelHelper.SaveDataSIM(dataSIM);
+        }
+        public List<DataPelanggaran> GetAllPelanggaran()
+        {
+            return ExcelHelper.GetAllPelanggaran();
         }
     }
 }

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace QRCodeWinForms
 {
-    public class DataPelanggaran
+    public class DataPelanggaran : SIM
     {
         private string _alamatWakil;
         private double _angkaPinaltiPelanggaran;
         private string _bankSisaDenda;
         private string _disitaDiterbitkanOleh;
         private DateTime _disitaMasaBerlaku;
-        private bool _disitaRanmor;
+        private string _disitaRanmor;
         private bool _disitaSIM;
         private bool _disitaSTCK;
         private bool _disitaSTNK;
@@ -49,6 +49,7 @@ namespace QRCodeWinForms
         private string _barangSita2;
         private string _pemdaPenerbit;
         private string _tempatSidang;
+        private string _tempatSetorDenda;
 
         public string AlamatWakil
         {
@@ -75,7 +76,7 @@ namespace QRCodeWinForms
             get { return _disitaMasaBerlaku; }
             set { _disitaMasaBerlaku = value; }
         }
-        public bool DisitaRanmor
+        public string DisitaRanmor
         {
             get { return _disitaRanmor; }
             set { _disitaRanmor = value; }
@@ -254,6 +255,11 @@ namespace QRCodeWinForms
         {
             get { return _berlakuPemda; }
             set { _berlakuPemda = value; }
+        }
+        public string TempatSetorDenda
+        {
+            get { return _tempatSetorDenda; }
+            set { _tempatSetorDenda = value; }
         }
 
         public void Save(DataPelanggaran dapel)
