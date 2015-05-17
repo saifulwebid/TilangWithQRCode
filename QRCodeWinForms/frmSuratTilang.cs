@@ -16,13 +16,13 @@ namespace QRCodeWinForms
     {
         string ResultString;
         DataPelanggaran datpel = new DataPelanggaran();
-        private string txtA;
         
         public frmSuratTilang()
         {
             InitializeComponent();
         }
 
+        
         private void label6_Click(object sender, EventArgs e)
         {
 
@@ -94,6 +94,15 @@ namespace QRCodeWinForms
             cbxPendidikan.Items.Add("SLTP");
             cbxPendidikan.Items.Add("SLTA");
             cbxPendidikan.Items.Add("PT");
+
+            dtpJam.ShowUpDown = true;
+            dtpJam.CustomFormat = "HH:mm";
+            dtpJam.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+
+            dtpJamLanggar.ShowUpDown = true;
+            dtpJamLanggar.CustomFormat = "HH:mm";
+            dtpJamLanggar.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+
         }
 
         private void TampilData()
@@ -191,7 +200,7 @@ namespace QRCodeWinForms
         {
             try
             {
-                datpel.WaktuPelanggaran = Convert.ToDateTime(dtpTanggalLanggar.Text);
+                datpel.WaktuPelanggaran = Convert.ToDateTime(dtpWaktuLanggar.Text);
                 datpel.NomorRegister = txtNoRegPenyidikan.Text;
                 datpel.Kesatuan = txtKesatuan.Text;
                 datpel.NomorTilang = txtNoRegTilang.Text;
@@ -221,9 +230,7 @@ namespace QRCodeWinForms
                 datpel.PenerbitPemda = txtTerbitPemda.Text;
                 datpel.BerlakuBarang2 = Convert.ToDateTime(dtpBerlakuPemda.Text);
                 datpel.LokasiSidang = txtPengadilan.Text;
-                /* datpel.WaktuSidang.Day = Convert.ToDateTime(dateTimePicker2.day);
-                 datpel.WaktuSidang.Date;
-                 datpel.WaktuSidang.Hour;*/
+                datpel.WaktuSidang = Convert.ToDateTime(dateTimePicker2.Text);
                 datpel.NamaPenyidik = txtNamaPenyidik.Text;
                 datpel.PangkatPenyidik = txtPangkatPenyidik.Text;
                 datpel.KesatuanPenyidik = txtKesatuanPenyidik.Text;
@@ -253,6 +260,11 @@ namespace QRCodeWinForms
             {
                MessageBox.Show("Penyimpanan Data Pelanggaran Gagal!");
             } 
+        }
+
+        private void dtpJam_ValueChanged(object sender, EventArgs e)
+        {
+             
         }
     }
 }
