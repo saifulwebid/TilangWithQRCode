@@ -213,7 +213,7 @@ namespace QRCodeWinForms
                                 int rowNumber = currentWorksheet.Dimension.End.Row;
                                 currentWorksheet.Cells[rowNumber, 1].Value = dapel.WaktuPelanggaran;
                                 currentWorksheet.Cells[rowNumber, 2].Value = dapel.NomorRegister;
-                                currentWorksheet.Cells[rowNumber, 3].Value = dapel.KesatuanPenyidik;
+                                currentWorksheet.Cells[rowNumber, 3].Value = dapel.Kesatuan;
                                 currentWorksheet.Cells[rowNumber, 4].Value = dapel.NomorTilang;
                                 currentWorksheet.Cells[rowNumber, 5].Value = dapel.Pelanggar.Pemilik.Nama;
                                 currentWorksheet.Cells[rowNumber, 6].Value = dapel.Pelanggar.Pemilik.JenisKelamin;
@@ -238,22 +238,26 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 25].Value = dapel.DisitaRanmor;
                                 currentWorksheet.Cells[rowNumber, 26].Value = dapel.DisitaDiterbitkanOleh;
                                 currentWorksheet.Cells[rowNumber, 27].Value = dapel.DisitaMasaBerlaku;
-                                currentWorksheet.Cells[rowNumber, 28].Value = dapel.WaktuSidang.Day;
-                                currentWorksheet.Cells[rowNumber, 29].Value = dapel.WaktuSidang.Date;
-                                currentWorksheet.Cells[rowNumber, 30].Value = dapel.WaktuSidang.Hour;
-                                currentWorksheet.Cells[rowNumber, 31].Value = dapel.NamaPenyidik;
-                                currentWorksheet.Cells[rowNumber, 32].Value = dapel.PangkatPenyidik;
-                                currentWorksheet.Cells[rowNumber, 33].Value = dapel.KesatuanPenyidik;
-                                currentWorksheet.Cells[rowNumber, 34].Value = dapel.TempatPengambilan;
-                                currentWorksheet.Cells[rowNumber, 35].Value = dapel.PasalPelanggaran.NomorPasal;
-                                currentWorksheet.Cells[rowNumber, 36].Value = dapel.PasalPelanggaran.DendaMaksimal;
-                                currentWorksheet.Cells[rowNumber, 37].Value = dapel.JumlahUangTitipan;
-                                currentWorksheet.Cells[rowNumber, 38].Value = dapel.AngkaPinaltiPelanggaran;
-                                currentWorksheet.Cells[rowNumber, 39].Value = dapel.PernyataanHadirSendiri;
-                                currentWorksheet.Cells[rowNumber, 40].Value = dapel.NamaWakil;
-                                currentWorksheet.Cells[rowNumber, 41].Value = dapel.UmurWakil;
-                                currentWorksheet.Cells[rowNumber, 42].Value = dapel.AlamatWakil;
-                                currentWorksheet.Cells[rowNumber, 43].Value = dapel.BankSisaDenda;
+                                currentWorksheet.Cells[rowNumber, 28].Value = dapel.BarangSita2;
+                                currentWorksheet.Cells[rowNumber, 29].Value = dapel.PenerbitPemda;
+                                currentWorksheet.Cells[rowNumber, 30].Value = dapel.BerlakuBarang2;
+                                currentWorksheet.Cells[rowNumber, 31].Value = dapel.TempatSidang;
+                                currentWorksheet.Cells[rowNumber, 32].Value = dapel.WaktuSidang.Day;
+                                currentWorksheet.Cells[rowNumber, 33].Value = dapel.WaktuSidang.Date;
+                                currentWorksheet.Cells[rowNumber, 34].Value = dapel.WaktuSidang.Hour;
+                                currentWorksheet.Cells[rowNumber, 35].Value = dapel.NamaPenyidik;
+                                currentWorksheet.Cells[rowNumber, 36].Value = dapel.PangkatPenyidik;
+                                currentWorksheet.Cells[rowNumber, 37].Value = dapel.KesatuanPenyidik;
+                                currentWorksheet.Cells[rowNumber, 38].Value = dapel.TempatPengambilan;
+                                currentWorksheet.Cells[rowNumber, 39].Value = dapel.PasalPelanggaran.NomorPasal;
+                                currentWorksheet.Cells[rowNumber, 40].Value = dapel.PasalPelanggaran.DendaMaksimal;
+                                currentWorksheet.Cells[rowNumber, 41].Value = dapel.JumlahUangTitipan;
+                                currentWorksheet.Cells[rowNumber, 42].Value = dapel.AngkaPinaltiPelanggaran;
+                                currentWorksheet.Cells[rowNumber, 43].Value = dapel.PernyataanHadirSendiri;
+                                currentWorksheet.Cells[rowNumber, 44].Value = dapel.NamaWakil;
+                                currentWorksheet.Cells[rowNumber, 45].Value = dapel.UmurWakil;
+                                currentWorksheet.Cells[rowNumber, 46].Value = dapel.AlamatWakil;
+                                currentWorksheet.Cells[rowNumber, 47].Value = dapel.BankSisaDenda;
                             }
                         }
                     }

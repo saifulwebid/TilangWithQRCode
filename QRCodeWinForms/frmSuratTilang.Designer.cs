@@ -62,6 +62,7 @@
             this.cbxPendidikan = new System.Windows.Forms.ComboBox();
             this.cbxPekerjaan = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.rbt1jt = new System.Windows.Forms.RadioButton();
             this.txtAngkaPinalti = new System.Windows.Forms.TextBox();
             this.txtBankSetor = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
@@ -137,16 +138,12 @@
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.txtNamaTeller = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
-            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.txtBankSisaDenda = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
-            this.cbxSIM = new System.Windows.Forms.CheckBox();
-            this.cbxRanmor = new System.Windows.Forms.CheckBox();
-            this.cbxSTCK = new System.Windows.Forms.CheckBox();
-            this.cbxSTNK = new System.Windows.Forms.CheckBox();
             this.label39 = new System.Windows.Forms.Label();
             this.txtTerbitSK = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
@@ -157,8 +154,6 @@
             this.label41 = new System.Windows.Forms.Label();
             this.txtTerbitPemda = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
-            this.cbxLainnya = new System.Windows.Forms.CheckBox();
-            this.cbxBukuUji = new System.Windows.Forms.CheckBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.txtTempatAmbil = new System.Windows.Forms.TextBox();
             this.txtKesatuanPenyidik = new System.Windows.Forms.TextBox();
@@ -180,7 +175,10 @@
             this.label43 = new System.Windows.Forms.Label();
             this.btnScanQRCode = new System.Windows.Forms.Button();
             this.btnSimpanData = new System.Windows.Forms.Button();
-            this.rbt1jt = new System.Windows.Forms.RadioButton();
+            this.label74 = new System.Windows.Forms.Label();
+            this.tbxSKSita = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label75 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -542,6 +540,17 @@
             this.groupBox4.Size = new System.Drawing.Size(416, 168);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
+            // 
+            // rbt1jt
+            // 
+            this.rbt1jt.AutoSize = true;
+            this.rbt1jt.Location = new System.Drawing.Point(309, 80);
+            this.rbt1jt.Name = "rbt1jt";
+            this.rbt1jt.Size = new System.Drawing.Size(105, 17);
+            this.rbt1jt.TabIndex = 17;
+            this.rbt1jt.TabStop = true;
+            this.rbt1jt.Text = "Rp 1.000.000,00";
+            this.rbt1jt.UseVisualStyleBackColor = true;
             // 
             // txtAngkaPinalti
             // 
@@ -1252,7 +1261,7 @@
             this.groupBox8.BackColor = System.Drawing.Color.White;
             this.groupBox8.Controls.Add(this.txtNamaTeller);
             this.groupBox8.Controls.Add(this.label68);
-            this.groupBox8.Controls.Add(this.textBox41);
+            this.groupBox8.Controls.Add(this.txtBankSisaDenda);
             this.groupBox8.Controls.Add(this.label28);
             this.groupBox8.Controls.Add(this.label64);
             this.groupBox8.Controls.Add(this.label63);
@@ -1284,13 +1293,13 @@
             this.label68.TabIndex = 19;
             this.label68.Text = "Cap Bank";
             // 
-            // textBox41
+            // txtBankSisaDenda
             // 
-            this.textBox41.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox41.Location = new System.Drawing.Point(127, 55);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(100, 20);
-            this.textBox41.TabIndex = 11;
+            this.txtBankSisaDenda.BackColor = System.Drawing.SystemColors.Control;
+            this.txtBankSisaDenda.Location = new System.Drawing.Point(127, 55);
+            this.txtBankSisaDenda.Name = "txtBankSisaDenda";
+            this.txtBankSisaDenda.Size = new System.Drawing.Size(100, 20);
+            this.txtBankSisaDenda.TabIndex = 11;
             // 
             // label64
             // 
@@ -1339,50 +1348,10 @@
             this.label60.TabIndex = 6;
             this.label60.Text = "TANDA TANGAN";
             // 
-            // cbxSIM
-            // 
-            this.cbxSIM.AutoSize = true;
-            this.cbxSIM.Location = new System.Drawing.Point(14, 22);
-            this.cbxSIM.Name = "cbxSIM";
-            this.cbxSIM.Size = new System.Drawing.Size(45, 17);
-            this.cbxSIM.TabIndex = 0;
-            this.cbxSIM.Text = "SIM";
-            this.cbxSIM.UseVisualStyleBackColor = true;
-            // 
-            // cbxRanmor
-            // 
-            this.cbxRanmor.AutoSize = true;
-            this.cbxRanmor.Location = new System.Drawing.Point(70, 22);
-            this.cbxRanmor.Name = "cbxRanmor";
-            this.cbxRanmor.Size = new System.Drawing.Size(74, 17);
-            this.cbxRanmor.TabIndex = 1;
-            this.cbxRanmor.Text = "RANMOR";
-            this.cbxRanmor.UseVisualStyleBackColor = true;
-            // 
-            // cbxSTCK
-            // 
-            this.cbxSTCK.AutoSize = true;
-            this.cbxSTCK.Location = new System.Drawing.Point(14, 60);
-            this.cbxSTCK.Name = "cbxSTCK";
-            this.cbxSTCK.Size = new System.Drawing.Size(54, 17);
-            this.cbxSTCK.TabIndex = 2;
-            this.cbxSTCK.Text = "STCK";
-            this.cbxSTCK.UseVisualStyleBackColor = true;
-            // 
-            // cbxSTNK
-            // 
-            this.cbxSTNK.AutoSize = true;
-            this.cbxSTNK.Location = new System.Drawing.Point(70, 60);
-            this.cbxSTNK.Name = "cbxSTNK";
-            this.cbxSTNK.Size = new System.Drawing.Size(55, 17);
-            this.cbxSTNK.TabIndex = 3;
-            this.cbxSTNK.Text = "STNK";
-            this.cbxSTNK.UseVisualStyleBackColor = true;
-            // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(173, 10);
+            this.label39.Location = new System.Drawing.Point(196, 10);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(111, 13);
             this.label39.TabIndex = 4;
@@ -1391,7 +1360,7 @@
             // txtTerbitSK
             // 
             this.txtTerbitSK.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTerbitSK.Location = new System.Drawing.Point(176, 26);
+            this.txtTerbitSK.Location = new System.Drawing.Point(199, 26);
             this.txtTerbitSK.Name = "txtTerbitSK";
             this.txtTerbitSK.Size = new System.Drawing.Size(100, 20);
             this.txtTerbitSK.TabIndex = 5;
@@ -1399,7 +1368,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(182, 52);
+            this.label40.Location = new System.Drawing.Point(110, 52);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(90, 13);
             this.label40.TabIndex = 7;
@@ -1408,14 +1377,12 @@
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.Color.White;
+            this.groupBox9.Controls.Add(this.tbxSKSita);
+            this.groupBox9.Controls.Add(this.label74);
             this.groupBox9.Controls.Add(this.dtpBerlakuSK);
             this.groupBox9.Controls.Add(this.label40);
             this.groupBox9.Controls.Add(this.txtTerbitSK);
             this.groupBox9.Controls.Add(this.label39);
-            this.groupBox9.Controls.Add(this.cbxSTNK);
-            this.groupBox9.Controls.Add(this.cbxSTCK);
-            this.groupBox9.Controls.Add(this.cbxRanmor);
-            this.groupBox9.Controls.Add(this.cbxSIM);
             this.groupBox9.Location = new System.Drawing.Point(2, 505);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(318, 94);
@@ -1424,19 +1391,19 @@
             // 
             // dtpBerlakuSK
             // 
-            this.dtpBerlakuSK.Location = new System.Drawing.Point(131, 68);
+            this.dtpBerlakuSK.Location = new System.Drawing.Point(59, 68);
             this.dtpBerlakuSK.Name = "dtpBerlakuSK";
             this.dtpBerlakuSK.Size = new System.Drawing.Size(186, 20);
             this.dtpBerlakuSK.TabIndex = 26;
             // 
             // groupBox10
             // 
+            this.groupBox10.Controls.Add(this.textBox1);
+            this.groupBox10.Controls.Add(this.label75);
             this.groupBox10.Controls.Add(this.dtpBerlakuPemda);
             this.groupBox10.Controls.Add(this.label41);
             this.groupBox10.Controls.Add(this.txtTerbitPemda);
             this.groupBox10.Controls.Add(this.label42);
-            this.groupBox10.Controls.Add(this.cbxLainnya);
-            this.groupBox10.Controls.Add(this.cbxBukuUji);
             this.groupBox10.Location = new System.Drawing.Point(322, 505);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(324, 94);
@@ -1445,7 +1412,7 @@
             // 
             // dtpBerlakuPemda
             // 
-            this.dtpBerlakuPemda.Location = new System.Drawing.Point(132, 68);
+            this.dtpBerlakuPemda.Location = new System.Drawing.Point(67, 68);
             this.dtpBerlakuPemda.Name = "dtpBerlakuPemda";
             this.dtpBerlakuPemda.Size = new System.Drawing.Size(186, 20);
             this.dtpBerlakuPemda.TabIndex = 25;
@@ -1453,7 +1420,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(161, 52);
+            this.label41.Location = new System.Drawing.Point(96, 52);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(113, 13);
             this.label41.TabIndex = 11;
@@ -1462,7 +1429,7 @@
             // txtTerbitPemda
             // 
             this.txtTerbitPemda.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTerbitPemda.Location = new System.Drawing.Point(156, 25);
+            this.txtTerbitPemda.Location = new System.Drawing.Point(170, 26);
             this.txtTerbitPemda.Name = "txtTerbitPemda";
             this.txtTerbitPemda.Size = new System.Drawing.Size(140, 20);
             this.txtTerbitPemda.TabIndex = 9;
@@ -1470,31 +1437,11 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(153, 10);
+            this.label42.Location = new System.Drawing.Point(167, 11);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(152, 13);
             this.label42.TabIndex = 8;
             this.label42.Text = "DITERBITKAN OLEH PEMDA";
-            // 
-            // cbxLainnya
-            // 
-            this.cbxLainnya.AutoSize = true;
-            this.cbxLainnya.Location = new System.Drawing.Point(15, 65);
-            this.cbxLainnya.Name = "cbxLainnya";
-            this.cbxLainnya.Size = new System.Drawing.Size(72, 17);
-            this.cbxLainnya.TabIndex = 1;
-            this.cbxLainnya.Text = "LAINNYA";
-            this.cbxLainnya.UseVisualStyleBackColor = true;
-            // 
-            // cbxBukuUji
-            // 
-            this.cbxBukuUji.AutoSize = true;
-            this.cbxBukuUji.Location = new System.Drawing.Point(12, 20);
-            this.cbxBukuUji.Name = "cbxBukuUji";
-            this.cbxBukuUji.Size = new System.Drawing.Size(75, 30);
-            this.cbxBukuUji.TabIndex = 0;
-            this.cbxBukuUji.Text = "BUKU UJI\r\nNO.";
-            this.cbxBukuUji.UseVisualStyleBackColor = true;
             // 
             // groupBox11
             // 
@@ -1695,24 +1642,48 @@
             this.btnSimpanData.TabIndex = 15;
             this.btnSimpanData.Text = "Simpan Data";
             this.btnSimpanData.UseVisualStyleBackColor = true;
+            this.btnSimpanData.Click += new System.EventHandler(this.btnSimpanData_Click);
             // 
-            // rbt1jt
+            // label74
             // 
-            this.rbt1jt.AutoSize = true;
-            this.rbt1jt.Location = new System.Drawing.Point(309, 80);
-            this.rbt1jt.Name = "rbt1jt";
-            this.rbt1jt.Size = new System.Drawing.Size(105, 17);
-            this.rbt1jt.TabIndex = 17;
-            this.rbt1jt.TabStop = true;
-            this.rbt1jt.Text = "Rp 1.000.000,00";
-            this.rbt1jt.UseVisualStyleBackColor = true;
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(42, 10);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(92, 13);
+            this.label74.TabIndex = 27;
+            this.label74.Text = "SK YANG DISITA";
+            // 
+            // tbxSKSita
+            // 
+            this.tbxSKSita.BackColor = System.Drawing.SystemColors.Control;
+            this.tbxSKSita.Location = new System.Drawing.Point(34, 26);
+            this.tbxSKSita.Name = "tbxSKSita";
+            this.tbxSKSita.Size = new System.Drawing.Size(100, 20);
+            this.tbxSKSita.TabIndex = 28;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.Location = new System.Drawing.Point(35, 26);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 30;
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(22, 11);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(123, 13);
+            this.label75.TabIndex = 29;
+            this.label75.Text = "BARANG YANG DISITA";
             // 
             // frmSuratTilang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1161, 736);
+            this.ClientSize = new System.Drawing.Size(1161, 741);
             this.Controls.Add(this.btnSimpanData);
             this.Controls.Add(this.btnScanQRCode);
             this.Controls.Add(this.groupBox11);
@@ -1830,10 +1801,6 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.CheckBox cbxSIM;
-        private System.Windows.Forms.CheckBox cbxRanmor;
-        private System.Windows.Forms.CheckBox cbxSTCK;
-        private System.Windows.Forms.CheckBox cbxSTNK;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.TextBox txtTerbitSK;
         private System.Windows.Forms.Label label40;
@@ -1842,8 +1809,6 @@
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.TextBox txtTerbitPemda;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.CheckBox cbxLainnya;
-        private System.Windows.Forms.CheckBox cbxBukuUji;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label43;
@@ -1889,7 +1854,7 @@
         private System.Windows.Forms.TextBox txtNamaWali;
         private System.Windows.Forms.TextBox txtNamaTeller;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.TextBox textBox41;
+        private System.Windows.Forms.TextBox txtBankSisaDenda;
         private System.Windows.Forms.TextBox txtTempatAmbil;
         private System.Windows.Forms.TextBox txtKesatuanPenyidik;
         private System.Windows.Forms.TextBox txtPangkatPenyidik;
@@ -1909,6 +1874,10 @@
         private System.Windows.Forms.ComboBox cbxPendidikan;
         private System.Windows.Forms.TextBox txtTanggalLahir;
         private System.Windows.Forms.RadioButton rbt1jt;
+        private System.Windows.Forms.TextBox tbxSKSita;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label75;
 
 
 

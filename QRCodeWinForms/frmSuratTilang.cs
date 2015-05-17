@@ -15,6 +15,8 @@ namespace QRCodeWinForms
     public partial class frmSuratTilang : Form
     {
         string ResultString;
+        DataPelanggaran datpel = new DataPelanggaran();
+        private string txtA;
         
         public frmSuratTilang()
         {
@@ -117,9 +119,12 @@ namespace QRCodeWinForms
                 if (Split[9] == "L")
                 {
                     rbtLK.Checked = true;
+                    datpel.Pelanggar.Pemilik.JenisKelamin = rbtLK.Text;
                 }
                 else
-                { rbtPR.Checked = true; }
+                { rbtPR.Checked = true;
+                datpel.Pelanggar.Pemilik.JenisKelamin = rbtPR.Text;
+                }
                 //kolom pekerjaan pelanggar
                switch(Split[7])
                 {
@@ -180,6 +185,59 @@ namespace QRCodeWinForms
                 return currentdate.Year - ttl.Year;
             }
 
+        }
+
+        private void btnSimpanData_Click(object sender, EventArgs e)
+        {
+            datpel.WaktuPelanggaran = Convert.ToDateTime(dtpTanggalLanggar.Text);
+            datpel.NomorRegister = txtNoRegPenyidikan.Text;
+            datpel.Kesatuan = txtKesatuan.Text;
+            datpel.NomorTilang = txtNoRegTilang.Text;
+            datpel.Pelanggar.Pemilik.Nama = txtNamaPelanggar.Text;
+            //datpel.Pelanggar.Pemilik.JenisKelamin = rbtLK.Che;
+            datpel.Pelanggar.Pemilik.Alamat = txtAlamatPelanggar.Text;
+            datpel.Pelanggar.Pemilik.Pekerjaan = cbxPekerjaan.Text;
+            datpel.Pelanggar.Pemilik.Pendidikan = cbxPendidikan.Text;
+            datpel.Pelanggar.Pemilik.TempatLahir = txtTempatPelanggar.Text;
+            datpel.Pelanggar.Pemilik.TanggalLahir = Convert.ToDateTime(txtTanggalLahir.Text);
+            datpel.Pelanggar.Golongan = txtGolSIM.Text;
+            datpel.Pelanggar.Pemilik.NomorKTP = txtNoKTPPelanggar.Text;
+            datpel.Pelanggar.NomorSIM = txtNoSIM.Text;
+            /*datpel.SATPAS = txt;
+            datpel.NomorRegister =;
+            datpel.SamsatKendaraan;
+            datpel.JenisKendaraan;
+            datpel.MerekKendaraan;
+            datpel.NOKA;
+            datpel.NOSIN;
+            datpel.LokasiPelanggaran;
+            datpel.PatokanLokasi;
+            datpel.WilayahHukum;
+            datpel.DisitaRanmor;
+            datpel.DisitaDiterbitkanOleh;
+            datpel.DisitaMasaBerlaku;
+            datpel.BarangSita2;
+            datpel.PenerbitPemda;
+            datpel.BerlakuBarang2;
+            datpel.TempatSidang;
+            datpel.WaktuSidang.Day;
+            datpel.WaktuSidang.Date;
+            datpel.WaktuSidang.Hour;
+            datpel.NamaPenyidik;
+            datpel.PangkatPenyidik;
+            datpel.KesatuanPenyidik;
+            datpel.TempatPengambilan;
+            datpel.PasalPelanggaran.NomorPasal;
+            datpel.PasalPelanggaran.DendaMaksimal;
+            datpel.JumlahUangTitipan;
+            datpel.AngkaPinaltiPelanggaran;
+            datpel.PernyataanHadirSendiri;
+            datpel.NamaWakil;
+            datpel.UmurWakil;
+            datpel.AlamatWakil;
+            datpel.BankSisaDenda;*/
+            
+            
         }
     }
 }

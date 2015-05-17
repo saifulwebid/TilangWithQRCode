@@ -12,7 +12,7 @@ namespace QRCodeWinForms
         private double _angkaPinaltiPelanggaran;
         private string _bankSisaDenda;
         private string _disitaDiterbitkanOleh;
-        private int _disitaMasaBerlaku;
+        private DateTime _disitaMasaBerlaku;
         private bool _disitaRanmor;
         private bool _disitaSIM;
         private bool _disitaSTCK;
@@ -45,6 +45,10 @@ namespace QRCodeWinForms
         private string _pangkatPenyidik;
         private string _kesatuanPenyidik;
         private string _tempatPengambilan;
+        private DateTime _berlakuPemda;
+        private string _barangSita2;
+        private string _pemdaPenerbit;
+        private string _tempatSidang;
 
         public string AlamatWakil
         {
@@ -66,7 +70,7 @@ namespace QRCodeWinForms
             get { return _disitaDiterbitkanOleh; }
             set { _disitaDiterbitkanOleh = value; }
         }
-        public int DisitaMasaBerlaku
+        public DateTime DisitaMasaBerlaku
         {
             get { return _disitaMasaBerlaku; }
             set { _disitaMasaBerlaku = value; }
@@ -211,6 +215,11 @@ namespace QRCodeWinForms
             get { return _tempatPengambilan; }
             set { _tempatPengambilan = value; }
         }
+        public string TempatSidang
+        {
+            get { return _tempatSidang; }
+            set { _tempatSidang = value; }
+        }
         public string UmurWakil
         {
             get { return _umurWakil; }
@@ -231,6 +240,22 @@ namespace QRCodeWinForms
             get { return _wilayahHukum; }
             set { _wilayahHukum = value; }
         }
+        public string BarangSita2
+        {
+            get { return _barangSita2; }
+            set { _barangSita2 = value; }
+        }
+        public string PenerbitPemda
+        {
+            get { return _pemdaPenerbit; }
+            set { _pemdaPenerbit = value; }
+        }
+        public DateTime BerlakuBarang2
+        {
+            get { return _berlakuPemda; }
+            set { _berlakuPemda = value; }
+        }
+
         public void Save(DataPelanggaran dapel)
         {
             ExcelHelper.SaveDataPelanggaran(dapel);
