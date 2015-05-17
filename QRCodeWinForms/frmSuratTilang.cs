@@ -174,7 +174,7 @@ namespace QRCodeWinForms
         {
             DateTime currentdate = new DateTime();
             currentdate = DateTime.Today;
-            int age;
+           
 
             if (currentdate.Month >= ttl.Month && currentdate.Date >= ttl.Date)
             {
@@ -194,7 +194,6 @@ namespace QRCodeWinForms
             datpel.Kesatuan = txtKesatuan.Text;
             datpel.NomorTilang = txtNoRegTilang.Text;
             datpel.Pelanggar.Pemilik.Nama = txtNamaPelanggar.Text;
-            //datpel.Pelanggar.Pemilik.JenisKelamin = rbtLK.Che;
             datpel.Pelanggar.Pemilik.Alamat = txtAlamatPelanggar.Text;
             datpel.Pelanggar.Pemilik.Pekerjaan = cbxPekerjaan.Text;
             datpel.Pelanggar.Pemilik.Pendidikan = cbxPendidikan.Text;
@@ -203,41 +202,48 @@ namespace QRCodeWinForms
             datpel.Pelanggar.Golongan = txtGolSIM.Text;
             datpel.Pelanggar.Pemilik.NomorKTP = txtNoKTPPelanggar.Text;
             datpel.Pelanggar.NomorSIM = txtNoSIM.Text;
-            /*datpel.SATPAS = txt;
-            datpel.NomorRegister =;
-            datpel.SamsatKendaraan;
-            datpel.JenisKendaraan;
-            datpel.MerekKendaraan;
-            datpel.NOKA;
-            datpel.NOSIN;
-            datpel.LokasiPelanggaran;
-            datpel.PatokanLokasi;
-            datpel.WilayahHukum;
-            datpel.DisitaRanmor;
-            datpel.DisitaDiterbitkanOleh;
-            datpel.DisitaMasaBerlaku;
-            datpel.BarangSita2;
-            datpel.PenerbitPemda;
-            datpel.BerlakuBarang2;
-            datpel.TempatSidang;
-            datpel.WaktuSidang.Day;
+            datpel.SATPAS = textBox4.Text;
+            datpel.NomorRegister = textBox12.Text;
+            datpel.SamsatKendaraan = textBox13.Text;
+            datpel.JenisKendaraan = textBox14.Text;
+            datpel.MerekKendaraan = textBox15.Text;
+            datpel.NOKA = textBox16.Text;
+            datpel.NOSIN = textBox17.Text;
+            datpel.LokasiPelanggaran = txtJalan.Text;
+            datpel.PatokanLokasi = txtPatokan.Text;
+            datpel.WilayahHukum = txtWilayahHukum.Text;
+            datpel.DisitaRanmor = tbxSKSita.Text;
+            datpel.DisitaDiterbitkanOleh = txtTerbitSK.Text;
+            datpel.DisitaMasaBerlaku = Convert.ToDateTime(dtpBerlakuSK.Text);
+            datpel.BarangSita2 = textBox1.Text;
+            datpel.PenerbitPemda = txtTerbitPemda.Text;
+            datpel.BerlakuBarang2 = Convert.ToDateTime(dtpBerlakuPemda.Text);
+            datpel.LokasiSidang = txtPengadilan.Text;
+           /* datpel.WaktuSidang.Day = Convert.ToDateTime(dateTimePicker2.day);
             datpel.WaktuSidang.Date;
-            datpel.WaktuSidang.Hour;
-            datpel.NamaPenyidik;
-            datpel.PangkatPenyidik;
-            datpel.KesatuanPenyidik;
-            datpel.TempatPengambilan;
-            datpel.PasalPelanggaran.NomorPasal;
-            datpel.PasalPelanggaran.DendaMaksimal;
-            datpel.JumlahUangTitipan;
-            datpel.AngkaPinaltiPelanggaran;
-            datpel.PernyataanHadirSendiri;
-            datpel.NamaWakil;
-            datpel.UmurWakil;
-            datpel.AlamatWakil;
-            datpel.BankSisaDenda;*/
-            
-            
+            datpel.WaktuSidang.Hour;*/
+            datpel.NamaPenyidik = txtNamaPenyidik.Text;
+            datpel.PangkatPenyidik = txtPangkatPenyidik.Text;
+            datpel.KesatuanPenyidik = txtKesatuanPenyidik.Text;
+            datpel.TempatPengambilan = txtTempatAmbil.Text;
+            datpel.PasalPelanggaran.NomorPasal = txtPasal.Text;
+            datpel.PasalPelanggaran.DendaMaksimal = Convert.ToDouble(txtDenda.Text);
+            datpel.TempatSetorDenda = txtDenda.Text;
+            datpel.AngkaPinaltiPelanggaran = Convert.ToDouble(txtAngkaPinalti.Text);
+            if(rbtHadirSendiri.Checked == true)
+            {
+                datpel.PernyataanHadirSendiri = true;
+            }
+            else
+            {
+                datpel.PernyataanHadirSendiri = false;
+            }
+            datpel.NamaWakil = txtNamaWali.Text;
+            datpel.UmurWakil = txtUmurWali.Text;
+            datpel.AlamatWakil = txtAlamatWali.Text;
+            datpel.BankSisaDenda = txtBankSisaDenda.Text;
+
+            datpel.Save(datpel);
         }
     }
 }

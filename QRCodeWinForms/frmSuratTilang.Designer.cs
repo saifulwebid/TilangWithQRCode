@@ -62,15 +62,10 @@
             this.cbxPendidikan = new System.Windows.Forms.ComboBox();
             this.cbxPekerjaan = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.rbt1jt = new System.Windows.Forms.RadioButton();
             this.txtAngkaPinalti = new System.Windows.Forms.TextBox();
             this.txtBankSetor = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.rbtDenda750K = new System.Windows.Forms.RadioButton();
-            this.rbtDenda250K = new System.Windows.Forms.RadioButton();
-            this.rbtDenda500K = new System.Windows.Forms.RadioButton();
-            this.rbtDenda100K = new System.Windows.Forms.RadioButton();
             this.label51 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
@@ -148,8 +143,12 @@
             this.txtTerbitSK = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.tbxSKSita = new System.Windows.Forms.TextBox();
+            this.label74 = new System.Windows.Forms.Label();
             this.dtpBerlakuSK = new System.Windows.Forms.DateTimePicker();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label75 = new System.Windows.Forms.Label();
             this.dtpBerlakuPemda = new System.Windows.Forms.DateTimePicker();
             this.label41 = new System.Windows.Forms.Label();
             this.txtTerbitPemda = new System.Windows.Forms.TextBox();
@@ -175,10 +174,9 @@
             this.label43 = new System.Windows.Forms.Label();
             this.btnScanQRCode = new System.Windows.Forms.Button();
             this.btnSimpanData = new System.Windows.Forms.Button();
-            this.label74 = new System.Windows.Forms.Label();
-            this.tbxSKSita = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label75 = new System.Windows.Forms.Label();
+            this.txtDenda = new System.Windows.Forms.TextBox();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -520,15 +518,13 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.White;
-            this.groupBox4.Controls.Add(this.rbt1jt);
+            this.groupBox4.Controls.Add(this.label77);
+            this.groupBox4.Controls.Add(this.label76);
+            this.groupBox4.Controls.Add(this.txtDenda);
             this.groupBox4.Controls.Add(this.txtAngkaPinalti);
             this.groupBox4.Controls.Add(this.txtBankSetor);
             this.groupBox4.Controls.Add(this.label53);
             this.groupBox4.Controls.Add(this.label52);
-            this.groupBox4.Controls.Add(this.rbtDenda750K);
-            this.groupBox4.Controls.Add(this.rbtDenda250K);
-            this.groupBox4.Controls.Add(this.rbtDenda500K);
-            this.groupBox4.Controls.Add(this.rbtDenda100K);
             this.groupBox4.Controls.Add(this.label51);
             this.groupBox4.Controls.Add(this.label50);
             this.groupBox4.Controls.Add(this.label49);
@@ -540,17 +536,6 @@
             this.groupBox4.Size = new System.Drawing.Size(416, 168);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
-            // 
-            // rbt1jt
-            // 
-            this.rbt1jt.AutoSize = true;
-            this.rbt1jt.Location = new System.Drawing.Point(309, 80);
-            this.rbt1jt.Name = "rbt1jt";
-            this.rbt1jt.Size = new System.Drawing.Size(105, 17);
-            this.rbt1jt.TabIndex = 17;
-            this.rbt1jt.TabStop = true;
-            this.rbt1jt.Text = "Rp 1.000.000,00";
-            this.rbt1jt.UseVisualStyleBackColor = true;
             // 
             // txtAngkaPinalti
             // 
@@ -586,55 +571,10 @@
             this.label52.TabIndex = 13;
             this.label52.Text = "DISETORKAN MELALUI BANK:";
             // 
-            // rbtDenda750K
-            // 
-            this.rbtDenda750K.AutoSize = true;
-            this.rbtDenda750K.Location = new System.Drawing.Point(212, 98);
-            this.rbtDenda750K.Name = "rbtDenda750K";
-            this.rbtDenda750K.Size = new System.Drawing.Size(96, 17);
-            this.rbtDenda750K.TabIndex = 12;
-            this.rbtDenda750K.TabStop = true;
-            this.rbtDenda750K.Text = "Rp 750.000,00";
-            this.rbtDenda750K.UseVisualStyleBackColor = true;
-            // 
-            // rbtDenda250K
-            // 
-            this.rbtDenda250K.AutoSize = true;
-            this.rbtDenda250K.Location = new System.Drawing.Point(212, 80);
-            this.rbtDenda250K.Name = "rbtDenda250K";
-            this.rbtDenda250K.Size = new System.Drawing.Size(96, 17);
-            this.rbtDenda250K.TabIndex = 11;
-            this.rbtDenda250K.TabStop = true;
-            this.rbtDenda250K.Text = "Rp 250.000,00";
-            this.rbtDenda250K.UseVisualStyleBackColor = true;
-            // 
-            // rbtDenda500K
-            // 
-            this.rbtDenda500K.AutoSize = true;
-            this.rbtDenda500K.Location = new System.Drawing.Point(115, 99);
-            this.rbtDenda500K.Name = "rbtDenda500K";
-            this.rbtDenda500K.Size = new System.Drawing.Size(96, 17);
-            this.rbtDenda500K.TabIndex = 10;
-            this.rbtDenda500K.TabStop = true;
-            this.rbtDenda500K.Text = "Rp 500.000,00";
-            this.rbtDenda500K.UseVisualStyleBackColor = true;
-            this.rbtDenda500K.CheckedChanged += new System.EventHandler(this.rbtDenda500K_CheckedChanged);
-            // 
-            // rbtDenda100K
-            // 
-            this.rbtDenda100K.AutoSize = true;
-            this.rbtDenda100K.Location = new System.Drawing.Point(115, 80);
-            this.rbtDenda100K.Name = "rbtDenda100K";
-            this.rbtDenda100K.Size = new System.Drawing.Size(96, 17);
-            this.rbtDenda100K.TabIndex = 9;
-            this.rbtDenda100K.TabStop = true;
-            this.rbtDenda100K.Text = "Rp 100.000,00";
-            this.rbtDenda100K.UseVisualStyleBackColor = true;
-            // 
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(5, 82);
+            this.label51.Location = new System.Drawing.Point(6, 90);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(106, 13);
             this.label51.TabIndex = 8;
@@ -643,7 +583,7 @@
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(6, 65);
+            this.label50.Location = new System.Drawing.Point(7, 73);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(129, 13);
             this.label50.TabIndex = 3;
@@ -1046,7 +986,7 @@
             this.groupBox6.Controls.Add(this.label18);
             this.groupBox6.Location = new System.Drawing.Point(1, 300);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(645, 102);
+            this.groupBox6.Size = new System.Drawing.Size(645, 100);
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "DATA SIM";
@@ -1242,7 +1182,7 @@
             this.groupBox7.Controls.Add(this.label29);
             this.groupBox7.Location = new System.Drawing.Point(1, 395);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(645, 120);
+            this.groupBox7.Size = new System.Drawing.Size(645, 117);
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
             // 
@@ -1389,6 +1329,23 @@
             this.groupBox9.TabIndex = 11;
             this.groupBox9.TabStop = false;
             // 
+            // tbxSKSita
+            // 
+            this.tbxSKSita.BackColor = System.Drawing.SystemColors.Control;
+            this.tbxSKSita.Location = new System.Drawing.Point(34, 26);
+            this.tbxSKSita.Name = "tbxSKSita";
+            this.tbxSKSita.Size = new System.Drawing.Size(100, 20);
+            this.tbxSKSita.TabIndex = 28;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(42, 10);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(92, 13);
+            this.label74.TabIndex = 27;
+            this.label74.Text = "SK YANG DISITA";
+            // 
             // dtpBerlakuSK
             // 
             this.dtpBerlakuSK.Location = new System.Drawing.Point(59, 68);
@@ -1409,6 +1366,23 @@
             this.groupBox10.Size = new System.Drawing.Size(324, 94);
             this.groupBox10.TabIndex = 12;
             this.groupBox10.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.Location = new System.Drawing.Point(35, 26);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 30;
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(22, 11);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(123, 13);
+            this.label75.TabIndex = 29;
+            this.label75.Text = "BARANG YANG DISITA";
             // 
             // dtpBerlakuPemda
             // 
@@ -1644,39 +1618,31 @@
             this.btnSimpanData.UseVisualStyleBackColor = true;
             this.btnSimpanData.Click += new System.EventHandler(this.btnSimpanData_Click);
             // 
-            // label74
+            // txtDenda
             // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(42, 10);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(92, 13);
-            this.label74.TabIndex = 27;
-            this.label74.Text = "SK YANG DISITA";
+            this.txtDenda.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDenda.Location = new System.Drawing.Point(184, 87);
+            this.txtDenda.Name = "txtDenda";
+            this.txtDenda.Size = new System.Drawing.Size(119, 20);
+            this.txtDenda.TabIndex = 17;
             // 
-            // tbxSKSita
+            // label76
             // 
-            this.tbxSKSita.BackColor = System.Drawing.SystemColors.Control;
-            this.tbxSKSita.Location = new System.Drawing.Point(34, 26);
-            this.tbxSKSita.Name = "tbxSKSita";
-            this.tbxSKSita.Size = new System.Drawing.Size(100, 20);
-            this.tbxSKSita.TabIndex = 28;
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(157, 90);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(21, 13);
+            this.label76.TabIndex = 18;
+            this.label76.Text = "Rp";
             // 
-            // textBox1
+            // label77
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Location = new System.Drawing.Point(35, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 30;
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(22, 11);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(123, 13);
-            this.label75.TabIndex = 29;
-            this.label75.Text = "BARANG YANG DISITA";
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(309, 94);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(22, 13);
+            this.label77.TabIndex = 19;
+            this.label77.Text = ",00";
             // 
             // frmSuratTilang
             // 
@@ -1826,10 +1792,6 @@
         private System.Windows.Forms.TextBox txtBankSetor;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.RadioButton rbtDenda750K;
-        private System.Windows.Forms.RadioButton rbtDenda250K;
-        private System.Windows.Forms.RadioButton rbtDenda500K;
-        private System.Windows.Forms.RadioButton rbtDenda100K;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.RadioButton rbtPerwakilan;
@@ -1873,11 +1835,13 @@
         private System.Windows.Forms.ComboBox cbxPekerjaan;
         private System.Windows.Forms.ComboBox cbxPendidikan;
         private System.Windows.Forms.TextBox txtTanggalLahir;
-        private System.Windows.Forms.RadioButton rbt1jt;
         private System.Windows.Forms.TextBox tbxSKSita;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.TextBox txtDenda;
 
 
 

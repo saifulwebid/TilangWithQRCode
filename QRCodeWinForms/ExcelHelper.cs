@@ -241,7 +241,7 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 28].Value = dapel.BarangSita2;
                                 currentWorksheet.Cells[rowNumber, 29].Value = dapel.PenerbitPemda;
                                 currentWorksheet.Cells[rowNumber, 30].Value = dapel.BerlakuBarang2;
-                                currentWorksheet.Cells[rowNumber, 31].Value = dapel.TempatSidang;
+                                currentWorksheet.Cells[rowNumber, 31].Value = dapel.LokasiSidang;
                                 currentWorksheet.Cells[rowNumber, 32].Value = dapel.WaktuSidang.Day;
                                 currentWorksheet.Cells[rowNumber, 33].Value = dapel.WaktuSidang.Date;
                                 currentWorksheet.Cells[rowNumber, 34].Value = dapel.WaktuSidang.Hour;
@@ -251,7 +251,7 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 38].Value = dapel.TempatPengambilan;
                                 currentWorksheet.Cells[rowNumber, 39].Value = dapel.PasalPelanggaran.NomorPasal;
                                 currentWorksheet.Cells[rowNumber, 40].Value = dapel.PasalPelanggaran.DendaMaksimal;
-                                currentWorksheet.Cells[rowNumber, 41].Value = dapel.JumlahUangTitipan;
+                                currentWorksheet.Cells[rowNumber, 41].Value = dapel.TempatSetorDenda;
                                 currentWorksheet.Cells[rowNumber, 42].Value = dapel.AngkaPinaltiPelanggaran;
                                 currentWorksheet.Cells[rowNumber, 43].Value = dapel.PernyataanHadirSendiri;
                                 currentWorksheet.Cells[rowNumber, 44].Value = dapel.NamaWakil;
