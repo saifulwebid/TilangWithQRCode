@@ -38,6 +38,13 @@ namespace QRCodeWinForms
         private DateTime _waktuPelanggaran;
         private DateTime _waktuSidang;
         private string _wilayahHukum;
+        private string _SATPAS;
+        private string _lokasiPelanggaran;
+        private string _patokanLokasi;
+        private string _namaPenyidik;
+        private string _pangkatPenyidik;
+        private string _kesatuanPenyidik;
+        private string _tempatPengambilan;
 
         public string AlamatWakil
         {
@@ -99,10 +106,20 @@ namespace QRCodeWinForms
             get { return _kesatuan; }
             set { _kesatuan = value; }
         }
+        public string KesatuanPenyidik
+        {
+            get { return _kesatuanPenyidik; }
+            set { _kesatuanPenyidik = value; }
+        }
         public string LokasiSidang
         {
             get { return _lokasiSidang; }
             set { _lokasiSidang = value; }
+        }
+        public string LokasiPelanggaran
+        {
+            get { return _lokasiPelanggaran; }
+            set { _lokasiPelanggaran = value; }
         }
         public string MerekKendaraan
         {
@@ -113,6 +130,11 @@ namespace QRCodeWinForms
         {
             get { return _namaWakil; }
             set { _namaWakil = value; }
+        }
+        public string NamaPenyidik
+        {
+            get { return _namaPenyidik; }
+            set { _namaPenyidik = value; }
         }
         public string NOKA
         {
@@ -149,10 +171,20 @@ namespace QRCodeWinForms
             get { return _nomorTilang; }
             set { _nomorTilang = value; }
         }
+        public string PangkatPenyidik
+        {
+            get { return _pangkatPenyidik; }
+            set { _pangkatPenyidik = value; }
+        }
         public Pasal PasalPelanggaran
         {
             get { return _pasalPelanggaran; }
             set { _pasalPelanggaran = value; }
+        }
+        public string PatokanLokasi
+        {
+            get { return _patokanLokasi; }
+            set { _patokanLokasi = value; }
         }
         public SIM Pelanggar
         {
@@ -168,6 +200,16 @@ namespace QRCodeWinForms
         {
             get { return _samsatKendaraan; }
             set { _samsatKendaraan = value; }
+        }
+        public string SATPAS
+        {
+            get { return _SATPAS; }
+            set { _SATPAS = value; }
+        }
+        public string TempatPengambilan
+        {
+            get { return _tempatPengambilan; }
+            set { _tempatPengambilan = value; }
         }
         public string UmurWakil
         {
@@ -193,5 +235,6 @@ namespace QRCodeWinForms
         {
             ExcelHelper.SaveDataPelanggaran(dapel);
         }
+
     }
 }

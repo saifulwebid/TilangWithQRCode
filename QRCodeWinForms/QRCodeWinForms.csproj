@@ -63,7 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataPelanggaran.cs" />
+    <Compile Include="..\..\..\..\DataPelanggaran.cs">
+      <Link>DataPelanggaran.cs</Link>
+    </Compile>
     <Compile Include="ExcelHelper.cs" />
     <Compile Include="frmSuratTilang.cs">
       <SubType>Form</SubType>
