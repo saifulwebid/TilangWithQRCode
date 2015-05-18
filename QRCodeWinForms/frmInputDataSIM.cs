@@ -46,6 +46,7 @@ namespace QRCodeWinForms
             additem.Pemilik.NomorKTP = txtNoKTP.Text;
             additem.TanggalHabis = new DateTime(additem.TanggalBuat.Year + 5, additem.TanggalBuat.Date.Month, additem.TanggalBuat.Date.Day);
             additem.Save(additem);
+            MessageBox.Show("Data Berhasil Disimpan");
             
         }
 
