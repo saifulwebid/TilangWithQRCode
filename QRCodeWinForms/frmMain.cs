@@ -16,5 +16,29 @@ namespace QRCodeWinForms
         {
             InitializeComponent();
         }
+
+        private void btnGenerateSim_Click(object sender, EventArgs e)
+        {
+            frmInputDataSIM fInputDataSIM = new frmInputDataSIM();
+            fInputDataSIM.ShowDialog();
+        }
+
+        private void btnSuratTilang_Click(object sender, EventArgs e)
+        {
+            frmSuratTilang fSuratTilang = new frmSuratTilang();
+            fSuratTilang.ShowDialog();
+        }
+
+        private void btnBanyakPelanggaran_Click(object sender, EventArgs e)
+        {
+            frmBanyakPelanggaran fBanyakPelanggaran = new frmBanyakPelanggaran();
+            fBanyakPelanggaran.ShowDialog();
+        }
+
+        private void btnStatistik_Click(object sender, EventArgs e)
+        {
+            frmStatistikPelanggaran fStatistik = new frmStatistikPelanggaran();
+            fStatistik.ShowDialog();
+        }
     }
 }

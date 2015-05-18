@@ -61,13 +61,17 @@ namespace QRCodeWinForms
                                         listDataSIM.Add(new SIM
                                         {
                                             Golongan = col1Value.ToString(),
-                                            Nama = col2Value.ToString(),
-                                            TempatLahir = col3Value.ToString(),
-                                            TanggalLahir = Convert.ToDateTime(col4Value),
-                                            Alamat = col5Value.ToString(),
-                                            Pekerjaan = col6Value.ToString(),
-                                            Pendidikan = col7Value.ToString(),
-                                            JenisKelamin = col8Value.ToString()});
+                                            Pemilik = new Penduduk
+                                            {
+                                                Nama = col2Value.ToString(),
+                                                TempatLahir = col3Value.ToString(),
+                                                TanggalLahir = Convert.ToDateTime(col4Value),
+                                                Alamat = col5Value.ToString(),
+                                                Pekerjaan = col6Value.ToString(),
+                                                Pendidikan = col7Value.ToString(),
+                                                JenisKelamin = col8Value.ToString()
+                                            }
+                                        });
                                     }
                                 }
                             }
@@ -399,22 +403,25 @@ namespace QRCodeWinForms
                                     object col45Value = currentWorksheet.Cells[rowNumber, 45].Value;
                                     object col46Value = currentWorksheet.Cells[rowNumber, 46].Value;
                                     object col47Value = currentWorksheet.Cells[rowNumber, 47].Value;
-                                   
+
                                     listDataPelanggaran.Add(new DataPelanggaran
                                     {
                                         WaktuPelanggaran = Convert.ToDateTime(col1Value),
                                         NomorRegister = col2Value.ToString(),
                                         Kesatuan = col3Value.ToString(),
                                         NomorTilang = col4Value.ToString(),
-                                        Nama = col5Value.ToString(),
-                                        JenisKelamin = col6Value.ToString(),
-                                        Alamat = col7Value.ToString(),
-                                        Pekerjaan = col8Value.ToString(),
-                                        Pendidikan = col9Value.ToString(),
-                                        TempatLahir = col10Value.ToString(),
-                                        TanggalLahir = Convert.ToDateTime(col11Value),
+                                        Pemilik = new Penduduk
+                                        {
+                                            Nama = col5Value.ToString(),
+                                            JenisKelamin = col6Value.ToString(),
+                                            Alamat = col7Value.ToString(),
+                                            Pekerjaan = col8Value.ToString(),
+                                            Pendidikan = col9Value.ToString(),
+                                            TempatLahir = col10Value.ToString(),
+                                            NomorKTP = col13Value.ToString(),
+                                            TanggalLahir = Convert.ToDateTime(col11Value)
+                                        },
                                         Golongan = col12Value.ToString(),
-                                        NomorKTP = col13Value.ToString(),
                                         NomorSIM = col14Value.ToString(),
                                         SATPAS = col15Value.ToString(),
                                         NomorKendaraan = col16Value.ToString(),

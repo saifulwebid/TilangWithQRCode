@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QRCodeWinForms
 {
-    public class SIM : Penduduk
+    public class SIM
     {
         private string _golongan;
         private string _nomorSIM;

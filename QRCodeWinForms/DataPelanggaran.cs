@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QRCodeWinForms
 {
-    public class DataPelanggaran : SIM
+    public class DataPelanggaran
     {
         private string _alamatWakil;
         private double _angkaPinaltiPelanggaran;
