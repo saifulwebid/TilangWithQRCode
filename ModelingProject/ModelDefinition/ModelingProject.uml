@@ -1750,7 +1750,8 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false"
+                  isNavigableOwned="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -1799,7 +1800,8 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false"
+                  isNavigableOwned="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -1838,7 +1840,8 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false"
+                  isNavigableOwned="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -1887,7 +1890,8 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false"
+                  isNavigableOwned="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>

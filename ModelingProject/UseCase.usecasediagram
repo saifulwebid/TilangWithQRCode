@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ca5fd5db-80b5-4883-94cf-15bbd6e6b856" name="UseCase" linkedPackageId="75508901-13a1-489c-b3ec-f47c0b67208e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="9a8cbb95-380e-4f86-a53b-b5100ba4afc7">
-      <profileInstance Id="74052a3a-7934-468d-a47c-adfecbaf035a" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="f4cf9de8-85ff-415c-af97-e6fdabe1380c">
-      <profileInstance Id="ca161ae4-6b37-40ce-8440-e53fad63ac4b" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="5dcba513-3fa8-486a-a24f-54de8d9ac250" name="Petugas Samsat" isAbstract="false" isLeaf="false">
@@ -28,7 +14,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="358b8192-61fb-4a3d-9ef0-d451f879370f" name="Membuat SIM Baru" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="358b8192-61fb-4a3d-9ef0-d451f879370f" name="Membuat SIM Baru" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="64b40e34-2616-45f9-ba08-fdc839080c6f" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -51,7 +37,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="aeab250f-1e0f-4e73-bbfb-a47fc25462cf" name="Membuat Surat Tilang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="aeab250f-1e0f-4e73-bbfb-a47fc25462cf" name="Membuat Surat Tilang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="335a2eec-e655-4a23-bff4-a7c3fb2a2915" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -67,7 +53,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="8d33cb74-84a9-41aa-b599-007839bedbee" name="Melihat Statistik Pelanggaran" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="8d33cb74-84a9-41aa-b599-007839bedbee" name="Melihat Statistik Pelanggaran" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="5c7e9ef7-1323-4535-b9aa-ae0d25c243b2" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -90,7 +76,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="abef77ad-6898-4b35-9d62-f568638a8bc5" name="Melihat Rekapitulasi Per SIM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="abef77ad-6898-4b35-9d62-f568638a8bc5" name="Melihat Rekapitulasi Per SIM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="50c30dd4-af88-4187-8710-4ac914c1cc53" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -150,5 +136,19 @@
   </packagedElements>
   <package Id="75508901-13a1-489c-b3ec-f47c0b67208e" name="ModelingProject">
     <elementDefinition Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9a8cbb95-380e-4f86-a53b-b5100ba4afc7">
+        <profileInstance Id="74052a3a-7934-468d-a47c-adfecbaf035a" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f4cf9de8-85ff-415c-af97-e6fdabe1380c">
+        <profileInstance Id="ca161ae4-6b37-40ce-8440-e53fad63ac4b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>
