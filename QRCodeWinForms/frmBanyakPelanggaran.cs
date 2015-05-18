@@ -75,7 +75,7 @@ namespace QRCodeWinForms
                 if (tampil.Pelanggar.Pemilik.NomorKTP == txtNoKTP.Text)
                 {
                     dgvDataPelanggaranPelanggar.Rows.Add();
-                    dgvDataPelanggaranPelanggar.Rows[i].Cells[0].Value = tampil.WaktuPelanggaran.Date;
+                    dgvDataPelanggaranPelanggar.Rows[i].Cells[0].Value = tampil.WaktuPelanggaran.Date.ToShortDateString();
                     dgvDataPelanggaranPelanggar.Rows[i].Cells[1].Value = tampil.NomorRegister;
                     dgvDataPelanggaranPelanggar.Rows[i].Cells[2].Value = tampil.NomorKendaraan;
                     dgvDataPelanggaranPelanggar.Rows[i].Cells[3].Value = tampil.JenisKendaraan;
