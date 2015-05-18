@@ -258,7 +258,7 @@ namespace QRCodeWinForms
             }
             catch (Exception ex)
             {
-               MessageBox.Show("Penyimpanan Data Pelanggaran Gagal! " + ex.Message);
+               MessageBox.Show("Penyimpanan Data Pelanggaran Gagal! " + "\n"+ ex.Message);
             } 
         }
 
