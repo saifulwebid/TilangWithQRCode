@@ -406,7 +406,7 @@ namespace QRCodeWinForms
 
                                     listDataPelanggaran.Add(new DataPelanggaran
                                     {
-                                        WaktuPelanggaran = Convert.ToDateTime(col1Value),
+                                        WaktuPelanggaran = DateTime.FromOADate((double) col1Value),
                                         NomorRegister = col2Value.ToString(),
                                         Kesatuan = col3Value.ToString(),
                                         NomorTilang = col4Value.ToString(),
@@ -421,7 +421,7 @@ namespace QRCodeWinForms
                                                 Pendidikan = col9Value.ToString(),
                                                 TempatLahir = col10Value.ToString(),
                                                 NomorKTP = col13Value.ToString(),
-                                                TanggalLahir = Convert.ToDateTime(col11Value)
+                                                TanggalLahir = DateTime.FromOADate((double)col11Value)
                                             },
                                             Golongan = col12Value.ToString(),
                                             NomorSIM = col14Value.ToString()
@@ -441,7 +441,7 @@ namespace QRCodeWinForms
                                         //
                                         BarangSita2 = col28Value.ToString(),
                                         PenerbitPemda = col29Value.ToString(),
-                                        BerlakuBarang2 = Convert.ToDateTime(col30Value),
+                                        BerlakuBarang2 = DateTime.FromOADate((double)col30Value),
                                         TempatSidang = col31Value.ToString(),
                                         //WaktuSidang
                                         //
