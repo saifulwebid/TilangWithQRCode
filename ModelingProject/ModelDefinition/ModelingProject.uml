@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd"
   name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1650,14 +1650,7 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <actorMoniker
-                Id="a145d36f-5ffd-4d03-9d6e-e8420e890984"
-                LastKnownName="Polisi"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
+            isComposite="false" />
           <property
             Id="f35c90ca-baf2-4dd3-b200-17f0a22cb693"
             isLeaf="false"
@@ -1711,6 +1704,272 @@
       <subsystem
         Id="9cdf09bc-c1a4-465a-a122-246fde68b475"
         name="Statistik Pelanggaran"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="59274d51-c712-43b6-9c92-ab6b177de9ae"
+        name="Petugas Samsat"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="494213bb-64a4-4a28-85f6-f9b528fcaf88"
+            isDerived="false"
+            sourceEndRoleName="Petugas Samsat"
+            targetEndRoleName="Membuat SIM Baru"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2e932df2-d396-41db-8c8b-2bae4253ac71"
+              LastKnownName="Membuat SIM Baru"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="553d8dcf-1232-4bcc-81c0-0c361ef8c446"
+                  name="Petugas Samsat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="64b40e34-2616-45f9-ba08-fdc839080c6f"
+                  name="Membuat SIM Baru"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="1fe93577-87b6-4aa7-ad84-d0d868160281"
+        name="Polisi Lalu Lintas"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d9430fec-bac6-4fe7-882c-fc9d9b6bc77e"
+            isDerived="false"
+            sourceEndRoleName="Polisi Lalu Lintas"
+            targetEndRoleName="Membuat Surat Tilang"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="52979df0-3d2d-4d14-bbf6-ce456c0e4157"
+              LastKnownName="Membuat Surat Tilang"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c72b0d1-4407-4505-a2ed-f7123e540496"
+                  name="Polisi Lalu Lintas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="335a2eec-e655-4a23-bff4-a7c3fb2a2915"
+                  name="Membuat Surat Tilang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="862c1072-9d9d-48b6-a214-52375136f199"
+            isDerived="false"
+            sourceEndRoleName="Polisi Lalu Lintas"
+            targetEndRoleName="Melihat Statistik Pelanggaran"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c4e920f2-040a-487d-b65c-18c99c48d868"
+              LastKnownName="Melihat Statistik Pelanggaran"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="41085a40-46b2-485e-8c1b-cc83ae4f6d3d"
+                  name="Polisi Lalu Lintas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c7e9ef7-1323-4535-b9aa-ae0d25c243b2"
+                  name="Melihat Statistik Pelanggaran"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="adf2483b-6767-4dcf-82f0-99d5d3286c37"
+        name="Hakim/Jaksa"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="00bddc10-d5ab-4906-a418-6bca1dab925b"
+            isDerived="false"
+            sourceEndRoleName="Hakim/Jaksa"
+            targetEndRoleName="Melihat Rekapitulasi Per SIM"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2b8f0e18-9a71-4112-bfe7-fc5b9c41a8ca"
+              LastKnownName="Melihat Rekapitulasi Per SIM"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e61486ab-8e36-421a-90dd-c815c91634c0"
+                  name="Hakim/Jaksa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="50c30dd4-af88-4187-8710-4ac914c1cc53"
+                  name="Melihat Rekapitulasi Per SIM"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2e932df2-d396-41db-8c8b-2bae4253ac71"
+        name="Membuat SIM Baru"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="cf5a43fb-ddf2-401c-a8f8-70c428709cf0"
+            LastKnownName="Pembuatan SIM"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="52979df0-3d2d-4d14-bbf6-ce456c0e4157"
+        name="Membuat Surat Tilang"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="771ed1af-dc6b-4f91-ace7-f1c6ded3cbb0"
+            LastKnownName="Pembuatan Surat Tilang"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2b8f0e18-9a71-4112-bfe7-fc5b9c41a8ca"
+        name="Melihat Rekapitulasi Per SIM"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6633f7e2-cbff-4923-988f-5665cbb68aa8"
+            LastKnownName="Rekapitulasi dan Statistik"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c4e920f2-040a-487d-b65c-18c99c48d868"
+        name="Melihat Statistik Pelanggaran"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6633f7e2-cbff-4923-988f-5665cbb68aa8"
+            LastKnownName="Rekapitulasi dan Statistik"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="cf5a43fb-ddf2-401c-a8f8-70c428709cf0"
+        name="Pembuatan SIM"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="771ed1af-dc6b-4f91-ace7-f1c6ded3cbb0"
+        name="Pembuatan Surat Tilang"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="6633f7e2-cbff-4923-988f-5665cbb68aa8"
+        name="Rekapitulasi dan Statistik"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
