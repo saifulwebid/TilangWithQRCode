@@ -77,7 +77,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtHariAmbil = new System.Windows.Forms.TextBox();
             this.txtAlamatWali = new System.Windows.Forms.TextBox();
             this.label66 = new System.Windows.Forms.Label();
             this.txtUmurWali = new System.Windows.Forms.TextBox();
@@ -87,7 +86,6 @@
             this.rbtHadirSendiri = new System.Windows.Forms.RadioButton();
             this.label57 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
@@ -163,8 +161,6 @@
             this.label69 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label46 = new System.Windows.Forms.Label();
-            this.txtHariSidang = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
             this.txtPengadilan = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
@@ -534,7 +530,7 @@
             // label77
             // 
             this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(309, 94);
+            this.label77.Location = new System.Drawing.Point(309, 90);
             this.label77.Name = "label77";
             this.label77.Size = new System.Drawing.Size(22, 13);
             this.label77.TabIndex = 19;
@@ -612,7 +608,7 @@
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(96, 45);
+            this.label49.Location = new System.Drawing.Point(96, 50);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(168, 13);
             this.label49.TabIndex = 2;
@@ -622,10 +618,10 @@
             // txtPasal
             // 
             this.txtPasal.BackColor = System.Drawing.SystemColors.Control;
-            this.txtPasal.Location = new System.Drawing.Point(130, 22);
+            this.txtPasal.Location = new System.Drawing.Point(128, 20);
             this.txtPasal.Multiline = true;
             this.txtPasal.Name = "txtPasal";
-            this.txtPasal.Size = new System.Drawing.Size(173, 16);
+            this.txtPasal.Size = new System.Drawing.Size(173, 21);
             this.txtPasal.TabIndex = 1;
             // 
             // label48
@@ -653,7 +649,6 @@
             // 
             this.groupBox5.BackColor = System.Drawing.Color.White;
             this.groupBox5.Controls.Add(this.dateTimePicker1);
-            this.groupBox5.Controls.Add(this.txtHariAmbil);
             this.groupBox5.Controls.Add(this.txtAlamatWali);
             this.groupBox5.Controls.Add(this.label66);
             this.groupBox5.Controls.Add(this.txtUmurWali);
@@ -663,7 +658,6 @@
             this.groupBox5.Controls.Add(this.rbtHadirSendiri);
             this.groupBox5.Controls.Add(this.label57);
             this.groupBox5.Controls.Add(this.label67);
-            this.groupBox5.Controls.Add(this.label59);
             this.groupBox5.Controls.Add(this.label54);
             this.groupBox5.Controls.Add(this.label56);
             this.groupBox5.Controls.Add(this.label55);
@@ -677,18 +671,10 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(224, 257);
+            this.dateTimePicker1.Location = new System.Drawing.Point(145, 258);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(186, 20);
             this.dateTimePicker1.TabIndex = 26;
-            // 
-            // txtHariAmbil
-            // 
-            this.txtHariAmbil.BackColor = System.Drawing.SystemColors.Control;
-            this.txtHariAmbil.Location = new System.Drawing.Point(56, 258);
-            this.txtHariAmbil.Name = "txtHariAmbil";
-            this.txtHariAmbil.Size = new System.Drawing.Size(100, 20);
-            this.txtHariAmbil.TabIndex = 18;
             // 
             // txtAlamatWali
             // 
@@ -701,11 +687,11 @@
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(161, 261);
+            this.label66.Location = new System.Drawing.Point(70, 263);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(46, 13);
+            this.label66.Size = new System.Drawing.Size(71, 13);
             this.label66.TabIndex = 12;
-            this.label66.Text = "Tanggal";
+            this.label66.Text = "Hari, Tanggal";
             // 
             // txtUmurWali
             // 
@@ -773,15 +759,6 @@
             this.label67.Size = new System.Drawing.Size(150, 13);
             this.label67.TabIndex = 13;
             this.label67.Text = "Dengan ini saya menyatakan :";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(7, 261);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(26, 13);
-            this.label59.TabIndex = 5;
-            this.label59.Text = "Hari";
             // 
             // label54
             // 
@@ -1392,8 +1369,6 @@
             this.groupBox11.Controls.Add(this.label69);
             this.groupBox11.Controls.Add(this.label47);
             this.groupBox11.Controls.Add(this.dateTimePicker2);
-            this.groupBox11.Controls.Add(this.label46);
-            this.groupBox11.Controls.Add(this.txtHariSidang);
             this.groupBox11.Controls.Add(this.label45);
             this.groupBox11.Controls.Add(this.txtPengadilan);
             this.groupBox11.Controls.Add(this.label44);
@@ -1406,7 +1381,7 @@
             // 
             // dtpJam
             // 
-            this.dtpJam.Location = new System.Drawing.Point(496, 52);
+            this.dtpJam.Location = new System.Drawing.Point(376, 52);
             this.dtpJam.Name = "dtpJam";
             this.dtpJam.Size = new System.Drawing.Size(90, 20);
             this.dtpJam.TabIndex = 25;
@@ -1493,7 +1468,7 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(467, 56);
+            this.label47.Location = new System.Drawing.Point(347, 56);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(28, 13);
             this.label47.TabIndex = 7;
@@ -1501,36 +1476,19 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(256, 51);
+            this.dateTimePicker2.Location = new System.Drawing.Point(139, 52);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 6;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(192, 53);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(58, 13);
-            this.label46.TabIndex = 5;
-            this.label46.Text = "TANGGAL";
-            // 
-            // txtHariSidang
-            // 
-            this.txtHariSidang.BackColor = System.Drawing.SystemColors.Control;
-            this.txtHariSidang.Location = new System.Drawing.Point(78, 52);
-            this.txtHariSidang.Name = "txtHariSidang";
-            this.txtHariSidang.Size = new System.Drawing.Size(109, 20);
-            this.txtHariSidang.TabIndex = 4;
             // 
             // label45
             // 
             this.label45.AutoSize = true;
             this.label45.Location = new System.Drawing.Point(11, 54);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(65, 13);
+            this.label45.Size = new System.Drawing.Size(122, 13);
             this.label45.TabIndex = 3;
-            this.label45.Text = "PADA HARI";
+            this.label45.Text = "PADA HARI, TANGGAL";
             // 
             // txtPengadilan
             // 
@@ -1709,8 +1667,6 @@
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox txtHariSidang;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.TextBox txtPengadilan;
         private System.Windows.Forms.TextBox txtAngkaPinalti;
@@ -1733,9 +1689,7 @@
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.TextBox txtHariAmbil;
         private System.Windows.Forms.TextBox txtAlamatWali;
         private System.Windows.Forms.TextBox txtUmurWali;
         private System.Windows.Forms.TextBox txtNamaWali;
