@@ -19,11 +19,25 @@ namespace QRCodeWinForms
 
         private void btnTampil_Click(object sender, EventArgs e)
         {
-            chartStatistikPelanggaran.Series["Banyak Pelanggaran"].Points.AddXY(2013, 50);
-            chartStatistikPelanggaran.Series["Banyak Pelanggaran"].Points.AddXY(2014, 90);
-            chartStatistikPelanggaran.Series["Banyak Pelanggaran"].Points.AddXY(2015, 40);
-            chartStatistikPelanggaran.Series["Banyak Pelanggaran"].Points.AddXY(2016, 25);
-            chartStatistikPelanggaran.Series["Banyak Pelanggaran"].Points.AddXY(2017, 5);
+            List<DataPelanggaran>data = new  List<DataPelanggaran>();
+            data = ExcelHelper.GetAllPelanggaran();
+            List<int> dataBulan = new List<int>();
+
+            foreach (DataPelanggaran x in data)
+            {
+                dataBulan.Add(x.WaktuPelanggaran.Month);
+            }
+
+            foreach (var grp in dataBulan.GroupBy(i => i))
+            {
+                chartStatistikPelanggaran.Series["Banyak Pelanggaran"].Points.AddXY(ConvertToMonth(grp.Key), grp.Count());
+            }
+        }
+
+        string ConvertToMonth(int i)
+        {
+            string[] Month = new string[] { "Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember" };
+            return Month[i - 1];
         }
     }
 }

@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.grbIdentitasPelanggar = new System.Windows.Forms.GroupBox();
+            this.lblGol = new System.Windows.Forms.Label();
+            this.txtGol = new System.Windows.Forms.TextBox();
+            this.lblNoSIM = new System.Windows.Forms.Label();
+            this.txtNoSIM = new System.Windows.Forms.TextBox();
+            this.lblNamaPelanggar = new System.Windows.Forms.Label();
+            this.txtNamaPelanggar = new System.Windows.Forms.TextBox();
             this.lblJnsKelamin = new System.Windows.Forms.Label();
             this.lblPendidikan = new System.Windows.Forms.Label();
             this.lblPekerjaan = new System.Windows.Forms.Label();
@@ -48,12 +54,6 @@
             this.gbDataPelanggaranPelanggar = new System.Windows.Forms.GroupBox();
             this.lblJumlahPelanggaran = new System.Windows.Forms.Label();
             this.txtJumlahPelanggaran = new System.Windows.Forms.TextBox();
-            this.lblNamaPelanggar = new System.Windows.Forms.Label();
-            this.txtNamaPelanggar = new System.Windows.Forms.TextBox();
-            this.lblNoSIM = new System.Windows.Forms.Label();
-            this.txtNoSIM = new System.Windows.Forms.TextBox();
-            this.txtGol = new System.Windows.Forms.TextBox();
-            this.lblGol = new System.Windows.Forms.Label();
             this.grbIdentitasPelanggar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataPelanggaranPelanggar)).BeginInit();
             this.gbDataPelanggaranPelanggar.SuspendLayout();
@@ -87,6 +87,59 @@
             this.grbIdentitasPelanggar.TabIndex = 0;
             this.grbIdentitasPelanggar.TabStop = false;
             this.grbIdentitasPelanggar.Text = "Identitas Pelanggar";
+            // 
+            // lblGol
+            // 
+            this.lblGol.AutoSize = true;
+            this.lblGol.Location = new System.Drawing.Point(71, 78);
+            this.lblGol.Name = "lblGol";
+            this.lblGol.Size = new System.Drawing.Size(51, 13);
+            this.lblGol.TabIndex = 16;
+            this.lblGol.Text = "GOL SIM";
+            // 
+            // txtGol
+            // 
+            this.txtGol.Location = new System.Drawing.Point(128, 75);
+            this.txtGol.Name = "txtGol";
+            this.txtGol.ReadOnly = true;
+            this.txtGol.Size = new System.Drawing.Size(68, 20);
+            this.txtGol.TabIndex = 15;
+            // 
+            // lblNoSIM
+            // 
+            this.lblNoSIM.AutoSize = true;
+            this.lblNoSIM.Location = new System.Drawing.Point(77, 52);
+            this.lblNoSIM.Name = "lblNoSIM";
+            this.lblNoSIM.Size = new System.Drawing.Size(45, 13);
+            this.lblNoSIM.TabIndex = 14;
+            this.lblNoSIM.Text = "NO SIM";
+            // 
+            // txtNoSIM
+            // 
+            this.txtNoSIM.Location = new System.Drawing.Point(128, 49);
+            this.txtNoSIM.Name = "txtNoSIM";
+            this.txtNoSIM.ReadOnly = true;
+            this.txtNoSIM.Size = new System.Drawing.Size(254, 20);
+            this.txtNoSIM.TabIndex = 13;
+            // 
+            // lblNamaPelanggar
+            // 
+            this.lblNamaPelanggar.AutoSize = true;
+            this.lblNamaPelanggar.Location = new System.Drawing.Point(84, 104);
+            this.lblNamaPelanggar.Name = "lblNamaPelanggar";
+            this.lblNamaPelanggar.Size = new System.Drawing.Size(38, 13);
+            this.lblNamaPelanggar.TabIndex = 11;
+            this.lblNamaPelanggar.Text = "NAMA";
+            // 
+            // txtNamaPelanggar
+            // 
+            this.txtNamaPelanggar.Location = new System.Drawing.Point(128, 101);
+            this.txtNamaPelanggar.Name = "txtNamaPelanggar";
+            this.txtNamaPelanggar.ReadOnly = true;
+            this.txtNamaPelanggar.Size = new System.Drawing.Size(353, 20);
+            this.txtNamaPelanggar.TabIndex = 12;
+            this.txtNamaPelanggar.Text = "Silahkan Scan SIM";
+            this.txtNamaPelanggar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblJnsKelamin
             // 
@@ -255,59 +308,6 @@
             this.txtJumlahPelanggaran.TabIndex = 11;
             this.txtJumlahPelanggaran.Text = "0";
             // 
-            // lblNamaPelanggar
-            // 
-            this.lblNamaPelanggar.AutoSize = true;
-            this.lblNamaPelanggar.Location = new System.Drawing.Point(84, 104);
-            this.lblNamaPelanggar.Name = "lblNamaPelanggar";
-            this.lblNamaPelanggar.Size = new System.Drawing.Size(38, 13);
-            this.lblNamaPelanggar.TabIndex = 11;
-            this.lblNamaPelanggar.Text = "NAMA";
-            // 
-            // txtNamaPelanggar
-            // 
-            this.txtNamaPelanggar.Location = new System.Drawing.Point(128, 101);
-            this.txtNamaPelanggar.Name = "txtNamaPelanggar";
-            this.txtNamaPelanggar.ReadOnly = true;
-            this.txtNamaPelanggar.Size = new System.Drawing.Size(353, 20);
-            this.txtNamaPelanggar.TabIndex = 12;
-            this.txtNamaPelanggar.Text = "Silahkan Scan SIM";
-            this.txtNamaPelanggar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // lblNoSIM
-            // 
-            this.lblNoSIM.AutoSize = true;
-            this.lblNoSIM.Location = new System.Drawing.Point(77, 52);
-            this.lblNoSIM.Name = "lblNoSIM";
-            this.lblNoSIM.Size = new System.Drawing.Size(45, 13);
-            this.lblNoSIM.TabIndex = 14;
-            this.lblNoSIM.Text = "NO SIM";
-            // 
-            // txtNoSIM
-            // 
-            this.txtNoSIM.Location = new System.Drawing.Point(128, 49);
-            this.txtNoSIM.Name = "txtNoSIM";
-            this.txtNoSIM.ReadOnly = true;
-            this.txtNoSIM.Size = new System.Drawing.Size(254, 20);
-            this.txtNoSIM.TabIndex = 13;
-            // 
-            // txtGol
-            // 
-            this.txtGol.Location = new System.Drawing.Point(128, 75);
-            this.txtGol.Name = "txtGol";
-            this.txtGol.ReadOnly = true;
-            this.txtGol.Size = new System.Drawing.Size(68, 20);
-            this.txtGol.TabIndex = 15;
-            // 
-            // lblGol
-            // 
-            this.lblGol.AutoSize = true;
-            this.lblGol.Location = new System.Drawing.Point(71, 78);
-            this.lblGol.Name = "lblGol";
-            this.lblGol.Size = new System.Drawing.Size(51, 13);
-            this.lblGol.TabIndex = 16;
-            this.lblGol.Text = "GOL SIM";
-            // 
             // frmBanyakPelanggaran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,6 +318,7 @@
             this.Controls.Add(this.grbIdentitasPelanggar);
             this.Name = "frmBanyakPelanggaran";
             this.Text = "Banyak Pelanggaran";
+            this.Load += new System.EventHandler(this.frmBanyakPelanggaran_Load);
             this.grbIdentitasPelanggar.ResumeLayout(false);
             this.grbIdentitasPelanggar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataPelanggaranPelanggar)).EndInit();
