@@ -11,7 +11,7 @@ namespace QRCodeWinForms
     {
         public static List<SIM> GetAllSIM()
         {
-            const string fileName = "data\\DataGabungan.xlsm";
+            const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
 
             string folder = Assembly.GetEntryAssembly().Location;
@@ -84,7 +84,7 @@ namespace QRCodeWinForms
         }
         public static void SaveDataSIM(SIM dataSIM)
         {
-            const string fileName = "data\\DataGabungan.xlsm";
+            const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
 
             string folder = Assembly.GetEntryAssembly().Location;
@@ -116,7 +116,7 @@ namespace QRCodeWinForms
                             if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
                                 (col5Header != null) && (col6Header != null) && (col7Header != null) && (col8Header != null))
                             {
-                                int rowNumber = currentWorksheet.Dimension.End.Row;
+                                int rowNumber = currentWorksheet.Dimension.End.Row + 1;
                                 currentWorksheet.Cells[rowNumber, 1].Value = dataSIM.Golongan;
                                 currentWorksheet.Cells[rowNumber, 2].Value = dataSIM.Pemilik.Nama;
                                 currentWorksheet.Cells[rowNumber, 3].Value = dataSIM.Pemilik.TempatLahir;
@@ -134,7 +134,7 @@ namespace QRCodeWinForms
         }
         public static void SaveDataPelanggaran(DataPelanggaran dapel)
         {
-            const string fileName = "data\\DataGabungan.xlsm";
+            const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
 
             string folder = Assembly.GetEntryAssembly().Location;
@@ -215,7 +215,7 @@ namespace QRCodeWinForms
                                 && (col41Header != null) && (col42Header != null) && (col43Header != null) && (col44Header != null)
                                 && (col45Header != null) && (col46Header != null) && (col47Header != null))
                             {
-                                int rowNumber = currentWorksheet.Dimension.End.Row;
+                                int rowNumber = currentWorksheet.Dimension.End.Row + 1;
                                 currentWorksheet.Cells[rowNumber, 1].Value = dapel.WaktuPelanggaran;
                                 currentWorksheet.Cells[rowNumber, 2].Value = dapel.NomorRegister;
                                 currentWorksheet.Cells[rowNumber, 3].Value = dapel.Kesatuan;
@@ -272,7 +272,7 @@ namespace QRCodeWinForms
         }
         public static List<DataPelanggaran> GetAllPelanggaran()
         {
-            const string fileName = "data\\DataGabungan.xlsm";
+            const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
 
             string folder = Assembly.GetEntryAssembly().Location;
