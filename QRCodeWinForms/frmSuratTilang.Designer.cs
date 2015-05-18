@@ -123,6 +123,9 @@
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.dtpJamLanggar = new System.Windows.Forms.DateTimePicker();
+            this.dtpWaktuLanggar = new System.Windows.Forms.DateTimePicker();
+            this.label32 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.txtNamaTeller = new System.Windows.Forms.TextBox();
@@ -168,9 +171,6 @@
             this.label43 = new System.Windows.Forms.Label();
             this.btnScanQRCode = new System.Windows.Forms.Button();
             this.btnSimpanData = new System.Windows.Forms.Button();
-            this.dtpWaktuLanggar = new System.Windows.Forms.DateTimePicker();
-            this.label32 = new System.Windows.Forms.Label();
-            this.dtpJamLanggar = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -1124,6 +1124,29 @@
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
             // 
+            // dtpJamLanggar
+            // 
+            this.dtpJamLanggar.Location = new System.Drawing.Point(349, 10);
+            this.dtpJamLanggar.Name = "dtpJamLanggar";
+            this.dtpJamLanggar.Size = new System.Drawing.Size(139, 20);
+            this.dtpJamLanggar.TabIndex = 27;
+            // 
+            // dtpWaktuLanggar
+            // 
+            this.dtpWaktuLanggar.Location = new System.Drawing.Point(97, 11);
+            this.dtpWaktuLanggar.Name = "dtpWaktuLanggar";
+            this.dtpWaktuLanggar.Size = new System.Drawing.Size(200, 20);
+            this.dtpWaktuLanggar.TabIndex = 26;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(315, 13);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(28, 13);
+            this.label32.TabIndex = 7;
+            this.label32.Text = "JAM";
+            // 
             // label28
             // 
             this.label28.AutoSize = true;
@@ -1555,29 +1578,6 @@
             this.btnSimpanData.Text = "Simpan Data";
             this.btnSimpanData.UseVisualStyleBackColor = true;
             this.btnSimpanData.Click += new System.EventHandler(this.btnSimpanData_Click);
-            // 
-            // dtpWaktuLanggar
-            // 
-            this.dtpWaktuLanggar.Location = new System.Drawing.Point(97, 11);
-            this.dtpWaktuLanggar.Name = "dtpWaktuLanggar";
-            this.dtpWaktuLanggar.Size = new System.Drawing.Size(200, 20);
-            this.dtpWaktuLanggar.TabIndex = 26;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(315, 13);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(28, 13);
-            this.label32.TabIndex = 7;
-            this.label32.Text = "JAM";
-            // 
-            // dtpJamLanggar
-            // 
-            this.dtpJamLanggar.Location = new System.Drawing.Point(349, 10);
-            this.dtpJamLanggar.Name = "dtpJamLanggar";
-            this.dtpJamLanggar.Size = new System.Drawing.Size(200, 20);
-            this.dtpJamLanggar.TabIndex = 27;
             // 
             // frmSuratTilang
             // 
