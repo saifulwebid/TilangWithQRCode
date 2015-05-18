@@ -214,7 +214,7 @@ namespace QRCodeWinForms
                 datpel.Pelanggar.Pemilik.NomorKTP = txtNoKTPPelanggar.Text;
                 datpel.Pelanggar.NomorSIM = txtNoSIM.Text;
                 datpel.SATPAS = textBox4.Text;
-                datpel.NomorRegister = textBox12.Text;
+                datpel.NomorRangkaKendaraan = textBox12.Text;
                 datpel.SamsatKendaraan = textBox13.Text;
                 datpel.JenisKendaraan = textBox14.Text;
                 datpel.MerekKendaraan = textBox15.Text;

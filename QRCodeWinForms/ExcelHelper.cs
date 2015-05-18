@@ -231,7 +231,7 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 13].Value = dapel.Pelanggar.Pemilik.NomorKTP;
                                 currentWorksheet.Cells[rowNumber, 14].Value = dapel.Pelanggar.NomorSIM;
                                 currentWorksheet.Cells[rowNumber, 15].Value = dapel.SATPAS;
-                                currentWorksheet.Cells[rowNumber, 16].Value = dapel.NomorRegister;
+                                currentWorksheet.Cells[rowNumber, 16].Value = dapel.NomorRangkaKendaraan;
                                 currentWorksheet.Cells[rowNumber, 17].Value = dapel.SamsatKendaraan;
                                 currentWorksheet.Cells[rowNumber, 18].Value = dapel.JenisKendaraan;
                                 currentWorksheet.Cells[rowNumber, 19].Value = dapel.MerekKendaraan;
