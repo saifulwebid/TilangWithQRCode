@@ -84,6 +84,8 @@ namespace QRCodeWinForms
                     i++;
                 }
             }
+
+            txtJumlahPelanggaran.Text = (i + 1).ToString();
         }
 
         void SetTable()
