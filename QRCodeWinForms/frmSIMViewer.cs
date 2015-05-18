@@ -35,7 +35,7 @@ namespace QRCodeWinForms
             lblPekerjaan.Text = tampilSIM.Pemilik.Pekerjaan;
             lblNoSIM.Text = tampilSIM.NomorSIM;
             lblGolongan.Text = tampilSIM.Golongan;
-            lblMasaBerlaku.Text = "10 Maret 2018 (edit)";
+            lblMasaBerlaku.Text = tampilSIM.TanggalHabis.ToLongDateString();
             if (tampilSIM.Pemilik.JenisKelamin == "Laki-Laki")
             {
                 lblJenisKelamin.Text = "PRIA";
