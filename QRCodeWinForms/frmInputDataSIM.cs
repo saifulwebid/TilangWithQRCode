@@ -44,6 +44,7 @@ namespace QRCodeWinForms
             additem.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
             additem.Pemilik.JenisKelamin = cmbJenisKelamin.Text;
             additem.Pemilik.NomorKTP = txtNoKTP.Text;
+            additem.TanggalHabis = new DateTime(additem.TanggalBuat.Year + 5, DateTime.Now.Month, DateTime.Now.Day);
             additem.Save(additem);
         }
 

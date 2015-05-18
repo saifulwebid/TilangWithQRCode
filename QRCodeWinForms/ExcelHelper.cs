@@ -410,19 +410,22 @@ namespace QRCodeWinForms
                                         NomorRegister = col2Value.ToString(),
                                         Kesatuan = col3Value.ToString(),
                                         NomorTilang = col4Value.ToString(),
-                                        Pemilik = new Penduduk
+                                        Pelanggar = new SIM
                                         {
-                                            Nama = col5Value.ToString(),
-                                            JenisKelamin = col6Value.ToString(),
-                                            Alamat = col7Value.ToString(),
-                                            Pekerjaan = col8Value.ToString(),
-                                            Pendidikan = col9Value.ToString(),
-                                            TempatLahir = col10Value.ToString(),
-                                            NomorKTP = col13Value.ToString(),
-                                            TanggalLahir = Convert.ToDateTime(col11Value)
+                                            Pemilik = new Penduduk
+                                            {
+                                                Nama = col5Value.ToString(),
+                                                JenisKelamin = col6Value.ToString(),
+                                                Alamat = col7Value.ToString(),
+                                                Pekerjaan = col8Value.ToString(),
+                                                Pendidikan = col9Value.ToString(),
+                                                TempatLahir = col10Value.ToString(),
+                                                NomorKTP = col13Value.ToString(),
+                                                TanggalLahir = Convert.ToDateTime(col11Value)
+                                            },
+                                            Golongan = col12Value.ToString(),
+                                            NomorSIM = col14Value.ToString()
                                         },
-                                        Golongan = col12Value.ToString(),
-                                        NomorSIM = col14Value.ToString(),
                                         SATPAS = col15Value.ToString(),
                                         NomorKendaraan = col16Value.ToString(),
                                         SamsatKendaraan = col17Value.ToString(),
