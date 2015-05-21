@@ -58,6 +58,18 @@ namespace QRCodeWinForms
             else
             {
                 MessageBox.Show("Umur Pendaftar Belum Cukup");
+                additem.NomorSIM = "";
+                additem.Golongan = "";
+                additem.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
+                additem.Pemilik.Nama = "";
+                additem.Pemilik.Pekerjaan = "";
+                additem.Pemilik.Pendidikan = "";
+                additem.Pemilik.TempatLahir = "";
+                additem.Pemilik.Alamat = "";
+                additem.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
+                additem.Pemilik.JenisKelamin = "";
+                additem.Pemilik.NomorKTP = "";
+                additem.TanggalHabis = DateTime.Now;
             }
             
         }

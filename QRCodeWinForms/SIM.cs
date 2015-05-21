@@ -67,7 +67,7 @@ namespace QRCodeWinForms
         }
         public bool isValidate()
         {
-            return (DateTime.Now.Year - _pemilik.TanggalLahir.Year) > 16;
+            return (_tanggalBuat.Year - _pemilik.TanggalLahir.Year) > 16;
         }
     }
 }
