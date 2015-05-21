@@ -65,5 +65,9 @@ namespace QRCodeWinForms
         {
             return ExcelHelper.GetAllPelanggaran();
         }
+        public bool isValidate()
+        {
+            return (DateTime.Now.Year - _pemilik.TanggalLahir.Year) > 16;
+        }
     }
 }

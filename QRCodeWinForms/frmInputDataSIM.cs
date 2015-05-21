@@ -45,8 +45,20 @@ namespace QRCodeWinForms
             additem.Pemilik.JenisKelamin = cmbJenisKelamin.Text;
             additem.Pemilik.NomorKTP = txtNoKTP.Text;
             additem.TanggalHabis = new DateTime(additem.TanggalBuat.Year + 5, additem.TanggalBuat.Date.Month, additem.TanggalBuat.Date.Day);
-            additem.Save(additem);
-            MessageBox.Show("Data Berhasil Disimpan");
+            if (additem.isValidate())
+            {
+                additem.Save(additem);
+                MessageBox.Show("Data Berhasil Disimpan");
+                txtNoKTP.Text = "";
+                txtNama.Text = "";
+                txtAlamat.Text = "";
+                txtTempatLahir.Text = "";
+                txtNoSIM.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Umur Pendaftar Belum Cukup");
+            }
             
         }
 
