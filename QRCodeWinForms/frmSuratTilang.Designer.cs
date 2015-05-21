@@ -223,7 +223,7 @@
             this.txtKesatuan.Location = new System.Drawing.Point(87, 37);
             this.txtKesatuan.Name = "txtKesatuan";
             this.txtKesatuan.Size = new System.Drawing.Size(100, 20);
-            this.txtKesatuan.TabIndex = 4;
+            this.txtKesatuan.TabIndex = 2;
             // 
             // groupBox1
             // 
@@ -265,7 +265,7 @@
             this.txtNoRegTilang.Location = new System.Drawing.Point(938, 35);
             this.txtNoRegTilang.Name = "txtNoRegTilang";
             this.txtNoRegTilang.Size = new System.Drawing.Size(100, 20);
-            this.txtNoRegTilang.TabIndex = 2;
+            this.txtNoRegTilang.TabIndex = 3;
             // 
             // label17
             // 
@@ -351,7 +351,8 @@
             this.txtUmurPelanggar.Location = new System.Drawing.Point(66, 136);
             this.txtUmurPelanggar.Name = "txtUmurPelanggar";
             this.txtUmurPelanggar.Size = new System.Drawing.Size(46, 20);
-            this.txtUmurPelanggar.TabIndex = 18;
+            this.txtUmurPelanggar.TabIndex = 46;
+            this.txtUmurPelanggar.TabStop = false;
             // 
             // txtNamaPelanggar
             // 
@@ -362,7 +363,8 @@
             this.txtNamaPelanggar.Location = new System.Drawing.Point(87, 20);
             this.txtNamaPelanggar.Name = "txtNamaPelanggar";
             this.txtNamaPelanggar.Size = new System.Drawing.Size(371, 20);
-            this.txtNamaPelanggar.TabIndex = 19;
+            this.txtNamaPelanggar.TabIndex = 41;
+            this.txtNamaPelanggar.TabStop = false;
             this.txtNamaPelanggar.Text = "Silahkan Scan QR Code";
             // 
             // txtAlamatPelanggar
@@ -372,7 +374,8 @@
             this.txtAlamatPelanggar.Location = new System.Drawing.Point(87, 47);
             this.txtAlamatPelanggar.Name = "txtAlamatPelanggar";
             this.txtAlamatPelanggar.Size = new System.Drawing.Size(371, 20);
-            this.txtAlamatPelanggar.TabIndex = 20;
+            this.txtAlamatPelanggar.TabIndex = 42;
+            this.txtAlamatPelanggar.TabStop = false;
             // 
             // rbtLK
             // 
@@ -380,8 +383,7 @@
             this.rbtLK.Location = new System.Drawing.Point(595, 21);
             this.rbtLK.Name = "rbtLK";
             this.rbtLK.Size = new System.Drawing.Size(38, 17);
-            this.rbtLK.TabIndex = 21;
-            this.rbtLK.TabStop = true;
+            this.rbtLK.TabIndex = 43;
             this.rbtLK.Text = "LK";
             this.rbtLK.UseVisualStyleBackColor = true;
             // 
@@ -392,7 +394,6 @@
             this.rbtPR.Name = "rbtPR";
             this.rbtPR.Size = new System.Drawing.Size(40, 17);
             this.rbtPR.TabIndex = 22;
-            this.rbtPR.TabStop = true;
             this.rbtPR.Text = "PR";
             this.rbtPR.UseVisualStyleBackColor = true;
             // 
@@ -421,7 +422,8 @@
             this.txtTempatPelanggar.Location = new System.Drawing.Point(293, 122);
             this.txtTempatPelanggar.Name = "txtTempatPelanggar";
             this.txtTempatPelanggar.Size = new System.Drawing.Size(100, 20);
-            this.txtTempatPelanggar.TabIndex = 26;
+            this.txtTempatPelanggar.TabIndex = 47;
+            this.txtTempatPelanggar.TabStop = false;
             // 
             // label15
             // 
@@ -439,7 +441,8 @@
             this.txtNoKTPPelanggar.Location = new System.Drawing.Point(498, 120);
             this.txtNoKTPPelanggar.Name = "txtNoKTPPelanggar";
             this.txtNoKTPPelanggar.Size = new System.Drawing.Size(133, 20);
-            this.txtNoKTPPelanggar.TabIndex = 28;
+            this.txtNoKTPPelanggar.TabIndex = 49;
+            this.txtNoKTPPelanggar.TabStop = false;
             // 
             // label16
             // 
@@ -487,7 +490,8 @@
             this.txtTanggalLahir.Location = new System.Drawing.Point(293, 144);
             this.txtTanggalLahir.Name = "txtTanggalLahir";
             this.txtTanggalLahir.Size = new System.Drawing.Size(100, 20);
-            this.txtTanggalLahir.TabIndex = 33;
+            this.txtTanggalLahir.TabIndex = 48;
+            this.txtTanggalLahir.TabStop = false;
             // 
             // cbxPendidikan
             // 
@@ -495,7 +499,8 @@
             this.cbxPendidikan.Location = new System.Drawing.Point(87, 99);
             this.cbxPendidikan.Name = "cbxPendidikan";
             this.cbxPendidikan.Size = new System.Drawing.Size(121, 21);
-            this.cbxPendidikan.TabIndex = 32;
+            this.cbxPendidikan.TabIndex = 45;
+            this.cbxPendidikan.TabStop = false;
             // 
             // cbxPekerjaan
             // 
@@ -503,7 +508,8 @@
             this.cbxPekerjaan.Location = new System.Drawing.Point(87, 73);
             this.cbxPekerjaan.Name = "cbxPekerjaan";
             this.cbxPekerjaan.Size = new System.Drawing.Size(121, 21);
-            this.cbxPekerjaan.TabIndex = 31;
+            this.cbxPekerjaan.TabIndex = 44;
+            this.cbxPekerjaan.TabStop = false;
             // 
             // groupBox4
             // 
@@ -551,7 +557,7 @@
             this.txtDenda.Location = new System.Drawing.Point(184, 87);
             this.txtDenda.Name = "txtDenda";
             this.txtDenda.Size = new System.Drawing.Size(119, 20);
-            this.txtDenda.TabIndex = 17;
+            this.txtDenda.TabIndex = 30;
             // 
             // txtAngkaPinalti
             // 
@@ -559,7 +565,7 @@
             this.txtAngkaPinalti.Location = new System.Drawing.Point(203, 143);
             this.txtAngkaPinalti.Name = "txtAngkaPinalti";
             this.txtAngkaPinalti.Size = new System.Drawing.Size(100, 20);
-            this.txtAngkaPinalti.TabIndex = 16;
+            this.txtAngkaPinalti.TabIndex = 32;
             // 
             // txtBankSetor
             // 
@@ -567,7 +573,7 @@
             this.txtBankSetor.Location = new System.Drawing.Point(203, 121);
             this.txtBankSetor.Name = "txtBankSetor";
             this.txtBankSetor.Size = new System.Drawing.Size(100, 20);
-            this.txtBankSetor.TabIndex = 15;
+            this.txtBankSetor.TabIndex = 31;
             // 
             // label53
             // 
@@ -622,7 +628,7 @@
             this.txtPasal.Multiline = true;
             this.txtPasal.Name = "txtPasal";
             this.txtPasal.Size = new System.Drawing.Size(173, 21);
-            this.txtPasal.TabIndex = 1;
+            this.txtPasal.TabIndex = 29;
             // 
             // label48
             // 
@@ -674,7 +680,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(145, 258);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(186, 20);
-            this.dateTimePicker1.TabIndex = 26;
+            this.dateTimePicker1.TabIndex = 38;
             // 
             // txtAlamatWali
             // 
@@ -682,7 +688,7 @@
             this.txtAlamatWali.Location = new System.Drawing.Point(106, 180);
             this.txtAlamatWali.Name = "txtAlamatWali";
             this.txtAlamatWali.Size = new System.Drawing.Size(217, 20);
-            this.txtAlamatWali.TabIndex = 18;
+            this.txtAlamatWali.TabIndex = 37;
             // 
             // label66
             // 
@@ -699,7 +705,7 @@
             this.txtUmurWali.Location = new System.Drawing.Point(106, 157);
             this.txtUmurWali.Name = "txtUmurWali";
             this.txtUmurWali.Size = new System.Drawing.Size(217, 20);
-            this.txtUmurWali.TabIndex = 17;
+            this.txtUmurWali.TabIndex = 36;
             // 
             // txtNamaWali
             // 
@@ -707,7 +713,7 @@
             this.txtNamaWali.Location = new System.Drawing.Point(106, 132);
             this.txtNamaWali.Name = "txtNamaWali";
             this.txtNamaWali.Size = new System.Drawing.Size(217, 20);
-            this.txtNamaWali.TabIndex = 16;
+            this.txtNamaWali.TabIndex = 35;
             // 
             // label65
             // 
@@ -725,7 +731,7 @@
             this.rbtPerwakilan.Location = new System.Drawing.Point(9, 86);
             this.rbtPerwakilan.Name = "rbtPerwakilan";
             this.rbtPerwakilan.Size = new System.Drawing.Size(314, 43);
-            this.rbtPerwakilan.TabIndex = 15;
+            this.rbtPerwakilan.TabIndex = 34;
             this.rbtPerwakilan.TabStop = true;
             this.rbtPerwakilan.Text = "Berdasarkan Pasal 213 UU No 8 Tahun 1981 Tentang \r\nHukum Acara Pidana, \r\nsaya men" +
     "unjuk seorang untuk mewakili saya di sidang, yaitu :";
@@ -737,7 +743,7 @@
             this.rbtHadirSendiri.Location = new System.Drawing.Point(9, 52);
             this.rbtHadirSendiri.Name = "rbtHadirSendiri";
             this.rbtHadirSendiri.Size = new System.Drawing.Size(241, 30);
-            this.rbtHadirSendiri.TabIndex = 14;
+            this.rbtHadirSendiri.TabIndex = 33;
             this.rbtHadirSendiri.TabStop = true;
             this.rbtHadirSendiri.Text = "Saya akan hadir sendiri di Pengadilan perkara\r\npelanggaran tersebut.";
             this.rbtHadirSendiri.UseVisualStyleBackColor = true;
@@ -820,7 +826,8 @@
             this.txtGolSIM.Location = new System.Drawing.Point(69, 17);
             this.txtGolSIM.Name = "txtGolSIM";
             this.txtGolSIM.Size = new System.Drawing.Size(100, 20);
-            this.txtGolSIM.TabIndex = 2;
+            this.txtGolSIM.TabIndex = 50;
+            this.txtGolSIM.TabStop = false;
             // 
             // txtNoSIM
             // 
@@ -828,7 +835,8 @@
             this.txtNoSIM.Location = new System.Drawing.Point(200, 17);
             this.txtNoSIM.Name = "txtNoSIM";
             this.txtNoSIM.Size = new System.Drawing.Size(100, 20);
-            this.txtNoSIM.TabIndex = 3;
+            this.txtNoSIM.TabIndex = 51;
+            this.txtNoSIM.TabStop = false;
             // 
             // label20
             // 
@@ -854,7 +862,8 @@
             this.dtpTanggalLanggar.Location = new System.Drawing.Point(461, 17);
             this.dtpTanggalLanggar.Name = "dtpTanggalLanggar";
             this.dtpTanggalLanggar.Size = new System.Drawing.Size(180, 20);
-            this.dtpTanggalLanggar.TabIndex = 6;
+            this.dtpTanggalLanggar.TabIndex = 52;
+            this.dtpTanggalLanggar.TabStop = false;
             // 
             // label22
             // 
@@ -871,7 +880,7 @@
             this.textBox12.Location = new System.Drawing.Point(99, 48);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 8;
+            this.textBox12.TabIndex = 5;
             // 
             // label23
             // 
@@ -888,7 +897,7 @@
             this.textBox13.Location = new System.Drawing.Point(99, 72);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 10;
+            this.textBox13.TabIndex = 6;
             // 
             // label24
             // 
@@ -914,7 +923,7 @@
             this.textBox14.Location = new System.Drawing.Point(265, 48);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 13;
+            this.textBox14.TabIndex = 7;
             // 
             // textBox15
             // 
@@ -922,7 +931,7 @@
             this.textBox15.Location = new System.Drawing.Point(265, 72);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 14;
+            this.textBox15.TabIndex = 8;
             // 
             // label26
             // 
@@ -948,7 +957,7 @@
             this.textBox16.Location = new System.Drawing.Point(436, 48);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 17;
+            this.textBox16.TabIndex = 9;
             // 
             // textBox17
             // 
@@ -956,7 +965,7 @@
             this.textBox17.Location = new System.Drawing.Point(436, 72);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 18;
+            this.textBox17.TabIndex = 10;
             // 
             // groupBox6
             // 
@@ -995,7 +1004,7 @@
             this.textBox4.Location = new System.Drawing.Point(358, 17);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(37, 20);
-            this.textBox4.TabIndex = 19;
+            this.textBox4.TabIndex = 4;
             // 
             // label29
             // 
@@ -1021,7 +1030,7 @@
             this.txtJalan.Location = new System.Drawing.Point(96, 37);
             this.txtJalan.Name = "txtJalan";
             this.txtJalan.Size = new System.Drawing.Size(170, 20);
-            this.txtJalan.TabIndex = 9;
+            this.txtJalan.TabIndex = 13;
             // 
             // label34
             // 
@@ -1038,7 +1047,7 @@
             this.txtPatokan.Location = new System.Drawing.Point(321, 36);
             this.txtPatokan.Name = "txtPatokan";
             this.txtPatokan.Size = new System.Drawing.Size(173, 20);
-            this.txtPatokan.TabIndex = 11;
+            this.txtPatokan.TabIndex = 14;
             // 
             // label36
             // 
@@ -1106,14 +1115,14 @@
             this.dtpJamLanggar.Location = new System.Drawing.Point(349, 10);
             this.dtpJamLanggar.Name = "dtpJamLanggar";
             this.dtpJamLanggar.Size = new System.Drawing.Size(139, 20);
-            this.dtpJamLanggar.TabIndex = 27;
+            this.dtpJamLanggar.TabIndex = 12;
             // 
             // dtpWaktuLanggar
             // 
             this.dtpWaktuLanggar.Location = new System.Drawing.Point(97, 11);
             this.dtpWaktuLanggar.Name = "dtpWaktuLanggar";
             this.dtpWaktuLanggar.Size = new System.Drawing.Size(200, 20);
-            this.dtpWaktuLanggar.TabIndex = 26;
+            this.dtpWaktuLanggar.TabIndex = 11;
             // 
             // label32
             // 
@@ -1158,7 +1167,7 @@
             this.txtNamaTeller.Location = new System.Drawing.Point(127, 111);
             this.txtNamaTeller.Name = "txtNamaTeller";
             this.txtNamaTeller.Size = new System.Drawing.Size(71, 20);
-            this.txtNamaTeller.TabIndex = 20;
+            this.txtNamaTeller.TabIndex = 40;
             this.txtNamaTeller.Text = "Nama Teller";
             // 
             // label68
@@ -1177,7 +1186,7 @@
             this.txtBankSisaDenda.Location = new System.Drawing.Point(127, 55);
             this.txtBankSisaDenda.Name = "txtBankSisaDenda";
             this.txtBankSisaDenda.Size = new System.Drawing.Size(100, 20);
-            this.txtBankSisaDenda.TabIndex = 11;
+            this.txtBankSisaDenda.TabIndex = 39;
             // 
             // label64
             // 
@@ -1223,7 +1232,7 @@
             this.label60.Location = new System.Drawing.Point(277, 113);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(94, 15);
-            this.label60.TabIndex = 6;
+            this.label60.TabIndex = 0;
             this.label60.Text = "TANDA TANGAN";
             // 
             // label39
@@ -1241,7 +1250,7 @@
             this.txtTerbitSK.Location = new System.Drawing.Point(199, 23);
             this.txtTerbitSK.Name = "txtTerbitSK";
             this.txtTerbitSK.Size = new System.Drawing.Size(100, 20);
-            this.txtTerbitSK.TabIndex = 5;
+            this.txtTerbitSK.TabIndex = 17;
             // 
             // label40
             // 
@@ -1273,7 +1282,7 @@
             this.tbxSKSita.Location = new System.Drawing.Point(34, 23);
             this.tbxSKSita.Name = "tbxSKSita";
             this.tbxSKSita.Size = new System.Drawing.Size(100, 20);
-            this.tbxSKSita.TabIndex = 28;
+            this.tbxSKSita.TabIndex = 16;
             // 
             // label74
             // 
@@ -1289,7 +1298,7 @@
             this.dtpBerlakuSK.Location = new System.Drawing.Point(59, 61);
             this.dtpBerlakuSK.Name = "dtpBerlakuSK";
             this.dtpBerlakuSK.Size = new System.Drawing.Size(186, 20);
-            this.dtpBerlakuSK.TabIndex = 26;
+            this.dtpBerlakuSK.TabIndex = 20;
             // 
             // groupBox10
             // 
@@ -1311,7 +1320,7 @@
             this.textBox1.Location = new System.Drawing.Point(35, 23);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 30;
+            this.textBox1.TabIndex = 18;
             // 
             // label75
             // 
@@ -1327,7 +1336,7 @@
             this.dtpBerlakuPemda.Location = new System.Drawing.Point(67, 61);
             this.dtpBerlakuPemda.Name = "dtpBerlakuPemda";
             this.dtpBerlakuPemda.Size = new System.Drawing.Size(186, 20);
-            this.dtpBerlakuPemda.TabIndex = 25;
+            this.dtpBerlakuPemda.TabIndex = 21;
             // 
             // label41
             // 
@@ -1344,7 +1353,7 @@
             this.txtTerbitPemda.Location = new System.Drawing.Point(170, 23);
             this.txtTerbitPemda.Name = "txtTerbitPemda";
             this.txtTerbitPemda.Size = new System.Drawing.Size(140, 20);
-            this.txtTerbitPemda.TabIndex = 9;
+            this.txtTerbitPemda.TabIndex = 19;
             // 
             // label42
             // 
@@ -1384,7 +1393,7 @@
             this.dtpJam.Location = new System.Drawing.Point(376, 52);
             this.dtpJam.Name = "dtpJam";
             this.dtpJam.Size = new System.Drawing.Size(90, 20);
-            this.dtpJam.TabIndex = 25;
+            this.dtpJam.TabIndex = 24;
             this.dtpJam.ValueChanged += new System.EventHandler(this.dtpJam_ValueChanged);
             // 
             // txtTempatAmbil
@@ -1393,7 +1402,7 @@
             this.txtTempatAmbil.Location = new System.Drawing.Point(419, 114);
             this.txtTempatAmbil.Name = "txtTempatAmbil";
             this.txtTempatAmbil.Size = new System.Drawing.Size(181, 20);
-            this.txtTempatAmbil.TabIndex = 24;
+            this.txtTempatAmbil.TabIndex = 28;
             // 
             // txtKesatuanPenyidik
             // 
@@ -1401,7 +1410,7 @@
             this.txtKesatuanPenyidik.Location = new System.Drawing.Point(106, 118);
             this.txtKesatuanPenyidik.Name = "txtKesatuanPenyidik";
             this.txtKesatuanPenyidik.Size = new System.Drawing.Size(109, 20);
-            this.txtKesatuanPenyidik.TabIndex = 23;
+            this.txtKesatuanPenyidik.TabIndex = 27;
             // 
             // txtPangkatPenyidik
             // 
@@ -1409,7 +1418,7 @@
             this.txtPangkatPenyidik.Location = new System.Drawing.Point(106, 96);
             this.txtPangkatPenyidik.Name = "txtPangkatPenyidik";
             this.txtPangkatPenyidik.Size = new System.Drawing.Size(109, 20);
-            this.txtPangkatPenyidik.TabIndex = 22;
+            this.txtPangkatPenyidik.TabIndex = 26;
             // 
             // txtNamaPenyidik
             // 
@@ -1417,7 +1426,7 @@
             this.txtNamaPenyidik.Location = new System.Drawing.Point(106, 74);
             this.txtNamaPenyidik.Name = "txtNamaPenyidik";
             this.txtNamaPenyidik.Size = new System.Drawing.Size(109, 20);
-            this.txtNamaPenyidik.TabIndex = 21;
+            this.txtNamaPenyidik.TabIndex = 25;
             // 
             // label73
             // 
@@ -1479,7 +1488,7 @@
             this.dateTimePicker2.Location = new System.Drawing.Point(139, 52);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 6;
+            this.dateTimePicker2.TabIndex = 23;
             // 
             // label45
             // 
@@ -1496,7 +1505,7 @@
             this.txtPengadilan.Location = new System.Drawing.Point(46, 30);
             this.txtPengadilan.Name = "txtPengadilan";
             this.txtPengadilan.Size = new System.Drawing.Size(571, 20);
-            this.txtPengadilan.TabIndex = 2;
+            this.txtPengadilan.TabIndex = 22;
             // 
             // label44
             // 
@@ -1532,7 +1541,7 @@
             this.btnSimpanData.Location = new System.Drawing.Point(1082, 319);
             this.btnSimpanData.Name = "btnSimpanData";
             this.btnSimpanData.Size = new System.Drawing.Size(75, 51);
-            this.btnSimpanData.TabIndex = 15;
+            this.btnSimpanData.TabIndex = 40;
             this.btnSimpanData.Text = "Simpan Data";
             this.btnSimpanData.UseVisualStyleBackColor = true;
             this.btnSimpanData.Click += new System.EventHandler(this.btnSimpanData_Click);

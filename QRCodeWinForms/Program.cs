@@ -16,7 +16,7 @@ namespace QRCodeWinForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmInputDataSIM());
+            Application.Run(new frmMain());
         }
     }
 }
