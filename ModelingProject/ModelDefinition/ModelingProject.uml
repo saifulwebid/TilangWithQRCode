@@ -25,6 +25,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="ac263808-f2a3-4bb9-8dff-3bdfba79ea61">
+            <classMoniker
+              Id="8d05d3e8-a7d6-4308-a73b-9bc8f82d14f4"
+              LastKnownName="ExcelHelper"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="4226b0d8-ba0c-4aee-87a0-2928fa2ad43a"
@@ -259,6 +268,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="2da88bf8-a3a0-464c-8016-a4db8118b139">
+            <classMoniker
+              Id="8d05d3e8-a7d6-4308-a73b-9bc8f82d14f4"
+              LastKnownName="ExcelHelper"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="4cc492ab-1088-4f94-8cea-c8945c42144c"
@@ -482,6 +500,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="25b25eb2-4cf9-497f-befb-7bb654380376">
+            <classMoniker
+              Id="8d05d3e8-a7d6-4308-a73b-9bc8f82d14f4"
+              LastKnownName="ExcelHelper"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <property
             Id="b332a3bf-b8e5-4b6d-bc86-34970364215d"
@@ -876,6 +903,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="17aa5cd1-e6c9-46d4-9cf3-bf3dbfbf89cf">
+            <classMoniker
+              Id="8d05d3e8-a7d6-4308-a73b-9bc8f82d14f4"
+              LastKnownName="ExcelHelper"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="7afa6b96-18ef-4813-888b-b612389c1c16"

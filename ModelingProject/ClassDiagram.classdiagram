@@ -1,9 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="19147951-ac02-4aab-ada2-51a3b8a26fab" name="ClassDiagram" linkedPackageId="21ed8e72-0243-495c-ade9-8cccb9dc3859" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="19147951-ac02-4aab-ada2-51a3b8a26fab" name="ClassDiagram" linkedPackageId="21ed8e72-0243-495c-ade9-8cccb9dc3859" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="44345215-663d-4f97-be35-15fb6c090ad6" name="Penduduk" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="c4b45093-3421-4fb0-9d20-c48a6e6b818c" />
+        <suppliersInternal>
+          <dependency Id="fddacdbb-b833-439b-9b41-844dec30cc60">
+            <classMoniker Id="d66512ad-c7c0-455b-9c23-5bd0c11b5e87" LastKnownName="ExcelHelper" />
+            <elementDefinition Id="ac263808-f2a3-4bb9-8dff-3bdfba79ea61" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association Id="abfadd5a-e886-4ff1-8265-7802c1431e23" isDerived="false" sourceEndRoleName="Penduduk" targetEndRoleName="SIM" isLeaf="false" isAbstract="false">
             <classMoniker Id="e2c57789-4fa9-42f2-b460-ff066eda4fab" LastKnownName="SIM" />
@@ -103,6 +109,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="e2c57789-4fa9-42f2-b460-ff066eda4fab" name="SIM" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="b6498c74-af71-4803-8aba-ae5af27f462c" />
+        <suppliersInternal>
+          <dependency Id="e096c67c-6d9b-44b5-92b9-7a863f9d1ab8">
+            <classMoniker Id="d66512ad-c7c0-455b-9c23-5bd0c11b5e87" LastKnownName="ExcelHelper" />
+            <elementDefinition Id="2da88bf8-a3a0-464c-8016-a4db8118b139" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association Id="c8934b95-e11e-44b3-ad69-30646ca9a7a1" isDerived="false" sourceEndRoleName="SIM" targetEndRoleName="Pelanggaran" isLeaf="false" isAbstract="false">
             <classMoniker Id="2163e7c3-1c70-494f-b088-13eea3f588e6" LastKnownName="Pelanggaran" />
@@ -211,6 +223,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="2163e7c3-1c70-494f-b088-13eea3f588e6" name="Pelanggaran" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="3115616d-1ddd-41d7-849e-82c477b0ccfe" />
+        <suppliersInternal>
+          <dependency Id="85cb361b-63e4-4d34-befe-13cbfe9ec4d9">
+            <classMoniker Id="d66512ad-c7c0-455b-9c23-5bd0c11b5e87" LastKnownName="ExcelHelper" />
+            <elementDefinition Id="25b25eb2-4cf9-497f-befb-7bb654380376" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <property Id="ff15c0c9-8ff6-4082-8738-69721d42b2d1" name="Pelanggar" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="b332a3bf-b8e5-4b6d-bc86-34970364215d" />
@@ -349,6 +367,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="88509657-00e2-4f74-9873-486270060eac" name="Pasal" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d26db225-5baf-4edc-9ce2-3418865a3aa2" />
+        <suppliersInternal>
+          <dependency Id="ab1d2c0a-a852-412a-b123-6c35bae2af8e">
+            <classMoniker Id="d66512ad-c7c0-455b-9c23-5bd0c11b5e87" LastKnownName="ExcelHelper" />
+            <elementDefinition Id="17aa5cd1-e6c9-46d4-9cf3-bf3dbfbf89cf" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association Id="bdd21a46-bd1b-44c3-9d56-73846c84e272" isDerived="false" sourceEndRoleName="Pasal" targetEndRoleName="Pelanggaran" isLeaf="false" isAbstract="false">
             <classMoniker Id="2163e7c3-1c70-494f-b088-13eea3f588e6" LastKnownName="Pelanggaran" />
