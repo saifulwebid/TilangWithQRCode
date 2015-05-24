@@ -29,6 +29,7 @@ namespace QRCodeWinForms
             cmbPendidikan.DataSource = pendidikan;
             List<string> pekerjaan = new List<string> {"PNS", "SWASTA", "TNI", "POLRI", "PELAJAR", "MAHASISWA", "Lain-Lain" };
             cmbPekerjaan.DataSource = pekerjaan;
+            SetFieldToDefault();
         }
 
         private void btnSimpan_Click(object sender, EventArgs e)
@@ -44,7 +45,7 @@ namespace QRCodeWinForms
             additem.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
             additem.Pemilik.JenisKelamin = cmbJenisKelamin.Text;
             additem.Pemilik.NomorKTP = txtNoKTP.Text;
-            additem.TanggalHabis = new DateTime(additem.TanggalBuat.Year + 5, additem.TanggalBuat.Date.Month, additem.TanggalBuat.Date.Day);
+            additem.TanggalHabis = new DateTime(additem.TanggalBuat.Year + 5, additem.TanggalBuat.Month, additem.TanggalBuat.Day);
             if (additem.isValidate())
             {
                 additem.Save(additem);
@@ -84,11 +85,13 @@ namespace QRCodeWinForms
 
         private void SetFieldToDefault()
         {
+            DateTime time = Convert.ToDateTime(dtpTanggalPembuatan.Text);
             txtNoKTP.Text = "";
             txtNama.Text = "";
             txtAlamat.Text = "";
             txtTempatLahir.Text = "";
             txtNoSIM.Text = "";
+            dtpTanggalLahir.Text = (new DateTime(time.Year - 17, time.Month, time.Day)).ToLongDateString();
         }
     }
 }
