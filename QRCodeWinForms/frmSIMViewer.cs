@@ -40,9 +40,13 @@ namespace QRCodeWinForms
             {
                 lblJenisKelamin.Text = "PRIA";
             }
-            else
+            else if (tampilSIM.Pemilik.JenisKelamin == "Perempuan")
             {
                 lblJenisKelamin.Text = "WANITA";
+            }
+            else
+            {
+                lblJenisKelamin.Text = "";
             }
 
             GenerateQrCode();
