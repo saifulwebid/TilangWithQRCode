@@ -49,27 +49,12 @@ namespace QRCodeWinForms
             {
                 additem.Save(additem);
                 MessageBox.Show("Data Berhasil Disimpan");
-                txtNoKTP.Text = "";
-                txtNama.Text = "";
-                txtAlamat.Text = "";
-                txtTempatLahir.Text = "";
-                txtNoSIM.Text = "";
+                SetFieldToDefault();
             }
             else
             {
                 MessageBox.Show("Umur Pendaftar Belum Cukup");
-                additem.NomorSIM = "";
-                additem.Golongan = "";
-                additem.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
-                additem.Pemilik.Nama = "";
-                additem.Pemilik.Pekerjaan = "";
-                additem.Pemilik.Pendidikan = "";
-                additem.Pemilik.TempatLahir = "";
-                additem.Pemilik.Alamat = "";
-                additem.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
-                additem.Pemilik.JenisKelamin = "";
-                additem.Pemilik.NomorKTP = "";
-                additem.TanggalHabis = DateTime.Now;
+                ClearObject();
             }
             
         }
@@ -79,6 +64,31 @@ namespace QRCodeWinForms
             
             frmSIMViewer f2 = new frmSIMViewer(additem);
             f2.ShowDialog();
+        }
+
+        private void ClearObject()
+        {
+            additem.NomorSIM = "";
+            additem.Golongan = "";
+            additem.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
+            additem.Pemilik.Nama = "";
+            additem.Pemilik.Pekerjaan = "";
+            additem.Pemilik.Pendidikan = "";
+            additem.Pemilik.TempatLahir = "";
+            additem.Pemilik.Alamat = "";
+            additem.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
+            additem.Pemilik.JenisKelamin = "";
+            additem.Pemilik.NomorKTP = "";
+            additem.TanggalHabis = DateTime.Now;
+        }
+
+        private void SetFieldToDefault()
+        {
+            txtNoKTP.Text = "";
+            txtNama.Text = "";
+            txtAlamat.Text = "";
+            txtTempatLahir.Text = "";
+            txtNoSIM.Text = "";
         }
     }
 }
