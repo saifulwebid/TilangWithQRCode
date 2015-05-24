@@ -8,11 +8,17 @@ namespace QRCodeWinForms
 {
     public class Pasal
     {
+        private double _pidana;
         private double _dendaMaksimal;
         private string _keterangan;
         private string _nomorPasal;
         private bool _isNew;
 
+        public double Pidana
+        {
+            get { return _pidana; }
+            set { _pidana = value; }
+        }
         public double DendaMaksimal
         {
             get { return _dendaMaksimal; }
@@ -32,6 +38,14 @@ namespace QRCodeWinForms
         {
             get { return _isNew; }
             set { _isNew = value; }
+        }
+        public List<Pasal> GetAllPasal()
+        {
+            return ExcelHelper.GetAllPasal();
+        }
+        public List<DataPelanggaran> GetAllPelanggaran()
+        {
+            return ExcelHelper.GetAllPelanggaran();
         }
     }
 }

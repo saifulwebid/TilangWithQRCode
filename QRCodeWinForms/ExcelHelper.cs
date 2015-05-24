@@ -132,6 +132,64 @@ namespace QRCodeWinForms
                 }
             }
         }
+        public static List<Pasal> GetAllPasal()
+        {
+            const string fileName = "data\\DataGabungan.xlsx";
+            const int startRow = 1;
+
+            string folder = Assembly.GetEntryAssembly().Location;
+            if (folder != null)
+            {
+                folder = Path.GetDirectoryName(folder);
+                string filePath = Path.Combine(folder, fileName);
+                List<Pasal> listDataPasal = new List<Pasal>();
+
+                var existingFile = new FileInfo(filePath);
+                using (var package = new ExcelPackage(existingFile))
+                {
+                    ExcelWorkbook workBook = package.Workbook;
+
+                    if (workBook != null)
+                    {
+                        if (workBook.Worksheets.Count > 0)
+                        {
+                            ExcelWorksheet currentWorksheet = workBook.Worksheets[3];
+
+                            object col1Header = currentWorksheet.Cells[startRow, 1].Value;
+                            object col2Header = currentWorksheet.Cells[startRow, 2].Value;
+                            object col3Header = currentWorksheet.Cells[startRow, 3].Value;
+                            object col4Header = currentWorksheet.Cells[startRow+1, 3].Value;
+                            object col5Header = currentWorksheet.Cells[startRow+1, 4].Value;
+
+                            if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
+                                (col5Header != null))
+                            {
+                                for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
+                                {
+                                    object col1Value = currentWorksheet.Cells[rowNumber, 1].Value;
+                                    object col2Value = currentWorksheet.Cells[rowNumber, 2].Value;
+                                    object col3Value = currentWorksheet.Cells[rowNumber, 3].Value;
+                                    object col4Value = currentWorksheet.Cells[rowNumber, 4].Value;
+
+                                    if ((col1Value != null) && (col2Value != null) && (col3Value != null) && (col4Value != null))
+                                    {
+                                        listDataPasal.Add(new Pasal
+                                        {
+                                            NomorPasal = col1Value.ToString(),
+                                            Keterangan = col2Value.ToString(),
+                                            Pidana = Convert.ToDouble(col3Value),
+                                            DendaMaksimal = Convert.ToDouble(col4Value)
+                                        });
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    return listDataPasal;
+                }
+            }
+            return null;
+        }
         public static void SaveDataPelanggaran(DataPelanggaran dapel)
         {
             const string fileName = "data\\DataGabungan.xlsx";
