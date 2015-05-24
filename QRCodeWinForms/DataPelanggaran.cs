@@ -61,12 +61,12 @@ namespace QRCodeWinForms
             get { return _bankSisaDenda; }
             set { _bankSisaDenda = value; }
         }
-        public string DisitaDiterbitkanOleh
+        public string DisitaSKDiterbitkanOleh
         {
             get { return _disitaDiterbitkanOleh; }
             set { _disitaDiterbitkanOleh = value; }
         }
-        public DateTime DisitaMasaBerlaku
+        public DateTime DisitaSKMasaBerlaku
         {
             get { return _disitaMasaBerlaku; }
             set { _disitaMasaBerlaku = value; }

@@ -299,8 +299,8 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 23].Value = dapel.PatokanLokasi;
                                 currentWorksheet.Cells[rowNumber, 24].Value = dapel.WilayahHukum;
                                 currentWorksheet.Cells[rowNumber, 25].Value = dapel.DisitaSKRanmor;
-                                currentWorksheet.Cells[rowNumber, 26].Value = dapel.DisitaDiterbitkanOleh;
-                                currentWorksheet.Cells[rowNumber, 27].Value = dapel.DisitaMasaBerlaku;
+                                currentWorksheet.Cells[rowNumber, 26].Value = dapel.DisitaSKDiterbitkanOleh;
+                                currentWorksheet.Cells[rowNumber, 27].Value = dapel.DisitaSKMasaBerlaku;
                                 currentWorksheet.Cells[rowNumber, 28].Value = dapel.DisitaBukuUji;
                                 currentWorksheet.Cells[rowNumber, 29].Value = dapel.PenerbitPemda;
                                 currentWorksheet.Cells[rowNumber, 30].Value = dapel.BerlakuBukuUji;

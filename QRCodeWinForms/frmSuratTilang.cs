@@ -134,41 +134,25 @@ namespace QRCodeWinForms
                 { rbtPR.Checked = true;
                 datpel.Pelanggar.Pemilik.JenisKelamin = rbtPR.Text;
                 }
-                //kolom pekerjaan pelanggar
-               switch(Split[7])
-                {
-                   case "1": cbxPekerjaan.Text = "PNS";
-                        break;
-                   case "2": cbxPekerjaan.Text = "SWASTA";
-                        break;
-                   case "3": cbxPekerjaan.Text = "TNI";
-                        break;
-                   case "4": cbxPekerjaan.Text = "POLRI";
-                        break;
-                   case "5": cbxPekerjaan.Text = "PELAJAR";
-                        break;
-                   case "6": cbxPekerjaan.Text = "MHS";
-                        break;
-                   case "7": cbxPekerjaan.Text = "LAINNYA";
-                        break;
-                }
-                //kolom pendidikan pelanggar
-               switch (Split[8])
-               {
-                   case "1": cbxPendidikan.Text = "SD";
-                       break;
-                   case "2": cbxPendidikan.Text = "SLTP";
-                       break;
-                   case "3": cbxPendidikan.Text = "SLTA";
-                       break;
-                   case "4": cbxPendidikan.Text = "PT";
-                       break;
-               }                
+                cbxPekerjaan.Text = ConvertPekerjaan(Convert.ToInt32(Split[7])); ;
+                cbxPendidikan.Text = ConvertPendidikan(Convert.ToInt32(Split[8]));              
             }
             catch
             {
                 MessageBox.Show("QR Code tidak bisa dibaca!");
             }
+        }
+
+        private static string ConvertPekerjaan(int i)
+        {
+            string[] Pekerjaan = new string[] { "PNS", "SWASTA", "TNI", "POLRI", "PELAJAR", "MHS", "LAINNYA" };
+            return Pekerjaan[i - 1];
+        }
+
+        private static string ConvertPendidikan(int i)
+        {
+            string[] Pendidikan = new string[] { "SD", "SLTP", "SLTA", "PT" };
+            return Pendidikan[i - 1];
         }
 
         private void btnScanQRCode_Click(object sender, EventArgs e)
@@ -213,31 +197,31 @@ namespace QRCodeWinForms
                 datpel.Pelanggar.Golongan = txtGolSIM.Text;
                 datpel.Pelanggar.Pemilik.NomorKTP = txtNoKTPPelanggar.Text;
                 datpel.Pelanggar.NomorSIM = txtNoSIM.Text;
-                datpel.SATPAS = textBox4.Text;
-                datpel.NomorRangkaKendaraan = textBox12.Text;
-                datpel.SamsatKendaraan = textBox13.Text;
-                datpel.JenisKendaraan = textBox14.Text;
-                datpel.MerekKendaraan = textBox15.Text;
-                datpel.NOKA = textBox16.Text;
-                datpel.NOSIN = textBox17.Text;
+                datpel.SATPAS = txtSATPAS.Text;
+                datpel.NomorKendaraan = txtNoKendaraan.Text;
+                datpel.SamsatKendaraan = txtSamsat.Text;
+                datpel.JenisKendaraan = txtJenisKendaraan.Text;
+                datpel.MerekKendaraan = txtMerekKendaraan.Text;
+                datpel.NomorRangkaKendaraan = txtNoRangka.Text;
+                datpel.NomorMesinKendaraan = txtNoMeSIN.Text;
                 datpel.LokasiPelanggaran = txtJalan.Text;
                 datpel.PatokanLokasi = txtPatokan.Text;
                 datpel.WilayahHukum = txtWilayahHukum.Text;
-                datpel.DisitaRanmor = tbxSKSita.Text;
-                datpel.DisitaDiterbitkanOleh = txtTerbitSK.Text;
-                datpel.DisitaMasaBerlaku = Convert.ToDateTime(dtpBerlakuSK.Text);
-                datpel.BarangSita2 = textBox1.Text;
+                datpel.DisitaSKRanmor = tbxSKSita.Text;
+                datpel.DisitaSKDiterbitkanOleh = txtTerbitSK.Text;
+                datpel.DisitaSKMasaBerlaku = Convert.ToDateTime(dtpBerlakuSK.Text);
+                datpel.DisitaBukuUji = txtBukuUji.Text;
                 datpel.PenerbitPemda = txtTerbitPemda.Text;
-                datpel.BerlakuBarang2 = Convert.ToDateTime(dtpBerlakuPemda.Text);
+                datpel.BerlakuBukuUji = Convert.ToDateTime(dtpBerlakuPemda.Text);
                 datpel.LokasiSidang = txtPengadilan.Text;
-                datpel.WaktuSidang = Convert.ToDateTime(dateTimePicker2.Text);
+                datpel.WaktuSidang = Convert.ToDateTime(txtWaktuSidang.Text);
                 datpel.NamaPenyidik = txtNamaPenyidik.Text;
                 datpel.PangkatPenyidik = txtPangkatPenyidik.Text;
                 datpel.KesatuanPenyidik = txtKesatuanPenyidik.Text;
                 datpel.TempatPengambilan = txtTempatAmbil.Text;
                 datpel.PasalPelanggaran.NomorPasal = txtPasal.Text;
                 datpel.PasalPelanggaran.DendaMaksimal = Convert.ToDouble(txtDenda.Text);
-                datpel.TempatSetorDenda = txtDenda.Text;
+                datpel.TempatSetorDenda = txtBankSetor.Text;
                 datpel.AngkaPinaltiPelanggaran = Convert.ToDouble(txtAngkaPinalti.Text);
                 if (rbtHadirSendiri.Checked == true)
                 {
@@ -265,6 +249,11 @@ namespace QRCodeWinForms
         private void dtpJam_ValueChanged(object sender, EventArgs e)
         {
              
+        }
+
+        private void txtDenda_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
