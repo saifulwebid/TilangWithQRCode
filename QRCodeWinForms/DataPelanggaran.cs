@@ -13,18 +13,13 @@ namespace QRCodeWinForms
         private string _bankSisaDenda;
         private string _disitaDiterbitkanOleh;
         private DateTime _disitaMasaBerlaku;
-        private string _disitaRanmor;
-        private bool _disitaSIM;
-        private bool _disitaSTCK;
-        private bool _disitaSTNK;
+        private string _disitaSKRanmor;
         private string _jenisKendaraan;
         private double _jumlahUangTitipan;
         private string _kesatuan;
         private string _lokasiSidang;
         private string _merekKendaraan;
         private string _namaWakil;
-        private string _noka;
-        private string _nosin;
         private string _nomorKendaraan;
         private string _nomorMesinKendaraan;
         private string _nomorRangkaKendaraan;
@@ -46,7 +41,7 @@ namespace QRCodeWinForms
         private string _kesatuanPenyidik;
         private string _tempatPengambilan;
         private DateTime _berlakuPemda;
-        private string _barangSita2;
+        private string _bukuUjiRanmor;
         private string _pemdaPenerbit;
         private string _tempatSidang;
         private string _tempatSetorDenda;
@@ -76,25 +71,10 @@ namespace QRCodeWinForms
             get { return _disitaMasaBerlaku; }
             set { _disitaMasaBerlaku = value; }
         }
-        public string DisitaRanmor
+        public string DisitaSKRanmor
         {
-            get { return _disitaRanmor; }
-            set { _disitaRanmor = value; }
-        }
-        public bool DisitaSIM
-        {
-            get { return _disitaSIM; }
-            set { _disitaSIM = value; }
-        }
-        public bool DisitaSTCK
-        {
-            get { return _disitaSTCK; }
-            set { _disitaSTCK = value; }
-        }
-        public bool DisitaSTNK
-        {
-            get { return _disitaSTNK; }
-            set { _disitaSTNK = value; }
+            get { return _disitaSKRanmor; }
+            set { _disitaSKRanmor = value; }
         }
         public string JenisKendaraan
         {
@@ -140,16 +120,6 @@ namespace QRCodeWinForms
         {
             get { return _namaPenyidik; }
             set { _namaPenyidik = value; }
-        }
-        public string NOKA
-        {
-            get { return _noka; }
-            set { _noka = value; }
-        }
-        public string NOSIN
-        {
-            get { return _nosin; }
-            set { _nosin = value; }
         }
         public string NomorKendaraan
         {
@@ -241,17 +211,17 @@ namespace QRCodeWinForms
             get { return _wilayahHukum; }
             set { _wilayahHukum = value; }
         }
-        public string BarangSita2
+        public string DisitaBukuUji
         {
-            get { return _barangSita2; }
-            set { _barangSita2 = value; }
+            get { return _bukuUjiRanmor; }
+            set { _bukuUjiRanmor = value; }
         }
         public string PenerbitPemda
         {
             get { return _pemdaPenerbit; }
             set { _pemdaPenerbit = value; }
         }
-        public DateTime BerlakuBarang2
+        public DateTime BerlakuBukuUji
         {
             get { return _berlakuPemda; }
             set { _berlakuPemda = value; }
