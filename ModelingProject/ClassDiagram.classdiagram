@@ -266,35 +266,20 @@
           <property Id="8b4ceae9-b689-418c-bbc1-c4b9220beefb" name="SamsatKendaraan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f7fe8404-69bc-4a87-b0ff-faa5cabce200" />
           </property>
-          <property Id="9181a6f5-8380-4b56-a49c-fb6480d47642" name="DisitaSIM" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="9181a6f5-8380-4b56-a49c-fb6480d47642" name="DisitaSKMasaBerlaku" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="eaec65cc-8ea6-4047-bdac-2beb7188e0de" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="f64cddb3-ce6b-4b15-9e72-02bfdc744176" LastKnownName="Boolean" />
-            </type_NamedElement>
           </property>
-          <property Id="bdb5bca0-2433-4125-8d7a-5f41b360c760" name="DisitaSTCK" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="bdb5bca0-2433-4125-8d7a-5f41b360c760" name="DisitaBukuUji" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="c6f1bbea-6ab1-471b-94cc-5f7a655d64ae" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="f64cddb3-ce6b-4b15-9e72-02bfdc744176" LastKnownName="Boolean" />
-            </type_NamedElement>
           </property>
-          <property Id="92544c9e-d552-4b99-bd75-61a0816e8155" name="DisitaRanmor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="92544c9e-d552-4b99-bd75-61a0816e8155" name="DisitaSKRanmor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="5c38cf71-d92b-492a-9770-fe9f36e7b8d1" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="f64cddb3-ce6b-4b15-9e72-02bfdc744176" LastKnownName="Boolean" />
-            </type_NamedElement>
           </property>
-          <property Id="d1bfb011-3b69-481e-961c-2f0ce474fc26" name="DisitaSTNK" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="d1bfb011-3b69-481e-961c-2f0ce474fc26" name="DisitaBukuUjiDiterbitkanOleh" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="54c55af2-bcc3-4420-831a-ed8c0cb041d2" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="f64cddb3-ce6b-4b15-9e72-02bfdc744176" LastKnownName="Boolean" />
-            </type_NamedElement>
           </property>
-          <property Id="13207146-e949-47d8-84ad-ebaa69ef3c3c" name="DisitaDiterbitkanOleh" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="13207146-e949-47d8-84ad-ebaa69ef3c3c" name="DisitaSKDiterbitkanOleh" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="d8f16fe6-b9ce-42e3-9815-a13da4ca3c7d" />
-          </property>
-          <property Id="862fe8f5-02b1-4a99-9914-2cfeb3f44843" name="DisitaMasaBerlaku" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="9662a020-1ba6-4d11-8cad-3197e91ec96a" />
           </property>
           <property Id="49e1dcd1-c6bc-4b84-a694-a270e3d445d3" name="WaktuSidang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="56838e81-a697-4e73-9ad3-17672007f4ad" />
@@ -310,9 +295,6 @@
             <type_NamedElement>
               <referencedTypeMoniker Id="81120e01-1e9d-486b-a2ee-23ffd832cd62" LastKnownName="Pasal" />
             </type_NamedElement>
-          </property>
-          <property Id="ddd6063c-a4e8-43d7-9ffe-8ccb981e7635" name="JumlahUangTitipan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="c84dfe5f-08b8-4177-8ebc-b806d9be33d2" />
           </property>
           <property Id="6ae0dc16-9d0f-49bf-8e4d-186b93ceba99" name="BankSetoranDendaMaksimal" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="66b80f12-27cf-43e4-9b6b-bd63255f77ce" />
@@ -337,6 +319,36 @@
             <type_NamedElement>
               <referencedTypeMoniker Id="f64cddb3-ce6b-4b15-9e72-02bfdc744176" LastKnownName="Boolean" />
             </type_NamedElement>
+          </property>
+          <property Id="4f1472f1-7830-44ae-860b-068b248153ca" name="BankSisaDenda" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8261641d-7caf-4a4c-8b8b-883b1bb306bc" />
+          </property>
+          <property Id="d7a761a4-8019-4143-a2b8-77b83ba6eb3f" name="DisitaBukuUjiMasaBerlaku" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4b1d26b0-ab9f-4fa8-a166-d367c8c6e465" />
+          </property>
+          <property Id="c484833c-26d4-4ba9-a521-628417884c9f" name="KesatuanPenyidik" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9ad15450-4e10-4766-b75e-7671ca390524" />
+          </property>
+          <property Id="95c402fa-df09-4b89-b2d5-067164bdc0b8" name="LokasiPelanggaran" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d258b4ba-6fdc-4fe6-866b-8345b34f6231" />
+          </property>
+          <property Id="e472df4f-4a91-41aa-a6d6-1d37332a0de6" name="NamaPenyidik" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7692ba59-7aa8-4d83-9ecc-75154d578d03" />
+          </property>
+          <property Id="723caf5b-afb7-4f5e-a830-002e8ca1d238" name="PangkatPenyidik" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="613731dc-afe2-488c-b9e6-15267b6e13b6" />
+          </property>
+          <property Id="f0a67efe-904d-4fd3-8a59-bc5f2006ace3" name="PatokanLokasi" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2e0507c5-04ff-42c4-b7d6-c4cc0a68bdcf" />
+          </property>
+          <property Id="87a60192-c92a-4f2b-8092-491f4e196760" name="TempatPengambilanBarangSita" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="14afd2b3-2e41-44b5-8cde-e14c67e44a7c" />
+          </property>
+          <property Id="16906b45-239d-4ca3-a197-982d8f5916e2" name="TempatSidang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a769df91-5e6e-4950-82fb-3be89c546273" />
+          </property>
+          <property Id="1f6d335e-4e3e-48c0-b576-2e7f63e0255e" name="SATPAS" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eb059055-e5ef-4081-86bf-bc9e542891a1" />
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>

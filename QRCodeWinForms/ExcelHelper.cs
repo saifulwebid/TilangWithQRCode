@@ -302,8 +302,8 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 26].Value = dapel.DisitaSKDiterbitkanOleh;
                                 currentWorksheet.Cells[rowNumber, 27].Value = dapel.DisitaSKMasaBerlaku;
                                 currentWorksheet.Cells[rowNumber, 28].Value = dapel.DisitaBukuUji;
-                                currentWorksheet.Cells[rowNumber, 29].Value = dapel.PenerbitPemda;
-                                currentWorksheet.Cells[rowNumber, 30].Value = dapel.BerlakuBukuUji;
+                                currentWorksheet.Cells[rowNumber, 29].Value = dapel.DisitaBukuUjiDiterbitkanOleh;
+                                currentWorksheet.Cells[rowNumber, 30].Value = dapel.DisitaBukuUjiMasaBerlaku;
                                 currentWorksheet.Cells[rowNumber, 31].Value = dapel.LokasiSidang;
                                 currentWorksheet.Cells[rowNumber, 32].Value = dapel.WaktuSidang.Day;
                                 currentWorksheet.Cells[rowNumber, 33].Value = dapel.WaktuSidang.Date;
@@ -311,10 +311,10 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 35].Value = dapel.NamaPenyidik;
                                 currentWorksheet.Cells[rowNumber, 36].Value = dapel.PangkatPenyidik;
                                 currentWorksheet.Cells[rowNumber, 37].Value = dapel.KesatuanPenyidik;
-                                currentWorksheet.Cells[rowNumber, 38].Value = dapel.TempatPengambilan;
+                                currentWorksheet.Cells[rowNumber, 38].Value = dapel.TempatPengambilanBarangSita;
                                 currentWorksheet.Cells[rowNumber, 39].Value = dapel.PasalPelanggaran.NomorPasal;
                                 currentWorksheet.Cells[rowNumber, 40].Value = dapel.PasalPelanggaran.DendaMaksimal;
-                                currentWorksheet.Cells[rowNumber, 41].Value = dapel.TempatSetorDenda;
+                                currentWorksheet.Cells[rowNumber, 41].Value = dapel.BankSetorDendaMaksimal;
                                 currentWorksheet.Cells[rowNumber, 42].Value = dapel.AngkaPinaltiPelanggaran;
                                 currentWorksheet.Cells[rowNumber, 43].Value = dapel.PernyataanHadirSendiri;
                                 currentWorksheet.Cells[rowNumber, 44].Value = dapel.NamaWakil;
@@ -498,8 +498,8 @@ namespace QRCodeWinForms
                                         //
                                         //
                                         DisitaBukuUji = col28Value.ToString(),
-                                        PenerbitPemda = col29Value.ToString(),
-                                        BerlakuBukuUji = DateTime.FromOADate((double)col30Value),
+                                        DisitaBukuUjiDiterbitkanOleh = col29Value.ToString(),
+                                        DisitaBukuUjiMasaBerlaku = DateTime.FromOADate((double)col30Value),
                                         TempatSidang = col31Value.ToString(),
                                         //WaktuSidang
                                         //
@@ -507,7 +507,7 @@ namespace QRCodeWinForms
                                         NamaPenyidik = col35Value.ToString(),
                                         PangkatPenyidik = col36Value.ToString(),
                                         KesatuanPenyidik = col37Value.ToString(),
-                                        TempatPengambilan = col38Value.ToString(),
+                                        TempatPengambilanBarangSita = col38Value.ToString(),
                                         //PasalPelanggaran
                                         //
                                         //

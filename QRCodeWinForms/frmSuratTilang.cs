@@ -20,9 +20,7 @@ namespace QRCodeWinForms
         public frmSuratTilang()
         {
             InitializeComponent();
-        }
-
-        
+        }    
         private void label6_Click(object sender, EventArgs e)
         {
 
@@ -80,21 +78,6 @@ namespace QRCodeWinForms
 
         private void frmSuratTilang_Load(object sender, EventArgs e)
         {
-            cbxPekerjaan.DropDownStyle = ComboBoxStyle.DropDown;
-            cbxPekerjaan.Items.Add("PNS");
-            cbxPekerjaan.Items.Add("SWASTA");
-            cbxPekerjaan.Items.Add("TNI");
-            cbxPekerjaan.Items.Add("POLRI");
-            cbxPekerjaan.Items.Add("PELAJAR");
-            cbxPekerjaan.Items.Add("MHS");
-            cbxPekerjaan.Items.Add("LAINNYA");
-
-            cbxPendidikan.DropDownStyle = ComboBoxStyle.DropDown;
-            cbxPendidikan.Items.Add("SD");
-            cbxPendidikan.Items.Add("SLTP");
-            cbxPendidikan.Items.Add("SLTA");
-            cbxPendidikan.Items.Add("PT");
-
             dtpJam.ShowUpDown = true;
             dtpJam.CustomFormat = "HH:mm";
             dtpJam.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -116,6 +99,8 @@ namespace QRCodeWinForms
                 txtNamaPelanggar.Text = Split[3];
                 txtAlamatPelanggar.Text = Split[6];
                 txtNoKTPPelanggar.Text = Split[0];
+                txtPekerjaan.Text = ConvertPekerjaan(Convert.ToInt32(Split[7])); ;
+                txtPendidikan.Text = ConvertPendidikan(Convert.ToInt32(Split[8])); 
                 txtNoSIM.Text = Split[1];
                 txtTempatPelanggar.Text = Split[4];
                 txtGolSIM.Text = Split[2];
@@ -134,8 +119,7 @@ namespace QRCodeWinForms
                 { rbtPR.Checked = true;
                 datpel.Pelanggar.Pemilik.JenisKelamin = rbtPR.Text;
                 }
-                cbxPekerjaan.Text = ConvertPekerjaan(Convert.ToInt32(Split[7])); ;
-                cbxPendidikan.Text = ConvertPendidikan(Convert.ToInt32(Split[8]));              
+                             
             }
             catch
             {
@@ -190,8 +174,8 @@ namespace QRCodeWinForms
                 datpel.NomorTilang = txtNoRegTilang.Text;
                 datpel.Pelanggar.Pemilik.Nama = txtNamaPelanggar.Text;
                 datpel.Pelanggar.Pemilik.Alamat = txtAlamatPelanggar.Text;
-                datpel.Pelanggar.Pemilik.Pekerjaan = cbxPekerjaan.Text;
-                datpel.Pelanggar.Pemilik.Pendidikan = cbxPendidikan.Text;
+                datpel.Pelanggar.Pemilik.Pekerjaan = txtPekerjaan.Text;
+                datpel.Pelanggar.Pemilik.Pendidikan = txtPendidikan.Text;
                 datpel.Pelanggar.Pemilik.TempatLahir = txtTempatPelanggar.Text;
                 datpel.Pelanggar.Pemilik.TanggalLahir = Convert.ToDateTime(txtTanggalLahir.Text);
                 datpel.Pelanggar.Golongan = txtGolSIM.Text;
@@ -211,17 +195,17 @@ namespace QRCodeWinForms
                 datpel.DisitaSKDiterbitkanOleh = txtTerbitSK.Text;
                 datpel.DisitaSKMasaBerlaku = Convert.ToDateTime(dtpBerlakuSK.Text);
                 datpel.DisitaBukuUji = txtBukuUji.Text;
-                datpel.PenerbitPemda = txtTerbitPemda.Text;
-                datpel.BerlakuBukuUji = Convert.ToDateTime(dtpBerlakuPemda.Text);
+                datpel.DisitaBukuUjiDiterbitkanOleh = txtTerbitPemda.Text;
+                datpel.DisitaBukuUjiMasaBerlaku = Convert.ToDateTime(dtpBerlakuPemda.Text);
                 datpel.LokasiSidang = txtPengadilan.Text;
                 datpel.WaktuSidang = Convert.ToDateTime(txtWaktuSidang.Text);
                 datpel.NamaPenyidik = txtNamaPenyidik.Text;
                 datpel.PangkatPenyidik = txtPangkatPenyidik.Text;
                 datpel.KesatuanPenyidik = txtKesatuanPenyidik.Text;
-                datpel.TempatPengambilan = txtTempatAmbil.Text;
+                datpel.TempatPengambilanBarangSita = txtTempatAmbil.Text;
                 datpel.PasalPelanggaran.NomorPasal = txtPasal.Text;
                 datpel.PasalPelanggaran.DendaMaksimal = Convert.ToDouble(txtDenda.Text);
-                datpel.TempatSetorDenda = txtBankSetor.Text;
+                datpel.BankSetorDendaMaksimal = txtBankSetor.Text;
                 datpel.AngkaPinaltiPelanggaran = Convert.ToDouble(txtAngkaPinalti.Text);
                 if (rbtHadirSendiri.Checked == true)
                 {

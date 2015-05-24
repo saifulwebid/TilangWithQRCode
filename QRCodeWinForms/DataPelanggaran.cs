@@ -11,11 +11,11 @@ namespace QRCodeWinForms
         private string _alamatWakil;
         private double _angkaPinaltiPelanggaran;
         private string _bankSisaDenda;
-        private string _disitaDiterbitkanOleh;
-        private DateTime _disitaMasaBerlaku;
+        private string _disitaSKDiterbitkanOleh;
+        private DateTime _disitaSKMasaBerlaku;
         private string _disitaSKRanmor;
+        private bool _isNew;
         private string _jenisKendaraan;
-        private double _jumlahUangTitipan;
         private string _kesatuan;
         private string _lokasiSidang;
         private string _merekKendaraan;
@@ -40,11 +40,11 @@ namespace QRCodeWinForms
         private string _pangkatPenyidik;
         private string _kesatuanPenyidik;
         private string _tempatPengambilan;
-        private DateTime _berlakuPemda;
+        private DateTime _disitaBukuUjiMasaBerlaku;
         private string _bukuUjiRanmor;
-        private string _pemdaPenerbit;
+        private string _disitaBukuUjiDiterbitkanOleh;
         private string _tempatSidang;
-        private string _tempatSetorDenda;
+        private string _banksetorDendaMaksimal;
 
         public string AlamatWakil
         {
@@ -63,28 +63,28 @@ namespace QRCodeWinForms
         }
         public string DisitaSKDiterbitkanOleh
         {
-            get { return _disitaDiterbitkanOleh; }
-            set { _disitaDiterbitkanOleh = value; }
+            get { return _disitaSKDiterbitkanOleh; }
+            set { _disitaSKDiterbitkanOleh = value; }
         }
         public DateTime DisitaSKMasaBerlaku
         {
-            get { return _disitaMasaBerlaku; }
-            set { _disitaMasaBerlaku = value; }
+            get { return _disitaSKMasaBerlaku; }
+            set { _disitaSKMasaBerlaku = value; }
         }
         public string DisitaSKRanmor
         {
             get { return _disitaSKRanmor; }
             set { _disitaSKRanmor = value; }
         }
+        public bool IsNew
+        {
+            get { return _isNew; }
+            set { _isNew = value; }
+        }
         public string JenisKendaraan
         {
             get { return _jenisKendaraan; }
             set { _jenisKendaraan = value; }
-        }
-        public double JumlahUangTitipan
-        {
-            get { return _jumlahUangTitipan; }
-            set { _jumlahUangTitipan = value; }
         }
         public string Kesatuan
         {
@@ -181,7 +181,7 @@ namespace QRCodeWinForms
             get { return _SATPAS; }
             set { _SATPAS = value; }
         }
-        public string TempatPengambilan
+        public string TempatPengambilanBarangSita
         {
             get { return _tempatPengambilan; }
             set { _tempatPengambilan = value; }
@@ -216,20 +216,20 @@ namespace QRCodeWinForms
             get { return _bukuUjiRanmor; }
             set { _bukuUjiRanmor = value; }
         }
-        public string PenerbitPemda
+        public string DisitaBukuUjiDiterbitkanOleh
         {
-            get { return _pemdaPenerbit; }
-            set { _pemdaPenerbit = value; }
+            get { return _disitaBukuUjiDiterbitkanOleh; }
+            set { _disitaBukuUjiDiterbitkanOleh = value; }
         }
-        public DateTime BerlakuBukuUji
+        public DateTime DisitaBukuUjiMasaBerlaku
         {
-            get { return _berlakuPemda; }
-            set { _berlakuPemda = value; }
+            get { return _disitaBukuUjiMasaBerlaku; }
+            set { _disitaBukuUjiMasaBerlaku = value; }
         }
-        public string TempatSetorDenda
+        public string BankSetorDendaMaksimal
         {
-            get { return _tempatSetorDenda; }
-            set { _tempatSetorDenda = value; }
+            get { return _banksetorDendaMaksimal; }
+            set { _banksetorDendaMaksimal = value; }
         }
 
         public void Save(DataPelanggaran dapel)

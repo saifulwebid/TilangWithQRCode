@@ -59,8 +59,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtTanggalLahir = new System.Windows.Forms.TextBox();
-            this.cbxPendidikan = new System.Windows.Forms.ComboBox();
-            this.cbxPekerjaan = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label77 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
@@ -167,6 +165,8 @@
             this.label43 = new System.Windows.Forms.Label();
             this.btnScanQRCode = new System.Windows.Forms.Button();
             this.btnSimpanData = new System.Windows.Forms.Button();
+            this.txtPekerjaan = new System.Windows.Forms.TextBox();
+            this.txtPendidikan = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -456,9 +456,9 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
+            this.groupBox3.Controls.Add(this.txtPendidikan);
+            this.groupBox3.Controls.Add(this.txtPekerjaan);
             this.groupBox3.Controls.Add(this.txtTanggalLahir);
-            this.groupBox3.Controls.Add(this.cbxPendidikan);
-            this.groupBox3.Controls.Add(this.cbxPekerjaan);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.txtNoKTPPelanggar);
             this.groupBox3.Controls.Add(this.label15);
@@ -492,24 +492,6 @@
             this.txtTanggalLahir.Size = new System.Drawing.Size(100, 20);
             this.txtTanggalLahir.TabIndex = 12;
             this.txtTanggalLahir.TabStop = false;
-            // 
-            // cbxPendidikan
-            // 
-            this.cbxPendidikan.FormattingEnabled = true;
-            this.cbxPendidikan.Location = new System.Drawing.Point(87, 99);
-            this.cbxPendidikan.Name = "cbxPendidikan";
-            this.cbxPendidikan.Size = new System.Drawing.Size(121, 21);
-            this.cbxPendidikan.TabIndex = 9;
-            this.cbxPendidikan.TabStop = false;
-            // 
-            // cbxPekerjaan
-            // 
-            this.cbxPekerjaan.FormattingEnabled = true;
-            this.cbxPekerjaan.Location = new System.Drawing.Point(87, 73);
-            this.cbxPekerjaan.Name = "cbxPekerjaan";
-            this.cbxPekerjaan.Size = new System.Drawing.Size(121, 21);
-            this.cbxPekerjaan.TabIndex = 8;
-            this.cbxPekerjaan.TabStop = false;
             // 
             // groupBox4
             // 
@@ -1547,6 +1529,26 @@
             this.btnSimpanData.UseVisualStyleBackColor = true;
             this.btnSimpanData.Click += new System.EventHandler(this.btnSimpanData_Click);
             // 
+            // txtPekerjaan
+            // 
+            this.txtPekerjaan.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtPekerjaan.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtPekerjaan.Location = new System.Drawing.Point(87, 73);
+            this.txtPekerjaan.Name = "txtPekerjaan";
+            this.txtPekerjaan.Size = new System.Drawing.Size(133, 20);
+            this.txtPekerjaan.TabIndex = 30;
+            this.txtPekerjaan.TabStop = false;
+            // 
+            // txtPendidikan
+            // 
+            this.txtPendidikan.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtPendidikan.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtPendidikan.Location = new System.Drawing.Point(87, 98);
+            this.txtPendidikan.Name = "txtPendidikan";
+            this.txtPendidikan.Size = new System.Drawing.Size(133, 20);
+            this.txtPendidikan.TabIndex = 31;
+            this.txtPendidikan.TabStop = false;
+            // 
             // frmSuratTilang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1721,8 +1723,6 @@
         private System.Windows.Forms.DateTimePicker dtpBerlakuSK;
         private System.Windows.Forms.DateTimePicker dtpBerlakuPemda;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox cbxPekerjaan;
-        private System.Windows.Forms.ComboBox cbxPendidikan;
         private System.Windows.Forms.TextBox txtTanggalLahir;
         private System.Windows.Forms.TextBox tbxSKSita;
         private System.Windows.Forms.Label label74;
@@ -1735,6 +1735,8 @@
         private System.Windows.Forms.DateTimePicker dtpJamLanggar;
         private System.Windows.Forms.DateTimePicker dtpWaktuLanggar;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox txtPendidikan;
+        private System.Windows.Forms.TextBox txtPekerjaan;
 
 
 
