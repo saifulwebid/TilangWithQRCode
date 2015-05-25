@@ -15,8 +15,8 @@ namespace QRCodeWinForms
     public partial class frmInputSuratTilang : Form
     {
         string ResultString;
-        DataPelanggaran datpel = new DataPelanggaran();
-
+        DataPelanggaran datpel = new DataPelanggaran();    
+       
         public frmInputSuratTilang()
         {
             InitializeComponent();
@@ -36,6 +36,10 @@ namespace QRCodeWinForms
             dtpJamLanggar.ShowUpDown = true;
             dtpJamLanggar.CustomFormat = "HH:mm";
             dtpJamLanggar.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+
+            //combobox
+            cbxPasal.DataSource = Pasal.GetAllPasal();
+            cbxPasal.DisplayMember = "NomorPasal";
         }
 
         private void TampilData()
@@ -71,6 +75,8 @@ namespace QRCodeWinForms
                     rbtPR.Checked = true;
                     datpel.Pelanggar.Pemilik.JenisKelamin = rbtPR.Text;
                 }
+                //untuk denda
+
 
             }
             catch
@@ -94,8 +100,7 @@ namespace QRCodeWinForms
         {
             DateTime currentdate = new DateTime();
             currentdate = DateTime.Today;
-
-
+            
             if (currentdate.Month >= ttl.Month && currentdate.Date >= ttl.Date)
             {
                 return currentdate.Year - ttl.Year + 1;

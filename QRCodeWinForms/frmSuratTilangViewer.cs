@@ -14,11 +14,11 @@ namespace QRCodeWinForms
 {
     public partial class frmSuratTilangViewer : Form
     {
-           
+
         public frmSuratTilangViewer()
         {
             InitializeComponent();
-        }    
+        }
         private void label6_Click(object sender, EventArgs e)
         {
 
@@ -83,7 +83,7 @@ namespace QRCodeWinForms
         }
 
         private void dtpJam_ValueChanged(object sender, EventArgs e)
-        { 
+        {
         }
 
         private void txtDenda_TextChanged(object sender, EventArgs e)
@@ -98,5 +98,21 @@ namespace QRCodeWinForms
         {
 
         }
+
+        Bitmap memoryImage;
+        private void PrintScreenForm() // method untuk capture gambar form 2
+        {
+            Graphics myGraphics = this.CreateGraphics();
+            Size s = this.Size;
+            memoryImage = new Bitmap(s.Width - 20, s.Height - 81, myGraphics);
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            memoryGraphics.CopyFromScreen(Location.X + 9, Location.Y + 31, 0, 0, s);
+        }
+
+        private void pdSuratTilang_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(memoryImage, 100, 100); //gambar grpahic memoryImage (hasil Capture Form) ke pdSIM
+        }
+
     }
 }

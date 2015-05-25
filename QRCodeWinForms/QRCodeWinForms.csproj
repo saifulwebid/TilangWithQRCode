@@ -65,11 +65,11 @@
   <ItemGroup>
     <Compile Include="DataPelanggaran.cs" />
     <Compile Include="ExcelHelper.cs" />
-    <Compile Include="frmSuratTilang.cs">
+    <Compile Include="frmSuratTilangViewer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSuratTilang.Designer.cs">
-      <DependentUpon>frmSuratTilang.cs</DependentUpon>
+    <Compile Include="frmSuratTilangViewer.Designer.cs">
+      <DependentUpon>frmSuratTilangViewer.cs</DependentUpon>
     </Compile>
     <Compile Include="CameraDevices.cs" />
     <Compile Include="frmMain.cs">
@@ -134,8 +134,8 @@
     <EmbeddedResource Include="frmStatistikPelanggaran.resx">
       <DependentUpon>frmStatistikPelanggaran.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSuratTilang.resx">
-      <DependentUpon>frmSuratTilang.cs</DependentUpon>
+    <EmbeddedResource Include="frmSuratTilangViewer.resx">
+      <DependentUpon>frmSuratTilangViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInputSuratTilang.resx">
       <DependentUpon>frmInputSuratTilang.cs</DependentUpon>

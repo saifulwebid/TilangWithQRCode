@@ -236,6 +236,5 @@ namespace QRCodeWinForms
         {
             ExcelHelper.SaveDataPelanggaran(dapel);
         }
-
     }
 }

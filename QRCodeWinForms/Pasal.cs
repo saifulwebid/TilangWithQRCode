@@ -39,11 +39,11 @@ namespace QRCodeWinForms
             get { return _isNew; }
             set { _isNew = value; }
         }
-        public List<Pasal> GetAllPasal()
+        public static List<Pasal> GetAllPasal()
         {
             return ExcelHelper.GetAllPasal();
         }
-        public List<DataPelanggaran> GetAllPelanggaran()
+        public static List<DataPelanggaran> GetAllPelanggaran()
         {
             return ExcelHelper.GetAllPelanggaran();
         }
