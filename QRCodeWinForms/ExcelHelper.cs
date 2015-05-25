@@ -509,9 +509,12 @@ namespace QRCodeWinForms
                                         KesatuanPenyidik = col37Value.ToString(),
                                         TempatPengambilanBarangSita = col38Value.ToString(),
                                         //PasalPelanggaran
-                                        //
-                                        //
-                                        //
+                                        PasalPelanggaran = new Pasal
+                                        {
+                                            NomorPasal = col39Value.ToString(),
+                                            DendaMaksimal = Convert.ToDouble(col40Value),
+                                            IsNew = false
+                                        },
                                         //PernyataanHadirSendiri
                                         NamaWakil = col44Value.ToString(),
                                         UmurWakil = col45Value.ToString(),

@@ -62,5 +62,26 @@ namespace QRCodeWinForms
             QRCodeGenerator.QRCode qrCode = qrGenerator.CreateQrCode(input, QRCodeGenerator.ECCLevel.M); //ECC Level merupakan error correction
             pictureBox2.BackgroundImage = qrCode.GetGraphic(10); //10 adalah besar pixel dari qr code
         }
+
+        Bitmap memoryImage;
+        private void PrintScreenForm() // method untuk capture gambar form 2
+        {
+            Graphics myGraphics = this.CreateGraphics();
+            Size s = this.Size;
+            memoryImage = new Bitmap(s.Width-20, s.Height-81, myGraphics);
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            memoryGraphics.CopyFromScreen(Location.X+9, Location.Y+31, 0, 0, s);
+        }
+
+        private void pdSIM_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(memoryImage,100,100); //gambar grpahic memoryImage (hasil Capture Form) ke pdSIM
+        }
+
+        private void btnCetakSIM_Click(object sender, EventArgs e)
+        {
+            PrintScreenForm(); // panggil method untuk capture form 2
+            ppdSIM.ShowDialog(); // tampilkan print preview
+        }
     }
 }
