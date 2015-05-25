@@ -30,14 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSuratTilang));
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNoRegPenyidikan = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtKesatuan = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtNoRegTilang = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -46,42 +43,18 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtUmurPelanggar = new System.Windows.Forms.TextBox();
-            this.txtNamaPelanggar = new System.Windows.Forms.TextBox();
-            this.txtAlamatPelanggar = new System.Windows.Forms.TextBox();
-            this.rbtLK = new System.Windows.Forms.RadioButton();
-            this.rbtPR = new System.Windows.Forms.RadioButton();
+            this.rbtprtLK = new System.Windows.Forms.RadioButton();
+            this.rbtprtPR = new System.Windows.Forms.RadioButton();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtTempatPelanggar = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.txtNoKTPPelanggar = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtTanggalLahir = new System.Windows.Forms.TextBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.txtDenda = new System.Windows.Forms.TextBox();
-            this.txtAngkaPinalti = new System.Windows.Forms.TextBox();
-            this.txtBankSetor = new System.Windows.Forms.TextBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.txtPasal = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtAlamatWali = new System.Windows.Forms.TextBox();
             this.label66 = new System.Windows.Forms.Label();
-            this.txtUmurWali = new System.Windows.Forms.TextBox();
-            this.txtNamaWali = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
-            this.rbtPerwakilan = new System.Windows.Forms.RadioButton();
-            this.rbtHadirSendiri = new System.Windows.Forms.RadioButton();
+            this.rbtprtPerwakilan = new System.Windows.Forms.RadioButton();
+            this.rbtprtHadirSendiri = new System.Windows.Forms.RadioButton();
             this.label57 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
@@ -90,87 +63,112 @@
             this.label58 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.txtGolSIM = new System.Windows.Forms.TextBox();
-            this.txtNoSIM = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.dtpTanggalLanggar = new System.Windows.Forms.DateTimePicker();
             this.label22 = new System.Windows.Forms.Label();
-            this.txtNoKendaraan = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.txtSamsat = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.txtJenisKendaraan = new System.Windows.Forms.TextBox();
-            this.txtMerekKendaraan = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.txtNoRangka = new System.Windows.Forms.TextBox();
-            this.txtNoMeSIN = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.txtSATPAS = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.txtJalan = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.txtPatokan = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.txtWilayahHukum = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.dtpJamLanggar = new System.Windows.Forms.DateTimePicker();
-            this.dtpWaktuLanggar = new System.Windows.Forms.DateTimePicker();
             this.label32 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.txtNamaTeller = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
-            this.txtBankSisaDenda = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.txtTerbitSK = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.tbxSKSita = new System.Windows.Forms.TextBox();
             this.label74 = new System.Windows.Forms.Label();
-            this.dtpBerlakuSK = new System.Windows.Forms.DateTimePicker();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.txtBukuUji = new System.Windows.Forms.TextBox();
             this.label75 = new System.Windows.Forms.Label();
-            this.dtpBerlakuPemda = new System.Windows.Forms.DateTimePicker();
-            this.label41 = new System.Windows.Forms.Label();
-            this.txtTerbitPemda = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.dtpJam = new System.Windows.Forms.DateTimePicker();
-            this.txtTempatAmbil = new System.Windows.Forms.TextBox();
-            this.txtKesatuanPenyidik = new System.Windows.Forms.TextBox();
-            this.txtPangkatPenyidik = new System.Windows.Forms.TextBox();
-            this.txtNamaPenyidik = new System.Windows.Forms.TextBox();
             this.label73 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
-            this.txtWaktuSidang = new System.Windows.Forms.DateTimePicker();
             this.label45 = new System.Windows.Forms.Label();
-            this.txtPengadilan = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
-            this.btnScanQRCode = new System.Windows.Forms.Button();
-            this.btnSimpanData = new System.Windows.Forms.Button();
-            this.txtPekerjaan = new System.Windows.Forms.TextBox();
-            this.txtPendidikan = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.label96 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label102 = new System.Windows.Forms.Label();
+            this.label103 = new System.Windows.Forms.Label();
+            this.label104 = new System.Windows.Forms.Label();
+            this.label105 = new System.Windows.Forms.Label();
+            this.label106 = new System.Windows.Forms.Label();
+            this.label107 = new System.Windows.Forms.Label();
+            this.label108 = new System.Windows.Forms.Label();
+            this.label109 = new System.Windows.Forms.Label();
+            this.label110 = new System.Windows.Forms.Label();
+            this.label111 = new System.Windows.Forms.Label();
+            this.label112 = new System.Windows.Forms.Label();
+            this.label113 = new System.Windows.Forms.Label();
+            this.label114 = new System.Windows.Forms.Label();
+            this.label115 = new System.Windows.Forms.Label();
+            this.label116 = new System.Windows.Forms.Label();
+            this.label117 = new System.Windows.Forms.Label();
+            this.label118 = new System.Windows.Forms.Label();
+            this.label119 = new System.Windows.Forms.Label();
+            this.label120 = new System.Windows.Forms.Label();
+            this.label121 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -178,6 +176,7 @@
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -188,14 +187,6 @@
             this.label1.Size = new System.Drawing.Size(155, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "NO. REGISTER PENYIDIKAN:";
-            // 
-            // txtNoRegPenyidikan
-            // 
-            this.txtNoRegPenyidikan.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNoRegPenyidikan.Location = new System.Drawing.Point(495, 11);
-            this.txtNoRegPenyidikan.Name = "txtNoRegPenyidikan";
-            this.txtNoRegPenyidikan.Size = new System.Drawing.Size(100, 20);
-            this.txtNoRegPenyidikan.TabIndex = 1;
             // 
             // label2
             // 
@@ -217,21 +208,13 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "KESATUAN:";
             // 
-            // txtKesatuan
-            // 
-            this.txtKesatuan.BackColor = System.Drawing.SystemColors.Control;
-            this.txtKesatuan.Location = new System.Drawing.Point(87, 37);
-            this.txtKesatuan.Name = "txtKesatuan";
-            this.txtKesatuan.Size = new System.Drawing.Size(100, 20);
-            this.txtKesatuan.TabIndex = 2;
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.txtKesatuan);
+            this.groupBox1.Controls.Add(this.label110);
+            this.groupBox1.Controls.Add(this.label109);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtNoRegPenyidikan);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(1, 1);
             this.groupBox1.Name = "groupBox1";
@@ -259,14 +242,6 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "TILANG NO. REG.";
             // 
-            // txtNoRegTilang
-            // 
-            this.txtNoRegTilang.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNoRegTilang.Location = new System.Drawing.Point(938, 35);
-            this.txtNoRegTilang.Name = "txtNoRegTilang";
-            this.txtNoRegTilang.Size = new System.Drawing.Size(100, 20);
-            this.txtNoRegTilang.TabIndex = 3;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -280,8 +255,8 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.Controls.Add(this.label111);
             this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.txtNoRegTilang);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(1, 60);
@@ -293,7 +268,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 23);
+            this.label7.Location = new System.Drawing.Point(11, 29);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(41, 13);
             this.label7.TabIndex = 0;
@@ -344,58 +319,25 @@
             this.label12.TabIndex = 17;
             this.label12.Text = "THN";
             // 
-            // txtUmurPelanggar
+            // rbtprtLK
             // 
-            this.txtUmurPelanggar.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtUmurPelanggar.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtUmurPelanggar.Location = new System.Drawing.Point(66, 136);
-            this.txtUmurPelanggar.Name = "txtUmurPelanggar";
-            this.txtUmurPelanggar.Size = new System.Drawing.Size(46, 20);
-            this.txtUmurPelanggar.TabIndex = 10;
-            this.txtUmurPelanggar.TabStop = false;
+            this.rbtprtLK.AutoSize = true;
+            this.rbtprtLK.Location = new System.Drawing.Point(595, 21);
+            this.rbtprtLK.Name = "rbtprtLK";
+            this.rbtprtLK.Size = new System.Drawing.Size(38, 17);
+            this.rbtprtLK.TabIndex = 6;
+            this.rbtprtLK.Text = "LK";
+            this.rbtprtLK.UseVisualStyleBackColor = true;
             // 
-            // txtNamaPelanggar
+            // rbtprtPR
             // 
-            this.txtNamaPelanggar.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtNamaPelanggar.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtNamaPelanggar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNamaPelanggar.ForeColor = System.Drawing.Color.Blue;
-            this.txtNamaPelanggar.Location = new System.Drawing.Point(87, 20);
-            this.txtNamaPelanggar.Name = "txtNamaPelanggar";
-            this.txtNamaPelanggar.Size = new System.Drawing.Size(371, 20);
-            this.txtNamaPelanggar.TabIndex = 4;
-            this.txtNamaPelanggar.TabStop = false;
-            this.txtNamaPelanggar.Text = "Silahkan Scan QR Code";
-            // 
-            // txtAlamatPelanggar
-            // 
-            this.txtAlamatPelanggar.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtAlamatPelanggar.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtAlamatPelanggar.Location = new System.Drawing.Point(87, 47);
-            this.txtAlamatPelanggar.Name = "txtAlamatPelanggar";
-            this.txtAlamatPelanggar.Size = new System.Drawing.Size(371, 20);
-            this.txtAlamatPelanggar.TabIndex = 5;
-            this.txtAlamatPelanggar.TabStop = false;
-            // 
-            // rbtLK
-            // 
-            this.rbtLK.AutoSize = true;
-            this.rbtLK.Location = new System.Drawing.Point(595, 21);
-            this.rbtLK.Name = "rbtLK";
-            this.rbtLK.Size = new System.Drawing.Size(38, 17);
-            this.rbtLK.TabIndex = 6;
-            this.rbtLK.Text = "LK";
-            this.rbtLK.UseVisualStyleBackColor = true;
-            // 
-            // rbtPR
-            // 
-            this.rbtPR.AutoSize = true;
-            this.rbtPR.Location = new System.Drawing.Point(595, 45);
-            this.rbtPR.Name = "rbtPR";
-            this.rbtPR.Size = new System.Drawing.Size(40, 17);
-            this.rbtPR.TabIndex = 7;
-            this.rbtPR.Text = "PR";
-            this.rbtPR.UseVisualStyleBackColor = true;
+            this.rbtprtPR.AutoSize = true;
+            this.rbtprtPR.Location = new System.Drawing.Point(595, 45);
+            this.rbtprtPR.Name = "rbtprtPR";
+            this.rbtprtPR.Size = new System.Drawing.Size(40, 17);
+            this.rbtprtPR.TabIndex = 7;
+            this.rbtprtPR.Text = "PR";
+            this.rbtprtPR.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
@@ -415,16 +357,6 @@
             this.label14.TabIndex = 24;
             this.label14.Text = "TEMPAT:";
             // 
-            // txtTempatPelanggar
-            // 
-            this.txtTempatPelanggar.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtTempatPelanggar.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtTempatPelanggar.Location = new System.Drawing.Point(293, 122);
-            this.txtTempatPelanggar.Name = "txtTempatPelanggar";
-            this.txtTempatPelanggar.Size = new System.Drawing.Size(100, 20);
-            this.txtTempatPelanggar.TabIndex = 11;
-            this.txtTempatPelanggar.TabStop = false;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -433,16 +365,6 @@
             this.label15.Size = new System.Drawing.Size(96, 13);
             this.label15.TabIndex = 25;
             this.label15.Text = "TANGGAL LAHIR:";
-            // 
-            // txtNoKTPPelanggar
-            // 
-            this.txtNoKTPPelanggar.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtNoKTPPelanggar.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtNoKTPPelanggar.Location = new System.Drawing.Point(498, 120);
-            this.txtNoKTPPelanggar.Name = "txtNoKTPPelanggar";
-            this.txtNoKTPPelanggar.Size = new System.Drawing.Size(133, 20);
-            this.txtNoKTPPelanggar.TabIndex = 13;
-            this.txtNoKTPPelanggar.TabStop = false;
             // 
             // label16
             // 
@@ -455,21 +377,21 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.White;
-            this.groupBox3.Controls.Add(this.txtPendidikan);
-            this.groupBox3.Controls.Add(this.txtPekerjaan);
-            this.groupBox3.Controls.Add(this.txtTanggalLahir);
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.label80);
+            this.groupBox3.Controls.Add(this.label79);
+            this.groupBox3.Controls.Add(this.label78);
+            this.groupBox3.Controls.Add(this.label59);
+            this.groupBox3.Controls.Add(this.label46);
+            this.groupBox3.Controls.Add(this.label35);
+            this.groupBox3.Controls.Add(this.label31);
+            this.groupBox3.Controls.Add(this.label30);
             this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.txtNoKTPPelanggar);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.txtTempatPelanggar);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.rbtPR);
-            this.groupBox3.Controls.Add(this.rbtLK);
-            this.groupBox3.Controls.Add(this.txtAlamatPelanggar);
-            this.groupBox3.Controls.Add(this.txtNamaPelanggar);
-            this.groupBox3.Controls.Add(this.txtUmurPelanggar);
+            this.groupBox3.Controls.Add(this.rbtprtPR);
+            this.groupBox3.Controls.Add(this.rbtprtLK);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label10);
@@ -483,168 +405,17 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "DATA PELANGGAR";
             // 
-            // txtTanggalLahir
-            // 
-            this.txtTanggalLahir.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtTanggalLahir.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtTanggalLahir.Location = new System.Drawing.Point(293, 144);
-            this.txtTanggalLahir.Name = "txtTanggalLahir";
-            this.txtTanggalLahir.Size = new System.Drawing.Size(100, 20);
-            this.txtTanggalLahir.TabIndex = 12;
-            this.txtTanggalLahir.TabStop = false;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.Color.White;
-            this.groupBox4.Controls.Add(this.label77);
-            this.groupBox4.Controls.Add(this.label76);
-            this.groupBox4.Controls.Add(this.txtDenda);
-            this.groupBox4.Controls.Add(this.txtAngkaPinalti);
-            this.groupBox4.Controls.Add(this.txtBankSetor);
-            this.groupBox4.Controls.Add(this.label53);
-            this.groupBox4.Controls.Add(this.label52);
-            this.groupBox4.Controls.Add(this.label51);
-            this.groupBox4.Controls.Add(this.label50);
-            this.groupBox4.Controls.Add(this.label49);
-            this.groupBox4.Controls.Add(this.txtPasal);
-            this.groupBox4.Controls.Add(this.label48);
-            this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Location = new System.Drawing.Point(652, 131);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(416, 168);
-            this.groupBox4.TabIndex = 5;
-            this.groupBox4.TabStop = false;
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(309, 90);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(22, 13);
-            this.label77.TabIndex = 19;
-            this.label77.Text = ",00";
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(157, 90);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(21, 13);
-            this.label76.TabIndex = 18;
-            this.label76.Text = "Rp";
-            // 
-            // txtDenda
-            // 
-            this.txtDenda.BackColor = System.Drawing.SystemColors.Control;
-            this.txtDenda.Location = new System.Drawing.Point(184, 87);
-            this.txtDenda.Name = "txtDenda";
-            this.txtDenda.Size = new System.Drawing.Size(119, 20);
-            this.txtDenda.TabIndex = 32;
-            this.txtDenda.TextChanged += new System.EventHandler(this.txtDenda_TextChanged);
-            // 
-            // txtAngkaPinalti
-            // 
-            this.txtAngkaPinalti.BackColor = System.Drawing.SystemColors.Control;
-            this.txtAngkaPinalti.Location = new System.Drawing.Point(203, 143);
-            this.txtAngkaPinalti.Name = "txtAngkaPinalti";
-            this.txtAngkaPinalti.Size = new System.Drawing.Size(100, 20);
-            this.txtAngkaPinalti.TabIndex = 34;
-            // 
-            // txtBankSetor
-            // 
-            this.txtBankSetor.BackColor = System.Drawing.SystemColors.Control;
-            this.txtBankSetor.Location = new System.Drawing.Point(203, 121);
-            this.txtBankSetor.Name = "txtBankSetor";
-            this.txtBankSetor.Size = new System.Drawing.Size(100, 20);
-            this.txtBankSetor.TabIndex = 33;
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(6, 146);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(172, 13);
-            this.label53.TabIndex = 14;
-            this.label53.Text = "ANGKA PINALTI PELANGGARAN";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(6, 123);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(161, 13);
-            this.label52.TabIndex = 13;
-            this.label52.Text = "DISETORKAN MELALUI BANK:";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(6, 90);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(106, 13);
-            this.label51.TabIndex = 8;
-            this.label51.Text = "DENDA MAKSIMAL:";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(7, 73);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(129, 13);
-            this.label50.TabIndex = 3;
-            this.label50.Text = "JUMLAH UANG TITIPAN";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(96, 50);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(168, 13);
-            this.label49.TabIndex = 2;
-            this.label49.Text = "UU NO 22/2009 TENTANG LLAJ";
-            this.label49.Click += new System.EventHandler(this.label49_Click);
-            // 
-            // txtPasal
-            // 
-            this.txtPasal.BackColor = System.Drawing.SystemColors.Control;
-            this.txtPasal.Location = new System.Drawing.Point(128, 20);
-            this.txtPasal.Multiline = true;
-            this.txtPasal.Name = "txtPasal";
-            this.txtPasal.Size = new System.Drawing.Size(173, 21);
-            this.txtPasal.TabIndex = 31;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(6, 25);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(118, 13);
-            this.label48.TabIndex = 0;
-            this.label48.Text = "MELANGGAR PASAL :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 15);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "RUANG BAGI TERDAKWA";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.White;
-            this.groupBox5.Controls.Add(this.dateTimePicker1);
-            this.groupBox5.Controls.Add(this.txtAlamatWali);
+            this.groupBox5.Controls.Add(this.label120);
+            this.groupBox5.Controls.Add(this.label119);
+            this.groupBox5.Controls.Add(this.label118);
+            this.groupBox5.Controls.Add(this.label117);
             this.groupBox5.Controls.Add(this.label66);
-            this.groupBox5.Controls.Add(this.txtUmurWali);
-            this.groupBox5.Controls.Add(this.txtNamaWali);
             this.groupBox5.Controls.Add(this.label65);
-            this.groupBox5.Controls.Add(this.rbtPerwakilan);
-            this.groupBox5.Controls.Add(this.rbtHadirSendiri);
+            this.groupBox5.Controls.Add(this.rbtprtPerwakilan);
+            this.groupBox5.Controls.Add(this.rbtprtHadirSendiri);
             this.groupBox5.Controls.Add(this.label57);
             this.groupBox5.Controls.Add(this.label67);
             this.groupBox5.Controls.Add(this.label54);
@@ -658,45 +429,14 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(145, 258);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(186, 20);
-            this.dateTimePicker1.TabIndex = 38;
-            // 
-            // txtAlamatWali
-            // 
-            this.txtAlamatWali.BackColor = System.Drawing.SystemColors.Control;
-            this.txtAlamatWali.Location = new System.Drawing.Point(106, 180);
-            this.txtAlamatWali.Name = "txtAlamatWali";
-            this.txtAlamatWali.Size = new System.Drawing.Size(217, 20);
-            this.txtAlamatWali.TabIndex = 39;
-            // 
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(70, 263);
+            this.label66.Location = new System.Drawing.Point(101, 263);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(71, 13);
             this.label66.TabIndex = 12;
             this.label66.Text = "Hari, Tanggal";
-            // 
-            // txtUmurWali
-            // 
-            this.txtUmurWali.BackColor = System.Drawing.SystemColors.Control;
-            this.txtUmurWali.Location = new System.Drawing.Point(106, 157);
-            this.txtUmurWali.Name = "txtUmurWali";
-            this.txtUmurWali.Size = new System.Drawing.Size(217, 20);
-            this.txtUmurWali.TabIndex = 38;
-            // 
-            // txtNamaWali
-            // 
-            this.txtNamaWali.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNamaWali.Location = new System.Drawing.Point(106, 132);
-            this.txtNamaWali.Name = "txtNamaWali";
-            this.txtNamaWali.Size = new System.Drawing.Size(217, 20);
-            this.txtNamaWali.TabIndex = 37;
             // 
             // label65
             // 
@@ -708,33 +448,33 @@
             this.label65.TabIndex = 11;
             this.label65.Text = "Tanda Tangan Terdakwa";
             // 
-            // rbtPerwakilan
+            // rbtprtPerwakilan
             // 
-            this.rbtPerwakilan.AutoSize = true;
-            this.rbtPerwakilan.Location = new System.Drawing.Point(9, 86);
-            this.rbtPerwakilan.Name = "rbtPerwakilan";
-            this.rbtPerwakilan.Size = new System.Drawing.Size(314, 43);
-            this.rbtPerwakilan.TabIndex = 36;
-            this.rbtPerwakilan.TabStop = true;
-            this.rbtPerwakilan.Text = "Berdasarkan Pasal 213 UU No 8 Tahun 1981 Tentang \r\nHukum Acara Pidana, \r\nsaya men" +
+            this.rbtprtPerwakilan.AutoSize = true;
+            this.rbtprtPerwakilan.Location = new System.Drawing.Point(9, 86);
+            this.rbtprtPerwakilan.Name = "rbtprtPerwakilan";
+            this.rbtprtPerwakilan.Size = new System.Drawing.Size(314, 43);
+            this.rbtprtPerwakilan.TabIndex = 36;
+            this.rbtprtPerwakilan.TabStop = true;
+            this.rbtprtPerwakilan.Text = "Berdasarkan Pasal 213 UU No 8 Tahun 1981 Tentang \r\nHukum Acara Pidana, \r\nsaya men" +
     "unjuk seorang untuk mewakili saya di sidang, yaitu :";
-            this.rbtPerwakilan.UseVisualStyleBackColor = true;
+            this.rbtprtPerwakilan.UseVisualStyleBackColor = true;
             // 
-            // rbtHadirSendiri
+            // rbtprtHadirSendiri
             // 
-            this.rbtHadirSendiri.AutoSize = true;
-            this.rbtHadirSendiri.Location = new System.Drawing.Point(9, 52);
-            this.rbtHadirSendiri.Name = "rbtHadirSendiri";
-            this.rbtHadirSendiri.Size = new System.Drawing.Size(241, 30);
-            this.rbtHadirSendiri.TabIndex = 35;
-            this.rbtHadirSendiri.TabStop = true;
-            this.rbtHadirSendiri.Text = "Saya akan hadir sendiri di Pengadilan perkara\r\npelanggaran tersebut.";
-            this.rbtHadirSendiri.UseVisualStyleBackColor = true;
+            this.rbtprtHadirSendiri.AutoSize = true;
+            this.rbtprtHadirSendiri.Location = new System.Drawing.Point(9, 52);
+            this.rbtprtHadirSendiri.Name = "rbtprtHadirSendiri";
+            this.rbtprtHadirSendiri.Size = new System.Drawing.Size(241, 30);
+            this.rbtprtHadirSendiri.TabIndex = 35;
+            this.rbtprtHadirSendiri.TabStop = true;
+            this.rbtprtHadirSendiri.Text = "Saya akan hadir sendiri di Pengadilan perkara\r\npelanggaran tersebut.";
+            this.rbtprtHadirSendiri.UseVisualStyleBackColor = true;
             // 
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(7, 203);
+            this.label57.Location = new System.Drawing.Point(8, 203);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(363, 52);
             this.label57.TabIndex = 3;
@@ -803,24 +543,6 @@
             this.label19.TabIndex = 1;
             this.label19.Text = "NO:";
             // 
-            // txtGolSIM
-            // 
-            this.txtGolSIM.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtGolSIM.Location = new System.Drawing.Point(69, 17);
-            this.txtGolSIM.Name = "txtGolSIM";
-            this.txtGolSIM.Size = new System.Drawing.Size(100, 20);
-            this.txtGolSIM.TabIndex = 14;
-            this.txtGolSIM.TabStop = false;
-            // 
-            // txtNoSIM
-            // 
-            this.txtNoSIM.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtNoSIM.Location = new System.Drawing.Point(200, 17);
-            this.txtNoSIM.Name = "txtNoSIM";
-            this.txtNoSIM.Size = new System.Drawing.Size(100, 20);
-            this.txtNoSIM.TabIndex = 15;
-            this.txtNoSIM.TabStop = false;
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -834,19 +556,11 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(402, 20);
+            this.label21.Location = new System.Drawing.Point(445, 20);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(58, 13);
             this.label21.TabIndex = 5;
             this.label21.Text = "TANGGAL";
-            // 
-            // dtpTanggalLanggar
-            // 
-            this.dtpTanggalLanggar.Location = new System.Drawing.Point(461, 17);
-            this.dtpTanggalLanggar.Name = "dtpTanggalLanggar";
-            this.dtpTanggalLanggar.Size = new System.Drawing.Size(180, 20);
-            this.dtpTanggalLanggar.TabIndex = 52;
-            this.dtpTanggalLanggar.TabStop = false;
             // 
             // label22
             // 
@@ -857,14 +571,6 @@
             this.label22.TabIndex = 7;
             this.label22.Text = "KENDARAAN\r\nNO REGISTER:";
             // 
-            // txtNoKendaraan
-            // 
-            this.txtNoKendaraan.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNoKendaraan.Location = new System.Drawing.Point(99, 48);
-            this.txtNoKendaraan.Name = "txtNoKendaraan";
-            this.txtNoKendaraan.Size = new System.Drawing.Size(100, 20);
-            this.txtNoKendaraan.TabIndex = 5;
-            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -873,14 +579,6 @@
             this.label23.Size = new System.Drawing.Size(54, 13);
             this.label23.TabIndex = 9;
             this.label23.Text = "SAMSAT:";
-            // 
-            // txtSamsat
-            // 
-            this.txtSamsat.BackColor = System.Drawing.SystemColors.Control;
-            this.txtSamsat.Location = new System.Drawing.Point(99, 72);
-            this.txtSamsat.Name = "txtSamsat";
-            this.txtSamsat.Size = new System.Drawing.Size(100, 20);
-            this.txtSamsat.TabIndex = 10;
             // 
             // label24
             // 
@@ -900,22 +598,6 @@
             this.label25.TabIndex = 12;
             this.label25.Text = "MEREK:";
             // 
-            // txtJenisKendaraan
-            // 
-            this.txtJenisKendaraan.BackColor = System.Drawing.SystemColors.Control;
-            this.txtJenisKendaraan.Location = new System.Drawing.Point(265, 48);
-            this.txtJenisKendaraan.Name = "txtJenisKendaraan";
-            this.txtJenisKendaraan.Size = new System.Drawing.Size(100, 20);
-            this.txtJenisKendaraan.TabIndex = 7;
-            // 
-            // txtMerekKendaraan
-            // 
-            this.txtMerekKendaraan.BackColor = System.Drawing.SystemColors.Control;
-            this.txtMerekKendaraan.Location = new System.Drawing.Point(265, 72);
-            this.txtMerekKendaraan.Name = "txtMerekKendaraan";
-            this.txtMerekKendaraan.Size = new System.Drawing.Size(100, 20);
-            this.txtMerekKendaraan.TabIndex = 11;
-            // 
             // label26
             // 
             this.label26.AutoSize = true;
@@ -934,43 +616,27 @@
             this.label27.TabIndex = 16;
             this.label27.Text = "NOSIN:";
             // 
-            // txtNoRangka
-            // 
-            this.txtNoRangka.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNoRangka.Location = new System.Drawing.Point(436, 48);
-            this.txtNoRangka.Name = "txtNoRangka";
-            this.txtNoRangka.Size = new System.Drawing.Size(100, 20);
-            this.txtNoRangka.TabIndex = 9;
-            // 
-            // txtNoMeSIN
-            // 
-            this.txtNoMeSIN.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNoMeSIN.Location = new System.Drawing.Point(436, 72);
-            this.txtNoMeSIN.Name = "txtNoMeSIN";
-            this.txtNoMeSIN.Size = new System.Drawing.Size(100, 20);
-            this.txtNoMeSIN.TabIndex = 10;
-            // 
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.White;
-            this.groupBox6.Controls.Add(this.txtSATPAS);
-            this.groupBox6.Controls.Add(this.txtNoMeSIN);
-            this.groupBox6.Controls.Add(this.txtNoRangka);
+            this.groupBox6.Controls.Add(this.label90);
+            this.groupBox6.Controls.Add(this.label89);
+            this.groupBox6.Controls.Add(this.label88);
+            this.groupBox6.Controls.Add(this.label87);
+            this.groupBox6.Controls.Add(this.label86);
+            this.groupBox6.Controls.Add(this.label85);
+            this.groupBox6.Controls.Add(this.label84);
+            this.groupBox6.Controls.Add(this.label83);
+            this.groupBox6.Controls.Add(this.label82);
+            this.groupBox6.Controls.Add(this.label81);
             this.groupBox6.Controls.Add(this.label27);
             this.groupBox6.Controls.Add(this.label26);
-            this.groupBox6.Controls.Add(this.txtMerekKendaraan);
-            this.groupBox6.Controls.Add(this.txtJenisKendaraan);
             this.groupBox6.Controls.Add(this.label25);
             this.groupBox6.Controls.Add(this.label24);
-            this.groupBox6.Controls.Add(this.txtSamsat);
             this.groupBox6.Controls.Add(this.label23);
-            this.groupBox6.Controls.Add(this.txtNoKendaraan);
             this.groupBox6.Controls.Add(this.label22);
-            this.groupBox6.Controls.Add(this.dtpTanggalLanggar);
             this.groupBox6.Controls.Add(this.label21);
             this.groupBox6.Controls.Add(this.label20);
-            this.groupBox6.Controls.Add(this.txtNoSIM);
-            this.groupBox6.Controls.Add(this.txtGolSIM);
             this.groupBox6.Controls.Add(this.label19);
             this.groupBox6.Controls.Add(this.label18);
             this.groupBox6.Location = new System.Drawing.Point(1, 300);
@@ -981,22 +647,15 @@
             this.groupBox6.Text = "DATA SIM";
             this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
             // 
-            // txtSATPAS
-            // 
-            this.txtSATPAS.BackColor = System.Drawing.SystemColors.Control;
-            this.txtSATPAS.Location = new System.Drawing.Point(358, 17);
-            this.txtSATPAS.Name = "txtSATPAS";
-            this.txtSATPAS.Size = new System.Drawing.Size(37, 20);
-            this.txtSATPAS.TabIndex = 16;
-            // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Location = new System.Drawing.Point(9, 13);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(82, 13);
+            this.label29.Size = new System.Drawing.Size(36, 13);
             this.label29.TabIndex = 0;
-            this.label29.Text = "PADA HARI INI";
+            this.label29.Text = "PADA";
+            this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
             // label33
             // 
@@ -1007,14 +666,6 @@
             this.label33.TabIndex = 8;
             this.label33.Text = "DI JALAN";
             // 
-            // txtJalan
-            // 
-            this.txtJalan.BackColor = System.Drawing.SystemColors.Control;
-            this.txtJalan.Location = new System.Drawing.Point(96, 37);
-            this.txtJalan.Name = "txtJalan";
-            this.txtJalan.Size = new System.Drawing.Size(170, 20);
-            this.txtJalan.TabIndex = 15;
-            // 
             // label34
             // 
             this.label34.AutoSize = true;
@@ -1024,14 +675,6 @@
             this.label34.TabIndex = 10;
             this.label34.Text = "DEKAT";
             // 
-            // txtPatokan
-            // 
-            this.txtPatokan.BackColor = System.Drawing.SystemColors.Control;
-            this.txtPatokan.Location = new System.Drawing.Point(321, 36);
-            this.txtPatokan.Name = "txtPatokan";
-            this.txtPatokan.Size = new System.Drawing.Size(173, 20);
-            this.txtPatokan.TabIndex = 16;
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
@@ -1040,15 +683,6 @@
             this.label36.Size = new System.Drawing.Size(139, 13);
             this.label36.TabIndex = 14;
             this.label36.Text = "DALAM WILAYAH HUKUM";
-            // 
-            // txtWilayahHukum
-            // 
-            this.txtWilayahHukum.BackColor = System.Drawing.SystemColors.Control;
-            this.txtWilayahHukum.Location = new System.Drawing.Point(154, 62);
-            this.txtWilayahHukum.Name = "txtWilayahHukum";
-            this.txtWilayahHukum.Size = new System.Drawing.Size(402, 20);
-            this.txtWilayahHukum.TabIndex = 17;
-            this.txtWilayahHukum.TextChanged += new System.EventHandler(this.textBox25_TextChanged);
             // 
             // label37
             // 
@@ -1075,37 +709,23 @@
             // 
             this.groupBox7.BackColor = System.Drawing.Color.White;
             this.groupBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.groupBox7.Controls.Add(this.dtpJamLanggar);
-            this.groupBox7.Controls.Add(this.dtpWaktuLanggar);
+            this.groupBox7.Controls.Add(this.label95);
+            this.groupBox7.Controls.Add(this.label94);
+            this.groupBox7.Controls.Add(this.label93);
+            this.groupBox7.Controls.Add(this.label92);
+            this.groupBox7.Controls.Add(this.label91);
             this.groupBox7.Controls.Add(this.label38);
             this.groupBox7.Controls.Add(this.label37);
-            this.groupBox7.Controls.Add(this.txtWilayahHukum);
             this.groupBox7.Controls.Add(this.label36);
-            this.groupBox7.Controls.Add(this.txtPatokan);
             this.groupBox7.Controls.Add(this.label34);
-            this.groupBox7.Controls.Add(this.txtJalan);
             this.groupBox7.Controls.Add(this.label33);
             this.groupBox7.Controls.Add(this.label32);
             this.groupBox7.Controls.Add(this.label29);
-            this.groupBox7.Location = new System.Drawing.Point(1, 395);
+            this.groupBox7.Location = new System.Drawing.Point(1, 404);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(645, 117);
+            this.groupBox7.Size = new System.Drawing.Size(645, 121);
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
-            // 
-            // dtpJamLanggar
-            // 
-            this.dtpJamLanggar.Location = new System.Drawing.Point(349, 10);
-            this.dtpJamLanggar.Name = "dtpJamLanggar";
-            this.dtpJamLanggar.Size = new System.Drawing.Size(139, 20);
-            this.dtpJamLanggar.TabIndex = 14;
-            // 
-            // dtpWaktuLanggar
-            // 
-            this.dtpWaktuLanggar.Location = new System.Drawing.Point(97, 11);
-            this.dtpWaktuLanggar.Name = "dtpWaktuLanggar";
-            this.dtpWaktuLanggar.Size = new System.Drawing.Size(200, 20);
-            this.dtpWaktuLanggar.TabIndex = 13;
             // 
             // label32
             // 
@@ -1129,25 +749,25 @@
             // groupBox8
             // 
             this.groupBox8.BackColor = System.Drawing.Color.White;
+            this.groupBox8.Controls.Add(this.label121);
             this.groupBox8.Controls.Add(this.txtNamaTeller);
             this.groupBox8.Controls.Add(this.label68);
-            this.groupBox8.Controls.Add(this.txtBankSisaDenda);
             this.groupBox8.Controls.Add(this.label28);
             this.groupBox8.Controls.Add(this.label64);
             this.groupBox8.Controls.Add(this.label63);
             this.groupBox8.Controls.Add(this.label62);
             this.groupBox8.Controls.Add(this.label61);
             this.groupBox8.Controls.Add(this.label60);
-            this.groupBox8.Location = new System.Drawing.Point(652, 604);
+            this.groupBox8.Location = new System.Drawing.Point(656, 615);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(416, 131);
+            this.groupBox8.Size = new System.Drawing.Size(416, 166);
             this.groupBox8.TabIndex = 10;
             this.groupBox8.TabStop = false;
             // 
             // txtNamaTeller
             // 
             this.txtNamaTeller.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNamaTeller.Location = new System.Drawing.Point(127, 111);
+            this.txtNamaTeller.Location = new System.Drawing.Point(129, 130);
             this.txtNamaTeller.Name = "txtNamaTeller";
             this.txtNamaTeller.Size = new System.Drawing.Size(71, 20);
             this.txtNamaTeller.TabIndex = 40;
@@ -1157,19 +777,11 @@
             // 
             this.label68.AutoSize = true;
             this.label68.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label68.Location = new System.Drawing.Point(198, 95);
+            this.label68.Location = new System.Drawing.Point(198, 101);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(56, 15);
             this.label68.TabIndex = 19;
             this.label68.Text = "Cap Bank";
-            // 
-            // txtBankSisaDenda
-            // 
-            this.txtBankSisaDenda.BackColor = System.Drawing.SystemColors.Control;
-            this.txtBankSisaDenda.Location = new System.Drawing.Point(127, 55);
-            this.txtBankSisaDenda.Name = "txtBankSisaDenda";
-            this.txtBankSisaDenda.Size = new System.Drawing.Size(100, 20);
-            this.txtBankSisaDenda.TabIndex = 40;
             // 
             // label64
             // 
@@ -1184,7 +796,7 @@
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(70, 58);
+            this.label63.Location = new System.Drawing.Point(70, 55);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(50, 13);
             this.label63.TabIndex = 9;
@@ -1193,7 +805,7 @@
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(136, 78);
+            this.label62.Location = new System.Drawing.Point(136, 84);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(188, 13);
             this.label62.TabIndex = 8;
@@ -1202,7 +814,7 @@
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(77, 113);
+            this.label61.Location = new System.Drawing.Point(79, 132);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(41, 13);
             this.label61.TabIndex = 7;
@@ -1212,7 +824,7 @@
             // 
             this.label60.AutoSize = true;
             this.label60.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label60.Location = new System.Drawing.Point(277, 113);
+            this.label60.Location = new System.Drawing.Point(279, 132);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(94, 15);
             this.label60.TabIndex = 0;
@@ -1227,18 +839,10 @@
             this.label39.TabIndex = 4;
             this.label39.Text = "DITERBITKAN OLEH";
             // 
-            // txtTerbitSK
-            // 
-            this.txtTerbitSK.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTerbitSK.Location = new System.Drawing.Point(199, 23);
-            this.txtTerbitSK.Name = "txtTerbitSK";
-            this.txtTerbitSK.Size = new System.Drawing.Size(100, 20);
-            this.txtTerbitSK.TabIndex = 19;
-            // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(110, 45);
+            this.label40.Location = new System.Drawing.Point(110, 49);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(90, 13);
             this.label40.TabIndex = 7;
@@ -1247,25 +851,17 @@
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.Color.White;
-            this.groupBox9.Controls.Add(this.tbxSKSita);
+            this.groupBox9.Controls.Add(this.label98);
+            this.groupBox9.Controls.Add(this.label97);
+            this.groupBox9.Controls.Add(this.label96);
             this.groupBox9.Controls.Add(this.label74);
-            this.groupBox9.Controls.Add(this.dtpBerlakuSK);
             this.groupBox9.Controls.Add(this.label40);
-            this.groupBox9.Controls.Add(this.txtTerbitSK);
             this.groupBox9.Controls.Add(this.label39);
-            this.groupBox9.Location = new System.Drawing.Point(2, 505);
+            this.groupBox9.Location = new System.Drawing.Point(5, 531);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(318, 94);
             this.groupBox9.TabIndex = 11;
             this.groupBox9.TabStop = false;
-            // 
-            // tbxSKSita
-            // 
-            this.tbxSKSita.BackColor = System.Drawing.SystemColors.Control;
-            this.tbxSKSita.Location = new System.Drawing.Point(34, 23);
-            this.tbxSKSita.Name = "tbxSKSita";
-            this.tbxSKSita.Size = new System.Drawing.Size(100, 20);
-            this.tbxSKSita.TabIndex = 18;
             // 
             // label74
             // 
@@ -1276,34 +872,19 @@
             this.label74.TabIndex = 27;
             this.label74.Text = "SK YANG DISITA";
             // 
-            // dtpBerlakuSK
-            // 
-            this.dtpBerlakuSK.Location = new System.Drawing.Point(59, 61);
-            this.dtpBerlakuSK.Name = "dtpBerlakuSK";
-            this.dtpBerlakuSK.Size = new System.Drawing.Size(186, 20);
-            this.dtpBerlakuSK.TabIndex = 20;
-            // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.txtBukuUji);
+            this.groupBox10.Controls.Add(this.label101);
+            this.groupBox10.Controls.Add(this.label100);
+            this.groupBox10.Controls.Add(this.label99);
             this.groupBox10.Controls.Add(this.label75);
-            this.groupBox10.Controls.Add(this.dtpBerlakuPemda);
             this.groupBox10.Controls.Add(this.label41);
-            this.groupBox10.Controls.Add(this.txtTerbitPemda);
             this.groupBox10.Controls.Add(this.label42);
-            this.groupBox10.Location = new System.Drawing.Point(322, 505);
+            this.groupBox10.Location = new System.Drawing.Point(326, 531);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(324, 94);
             this.groupBox10.TabIndex = 12;
             this.groupBox10.TabStop = false;
-            // 
-            // txtBukuUji
-            // 
-            this.txtBukuUji.BackColor = System.Drawing.SystemColors.Control;
-            this.txtBukuUji.Location = new System.Drawing.Point(35, 23);
-            this.txtBukuUji.Name = "txtBukuUji";
-            this.txtBukuUji.Size = new System.Drawing.Size(100, 20);
-            this.txtBukuUji.TabIndex = 21;
             // 
             // label75
             // 
@@ -1313,30 +894,6 @@
             this.label75.Size = new System.Drawing.Size(123, 13);
             this.label75.TabIndex = 29;
             this.label75.Text = "BARANG YANG DISITA";
-            // 
-            // dtpBerlakuPemda
-            // 
-            this.dtpBerlakuPemda.Location = new System.Drawing.Point(67, 61);
-            this.dtpBerlakuPemda.Name = "dtpBerlakuPemda";
-            this.dtpBerlakuPemda.Size = new System.Drawing.Size(186, 20);
-            this.dtpBerlakuPemda.TabIndex = 23;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(96, 45);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(113, 13);
-            this.label41.TabIndex = 11;
-            this.label41.Text = "MASA BERLAKU S/D";
-            // 
-            // txtTerbitPemda
-            // 
-            this.txtTerbitPemda.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTerbitPemda.Location = new System.Drawing.Point(170, 23);
-            this.txtTerbitPemda.Name = "txtTerbitPemda";
-            this.txtTerbitPemda.Size = new System.Drawing.Size(140, 20);
-            this.txtTerbitPemda.TabIndex = 22;
             // 
             // label42
             // 
@@ -1349,67 +906,27 @@
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.dtpJam);
-            this.groupBox11.Controls.Add(this.txtTempatAmbil);
-            this.groupBox11.Controls.Add(this.txtKesatuanPenyidik);
-            this.groupBox11.Controls.Add(this.txtPangkatPenyidik);
-            this.groupBox11.Controls.Add(this.txtNamaPenyidik);
+            this.groupBox11.Controls.Add(this.label108);
+            this.groupBox11.Controls.Add(this.label107);
+            this.groupBox11.Controls.Add(this.label106);
+            this.groupBox11.Controls.Add(this.label105);
+            this.groupBox11.Controls.Add(this.label104);
+            this.groupBox11.Controls.Add(this.label103);
+            this.groupBox11.Controls.Add(this.label102);
             this.groupBox11.Controls.Add(this.label73);
             this.groupBox11.Controls.Add(this.label72);
             this.groupBox11.Controls.Add(this.label71);
             this.groupBox11.Controls.Add(this.label70);
             this.groupBox11.Controls.Add(this.label69);
             this.groupBox11.Controls.Add(this.label47);
-            this.groupBox11.Controls.Add(this.txtWaktuSidang);
             this.groupBox11.Controls.Add(this.label45);
-            this.groupBox11.Controls.Add(this.txtPengadilan);
             this.groupBox11.Controls.Add(this.label44);
             this.groupBox11.Controls.Add(this.label43);
-            this.groupBox11.Location = new System.Drawing.Point(1, 592);
+            this.groupBox11.Location = new System.Drawing.Point(5, 631);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(645, 143);
+            this.groupBox11.Size = new System.Drawing.Size(645, 148);
             this.groupBox11.TabIndex = 13;
             this.groupBox11.TabStop = false;
-            // 
-            // dtpJam
-            // 
-            this.dtpJam.Location = new System.Drawing.Point(376, 52);
-            this.dtpJam.Name = "dtpJam";
-            this.dtpJam.Size = new System.Drawing.Size(90, 20);
-            this.dtpJam.TabIndex = 26;
-            this.dtpJam.ValueChanged += new System.EventHandler(this.dtpJam_ValueChanged);
-            // 
-            // txtTempatAmbil
-            // 
-            this.txtTempatAmbil.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTempatAmbil.Location = new System.Drawing.Point(419, 114);
-            this.txtTempatAmbil.Name = "txtTempatAmbil";
-            this.txtTempatAmbil.Size = new System.Drawing.Size(181, 20);
-            this.txtTempatAmbil.TabIndex = 30;
-            // 
-            // txtKesatuanPenyidik
-            // 
-            this.txtKesatuanPenyidik.BackColor = System.Drawing.SystemColors.Control;
-            this.txtKesatuanPenyidik.Location = new System.Drawing.Point(106, 118);
-            this.txtKesatuanPenyidik.Name = "txtKesatuanPenyidik";
-            this.txtKesatuanPenyidik.Size = new System.Drawing.Size(109, 20);
-            this.txtKesatuanPenyidik.TabIndex = 29;
-            // 
-            // txtPangkatPenyidik
-            // 
-            this.txtPangkatPenyidik.BackColor = System.Drawing.SystemColors.Control;
-            this.txtPangkatPenyidik.Location = new System.Drawing.Point(106, 96);
-            this.txtPangkatPenyidik.Name = "txtPangkatPenyidik";
-            this.txtPangkatPenyidik.Size = new System.Drawing.Size(109, 20);
-            this.txtPangkatPenyidik.TabIndex = 28;
-            // 
-            // txtNamaPenyidik
-            // 
-            this.txtNamaPenyidik.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNamaPenyidik.Location = new System.Drawing.Point(106, 74);
-            this.txtNamaPenyidik.Name = "txtNamaPenyidik";
-            this.txtNamaPenyidik.Size = new System.Drawing.Size(109, 20);
-            this.txtNamaPenyidik.TabIndex = 27;
             // 
             // label73
             // 
@@ -1466,13 +983,6 @@
             this.label47.TabIndex = 7;
             this.label47.Text = "JAM";
             // 
-            // txtWaktuSidang
-            // 
-            this.txtWaktuSidang.Location = new System.Drawing.Point(139, 52);
-            this.txtWaktuSidang.Name = "txtWaktuSidang";
-            this.txtWaktuSidang.Size = new System.Drawing.Size(200, 20);
-            this.txtWaktuSidang.TabIndex = 25;
-            // 
             // label45
             // 
             this.label45.AutoSize = true;
@@ -1481,14 +991,6 @@
             this.label45.Size = new System.Drawing.Size(122, 13);
             this.label45.TabIndex = 3;
             this.label45.Text = "PADA HARI, TANGGAL";
-            // 
-            // txtPengadilan
-            // 
-            this.txtPengadilan.BackColor = System.Drawing.SystemColors.Control;
-            this.txtPengadilan.Location = new System.Drawing.Point(46, 30);
-            this.txtPengadilan.Name = "txtPengadilan";
-            this.txtPengadilan.Size = new System.Drawing.Size(571, 20);
-            this.txtPengadilan.TabIndex = 24;
             // 
             // label44
             // 
@@ -1509,54 +1011,574 @@
             this.label43.TabIndex = 0;
             this.label43.Text = "SELANJUTNYA PENYIDIK ATAS KUASA PENUNTUT UMUM DEMI HUKUM MEWAJIBKAN TERDAKWA";
             // 
-            // btnScanQRCode
+            // label41
             // 
-            this.btnScanQRCode.Location = new System.Drawing.Point(1082, 263);
-            this.btnScanQRCode.Name = "btnScanQRCode";
-            this.btnScanQRCode.Size = new System.Drawing.Size(75, 43);
-            this.btnScanQRCode.TabIndex = 14;
-            this.btnScanQRCode.Text = "Scan QR Code";
-            this.btnScanQRCode.UseVisualStyleBackColor = true;
-            this.btnScanQRCode.Click += new System.EventHandler(this.btnScanQRCode_Click);
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(96, 45);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(113, 13);
+            this.label41.TabIndex = 11;
+            this.label41.Text = "MASA BERLAKU S/D";
             // 
-            // btnSimpanData
+            // label6
             // 
-            this.btnSimpanData.Location = new System.Drawing.Point(1082, 319);
-            this.btnSimpanData.Name = "btnSimpanData";
-            this.btnSimpanData.Size = new System.Drawing.Size(75, 51);
-            this.btnSimpanData.TabIndex = 40;
-            this.btnSimpanData.Text = "Simpan Data";
-            this.btnSimpanData.UseVisualStyleBackColor = true;
-            this.btnSimpanData.Click += new System.EventHandler(this.btnSimpanData_Click);
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.Location = new System.Drawing.Point(0, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(141, 15);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "RUANG BAGI TERDAKWA";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // txtPekerjaan
+            // label48
             // 
-            this.txtPekerjaan.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtPekerjaan.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtPekerjaan.Location = new System.Drawing.Point(87, 73);
-            this.txtPekerjaan.Name = "txtPekerjaan";
-            this.txtPekerjaan.Size = new System.Drawing.Size(133, 20);
-            this.txtPekerjaan.TabIndex = 30;
-            this.txtPekerjaan.TabStop = false;
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(6, 25);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(118, 13);
+            this.label48.TabIndex = 0;
+            this.label48.Text = "MELANGGAR PASAL :";
             // 
-            // txtPendidikan
+            // label49
             // 
-            this.txtPendidikan.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtPendidikan.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtPendidikan.Location = new System.Drawing.Point(87, 98);
-            this.txtPendidikan.Name = "txtPendidikan";
-            this.txtPendidikan.Size = new System.Drawing.Size(133, 20);
-            this.txtPendidikan.TabIndex = 31;
-            this.txtPendidikan.TabStop = false;
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(96, 50);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(168, 13);
+            this.label49.TabIndex = 2;
+            this.label49.Text = "UU NO 22/2009 TENTANG LLAJ";
+            this.label49.Click += new System.EventHandler(this.label49_Click);
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(7, 73);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(129, 13);
+            this.label50.TabIndex = 3;
+            this.label50.Text = "JUMLAH UANG TITIPAN";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(6, 90);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(106, 13);
+            this.label51.TabIndex = 8;
+            this.label51.Text = "DENDA MAKSIMAL:";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(6, 123);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(161, 13);
+            this.label52.TabIndex = 13;
+            this.label52.Text = "DISETORKAN MELALUI BANK:";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(6, 146);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(172, 13);
+            this.label53.TabIndex = 14;
+            this.label53.Text = "ANGKA PINALTI PELANGGARAN";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(157, 90);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(21, 13);
+            this.label76.TabIndex = 18;
+            this.label76.Text = "Rp";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(309, 90);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(22, 13);
+            this.label77.TabIndex = 19;
+            this.label77.Text = ",00";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.White;
+            this.groupBox4.Controls.Add(this.label116);
+            this.groupBox4.Controls.Add(this.label115);
+            this.groupBox4.Controls.Add(this.label114);
+            this.groupBox4.Controls.Add(this.label113);
+            this.groupBox4.Controls.Add(this.label112);
+            this.groupBox4.Controls.Add(this.label77);
+            this.groupBox4.Controls.Add(this.label76);
+            this.groupBox4.Controls.Add(this.label53);
+            this.groupBox4.Controls.Add(this.label52);
+            this.groupBox4.Controls.Add(this.label51);
+            this.groupBox4.Controls.Add(this.label50);
+            this.groupBox4.Controls.Add(this.label49);
+            this.groupBox4.Controls.Add(this.label48);
+            this.groupBox4.Controls.Add(this.label6);
+            this.groupBox4.Location = new System.Drawing.Point(652, 135);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(416, 168);
+            this.groupBox4.TabIndex = 5;
+            this.groupBox4.TabStop = false;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(111, 29);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(41, 13);
+            this.label30.TabIndex = 30;
+            this.label30.Text = "label30";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(111, 54);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(41, 13);
+            this.label31.TabIndex = 31;
+            this.label31.Text = "label31";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(111, 76);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(41, 13);
+            this.label35.TabIndex = 32;
+            this.label35.Text = "label35";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(111, 101);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(41, 13);
+            this.label46.TabIndex = 33;
+            this.label46.Text = "label46";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(501, 123);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(41, 13);
+            this.label59.TabIndex = 34;
+            this.label59.Text = "label59";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(65, 139);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(41, 13);
+            this.label78.TabIndex = 35;
+            this.label78.Text = "label78";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(293, 146);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(41, 13);
+            this.label79.TabIndex = 36;
+            this.label79.Text = "label79";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(252, 127);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(41, 13);
+            this.label80.TabIndex = 37;
+            this.label80.Text = "label80";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(80, 20);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(41, 13);
+            this.label81.TabIndex = 17;
+            this.label81.Text = "label81";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(209, 20);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(41, 13);
+            this.label82.TabIndex = 18;
+            this.label82.Text = "label82";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Location = new System.Drawing.Point(360, 20);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(41, 13);
+            this.label83.TabIndex = 19;
+            this.label83.Text = "label83";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(509, 20);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(41, 13);
+            this.label84.TabIndex = 20;
+            this.label84.Text = "label84";
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Location = new System.Drawing.Point(94, 55);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(41, 13);
+            this.label85.TabIndex = 21;
+            this.label85.Text = "label85";
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Location = new System.Drawing.Point(253, 52);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(41, 13);
+            this.label86.TabIndex = 22;
+            this.label86.Text = "label86";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Location = new System.Drawing.Point(438, 52);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(41, 13);
+            this.label87.TabIndex = 23;
+            this.label87.Text = "label87";
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Location = new System.Drawing.Point(68, 79);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(41, 13);
+            this.label88.TabIndex = 24;
+            this.label88.Text = "label88";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Location = new System.Drawing.Point(267, 75);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(41, 13);
+            this.label89.TabIndex = 25;
+            this.label89.Text = "label89";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Location = new System.Drawing.Point(438, 75);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(41, 13);
+            this.label90.TabIndex = 26;
+            this.label90.Text = "label90";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Location = new System.Drawing.Point(52, 13);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(41, 13);
+            this.label91.TabIndex = 27;
+            this.label91.Text = "label91";
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Location = new System.Drawing.Point(349, 13);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(41, 13);
+            this.label92.TabIndex = 28;
+            this.label92.Text = "label92";
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Location = new System.Drawing.Point(80, 40);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(41, 13);
+            this.label93.TabIndex = 29;
+            this.label93.Text = "label93";
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Location = new System.Drawing.Point(322, 40);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(41, 13);
+            this.label94.TabIndex = 30;
+            this.label94.Text = "label94";
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Location = new System.Drawing.Point(160, 65);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(41, 13);
+            this.label95.TabIndex = 31;
+            this.label95.Text = "label95";
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Location = new System.Drawing.Point(64, 23);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(41, 13);
+            this.label96.TabIndex = 32;
+            this.label96.Text = "label96";
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Location = new System.Drawing.Point(225, 23);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(41, 13);
+            this.label97.TabIndex = 33;
+            this.label97.Text = "label97";
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Location = new System.Drawing.Point(139, 65);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(41, 13);
+            this.label98.TabIndex = 34;
+            this.label98.Text = "label98";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Location = new System.Drawing.Point(60, 23);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(41, 13);
+            this.label99.TabIndex = 35;
+            this.label99.Text = "label99";
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Location = new System.Drawing.Point(214, 23);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(47, 13);
+            this.label100.TabIndex = 36;
+            this.label100.Text = "label100";
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Location = new System.Drawing.Point(131, 65);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(47, 13);
+            this.label101.TabIndex = 37;
+            this.label101.Text = "label101";
+            this.label101.Click += new System.EventHandler(this.label101_Click);
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Location = new System.Drawing.Point(13, 31);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(47, 13);
+            this.label102.TabIndex = 35;
+            this.label102.Text = "label102";
+            // 
+            // label103
+            // 
+            this.label103.AutoSize = true;
+            this.label103.Location = new System.Drawing.Point(139, 54);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(47, 13);
+            this.label103.TabIndex = 36;
+            this.label103.Text = "label103";
+            // 
+            // label104
+            // 
+            this.label104.AutoSize = true;
+            this.label104.Location = new System.Drawing.Point(381, 56);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(47, 13);
+            this.label104.TabIndex = 37;
+            this.label104.Text = "label104";
+            // 
+            // label105
+            // 
+            this.label105.AutoSize = true;
+            this.label105.Location = new System.Drawing.Point(60, 77);
+            this.label105.Name = "label105";
+            this.label105.Size = new System.Drawing.Size(47, 13);
+            this.label105.TabIndex = 38;
+            this.label105.Text = "label105";
+            // 
+            // label106
+            // 
+            this.label106.AutoSize = true;
+            this.label106.Location = new System.Drawing.Point(114, 100);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(47, 13);
+            this.label106.TabIndex = 39;
+            this.label106.Text = "label106";
+            // 
+            // label107
+            // 
+            this.label107.AutoSize = true;
+            this.label107.Location = new System.Drawing.Point(97, 121);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(47, 13);
+            this.label107.TabIndex = 40;
+            this.label107.Text = "label107";
+            // 
+            // label108
+            // 
+            this.label108.AutoSize = true;
+            this.label108.Location = new System.Drawing.Point(419, 121);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(47, 13);
+            this.label108.TabIndex = 41;
+            this.label108.Text = "label108";
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Location = new System.Drawing.Point(85, 40);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(47, 13);
+            this.label109.TabIndex = 38;
+            this.label109.Text = "label109";
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Location = new System.Drawing.Point(485, 11);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(47, 13);
+            this.label110.TabIndex = 39;
+            this.label110.Text = "label110";
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Location = new System.Drawing.Point(935, 38);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(47, 13);
+            this.label111.TabIndex = 40;
+            this.label111.Text = "label111";
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Location = new System.Drawing.Point(124, 25);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(47, 13);
+            this.label112.TabIndex = 41;
+            this.label112.Text = "label112";
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Location = new System.Drawing.Point(142, 72);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(47, 13);
+            this.label113.TabIndex = 42;
+            this.label113.Text = "label113";
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Location = new System.Drawing.Point(184, 90);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(47, 13);
+            this.label114.TabIndex = 43;
+            this.label114.Text = "label114";
+            // 
+            // label115
+            // 
+            this.label115.AutoSize = true;
+            this.label115.Location = new System.Drawing.Point(173, 123);
+            this.label115.Name = "label115";
+            this.label115.Size = new System.Drawing.Size(47, 13);
+            this.label115.TabIndex = 44;
+            this.label115.Text = "label115";
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Location = new System.Drawing.Point(184, 146);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(47, 13);
+            this.label116.TabIndex = 45;
+            this.label116.Text = "label116";
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Location = new System.Drawing.Point(49, 134);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(47, 13);
+            this.label117.TabIndex = 46;
+            this.label117.Text = "label117";
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Location = new System.Drawing.Point(49, 157);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(47, 13);
+            this.label118.TabIndex = 47;
+            this.label118.Text = "label118";
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Location = new System.Drawing.Point(54, 183);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(47, 13);
+            this.label119.TabIndex = 48;
+            this.label119.Text = "label119";
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Location = new System.Drawing.Point(182, 263);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(47, 13);
+            this.label120.TabIndex = 49;
+            this.label120.Text = "label120";
+            // 
+            // label121
+            // 
+            this.label121.AutoSize = true;
+            this.label121.Location = new System.Drawing.Point(126, 55);
+            this.label121.Name = "label121";
+            this.label121.Size = new System.Drawing.Size(47, 13);
+            this.label121.TabIndex = 50;
+            this.label121.Text = "label121";
             // 
             // frmSuratTilang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1161, 733);
-            this.Controls.Add(this.btnSimpanData);
-            this.Controls.Add(this.btnScanQRCode);
+            this.ClientSize = new System.Drawing.Size(672, 445);
             this.Controls.Add(this.groupBox11);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
@@ -1568,6 +1590,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.MaximumSize = new System.Drawing.Size(1042, 768);
             this.Name = "frmSuratTilang";
             this.Text = "FormSuratTilang";
             this.Load += new System.EventHandler(this.frmSuratTilang_Load);
@@ -1577,8 +1600,6 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -1593,6 +1614,8 @@
             this.groupBox10.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1600,14 +1623,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtNoRegPenyidikan;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtKesatuan;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtNoRegTilang;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label7;
@@ -1616,79 +1636,46 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtUmurPelanggar;
-        private System.Windows.Forms.TextBox txtNamaPelanggar;
-        private System.Windows.Forms.TextBox txtAlamatPelanggar;
-        private System.Windows.Forms.RadioButton rbtLK;
-        private System.Windows.Forms.RadioButton rbtPR;
+        private System.Windows.Forms.RadioButton rbtprtLK;
+        private System.Windows.Forms.RadioButton rbtprtPR;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtTempatPelanggar;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtNoKTPPelanggar;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox txtGolSIM;
-        private System.Windows.Forms.TextBox txtNoSIM;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.DateTimePicker dtpTanggalLanggar;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox txtNoKendaraan;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox txtSamsat;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox txtJenisKendaraan;
-        private System.Windows.Forms.TextBox txtMerekKendaraan;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox txtNoRangka;
-        private System.Windows.Forms.TextBox txtNoMeSIN;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox txtJalan;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox txtPatokan;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox txtWilayahHukum;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox txtTerbitSK;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox txtTerbitPemda;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.TextBox txtPasal;
-        private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.DateTimePicker txtWaktuSidang;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox txtPengadilan;
-        private System.Windows.Forms.TextBox txtAngkaPinalti;
-        private System.Windows.Forms.TextBox txtBankSetor;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.RadioButton rbtPerwakilan;
-        private System.Windows.Forms.RadioButton rbtHadirSendiri;
+        private System.Windows.Forms.RadioButton rbtprtPerwakilan;
+        private System.Windows.Forms.RadioButton rbtprtHadirSendiri;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label66;
@@ -1702,41 +1689,76 @@
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.TextBox txtAlamatWali;
-        private System.Windows.Forms.TextBox txtUmurWali;
-        private System.Windows.Forms.TextBox txtNamaWali;
         private System.Windows.Forms.TextBox txtNamaTeller;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.TextBox txtBankSisaDenda;
-        private System.Windows.Forms.TextBox txtTempatAmbil;
-        private System.Windows.Forms.TextBox txtKesatuanPenyidik;
-        private System.Windows.Forms.TextBox txtPangkatPenyidik;
-        private System.Windows.Forms.TextBox txtNamaPenyidik;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Button btnScanQRCode;
-        private System.Windows.Forms.Button btnSimpanData;
-        private System.Windows.Forms.TextBox txtSATPAS;
-        private System.Windows.Forms.DateTimePicker dtpBerlakuSK;
-        private System.Windows.Forms.DateTimePicker dtpBerlakuPemda;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox txtTanggalLahir;
-        private System.Windows.Forms.TextBox tbxSKSita;
         private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.TextBox txtBukuUji;
         private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.TextBox txtDenda;
-        private System.Windows.Forms.DateTimePicker dtpJam;
-        private System.Windows.Forms.DateTimePicker dtpJamLanggar;
-        private System.Windows.Forms.DateTimePicker dtpWaktuLanggar;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox txtPendidikan;
-        private System.Windows.Forms.TextBox txtPekerjaan;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.Label label106;
+        private System.Windows.Forms.Label label105;
+        private System.Windows.Forms.Label label104;
+        private System.Windows.Forms.Label label103;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.Label label108;
+        private System.Windows.Forms.Label label107;
+        private System.Windows.Forms.Label label110;
+        private System.Windows.Forms.Label label109;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.Label label120;
+        private System.Windows.Forms.Label label119;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.Label label121;
+        private System.Windows.Forms.Label label116;
+        private System.Windows.Forms.Label label115;
+        private System.Windows.Forms.Label label114;
+        private System.Windows.Forms.Label label113;
+        private System.Windows.Forms.Label label112;
 
 
 
