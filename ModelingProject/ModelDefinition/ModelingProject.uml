@@ -57,8 +57,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -235,14 +234,6 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="956b67c7-fd02-424e-bbef-ada51d771cdc"
-            name="Delete"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
             Id="6eb61fa2-2175-4668-bd35-afcb206ff580"
             name="Save"
             isLeaf="false"
@@ -300,8 +291,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -456,7 +446,7 @@
                     <literalString
                       Id="58acbc59-d5fa-4023-a813-d3350a3c24ec"
                       name="Lower"
-                      value="1" />
+                      value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
@@ -477,14 +467,6 @@
           <operation
             Id="84b14776-bb2d-4043-a595-2ca1ae6d42be"
             name="Save"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
-            Id="5d323368-2e35-4242-b2a9-edda82f15c22"
-            name="Delete"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -945,14 +927,6 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
-          <operation
-            Id="da00e284-7bbe-41ca-8e96-88b97eccbdc4"
-            name="Delete"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -995,8 +969,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -1099,7 +1072,7 @@
                     <literalString
                       Id="5eff4cfa-cd1b-4dec-9e3e-99f8cd64b595"
                       name="Lower"
-                      value="1" />
+                      value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
@@ -1120,14 +1093,6 @@
           <operation
             Id="c88aa77d-512e-451b-8864-2942fef05821"
             name="Save"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
-            Id="7a7c2236-ac78-4f1b-8d36-9e2554bf323e"
-            name="Delete"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
