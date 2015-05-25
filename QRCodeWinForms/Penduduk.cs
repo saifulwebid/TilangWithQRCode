@@ -79,6 +79,10 @@ namespace QRCodeWinForms
             get { return _status; }
             set { _status = value; }
         }
+        public List<Penduduk> GetAllPenduduk()
+        {
+            return ExcelHelper.GetAllPenduduk();
+        }
         public List<SIM> GetAllSIM()
         {
             return ExcelHelper.GetAllSIM();
