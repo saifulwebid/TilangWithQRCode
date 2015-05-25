@@ -12,10 +12,10 @@ using System.Runtime.Versioning;
 
 namespace QRCodeWinForms
 {
-    public partial class frmSuratTilang : Form
+    public partial class frmSuratTilangViewer : Form
     {
            
-        public frmSuratTilang()
+        public frmSuratTilangViewer()
         {
             InitializeComponent();
         }    
