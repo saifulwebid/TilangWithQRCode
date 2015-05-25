@@ -103,6 +103,12 @@
     <Compile Include="frmStatistikPelanggaran.Designer.cs">
       <DependentUpon>frmStatistikPelanggaran.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInputSuratTilang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputSuratTilang.Designer.cs">
+      <DependentUpon>frmInputSuratTilang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pasal.cs" />
     <Compile Include="Penduduk.cs" />
     <Compile Include="Program.cs" />
@@ -132,6 +138,9 @@
     <EmbeddedResource Include="frmSuratTilang.resx">
       <DependentUpon>frmSuratTilang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmInputSuratTilang.resx">
+      <DependentUpon>frmInputSuratTilang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -144,6 +153,7 @@
     <EmbeddedResource Include="frmSIMViewer.resx">
       <DependentUpon>frmSIMViewer.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -57,8 +57,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -235,14 +234,6 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="956b67c7-fd02-424e-bbef-ada51d771cdc"
-            name="Delete"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
             Id="6eb61fa2-2175-4668-bd35-afcb206ff580"
             name="Save"
             isLeaf="false"
@@ -300,8 +291,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -456,7 +446,7 @@
                     <literalString
                       Id="58acbc59-d5fa-4023-a813-d3350a3c24ec"
                       name="Lower"
-                      value="1" />
+                      value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
@@ -477,14 +467,6 @@
           <operation
             Id="84b14776-bb2d-4043-a595-2ca1ae6d42be"
             name="Save"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
-            Id="5d323368-2e35-4242-b2a9-edda82f15c22"
-            name="Delete"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -640,79 +622,7 @@
             isComposite="false" />
           <property
             Id="eaec65cc-8ea6-4047-bdac-2beb7188e0de"
-            name="DisitaSIM"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                LastKnownName="Boolean"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="c6f1bbea-6ab1-471b-94cc-5f7a655d64ae"
-            name="DisitaSTCK"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                LastKnownName="Boolean"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="5c38cf71-d92b-492a-9770-fe9f36e7b8d1"
-            name="DisitaRanmor"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                LastKnownName="Boolean"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="54c55af2-bcc3-4420-831a-ed8c0cb041d2"
-            name="DisitaSTNK"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                LastKnownName="Boolean"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="d8f16fe6-b9ce-42e3-9815-a13da4ca3c7d"
-            name="DisitaDiterbitkanOleh"
+            name="DisitaSKMasaBerlaku"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -722,8 +632,41 @@
             aggregation="None"
             isComposite="false" />
           <property
-            Id="9662a020-1ba6-4d11-8cad-3197e91ec96a"
-            name="DisitaMasaBerlaku"
+            Id="c6f1bbea-6ab1-471b-94cc-5f7a655d64ae"
+            name="DisitaBukuUji"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5c38cf71-d92b-492a-9770-fe9f36e7b8d1"
+            name="DisitaSKRanmor"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="54c55af2-bcc3-4420-831a-ed8c0cb041d2"
+            name="DisitaBukuUjiDiterbitkanOleh"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d8f16fe6-b9ce-42e3-9815-a13da4ca3c7d"
+            name="DisitaSKDiterbitkanOleh"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -783,17 +726,6 @@
                 LastKnownLocation="ModelingProject.uml" />
             </type_NamedElement>
           </property>
-          <property
-            Id="c84dfe5f-08b8-4177-8ebc-b806d9be33d2"
-            name="JumlahUangTitipan"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
           <property
             Id="66b80f12-27cf-43e4-9b6b-bd63255f77ce"
             name="BankSetoranDendaMaksimal"
@@ -875,19 +807,121 @@
                 LastKnownLocation="ModelingProject.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="8261641d-7caf-4a4c-8b8b-883b1bb306bc"
+            name="BankSisaDenda"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4b1d26b0-ab9f-4fa8-a166-d367c8c6e465"
+            name="DisitaBukuUjiMasaBerlaku"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9ad15450-4e10-4766-b75e-7671ca390524"
+            name="KesatuanPenyidik"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d258b4ba-6fdc-4fe6-866b-8345b34f6231"
+            name="LokasiPelanggaran"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7692ba59-7aa8-4d83-9ecc-75154d578d03"
+            name="NamaPenyidik"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="613731dc-afe2-488c-b9e6-15267b6e13b6"
+            name="PangkatPenyidik"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2e0507c5-04ff-42c4-b7d6-c4cc0a68bdcf"
+            name="PatokanLokasi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="14afd2b3-2e41-44b5-8cde-e14c67e44a7c"
+            name="TempatPengambilanBarangSita"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a769df91-5e6e-4950-82fb-3be89c546273"
+            name="TempatSidang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="eb059055-e5ef-4081-86bf-bc9e542891a1"
+            name="SATPAS"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="05497bee-d44f-47a7-98ad-ec1c020dd22e"
             name="Save"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
-            Id="da00e284-7bbe-41ca-8e96-88b97eccbdc4"
-            name="Delete"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -935,8 +969,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -1039,7 +1072,7 @@
                     <literalString
                       Id="5eff4cfa-cd1b-4dec-9e3e-99f8cd64b595"
                       name="Lower"
-                      value="1" />
+                      value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
@@ -1060,14 +1093,6 @@
           <operation
             Id="c88aa77d-512e-451b-8864-2942fef05821"
             name="Save"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
-            Id="7a7c2236-ac78-4f1b-8d36-9e2554bf323e"
-            name="Delete"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"

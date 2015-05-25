@@ -67,7 +67,15 @@ namespace QRCodeWinForms
         }
         public bool isValidate()
         {
-            return (_tanggalBuat.Year - _pemilik.TanggalLahir.Year) > 16;
+            if ((_tanggalBuat.Year - _pemilik.TanggalLahir.Year) == 17)
+            {
+                if (_tanggalBuat.Month == _pemilik.TanggalLahir.Month)
+                    return (_tanggalBuat.Day >= _pemilik.TanggalLahir.Day);
+                else
+                    return (_tanggalBuat.Month > _pemilik.TanggalLahir.Month);
+            }
+            else
+                return (_tanggalBuat.Year - _pemilik.TanggalLahir.Year) > 17;
         }
     }
 }
