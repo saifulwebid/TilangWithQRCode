@@ -15,7 +15,7 @@
             <classMoniker Id="e2c57789-4fa9-42f2-b460-ff066eda4fab" LastKnownName="SIM" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="3ebd110c-5c8c-4fbf-8a61-653fae939991" name="Penduduk" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="3ebd110c-5c8c-4fbf-8a61-653fae939991" name="Penduduk" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="c51c0ffa-e65d-45b2-8fc9-07ed6cce6845" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -94,9 +94,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="210ba796-31ee-4f02-a0a7-01d8fd856537" name="Delete" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="956b67c7-fd02-424e-bbef-ada51d771cdc" />
-          </operation>
           <operation Id="a60068eb-beb9-407a-8f54-8ea289fb4b75" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="6eb61fa2-2175-4668-bd35-afcb206ff580" />
           </operation>
@@ -120,7 +117,7 @@
             <classMoniker Id="2163e7c3-1c70-494f-b088-13eea3f588e6" LastKnownName="Pelanggaran" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="d2d342ba-8004-43ee-a97c-ee8d6bc0ecf6" name="SIM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="d2d342ba-8004-43ee-a97c-ee8d6bc0ecf6" name="SIM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="74302841-ca82-4cff-b395-117dec1572ea" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -189,7 +186,7 @@
               <operationHasOwnedParameters>
                 <parameter Id="5904ed46-5281-48c0-96a3-62c342e7f49f" direction="Return" isUnique="false">
                   <lowerValueInternal>
-                    <literalString Id="736a1f59-a307-43f9-8a3c-c7c6f843f6e1" name="Lower" value="1">
+                    <literalString Id="736a1f59-a307-43f9-8a3c-c7c6f843f6e1" name="Lower" value="*">
                       <elementDefinition Id="58acbc59-d5fa-4023-a813-d3350a3c24ec" />
                     </literalString>
                   </lowerValueInternal>
@@ -208,9 +205,6 @@
           </operation>
           <operation Id="376946ac-088e-4294-88ac-92fc0210b60f" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="84b14776-bb2d-4043-a595-2ca1ae6d42be" />
-          </operation>
-          <operation Id="de047c3d-0ca5-4316-8c64-256ae053ed73" name="Delete" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="5d323368-2e35-4242-b2a9-edda82f15c22" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -355,9 +349,6 @@
           <operation Id="d7015150-0357-4543-989a-83dffcfbc9fe" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="05497bee-d44f-47a7-98ad-ec1c020dd22e" />
           </operation>
-          <operation Id="5d0831e8-34c9-4e6c-8b37-3b4f508eb35d" name="Delete" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="da00e284-7bbe-41ca-8e96-88b97eccbdc4" />
-          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -390,7 +381,7 @@
             <classMoniker Id="2163e7c3-1c70-494f-b088-13eea3f588e6" LastKnownName="Pelanggaran" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="35c864d1-3cf1-4ea1-9d01-3d4f261707e7" name="Pasal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="35c864d1-3cf1-4ea1-9d01-3d4f261707e7" name="Pasal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="e44489a6-2401-4f76-9b9a-c5428722988b" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -437,7 +428,7 @@
               <operationHasOwnedParameters>
                 <parameter Id="8623a0bb-6033-40c0-b135-f573465ae7d8" direction="Return" isUnique="false">
                   <lowerValueInternal>
-                    <literalString Id="c2707b70-be55-4257-996e-db0e392c459a" name="Lower" value="1">
+                    <literalString Id="c2707b70-be55-4257-996e-db0e392c459a" name="Lower" value="*">
                       <elementDefinition Id="5eff4cfa-cd1b-4dec-9e3e-99f8cd64b595" />
                     </literalString>
                   </lowerValueInternal>
@@ -456,9 +447,6 @@
           </operation>
           <operation Id="ba0562f8-eb4b-42ff-aa9d-079c0cb8c4a7" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="c88aa77d-512e-451b-8864-2942fef05821" />
-          </operation>
-          <operation Id="98dd8b03-9950-430b-bc54-704931571f20" name="Delete" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="7a7c2236-ac78-4f1b-8d36-9e2554bf323e" />
           </operation>
           <operation Id="ab9ec475-821c-4409-bf6a-95d5c5300af3" name="GetStatistic" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="33a26694-1389-4f52-8eb8-5d9c7a69ed9e" />
