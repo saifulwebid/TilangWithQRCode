@@ -70,7 +70,7 @@ namespace QRCodeWinForms
         {
             int count = 0;
             List<DataPelanggaran> dataPelanggar = new List<DataPelanggaran>();
-            List<Pasal> pasalDilanggar = new List<Pasal>();
+            List<string> pasalDilanggar = new List<string>();
             
             /*Memindahkan Data Pelanggaran Ke list data Pelanggar berdasarkan KTP*/
             foreach (DataPelanggaran x in data)
@@ -84,7 +84,7 @@ namespace QRCodeWinForms
             /* Memindahkan Pasal - Pasal yang dilanggar oleh Pelanggar */
             foreach (DataPelanggaran x in dataPelanggar)
             {
-                pasalDilanggar.Add(x.PasalPelanggaran);
+                pasalDilanggar.Add(x.PasalPelanggaran.NomorPasal);
             }
 
             /*Menampilkan Banyak nya pasal yang dilanggar */
@@ -92,7 +92,7 @@ namespace QRCodeWinForms
             foreach (var x in pasalDilanggar.GroupBy(k => k))
             {
                 dgvDataPelanggaranPelanggar.Rows.Add();
-                dgvDataPelanggaranPelanggar.Rows[i].Cells[0].Value = x.Key.NomorPasal;
+                dgvDataPelanggaranPelanggar.Rows[i].Cells[0].Value = x.Key;
                 dgvDataPelanggaranPelanggar.Rows[i].Cells[1].Value = x.Count();
                 i++;
                 count = count + x.Count();
