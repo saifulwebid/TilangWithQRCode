@@ -9,7 +9,7 @@ namespace QRCodeWinForms
 {
     class ExcelHelper
     {
-        public static List<SIM> GetAllSIM()
+        public static List<Penduduk> GetAllPenduduk()
         {
             const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
@@ -19,7 +19,7 @@ namespace QRCodeWinForms
             {
                 folder = Path.GetDirectoryName(folder);
                 string filePath = Path.Combine(folder, fileName);
-                List<SIM> listDataSIM = new List<SIM>();
+                List<Penduduk> listDataPenduduk = new List<Penduduk>();
 
                 var existingFile = new FileInfo(filePath);
                 using (var package = new ExcelPackage(existingFile))
@@ -58,20 +58,84 @@ namespace QRCodeWinForms
                                     if ((col1Value != null) && (col2Value != null) && (col3Value != null) && (col4Value != null)
                                          && (col5Value != null) && (col6Value != null) && (col7Value != null) && (col8Value != null))
                                     {
-                                        listDataSIM.Add(new SIM
+                                        listDataPenduduk.Add(new Penduduk
                                         {
-                                            Golongan = col1Value.ToString(),
-                                            Pemilik = new Penduduk
-                                            {
-                                                Nama = col2Value.ToString(),
-                                                TempatLahir = col3Value.ToString(),
-                                                TanggalLahir = Convert.ToDateTime(col4Value),
-                                                Alamat = col5Value.ToString(),
-                                                Pekerjaan = col6Value.ToString(),
-                                                Pendidikan = col7Value.ToString(),
-                                                JenisKelamin = col8Value.ToString()
-                                            }
+                                            NomorKTP = col1Value.ToString(),
+                                            Nama = col2Value.ToString(),
+                                            TempatLahir = col3Value.ToString(),
+                                            TanggalLahir = Convert.ToDateTime(col4Value),
+                                            Alamat = col5Value.ToString(),
+                                            Pekerjaan = col6Value.ToString(),
+                                            Pendidikan = col7Value.ToString(),
+                                            JenisKelamin = col8Value.ToString()
                                         });
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    return listDataPenduduk;
+                }
+            }
+            return null;
+        }
+        public static List<SIM> GetAllSIM()
+        {
+            const string fileName = "data\\DataGabungan.xlsx";
+            const int startRow = 1;
+
+            string folder = Assembly.GetEntryAssembly().Location;
+            if (folder != null)
+            {
+                folder = Path.GetDirectoryName(folder);
+                string filePath = Path.Combine(folder, fileName);
+                List<SIM> listDataSIM = new List<SIM>();
+                List<Penduduk> ListPenduduk = GetAllPenduduk();
+
+                var existingFile = new FileInfo(filePath);
+                using (var package = new ExcelPackage(existingFile))
+                {
+                    ExcelWorkbook workBook = package.Workbook;
+
+                    if (workBook != null)
+                    {
+                        if (workBook.Worksheets.Count > 0)
+                        {
+                            ExcelWorksheet currentWorksheet = workBook.Worksheets[2];
+
+                            object col1Header = currentWorksheet.Cells[startRow, 1].Value;
+                            object col2Header = currentWorksheet.Cells[startRow, 2].Value;
+                            object col3Header = currentWorksheet.Cells[startRow, 3].Value;
+                            object col4Header = currentWorksheet.Cells[startRow, 4].Value;
+                            object col5Header = currentWorksheet.Cells[startRow, 5].Value;
+
+                            if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
+                                (col5Header != null))
+                            {
+                                for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
+                                {
+                                    object col1Value = currentWorksheet.Cells[rowNumber, 1].Value;
+                                    object col2Value = currentWorksheet.Cells[rowNumber, 2].Value;
+                                    object col3Value = currentWorksheet.Cells[rowNumber, 3].Value;
+                                    object col4Value = currentWorksheet.Cells[rowNumber, 4].Value;
+                                    object col5Value = currentWorksheet.Cells[rowNumber, 5].Value;
+
+                                    if ((col1Value != null) && (col2Value != null) && (col3Value != null) && (col4Value != null)
+                                         && (col5Value != null))
+                                    {
+                                        SIM sim = new SIM();
+                                        sim.NomorSIM = col2Value.ToString();
+                                        sim.Golongan = col3Value.ToString();
+                                        sim.TanggalBuat = Convert.ToDateTime(col4Value);
+                                        sim.TanggalHabis = Convert.ToDateTime(col5Value);
+
+                                        foreach(Penduduk pdd in ListPenduduk) {
+                                            if (pdd.NomorKTP.Equals(col1Value)) {
+                                                sim.Pemilik = pdd;
+                                                break;
+                                            }
+                                        }
+                                        listDataSIM.Add(sim);
                                     }
                                 }
                             }
@@ -102,7 +166,7 @@ namespace QRCodeWinForms
                     {
                         if (workBook.Worksheets.Count > 0)
                         {
-                            ExcelWorksheet currentWorksheet = workBook.Worksheets[1];
+                            ExcelWorksheet currentWorksheet = workBook.Worksheets[2];
 
                             object col1Header = currentWorksheet.Cells[startRow, 1].Value;
                             object col2Header = currentWorksheet.Cells[startRow, 2].Value;
@@ -153,7 +217,7 @@ namespace QRCodeWinForms
                     {
                         if (workBook.Worksheets.Count > 0)
                         {
-                            ExcelWorksheet currentWorksheet = workBook.Worksheets[3];
+                            ExcelWorksheet currentWorksheet = workBook.Worksheets[4];
 
                             object col1Header = currentWorksheet.Cells[startRow, 1].Value;
                             object col2Header = currentWorksheet.Cells[startRow, 2].Value;
@@ -210,7 +274,7 @@ namespace QRCodeWinForms
                     {
                         if (workBook.Worksheets.Count > 0)
                         {
-                            ExcelWorksheet currentWorksheet = workBook.Worksheets[2];
+                            ExcelWorksheet currentWorksheet = workBook.Worksheets[3];
 
                             object col1Header = currentWorksheet.Cells[startRow, 1].Value;
                             object col2Header = currentWorksheet.Cells[startRow, 2].Value;
@@ -349,7 +413,7 @@ namespace QRCodeWinForms
                     {
                         if (workBook.Worksheets.Count > 0)
                         {
-                            ExcelWorksheet currentWorksheet = workBook.Worksheets[2];
+                            ExcelWorksheet currentWorksheet = workBook.Worksheets[3];
 
                             object col1Header = currentWorksheet.Cells[startRow, 1].Value;
                             object col2Header = currentWorksheet.Cells[startRow, 2].Value;
