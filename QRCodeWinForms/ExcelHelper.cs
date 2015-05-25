@@ -9,6 +9,54 @@ namespace QRCodeWinForms
 {
     class ExcelHelper
     {
+        public static bool AccountCheck(string username, string password)
+        {
+            const string fileName = "data\\DataGabungan.xlsx";
+            const int startRow = 1;
+
+            string folder = Assembly.GetEntryAssembly().Location;
+            if (folder != null)
+            {
+                folder = Path.GetDirectoryName(folder);
+                string filePath = Path.Combine(folder, fileName);
+
+                var existingFile = new FileInfo(filePath);
+                using (var package = new ExcelPackage(existingFile))
+                {
+                    ExcelWorkbook workBook = package.Workbook;
+
+                    if (workBook != null)
+                    {
+                        if (workBook.Worksheets.Count > 0)
+                        {
+                            ExcelWorksheet currentWorksheet = workBook.Worksheets[5];
+
+                            object col1Header = currentWorksheet.Cells[startRow, 1].Value;
+                            object col2Header = currentWorksheet.Cells[startRow, 2].Value;
+
+                            if ((col1Header != null) && (col2Header != null))
+                            {
+                                for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
+                                {
+                                    object col1Value = currentWorksheet.Cells[rowNumber, 1].Value;
+                                    object col2Value = currentWorksheet.Cells[rowNumber, 2].Value;
+
+                                    if ((col1Value != null) && (col2Value != null))
+                                    {
+                                        if ((username.Equals(col1Value) == true) && password.Equals(col2Value) == true)
+                                        {
+                                            return true;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    return false;
+                }
+            }
+            return false;
+        }
         public static List<Penduduk> GetAllPenduduk()
         {
             const string fileName = "data\\DataGabungan.xlsx";
