@@ -68,39 +68,49 @@ namespace QRCodeWinForms
 
         void TampilDataPelanggaran()
         {
-            int i = 0;
-            data = ExcelHelper.GetAllPelanggaran();
-            foreach (DataPelanggaran tampil in data)
+            int count = 0;
+            List<DataPelanggaran> dataPelanggar = new List<DataPelanggaran>();
+            List<Pasal> pasalDilanggar = new List<Pasal>();
+            
+            /*Memindahkan Data Pelanggaran Ke list data Pelanggar berdasarkan KTP*/
+            foreach (DataPelanggaran x in data)
             {
-                if (tampil.Pelanggar.Pemilik.NomorKTP == txtNoKTP.Text)
+                if (x.Pelanggar.Pemilik.NomorKTP == txtNoKTP.Text)
                 {
-                    dgvDataPelanggaranPelanggar.Rows.Add();
-                    dgvDataPelanggaranPelanggar.Rows[i].Cells[0].Value = tampil.WaktuPelanggaran.Date.ToShortDateString();
-                    dgvDataPelanggaranPelanggar.Rows[i].Cells[1].Value = tampil.NomorRegister;
-                    dgvDataPelanggaranPelanggar.Rows[i].Cells[2].Value = tampil.NomorKendaraan;
-                    dgvDataPelanggaranPelanggar.Rows[i].Cells[3].Value = tampil.JenisKendaraan;
-                    dgvDataPelanggaranPelanggar.Rows[i].Cells[4].Value = tampil.MerekKendaraan;
-                    dgvDataPelanggaranPelanggar.Rows[i].Cells[5].Value = tampil.PasalPelanggaran;
-                    i++;
+                    dataPelanggar.Add(x);
                 }
             }
 
-            txtJumlahPelanggaran.Text = i.ToString();
+            /* Memindahkan Pasal - Pasal yang dilanggar oleh Pelanggar */
+            foreach (DataPelanggaran x in dataPelanggar)
+            {
+                pasalDilanggar.Add(x.PasalPelanggaran);
+            }
+
+            /*Menampilkan Banyak nya pasal yang dilanggar */
+            int i=0;
+            foreach (var x in pasalDilanggar.GroupBy(k => k))
+            {
+                dgvDataPelanggaranPelanggar.Rows.Add();
+                dgvDataPelanggaranPelanggar.Rows[i].Cells[0].Value = x.Key.NomorPasal;
+                dgvDataPelanggaranPelanggar.Rows[i].Cells[1].Value = x.Count();
+                i++;
+                count = count + x.Count();
+            }
+
+            txtJumlahPelanggaran.Text = count.ToString();
         }
 
         void SetTable()
         {
-            dgvDataPelanggaranPelanggar.ColumnCount = 6;
-            dgvDataPelanggaranPelanggar.Columns[0].Name = "Tanggal";
-            dgvDataPelanggaranPelanggar.Columns[1].Name = "No Reg Penyidikan";
-            dgvDataPelanggaranPelanggar.Columns[2].Name = "No Reg Kendaraan";
-            dgvDataPelanggaranPelanggar.Columns[3].Name = "Jenis Kendaraan";
-            dgvDataPelanggaranPelanggar.Columns[4].Name = "Merk Kendaraan";
-            dgvDataPelanggaranPelanggar.Columns[5].Name = "Pasal";
+            dgvDataPelanggaranPelanggar.ColumnCount = 2;
+            dgvDataPelanggaranPelanggar.Columns[0].Name = "Pasal yang Dilanggar";
+            dgvDataPelanggaranPelanggar.Columns[1].Name = "Jumlah Melanggar";
         }
 
         private void frmBanyakPelanggaran_Load(object sender, EventArgs e)
         {
+            data = ExcelHelper.GetAllPelanggaran();
             SetTable();
         }
     }
