@@ -102,11 +102,11 @@
     <Compile Include="frmStatistikPelanggaran.Designer.cs">
       <DependentUpon>frmStatistikPelanggaran.cs</DependentUpon>
     </Compile>
-    <Compile Include="InputSuratTilang.cs">
+    <Compile Include="frmInputSuratTilang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InputSuratTilang.Designer.cs">
-      <DependentUpon>InputSuratTilang.cs</DependentUpon>
+    <Compile Include="frmInputSuratTilang.Designer.cs">
+      <DependentUpon>frmInputSuratTilang.cs</DependentUpon>
     </Compile>
     <Compile Include="Pasal.cs" />
     <Compile Include="Penduduk.cs" />
@@ -137,8 +137,8 @@
     <EmbeddedResource Include="frmSuratTilang.resx">
       <DependentUpon>frmSuratTilang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InputSuratTilang.resx">
-      <DependentUpon>InputSuratTilang.cs</DependentUpon>
+    <EmbeddedResource Include="frmInputSuratTilang.resx">
+      <DependentUpon>frmInputSuratTilang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

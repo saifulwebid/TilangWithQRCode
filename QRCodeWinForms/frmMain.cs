@@ -25,7 +25,7 @@ namespace QRCodeWinForms
 
         private void btnSuratTilang_Click(object sender, EventArgs e)
         {
-            frmSuratTilang fSuratTilang = new frmSuratTilang();
+            frmInputSuratTilang fSuratTilang = new frmInputSuratTilang();
             fSuratTilang.ShowDialog();
         }
 

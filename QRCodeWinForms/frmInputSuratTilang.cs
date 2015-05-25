@@ -12,12 +12,12 @@ using System.Runtime.Versioning;
 
 namespace QRCodeWinForms
 {
-    public partial class InputSuratTilang : Form
+    public partial class frmInputSuratTilang : Form
     {
         string ResultString;
         DataPelanggaran datpel = new DataPelanggaran();
 
-        public InputSuratTilang()
+        public frmInputSuratTilang()
         {
             InitializeComponent();
         }
@@ -194,9 +194,7 @@ namespace QRCodeWinForms
                 if (tb != null)
                     tb.Text = "";
                 else
-                {
                     ClearData(ctrl.Controls);
-                }
             }
         }
 

@@ -1,6 +1,6 @@
 ﻿namespace QRCodeWinForms
 {
-    partial class InputSuratTilang
+    partial class frmInputSuratTilang
     {
         /// <summary>
         /// Required designer variable.
@@ -468,7 +468,7 @@
             // txtTempatAmbil
             // 
             this.txtTempatAmbil.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTempatAmbil.Location = new System.Drawing.Point(409, 113);
+            this.txtTempatAmbil.Location = new System.Drawing.Point(409, 117);
             this.txtTempatAmbil.Name = "txtTempatAmbil";
             this.txtTempatAmbil.Size = new System.Drawing.Size(181, 20);
             this.txtTempatAmbil.TabIndex = 44;
@@ -476,7 +476,7 @@
             // txtKesatuanPenyidik
             // 
             this.txtKesatuanPenyidik.BackColor = System.Drawing.SystemColors.Control;
-            this.txtKesatuanPenyidik.Location = new System.Drawing.Point(98, 120);
+            this.txtKesatuanPenyidik.Location = new System.Drawing.Point(98, 123);
             this.txtKesatuanPenyidik.Name = "txtKesatuanPenyidik";
             this.txtKesatuanPenyidik.Size = new System.Drawing.Size(109, 20);
             this.txtKesatuanPenyidik.TabIndex = 43;
@@ -484,7 +484,7 @@
             // txtPangkatPenyidik
             // 
             this.txtPangkatPenyidik.BackColor = System.Drawing.SystemColors.Control;
-            this.txtPangkatPenyidik.Location = new System.Drawing.Point(98, 98);
+            this.txtPangkatPenyidik.Location = new System.Drawing.Point(98, 101);
             this.txtPangkatPenyidik.Name = "txtPangkatPenyidik";
             this.txtPangkatPenyidik.Size = new System.Drawing.Size(109, 20);
             this.txtPangkatPenyidik.TabIndex = 42;
@@ -492,7 +492,7 @@
             // txtNamaPenyidik
             // 
             this.txtNamaPenyidik.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNamaPenyidik.Location = new System.Drawing.Point(98, 76);
+            this.txtNamaPenyidik.Location = new System.Drawing.Point(98, 79);
             this.txtNamaPenyidik.Name = "txtNamaPenyidik";
             this.txtNamaPenyidik.Size = new System.Drawing.Size(109, 20);
             this.txtNamaPenyidik.TabIndex = 41;
@@ -500,7 +500,7 @@
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(5, 123);
+            this.label72.Location = new System.Drawing.Point(5, 126);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(68, 13);
             this.label72.TabIndex = 36;
@@ -509,7 +509,7 @@
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(5, 101);
+            this.label71.Location = new System.Drawing.Point(5, 104);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(89, 13);
             this.label71.TabIndex = 35;
@@ -518,7 +518,7 @@
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(5, 79);
+            this.label70.Location = new System.Drawing.Point(5, 82);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(41, 13);
             this.label70.TabIndex = 34;
@@ -527,7 +527,7 @@
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(406, 79);
+            this.label69.Location = new System.Drawing.Point(406, 83);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(182, 26);
             this.label69.TabIndex = 33;
@@ -936,7 +936,7 @@
             // 
             // dtpTanggalLanggar
             // 
-            this.dtpTanggalLanggar.Location = new System.Drawing.Point(263, 19);
+            this.dtpTanggalLanggar.Location = new System.Drawing.Point(297, 19);
             this.dtpTanggalLanggar.Name = "dtpTanggalLanggar";
             this.dtpTanggalLanggar.Size = new System.Drawing.Size(180, 20);
             this.dtpTanggalLanggar.TabIndex = 98;
@@ -945,7 +945,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(204, 22);
+            this.label21.Location = new System.Drawing.Point(219, 22);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(58, 13);
             this.label21.TabIndex = 84;

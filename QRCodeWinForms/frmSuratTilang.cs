@@ -76,17 +76,8 @@ namespace QRCodeWinForms
 
         private void frmSuratTilang_Load(object sender, EventArgs e)
         {
-         /*   dtpprtJamSidang.ShowUpDown = true;
-            dtpprtJamSidang.CustomFormat = "HH:mm";
-            dtpprtJamSidang.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-
-            dtpJamLanggar.ShowUpDown = true;
-            dtpJamLanggar.CustomFormat = "HH:mm";
-            dtpJamLanggar.Format = System.Windows.Forms.DateTimePickerFormat.Custom;*/
-
         }
 
-        
         private void btnScanQRCode_Click(object sender, EventArgs e)
         {
         }
