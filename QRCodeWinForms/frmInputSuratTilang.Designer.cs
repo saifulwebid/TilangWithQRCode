@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpWaktuPernyataan = new System.Windows.Forms.DateTimePicker();
             this.txtAlamatWali = new System.Windows.Forms.TextBox();
             this.label66 = new System.Windows.Forms.Label();
             this.txtUmurWali = new System.Windows.Forms.TextBox();
@@ -57,6 +57,7 @@
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.dtpJamSidang = new System.Windows.Forms.DateTimePicker();
             this.txtTempatAmbil = new System.Windows.Forms.TextBox();
             this.txtKesatuanPenyidik = new System.Windows.Forms.TextBox();
@@ -120,6 +121,7 @@
             this.txtNoRegPenyidikan = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnScanQRCode = new System.Windows.Forms.Button();
             this.txtNoSIM = new System.Windows.Forms.TextBox();
             this.txtGolSIM = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -145,11 +147,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtUmurPelanggar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnSimpanData = new System.Windows.Forms.Button();
-            this.btnScanQRCode = new System.Windows.Forms.Button();
             this.btnClearForm = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnPrintSuratTilang = new System.Windows.Forms.Button();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -163,7 +163,7 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.dateTimePicker1);
+            this.groupBox8.Controls.Add(this.dtpWaktuPernyataan);
             this.groupBox8.Controls.Add(this.txtAlamatWali);
             this.groupBox8.Controls.Add(this.label66);
             this.groupBox8.Controls.Add(this.txtUmurWali);
@@ -181,12 +181,12 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Pernyataan Terdakwa";
             // 
-            // dateTimePicker1
+            // dtpWaktuPernyataan
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(410, 23);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(186, 20);
-            this.dateTimePicker1.TabIndex = 49;
+            this.dtpWaktuPernyataan.Location = new System.Drawing.Point(410, 23);
+            this.dtpWaktuPernyataan.Name = "dtpWaktuPernyataan";
+            this.dtpWaktuPernyataan.Size = new System.Drawing.Size(186, 20);
+            this.dtpWaktuPernyataan.TabIndex = 49;
             // 
             // txtAlamatWali
             // 
@@ -311,6 +311,7 @@
             this.cbxPasal.Name = "cbxPasal";
             this.cbxPasal.Size = new System.Drawing.Size(201, 21);
             this.cbxPasal.TabIndex = 62;
+            this.cbxPasal.SelectedIndexChanged += new System.EventHandler(this.cbxPasal_SelectedIndexChanged);
             // 
             // txtBankSisaDenda
             // 
@@ -364,6 +365,7 @@
             this.txtDendaMaksimal.Name = "txtDendaMaksimal";
             this.txtDendaMaksimal.Size = new System.Drawing.Size(119, 20);
             this.txtDendaMaksimal.TabIndex = 56;
+            this.txtDendaMaksimal.TextChanged += new System.EventHandler(this.txtDendaMaksimal_TextChanged);
             // 
             // txtAngkaPinalti
             // 
@@ -458,9 +460,18 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Penyidik";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(248, 13);
+            this.label4.TabIndex = 63;
+            this.label4.Text = "PENGADILAN NEGERI TEMPAT PENYIDANGAN";
+            // 
             // dtpJamSidang
             // 
-            this.dtpJamSidang.Location = new System.Drawing.Point(368, 54);
+            this.dtpJamSidang.Location = new System.Drawing.Point(368, 58);
             this.dtpJamSidang.Name = "dtpJamSidang";
             this.dtpJamSidang.Size = new System.Drawing.Size(90, 20);
             this.dtpJamSidang.TabIndex = 40;
@@ -468,7 +479,7 @@
             // txtTempatAmbil
             // 
             this.txtTempatAmbil.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTempatAmbil.Location = new System.Drawing.Point(409, 117);
+            this.txtTempatAmbil.Location = new System.Drawing.Point(409, 121);
             this.txtTempatAmbil.Name = "txtTempatAmbil";
             this.txtTempatAmbil.Size = new System.Drawing.Size(181, 20);
             this.txtTempatAmbil.TabIndex = 44;
@@ -476,7 +487,7 @@
             // txtKesatuanPenyidik
             // 
             this.txtKesatuanPenyidik.BackColor = System.Drawing.SystemColors.Control;
-            this.txtKesatuanPenyidik.Location = new System.Drawing.Point(98, 123);
+            this.txtKesatuanPenyidik.Location = new System.Drawing.Point(98, 127);
             this.txtKesatuanPenyidik.Name = "txtKesatuanPenyidik";
             this.txtKesatuanPenyidik.Size = new System.Drawing.Size(109, 20);
             this.txtKesatuanPenyidik.TabIndex = 43;
@@ -484,7 +495,7 @@
             // txtPangkatPenyidik
             // 
             this.txtPangkatPenyidik.BackColor = System.Drawing.SystemColors.Control;
-            this.txtPangkatPenyidik.Location = new System.Drawing.Point(98, 101);
+            this.txtPangkatPenyidik.Location = new System.Drawing.Point(98, 105);
             this.txtPangkatPenyidik.Name = "txtPangkatPenyidik";
             this.txtPangkatPenyidik.Size = new System.Drawing.Size(109, 20);
             this.txtPangkatPenyidik.TabIndex = 42;
@@ -492,7 +503,7 @@
             // txtNamaPenyidik
             // 
             this.txtNamaPenyidik.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNamaPenyidik.Location = new System.Drawing.Point(98, 79);
+            this.txtNamaPenyidik.Location = new System.Drawing.Point(98, 83);
             this.txtNamaPenyidik.Name = "txtNamaPenyidik";
             this.txtNamaPenyidik.Size = new System.Drawing.Size(109, 20);
             this.txtNamaPenyidik.TabIndex = 41;
@@ -500,7 +511,7 @@
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(5, 126);
+            this.label72.Location = new System.Drawing.Point(5, 130);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(68, 13);
             this.label72.TabIndex = 36;
@@ -509,7 +520,7 @@
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(5, 104);
+            this.label71.Location = new System.Drawing.Point(5, 108);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(89, 13);
             this.label71.TabIndex = 35;
@@ -518,7 +529,7 @@
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(5, 82);
+            this.label70.Location = new System.Drawing.Point(5, 86);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(41, 13);
             this.label70.TabIndex = 34;
@@ -527,7 +538,7 @@
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(406, 83);
+            this.label69.Location = new System.Drawing.Point(406, 87);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(182, 26);
             this.label69.TabIndex = 33;
@@ -536,7 +547,7 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(339, 58);
+            this.label47.Location = new System.Drawing.Point(339, 62);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(28, 13);
             this.label47.TabIndex = 32;
@@ -544,7 +555,7 @@
             // 
             // txtWaktuSidang
             // 
-            this.txtWaktuSidang.Location = new System.Drawing.Point(131, 54);
+            this.txtWaktuSidang.Location = new System.Drawing.Point(131, 58);
             this.txtWaktuSidang.Name = "txtWaktuSidang";
             this.txtWaktuSidang.Size = new System.Drawing.Size(200, 20);
             this.txtWaktuSidang.TabIndex = 39;
@@ -552,7 +563,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(3, 56);
+            this.label45.Location = new System.Drawing.Point(3, 60);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(122, 13);
             this.label45.TabIndex = 31;
@@ -561,7 +572,7 @@
             // txtPengadilan
             // 
             this.txtPengadilan.BackColor = System.Drawing.SystemColors.Control;
-            this.txtPengadilan.Location = new System.Drawing.Point(10, 28);
+            this.txtPengadilan.Location = new System.Drawing.Point(10, 32);
             this.txtPengadilan.Name = "txtPengadilan";
             this.txtPengadilan.Size = new System.Drawing.Size(500, 20);
             this.txtPengadilan.TabIndex = 38;
@@ -1061,6 +1072,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Data Pelanggar";
             // 
+            // btnScanQRCode
+            // 
+            this.btnScanQRCode.Location = new System.Drawing.Point(522, 90);
+            this.btnScanQRCode.Name = "btnScanQRCode";
+            this.btnScanQRCode.Size = new System.Drawing.Size(75, 43);
+            this.btnScanQRCode.TabIndex = 98;
+            this.btnScanQRCode.Text = "Scan QR Code";
+            this.btnScanQRCode.UseVisualStyleBackColor = true;
+            this.btnScanQRCode.Click += new System.EventHandler(this.btnScanQRCode_Click);
+            // 
             // txtNoSIM
             // 
             this.txtNoSIM.BackColor = System.Drawing.SystemColors.InactiveBorder;
@@ -1300,15 +1321,6 @@
             this.label1.TabIndex = 90;
             this.label1.Text = "DATA SURAT TILANG";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(248, 13);
-            this.label4.TabIndex = 63;
-            this.label4.Text = "PENGADILAN NEGERI TEMPAT PENYIDANGAN";
-            // 
             // btnSimpanData
             // 
             this.btnSimpanData.Location = new System.Drawing.Point(629, 1197);
@@ -1318,16 +1330,6 @@
             this.btnSimpanData.Text = "Simpan Data";
             this.btnSimpanData.UseVisualStyleBackColor = true;
             this.btnSimpanData.Click += new System.EventHandler(this.btnSimpanData_Click);
-            // 
-            // btnScanQRCode
-            // 
-            this.btnScanQRCode.Location = new System.Drawing.Point(522, 90);
-            this.btnScanQRCode.Name = "btnScanQRCode";
-            this.btnScanQRCode.Size = new System.Drawing.Size(75, 43);
-            this.btnScanQRCode.TabIndex = 98;
-            this.btnScanQRCode.Text = "Scan QR Code";
-            this.btnScanQRCode.UseVisualStyleBackColor = true;
-            this.btnScanQRCode.Click += new System.EventHandler(this.btnScanQRCode_Click);
             // 
             // btnClearForm
             // 
@@ -1339,16 +1341,17 @@
             this.btnClearForm.UseVisualStyleBackColor = true;
             this.btnClearForm.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnPrintSuratTilang
             // 
-            this.button2.Location = new System.Drawing.Point(631, 56);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 54);
-            this.button2.TabIndex = 101;
-            this.button2.Text = "Print Surat\r\nTilang";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnPrintSuratTilang.Location = new System.Drawing.Point(631, 56);
+            this.btnPrintSuratTilang.Name = "btnPrintSuratTilang";
+            this.btnPrintSuratTilang.Size = new System.Drawing.Size(75, 54);
+            this.btnPrintSuratTilang.TabIndex = 101;
+            this.btnPrintSuratTilang.Text = "Print Surat\r\nTilang";
+            this.btnPrintSuratTilang.UseVisualStyleBackColor = true;
+            this.btnPrintSuratTilang.Click += new System.EventHandler(this.button2_Click);
             // 
-            // InputSuratTilang
+            // frmInputSuratTilang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1356,7 +1359,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(729, 431);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnPrintSuratTilang);
             this.Controls.Add(this.btnClearForm);
             this.Controls.Add(this.btnSimpanData);
             this.Controls.Add(this.groupBox8);
@@ -1367,7 +1370,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
-            this.Name = "InputSuratTilang";
+            this.Name = "frmInputSuratTilang";
             this.Text = "InputSuratTilang";
             this.Load += new System.EventHandler(this.InputSuratTilang_Load);
             this.groupBox8.ResumeLayout(false);
@@ -1395,27 +1398,16 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox txtAlamatWali;
         private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.TextBox txtUmurWali;
-        private System.Windows.Forms.TextBox txtNamaWali;
-        private System.Windows.Forms.RadioButton rbtPerwakilan;
-        private System.Windows.Forms.RadioButton rbtHadirSendiri;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.ComboBox cbxPasal;
-        private System.Windows.Forms.TextBox txtBankSisaDenda;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.TextBox txtDendaMaksimal;
-        private System.Windows.Forms.TextBox txtAngkaPinalti;
-        private System.Windows.Forms.TextBox txtBankSetor;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label51;
@@ -1423,99 +1415,110 @@
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.DateTimePicker dtpJamSidang;
-        private System.Windows.Forms.TextBox txtTempatAmbil;
-        private System.Windows.Forms.TextBox txtKesatuanPenyidik;
-        private System.Windows.Forms.TextBox txtPangkatPenyidik;
-        private System.Windows.Forms.TextBox txtNamaPenyidik;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.DateTimePicker txtWaktuSidang;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox txtPengadilan;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.TextBox txtBukuUji;
         private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.DateTimePicker dtpBerlakuPemda;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox txtTerbitPemda;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.TextBox txtSKSita;
         private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.DateTimePicker dtpBerlakuSK;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox txtTerbitSK;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DateTimePicker dtpJamLanggar;
-        private System.Windows.Forms.DateTimePicker dtpWaktuLanggar;
-        private System.Windows.Forms.TextBox txtWilayahHukum;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox txtPatokan;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox txtJalan;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox txtSATPAS;
-        private System.Windows.Forms.TextBox txtNoMeSIN;
-        private System.Windows.Forms.TextBox txtNoRangka;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox txtMerekKendaraan;
-        private System.Windows.Forms.TextBox txtJenisKendaraan;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox txtSamsat;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox txtNoKendaraan;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DateTimePicker dtpTanggalLanggar;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txtNoRegTilang;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtKesatuan;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtNoRegPenyidikan;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txtNoSIM;
-        private System.Windows.Forms.TextBox txtGolSIM;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox txtNoKTPPelanggar;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtTanggalLahir;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtTempatPelanggar;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.RadioButton rbtPR;
-        private System.Windows.Forms.RadioButton rbtLK;
-        private System.Windows.Forms.TextBox txtPendidikan;
-        private System.Windows.Forms.TextBox txtPekerjaan;
-        private System.Windows.Forms.TextBox txtNamaPelanggar;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtAlamatPelanggar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtUmurPelanggar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnScanQRCode;
         private System.Windows.Forms.Button btnSimpanData;
         private System.Windows.Forms.Button btnClearForm;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnPrintSuratTilang;
+        public System.Windows.Forms.TextBox txtNoRegPenyidikan;
+        public System.Windows.Forms.DateTimePicker dtpWaktuPernyataan;
+        public System.Windows.Forms.TextBox txtAlamatWali;
+        public System.Windows.Forms.TextBox txtUmurWali;
+        public System.Windows.Forms.TextBox txtNamaWali;
+        public System.Windows.Forms.RadioButton rbtPerwakilan;
+        public System.Windows.Forms.RadioButton rbtHadirSendiri;
+        public System.Windows.Forms.ComboBox cbxPasal;
+        public System.Windows.Forms.TextBox txtBankSisaDenda;
+        public System.Windows.Forms.TextBox txtDendaMaksimal;
+        public System.Windows.Forms.TextBox txtAngkaPinalti;
+        public System.Windows.Forms.TextBox txtBankSetor;
+        public System.Windows.Forms.DateTimePicker dtpJamSidang;
+        public System.Windows.Forms.TextBox txtTempatAmbil;
+        public System.Windows.Forms.TextBox txtKesatuanPenyidik;
+        public System.Windows.Forms.TextBox txtPangkatPenyidik;
+        public System.Windows.Forms.TextBox txtNamaPenyidik;
+        public System.Windows.Forms.DateTimePicker txtWaktuSidang;
+        public System.Windows.Forms.TextBox txtPengadilan;
+        public System.Windows.Forms.TextBox txtBukuUji;
+        public System.Windows.Forms.DateTimePicker dtpBerlakuPemda;
+        public System.Windows.Forms.TextBox txtTerbitPemda;
+        public System.Windows.Forms.TextBox txtSKSita;
+        public System.Windows.Forms.DateTimePicker dtpBerlakuSK;
+        public System.Windows.Forms.TextBox txtTerbitSK;
+        public System.Windows.Forms.DateTimePicker dtpJamLanggar;
+        public System.Windows.Forms.DateTimePicker dtpWaktuLanggar;
+        public System.Windows.Forms.TextBox txtWilayahHukum;
+        public System.Windows.Forms.TextBox txtPatokan;
+        public System.Windows.Forms.TextBox txtJalan;
+        public System.Windows.Forms.TextBox txtSATPAS;
+        public System.Windows.Forms.TextBox txtNoMeSIN;
+        public System.Windows.Forms.TextBox txtNoRangka;
+        public System.Windows.Forms.TextBox txtMerekKendaraan;
+        public System.Windows.Forms.TextBox txtJenisKendaraan;
+        public System.Windows.Forms.TextBox txtSamsat;
+        public System.Windows.Forms.TextBox txtNoKendaraan;
+        public System.Windows.Forms.DateTimePicker dtpTanggalLanggar;
+        public System.Windows.Forms.TextBox txtNoRegTilang;
+        public System.Windows.Forms.TextBox txtKesatuan;
+        public System.Windows.Forms.TextBox txtNoSIM;
+        public System.Windows.Forms.TextBox txtGolSIM;
+        public System.Windows.Forms.TextBox txtNoKTPPelanggar;
+        public System.Windows.Forms.TextBox txtTanggalLahir;
+        public System.Windows.Forms.TextBox txtTempatPelanggar;
+        public System.Windows.Forms.RadioButton rbtPR;
+        public System.Windows.Forms.RadioButton rbtLK;
+        public System.Windows.Forms.TextBox txtPendidikan;
+        public System.Windows.Forms.TextBox txtPekerjaan;
+        public System.Windows.Forms.TextBox txtNamaPelanggar;
+        public System.Windows.Forms.TextBox txtAlamatPelanggar;
+        public System.Windows.Forms.TextBox txtUmurPelanggar;
 
     }
 }

@@ -19,6 +19,11 @@ namespace QRCodeWinForms
         {
             InitializeComponent();
         }
+
+        private void frmSuratTilang_Load(object sender, EventArgs e)
+        {
+        }
+
         private void label6_Click(object sender, EventArgs e)
         {
 
@@ -74,13 +79,7 @@ namespace QRCodeWinForms
 
         }
 
-        private void frmSuratTilang_Load(object sender, EventArgs e)
-        {
-        }
 
-        private void btnScanQRCode_Click(object sender, EventArgs e)
-        {
-        }
 
         private void dtpJam_ValueChanged(object sender, EventArgs e)
         {
