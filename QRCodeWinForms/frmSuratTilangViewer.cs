@@ -14,14 +14,99 @@ namespace QRCodeWinForms
 {
     public partial class frmSuratTilangViewer : Form
     {
-
+        private DataPelanggaran datpel = new DataPelanggaran();
         public frmSuratTilangViewer()
         {
             InitializeComponent();
         }
 
+        private static int ConvertUmur(DateTime ttl)
+        {
+            DateTime currentdate = new DateTime();
+            currentdate = DateTime.Today;
+
+            if (currentdate.Month >= ttl.Month && currentdate.Date >= ttl.Date)
+            {
+                return currentdate.Year - ttl.Year + 1;
+            }
+            else
+            {
+                return currentdate.Year - ttl.Year;
+            }
+
+        }
+
+        public frmSuratTilangViewer(DataPelanggaran pelanggaran)
+        {
+            InitializeComponent();
+            datpel = pelanggaran;
+
+        }
+
         private void frmSuratTilang_Load(object sender, EventArgs e)
         {
+            try
+            {
+                lblNoRegPenyidikan.Text = datpel.NomorRegister;
+                lblNoRegTilang.Text = datpel.NomorTilang;
+                lblKesatuan.Text = datpel.Kesatuan;
+                lblNamaPelanggar.Text = datpel.Pelanggar.Pemilik.Nama;
+                lblAlamatPelanggar.Text = datpel.Pelanggar.Pemilik.Alamat;
+                lblPendidikanPelanggar.Text = datpel.Pelanggar.Pemilik.Pendidikan;
+                lblPekerjaanPelanggar.Text = datpel.Pelanggar.Pemilik.Pekerjaan;
+                lblJK.Text = datpel.Pelanggar.Pemilik.JenisKelamin;
+                lblTempatLahirPelanggar.Text = datpel.Pelanggar.Pemilik.TempatLahir;
+                lblTanggalLahirPelanggar.Text = Convert.ToString(datpel.Pelanggar.Pemilik.TanggalLahir.Date.ToString("dd MMMM yyyy"));
+                lblUmurPelanggar.Text = Convert.ToString(ConvertUmur(datpel.Pelanggar.Pemilik.TanggalLahir));
+                lblGolSIM.Text = datpel.Pelanggar.Golongan;
+                lblJenisKendaraan.Text = datpel.JenisKendaraan;
+                lblMerekKendaraan.Text = datpel.MerekKendaraan;
+                lblNoKTP.Text = datpel.Pelanggar.Pemilik.NomorKTP;
+                lblNoSIM.Text = datpel.Pelanggar.NomorSIM;
+                lblNoRegKendaraan.Text = datpel.NomorKendaraan;
+                lblNoRangkaKendaraan.Text = datpel.NomorRangkaKendaraan;
+                lblNoMesinKendaraan.Text = datpel.NomorMesinKendaraan;
+                lblSamsat.Text = datpel.SamsatKendaraan;
+                lblSATPAS.Text = datpel.SATPAS;
+                lblTanggalPelanggaran.Text = Convert.ToString(datpel.WaktuPelanggaran.Date.ToLongDateString());
+                lblTempatAmbilBarangSita.Text = datpel.TempatPengambilanBarangSita;
+                lblWaktuLanggar.Text = Convert.ToString(datpel.WaktuPelanggaran.Date.ToLongDateString());
+                lblJamLanggar.Text = Convert.ToString(datpel.WaktuPelanggaran.Date.ToShortTimeString());
+                lblJalanLanggar.Text = datpel.LokasiPelanggaran;
+                lblPatokanLanggar.Text = datpel.PatokanLokasi;
+                lblWilayahHukum.Text = datpel.WilayahHukum;
+                lblSKSita.Text = datpel.DisitaSKRanmor;
+                lblMasaBerlakuSK.Text = Convert.ToString(datpel.DisitaSKMasaBerlaku.Date.ToLongDateString());
+                lblTerbitSKSita.Text = datpel.DisitaSKDiterbitkanOleh;
+                lblBukuUjiSita.Text = datpel.DisitaBukuUji;
+                lblBerlakuBukuUji.Text = Convert.ToString(datpel.DisitaBukuUjiMasaBerlaku.Date.ToLongDateString());
+                lblTerbitBukuUji.Text = datpel.DisitaBukuUjiDiterbitkanOleh;
+                lblPengadilanSidang.Text = datpel.LokasiSidang;
+                lblWaktuSidang.Text = datpel.WaktuSidang.Date.ToLongDateString().ToString();
+                lblJamSidang.Text = datpel.WaktuSidang.Date.ToShortTimeString().ToString();
+                lblNamaPenyidik.Text = datpel.NamaPenyidik;
+                lblPangkatPenyidik.Text = datpel.PangkatPenyidik;
+                lblKesatuanPenyidik.Text = datpel.KesatuanPenyidik;
+                lblPasal.Text = datpel.PasalPelanggaran.NomorPasal;
+                lblDendaMaksimal.Text = datpel.PasalPelanggaran.DendaMaksimal.ToString();
+                lblBankSetorDenda.Text = datpel.BankSetorDendaMaksimal;
+                lblAngkaPinalti.Text = datpel.AngkaPinaltiPelanggaran.ToString();
+                if (datpel.PernyataanHadirSendiri == true)
+                    rbtprtHadirSendiri.Checked = true;
+                else
+                    rbtprtPerwakilan.Checked = true;
+                lblNamaWakil.Text = datpel.NamaWakil;
+                lblAlamatWakil.Text = datpel.AlamatWakil;
+                lblUmurWakil.Text = datpel.UmurWakil;
+                lblWaktuPernyataan.Text = datpel.WaktuPelanggaran.ToLongDateString();
+                lblBankSisaDenda.Text = datpel.BankSisaDenda;
+            }
+            catch (Exception ex)
+            {
+                //if(datpel == null)
+                MessageBox.Show("Tampil Surat Tilang Gagal! \n Simpan data terlebih dahulu!" + "\n" + ex.Message);
+            }
+            //datpel.ShowDialog();
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -79,8 +164,6 @@ namespace QRCodeWinForms
 
         }
 
-
-
         private void dtpJam_ValueChanged(object sender, EventArgs e)
         {
         }
@@ -97,20 +180,34 @@ namespace QRCodeWinForms
         {
 
         }
-
+        
         Bitmap memoryImage;
-        private void PrintScreenForm() // method untuk capture gambar form 2
-        {
-            Graphics myGraphics = this.CreateGraphics();
-            Size s = this.Size;
-            memoryImage = new Bitmap(s.Width - 20, s.Height - 81, myGraphics);
-            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
-            memoryGraphics.CopyFromScreen(Location.X + 9, Location.Y + 31, 0, 0, s);
-        }
 
+        public void PrintScreenForm(Form frm2) // method untuk capture gambar form 2
+        {
+           //frmSuratTilangViewer frm2 = new frmSuratTilangViewer();
+            Panel panel = new Panel();
+            frm2.Controls.Add(panel);
+
+            Graphics myGraphics = frm2.CreateGraphics();
+            Size s = frm2.Size;
+            memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
+            myGraphics = Graphics.FromImage(memoryImage);
+
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            memoryGraphics.CopyFromScreen(Location.X, Location.Y, 0, 0, s);
+        
+          Point panelLocation = PointToScreen(panel.Location);
+           myGraphics.CopyFromScreen(panelLocation.X, panelLocation.Y, 0, 0, s);
+
+          // frm2.ppdSuratTilang.Document = frm2.pdSuratTilang;
+            //frm2.ppdSuratTilang.PrintPreviewControl.Zoom = 1;
+       //     frm2.ShowDialog();  
+            ppdSuratTilang.ShowDialog();
+        }
         private void pdSuratTilang_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawImage(memoryImage, 100, 100); //gambar grpahic memoryImage (hasil Capture Form) ke pdSIM
+           e.Graphics.DrawImage(memoryImage, 0, 0); //gambar grpahic memoryImage (hasil Capture Form) ke pdSIM
         }
 
     }

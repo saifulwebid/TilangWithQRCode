@@ -363,8 +363,10 @@
             this.txtDendaMaksimal.BackColor = System.Drawing.SystemColors.Control;
             this.txtDendaMaksimal.Location = new System.Drawing.Point(184, 61);
             this.txtDendaMaksimal.Name = "txtDendaMaksimal";
+            this.txtDendaMaksimal.ReadOnly = true;
             this.txtDendaMaksimal.Size = new System.Drawing.Size(119, 20);
             this.txtDendaMaksimal.TabIndex = 56;
+            this.txtDendaMaksimal.TabStop = false;
             this.txtDendaMaksimal.TextChanged += new System.EventHandler(this.txtDendaMaksimal_TextChanged);
             // 
             // txtAngkaPinalti
@@ -1169,7 +1171,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(4, 146);
+            this.label14.Location = new System.Drawing.Point(6, 150);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(54, 13);
             this.label14.TabIndex = 73;
@@ -1240,7 +1242,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 20);
+            this.label7.Location = new System.Drawing.Point(6, 20);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(41, 13);
             this.label7.TabIndex = 32;

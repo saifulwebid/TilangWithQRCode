@@ -213,75 +213,13 @@ namespace QRCodeWinForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmSuratTilangViewer frmsurat = new frmSuratTilangViewer();
-            
-            try
-            {
-                frmsurat.lblNoRegPenyidikan.Text = txtNoRegPenyidikan.Text;
-                frmsurat.lblNoRegTilang.Text = txtNoRegTilang.Text;
-                frmsurat.lblKesatuan.Text = txtKesatuan.Text;
-                frmsurat.lblNamaPelanggar.Text = txtNamaPelanggar.Text;
-                frmsurat.lblAlamatPelanggar.Text = txtAlamatPelanggar.Text;
-                frmsurat.lblPendidikanPelanggar.Text = txtPendidikan.Text;
-                frmsurat.lblPekerjaanPelanggar.Text = txtPekerjaan.Text;
-                if (rbtLK.Checked == true) { frmsurat.lblJK.Text = rbtLK.Text; }
-                else { frmsurat.lblJK.Text = rbtPR.Text; }
-                frmsurat.lblTempatLahirPelanggar.Text = txtTempatPelanggar.Text;
-                frmsurat.lblTanggalLahirPelanggar.Text = txtTanggalLahir.Text;
-                frmsurat.lblUmurPelanggar.Text = txtUmurPelanggar.Text;
-                frmsurat.lblGolSIM.Text = txtGolSIM.Text;
-                frmsurat.lblJenisKendaraan.Text = txtJenisKendaraan.Text;
-                frmsurat.lblMerekKendaraan.Text = txtMerekKendaraan.Text;
-                frmsurat.lblNoKTP.Text = txtNoKTPPelanggar.Text;
-                frmsurat.lblNoSIM.Text = txtNoSIM.Text;
-                frmsurat.lblNoRegKendaraan.Text = txtNoKendaraan.Text;
-                frmsurat.lblNoRangkaKendaraan.Text = txtNoRangka.Text;
-                frmsurat.lblNoMesinKendaraan.Text = txtNoMeSIN.Text;
-                frmsurat.lblSamsat.Text = txtSamsat.Text;
-                frmsurat.lblSATPAS.Text = txtSATPAS.Text;
-                frmsurat.lblTanggalPelanggaran.Text = dtpTanggalLanggar.Text;
-                frmsurat.lblTempatAmbilBarangSita.Text = txtTempatAmbil.Text;
-                frmsurat.lblWaktuLanggar.Text = dtpWaktuLanggar.Text;
-                frmsurat.lblJamLanggar.Text = dtpJamLanggar.Text;
-                frmsurat.lblJalanLanggar.Text = txtJalan.Text;
-                frmsurat.lblPatokanLanggar.Text = txtPatokan.Text;
-                frmsurat.lblWilayahHukum.Text = txtWilayahHukum.Text;
-                frmsurat.lblSKSita.Text = txtSKSita.Text;
-                frmsurat.lblMasaBerlakuSK.Text = dtpBerlakuSK.Text;
-                frmsurat.lblTerbitSKSita.Text = txtTerbitSK.Text;
-                frmsurat.lblBukuUjiSita.Text = txtBukuUji.Text;
-                frmsurat.lblBerlakuBukuUji.Text = dtpBerlakuPemda.Text;
-                frmsurat.lblTerbitBukuUji.Text = txtTerbitPemda.Text;
-                frmsurat.lblPengadilanSidang.Text = txtPengadilan.Text;
-                frmsurat.lblWaktuSidang.Text = txtWaktuSidang.Text;
-                frmsurat.lblJamSidang.Text = dtpJamSidang.Text;
-                frmsurat.lblNamaPenyidik.Text = txtNamaPenyidik.Text;
-                frmsurat.lblPangkatPenyidik.Text = txtPangkatPenyidik.Text;
-                frmsurat.lblKesatuanPenyidik.Text = txtKesatuanPenyidik.Text;
-                frmsurat.lblPasal.Text = cbxPasal.Text;
-                frmsurat.lblDendaMaksimal.Text = txtDendaMaksimal.Text;
-                frmsurat.lblBankSetorDenda.Text = txtBankSetor.Text;
-                frmsurat.lblAngkaPinalti.Text = txtAngkaPinalti.Text;
-                if (rbtHadirSendiri.Checked)
-                    frmsurat.rbtprtHadirSendiri.Checked = true;
-                else
-                    frmsurat.rbtprtPerwakilan.Checked = true;
-                frmsurat.lblNamaWakil.Text = txtNamaWali.Text;
-                frmsurat.lblAlamatWakil.Text = txtAlamatWali.Text;
-                frmsurat.lblUmurWakil.Text = txtUmurWali.Text;
-                frmsurat.lblWaktuPernyataan.Text = dtpWaktuPernyataan.Text;
-                frmsurat.lblBankSisaDenda.Text = txtBankSisaDenda.Text;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Tampil Surat Tilang Gagal! " + "\n" + ex.Message);
-            }
-            frmsurat.ShowDialog();
+           frmSuratTilangViewer frmsurat = new frmSuratTilangViewer(datpel);
+
+           //frmsurat.ShowDialog(); 
+           
+           frmsurat.PrintScreenForm(frmsurat);
+          // frmsurat.pdSuratTilang.ShowDialog();
         
         }
-
-
-
-        
     }
 }
