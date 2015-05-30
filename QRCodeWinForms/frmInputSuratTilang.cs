@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
 using System.Runtime.Versioning;
+using System.Diagnostics;
 
 namespace QRCodeWinForms
 {
@@ -213,13 +214,8 @@ namespace QRCodeWinForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-           frmSuratTilangViewer frmsurat = new frmSuratTilangViewer(datpel);
-
-           //frmsurat.ShowDialog(); 
-           
-           frmsurat.PrintScreenForm(frmsurat);
-          // frmsurat.pdSuratTilang.ShowDialog();
-        
+            frmSuratTilangViewer frmsurat = new frmSuratTilangViewer(datpel);
+            frmsurat.ShowDialog();        
         }
     }
 }

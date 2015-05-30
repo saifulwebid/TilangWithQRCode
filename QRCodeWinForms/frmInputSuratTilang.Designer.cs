@@ -1349,7 +1349,7 @@
             this.btnPrintSuratTilang.Name = "btnPrintSuratTilang";
             this.btnPrintSuratTilang.Size = new System.Drawing.Size(75, 54);
             this.btnPrintSuratTilang.TabIndex = 101;
-            this.btnPrintSuratTilang.Text = "Print Surat\r\nTilang";
+            this.btnPrintSuratTilang.Text = "Tampil Surat\r\nTilang";
             this.btnPrintSuratTilang.UseVisualStyleBackColor = true;
             this.btnPrintSuratTilang.Click += new System.EventHandler(this.button2_Click);
             // 
