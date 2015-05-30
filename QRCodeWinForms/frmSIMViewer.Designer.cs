@@ -30,9 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSIMViewer));
             this.btnCetakSIM = new System.Windows.Forms.Button();
-            this.ppdSIM = new System.Windows.Forms.PrintPreviewDialog();
-            this.pdSIM = new System.Drawing.Printing.PrintDocument();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelSIM = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -61,7 +59,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.panelSIM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictFoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,56 +75,41 @@
             this.btnCetakSIM.UseVisualStyleBackColor = true;
             this.btnCetakSIM.Click += new System.EventHandler(this.btnCetakSIM_Click);
             // 
-            // ppdSIM
+            // panelSIM
             // 
-            this.ppdSIM.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.ppdSIM.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.ppdSIM.ClientSize = new System.Drawing.Size(400, 300);
-            this.ppdSIM.Document = this.pdSIM;
-            this.ppdSIM.Enabled = true;
-            this.ppdSIM.Icon = ((System.Drawing.Icon)(resources.GetObject("ppdSIM.Icon")));
-            this.ppdSIM.Name = "ppdSIM";
-            this.ppdSIM.Visible = false;
-            // 
-            // pdSIM
-            // 
-            this.pdSIM.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.pdSIM_PrintPage);
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.lblJenisKelamin);
-            this.panel1.Controls.Add(this.lblRegional);
-            this.panel1.Controls.Add(this.lblGolongan);
-            this.panel1.Controls.Add(this.lblMasaBerlaku);
-            this.panel1.Controls.Add(this.lblNoSIM);
-            this.panel1.Controls.Add(this.lblPekerjaan);
-            this.panel1.Controls.Add(this.lblPendidikan);
-            this.panel1.Controls.Add(this.lblTanggalLahir);
-            this.panel1.Controls.Add(this.lblTempatLahir);
-            this.panel1.Controls.Add(this.lblAlamat);
-            this.panel1.Controls.Add(this.lblNama);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictFoto);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(535, 290);
-            this.panel1.TabIndex = 43;
+            this.panelSIM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelSIM.Controls.Add(this.label14);
+            this.panelSIM.Controls.Add(this.label13);
+            this.panelSIM.Controls.Add(this.label12);
+            this.panelSIM.Controls.Add(this.label11);
+            this.panelSIM.Controls.Add(this.lblJenisKelamin);
+            this.panelSIM.Controls.Add(this.lblRegional);
+            this.panelSIM.Controls.Add(this.lblGolongan);
+            this.panelSIM.Controls.Add(this.lblMasaBerlaku);
+            this.panelSIM.Controls.Add(this.lblNoSIM);
+            this.panelSIM.Controls.Add(this.lblPekerjaan);
+            this.panelSIM.Controls.Add(this.lblPendidikan);
+            this.panelSIM.Controls.Add(this.lblTanggalLahir);
+            this.panelSIM.Controls.Add(this.lblTempatLahir);
+            this.panelSIM.Controls.Add(this.lblAlamat);
+            this.panelSIM.Controls.Add(this.lblNama);
+            this.panelSIM.Controls.Add(this.label10);
+            this.panelSIM.Controls.Add(this.label3);
+            this.panelSIM.Controls.Add(this.pictFoto);
+            this.panelSIM.Controls.Add(this.label9);
+            this.panelSIM.Controls.Add(this.label8);
+            this.panelSIM.Controls.Add(this.label7);
+            this.panelSIM.Controls.Add(this.label6);
+            this.panelSIM.Controls.Add(this.label5);
+            this.panelSIM.Controls.Add(this.label4);
+            this.panelSIM.Controls.Add(this.pictureBox2);
+            this.panelSIM.Controls.Add(this.label2);
+            this.panelSIM.Controls.Add(this.label1);
+            this.panelSIM.Controls.Add(this.pictureBox1);
+            this.panelSIM.Location = new System.Drawing.Point(2, 2);
+            this.panelSIM.Name = "panelSIM";
+            this.panelSIM.Size = new System.Drawing.Size(535, 290);
+            this.panelSIM.TabIndex = 43;
             // 
             // label14
             // 
@@ -408,14 +391,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(540, 334);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelSIM);
             this.Controls.Add(this.btnCetakSIM);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmSIMViewer";
             this.Text = "SIM Viewer";
             this.Load += new System.EventHandler(this.SIMViewer_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelSIM.ResumeLayout(false);
+            this.panelSIM.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictFoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -426,9 +409,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnCetakSIM;
-        private System.Windows.Forms.PrintPreviewDialog ppdSIM;
-        private System.Drawing.Printing.PrintDocument pdSIM;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelSIM;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;

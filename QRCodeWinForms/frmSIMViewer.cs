@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QRCoder;
+using System.Diagnostics;
 
 namespace QRCodeWinForms
 {
@@ -50,6 +51,7 @@ namespace QRCodeWinForms
             }
 
             GenerateQrCode();
+
         }
 
         void GenerateQrCode()
@@ -62,7 +64,7 @@ namespace QRCodeWinForms
             QRCodeGenerator.QRCode qrCode = qrGenerator.CreateQrCode(input, QRCodeGenerator.ECCLevel.M); //ECC Level merupakan error correction
             pictureBox2.BackgroundImage = qrCode.GetGraphic(10); //10 adalah besar pixel dari qr code
         }
-
+        /*
         Bitmap memoryImage;
         private void PrintScreenForm() // method untuk capture gambar form 2
         {
@@ -77,11 +79,21 @@ namespace QRCodeWinForms
         {
             e.Graphics.DrawImage(memoryImage,100,100); //gambar grpahic memoryImage (hasil Capture Form) ke pdSIM
         }
-
+        */
         private void btnCetakSIM_Click(object sender, EventArgs e)
         {
-            PrintScreenForm(); // panggil method untuk capture form 2
-            ppdSIM.ShowDialog(); // tampilkan print preview
+            string path = @"C:\Users\Windows 8.1\Documents\View.jpg";
+
+            PrintDialog Print = new PrintDialog();
+            System.Drawing.Bitmap image = new System.Drawing.Bitmap(panelSIM.Width, panelSIM.Height);
+            panelSIM.DrawToBitmap(image, panelSIM.ClientRectangle);
+            image.Save(path);
+
+            var p = new Process();
+            p.StartInfo.FileName = path;//pass in or whatever you need
+            p.StartInfo.Verb = "Print";
+            p.Start();
+            /*Modul didapat dari kelompok 2 Project 1*/
         }
     }
 }

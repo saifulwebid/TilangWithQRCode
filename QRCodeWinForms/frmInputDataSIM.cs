@@ -13,7 +13,7 @@ namespace QRCodeWinForms
     public partial class frmInputDataSIM : Form
     {
         
-        SIM additem = new SIM();
+        private SIM additem = new SIM();
         public frmInputDataSIM()
         {
             InitializeComponent();
@@ -92,6 +92,32 @@ namespace QRCodeWinForms
             txtTempatLahir.Text = "";
             txtNoSIM.Text = "";
             dtpTanggalLahir.Text = (new DateTime(time.Year - 17, time.Month, time.Day)).ToLongDateString();
+        }
+
+        private void txtNoKTP_TextChanged(object sender, EventArgs e)
+        {
+            List<SIM> datapemilik = ExcelHelper.GetAllSIM();
+            SIM item = new SIM();
+            additem.IsNew = true;
+            foreach(SIM data in datapemilik)
+            {
+                if (data.Pemilik.NomorKTP == txtNoKTP.Text)
+                {
+                    item = data;
+                    additem.IsNew = false;
+                    break;
+                }
+            }
+            if (!additem.IsNew)
+            {
+                txtNama.Text = item.Pemilik.Nama;
+                txtAlamat.Text = item.Pemilik.Alamat;
+                txtTempatLahir.Text = item.Pemilik.TempatLahir;
+                dtpTanggalLahir.Text = item.Pemilik.TanggalLahir.ToLongDateString();
+                cmbPendidikan.SelectedItem = item.Pemilik.Pendidikan;
+                cmbPekerjaan.SelectedItem = item.Pemilik.Pekerjaan;
+                cmbJenisKelamin.SelectedItem = item.Pemilik.JenisKelamin;
+            }
         }
     }
 }
