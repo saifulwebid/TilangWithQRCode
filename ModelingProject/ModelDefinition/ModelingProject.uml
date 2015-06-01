@@ -374,7 +374,7 @@
             Id="b22ae4a8-c011-498e-a4c4-5616aa1172fd"
             name="GetAllSIM"
             isLeaf="false"
-            isStatic="false"
+            isStatic="true"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
@@ -415,16 +415,54 @@
             concurrency="Sequential"
             isQuery="false" />
           <operation
-            Id="a5449b58-515e-4dd2-8702-9539f36472ea"
-            name="GetStatistic"
+            Id="11ace901-e68c-4b2d-bda8-aacb80a51499"
+            name="IsPresent"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b04e1a8e-1019-42f1-a401-728affad196a"
+                  name="NomorKTP"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="92e13cc3-c207-43a8-ac70-1707dec0528f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c4b45093-3421-4fb0-9d20-c48a6e6b818c"
+                      LastKnownName="Penduduk"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ff8f1840-10a4-408c-9aae-2ffb94b00b86"
+            name="Penduduk"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
           <operation
-            Id="11ace901-e68c-4b2d-bda8-aacb80a51499"
-            name="IsPresent"
+            Id="2a40fdef-3c23-4f2a-9f53-a2d8753b57c2"
+            name="Penduduk"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -433,14 +471,14 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="ec30a9dd-703d-4044-9d38-31f80ddd88c6"
-                  name="NomorKTP"
+                  Id="6975eb52-b9a9-4394-8de7-5f76107fb11f"
+                  name="FromExcel"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
                     <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
                       LastKnownLocation="ModelingProject.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -658,7 +696,7 @@
             Id="5b0dc1c4-0cfe-4138-aa15-61c32d550f6c"
             name="GetAllPelanggaran"
             isLeaf="false"
-            isStatic="false"
+            isStatic="true"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
@@ -698,6 +736,64 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="bb319278-2501-40e8-a998-4393cb2f28f9"
+            name="SIM"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b3e108fb-891b-411b-8ec6-6d4597c9f5a0"
+                  name="QRData"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c02800ce-3c1c-4414-84a0-19794a00210b"
+            name="SIM"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ce8a3cce-6c04-4c9c-846d-40506a9d5037"
+            name="SIM"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8cebf335-5bbc-4ec5-be5f-5ff3206f24f4"
+                  name="FromExcel"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -746,7 +842,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="273b5820-88fb-424e-9d34-3a8c6d0ed60f"
+                LastKnownName="DateTime"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="a6140230-29b2-4d97-90a4-394efb8049ff"
             name="NomorRegister"
@@ -757,7 +860,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="920db7ec-4c83-412b-8d24-8cdc20d180f5"
             name="Kesatuan"
@@ -768,7 +878,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="e2dc84e8-ca8f-4e7f-8cd6-5fd7dcca8087"
             name="NomorTilang"
@@ -779,7 +896,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="21b76225-327e-4359-afa9-04ee8b031d85"
             name="NomorKendaraan"
@@ -790,7 +914,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="1698a771-8237-4319-a1ee-0325e49cc78d"
             name="JenisKendaraan"
@@ -801,7 +932,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="703bdc1a-2e4d-41d3-b0e9-156106e1d202"
             name="MerekKendaraan"
@@ -812,7 +950,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="c5f38c03-a138-4414-af6a-449687977063"
             name="NomorRangkaKendaraan"
@@ -823,7 +968,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="f27cd111-23f2-418f-a574-3e4df64fadf6"
             name="NomorMesinKendaraan"
@@ -834,7 +986,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="f7fe8404-69bc-4a87-b0ff-faa5cabce200"
             name="SamsatKendaraan"
@@ -845,7 +1004,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="eaec65cc-8ea6-4047-bdac-2beb7188e0de"
             name="DisitaSKMasaBerlaku"
@@ -856,7 +1022,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="273b5820-88fb-424e-9d34-3a8c6d0ed60f"
+                LastKnownName="DateTime"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="c6f1bbea-6ab1-471b-94cc-5f7a655d64ae"
             name="DisitaBukuUji"
@@ -867,10 +1040,17 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="81f02b29-0dd3-4bd3-953d-3d4fd8f229f0"
+                LastKnownName="Bitstring"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="5c38cf71-d92b-492a-9770-fe9f36e7b8d1"
-            name="DisitaSKRanmor"
+            name="DisitaSK"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -878,7 +1058,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="81f02b29-0dd3-4bd3-953d-3d4fd8f229f0"
+                LastKnownName="Bitstring"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="54c55af2-bcc3-4420-831a-ed8c0cb041d2"
             name="DisitaBukuUjiDiterbitkanOleh"
@@ -889,7 +1076,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="d8f16fe6-b9ce-42e3-9815-a13da4ca3c7d"
             name="DisitaSKDiterbitkanOleh"
@@ -900,7 +1094,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="56838e81-a697-4e73-9ad3-17672007f4ad"
             name="WaktuSidang"
@@ -911,7 +1112,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="273b5820-88fb-424e-9d34-3a8c6d0ed60f"
+                LastKnownName="DateTime"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="1c232758-853e-47fe-965e-6f6fcdfddd9b"
             name="LokasiSidang"
@@ -922,7 +1130,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="8671bde5-339e-4d0e-98c9-62d256651281"
             name="WilayahHukum"
@@ -933,7 +1148,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="a4ba66a0-9f5a-4821-a1aa-4388b03f2bc6"
             name="PasalPelanggaran"
@@ -962,7 +1184,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="f7fd6dd2-e776-41fa-9df4-eddea41f8b6e"
             name="AngkaPinaltiPelanggaran"
@@ -973,7 +1202,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="2e06e643-7e14-421d-8767-1fd5bba14a68"
             name="PernyataanHadirSendiri"
@@ -1002,7 +1238,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="0fbddf8f-54e8-4ce0-ac2d-71d3382ac918"
             name="AlamatWakil"
@@ -1013,7 +1256,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="e88e052f-1aa7-445e-abca-7167972456dd"
             name="isNew"
@@ -1043,7 +1293,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="4b1d26b0-ab9f-4fa8-a166-d367c8c6e465"
             name="DisitaBukuUjiMasaBerlaku"
@@ -1054,18 +1311,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
-          <property
-            Id="9ad15450-4e10-4766-b75e-7671ca390524"
-            name="KesatuanPenyidik"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="273b5820-88fb-424e-9d34-3a8c6d0ed60f"
+                LastKnownName="DateTime"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="d258b4ba-6fdc-4fe6-866b-8345b34f6231"
             name="LokasiPelanggaran"
@@ -1076,7 +1329,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="7692ba59-7aa8-4d83-9ecc-75154d578d03"
             name="NamaPenyidik"
@@ -1087,7 +1347,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="613731dc-afe2-488c-b9e6-15267b6e13b6"
             name="PangkatPenyidik"
@@ -1098,7 +1365,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="2e0507c5-04ff-42c4-b7d6-c4cc0a68bdcf"
             name="PatokanLokasi"
@@ -1109,7 +1383,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="14afd2b3-2e41-44b5-8cde-e14c67e44a7c"
             name="TempatPengambilanBarangSita"
@@ -1120,7 +1401,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="a769df91-5e6e-4950-82fb-3be89c546273"
             name="TempatSidang"
@@ -1131,10 +1419,17 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="eb059055-e5ef-4081-86bf-bc9e542891a1"
-            name="SATPAS"
+            name="Satpas"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1142,7 +1437,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -1153,6 +1455,75 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="8d7422d9-ceca-4dfd-aca1-f389a74c35c0"
+            name="Pelanggaran"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fb71bf60-8246-4a69-a9f0-244b63430b73"
+                  name="FromExcel"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="107b005a-3b48-4480-a1e4-835dbe056c5b"
+            name="Pelanggaran"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6a6d5959-b564-4a37-ad2f-39267360b631"
+            name="GetAll"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c5100716-010c-4d0a-8a63-39b2e6879dbe"
+                  direction="Return"
+                  isUnique="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ca60eb00-9843-4ff4-8767-46a898eb9ae8"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5a9d9a74-e1a6-4afa-a44a-98998454fd4e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="3115616d-1ddd-41d7-849e-82c477b0ccfe"
+                      LastKnownName="Pelanggaran"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1228,41 +1599,7 @@
         <ownedAttributesInternal>
           <property
             Id="9ed5514a-dc88-4b34-8257-95b3e1604ac4"
-            name="NomorPasal"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="e71cec9a-9418-41d2-af5b-8446a7516f2e"
-            name="Keterangan"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="11cc9ec2-ecc4-452a-a60f-e3ecb7e55ff2"
-            name="DendaMaksimal"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="81898272-b59c-4b10-955c-8098ad7727c0"
-            name="isNew"
-            visibility="Private"
+            name="Nomor"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1273,8 +1610,62 @@
             isComposite="false">
             <type_NamedElement>
               <primitiveTypeMoniker
-                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                LastKnownName="Boolean"
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e71cec9a-9418-41d2-af5b-8446a7516f2e"
+            name="Keterangan"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="11cc9ec2-ecc4-452a-a60f-e3ecb7e55ff2"
+            name="Denda"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ecbdf44a-5bdb-4fef-965b-d60cfaa14e4d"
+                LastKnownName="Double"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8f182ed2-10b1-4df9-94c3-58254267364a"
+            name="Pidana"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ecbdf44a-5bdb-4fef-965b-d60cfaa14e4d"
+                LastKnownName="Double"
                 LastKnownLocation="ModelingProject.uml" />
             </type_NamedElement>
           </property>
@@ -1316,14 +1707,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation
-            Id="c88aa77d-512e-451b-8864-2942fef05821"
-            name="Save"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
           <operation
             Id="33a26694-1389-4f52-8eb8-5d9c7a69ed9e"
             name="GetStatistic"
@@ -1368,6 +1751,14 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="09f3ad4f-2475-4653-a3be-eeaa8828d007"
+            name="Pasal"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1401,25 +1792,11 @@
             Id="0c7dfef7-08dc-44a7-bb0b-75ddfd5023a2"
             name="CheckUser"
             isLeaf="false"
-            isStatic="false"
+            isStatic="true"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
             <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="cae370a7-569e-483b-a501-35df837d3486"
-                  name="String Username"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="16a51d5f-d432-45a0-99c4-9aa2feab2799"
-                  name="String Password"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
                   Id="5e76d9ad-e53f-46ce-b797-799a435f0078"
@@ -1433,13 +1810,41 @@
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f443df39-baea-4f72-9098-587d915403ae"
+                  name="Username"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b195d4ce-e72d-4a61-9ef8-94f1df583aec"
+                  name="Password"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
           <operation
             Id="03c5d0e9-4681-430f-87dd-b16419b7e14f"
             name="GetAllPenduduk"
             isLeaf="false"
-            isStatic="false"
+            isStatic="true"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
@@ -1474,7 +1879,7 @@
             Id="92052589-4735-45d2-8240-eafafed87a87"
             name="GetAllSIM"
             isLeaf="false"
-            isStatic="false"
+            isStatic="true"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
@@ -1510,7 +1915,7 @@
             Id="b8f4d97e-6cf7-45e6-9925-47d04dbeb8a9"
             name="SaveSIM"
             isLeaf="false"
-            isStatic="false"
+            isStatic="true"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
@@ -1535,7 +1940,7 @@
             Id="0ac1629e-770d-4914-97f3-ade568a359c7"
             name="GetAllPasal"
             isLeaf="false"
-            isStatic="false"
+            isStatic="true"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
@@ -1571,7 +1976,7 @@
             Id="5d8e5175-0ff2-4902-b8f9-51feb81c3a58"
             name="SavePelanggaran"
             isLeaf="false"
-            isStatic="false"
+            isStatic="true"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
@@ -1596,7 +2001,7 @@
             Id="cd62acc2-72b1-4c99-94cf-adf4793913d0"
             name="GetAllPelanggaran"
             isLeaf="false"
-            isStatic="false"
+            isStatic="true"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
@@ -1622,6 +2027,44 @@
                     <classMoniker
                       Id="3115616d-1ddd-41d7-849e-82c477b0ccfe"
                       LastKnownName="Pelanggaran"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9f0ae14d-1738-4054-ab8a-13dc5a6dc097"
+            name="CheckPenduduk"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2b4554d1-7053-4a7f-ac52-30f004f5859d"
+                  name="NomorKTP"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0c5ee490-43ab-4163-bcde-1e1f41f40947"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c4b45093-3421-4fb0-9d20-c48a6e6b818c"
+                      LastKnownName="Penduduk"
                       LastKnownLocation="ModelingProject.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -2738,25 +3181,6 @@
                 LastKnownLocation="ModelingProject.uml" />
             </type_NamedElement>
           </property>
-          <property
-            Id="3b3b624c-0273-412d-989a-7fe5ba1c89e4"
-            name="isNew"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                LastKnownName="Boolean"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -2770,7 +3194,7 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="91a77531-e69a-4afc-bc5a-559f3f144b6e"
+                  Id="90ccaeb0-9f3b-4ece-a898-15393ab2b602"
                   name="Username"
                   direction="In"
                   isUnique="false">
@@ -2784,7 +3208,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="b9e1b54b-f0f5-4a71-a9cb-6c79ec8948b0"
+                  Id="eeaa2ada-d22c-4d74-a429-01a3f3f4c3b3"
                   name="Password"
                   direction="In"
                   isUnique="false">
@@ -2796,11 +3220,24 @@
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="83181abb-bb13-4514-b25b-77d52b0bb548"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="39f46669-8760-447a-aef6-ac8dfd05bbac"
+                      LastKnownName="User"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
           <operation
-            Id="b98b088f-cba3-4688-bad6-bbc59bee37c2"
-            name="Save"
+            Id="b6e23232-419c-41ce-a50b-0c0661f39f2f"
+            name="User"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2827,6 +3264,21 @@
             name="Samsat" />
         </ownedLiterals>
       </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="81f02b29-0dd3-4bd3-953d-3d4fd8f229f0"
+        name="Bitstring" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="870bc30d-8277-4b6f-91b3-dbcdb7ad3d8c"
+        name="Currency" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ecbdf44a-5bdb-4fef-965b-d60cfaa14e4d"
+        name="Double" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
