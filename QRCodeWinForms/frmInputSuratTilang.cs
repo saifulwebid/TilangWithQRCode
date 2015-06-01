@@ -41,6 +41,8 @@ namespace QRCodeWinForms
             //combobox
             cbxPasal.DataSource = Pasal.GetAllPasal();
             cbxPasal.DisplayMember = "NomorPasal";
+
+            txtKesatuanPenyidik.Text = txtKesatuan.Text;
         }
 
         private void TampilData()
