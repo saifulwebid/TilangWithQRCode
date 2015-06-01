@@ -87,5 +87,13 @@ namespace QRCodeWinForms
         {
             return ExcelHelper.GetAllSIM();
         }
+        public static Penduduk IsPresent(string noKTP)
+        {
+            return ExcelHelper.CekPenduduk(noKTP);
+        }
+        public void Save(Penduduk dataPenduduk)
+        {
+            ExcelHelper.SaveDataPenduduk(dataPenduduk);
+        }
     }
 }

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="19147951-ac02-4aab-ada2-51a3b8a26fab" name="ClassDiagram" linkedPackageId="21ed8e72-0243-495c-ade9-8cccb9dc3859" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="19147951-ac02-4aab-ada2-51a3b8a26fab" name="ClassDiagram" linkedPackageId="21ed8e72-0243-495c-ade9-8cccb9dc3859" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="44345215-663d-4f97-be35-15fb6c090ad6" name="Penduduk" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -696,7 +696,7 @@
           <property Id="2ba86c5f-81f3-4bf5-b94e-3a87aace4926" name="Denda" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="11cc9ec2-ecc4-452a-a60f-e3ecb7e55ff2" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="9481a47a-a853-4da3-9664-589ba518742c" LastKnownName="Double" />
+              <referencedTypeMoniker Id="46e12f02-7276-42b6-b776-02ea2aaaba70" LastKnownName="Currency" />
             </type_NamedElement>
           </property>
           <property Id="a04fa65b-a5f6-42e8-81ed-fb58ab6f4e80" name="Pidana" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -952,6 +952,19 @@
               <operationHasOwnedParameters>
                 <parameter Id="d2dd579b-9c59-41e5-9c75-de6da5eb4fd4" direction="Return" isUnique="false">
                   <elementDefinition Id="0c5ee490-43ab-4163-bcde-1e1f41f40947" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f8beff33-a0e0-481d-a38a-ddd56bf57fef" LastKnownName="Penduduk" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5560cae3-2614-49cf-a547-38232b1443b4" name="SavePenduduk" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bbf24255-148b-417e-a3a3-d30edac9bfef" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="41f58b41-4ada-498d-b297-341d0f25cc08" name="data" direction="In" isUnique="false">
+                  <elementDefinition Id="b8834e94-a491-4615-b793-aedf6077bfe0" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="f8beff33-a0e0-481d-a38a-ddd56bf57fef" LastKnownName="Penduduk" />
                   </type_NamedElement>
@@ -1238,8 +1251,8 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="9481a47a-a853-4da3-9664-589ba518742c" name="Double" isAbstract="false" isLeaf="false" cachedFullName="Double">
-        <elementDefinition Id="ecbdf44a-5bdb-4fef-965b-d60cfaa14e4d" />
+      <referencedType Id="46e12f02-7276-42b6-b776-02ea2aaaba70" name="Currency" isAbstract="false" isLeaf="false" cachedFullName="Currency">
+        <elementDefinition Id="870bc30d-8277-4b6f-91b3-dbcdb7ad3d8c" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

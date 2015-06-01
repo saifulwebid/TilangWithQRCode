@@ -88,7 +88,6 @@ namespace QRCodeWinForms
             int i = 0;
             bool found = false;
             string source;
-
             /* Mencari hardware webcam yang menggunakan port usb */
             while (i < camDevices.Devices.Count && !found)
             {

@@ -125,7 +125,7 @@
             this.txtNoKTP.Name = "txtNoKTP";
             this.txtNoKTP.Size = new System.Drawing.Size(126, 20);
             this.txtNoKTP.TabIndex = 1;
-            this.txtNoKTP.TextChanged += new System.EventHandler(this.txtNoKTP_TextChanged);
+            this.txtNoKTP.Leave += new System.EventHandler(this.txtNoKTP_Leave);
             // 
             // label11
             // 
