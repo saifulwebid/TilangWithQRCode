@@ -13,7 +13,9 @@ namespace QRCodeWinForms
     public partial class frmInputDataSIM : Form
     {
         
-        private SIM additem = new SIM();
+        private SIM dataSIM = new SIM();
+        private Penduduk datapenduduk;
+
         public frmInputDataSIM()
         {
             InitializeComponent();
@@ -21,36 +23,41 @@ namespace QRCodeWinForms
 
         private void frmInputDataSIM_Load(object sender, EventArgs e)
         {
-            List<string> jeniskelamin = new List<string> { "Laki-Laki", "Perempuan" };
-            cmbJenisKelamin.DataSource = jeniskelamin;
+            cmbJenisKelamin.DataSource = Enum.GetValues(typeof(EnumJenisKelamin));
             List<string> golSIM = new List<string> {"A", "B1", "B2", "C", "D", "A Umum", "B1 Umum", "B2 Umum" };
             cmbGolongan.DataSource = golSIM;
-            List<string> pendidikan = new List<string> {"SD", "SMP", "SMA", "Perguruan Tinggi" };
-            cmbPendidikan.DataSource = pendidikan;
-            List<string> pekerjaan = new List<string> {"PNS", "SWASTA", "TNI", "POLRI", "PELAJAR", "MAHASISWA", "Lain-Lain" };
-            cmbPekerjaan.DataSource = pekerjaan;
+            cmbPendidikan.DataSource = Enum.GetValues(typeof(EnumPendidikan));
+            cmbPekerjaan.DataSource = Enum.GetValues(typeof(EnumPekerjaan));
             SetFieldToDefault();
         }
-
+            
         private void btnSimpan_Click(object sender, EventArgs e)
         {
             if (txtNama.Text != "" && txtNoKTP.Text != "" && txtAlamat.Text != "" && txtNoSIM.Text != "" && txtTempatLahir.Text != "")
             {
-                additem.NomorSIM = txtNoSIM.Text;
-                additem.Golongan = cmbGolongan.Text;
-                additem.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
-                additem.Pemilik.Nama = txtNama.Text;
-                additem.Pemilik.Pekerjaan = cmbPekerjaan.Text;
-                additem.Pemilik.Pendidikan = cmbPendidikan.Text;
-                additem.Pemilik.TempatLahir = txtTempatLahir.Text;
-                additem.Pemilik.Alamat = txtAlamat.Text;
-                additem.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
-                additem.Pemilik.JenisKelamin = cmbJenisKelamin.Text;
-                additem.Pemilik.NomorKTP = txtNoKTP.Text;
-                additem.TanggalHabis = new DateTime(additem.TanggalBuat.Year + 5, additem.TanggalBuat.Month, additem.TanggalBuat.Day);
-                if (additem.isValidate())
+                if (datapenduduk == null)
                 {
-                    additem.Save(additem);
+                    datapenduduk = new Penduduk();
+                    datapenduduk.NomorKTP = txtNoKTP.Text;
+                    datapenduduk.Nama = txtNama.Text;
+                    datapenduduk.Pekerjaan = cmbPekerjaan.Text;
+                    datapenduduk.Pendidikan = cmbPendidikan.Text;
+                    datapenduduk.TempatLahir = txtTempatLahir.Text;
+                    datapenduduk.Alamat = txtAlamat.Text;
+                    datapenduduk.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
+                    datapenduduk.JenisKelamin = cmbJenisKelamin.Text;
+                    datapenduduk.Save(datapenduduk);
+                }
+
+                dataSIM.NomorSIM = txtNoSIM.Text;
+                dataSIM.Golongan = cmbGolongan.Text;
+                dataSIM.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
+                dataSIM.TanggalHabis = new DateTime(dataSIM.TanggalBuat.Year + 5, dataSIM.TanggalBuat.Month, dataSIM.TanggalBuat.Day);
+                dataSIM.Pemilik = datapenduduk;
+                
+                if (dataSIM.isValidate())
+                {
+                    dataSIM.Save(dataSIM);
                     MessageBox.Show("Data Berhasil Disimpan");
                     SetFieldToDefault();
                 }
@@ -71,24 +78,24 @@ namespace QRCodeWinForms
         private void btnTampilkan_Click(object sender, EventArgs e)
         {
             
-            frmSIMViewer f2 = new frmSIMViewer(additem);
+            frmSIMViewer f2 = new frmSIMViewer(dataSIM);
             f2.ShowDialog();
         }
 
         private void ClearObject()
         {
-            additem.NomorSIM = "";
-            additem.Golongan = "";
-            additem.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
-            additem.Pemilik.Nama = "";
-            additem.Pemilik.Pekerjaan = "";
-            additem.Pemilik.Pendidikan = "";
-            additem.Pemilik.TempatLahir = "";
-            additem.Pemilik.Alamat = "";
-            additem.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
-            additem.Pemilik.JenisKelamin = "";
-            additem.Pemilik.NomorKTP = "";
-            additem.TanggalHabis = DateTime.Now;
+            dataSIM.NomorSIM = "";
+            dataSIM.Golongan = "";
+            dataSIM.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
+            dataSIM.Pemilik.Nama = "";
+            dataSIM.Pemilik.Pekerjaan = "";
+            dataSIM.Pemilik.Pendidikan = "";
+            dataSIM.Pemilik.TempatLahir = "";
+            dataSIM.Pemilik.Alamat = "";
+            dataSIM.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
+            dataSIM.Pemilik.JenisKelamin = "";
+            dataSIM.Pemilik.NomorKTP = "";
+            dataSIM.TanggalHabis = DateTime.Now;
         }
 
         private void SetFieldToDefault()
@@ -102,30 +109,27 @@ namespace QRCodeWinForms
             dtpTanggalLahir.Text = (new DateTime(time.Year - 17, time.Month, time.Day)).ToLongDateString();
         }
 
-        private void txtNoKTP_TextChanged(object sender, EventArgs e)
-        {/*
-            List<SIM> datapemilik = ExcelHelper.GetAllSIM();
-            SIM item = new SIM();
-            additem.IsNew = true;
-            foreach(SIM data in datapemilik)
+        private void txtNoKTP_Leave(object sender, EventArgs e)
+        {
+            datapenduduk = Penduduk.IsPresent(txtNoKTP.Text);
+            if (datapenduduk != null)
             {
-                if (data.Pemilik.NomorKTP == txtNoKTP.Text)
-                {
-                    item = data;
-                    additem.IsNew = false;
-                    break;
-                }
+                txtNama.Text = datapenduduk.Nama;
+                txtAlamat.Text = datapenduduk.Alamat;
+                txtTempatLahir.Text = datapenduduk.TempatLahir;
+                dtpTanggalLahir.Text = datapenduduk.TanggalLahir.ToLongDateString();
+                cmbPendidikan.SelectedItem = datapenduduk.Pendidikan;
+                cmbPekerjaan.SelectedItem = datapenduduk.Pekerjaan;
+                cmbJenisKelamin.SelectedItem = datapenduduk.JenisKelamin;
+
+                txtNama.Enabled = false;
+                txtAlamat.Enabled = false;
+                txtTempatLahir.Enabled = false;
+                dtpTanggalLahir.Enabled = false;
+                cmbPendidikan.Enabled = false;
+                cmbPekerjaan.Enabled = false;
+                cmbJenisKelamin.Enabled = false;
             }
-            if (!additem.IsNew)
-            {
-                txtNama.Text = item.Pemilik.Nama;
-                txtAlamat.Text = item.Pemilik.Alamat;
-                txtTempatLahir.Text = item.Pemilik.TempatLahir;
-                dtpTanggalLahir.Text = item.Pemilik.TanggalLahir.ToLongDateString();
-                cmbPendidikan.SelectedItem = item.Pemilik.Pendidikan;
-                cmbPekerjaan.SelectedItem = item.Pemilik.Pekerjaan;
-                cmbJenisKelamin.SelectedItem = item.Pemilik.JenisKelamin;
-            }*/
         }
     }
 }
