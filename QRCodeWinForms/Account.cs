@@ -8,9 +8,11 @@ namespace QRCodeWinForms
 {
     public class Account
     {
+        private string _namaLengkap;
         private string _username;
         private string _password;
 
+        public string NamaLengkap { get; set; }
         public string Username
         {
             get { return _username; }
