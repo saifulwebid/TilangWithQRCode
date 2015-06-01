@@ -13,7 +13,9 @@ namespace QRCodeWinForms
     public partial class frmStatistikPelanggaran : Form
     {
         List<List<int>> dataStatistik = new List<List<int>>();
+        List<List<string>> dataStatistikPasal = new List<List<string>>();
         List<DataPelanggaran> data = new List<DataPelanggaran>();
+        
         public frmStatistikPelanggaran()
         {
             InitializeComponent();
@@ -28,11 +30,17 @@ namespace QRCodeWinForms
         private void cbbTahun_SelectedIndexChanged(object sender, EventArgs e)
         {
             chartStatistikPelanggaran.Series["Banyak Pelanggaran"].Points.Clear(); //hapus recent statistik
+            chartStatistikPasal.Series["Banyak Pasal Dilanggar"].Points.Clear(); //hapus recent statistik
 
             /*Membuat Grafik*/
             foreach (var grp in dataStatistik[cbbTahun.SelectedIndex].GroupBy(i => i))
             {
                 chartStatistikPelanggaran.Series["Banyak Pelanggaran"].Points.AddXY(ConvertToMonth(grp.Key), grp.Count());
+            }
+
+            foreach (var grp in dataStatistikPasal[cbbTahun.SelectedIndex].GroupBy(i => i))
+            {
+                chartStatistikPasal.Series["Banyak Pasal Dilanggar"].Points.AddXY(grp.Key, grp.Count());
             }
         }
 
@@ -40,30 +48,31 @@ namespace QRCodeWinForms
         {
             data = ExcelHelper.GetAllPelanggaran();
             List<int> tahun = new List<int>();
-            List<DateTime> tgl = new List<DateTime>();
-            List<int> bulan = new List<int>();
 
             /* Memasukkan data tahun dan tanggal ke dalam list tahun dan tanggal dari list data pelanggaran */
             foreach (DataPelanggaran x in data)
             {
                 tahun.Add(x.WaktuPelanggaran.Year);
-                tgl.Add(x.WaktuPelanggaran);
             }
 
-            tahun = tahun.Distinct().ToList(); //membuat elemen list tahun menjadi unik 
+            tahun = tahun.Distinct().ToList(); //membuat elemen list tahun menjadi unik       
            
             //Memasukkan Bulan ke dalam list dataStatistik
             for (int i = 0; i < tahun.Count(); i++)
             {
                 List<int> sublist = new List<int>();
-                foreach (DateTime value in tgl)
+                List<string> sublist1 = new List<string>();
+              
+                foreach (DataPelanggaran x in data)
                 {
-                    if (value.Year == tahun[i])
+                    if (x.WaktuPelanggaran.Year == tahun[i])
                     {
-                        sublist.Add(value.Month);
+                        sublist.Add(x.WaktuPelanggaran.Month);
+                        sublist1.Add(x.PasalPelanggaran.NomorPasal);
                     }
                 }
                 dataStatistik.Add(sublist);
+                dataStatistikPasal.Add(sublist1);
             }
             
             cbbTahun.DataSource = tahun; //sumber data combo box (pemilihan tahun statistik)
