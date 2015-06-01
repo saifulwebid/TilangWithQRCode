@@ -45,7 +45,7 @@
             <elementDefinition Id="d9430fec-bac6-4fe7-882c-fc9d9b6bc77e" />
           </association>
           <association Id="14e1af85-03b1-4669-abf0-9bea2a20f104" isDerived="false" sourceEndRoleName="Polisi Lalu Lintas" targetEndRoleName="Melihat Statistik Pelanggaran" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="33451437-e5c8-48de-ace0-678db140feaa" LastKnownName="Melihat Statistik Pelanggaran" />
+            <useCaseMoniker Id="33451437-e5c8-48de-ace0-678db140feaa" LastKnownName="Melihat Statistik Pelanggaran Per Bulan" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="72c9c8b0-be6b-4c3a-9702-40581ad7f493" name="Polisi Lalu Lintas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -59,6 +59,22 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="862c1072-9d9d-48b6-a214-52375136f199" />
+          </association>
+          <association Id="53f6a168-95cd-4c32-824d-f19f24851474" isDerived="false" sourceEndRoleName="Polisi Lalu Lintas" targetEndRoleName="Melihat Statistik Pelanggaran Per Pasal" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5c0566f9-f496-457e-8f04-8dd54b7987e4" LastKnownName="Melihat Statistik Pelanggaran Per Pasal" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d97c7c7-1557-420c-be09-41b8f349d3df" name="Polisi Lalu Lintas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2b574171-8778-4330-ac06-9c6c3421eafe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f713c8df-7b53-46ab-9c1e-ba9ff688a9ad" name="Melihat Statistik Pelanggaran Per Pasal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cde9b3b2-ad23-44c6-863e-d31c2e9cf345" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="43501bd5-8787-42f4-8cb9-4a5d418b6bc5" />
           </association>
         </targetEnds>
       </actor>
@@ -111,7 +127,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="33451437-e5c8-48de-ace0-678db140feaa" name="Melihat Statistik Pelanggaran" isAbstract="false" isLeaf="false">
+      <useCase Id="33451437-e5c8-48de-ace0-678db140feaa" name="Melihat Statistik Pelanggaran Per Bulan" isAbstract="false" isLeaf="false">
         <elementDefinition Id="c4e920f2-040a-487d-b65c-18c99c48d868" />
         <subjects>
           <subsystemMoniker Id="40269730-5167-4f8a-bb6e-48906edec078" LastKnownName="Rekapitulasi dan Statistik" />
@@ -133,6 +149,14 @@
         <elementDefinition Id="6633f7e2-cbff-4923-988f-5665cbb68aa8" />
       </subsystem>
     </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="5c0566f9-f496-457e-8f04-8dd54b7987e4" name="Melihat Statistik Pelanggaran Per Pasal" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="67489ea9-3a7c-4b6b-92bd-c7b3cbab67b6" />
+        <subjects>
+          <subsystemMoniker Id="40269730-5167-4f8a-bb6e-48906edec078" LastKnownName="Rekapitulasi dan Statistik" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="75508901-13a1-489c-b3ec-f47c0b67208e" name="ModelingProject">
     <elementDefinition Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd" />
