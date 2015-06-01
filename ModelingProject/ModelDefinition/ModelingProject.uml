@@ -86,6 +86,123 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="37e19431-9302-4d68-b88e-2cf14010a174"
+            isDerived="false"
+            sourceEndRoleName="Penduduk"
+            targetEndRoleName="EnumJenisKelamin"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="cd0c84e6-dc87-46e9-8c5d-6539e651420f"
+              LastKnownName="EnumJenisKelamin"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="30b7c652-2296-41be-b887-28e93013a070"
+                  name="Penduduk"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="28f07df5-0ef6-4bed-8f29-443f3367844e"
+                  name="EnumJenisKelamin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="63149d09-b87b-4111-bdc7-413eb98e2649"
+            isDerived="false"
+            sourceEndRoleName="Penduduk"
+            targetEndRoleName="EnumPekerjaan"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="1d137001-b7c8-4113-87fd-4ed2ea66bd03"
+              LastKnownName="EnumPekerjaan"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="792f78f3-2046-4909-97ee-169cc11cee5c"
+                  name="Penduduk"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="170f6e34-1091-4e41-b703-c2def06afd58"
+                  name="EnumPekerjaan"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="07a80ac6-26f6-442b-843f-d99668453950"
+            isDerived="false"
+            sourceEndRoleName="Penduduk"
+            targetEndRoleName="EnumPendidikan"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="1ec3da56-b797-4725-a50d-c46312a02964"
+              LastKnownName="EnumPendidikan"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="49ad6d12-ad64-4bf7-aa20-5e4b85cc8d35"
+                  name="Penduduk"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="72baf641-c498-41a5-bf4e-837c6c8f9404"
+                  name="EnumPendidikan"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -98,7 +215,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="53d40af9-e645-425b-a0d9-27d1ed00dbf4"
             name="Alamat"
@@ -109,7 +233,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="6c37067c-0011-4306-b0e1-d4dd42a7b137"
             name="TempatLahir"
@@ -120,7 +251,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="10db4f76-2b97-4cde-bbb0-4c44247f0660"
             name="TanggalLahir"
@@ -131,7 +269,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="273b5820-88fb-424e-9d34-3a8c6d0ed60f"
+                LastKnownName="DateTime"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="041b6f51-72cb-4f6d-b011-2a830222d3cb"
             name="Pendidikan"
@@ -142,7 +287,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="1ec3da56-b797-4725-a50d-c46312a02964"
+                LastKnownName="EnumPendidikan"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="babb7b41-da86-4afa-8496-087a32429c9a"
             name="Pekerjaan"
@@ -153,10 +305,17 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="1d137001-b7c8-4113-87fd-4ed2ea66bd03"
+                LastKnownName="EnumPekerjaan"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="2e576042-dd5d-48eb-bfe9-55e382bae0d3"
-            name="NomorKTP"
+            name="Nomor"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -164,7 +323,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="ff6706cc-8257-4390-92e4-c6103a413f5f"
             name="JenisKelamin"
@@ -175,7 +341,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="cd0c84e6-dc87-46e9-8c5d-6539e651420f"
+                LastKnownName="EnumJenisKelamin"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="1ec6bd4a-3959-41ef-98bc-30da21e32cf6"
             name="isNew"
@@ -249,6 +422,31 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="11ace901-e68c-4b2d-bda8-aacb80a51499"
+            name="IsPresent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ec30a9dd-703d-4044-9d38-31f80ddd88c6"
+                  name="NomorKTP"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -332,7 +530,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="05a3ce31-411b-4b77-b998-2a4087282886"
             name="Pemilik"
@@ -361,7 +566,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="08abb61c-4c87-4af9-85de-3e8381f07080"
             name="TanggalBuat"
@@ -372,7 +584,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="273b5820-88fb-424e-9d34-3a8c6d0ed60f"
+                LastKnownName="DateTime"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="f0c43a85-5d13-4ccc-8964-0c6120276025"
             name="TanggalHabis"
@@ -383,7 +602,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="273b5820-88fb-424e-9d34-3a8c6d0ed60f"
+                LastKnownName="DateTime"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="4b209726-7a4d-493b-a820-d1c33b8e19a7"
             name="isNew"
@@ -2046,6 +2272,80 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="cd0c84e6-dc87-46e9-8c5d-6539e651420f"
+        name="EnumJenisKelamin"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="f9740303-486b-4aab-ac6a-f93771c52723"
+            name="Laki-laki" />
+          <enumerationLiteral
+            Id="e9616c0f-09f9-4edb-9ee4-229120ef26dd"
+            name="Perempuan" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="1d137001-b7c8-4113-87fd-4ed2ea66bd03"
+        name="EnumPekerjaan"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="abeaba8c-e45a-453b-b10d-93261ebe4b28"
+            name="PNS" />
+          <enumerationLiteral
+            Id="659cd4f1-735a-459d-afac-296e40dc4940"
+            name="Swasta" />
+          <enumerationLiteral
+            Id="7ce4a699-15fa-45b1-a31e-e2c414847f17"
+            name="TNI" />
+          <enumerationLiteral
+            Id="737f70fa-911b-4ba3-8e26-d2dcb90d9327"
+            name="POLRI" />
+          <enumerationLiteral
+            Id="492f23de-e8f2-4dc5-8a0a-a7ec80398199"
+            name="Pelajar" />
+          <enumerationLiteral
+            Id="b7eddc16-61ce-4c67-89b9-8a6564378bce"
+            name="Mahasiswa" />
+          <enumerationLiteral
+            Id="91d44412-d506-4fac-992c-88cd4b557dc4"
+            name="Lain-lain" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="1ec3da56-b797-4725-a50d-c46312a02964"
+        name="EnumPendidikan"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="4c175592-4436-4937-9868-8d02c6600635"
+            name="SD" />
+          <enumerationLiteral
+            Id="1af90624-e17f-4c7b-b39d-7e09ca6bb9e3"
+            name="SMP" />
+          <enumerationLiteral
+            Id="658dc8d2-c142-4c6c-b257-d21165a15bb5"
+            name="SMA" />
+          <enumerationLiteral
+            Id="0899f549-8d2f-48fd-b36b-134f103a9521"
+            name="PT" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="273b5820-88fb-424e-9d34-3a8c6d0ed60f"
+        name="DateTime" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
