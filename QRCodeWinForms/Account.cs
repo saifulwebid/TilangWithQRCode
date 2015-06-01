@@ -38,7 +38,7 @@ namespace QRCodeWinForms
         }
 
         /*Nanti dirubah , nilai return nya jadi account (objek account )*/
-        public bool Check(string username, string password)
+        public Account Check(string username, string password)
         {
             return ExcelHelper.AccountCheck(username, password);
         }
