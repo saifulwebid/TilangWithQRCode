@@ -115,6 +115,7 @@
     <Compile Include="frmInputSuratTilang.Designer.cs">
       <DependentUpon>frmInputSuratTilang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Enumeration.cs" />
     <Compile Include="Pasal.cs" />
     <Compile Include="Penduduk.cs" />
     <Compile Include="Program.cs" />
