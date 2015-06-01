@@ -82,8 +82,7 @@ namespace QRCodeWinForms
         */
         private void btnCetakSIM_Click(object sender, EventArgs e)
         {
-            string path = @"C:\Users\Windows 8.1\Documents\View.jpg";
-
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"\\View.jpg";
             PrintDialog Print = new PrintDialog();
             System.Drawing.Bitmap image = new System.Drawing.Bitmap(panelSIM.Width, panelSIM.Height);
             panelSIM.DrawToBitmap(image, panelSIM.ClientRectangle);
