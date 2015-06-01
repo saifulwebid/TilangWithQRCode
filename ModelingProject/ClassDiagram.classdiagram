@@ -959,6 +959,19 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="5560cae3-2614-49cf-a547-38232b1443b4" name="SavePenduduk" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bbf24255-148b-417e-a3a3-d30edac9bfef" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="41f58b41-4ada-498d-b297-341d0f25cc08" name="data" direction="In" isUnique="false">
+                  <elementDefinition Id="b8834e94-a491-4615-b793-aedf6077bfe0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f8beff33-a0e0-481d-a38a-ddd56bf57fef" LastKnownName="Penduduk" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
