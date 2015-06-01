@@ -16,5 +16,28 @@ namespace QRCodeWinForms
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (ExcelHelper.AccountCheck(txtUsername.Text, txtPassword.Text) == null)
+            {
+                MessageBox.Show("Data tidak ditemukan !");
+            }
+            else
+            {
+                this.Hide();
+                frmMain f2 = new frmMain();
+                f2.ShowDialog();
+                this.Show();
+                ClearText();
+                
+            }
+        }
+
+        public void ClearText()
+        {
+            txtPassword.Text = "Password";
+            txtUsername.Text = "Username";
+        }
     }
 }
