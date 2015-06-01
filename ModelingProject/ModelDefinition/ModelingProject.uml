@@ -1646,8 +1646,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="ecbdf44a-5bdb-4fef-965b-d60cfaa14e4d"
-                LastKnownName="Double"
+                Id="870bc30d-8277-4b6f-91b3-dbcdb7ad3d8c"
+                LastKnownName="Currency"
                 LastKnownLocation="ModelingProject.uml" />
             </type_NamedElement>
           </property>

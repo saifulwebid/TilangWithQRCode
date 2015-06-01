@@ -696,7 +696,7 @@
           <property Id="2ba86c5f-81f3-4bf5-b94e-3a87aace4926" name="Denda" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="11cc9ec2-ecc4-452a-a60f-e3ecb7e55ff2" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="9481a47a-a853-4da3-9664-589ba518742c" LastKnownName="Double" />
+              <referencedTypeMoniker Id="46e12f02-7276-42b6-b776-02ea2aaaba70" LastKnownName="Currency" />
             </type_NamedElement>
           </property>
           <property Id="a04fa65b-a5f6-42e8-81ed-fb58ab6f4e80" name="Pidana" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1238,8 +1238,8 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="9481a47a-a853-4da3-9664-589ba518742c" name="Double" isAbstract="false" isLeaf="false" cachedFullName="Double">
-        <elementDefinition Id="ecbdf44a-5bdb-4fef-965b-d60cfaa14e4d" />
+      <referencedType Id="46e12f02-7276-42b6-b776-02ea2aaaba70" name="Currency" isAbstract="false" isLeaf="false" cachedFullName="Currency">
+        <elementDefinition Id="870bc30d-8277-4b6f-91b3-dbcdb7ad3d8c" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
