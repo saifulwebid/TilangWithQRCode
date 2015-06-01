@@ -167,7 +167,10 @@ namespace QRCodeWinForms
                                             pdd.Alamat = col5Value.ToString();
                                             pdd.Pekerjaan = col6Value.ToString();
                                             pdd.Pendidikan = col7Value.ToString();
-                                            pdd.JenisKelamin = col8Value.ToString();
+                                            if (col8Value.ToString() == "Pria")
+                                                pdd.JenisKelamin = EnumJenisKelamin.Pria;
+                                            else if (col8Value.ToString() == "Wanita")
+                                                pdd.JenisKelamin = EnumJenisKelamin.Wanita;
                                             return pdd;
                                         }
                                     }
@@ -228,17 +231,21 @@ namespace QRCodeWinForms
                                     if ((col1Value != null) && (col2Value != null) && (col3Value != null) && (col4Value != null)
                                          && (col5Value != null) && (col6Value != null) && (col7Value != null) && (col8Value != null))
                                     {
-                                        listDataPenduduk.Add(new Penduduk
-                                        {
-                                            NomorKTP = col1Value.ToString(),
-                                            Nama = col2Value.ToString(),
-                                            TempatLahir = col3Value.ToString(),
-                                            TanggalLahir = Convert.ToDateTime(col4Value),
-                                            Alamat = col5Value.ToString(),
-                                            Pekerjaan = col6Value.ToString(),
-                                            Pendidikan = col7Value.ToString(),
-                                            JenisKelamin = col8Value.ToString()
-                                        });
+                                        Penduduk pdk = new Penduduk();
+                                        pdk.NomorKTP = col1Value.ToString();
+                                        pdk.Nama = col2Value.ToString();
+                                        pdk.TempatLahir = col3Value.ToString();
+                                        pdk.TanggalLahir = Convert.ToDateTime(col4Value);
+                                        pdk.Alamat = col5Value.ToString();
+                                        pdk.Pekerjaan = col6Value.ToString();
+                                        pdk.Pendidikan = col7Value.ToString();
+
+                                        if (col8Value.ToString() == "Pria")
+                                            pdk.JenisKelamin = EnumJenisKelamin.Pria;
+                                        else
+                                            pdk.JenisKelamin = EnumJenisKelamin.Wanita;
+
+                                        listDataPenduduk.Add(pdk);
                                     }
                                 }
                             }

@@ -15,13 +15,13 @@ namespace QRCodeWinForms
         private string _alamat;
         private string _pekerjaan;
         private string _pendidikan;
-        private string _jk;
+        private EnumJenisKelamin _jk;
         private bool _status;
 
         public Penduduk()
         { }
 
-        public Penduduk(string noktp, string nama, string tmptlahir, DateTime tgllahir, string alamat, string pkrjn, string penddkn, string jnskelamin, bool status)
+        public Penduduk(string noktp, string nama, string tmptlahir, DateTime tgllahir, string alamat, string pkrjn, string penddkn, EnumJenisKelamin jnskelamin, bool status)
         {
             _nomorKTP = noktp;
             _nama = nama;
@@ -69,7 +69,7 @@ namespace QRCodeWinForms
             get { return _pendidikan; }
             set { _pendidikan = value; }
         }
-        public string JenisKelamin
+        public EnumJenisKelamin JenisKelamin
         {
             get { return _jk; }
             set { _jk = value; }

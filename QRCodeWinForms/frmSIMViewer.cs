@@ -37,11 +37,11 @@ namespace QRCodeWinForms
             lblNoSIM.Text = tampilSIM.NomorSIM;
             lblGolongan.Text = tampilSIM.Golongan;
             lblMasaBerlaku.Text = tampilSIM.TanggalHabis.ToLongDateString();
-            if (tampilSIM.Pemilik.JenisKelamin == "Laki-Laki")
+            if (tampilSIM.Pemilik.JenisKelamin == EnumJenisKelamin.Pria)
             {
                 lblJenisKelamin.Text = "PRIA";
             }
-            else if (tampilSIM.Pemilik.JenisKelamin == "Perempuan")
+            else if (tampilSIM.Pemilik.JenisKelamin == EnumJenisKelamin.Wanita)
             {
                 lblJenisKelamin.Text = "WANITA";
             }
