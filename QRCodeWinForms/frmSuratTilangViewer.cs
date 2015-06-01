@@ -184,12 +184,11 @@ namespace QRCodeWinForms
         
         private void pdSuratTilang_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-          // e.Graphics.DrawImage(memoryImage, 0, 0); //gambar grpahic memoryImage (hasil Capture Form) ke pdSIM
         }
 
         private void btnPrintSurat_Click(object sender, EventArgs e)
         {
-               string path = @"C:\Users\ASUS VIVO\Documents\View.jpg";
+               string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\SuratTilang.jpg";
                PrintDialog Print = new PrintDialog();
                System.Drawing.Bitmap image = new System.Drawing.Bitmap(pnlSuratTilang.Width, pnlSuratTilang.Height);
                pnlSuratTilang.DrawToBitmap(image, pnlSuratTilang.ClientRectangle);
