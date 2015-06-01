@@ -14,7 +14,7 @@ namespace QRCodeWinForms
     {
         
         private SIM dataSIM = new SIM();
-        private Penduduk datapenduduk = new Penduduk();
+        private Penduduk datapenduduk;
 
         public frmInputDataSIM()
         {
@@ -23,33 +23,38 @@ namespace QRCodeWinForms
 
         private void frmInputDataSIM_Load(object sender, EventArgs e)
         {
-            List<string> jeniskelamin = new List<string> { "Laki-Laki", "Perempuan" };
-            cmbJenisKelamin.DataSource = jeniskelamin;
+            cmbJenisKelamin.DataSource = Enum.GetValues(typeof(EnumJenisKelamin));
             List<string> golSIM = new List<string> {"A", "B1", "B2", "C", "D", "A Umum", "B1 Umum", "B2 Umum" };
             cmbGolongan.DataSource = golSIM;
-            List<string> pendidikan = new List<string> {"SD", "SMP", "SMA", "Perguruan Tinggi" };
-            cmbPendidikan.DataSource = pendidikan;
-            List<string> pekerjaan = new List<string> {"PNS", "SWASTA", "TNI", "POLRI", "PELAJAR", "MAHASISWA", "Lain-Lain" };
-            cmbPekerjaan.DataSource = pekerjaan;
+            cmbPendidikan.DataSource = Enum.GetValues(typeof(EnumPendidikan));
+            cmbPekerjaan.DataSource = Enum.GetValues(typeof(EnumPekerjaan));
             SetFieldToDefault();
         }
-
+            
         private void btnSimpan_Click(object sender, EventArgs e)
         {
             if (txtNama.Text != "" && txtNoKTP.Text != "" && txtAlamat.Text != "" && txtNoSIM.Text != "" && txtTempatLahir.Text != "")
             {
+                if (datapenduduk == null)
+                {
+                    datapenduduk = new Penduduk();
+                    datapenduduk.NomorKTP = txtNoKTP.Text;
+                    datapenduduk.Nama = txtNama.Text;
+                    datapenduduk.Pekerjaan = cmbPekerjaan.Text;
+                    datapenduduk.Pendidikan = cmbPendidikan.Text;
+                    datapenduduk.TempatLahir = txtTempatLahir.Text;
+                    datapenduduk.Alamat = txtAlamat.Text;
+                    datapenduduk.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
+                    datapenduduk.JenisKelamin = cmbJenisKelamin.Text;
+                    datapenduduk.Save(datapenduduk);
+                }
+
                 dataSIM.NomorSIM = txtNoSIM.Text;
                 dataSIM.Golongan = cmbGolongan.Text;
                 dataSIM.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
-                dataSIM.Pemilik.Nama = txtNama.Text;
-                dataSIM.Pemilik.Pekerjaan = cmbPekerjaan.Text;
-                dataSIM.Pemilik.Pendidikan = cmbPendidikan.Text;
-                dataSIM.Pemilik.TempatLahir = txtTempatLahir.Text;
-                dataSIM.Pemilik.Alamat = txtAlamat.Text;
-                dataSIM.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
-                dataSIM.Pemilik.JenisKelamin = cmbJenisKelamin.Text;
-                dataSIM.Pemilik.NomorKTP = txtNoKTP.Text;
                 dataSIM.TanggalHabis = new DateTime(dataSIM.TanggalBuat.Year + 5, dataSIM.TanggalBuat.Month, dataSIM.TanggalBuat.Day);
+                dataSIM.Pemilik = datapenduduk;
+                
                 if (dataSIM.isValidate())
                 {
                     dataSIM.Save(dataSIM);
@@ -106,7 +111,7 @@ namespace QRCodeWinForms
 
         private void txtNoKTP_Leave(object sender, EventArgs e)
         {
-            datapenduduk = ExcelHelper.CheckPenduduk(txtNoKTP.Text);
+            datapenduduk = Penduduk.IsPresent(txtNoKTP.Text);
             if (datapenduduk != null)
             {
                 txtNama.Text = datapenduduk.Nama;
