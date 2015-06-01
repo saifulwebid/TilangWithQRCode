@@ -109,7 +109,7 @@ namespace QRCodeWinForms
             }
             return null;
         }
-        public static Penduduk GetOnePenduduk(string ktp)
+        public static Penduduk CekPenduduk(string ktp)
         {
             const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
@@ -251,7 +251,53 @@ namespace QRCodeWinForms
         }
         public static void SaveDataPenduduk(Penduduk pdd)
         {
+            const string fileName = "data\\DataGabungan.xlsx";
+            const int startRow = 1;
 
+            string folder = Assembly.GetEntryAssembly().Location;
+            if (folder != null)
+            {
+                folder = Path.GetDirectoryName(folder);
+                string filePath = Path.Combine(folder, fileName);
+
+                var existingFile = new FileInfo(filePath);
+                using (var package = new ExcelPackage(existingFile))
+                {
+                    ExcelWorkbook workBook = package.Workbook;
+
+                    if (workBook != null)
+                    {
+                        if (workBook.Worksheets.Count > 0)
+                        {
+                            ExcelWorksheet currentWorksheet = workBook.Worksheets[1];
+
+                            object col1Header = currentWorksheet.Cells[startRow, 1].Value;
+                            object col2Header = currentWorksheet.Cells[startRow, 2].Value;
+                            object col3Header = currentWorksheet.Cells[startRow, 3].Value;
+                            object col4Header = currentWorksheet.Cells[startRow, 4].Value;
+                            object col5Header = currentWorksheet.Cells[startRow, 5].Value;
+                            object col6Header = currentWorksheet.Cells[startRow, 6].Value;
+                            object col7Header = currentWorksheet.Cells[startRow, 7].Value;
+                            object col8Header = currentWorksheet.Cells[startRow, 8].Value;
+
+                            if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
+                                (col5Header != null) && (col6Header != null) && (col7Header != null) && (col8Header != null))
+                            {
+                                int rowNumber = currentWorksheet.Dimension.End.Row + 1;
+                                currentWorksheet.Cells[rowNumber, 1].Value = pdd.NomorKTP;
+                                currentWorksheet.Cells[rowNumber, 2].Value = pdd.Nama;
+                                currentWorksheet.Cells[rowNumber, 3].Value = pdd.TempatLahir;
+                                currentWorksheet.Cells[rowNumber, 4].Value = pdd.TanggalLahir;
+                                currentWorksheet.Cells[rowNumber, 5].Value = pdd.Alamat;
+                                currentWorksheet.Cells[rowNumber, 6].Value = pdd.Pekerjaan;
+                                currentWorksheet.Cells[rowNumber, 7].Value = pdd.Pendidikan;
+                                currentWorksheet.Cells[rowNumber, 8].Value = pdd.JenisKelamin;
+                            }
+                        }
+                    }
+                    package.Save();
+                }
+            }
         }
         public static List<SIM> GetAllSIM()
         {
@@ -347,22 +393,16 @@ namespace QRCodeWinForms
                             object col3Header = currentWorksheet.Cells[startRow, 3].Value;
                             object col4Header = currentWorksheet.Cells[startRow, 4].Value;
                             object col5Header = currentWorksheet.Cells[startRow, 5].Value;
-                            object col6Header = currentWorksheet.Cells[startRow, 6].Value;
-                            object col7Header = currentWorksheet.Cells[startRow, 7].Value;
-                            object col8Header = currentWorksheet.Cells[startRow, 8].Value;
 
                             if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
-                                (col5Header != null) && (col6Header != null) && (col7Header != null) && (col8Header != null))
+                                (col5Header != null))
                             {
                                 int rowNumber = currentWorksheet.Dimension.End.Row + 1;
-                                currentWorksheet.Cells[rowNumber, 1].Value = dataSIM.Golongan;
-                                currentWorksheet.Cells[rowNumber, 2].Value = dataSIM.Pemilik.Nama;
-                                currentWorksheet.Cells[rowNumber, 3].Value = dataSIM.Pemilik.TempatLahir;
-                                currentWorksheet.Cells[rowNumber, 4].Value = dataSIM.Pemilik.TanggalLahir;
-                                currentWorksheet.Cells[rowNumber, 5].Value = dataSIM.Pemilik.Alamat;
-                                currentWorksheet.Cells[rowNumber, 6].Value = dataSIM.Pemilik.Pekerjaan;
-                                currentWorksheet.Cells[rowNumber, 7].Value = dataSIM.Pemilik.Pendidikan;
-                                currentWorksheet.Cells[rowNumber, 8].Value = dataSIM.Pemilik.JenisKelamin;
+                                currentWorksheet.Cells[rowNumber, 1].Value = dataSIM.Pemilik.NomorKTP;
+                                currentWorksheet.Cells[rowNumber, 2].Value = dataSIM.NomorSIM;
+                                currentWorksheet.Cells[rowNumber, 3].Value = dataSIM.Golongan;
+                                currentWorksheet.Cells[rowNumber, 4].Value = dataSIM.TanggalBuat;
+                                currentWorksheet.Cells[rowNumber, 5].Value = dataSIM.TanggalHabis;
                             }
                         }
                     }

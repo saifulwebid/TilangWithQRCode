@@ -89,11 +89,11 @@ namespace QRCodeWinForms
         }
         public static Penduduk IsPresent(string noKTP)
         {
-            return ExcelHelper.CheckPenduduk(noKTP);
+            return ExcelHelper.CekPenduduk(noKTP);
         }
         public void Save(Penduduk dataPenduduk)
         {
-            ExcelHelper.SavePenduduk(dataPenduduk);
+            ExcelHelper.SaveDataPenduduk(dataPenduduk);
         }
     }
 }
