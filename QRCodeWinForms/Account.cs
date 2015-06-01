@@ -11,6 +11,7 @@ namespace QRCodeWinForms
         private string _namaLengkap;
         private string _username;
         private string _password;
+        private EnumJenisUser _jenis;
 
         public string NamaLengkap { get; set; }
         public string Username
@@ -22,6 +23,11 @@ namespace QRCodeWinForms
         {
             get { return _password; }
             set { _password = value; }
+        }
+        public EnumJenisUser Jenis
+        {
+            get { return _jenis; }
+            set { _jenis = value; }
         }
     }
 }
