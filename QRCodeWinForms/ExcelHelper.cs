@@ -9,7 +9,7 @@ namespace QRCodeWinForms
 {
     class ExcelHelper
     {
-        public static bool AccountCheck(string username, string password)
+        public static Account AccountCheck(string username, string password)
         {
             const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
@@ -19,6 +19,7 @@ namespace QRCodeWinForms
             {
                 folder = Path.GetDirectoryName(folder);
                 string filePath = Path.Combine(folder, fileName);
+                Account acc = new Account();
 
                 var existingFile = new FileInfo(filePath);
                 using (var package = new ExcelPackage(existingFile))
@@ -40,22 +41,24 @@ namespace QRCodeWinForms
                                 {
                                     object col1Value = currentWorksheet.Cells[rowNumber, 1].Value;
                                     object col2Value = currentWorksheet.Cells[rowNumber, 2].Value;
+                                    object col3Value = currentWorksheet.Cells[rowNumber, 3].Value;
 
-                                    if ((col1Value != null) && (col2Value != null))
+                                    if ((col1Value != null) && (col2Value != null) && (col3Value != null))
                                     {
                                         if ((username.Equals(col1Value) == true) && password.Equals(col2Value) == true)
                                         {
-                                            return true;
+                                            acc.Username = col1Value.ToString();
+                                            //acc.JenisAkun = col3Value.ToString();
+                                            return acc;
                                         }
                                     }
                                 }
                             }
                         }
                     }
-                    return false;
                 }
             }
-            return false;
+            return null;
         }
         public static List<Penduduk> GetAllPenduduk()
         {
@@ -270,11 +273,9 @@ namespace QRCodeWinForms
                             object col1Header = currentWorksheet.Cells[startRow, 1].Value;
                             object col2Header = currentWorksheet.Cells[startRow, 2].Value;
                             object col3Header = currentWorksheet.Cells[startRow, 3].Value;
-                            object col4Header = currentWorksheet.Cells[startRow+1, 3].Value;
-                            object col5Header = currentWorksheet.Cells[startRow+1, 4].Value;
+                            object col4Header = currentWorksheet.Cells[startRow, 4].Value;
 
-                            if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
-                                (col5Header != null))
+                            if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null))
                             {
                                 for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                                 {
@@ -363,14 +364,6 @@ namespace QRCodeWinForms
                             object col37Header = currentWorksheet.Cells[startRow, 37].Value;
                             object col38Header = currentWorksheet.Cells[startRow, 38].Value;
                             object col39Header = currentWorksheet.Cells[startRow, 39].Value;
-                            object col40Header = currentWorksheet.Cells[startRow, 40].Value;
-                            object col41Header = currentWorksheet.Cells[startRow, 41].Value;
-                            object col42Header = currentWorksheet.Cells[startRow, 42].Value;
-                            object col43Header = currentWorksheet.Cells[startRow, 43].Value;
-                            object col44Header = currentWorksheet.Cells[startRow, 44].Value;
-                            object col45Header = currentWorksheet.Cells[startRow, 45].Value;
-                            object col46Header = currentWorksheet.Cells[startRow, 46].Value;
-                            object col47Header = currentWorksheet.Cells[startRow, 47].Value;
 
                             if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
                                 (col5Header != null) && (col6Header != null) && (col7Header != null) && (col8Header != null)
@@ -381,58 +374,48 @@ namespace QRCodeWinForms
                                 && (col25Header != null) && (col26Header != null) && (col27Header != null) && (col28Header != null)
                                 && (col29Header != null) && (col30Header != null) && (col31Header != null) && (col32Header != null)
                                 && (col33Header != null) && (col34Header != null) && (col35Header != null) && (col36Header != null)
-                                && (col37Header != null) && (col38Header != null) && (col39Header != null) && (col40Header != null)
-                                && (col41Header != null) && (col42Header != null) && (col43Header != null) && (col44Header != null)
-                                && (col45Header != null) && (col46Header != null) && (col47Header != null))
+                                && (col37Header != null) && (col38Header != null) && (col39Header != null))
                             {
                                 int rowNumber = currentWorksheet.Dimension.End.Row + 1;
                                 currentWorksheet.Cells[rowNumber, 1].Value = dapel.WaktuPelanggaran;
                                 currentWorksheet.Cells[rowNumber, 2].Value = dapel.NomorRegister;
                                 currentWorksheet.Cells[rowNumber, 3].Value = dapel.Kesatuan;
                                 currentWorksheet.Cells[rowNumber, 4].Value = dapel.NomorTilang;
-                                currentWorksheet.Cells[rowNumber, 5].Value = dapel.Pelanggar.Pemilik.Nama;
-                                currentWorksheet.Cells[rowNumber, 6].Value = dapel.Pelanggar.Pemilik.JenisKelamin;
-                                currentWorksheet.Cells[rowNumber, 7].Value = dapel.Pelanggar.Pemilik.Alamat;
-                                currentWorksheet.Cells[rowNumber, 8].Value = dapel.Pelanggar.Pemilik.Pekerjaan;
-                                currentWorksheet.Cells[rowNumber, 9].Value = dapel.Pelanggar.Pemilik.Pendidikan;
-                                currentWorksheet.Cells[rowNumber, 10].Value = dapel.Pelanggar.Pemilik.TempatLahir;
-                                currentWorksheet.Cells[rowNumber, 11].Value = dapel.Pelanggar.Pemilik.TanggalLahir;
-                                currentWorksheet.Cells[rowNumber, 12].Value = dapel.Pelanggar.Golongan;
-                                currentWorksheet.Cells[rowNumber, 13].Value = dapel.Pelanggar.Pemilik.NomorKTP;
-                                currentWorksheet.Cells[rowNumber, 14].Value = dapel.Pelanggar.NomorSIM;
-                                currentWorksheet.Cells[rowNumber, 15].Value = dapel.SATPAS;
-                                currentWorksheet.Cells[rowNumber, 16].Value = dapel.NomorKendaraan;
-                                currentWorksheet.Cells[rowNumber, 17].Value = dapel.SamsatKendaraan;
-                                currentWorksheet.Cells[rowNumber, 18].Value = dapel.JenisKendaraan;
-                                currentWorksheet.Cells[rowNumber, 19].Value = dapel.MerekKendaraan;
-                                currentWorksheet.Cells[rowNumber, 20].Value = dapel.NomorRangkaKendaraan;
-                                currentWorksheet.Cells[rowNumber, 21].Value = dapel.NomorMesinKendaraan;
-                                currentWorksheet.Cells[rowNumber, 22].Value = dapel.LokasiPelanggaran;
-                                currentWorksheet.Cells[rowNumber, 23].Value = dapel.PatokanLokasi;
-                                currentWorksheet.Cells[rowNumber, 24].Value = dapel.WilayahHukum;
-                                currentWorksheet.Cells[rowNumber, 25].Value = dapel.DisitaSKRanmor;
-                                currentWorksheet.Cells[rowNumber, 26].Value = dapel.DisitaSKDiterbitkanOleh;
-                                currentWorksheet.Cells[rowNumber, 27].Value = dapel.DisitaSKMasaBerlaku;
-                                currentWorksheet.Cells[rowNumber, 28].Value = dapel.DisitaBukuUji;
-                                currentWorksheet.Cells[rowNumber, 29].Value = dapel.DisitaBukuUjiDiterbitkanOleh;
-                                currentWorksheet.Cells[rowNumber, 30].Value = dapel.DisitaBukuUjiMasaBerlaku;
-                                currentWorksheet.Cells[rowNumber, 31].Value = dapel.LokasiSidang;
-                                currentWorksheet.Cells[rowNumber, 32].Value = dapel.WaktuSidang.Day;
-                                currentWorksheet.Cells[rowNumber, 33].Value = dapel.WaktuSidang.Date;
-                                currentWorksheet.Cells[rowNumber, 34].Value = dapel.WaktuSidang.Hour;
-                                currentWorksheet.Cells[rowNumber, 35].Value = dapel.NamaPenyidik;
-                                currentWorksheet.Cells[rowNumber, 36].Value = dapel.PangkatPenyidik;
-                                currentWorksheet.Cells[rowNumber, 37].Value = dapel.KesatuanPenyidik;
-                                currentWorksheet.Cells[rowNumber, 38].Value = dapel.TempatPengambilanBarangSita;
-                                currentWorksheet.Cells[rowNumber, 39].Value = dapel.PasalPelanggaran.NomorPasal;
-                                currentWorksheet.Cells[rowNumber, 40].Value = dapel.PasalPelanggaran.DendaMaksimal;
-                                currentWorksheet.Cells[rowNumber, 41].Value = dapel.BankSetorDendaMaksimal;
-                                currentWorksheet.Cells[rowNumber, 42].Value = dapel.AngkaPinaltiPelanggaran;
-                                currentWorksheet.Cells[rowNumber, 43].Value = dapel.PernyataanHadirSendiri;
-                                currentWorksheet.Cells[rowNumber, 44].Value = dapel.NamaWakil;
-                                currentWorksheet.Cells[rowNumber, 45].Value = dapel.UmurWakil;
-                                currentWorksheet.Cells[rowNumber, 46].Value = dapel.AlamatWakil;
-                                currentWorksheet.Cells[rowNumber, 47].Value = dapel.BankSisaDenda;
+                                currentWorksheet.Cells[rowNumber, 5].Value = dapel.Pelanggar.Pemilik.NomorKTP;
+                                currentWorksheet.Cells[rowNumber, 6].Value = dapel.Pelanggar.NomorSIM;
+                                currentWorksheet.Cells[rowNumber, 7].Value = dapel.SATPAS;
+                                currentWorksheet.Cells[rowNumber, 8].Value = dapel.NomorKendaraan;
+                                currentWorksheet.Cells[rowNumber, 9].Value = dapel.SamsatKendaraan;
+                                currentWorksheet.Cells[rowNumber, 10].Value = dapel.JenisKendaraan;
+                                currentWorksheet.Cells[rowNumber, 11].Value = dapel.MerekKendaraan;
+                                currentWorksheet.Cells[rowNumber, 12].Value = dapel.NomorRangkaKendaraan;
+                                currentWorksheet.Cells[rowNumber, 13].Value = dapel.NomorMesinKendaraan;
+                                currentWorksheet.Cells[rowNumber, 14].Value = dapel.LokasiPelanggaran;
+                                currentWorksheet.Cells[rowNumber, 15].Value = dapel.PatokanLokasi;
+                                currentWorksheet.Cells[rowNumber, 16].Value = dapel.WilayahHukum;
+                                currentWorksheet.Cells[rowNumber, 17].Value = dapel.DisitaSKRanmor;
+                                currentWorksheet.Cells[rowNumber, 18].Value = dapel.DisitaSKDiterbitkanOleh;
+                                currentWorksheet.Cells[rowNumber, 19].Value = dapel.DisitaSKMasaBerlaku;
+                                currentWorksheet.Cells[rowNumber, 20].Value = dapel.DisitaBukuUji;
+                                currentWorksheet.Cells[rowNumber, 21].Value = dapel.DisitaBukuUjiDiterbitkanOleh;
+                                currentWorksheet.Cells[rowNumber, 22].Value = dapel.DisitaBukuUjiMasaBerlaku;
+                                currentWorksheet.Cells[rowNumber, 23].Value = dapel.LokasiSidang;
+                                currentWorksheet.Cells[rowNumber, 24].Value = dapel.WaktuSidang.Day;
+                                currentWorksheet.Cells[rowNumber, 25].Value = dapel.WaktuSidang.Date;
+                                currentWorksheet.Cells[rowNumber, 26].Value = dapel.WaktuSidang.Hour;
+                                currentWorksheet.Cells[rowNumber, 27].Value = dapel.NamaPenyidik;
+                                currentWorksheet.Cells[rowNumber, 28].Value = dapel.PangkatPenyidik;
+                                currentWorksheet.Cells[rowNumber, 29].Value = dapel.KesatuanPenyidik;
+                                currentWorksheet.Cells[rowNumber, 30].Value = dapel.TempatPengambilanBarangSita;
+                                currentWorksheet.Cells[rowNumber, 31].Value = dapel.PasalPelanggaran.NomorPasal;
+                                currentWorksheet.Cells[rowNumber, 32].Value = dapel.PasalPelanggaran.DendaMaksimal;
+                                currentWorksheet.Cells[rowNumber, 33].Value = dapel.BankSetorDendaMaksimal;
+                                currentWorksheet.Cells[rowNumber, 34].Value = dapel.AngkaPinaltiPelanggaran;
+                                currentWorksheet.Cells[rowNumber, 35].Value = dapel.PernyataanHadirSendiri;
+                                currentWorksheet.Cells[rowNumber, 36].Value = dapel.NamaWakil;
+                                currentWorksheet.Cells[rowNumber, 37].Value = dapel.UmurWakil;
+                                currentWorksheet.Cells[rowNumber, 38].Value = dapel.AlamatWakil;
+                                currentWorksheet.Cells[rowNumber, 39].Value = dapel.BankSisaDenda;
                             }
                         }
                     }
@@ -502,14 +485,6 @@ namespace QRCodeWinForms
                             object col37Header = currentWorksheet.Cells[startRow, 37].Value;
                             object col38Header = currentWorksheet.Cells[startRow, 38].Value;
                             object col39Header = currentWorksheet.Cells[startRow, 39].Value;
-                            object col40Header = currentWorksheet.Cells[startRow, 40].Value;
-                            object col41Header = currentWorksheet.Cells[startRow, 41].Value;
-                            object col42Header = currentWorksheet.Cells[startRow, 42].Value;
-                            object col43Header = currentWorksheet.Cells[startRow, 43].Value;
-                            object col44Header = currentWorksheet.Cells[startRow, 44].Value;
-                            object col45Header = currentWorksheet.Cells[startRow, 45].Value;
-                            object col46Header = currentWorksheet.Cells[startRow, 46].Value;
-                            object col47Header = currentWorksheet.Cells[startRow, 47].Value;
 
                             if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
                                 (col5Header != null) && (col6Header != null) && (col7Header != null) && (col8Header != null)
@@ -520,9 +495,7 @@ namespace QRCodeWinForms
                                 && (col25Header != null) && (col26Header != null) && (col27Header != null) && (col28Header != null)
                                 && (col29Header != null) && (col30Header != null) && (col31Header != null) && (col32Header != null)
                                 && (col33Header != null) && (col34Header != null) && (col35Header != null) && (col36Header != null)
-                                && (col37Header != null) && (col38Header != null) && (col39Header != null) && (col40Header != null)
-                                && (col41Header != null) && (col42Header != null) && (col43Header != null) && (col44Header != null)
-                                && (col45Header != null) && (col46Header != null) && (col47Header != null))
+                                && (col37Header != null) && (col38Header != null) && (col39Header != null))
                             {
                                 for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                                 {
@@ -565,14 +538,6 @@ namespace QRCodeWinForms
                                     object col37Value = currentWorksheet.Cells[rowNumber, 37].Value;
                                     object col38Value = currentWorksheet.Cells[rowNumber, 38].Value;
                                     object col39Value = currentWorksheet.Cells[rowNumber, 39].Value;
-                                    object col40Value = currentWorksheet.Cells[rowNumber, 40].Value;
-                                    object col41Value = currentWorksheet.Cells[rowNumber, 41].Value;
-                                    object col42Value = currentWorksheet.Cells[rowNumber, 42].Value;
-                                    object col43Value = currentWorksheet.Cells[rowNumber, 43].Value;
-                                    object col44Value = currentWorksheet.Cells[rowNumber, 44].Value;
-                                    object col45Value = currentWorksheet.Cells[rowNumber, 45].Value;
-                                    object col46Value = currentWorksheet.Cells[rowNumber, 46].Value;
-                                    object col47Value = currentWorksheet.Cells[rowNumber, 47].Value;
 
                                     listDataPelanggaran.Add(new DataPelanggaran
                                     {
@@ -584,54 +549,47 @@ namespace QRCodeWinForms
                                         {
                                             Pemilik = new Penduduk
                                             {
-                                                Nama = col5Value.ToString(),
-                                                JenisKelamin = col6Value.ToString(),
-                                                Alamat = col7Value.ToString(),
-                                                Pekerjaan = col8Value.ToString(),
-                                                Pendidikan = col9Value.ToString(),
-                                                TempatLahir = col10Value.ToString(),
-                                                NomorKTP = col13Value.ToString(),
-                                                TanggalLahir = DateTime.FromOADate((double)col11Value)
+                                                NomorKTP = col5Value.ToString(),
                                             },
-                                            Golongan = col12Value.ToString(),
-                                            NomorSIM = col14Value.ToString()
+                                            NomorSIM = col6Value.ToString()
                                         },
-                                        SATPAS = col15Value.ToString(),
-                                        NomorKendaraan = col16Value.ToString(),
-                                        SamsatKendaraan = col17Value.ToString(),
-                                        JenisKendaraan = col18Value.ToString(),
-                                        MerekKendaraan = col19Value.ToString(),
-                                        NomorRangkaKendaraan = col20Value.ToString(),
-                                        NomorMesinKendaraan = col21Value.ToString(),
-                                        LokasiPelanggaran = col22Value.ToString(),
-                                        PatokanLokasi = col23Value.ToString(),
-                                        WilayahHukum = col24Value.ToString(),
-                                        //
-                                        //
-                                        //
-                                        DisitaBukuUji = col28Value.ToString(),
-                                        DisitaBukuUjiDiterbitkanOleh = col29Value.ToString(),
-                                        DisitaBukuUjiMasaBerlaku = DateTime.FromOADate((double)col30Value),
-                                        TempatSidang = col31Value.ToString(),
-                                        //WaktuSidang
-                                        //
-                                        //
-                                        NamaPenyidik = col35Value.ToString(),
-                                        PangkatPenyidik = col36Value.ToString(),
-                                        KesatuanPenyidik = col37Value.ToString(),
-                                        TempatPengambilanBarangSita = col38Value.ToString(),
-                                        //PasalPelanggaran
+                                        SATPAS = col7Value.ToString(),
+                                        NomorKendaraan = col8Value.ToString(),
+                                        SamsatKendaraan = col9Value.ToString(),
+                                        JenisKendaraan = col10Value.ToString(),
+                                        MerekKendaraan = col11Value.ToString(),
+                                        NomorRangkaKendaraan = col12Value.ToString(),
+                                        NomorMesinKendaraan = col13Value.ToString(),
+                                        LokasiPelanggaran = col14Value.ToString(),
+                                        PatokanLokasi = col15Value.ToString(),
+                                        WilayahHukum = col16Value.ToString(),
+                                        //17
+                                        //18
+                                        //19
+                                        DisitaBukuUji = col20Value.ToString(),
+                                        DisitaBukuUjiDiterbitkanOleh = col21Value.ToString(),
+                                        DisitaBukuUjiMasaBerlaku = DateTime.FromOADate((double)col22Value),
+                                        TempatSidang = col23Value.ToString(),
+                                        //WaktuSidang 24
+                                        //25
+                                        //26
+                                        NamaPenyidik = col27Value.ToString(),
+                                        PangkatPenyidik = col28Value.ToString(),
+                                        KesatuanPenyidik = col29Value.ToString(),
+                                        TempatPengambilanBarangSita = col30Value.ToString(),
                                         PasalPelanggaran = new Pasal
                                         {
-                                            NomorPasal = col39Value.ToString(),
-                                            DendaMaksimal = Convert.ToDouble(col40Value),
+                                            NomorPasal = col31Value.ToString(),
+                                            DendaMaksimal = Convert.ToDouble(col32Value),
                                             IsNew = false
                                         },
-                                        //PernyataanHadirSendiri
-                                        NamaWakil = col44Value.ToString(),
-                                        UmurWakil = col45Value.ToString(),
-                                        AlamatWakil = col46Value.ToString(),
-                                        BankSisaDenda = col47Value.ToString(),
+                                        //PernyataanHadirSendiri 33
+                                        //34
+                                        //35
+                                        NamaWakil = col36Value.ToString(),
+                                        UmurWakil = col37Value.ToString(),
+                                        AlamatWakil = col38Value.ToString(),
+                                        BankSisaDenda = col39Value.ToString(),
                                     });
                                     
                                 }
