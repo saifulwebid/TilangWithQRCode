@@ -66,6 +66,12 @@
     <Compile Include="Account.cs" />
     <Compile Include="DataPelanggaran.cs" />
     <Compile Include="ExcelHelper.cs" />
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSuratTilangViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,7 @@
     <Compile Include="frmInputSuratTilang.Designer.cs">
       <DependentUpon>frmInputSuratTilang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Enumeration.cs" />
     <Compile Include="Pasal.cs" />
     <Compile Include="Penduduk.cs" />
     <Compile Include="Program.cs" />
@@ -125,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInputDataSIM.resx">
       <DependentUpon>frmInputDataSIM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

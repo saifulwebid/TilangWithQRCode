@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
 using System.Runtime.Versioning;
+using System.Diagnostics;
 
 namespace QRCodeWinForms
 {
@@ -68,12 +69,12 @@ namespace QRCodeWinForms
                 if (Split[9] == "L")
                 {
                     rbtLK.Checked = true;
-                    datpel.Pelanggar.Pemilik.JenisKelamin = rbtLK.Text;
+                    datpel.Pelanggar.Pemilik.JenisKelamin = "Laki-laki";
                 }
                 else
                 {
                     rbtPR.Checked = true;
-                    datpel.Pelanggar.Pemilik.JenisKelamin = rbtPR.Text;
+                    datpel.Pelanggar.Pemilik.JenisKelamin = "Perempuan";
                 }             
             }
             catch
@@ -213,13 +214,8 @@ namespace QRCodeWinForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-           frmSuratTilangViewer frmsurat = new frmSuratTilangViewer(datpel);
-
-           //frmsurat.ShowDialog(); 
-           
-           frmsurat.PrintScreenForm(frmsurat);
-          // frmsurat.pdSuratTilang.ShowDialog();
-        
+            frmSuratTilangViewer frmsurat = new frmSuratTilangViewer(datpel);
+            frmsurat.ShowDialog();        
         }
     }
 }

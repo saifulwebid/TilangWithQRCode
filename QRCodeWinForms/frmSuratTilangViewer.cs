@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
 using System.Runtime.Versioning;
+using System.Diagnostics;
 
 namespace QRCodeWinForms
 {
@@ -181,33 +182,24 @@ namespace QRCodeWinForms
 
         }
         
-        Bitmap memoryImage;
-
-        public void PrintScreenForm(Form frm2) // method untuk capture gambar form 2
-        {
-           //frmSuratTilangViewer frm2 = new frmSuratTilangViewer();
-            Panel panel = new Panel();
-            frm2.Controls.Add(panel);
-
-            Graphics myGraphics = frm2.CreateGraphics();
-            Size s = frm2.Size;
-            memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
-            myGraphics = Graphics.FromImage(memoryImage);
-
-            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
-            memoryGraphics.CopyFromScreen(Location.X, Location.Y, 0, 0, s);
-        
-          Point panelLocation = PointToScreen(panel.Location);
-           myGraphics.CopyFromScreen(panelLocation.X, panelLocation.Y, 0, 0, s);
-
-          // frm2.ppdSuratTilang.Document = frm2.pdSuratTilang;
-            //frm2.ppdSuratTilang.PrintPreviewControl.Zoom = 1;
-       //     frm2.ShowDialog();  
-            ppdSuratTilang.ShowDialog();
-        }
         private void pdSuratTilang_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-           e.Graphics.DrawImage(memoryImage, 0, 0); //gambar grpahic memoryImage (hasil Capture Form) ke pdSIM
+          // e.Graphics.DrawImage(memoryImage, 0, 0); //gambar grpahic memoryImage (hasil Capture Form) ke pdSIM
+        }
+
+        private void btnPrintSurat_Click(object sender, EventArgs e)
+        {
+               string path = @"C:\Users\ASUS VIVO\Documents\View.jpg";
+               PrintDialog Print = new PrintDialog();
+               System.Drawing.Bitmap image = new System.Drawing.Bitmap(pnlSuratTilang.Width, pnlSuratTilang.Height);
+               pnlSuratTilang.DrawToBitmap(image, pnlSuratTilang.ClientRectangle);
+               image.Save(path);
+
+               var p = new Process();
+               p.StartInfo.FileName = path;//pass in or whatever you need
+               p.StartInfo.Verb = "Print";
+               p.Start();
+               /*Modul didapat dari kelompok 2 Project 1*/
         }
 
     }
