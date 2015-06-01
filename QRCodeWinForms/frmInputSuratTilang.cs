@@ -69,12 +69,12 @@ namespace QRCodeWinForms
                 if (Split[9] == "L")
                 {
                     rbtLK.Checked = true;
-                    datpel.Pelanggar.Pemilik.JenisKelamin = rbtLK.Text;
+                    datpel.Pelanggar.Pemilik.JenisKelamin = "Laki-laki";
                 }
                 else
                 {
                     rbtPR.Checked = true;
-                    datpel.Pelanggar.Pemilik.JenisKelamin = rbtPR.Text;
+                    datpel.Pelanggar.Pemilik.JenisKelamin = "Perempuan";
                 }             
             }
             catch
