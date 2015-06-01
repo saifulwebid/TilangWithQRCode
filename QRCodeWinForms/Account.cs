@@ -12,6 +12,7 @@ namespace QRCodeWinForms
         private string _username;
         private string _password;
         private EnumJenisUser _jenis;
+        private Boolean isNew;
 
         public string NamaLengkap { get; set; }
         public string Username
@@ -29,5 +30,21 @@ namespace QRCodeWinForms
             get { return _jenis; }
             set { _jenis = value; }
         }
+
+        public Boolean IsNew
+        {
+            get { return isNew; }
+            set { isNew = value; }
+        }
+
+        /*Nanti dirubah , nilai return nya jadi account (objek account )*/
+        public bool Check(string username, string password)
+        {
+            return ExcelHelper.AccountCheck(username, password);
+        }
+
+        /*Simpan account baru */
+        public void Save() { }
+
     }
 }
