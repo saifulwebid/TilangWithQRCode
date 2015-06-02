@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd"
   name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -3114,6 +3114,11 @@
           <messageOccurrenceSpecification
             Id="368bb18b-a859-42cc-b77e-1ee2acfbf907"
             name="MessageOccurrenceSpecification51">
+            <event>
+              <sendOperationEventMoniker
+                Id="233f1d64-4961-4821-be29-339517358125"
+                LastKnownLocation="ModelingProject.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="0a84c823-fd2c-4873-9680-b3500fb1a929"
@@ -3124,6 +3129,11 @@
           <messageOccurrenceSpecification
             Id="7b3d746e-1590-4168-9fe3-1cc262db0555"
             name="MessageOccurrenceSpecification52">
+            <event>
+              <receiveOperationEventMoniker
+                Id="93ed01f2-592c-4e74-91d0-7d30381b4b22"
+                LastKnownLocation="ModelingProject.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="e3ba0518-ac78-4d3b-80c6-3a9a48970d02"
@@ -3460,7 +3470,8 @@
             name="&lt;&lt;create&gt;&gt;"
             messageKind="Complete"
             messageSort="CreateMessage"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Penduduk(FromExcel : Boolean)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="368bb18b-a859-42cc-b77e-1ee2acfbf907"
@@ -3720,6 +3731,28 @@
           <operationMoniker
             Id="9f0ae14d-1738-4054-ab8a-13dc5a6dc097"
             LastKnownName="CheckPenduduk"
+            LastKnownLocation="ModelingProject.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="233f1d64-4961-4821-be29-339517358125">
+        <operation>
+          <operationMoniker
+            Id="2a40fdef-3c23-4f2a-9f53-a2d8753b57c2"
+            LastKnownName="Penduduk"
+            LastKnownLocation="ModelingProject.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="93ed01f2-592c-4e74-91d0-7d30381b4b22">
+        <operation>
+          <operationMoniker
+            Id="2a40fdef-3c23-4f2a-9f53-a2d8753b57c2"
+            LastKnownName="Penduduk"
             LastKnownLocation="ModelingProject.uml" />
         </operation>
       </receiveOperationEvent>
