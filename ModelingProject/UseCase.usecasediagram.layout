@@ -14,20 +14,16 @@
       <actorMoniker Id="9bd9c2b4-ebab-4871-8ac7-c4e71ec91252" LastKnownName="Hakim/Jaksa" />
       <relativeChildShapes />
     </actorShape>
-    <SubsystemShape Id="461a7fd9-4d98-45fa-b7ac-5e9aa0cf3750" absoluteBounds="1.75, 0.5, 1.5, 2" customColor="White">
+    <SubsystemShape Id="461a7fd9-4d98-45fa-b7ac-5e9aa0cf3750" absoluteBounds="1.75, 0.5, 1.5, 1.5" customColor="White">
       <subsystemMoniker Id="668881ee-ff09-4a53-98f1-facced88c48e" LastKnownName="Pembuatan SIM" />
       <nestedChildShapes>
-        <useCaseShape Id="50f9df11-aa5c-42a9-a9a8-048f754e50ad" absoluteBounds="2, 1.625, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
-          <useCaseMoniker Id="510c41f9-447d-4096-85fb-6642c9870991" LastKnownName="Memeriksa Penduduk Existing" />
-          <relativeChildShapes />
-        </useCaseShape>
-        <useCaseShape Id="7861a4c0-071b-4402-aed7-0b7cfc2cc895" absoluteBounds="2, 1, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+        <useCaseShape Id="7861a4c0-071b-4402-aed7-0b7cfc2cc895" absoluteBounds="2, 1.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
           <useCaseMoniker Id="6447c726-636a-4dc2-92cd-6d771a1c3e7b" LastKnownName="Membuat SIM Baru" />
           <relativeChildShapes />
         </useCaseShape>
       </nestedChildShapes>
     </SubsystemShape>
-    <useCaseAssociationConnector edgePoints="[(1.25 : 1.66666666666667); (2.08397485283108 : 1.38867504905631)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(1.25 : 1.6875); (2.05278640450004 : 1.48680339887499)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="7e4a2fac-0d75-471a-bf5b-c41741d7beca" />
       <relativeChildShapes />
       <nodes>
@@ -35,24 +31,16 @@
         <useCaseShapeMoniker Id="7861a4c0-071b-4402-aed7-0b7cfc2cc895" />
       </nodes>
     </useCaseAssociationConnector>
-    <useCaseAssociationConnector edgePoints="[(1.25 : 1.79166666666667); (2.01190646990802 : 1.918651078318)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
-      <associationMoniker Id="0c595184-5d5f-49bd-bde3-6e90207ff673" />
-      <relativeChildShapes />
-      <nodes>
-        <actorShapeMoniker Id="fbaf97c8-61a3-45b0-874c-70d27d3c712e" />
-        <useCaseShapeMoniker Id="50f9df11-aa5c-42a9-a9a8-048f754e50ad" />
-      </nodes>
-    </useCaseAssociationConnector>
-    <SubsystemShape Id="bf398ce3-c05e-4319-a9e0-169508ad67c5" absoluteBounds="1.75, 2.625, 1.5, 1.125" customColor="White">
+    <SubsystemShape Id="bf398ce3-c05e-4319-a9e0-169508ad67c5" absoluteBounds="1.75, 2.125, 1.5, 1.625" customColor="White">
       <subsystemMoniker Id="4a9373df-a716-44e4-bb51-c96cc672ca56" LastKnownName="Pembuatan Surat Tilang" />
       <nestedChildShapes>
-        <useCaseShape Id="3f9bd0f7-17ad-46da-ac62-c83f4b820dcb" absoluteBounds="2, 3.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+        <useCaseShape Id="3f9bd0f7-17ad-46da-ac62-c83f4b820dcb" absoluteBounds="2, 2.75, 1, 0.625" customColor="238, 237, 131" heightOffset="0">
           <useCaseMoniker Id="5c76889f-c726-4e68-9577-d524ace8729d" LastKnownName="Membuat Surat Tilang" />
           <relativeChildShapes />
         </useCaseShape>
       </nestedChildShapes>
     </SubsystemShape>
-    <useCaseAssociationConnector edgePoints="[(3.625 : 3.98863636363636); (2.83786231425867 : 3.55928853505019)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(3.625 : 3.93181818181818); (2.81443462471558 : 3.30547221000749)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="676761bc-e5db-43ea-8f60-247ac10197ff" />
       <relativeChildShapes />
       <nodes>
@@ -77,7 +65,7 @@
         </useCaseShape>
       </nestedChildShapes>
     </SubsystemShape>
-    <useCaseAssociationConnector edgePoints="[(7.875 : 1.63333333333333); (4.8745069032331 : 1.73334976989223)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(7.875 : 1.63333333333333); (4.8745069032331 : 1.73334976989223)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="0051c572-9fd7-4741-ab43-ed1b19f7d5a3" />
       <relativeChildShapes />
       <nodes>
@@ -93,7 +81,7 @@
         <useCaseShapeMoniker Id="15b6471a-8718-4f13-ba11-ee3b080f05b3" />
       </nodes>
     </useCaseAssociationConnector>
-    <useCaseAssociationConnector edgePoints="[(4.115 : 3.875); (5.05340395678836 : 2.89749587834545)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(4.115 : 3.875); (5.05340395678836 : 2.89749587834545)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="53f6a168-95cd-4c32-824d-f19f24851474" />
       <relativeChildShapes />
       <nodes>

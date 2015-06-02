@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ca5fd5db-80b5-4883-94cf-15bbd6e6b856" name="UseCase" linkedPackageId="75508901-13a1-489c-b3ec-f47c0b67208e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="ca5fd5db-80b5-4883-94cf-15bbd6e6b856" name="UseCase" linkedPackageId="75508901-13a1-489c-b3ec-f47c0b67208e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="5dcba513-3fa8-486a-a24f-54de8d9ac250" name="Petugas Samsat" isAbstract="false" isLeaf="false">
@@ -20,22 +20,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="494213bb-64a4-4a28-85f6-f9b528fcaf88" />
-          </association>
-          <association Id="0c595184-5d5f-49bd-bde3-6e90207ff673" isDerived="false" sourceEndRoleName="Petugas Samsat" targetEndRoleName="Memeriksa Penduduk Existing" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="510c41f9-447d-4096-85fb-6642c9870991" LastKnownName="Memeriksa Penduduk Existing" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ec060d0e-4403-4d54-bd7c-abc7ff858417" name="Petugas Samsat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="abc4c9d8-af89-4720-9e64-746a3b2c19ec" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="2cd64dc6-090d-4f0a-aa2c-543917ec6d0a" name="Memeriksa Penduduk Existing" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="f43492d8-6bc5-41a3-9d1b-9e27b3f2d162" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="9301c842-dabb-482a-8a94-14074f9ddfed" />
           </association>
         </targetEnds>
       </actor>
@@ -170,14 +154,6 @@
         <elementDefinition Id="67489ea9-3a7c-4b6b-92bd-c7b3cbab67b6" />
         <subjects>
           <subsystemMoniker Id="40269730-5167-4f8a-bb6e-48906edec078" LastKnownName="Rekapitulasi dan Statistik" />
-        </subjects>
-      </useCase>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase Id="510c41f9-447d-4096-85fb-6642c9870991" name="Memeriksa Penduduk Existing" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="241d5e6a-c69b-463c-a4a2-90caeb8cd973" />
-        <subjects>
-          <subsystemMoniker Id="668881ee-ff09-4a53-98f1-facced88c48e" LastKnownName="Pembuatan SIM" />
         </subjects>
       </useCase>
     </packageHasNamedElement>
