@@ -3,15 +3,6 @@
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="0862e380-1c0c-49a4-8e0d-cf43e6a01ed7" name="Memeriksa Penduduk Existing" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
-        <ownedCommentsInternal>
-          <comment Id="806302bf-69be-4e11-b2a2-b14d51f07a63">
-            <elementDefinition Id="8e02b10a-d6df-4f53-bc98-afe5cfe26f25" />
-            <body>Objek hanya dibuat ketika ada Penduduk dengan nomor KTP yang disediakan</body>
-            <annotatedElements>
-              <behaviorExecutionSpecificationMoniker Id="15dfce8a-46a5-43d2-8251-ed2678d2a7f7" LastKnownName="BehaviorExecutionSpecification15" />
-            </annotatedElements>
-          </comment>
-        </ownedCommentsInternal>
         <elementDefinition Id="51fc2599-574f-45fc-a60a-bb25340f750c" />
         <fragments>
           <behaviorExecutionSpecification Id="dca95dbf-fed5-40d0-b210-31ae8ef8e0a9" name="BehaviorExecutionSpecification11">
@@ -108,8 +99,10 @@
             </start>
             <nestedOccurrences>
               <messageOccurrenceSpecificationMoniker Id="9bce3723-18d7-467e-a79e-8733c0143673" LastKnownName="MessageOccurrenceSpecification48" />
+              <operandOccurrenceSpecificationMoniker Id="4e8427d2-4771-4f80-80f6-14eae42e9fb7" LastKnownName="OperandOccurrenceSpecification11" />
               <messageOccurrenceSpecificationMoniker Id="b39fbfe5-ad8a-4798-94ec-265815b1f8e7" LastKnownName="MessageOccurrenceSpecification51" />
               <messageOccurrenceSpecificationMoniker Id="d32e9bb3-a78c-46da-b0d1-fb94860bfc1e" LastKnownName="MessageOccurrenceSpecification54" />
+              <operandOccurrenceSpecificationMoniker Id="ee4d1a55-bf0b-4306-a877-03c1e82514e9" LastKnownName="OperandOccurrenceSpecification12" />
               <messageOccurrenceSpecificationMoniker Id="af9c2216-9837-42bc-ac44-72b144451c2c" LastKnownName="MessageOccurrenceSpecification49" />
             </nestedOccurrences>
           </behaviorExecutionSpecification>
@@ -136,6 +129,45 @@
               <lifelineMoniker Id="d8bafdce-8523-477d-98eb-999fee9f6ba1" LastKnownName="Penduduk" />
             </covered>
           </messageOccurrenceSpecification>
+          <combinedFragment Id="dc87ae47-8901-4d03-8936-29fb8e5ade56" name="CombinedFragment1" interactionOperator="Opt">
+            <elementDefinition Id="85877954-14b8-4c1d-9abc-a8cd489e4502" />
+            <coveredLifelines>
+              <lifelineMoniker Id="00c6f252-e09e-4c39-acbb-450357edc34f" LastKnownName="ExcelHelper" />
+              <lifelineMoniker Id="79405a71-11e0-42c2-b9df-3865ea1c77e7" LastKnownName="penduduk : Penduduk" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="c66279cf-9e58-4ad8-aa47-af7c78412b97" name="InteractionOperand1">
+                <elementDefinition Id="b2d5f932-d7b8-4e48-8e68-cd6d8cc56e81" />
+                <coveredLifelines>
+                  <lifelineMoniker Id="00c6f252-e09e-4c39-acbb-450357edc34f" LastKnownName="ExcelHelper" />
+                  <lifelineMoniker Id="79405a71-11e0-42c2-b9df-3865ea1c77e7" LastKnownName="penduduk : Penduduk" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="78397968-5ea6-4b74-b862-bd2b70176f48" guardText="Ada penduduk yang dicari">
+                    <elementDefinition Id="01b8667a-d351-4846-bb2c-58db67b1f87b" />
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="6b484898-3ef7-4ea8-a4b8-07df69d09d32" LastKnownName="OperandOccurrenceSpecification9" />
+                  <operandOccurrenceSpecificationMoniker Id="388830b5-0ea9-47c8-989f-78d28902e29e" LastKnownName="OperandOccurrenceSpecification10" />
+                  <operandOccurrenceSpecificationMoniker Id="4e8427d2-4771-4f80-80f6-14eae42e9fb7" LastKnownName="OperandOccurrenceSpecification11" />
+                  <operandOccurrenceSpecificationMoniker Id="ee4d1a55-bf0b-4306-a877-03c1e82514e9" LastKnownName="OperandOccurrenceSpecification12" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="4e8427d2-4771-4f80-80f6-14eae42e9fb7" name="OperandOccurrenceSpecification11">
+            <elementDefinition Id="4df3c492-7edf-4093-80a1-5d4ee7ed0e29" />
+            <covered>
+              <lifelineMoniker Id="00c6f252-e09e-4c39-acbb-450357edc34f" LastKnownName="ExcelHelper" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="6b484898-3ef7-4ea8-a4b8-07df69d09d32" name="OperandOccurrenceSpecification9">
+            <elementDefinition Id="f94cbdab-11ac-48bb-82a1-12b3369e5706" />
+            <covered>
+              <lifelineMoniker Id="79405a71-11e0-42c2-b9df-3865ea1c77e7" LastKnownName="penduduk : Penduduk" />
+            </covered>
+          </operandOccurrenceSpecification>
           <behaviorExecutionSpecification Id="15dfce8a-46a5-43d2-8251-ed2678d2a7f7" name="BehaviorExecutionSpecification15">
             <elementDefinition Id="02d0618f-41e2-4744-8873-93b6cb510a70" />
             <coveredLifelines>
@@ -163,16 +195,16 @@
               <lifelineMoniker Id="79405a71-11e0-42c2-b9df-3865ea1c77e7" LastKnownName="penduduk : Penduduk" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="5c08085d-702d-41eb-adbb-4dda4a70a60a" name="MessageOccurrenceSpecification52">
-            <elementDefinition Id="7b3d746e-1590-4168-9fe3-1cc262db0555" />
-            <covered>
-              <lifelineMoniker Id="79405a71-11e0-42c2-b9df-3865ea1c77e7" LastKnownName="penduduk : Penduduk" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="b39fbfe5-ad8a-4798-94ec-265815b1f8e7" name="MessageOccurrenceSpecification51">
             <elementDefinition Id="368bb18b-a859-42cc-b77e-1ee2acfbf907" />
             <covered>
               <lifelineMoniker Id="00c6f252-e09e-4c39-acbb-450357edc34f" LastKnownName="ExcelHelper" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5c08085d-702d-41eb-adbb-4dda4a70a60a" name="MessageOccurrenceSpecification52">
+            <elementDefinition Id="7b3d746e-1590-4168-9fe3-1cc262db0555" />
+            <covered>
+              <lifelineMoniker Id="79405a71-11e0-42c2-b9df-3865ea1c77e7" LastKnownName="penduduk : Penduduk" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="d32e9bb3-a78c-46da-b0d1-fb94860bfc1e" name="MessageOccurrenceSpecification54">
@@ -198,6 +230,18 @@
               <lifelineMoniker Id="79405a71-11e0-42c2-b9df-3865ea1c77e7" LastKnownName="penduduk : Penduduk" />
             </covered>
           </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="ee4d1a55-bf0b-4306-a877-03c1e82514e9" name="OperandOccurrenceSpecification12">
+            <elementDefinition Id="701fb463-8a78-4cf2-bc04-cdfa704282d1" />
+            <covered>
+              <lifelineMoniker Id="00c6f252-e09e-4c39-acbb-450357edc34f" LastKnownName="ExcelHelper" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="388830b5-0ea9-47c8-989f-78d28902e29e" name="OperandOccurrenceSpecification10">
+            <elementDefinition Id="9efa598c-928d-448a-867e-b83cd62560b6" />
+            <covered>
+              <lifelineMoniker Id="79405a71-11e0-42c2-b9df-3865ea1c77e7" LastKnownName="penduduk : Penduduk" />
+            </covered>
+          </operandOccurrenceSpecification>
           <messageOccurrenceSpecification Id="af9c2216-9837-42bc-ac44-72b144451c2c" name="MessageOccurrenceSpecification49">
             <elementDefinition Id="a0fc521b-85ac-4a61-9920-6c1273fb6781" />
             <covered>
@@ -276,12 +320,6 @@
               <executionOccurrenceSpecificationMoniker Id="98ffaf14-7f5d-47b0-87a8-2f58bf29fa8d" LastKnownName="ExecutionOccurrenceSpecification22" />
             </topLevelOccurrences>
           </lifeline>
-          <lifeline Id="a58e18ee-4c59-4b5e-bcf1-f7aaa8194d49" name="sim : SIM" isActor="false" lifelineDisplayName="sim : SIM">
-            <elementDefinition Id="54328e4d-2579-464f-aa72-15ffc010e34a" />
-            <represents>
-              <propertyMoniker Id="44ad0ecf-174a-4762-967e-57cf3b422a92" />
-            </represents>
-          </lifeline>
           <lifeline Id="d8bafdce-8523-477d-98eb-999fee9f6ba1" name="Penduduk" isActor="false" lifelineDisplayName="Penduduk">
             <elementDefinition Id="21ece185-053c-4578-8234-c8768f66d357" />
             <represents>
@@ -308,8 +346,10 @@
               <propertyMoniker Id="27e0fe72-ee96-4c38-a6a5-d3ae537bf951" />
             </represents>
             <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="6b484898-3ef7-4ea8-a4b8-07df69d09d32" LastKnownName="OperandOccurrenceSpecification9" />
               <executionOccurrenceSpecificationMoniker Id="68ed8a71-cff2-457c-b5a1-c07a4afe93b8" LastKnownName="ExecutionOccurrenceSpecification29" />
               <executionOccurrenceSpecificationMoniker Id="454a2e07-4519-4b76-86fc-f3566a689a6e" LastKnownName="ExecutionOccurrenceSpecification30" />
+              <operandOccurrenceSpecificationMoniker Id="388830b5-0ea9-47c8-989f-78d28902e29e" LastKnownName="OperandOccurrenceSpecification10" />
             </topLevelOccurrences>
           </lifeline>
         </lifelines>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd"
   name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -2728,18 +2728,6 @@
         isAbstract="false"
         isLeaf="false"
         isReentrant="false">
-        <ownedCommentsInternal>
-          <comment
-            Id="8e02b10a-d6df-4f53-bc98-afe5cfe26f25">
-            <body>Objek hanya dibuat ketika ada Penduduk dengan nomor KTP yang disediakan</body>
-            <annotatedElements>
-              <behaviorExecutionSpecificationMoniker
-                Id="02d0618f-41e2-4744-8873-93b6cb510a70"
-                LastKnownName="BehaviorExecutionSpecification15"
-                LastKnownLocation="ModelingProject.uml" />
-            </annotatedElements>
-          </comment>
-        </ownedCommentsInternal>
         <fragments>
           <behaviorExecutionSpecification
             Id="2ddf99d0-b478-470e-bea5-d6c4b889a0a7"
@@ -2919,6 +2907,10 @@
                 Id="eee76b06-092b-4c7d-8b18-c32701b96c98"
                 LastKnownName="MessageOccurrenceSpecification48"
                 LastKnownLocation="ModelingProject.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="4df3c492-7edf-4093-80a1-5d4ee7ed0e29"
+                LastKnownName="OperandOccurrenceSpecification11"
+                LastKnownLocation="ModelingProject.uml" />
               <messageOccurrenceSpecificationMoniker
                 Id="368bb18b-a859-42cc-b77e-1ee2acfbf907"
                 LastKnownName="MessageOccurrenceSpecification51"
@@ -2926,6 +2918,10 @@
               <messageOccurrenceSpecificationMoniker
                 Id="4ea6a94a-c6d7-47ea-989a-d06b87580c47"
                 LastKnownName="MessageOccurrenceSpecification54"
+                LastKnownLocation="ModelingProject.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="701fb463-8a78-4cf2-bc04-cdfa704282d1"
+                LastKnownName="OperandOccurrenceSpecification12"
                 LastKnownLocation="ModelingProject.uml" />
               <messageOccurrenceSpecificationMoniker
                 Id="a0fc521b-85ac-4a61-9920-6c1273fb6781"
@@ -2971,6 +2967,80 @@
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
+          <combinedFragment
+            Id="85877954-14b8-4c1d-9abc-a8cd489e4502"
+            name="CombinedFragment1"
+            interactionOperator="Opt">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0a84c823-fd2c-4873-9680-b3500fb1a929"
+                LastKnownName="ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+              <lifelineMoniker
+                Id="e3ba0518-ac78-4d3b-80c6-3a9a48970d02"
+                LastKnownName="penduduk : Penduduk"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand
+                Id="b2d5f932-d7b8-4e48-8e68-cd6d8cc56e81"
+                name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="0a84c823-fd2c-4873-9680-b3500fb1a929"
+                    LastKnownName="ExcelHelper"
+                    LastKnownLocation="ModelingProject.uml" />
+                  <lifelineMoniker
+                    Id="e3ba0518-ac78-4d3b-80c6-3a9a48970d02"
+                    LastKnownName="penduduk : Penduduk"
+                    LastKnownLocation="ModelingProject.uml" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint
+                    Id="01b8667a-d351-4846-bb2c-58db67b1f87b"
+                    guardText="Ada penduduk yang dicari" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="f94cbdab-11ac-48bb-82a1-12b3369e5706"
+                    LastKnownName="OperandOccurrenceSpecification9"
+                    LastKnownLocation="ModelingProject.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="9efa598c-928d-448a-867e-b83cd62560b6"
+                    LastKnownName="OperandOccurrenceSpecification10"
+                    LastKnownLocation="ModelingProject.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="4df3c492-7edf-4093-80a1-5d4ee7ed0e29"
+                    LastKnownName="OperandOccurrenceSpecification11"
+                    LastKnownLocation="ModelingProject.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="701fb463-8a78-4cf2-bc04-cdfa704282d1"
+                    LastKnownName="OperandOccurrenceSpecification12"
+                    LastKnownLocation="ModelingProject.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification
+            Id="4df3c492-7edf-4093-80a1-5d4ee7ed0e29"
+            name="OperandOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="0a84c823-fd2c-4873-9680-b3500fb1a929"
+                LastKnownName="ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="f94cbdab-11ac-48bb-82a1-12b3369e5706"
+            name="OperandOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="e3ba0518-ac78-4d3b-80c6-3a9a48970d02"
+                LastKnownName="penduduk : Penduduk"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
           <behaviorExecutionSpecification
             Id="02d0618f-41e2-4744-8873-93b6cb510a70"
             name="BehaviorExecutionSpecification15">
@@ -3022,22 +3092,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="7b3d746e-1590-4168-9fe3-1cc262db0555"
-            name="MessageOccurrenceSpecification52">
-            <covered>
-              <lifelineMoniker
-                Id="e3ba0518-ac78-4d3b-80c6-3a9a48970d02"
-                LastKnownName="penduduk : Penduduk"
-                LastKnownLocation="ModelingProject.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="368bb18b-a859-42cc-b77e-1ee2acfbf907"
             name="MessageOccurrenceSpecification51">
             <covered>
               <lifelineMoniker
                 Id="0a84c823-fd2c-4873-9680-b3500fb1a929"
                 LastKnownName="ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7b3d746e-1590-4168-9fe3-1cc262db0555"
+            name="MessageOccurrenceSpecification52">
+            <covered>
+              <lifelineMoniker
+                Id="e3ba0518-ac78-4d3b-80c6-3a9a48970d02"
+                LastKnownName="penduduk : Penduduk"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -3079,6 +3149,26 @@
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="701fb463-8a78-4cf2-bc04-cdfa704282d1"
+            name="OperandOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="0a84c823-fd2c-4873-9680-b3500fb1a929"
+                LastKnownName="ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="9efa598c-928d-448a-867e-b83cd62560b6"
+            name="OperandOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="e3ba0518-ac78-4d3b-80c6-3a9a48970d02"
+                LastKnownName="penduduk : Penduduk"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
           <messageOccurrenceSpecification
             Id="a0fc521b-85ac-4a61-9920-6c1273fb6781"
             name="MessageOccurrenceSpecification49">
@@ -3214,17 +3304,6 @@
             </topLevelOccurrences>
           </lifeline>
           <lifeline
-            Id="54328e4d-2579-464f-aa72-15ffc010e34a"
-            name="sim : SIM"
-            isActor="false"
-            lifelineDisplayName="sim : SIM">
-            <represents>
-              <propertyMoniker
-                Id="d6ed8b2a-159e-4691-98f7-d5e957bd17e1"
-                LastKnownLocation="ModelingProject.uml" />
-            </represents>
-          </lifeline>
-          <lifeline
             Id="21ece185-053c-4578-8234-c8768f66d357"
             name="Penduduk"
             isActor="false"
@@ -3277,6 +3356,10 @@
                 LastKnownLocation="ModelingProject.uml" />
             </represents>
             <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="f94cbdab-11ac-48bb-82a1-12b3369e5706"
+                LastKnownName="OperandOccurrenceSpecification9"
+                LastKnownLocation="ModelingProject.uml" />
               <executionOccurrenceSpecificationMoniker
                 Id="433dc658-8b9f-48a4-ba28-6a6076d36bd7"
                 LastKnownName="ExecutionOccurrenceSpecification29"
@@ -3284,6 +3367,10 @@
               <executionOccurrenceSpecificationMoniker
                 Id="648469ee-67ae-4bce-8b44-9382fc4bcf33"
                 LastKnownName="ExecutionOccurrenceSpecification30"
+                LastKnownLocation="ModelingProject.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="9efa598c-928d-448a-867e-b83cd62560b6"
+                LastKnownName="OperandOccurrenceSpecification10"
                 LastKnownLocation="ModelingProject.uml" />
             </topLevelOccurrences>
           </lifeline>
