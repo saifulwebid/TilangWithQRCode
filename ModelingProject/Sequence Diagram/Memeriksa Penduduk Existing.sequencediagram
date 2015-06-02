@@ -363,7 +363,7 @@
               <messageOccurrenceSpecificationMoniker Id="2120fd34-d256-4de8-8627-d13c989698d4" LastKnownName="MessageOccurrenceSpecification38" />
             </receiveEvent>
           </message>
-          <message Id="47188d4c-cacf-4776-a012-b4dae5027eda" name="IsPresent(txtNomorKTP.Text)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="47188d4c-cacf-4776-a012-b4dae5027eda" name="Cari Penduduk" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ IsPresent(NomorKTP : String) : Penduduk">
             <elementDefinition Id="048726b1-3072-4ebb-91ce-33127b08edc5" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="46ff0949-df7c-47a0-97b6-0a47fd24ce8d" LastKnownName="MessageOccurrenceSpecification43" />
@@ -372,7 +372,7 @@
               <messageOccurrenceSpecificationMoniker Id="53886ba9-1f17-4cce-9a39-c7cdb6ea99ba" LastKnownName="MessageOccurrenceSpecification44" />
             </receiveEvent>
           </message>
-          <message Id="67e6afce-c8ec-4256-ad8c-ff99a09da9a7" name="CheckPenduduk(NomorKTP)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="67e6afce-c8ec-4256-ad8c-ff99a09da9a7" name="Cari Penduduk di Excel" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ CheckPenduduk(NomorKTP : String) : Penduduk">
             <elementDefinition Id="eceb13cc-e334-4184-85ce-4f726400cd61" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="79e67211-3549-45dc-bd84-0a283fc3a836" LastKnownName="MessageOccurrenceSpecification47" />
