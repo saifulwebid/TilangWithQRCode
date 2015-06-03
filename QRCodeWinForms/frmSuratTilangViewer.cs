@@ -87,7 +87,7 @@ namespace QRCodeWinForms
                 lblJamSidang.Text = datpel.WaktuSidang.Date.ToShortTimeString().ToString();
                 lblNamaPenyidik.Text = datpel.NamaPenyidik;
                 lblPangkatPenyidik.Text = datpel.PangkatPenyidik;
-                lblKesatuanPenyidik.Text = datpel.KesatuanPenyidik;
+                lblKesatuanPenyidik.Text = datpel.Kesatuan;
                 lblPasal.Text = datpel.PasalPelanggaran.NomorPasal;
                 lblDendaMaksimal.Text = datpel.PasalPelanggaran.DendaMaksimal.ToString();
                 lblBankSetorDenda.Text = datpel.BankSetorDendaMaksimal;
