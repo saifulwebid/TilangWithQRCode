@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSuratTilangViewer));
             this.pnlSuratTilang = new System.Windows.Forms.Panel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label31 = new System.Windows.Forms.Label();
             this.lblBankSisaDenda = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
@@ -138,6 +139,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label30 = new System.Windows.Forms.Label();
             this.lblNoRegPenyidikan = new System.Windows.Forms.Label();
             this.lblKesatuan = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -164,8 +166,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.btnPrintSurat = new System.Windows.Forms.Button();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
             this.pnlSuratTilang.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -208,11 +208,21 @@
             this.groupBox8.Controls.Add(this.label62);
             this.groupBox8.Controls.Add(this.label61);
             this.groupBox8.Controls.Add(this.label60);
-            this.groupBox8.Location = new System.Drawing.Point(663, 618);
+            this.groupBox8.Location = new System.Drawing.Point(659, 618);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(416, 166);
+            this.groupBox8.Size = new System.Drawing.Size(420, 166);
             this.groupBox8.TabIndex = 20;
             this.groupBox8.TabStop = false;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label31.Location = new System.Drawing.Point(129, 132);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(66, 15);
+            this.label31.TabIndex = 51;
+            this.label31.Text = "Nama Teller";
             // 
             // lblBankSisaDenda
             // 
@@ -1291,6 +1301,15 @@
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(11, 43);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(68, 13);
+            this.label30.TabIndex = 42;
+            this.label30.Text = "KESATUAN:";
+            // 
             // lblNoRegPenyidikan
             // 
             this.lblNoRegPenyidikan.AutoSize = true;
@@ -1548,25 +1567,6 @@
             this.btnPrintSurat.Text = "Print Surat Tilang";
             this.btnPrintSurat.UseVisualStyleBackColor = true;
             this.btnPrintSurat.Click += new System.EventHandler(this.btnPrintSurat_Click);
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(11, 43);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(68, 13);
-            this.label30.TabIndex = 42;
-            this.label30.Text = "KESATUAN:";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label31.Location = new System.Drawing.Point(129, 132);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(66, 15);
-            this.label31.TabIndex = 51;
-            this.label31.Text = "Nama Teller";
             // 
             // frmSuratTilangViewer
             // 

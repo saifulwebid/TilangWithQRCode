@@ -29,6 +29,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence Diagram\Memeriksa Penduduk Existing.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="Sequence Diagram\MenyimpanDataPelanggaran.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence Diagram\MenyimpanDataPelanggaran.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence Diagram\MenyimpanDataPelanggaran.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="UseCase.usecasediagram">
       <SubType>Content</SubType>
     </Content>
