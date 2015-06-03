@@ -29,6 +29,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence Diagram\Memeriksa Penduduk Existing.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="Sequence Diagram\Menampilkan SIM.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence Diagram\Menampilkan SIM.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence Diagram\Menampilkan SIM.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="Sequence Diagram\Menyimpan Data SIM.sequencediagram">
       <SubType>Content</SubType>
     </Content>
