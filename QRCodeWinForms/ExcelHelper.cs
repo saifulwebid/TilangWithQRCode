@@ -525,7 +525,6 @@ namespace QRCodeWinForms
                             object col35Header = currentWorksheet.Cells[startRow, 35].Value;
                             object col36Header = currentWorksheet.Cells[startRow, 36].Value;
                             object col37Header = currentWorksheet.Cells[startRow, 37].Value;
-                            object col38Header = currentWorksheet.Cells[startRow, 38].Value;
 
                             if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
                                 (col5Header != null) && (col6Header != null) && (col7Header != null) && (col8Header != null)
@@ -536,7 +535,7 @@ namespace QRCodeWinForms
                                 && (col25Header != null) && (col26Header != null) && (col27Header != null) && (col28Header != null)
                                 && (col29Header != null) && (col30Header != null) && (col31Header != null) && (col32Header != null)
                                 && (col33Header != null) && (col34Header != null) && (col35Header != null) && (col36Header != null)
-                                && (col37Header != null) && (col38Header != null))
+                                && (col37Header != null))
                             {
                                 int rowNumber = currentWorksheet.Dimension.End.Row + 1;
                                 currentWorksheet.Cells[rowNumber, 1].Value = dapel.WaktuPelanggaran;
@@ -566,17 +565,16 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 25].Value = dapel.WaktuSidang.Hour;
                                 currentWorksheet.Cells[rowNumber, 26].Value = dapel.NamaPenyidik;
                                 currentWorksheet.Cells[rowNumber, 27].Value = dapel.PangkatPenyidik;
-                                currentWorksheet.Cells[rowNumber, 28].Value = dapel.KesatuanPenyidik;
-                                currentWorksheet.Cells[rowNumber, 19].Value = dapel.TempatPengambilanBarangSita;
-                                currentWorksheet.Cells[rowNumber, 30].Value = dapel.PasalPelanggaran.NomorPasal;
-                                currentWorksheet.Cells[rowNumber, 31].Value = dapel.PasalPelanggaran.DendaMaksimal;
-                                currentWorksheet.Cells[rowNumber, 32].Value = dapel.BankSetorDendaMaksimal;
-                                currentWorksheet.Cells[rowNumber, 33].Value = dapel.AngkaPinaltiPelanggaran;
-                                currentWorksheet.Cells[rowNumber, 34].Value = dapel.PernyataanHadirSendiri;
-                                currentWorksheet.Cells[rowNumber, 35].Value = dapel.NamaWakil;
-                                currentWorksheet.Cells[rowNumber, 36].Value = dapel.UmurWakil;
-                                currentWorksheet.Cells[rowNumber, 37].Value = dapel.AlamatWakil;
-                                currentWorksheet.Cells[rowNumber, 38].Value = dapel.BankSisaDenda;
+                                currentWorksheet.Cells[rowNumber, 28].Value = dapel.TempatPengambilanBarangSita;
+                                currentWorksheet.Cells[rowNumber, 29].Value = dapel.PasalPelanggaran.NomorPasal;
+                                currentWorksheet.Cells[rowNumber, 30].Value = dapel.PasalPelanggaran.DendaMaksimal;
+                                currentWorksheet.Cells[rowNumber, 31].Value = dapel.BankSetorDendaMaksimal;
+                                currentWorksheet.Cells[rowNumber, 32].Value = dapel.AngkaPinaltiPelanggaran;
+                                currentWorksheet.Cells[rowNumber, 33].Value = dapel.PernyataanHadirSendiri;
+                                currentWorksheet.Cells[rowNumber, 34].Value = dapel.NamaWakil;
+                                currentWorksheet.Cells[rowNumber, 35].Value = dapel.UmurWakil;
+                                currentWorksheet.Cells[rowNumber, 36].Value = dapel.AlamatWakil;
+                                currentWorksheet.Cells[rowNumber, 37].Value = dapel.BankSisaDenda;
                             }
                         }
                     }
@@ -644,7 +642,6 @@ namespace QRCodeWinForms
                             object col35Header = currentWorksheet.Cells[startRow, 35].Value;
                             object col36Header = currentWorksheet.Cells[startRow, 36].Value;
                             object col37Header = currentWorksheet.Cells[startRow, 37].Value;
-                            object col38Header = currentWorksheet.Cells[startRow, 38].Value;
 
                             if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
                                 (col5Header != null) && (col6Header != null) && (col7Header != null) && (col8Header != null)
@@ -655,7 +652,7 @@ namespace QRCodeWinForms
                                 && (col25Header != null) && (col26Header != null) && (col27Header != null) && (col28Header != null)
                                 && (col29Header != null) && (col30Header != null) && (col31Header != null) && (col32Header != null)
                                 && (col33Header != null) && (col34Header != null) && (col35Header != null) && (col36Header != null)
-                                && (col37Header != null) && (col38Header != null))
+                                && (col37Header != null))
                             {
                                 for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                                 {
@@ -696,7 +693,6 @@ namespace QRCodeWinForms
                                     object col35Value = currentWorksheet.Cells[rowNumber, 35].Value;
                                     object col36Value = currentWorksheet.Cells[rowNumber, 36].Value;
                                     object col37Value = currentWorksheet.Cells[rowNumber, 37].Value;
-                                    object col38Value = currentWorksheet.Cells[rowNumber, 38].Value;
 
                                     listDataPelanggaran.Add(new DataPelanggaran
                                     {
@@ -730,21 +726,20 @@ namespace QRCodeWinForms
                                         //25
                                         NamaPenyidik = col26Value.ToString(),
                                         PangkatPenyidik = col27Value.ToString(),
-                                        KesatuanPenyidik = col28Value.ToString(),
-                                        TempatPengambilanBarangSita = col29Value.ToString(),
+                                        TempatPengambilanBarangSita = col28Value.ToString(),
                                         PasalPelanggaran = new Pasal
                                         {
-                                            NomorPasal = col30Value.ToString(),
-                                            DendaMaksimal = Convert.ToDouble(col31Value),
+                                            NomorPasal = col29Value.ToString(),
+                                            DendaMaksimal = Convert.ToDouble(col30Value),
                                             IsNew = false
                                         },
-                                        //PernyataanHadirSendiri 32
+                                        //PernyataanHadirSendiri 31
+                                        //32
                                         //33
-                                        //34
-                                        NamaWakil = col35Value.ToString(),
-                                        UmurWakil = col36Value.ToString(),
-                                        AlamatWakil = col37Value.ToString(),
-                                        BankSisaDenda = col38Value.ToString(),
+                                        NamaWakil = col34Value.ToString(),
+                                        UmurWakil = col35Value.ToString(),
+                                        AlamatWakil = col36Value.ToString(),
+                                        BankSisaDenda = col37Value.ToString(),
                                     });
                                     
                                 }

@@ -153,7 +153,7 @@
             this.ckbSTCK = new System.Windows.Forms.CheckBox();
             this.ckbSTNK = new System.Windows.Forms.CheckBox();
             this.ckbRANMOR = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.ckbLainnya = new System.Windows.Forms.CheckBox();
             this.cbkBukuUji = new System.Windows.Forms.CheckBox();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -619,7 +619,7 @@
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.checkBox1);
+            this.groupBox10.Controls.Add(this.ckbLainnya);
             this.groupBox10.Controls.Add(this.cbkBukuUji);
             this.groupBox10.Controls.Add(this.label75);
             this.groupBox10.Controls.Add(this.dtpBerlakuPemda);
@@ -1411,15 +1411,15 @@
             this.ckbRANMOR.Text = "RANMOR";
             this.ckbRANMOR.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // ckbLainnya
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 54);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(72, 17);
-            this.checkBox1.TabIndex = 33;
-            this.checkBox1.Text = "LAINNYA";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.ckbLainnya.AutoSize = true;
+            this.ckbLainnya.Location = new System.Drawing.Point(6, 54);
+            this.ckbLainnya.Name = "ckbLainnya";
+            this.ckbLainnya.Size = new System.Drawing.Size(72, 17);
+            this.ckbLainnya.TabIndex = 33;
+            this.ckbLainnya.Text = "LAINNYA";
+            this.ckbLainnya.UseVisualStyleBackColor = true;
             // 
             // cbkBukuUji
             // 
@@ -1601,7 +1601,7 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox ckbLainnya;
         private System.Windows.Forms.CheckBox cbkBukuUji;
         private System.Windows.Forms.CheckBox ckbSTNK;
         private System.Windows.Forms.CheckBox ckbRANMOR;

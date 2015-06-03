@@ -147,17 +147,16 @@ namespace QRCodeWinForms
                 datpel.LokasiPelanggaran = txtJalan.Text;
                 datpel.PatokanLokasi = txtPatokan.Text;
                 datpel.WilayahHukum = txtWilayahHukum.Text;
-                datpel.DisitaSKRanmor = CekCheckBoxSK();
+                datpel.DisitaSKRanmor = CekCheckBoxSK().ToString();
                 datpel.DisitaSKDiterbitkanOleh = txtTerbitSK.Text;
                 datpel.DisitaSKMasaBerlaku = Convert.ToDateTime(dtpBerlakuSK.Text);
-                //datpel.DisitaBukuUji = txtBukuUji.Text;
+                datpel.DisitaBukuUji = CekCheckBoxBK();
                 datpel.DisitaBukuUjiDiterbitkanOleh = txtTerbitPemda.Text;
                 datpel.DisitaBukuUjiMasaBerlaku = Convert.ToDateTime(dtpBerlakuPemda.Text);
                 datpel.LokasiSidang = txtPengadilan.Text;
                 datpel.WaktuSidang = Convert.ToDateTime(txtWaktuSidang.Text);
                 datpel.NamaPenyidik = txtNamaPenyidik.Text;
                 datpel.PangkatPenyidik = txtPangkatPenyidik.Text;
-               // datpel.KesatuanPenyidik = txtKesatuanPenyidik.Text;
                 datpel.TempatPengambilanBarangSita = txtTempatAmbil.Text;
                 datpel.PasalPelanggaran.NomorPasal = cbxPasal.Text;
                 datpel.PasalPelanggaran.DendaMaksimal = Convert.ToDouble(txtDendaMaksimal.Text);
@@ -185,31 +184,41 @@ namespace QRCodeWinForms
                 MessageBox.Show("Penyimpanan Data Pelanggaran Gagal! " + "\n" + ex.Message);
             } 
         }
-        private string CekCheckBoxSK()
+        private int CekCheckBoxSK()
         {
-            string status = "";
+            int status = 0;
             if (ckbRANMOR.Checked)
             {
-                status = status + cbkBukuUji.Text + ",";
+                status = status + 1;
             }
             if (ckbSIM.Checked)
             {
-                status = status + ckbSIM.Text + ",";
+                status = status + 2;
             }
             if (ckbSTCK.Checked)
             {
-                status = status + ckbSTCK.Text + ",";
+                status = status + 4;
             }
             if (ckbSTNK.Checked)
             {
-                status = status + ckbSTNK.Text;
+                status = status + 6 ;
             }
             return status;
         }
 
-        //private string CekCheckBoxBK()
-        //{
-        //}
+        private string CekCheckBoxBK()
+        {
+            string status = "";
+            if (ckbLainnya.Checked)
+            {
+                status = status + ckbLainnya.Text;
+            }
+            if (cbkBukuUji.Checked)
+            {
+                status = status + cbkBukuUji.Text;
+            }
+            return status;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             ClearData(this.Controls);
@@ -248,5 +257,7 @@ namespace QRCodeWinForms
         {
 
         }
+
+        public bool cbk { get; set; }
     }
 }
