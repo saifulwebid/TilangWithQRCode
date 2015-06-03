@@ -22,13 +22,6 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="Menyimpan Data Pelanggaran ke Excel.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Menyimpan Data Pelanggaran ke Excel.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Menyimpan Data Pelanggaran ke Excel.sequencediagram</DependentUpon>
-    </Content>
     <Content Include="Sequence Diagram\Memeriksa Penduduk Existing.sequencediagram">
       <SubType>Content</SubType>
     </Content>
@@ -36,12 +29,12 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence Diagram\Memeriksa Penduduk Existing.sequencediagram</DependentUpon>
     </Content>
-    <Content Include="Sequence Diagram\MenyimpanDataPelanggaran.sequencediagram">
+    <Content Include="Sequence Diagram\Menyimpan Data SIM.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Sequence Diagram\MenyimpanDataPelanggaran.sequencediagram.layout">
+    <Content Include="Sequence Diagram\Menyimpan Data SIM.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Sequence Diagram\MenyimpanDataPelanggaran.sequencediagram</DependentUpon>
+      <DependentUpon>Sequence Diagram\Menyimpan Data SIM.sequencediagram</DependentUpon>
     </Content>
     <Content Include="UseCase.usecasediagram">
       <SubType>Content</SubType>
