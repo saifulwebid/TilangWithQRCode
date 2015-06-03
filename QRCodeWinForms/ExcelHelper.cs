@@ -721,9 +721,9 @@ namespace QRCodeWinForms
                                         LokasiPelanggaran = col13Value.ToString(),
                                         PatokanLokasi = col14Value.ToString(),
                                         WilayahHukum = col15Value.ToString(),
-                                        //16
-                                        //17
-                                        //18
+                                        DisitaSKRanmor = col16Value.ToString(),
+                                        DisitaSKDiterbitkanOleh = col17Value.ToString(),
+                                        DisitaSKMasaBerlaku = DateTime.FromOADate((double)col18Value),
                                         DisitaBukuUji = col19Value.ToString(),
                                         DisitaBukuUjiDiterbitkanOleh = col20Value.ToString(),
                                         DisitaBukuUjiMasaBerlaku = DateTime.FromOADate((double)col21Value),
@@ -740,7 +740,7 @@ namespace QRCodeWinForms
                                             DendaMaksimal = Convert.ToDouble(col30Value),
                                             IsNew = false
                                         },
-                                        //PernyataanHadirSendiri 31
+                                        //PernyataanHadirSendiri = Convert.ToBoolean(col31Value),
                                         //32
                                         //33
                                         NamaWakil = col34Value.ToString(),
