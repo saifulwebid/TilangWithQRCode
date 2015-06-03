@@ -54,6 +54,8 @@
             this.gbDataPelanggaranPelanggar = new System.Windows.Forms.GroupBox();
             this.lblJumlahPelanggaran = new System.Windows.Forms.Label();
             this.txtJumlahPelanggaran = new System.Windows.Forms.TextBox();
+            this.cbAll = new System.Windows.Forms.CheckBox();
+            this.cbPasal = new System.Windows.Forms.CheckBox();
             this.grbIdentitasPelanggar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataPelanggaranPelanggar)).BeginInit();
             this.gbDataPelanggaranPelanggar.SuspendLayout();
@@ -308,11 +310,35 @@
             this.txtJumlahPelanggaran.TabIndex = 11;
             this.txtJumlahPelanggaran.Text = "0";
             // 
+            // cbAll
+            // 
+            this.cbAll.AutoSize = true;
+            this.cbAll.Location = new System.Drawing.Point(23, 315);
+            this.cbAll.Name = "cbAll";
+            this.cbAll.Size = new System.Drawing.Size(148, 17);
+            this.cbAll.TabIndex = 15;
+            this.cbAll.Text = "Lihat Semua Pelanggaran";
+            this.cbAll.UseVisualStyleBackColor = true;
+            this.cbAll.CheckedChanged += new System.EventHandler(this.cbAll_CheckedChanged);
+            // 
+            // cbPasal
+            // 
+            this.cbPasal.AutoSize = true;
+            this.cbPasal.Location = new System.Drawing.Point(205, 315);
+            this.cbPasal.Name = "cbPasal";
+            this.cbPasal.Size = new System.Drawing.Size(186, 17);
+            this.cbPasal.TabIndex = 16;
+            this.cbPasal.Text = "Lihat Pasal yang Sudah Dilanggar";
+            this.cbPasal.UseVisualStyleBackColor = true;
+            this.cbPasal.CheckedChanged += new System.EventHandler(this.cbPasal_CheckedChanged);
+            // 
             // frmBanyakPelanggaran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(521, 524);
+            this.Controls.Add(this.cbPasal);
+            this.Controls.Add(this.cbAll);
             this.Controls.Add(this.gbDataPelanggaranPelanggar);
             this.Controls.Add(this.cmdScanSIM);
             this.Controls.Add(this.grbIdentitasPelanggar);
@@ -325,6 +351,7 @@
             this.gbDataPelanggaranPelanggar.ResumeLayout(false);
             this.gbDataPelanggaranPelanggar.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -356,5 +383,7 @@
         private System.Windows.Forms.TextBox txtNoSIM;
         private System.Windows.Forms.Label lblNamaPelanggar;
         private System.Windows.Forms.TextBox txtNamaPelanggar;
+        private System.Windows.Forms.CheckBox cbAll;
+        private System.Windows.Forms.CheckBox cbPasal;
     }
 }

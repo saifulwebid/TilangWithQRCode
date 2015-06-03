@@ -29,8 +29,9 @@ namespace QRCodeWinForms
 
         private void cbbTahun_SelectedIndexChanged(object sender, EventArgs e)
         {
-            chartStatistikPelanggaran.Series["Banyak Pelanggaran"].Points.Clear(); //hapus recent statistik
-            chartStatistikPasal.Series["Banyak Pasal Dilanggar"].Points.Clear(); //hapus recent statistik
+            /*Hapus Recent Statistik */
+            chartStatistikPelanggaran.Series["Banyak Pelanggaran"].Points.Clear();
+            chartStatistikPasal.Series["Banyak Pasal Dilanggar"].Points.Clear(); 
 
             /*Membuat Grafik*/
             foreach (var grp in dataStatistik[cbbTahun.SelectedIndex].GroupBy(i => i))
@@ -48,7 +49,6 @@ namespace QRCodeWinForms
         {
             data = ExcelHelper.GetAllPelanggaran();
             List<int> tahun = new List<int>();
-
             /* Memasukkan data tahun dan tanggal ke dalam list tahun dan tanggal dari list data pelanggaran */
             foreach (DataPelanggaran x in data)
             {
@@ -57,7 +57,7 @@ namespace QRCodeWinForms
 
             tahun = tahun.Distinct().ToList(); //membuat elemen list tahun menjadi unik       
            
-            //Memasukkan Bulan ke dalam list dataStatistik
+            //Memasukkan Bulan ke dalam list dataStatistik dan Pasal ke dataStatistikPasal
             for (int i = 0; i < tahun.Count(); i++)
             {
                 List<int> sublist = new List<int>();

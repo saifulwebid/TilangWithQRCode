@@ -45,7 +45,10 @@ namespace QRCodeWinForms
                     datapenduduk.TempatLahir = txtTempatLahir.Text;
                     datapenduduk.Alamat = txtAlamat.Text;
                     datapenduduk.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
-                    datapenduduk.JenisKelamin = cmbJenisKelamin.Text;
+                    if (cmbJenisKelamin.Text == "Pria")
+                        datapenduduk.JenisKelamin = EnumJenisKelamin.Pria;
+                    else if (cmbJenisKelamin.Text == "Wanita")
+                        datapenduduk.JenisKelamin = EnumJenisKelamin.Wanita;
                     datapenduduk.Save(datapenduduk);
                 }
 
@@ -71,8 +74,8 @@ namespace QRCodeWinForms
             {
                 MessageBox.Show("Penyimpanan Data SIM Gagal!\nData yang diisi belum lengkap");
             }
-            
-            
+
+            btnTampilkan.Enabled = true;
         }
 
         private void btnTampilkan_Click(object sender, EventArgs e)
@@ -93,7 +96,7 @@ namespace QRCodeWinForms
             dataSIM.Pemilik.TempatLahir = "";
             dataSIM.Pemilik.Alamat = "";
             dataSIM.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
-            dataSIM.Pemilik.JenisKelamin = "";
+            dataSIM.Pemilik.JenisKelamin = EnumJenisKelamin.Pria;
             dataSIM.Pemilik.NomorKTP = "";
             dataSIM.TanggalHabis = DateTime.Now;
         }
@@ -107,6 +110,14 @@ namespace QRCodeWinForms
             txtTempatLahir.Text = "";
             txtNoSIM.Text = "";
             dtpTanggalLahir.Text = (new DateTime(time.Year - 17, time.Month, time.Day)).ToLongDateString();
+            txtNama.Enabled = true;
+            txtAlamat.Enabled = true;
+            txtTempatLahir.Enabled = true;
+            dtpTanggalLahir.Enabled = true;
+            cmbPendidikan.Enabled = true;
+            cmbPekerjaan.Enabled = true;
+            cmbJenisKelamin.Enabled = true;
+            btnTampilkan.Enabled = false;
         }
 
         private void txtNoKTP_Leave(object sender, EventArgs e)

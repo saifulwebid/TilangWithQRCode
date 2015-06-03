@@ -14,7 +14,15 @@ namespace QRCodeWinForms
     {
         string qrData;
         string[] field = new string[10];
+        
         List<DataPelanggaran> data = new List<DataPelanggaran>();
+        List<SIM> dataSIM = new List<SIM>();
+        List<DataPelanggaran> dataPelanggar = new List<DataPelanggaran>();
+        List<DataPelanggaran> pelanggaranPerSIM = new List<DataPelanggaran>();
+        List<string> pasalDilanggar = new List<string>();
+        List<string> pasalPerSIM = new List<string>();
+        List<SIM> simPelanggar = new List<SIM>();
+
         public frmBanyakPelanggaran()
         {
             InitializeComponent();
@@ -67,17 +75,25 @@ namespace QRCodeWinForms
         }
 
         void TampilDataPelanggaran()
-        {
-            int count = 0;
-            List<DataPelanggaran> dataPelanggar = new List<DataPelanggaran>();
-            List<string> pasalDilanggar = new List<string>();
-            
-            /*Memindahkan Data Pelanggaran Ke list data Pelanggar berdasarkan KTP*/
-            foreach (DataPelanggaran x in data)
+        {            
+            /*Menyimpan semua sim berdasrkan ktp pelanggar */
+            foreach (SIM x in dataSIM)
             {
-                if (x.Pelanggar.Pemilik.NomorKTP == txtNoKTP.Text)
+                if (x.Pemilik.NomorKTP == txtNoKTP.Text)
                 {
-                    dataPelanggar.Add(x);
+                    simPelanggar.Add(x);
+                }
+            }
+            
+            /*Menyimpan history pelanggaran berdasrkan semua sim yang dimiliki oleh pelanggar */
+            for (int j = 0; j < simPelanggar.Count; j++)
+            {
+                foreach (DataPelanggaran x in data)
+                {
+                    if (x.Pelanggar.NomorSIM == simPelanggar[j].NomorSIM)
+                    {
+                        dataPelanggar.Add(x);
+                    }
                 }
             }
 
@@ -85,11 +101,47 @@ namespace QRCodeWinForms
             foreach (DataPelanggaran x in dataPelanggar)
             {
                 pasalDilanggar.Add(x.PasalPelanggaran.NomorPasal);
+                if (x.Pelanggar.NomorSIM == txtNoSIM.Text)
+                {
+                    pasalPerSIM.Add(x.PasalPelanggaran.NomorPasal);
+                    pelanggaranPerSIM.Add(x);
+                }
+
             }
 
+            LookPelanggaran(pelanggaranPerSIM);
+        }
+
+        void SetTablePasal()
+        {
+            dgvDataPelanggaranPelanggar.ColumnCount = 2;
+            dgvDataPelanggaranPelanggar.Columns[0].Name = "Pasal yang Dilanggar";
+            dgvDataPelanggaranPelanggar.Columns[1].Name = "Jumlah Melanggar";
+        }
+
+        void SetTablePelanggaran()
+        {
+            dgvDataPelanggaranPelanggar.ColumnCount = 5;
+            dgvDataPelanggaranPelanggar.Columns[0].Name = "Tanggal";
+            dgvDataPelanggaranPelanggar.Columns[1].Name = "Lokasi Pelanggaran   ";
+            dgvDataPelanggaranPelanggar.Columns[2].Name = "No Kendaraan";
+            dgvDataPelanggaranPelanggar.Columns[3].Name = "Pasal yang Dilanggar";
+            dgvDataPelanggaranPelanggar.Columns[4].Name = "No SIM";
+        }
+
+        private void frmBanyakPelanggaran_Load(object sender, EventArgs e)
+        {
+            data = ExcelHelper.GetAllPelanggaran();
+            dataSIM = ExcelHelper.GetAllSIM();
+        }
+
+        void LookPasal(List<string> pasal)
+        {
+            SetTablePasal();
             /*Menampilkan Banyak nya pasal yang dilanggar */
-            int i=0;
-            foreach (var x in pasalDilanggar.GroupBy(k => k))
+            dgvDataPelanggaranPelanggar.Rows.Clear();
+            int i = 0, count = 0;
+            foreach (var x in pasal.GroupBy(k => k))
             {
                 dgvDataPelanggaranPelanggar.Rows.Add();
                 dgvDataPelanggaranPelanggar.Rows[i].Cells[0].Value = x.Key;
@@ -101,17 +153,75 @@ namespace QRCodeWinForms
             txtJumlahPelanggaran.Text = count.ToString();
         }
 
-        void SetTable()
+        void LookPelanggaran(List<DataPelanggaran> Pelanggaran)
         {
-            dgvDataPelanggaranPelanggar.ColumnCount = 2;
-            dgvDataPelanggaranPelanggar.Columns[0].Name = "Pasal yang Dilanggar";
-            dgvDataPelanggaranPelanggar.Columns[1].Name = "Jumlah Melanggar";
+            SetTablePelanggaran();
+            dgvDataPelanggaranPelanggar.Rows.Clear();
+            int i = 0, count = 0;
+            foreach(DataPelanggaran x in Pelanggaran)
+            {
+                dgvDataPelanggaranPelanggar.Rows.Add();
+                dgvDataPelanggaranPelanggar.Rows[i].Cells[0].Value = x.WaktuPelanggaran.ToLongDateString();
+                dgvDataPelanggaranPelanggar.Rows[i].Cells[1].Value = x.LokasiPelanggaran;
+                dgvDataPelanggaranPelanggar.Rows[i].Cells[2].Value = x.NomorKendaraan;
+                dgvDataPelanggaranPelanggar.Rows[i].Cells[3].Value = x.PasalPelanggaran.NomorPasal;
+                i++;
+            }
+
+            txtJumlahPelanggaran.Text = i.ToString();
         }
 
-        private void frmBanyakPelanggaran_Load(object sender, EventArgs e)
+        private void cbAll_CheckedChanged(object sender, EventArgs e)
         {
-            data = ExcelHelper.GetAllPelanggaran();
-            SetTable();
+            if (cbAll.Checked)
+            {
+                if (cbPasal.Checked)
+                {
+                    LookPasal(pasalDilanggar);
+                }
+                else
+                {
+                    LookPelanggaran(dataPelanggar);
+                }
+            }
+            else
+            {
+                if (cbPasal.Checked)
+                {
+                    LookPasal(pasalPerSIM);
+                }
+                else
+                {
+                    LookPelanggaran(pelanggaranPerSIM);
+                }
+            }
         }
+
+        private void cbPasal_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbPasal.Checked)
+            {
+                if (cbAll.Checked)
+                {
+                    LookPasal(pasalDilanggar);
+                }
+                else
+                {
+                    LookPasal(pasalPerSIM);
+                }
+            }
+            else
+            {
+                if (cbAll.Checked)
+                {
+                    LookPelanggaran(dataPelanggar);
+                }
+                else
+                {
+                    LookPelanggaran(pelanggaranPerSIM);
+                }
+            }
+        }
+
     }
 }
