@@ -63,6 +63,7 @@ namespace QRCodeWinForms
                     dataSIM.Save(dataSIM);
                     MessageBox.Show("Data Berhasil Disimpan");
                     SetFieldToDefault();
+                    btnTampilkan.Enabled = true;
                 }
                 else
                 {
@@ -74,8 +75,6 @@ namespace QRCodeWinForms
             {
                 MessageBox.Show("Penyimpanan Data SIM Gagal!\nData yang diisi belum lengkap");
             }
-
-            btnTampilkan.Enabled = true;
         }
 
         private void btnTampilkan_Click(object sender, EventArgs e)
@@ -83,6 +82,7 @@ namespace QRCodeWinForms
             
             frmSIMViewer f2 = new frmSIMViewer(dataSIM);
             f2.ShowDialog();
+            btnTampilkan.Enabled = false;
         }
 
         private void ClearObject()

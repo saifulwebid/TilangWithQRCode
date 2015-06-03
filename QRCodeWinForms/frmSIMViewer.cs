@@ -64,25 +64,9 @@ namespace QRCodeWinForms
             QRCodeGenerator.QRCode qrCode = qrGenerator.CreateQrCode(input, QRCodeGenerator.ECCLevel.M); //ECC Level merupakan error correction
             pictureBox2.BackgroundImage = qrCode.GetGraphic(10); //10 adalah besar pixel dari qr code
         }
-        /*
-        Bitmap memoryImage;
-        private void PrintScreenForm() // method untuk capture gambar form 2
-        {
-            Graphics myGraphics = this.CreateGraphics();
-            Size s = this.Size;
-            memoryImage = new Bitmap(s.Width-20, s.Height-81, myGraphics);
-            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
-            memoryGraphics.CopyFromScreen(Location.X+9, Location.Y+31, 0, 0, s);
-        }
-
-        private void pdSIM_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
-            e.Graphics.DrawImage(memoryImage,100,100); //gambar grpahic memoryImage (hasil Capture Form) ke pdSIM
-        }
-        */
         private void btnCetakSIM_Click(object sender, EventArgs e)
         {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"\\View.jpg";
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"\\SIM Storage\\"+tampilSIM.NomorSIM+tampilSIM.Pemilik.Nama+".jpg";
             PrintDialog Print = new PrintDialog();
             System.Drawing.Bitmap image = new System.Drawing.Bitmap(panelSIM.Width, panelSIM.Height);
             panelSIM.DrawToBitmap(image, panelSIM.ClientRectangle);
@@ -92,7 +76,7 @@ namespace QRCodeWinForms
             p.StartInfo.FileName = path;//pass in or whatever you need
             p.StartInfo.Verb = "Print";
             p.Start();
-            /*Modul didapat dari kelompok 2 Project 1*/
+            /*Modul didapat dari kelompok 2 Project-1*/
         }
     }
 }
