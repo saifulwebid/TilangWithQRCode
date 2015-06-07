@@ -177,6 +177,8 @@ namespace QRCodeWinForms
 
                 datpel.Save(datpel);
                 MessageBox.Show("Penyimpanan Data Pelanggaran Berhasil!");
+                ClearData(this.Controls);
+                TampilSuratTilang();
 
             }
             catch (Exception ex)
@@ -190,7 +192,6 @@ namespace QRCodeWinForms
             if (ckbRANMOR.Checked)
             {
                 coba = coba+ 1;
-
             }
             if (ckbSIM.Checked)
             {
@@ -219,10 +220,6 @@ namespace QRCodeWinForms
                 status = status + 2;
             }
             return status;
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ClearData(this.Controls);
         }
 
         private void ClearData(Control.ControlCollection cc)
@@ -254,7 +251,7 @@ namespace QRCodeWinForms
             txtDendaMaksimal.Text = Convert.ToString(item.DendaMaksimal);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void TampilSuratTilang()
         {
             frmSuratTilangViewer frmsurat = new frmSuratTilangViewer(datpel);
 
@@ -266,9 +263,8 @@ namespace QRCodeWinForms
             frmsurat.ckbLainnya.Checked = ckbLainnya.Checked;
             frmsurat.ckbBukuUji.Checked = cbkBukuUji.Checked;
 
-            frmsurat.ShowDialog();        
+            frmsurat.ShowDialog(); 
         }
-
         private void groupBox10_Enter(object sender, EventArgs e)
         {
 
