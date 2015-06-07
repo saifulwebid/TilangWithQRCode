@@ -44,14 +44,12 @@
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.lblBerlakuBukuUji = new System.Windows.Forms.Label();
             this.lblTerbitBukuUji = new System.Windows.Forms.Label();
-            this.lblBukuUjiSita = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.lblMasaBerlakuSK = new System.Windows.Forms.Label();
             this.lblTerbitSKSita = new System.Windows.Forms.Label();
-            this.lblSKSita = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -166,6 +164,12 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.btnPrintSurat = new System.Windows.Forms.Button();
+            this.ckbSIM = new System.Windows.Forms.CheckBox();
+            this.ckbRANMOR = new System.Windows.Forms.CheckBox();
+            this.ckbSTCK = new System.Windows.Forms.CheckBox();
+            this.ckbSTNK = new System.Windows.Forms.CheckBox();
+            this.ckbBukuUji = new System.Windows.Forms.CheckBox();
+            this.ckbLainnya = new System.Windows.Forms.CheckBox();
             this.pnlSuratTilang.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -193,7 +197,7 @@
             this.pnlSuratTilang.Controls.Add(this.groupBox6);
             this.pnlSuratTilang.Location = new System.Drawing.Point(2, -1);
             this.pnlSuratTilang.Name = "pnlSuratTilang";
-            this.pnlSuratTilang.Size = new System.Drawing.Size(1081, 788);
+            this.pnlSuratTilang.Size = new System.Drawing.Size(1081, 820);
             this.pnlSuratTilang.TabIndex = 0;
             // 
             // groupBox8
@@ -210,7 +214,7 @@
             this.groupBox8.Controls.Add(this.label60);
             this.groupBox8.Location = new System.Drawing.Point(659, 618);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(420, 166);
+            this.groupBox8.Size = new System.Drawing.Size(420, 193);
             this.groupBox8.TabIndex = 20;
             this.groupBox8.TabStop = false;
             // 
@@ -320,28 +324,29 @@
             this.groupBox7.Controls.Add(this.label29);
             this.groupBox7.Location = new System.Drawing.Point(8, 407);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(645, 226);
+            this.groupBox7.Size = new System.Drawing.Size(645, 254);
             this.groupBox7.TabIndex = 19;
             this.groupBox7.TabStop = false;
             // 
             // groupBox10
             // 
+            this.groupBox10.Controls.Add(this.ckbLainnya);
+            this.groupBox10.Controls.Add(this.ckbBukuUji);
             this.groupBox10.Controls.Add(this.lblBerlakuBukuUji);
             this.groupBox10.Controls.Add(this.lblTerbitBukuUji);
-            this.groupBox10.Controls.Add(this.lblBukuUjiSita);
             this.groupBox10.Controls.Add(this.label75);
             this.groupBox10.Controls.Add(this.label41);
             this.groupBox10.Controls.Add(this.label42);
             this.groupBox10.Location = new System.Drawing.Point(321, 126);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(318, 94);
+            this.groupBox10.Size = new System.Drawing.Size(318, 122);
             this.groupBox10.TabIndex = 33;
             this.groupBox10.TabStop = false;
             // 
             // lblBerlakuBukuUji
             // 
             this.lblBerlakuBukuUji.AutoSize = true;
-            this.lblBerlakuBukuUji.Location = new System.Drawing.Point(91, 72);
+            this.lblBerlakuBukuUji.Location = new System.Drawing.Point(91, 101);
             this.lblBerlakuBukuUji.Name = "lblBerlakuBukuUji";
             this.lblBerlakuBukuUji.Size = new System.Drawing.Size(47, 13);
             this.lblBerlakuBukuUji.TabIndex = 37;
@@ -356,15 +361,6 @@
             this.lblTerbitBukuUji.TabIndex = 36;
             this.lblTerbitBukuUji.Text = "label100";
             // 
-            // lblBukuUjiSita
-            // 
-            this.lblBukuUjiSita.AutoSize = true;
-            this.lblBukuUjiSita.Location = new System.Drawing.Point(53, 29);
-            this.lblBukuUjiSita.Name = "lblBukuUjiSita";
-            this.lblBukuUjiSita.Size = new System.Drawing.Size(41, 13);
-            this.lblBukuUjiSita.TabIndex = 35;
-            this.lblBukuUjiSita.Text = "label99";
-            // 
             // label75
             // 
             this.label75.AutoSize = true;
@@ -377,7 +373,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(91, 56);
+            this.label41.Location = new System.Drawing.Point(91, 85);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(113, 13);
             this.label41.TabIndex = 11;
@@ -395,22 +391,25 @@
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.Color.White;
+            this.groupBox9.Controls.Add(this.ckbSTNK);
+            this.groupBox9.Controls.Add(this.ckbSTCK);
+            this.groupBox9.Controls.Add(this.ckbRANMOR);
+            this.groupBox9.Controls.Add(this.ckbSIM);
             this.groupBox9.Controls.Add(this.lblMasaBerlakuSK);
             this.groupBox9.Controls.Add(this.lblTerbitSKSita);
-            this.groupBox9.Controls.Add(this.lblSKSita);
             this.groupBox9.Controls.Add(this.label74);
             this.groupBox9.Controls.Add(this.label40);
             this.groupBox9.Controls.Add(this.label39);
             this.groupBox9.Location = new System.Drawing.Point(6, 126);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(312, 94);
+            this.groupBox9.Size = new System.Drawing.Size(312, 122);
             this.groupBox9.TabIndex = 32;
             this.groupBox9.TabStop = false;
             // 
             // lblMasaBerlakuSK
             // 
             this.lblMasaBerlakuSK.AutoSize = true;
-            this.lblMasaBerlakuSK.Location = new System.Drawing.Point(112, 72);
+            this.lblMasaBerlakuSK.Location = new System.Drawing.Point(112, 101);
             this.lblMasaBerlakuSK.Name = "lblMasaBerlakuSK";
             this.lblMasaBerlakuSK.Size = new System.Drawing.Size(41, 13);
             this.lblMasaBerlakuSK.TabIndex = 34;
@@ -425,15 +424,6 @@
             this.lblTerbitSKSita.TabIndex = 33;
             this.lblTerbitSKSita.Text = "label97";
             // 
-            // lblSKSita
-            // 
-            this.lblSKSita.AutoSize = true;
-            this.lblSKSita.Location = new System.Drawing.Point(66, 30);
-            this.lblSKSita.Name = "lblSKSita";
-            this.lblSKSita.Size = new System.Drawing.Size(41, 13);
-            this.lblSKSita.TabIndex = 32;
-            this.lblSKSita.Text = "label96";
-            // 
             // label74
             // 
             this.label74.AutoSize = true;
@@ -446,7 +436,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(112, 56);
+            this.label40.Location = new System.Drawing.Point(112, 85);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(90, 13);
             this.label40.TabIndex = 7;
@@ -730,16 +720,16 @@
             this.groupBox11.Controls.Add(this.label45);
             this.groupBox11.Controls.Add(this.label44);
             this.groupBox11.Controls.Add(this.label43);
-            this.groupBox11.Location = new System.Drawing.Point(8, 634);
+            this.groupBox11.Location = new System.Drawing.Point(8, 664);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(645, 148);
+            this.groupBox11.Size = new System.Drawing.Size(645, 147);
             this.groupBox11.TabIndex = 22;
             this.groupBox11.TabStop = false;
             // 
             // lblTempatAmbilBarangSita
             // 
             this.lblTempatAmbilBarangSita.AutoSize = true;
-            this.lblTempatAmbilBarangSita.Location = new System.Drawing.Point(419, 121);
+            this.lblTempatAmbilBarangSita.Location = new System.Drawing.Point(416, 116);
             this.lblTempatAmbilBarangSita.Name = "lblTempatAmbilBarangSita";
             this.lblTempatAmbilBarangSita.Size = new System.Drawing.Size(47, 13);
             this.lblTempatAmbilBarangSita.TabIndex = 41;
@@ -1568,6 +1558,79 @@
             this.btnPrintSurat.UseVisualStyleBackColor = true;
             this.btnPrintSurat.Click += new System.EventHandler(this.btnPrintSurat_Click);
             // 
+            // ckbSIM
+            // 
+            this.ckbSIM.AutoSize = true;
+            this.ckbSIM.Enabled = false;
+            this.ckbSIM.Location = new System.Drawing.Point(13, 33);
+            this.ckbSIM.Name = "ckbSIM";
+            this.ckbSIM.Size = new System.Drawing.Size(45, 17);
+            this.ckbSIM.TabIndex = 35;
+            this.ckbSIM.TabStop = false;
+            this.ckbSIM.Text = "SIM";
+            this.ckbSIM.UseVisualStyleBackColor = true;
+            this.ckbSIM.CheckedChanged += new System.EventHandler(this.ckbSIM_CheckedChanged);
+            // 
+            // ckbRANMOR
+            // 
+            this.ckbRANMOR.AutoSize = true;
+            this.ckbRANMOR.Enabled = false;
+            this.ckbRANMOR.Location = new System.Drawing.Point(111, 33);
+            this.ckbRANMOR.Name = "ckbRANMOR";
+            this.ckbRANMOR.Size = new System.Drawing.Size(74, 17);
+            this.ckbRANMOR.TabIndex = 36;
+            this.ckbRANMOR.TabStop = false;
+            this.ckbRANMOR.Text = "RANMOR";
+            this.ckbRANMOR.UseVisualStyleBackColor = true;
+            // 
+            // ckbSTCK
+            // 
+            this.ckbSTCK.AutoSize = true;
+            this.ckbSTCK.Enabled = false;
+            this.ckbSTCK.Location = new System.Drawing.Point(13, 57);
+            this.ckbSTCK.Name = "ckbSTCK";
+            this.ckbSTCK.Size = new System.Drawing.Size(54, 17);
+            this.ckbSTCK.TabIndex = 37;
+            this.ckbSTCK.TabStop = false;
+            this.ckbSTCK.Text = "STCK";
+            this.ckbSTCK.UseVisualStyleBackColor = true;
+            // 
+            // ckbSTNK
+            // 
+            this.ckbSTNK.AutoSize = true;
+            this.ckbSTNK.Enabled = false;
+            this.ckbSTNK.Location = new System.Drawing.Point(111, 57);
+            this.ckbSTNK.Name = "ckbSTNK";
+            this.ckbSTNK.Size = new System.Drawing.Size(55, 17);
+            this.ckbSTNK.TabIndex = 38;
+            this.ckbSTNK.TabStop = false;
+            this.ckbSTNK.Text = "STNK";
+            this.ckbSTNK.UseVisualStyleBackColor = true;
+            // 
+            // ckbBukuUji
+            // 
+            this.ckbBukuUji.AutoSize = true;
+            this.ckbBukuUji.Enabled = false;
+            this.ckbBukuUji.Location = new System.Drawing.Point(15, 33);
+            this.ckbBukuUji.Name = "ckbBukuUji";
+            this.ckbBukuUji.Size = new System.Drawing.Size(97, 17);
+            this.ckbBukuUji.TabIndex = 38;
+            this.ckbBukuUji.TabStop = false;
+            this.ckbBukuUji.Text = "BUKU UJI NO.";
+            this.ckbBukuUji.UseVisualStyleBackColor = true;
+            // 
+            // ckbLainnya
+            // 
+            this.ckbLainnya.AutoSize = true;
+            this.ckbLainnya.Enabled = false;
+            this.ckbLainnya.Location = new System.Drawing.Point(15, 57);
+            this.ckbLainnya.Name = "ckbLainnya";
+            this.ckbLainnya.Size = new System.Drawing.Size(72, 17);
+            this.ckbLainnya.TabIndex = 39;
+            this.ckbLainnya.TabStop = false;
+            this.ckbLainnya.Text = "LAINNYA";
+            this.ckbLainnya.UseVisualStyleBackColor = true;
+            // 
             // frmSuratTilangViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1576,10 +1639,9 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1184, 361);
+            this.ClientSize = new System.Drawing.Size(1184, 462);
             this.Controls.Add(this.btnPrintSurat);
             this.Controls.Add(this.pnlSuratTilang);
-            this.MaximumSize = new System.Drawing.Size(1200, 400);
             this.Name = "frmSuratTilangViewer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSuratTilang";
@@ -1626,14 +1688,12 @@
         private System.Windows.Forms.GroupBox groupBox10;
         public System.Windows.Forms.Label lblBerlakuBukuUji;
         public System.Windows.Forms.Label lblTerbitBukuUji;
-        public System.Windows.Forms.Label lblBukuUjiSita;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.GroupBox groupBox9;
         public System.Windows.Forms.Label lblMasaBerlakuSK;
         public System.Windows.Forms.Label lblTerbitSKSita;
-        public System.Windows.Forms.Label lblSKSita;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label39;
@@ -1750,6 +1810,12 @@
         private System.Windows.Forms.Button btnPrintSurat;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
+        public System.Windows.Forms.CheckBox ckbLainnya;
+        public System.Windows.Forms.CheckBox ckbBukuUji;
+        public System.Windows.Forms.CheckBox ckbSTNK;
+        public System.Windows.Forms.CheckBox ckbSTCK;
+        public System.Windows.Forms.CheckBox ckbRANMOR;
+        public System.Windows.Forms.CheckBox ckbSIM;
 
 
 

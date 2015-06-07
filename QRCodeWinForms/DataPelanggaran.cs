@@ -38,7 +38,6 @@ namespace QRCodeWinForms
         private string _patokanLokasi;
         private string _namaPenyidik;
         private string _pangkatPenyidik;
-        private string _kesatuanPenyidik;
         private string _tempatPengambilan;
         private DateTime _disitaBukuUjiMasaBerlaku;
         private string _bukuUjiRanmor;

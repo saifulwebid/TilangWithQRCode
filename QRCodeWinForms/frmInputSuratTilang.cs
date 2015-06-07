@@ -150,7 +150,7 @@ namespace QRCodeWinForms
                 datpel.DisitaSKRanmor = CekCheckBoxSK().ToString();
                 datpel.DisitaSKDiterbitkanOleh = txtTerbitSK.Text;
                 datpel.DisitaSKMasaBerlaku = Convert.ToDateTime(dtpBerlakuSK.Text);
-                datpel.DisitaBukuUji = CekCheckBoxBK();
+                datpel.DisitaBukuUji = CekCheckBoxBK().ToString();
                 datpel.DisitaBukuUjiDiterbitkanOleh = txtTerbitPemda.Text;
                 datpel.DisitaBukuUjiMasaBerlaku = Convert.ToDateTime(dtpBerlakuPemda.Text);
                 datpel.LokasiSidang = txtPengadilan.Text;
@@ -186,36 +186,37 @@ namespace QRCodeWinForms
         }
         private int CekCheckBoxSK()
         {
-            int status = 0;
+            int coba=0;
             if (ckbRANMOR.Checked)
             {
-                status = status + 1;
+                coba = coba+ 1;
+
             }
             if (ckbSIM.Checked)
             {
-                status = status + 2;
+                coba = coba + 2;
             }
             if (ckbSTCK.Checked)
             {
-                status = status + 4;
+                coba = coba + 4;
             }
             if (ckbSTNK.Checked)
             {
-                status = status + 6 ;
+                coba = coba + 8;
             }
-            return status;
+            return coba;
         }
 
-        private string CekCheckBoxBK()
+        private int CekCheckBoxBK()
         {
-            string status = "";
+            int status = 0;
             if (ckbLainnya.Checked)
             {
-                status = status + ckbLainnya.Text;
+                status = status + 1;
             }
             if (cbkBukuUji.Checked)
             {
-                status = status + cbkBukuUji.Text;
+                status = status + 2;
             }
             return status;
         }
@@ -229,8 +230,14 @@ namespace QRCodeWinForms
             foreach (Control ctrl in cc)
             {
                 TextBox tb = ctrl as TextBox;
+                CheckBox cb = ctrl as CheckBox;
+                RadioButton rb = ctrl as RadioButton;
                 if (tb != null)
                     tb.Text = "";
+                if (cb != null)
+                    cb.Checked = false;
+                if (rb != null)
+                    rb.Checked = false;
                 else
                     ClearData(ctrl.Controls);
             }
@@ -250,6 +257,15 @@ namespace QRCodeWinForms
         private void button2_Click(object sender, EventArgs e)
         {
             frmSuratTilangViewer frmsurat = new frmSuratTilangViewer(datpel);
+
+            //kondisi supaya checkbox form viewer mengikuti checkbox form input
+            frmsurat.ckbSTNK.Checked = ckbSTNK.Checked;
+            frmsurat.ckbSTCK.Checked = ckbSTCK.Checked;
+            frmsurat.ckbSIM.Checked = ckbSIM.Checked;
+            frmsurat.ckbRANMOR.Checked = ckbRANMOR.Checked;
+            frmsurat.ckbLainnya.Checked = ckbLainnya.Checked;
+            frmsurat.ckbBukuUji.Checked = cbkBukuUji.Checked;
+
             frmsurat.ShowDialog();        
         }
 
@@ -257,7 +273,5 @@ namespace QRCodeWinForms
         {
 
         }
-
-        public bool cbk { get; set; }
     }
 }

@@ -75,12 +75,18 @@
             this.txtPengadilan = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.ckbLainnya = new System.Windows.Forms.CheckBox();
+            this.cbkBukuUji = new System.Windows.Forms.CheckBox();
             this.label75 = new System.Windows.Forms.Label();
             this.dtpBerlakuPemda = new System.Windows.Forms.DateTimePicker();
             this.label41 = new System.Windows.Forms.Label();
             this.txtTerbitPemda = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.ckbSTNK = new System.Windows.Forms.CheckBox();
+            this.ckbRANMOR = new System.Windows.Forms.CheckBox();
+            this.ckbSTCK = new System.Windows.Forms.CheckBox();
+            this.ckbSIM = new System.Windows.Forms.CheckBox();
             this.label74 = new System.Windows.Forms.Label();
             this.dtpBerlakuSK = new System.Windows.Forms.DateTimePicker();
             this.label40 = new System.Windows.Forms.Label();
@@ -137,7 +143,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnSimpanData = new System.Windows.Forms.Button();
             this.btnClearForm = new System.Windows.Forms.Button();
-            this.btnPrintSuratTilang = new System.Windows.Forms.Button();
+            this.btnTampilSuratTilang = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtpJamLanggar = new System.Windows.Forms.DateTimePicker();
             this.dtpWaktuLanggar = new System.Windows.Forms.DateTimePicker();
@@ -149,12 +155,6 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.ckbSIM = new System.Windows.Forms.CheckBox();
-            this.ckbSTCK = new System.Windows.Forms.CheckBox();
-            this.ckbSTNK = new System.Windows.Forms.CheckBox();
-            this.ckbRANMOR = new System.Windows.Forms.CheckBox();
-            this.ckbLainnya = new System.Windows.Forms.CheckBox();
-            this.cbkBukuUji = new System.Windows.Forms.CheckBox();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -183,7 +183,7 @@
             this.groupBox8.Location = new System.Drawing.Point(11, 1077);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(636, 205);
-            this.groupBox8.TabIndex = 97;
+            this.groupBox8.TabIndex = 99;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Pernyataan Terdakwa";
             // 
@@ -200,7 +200,7 @@
             this.txtAlamatWali.Location = new System.Drawing.Point(132, 182);
             this.txtAlamatWali.Name = "txtAlamatWali";
             this.txtAlamatWali.Size = new System.Drawing.Size(217, 20);
-            this.txtAlamatWali.TabIndex = 51;
+            this.txtAlamatWali.TabIndex = 25;
             // 
             // label66
             // 
@@ -217,7 +217,7 @@
             this.txtUmurWali.Location = new System.Drawing.Point(132, 155);
             this.txtUmurWali.Name = "txtUmurWali";
             this.txtUmurWali.Size = new System.Drawing.Size(217, 20);
-            this.txtUmurWali.TabIndex = 50;
+            this.txtUmurWali.TabIndex = 24;
             // 
             // txtNamaWali
             // 
@@ -225,7 +225,7 @@
             this.txtNamaWali.Location = new System.Drawing.Point(132, 128);
             this.txtNamaWali.Name = "txtNamaWali";
             this.txtNamaWali.Size = new System.Drawing.Size(217, 20);
-            this.txtNamaWali.TabIndex = 48;
+            this.txtNamaWali.TabIndex = 23;
             // 
             // rbtPerwakilan
             // 
@@ -308,14 +308,14 @@
             this.groupBox7.Location = new System.Drawing.Point(11, 879);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(636, 192);
-            this.groupBox7.TabIndex = 96;
+            this.groupBox7.TabIndex = 98;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Ruang bagi Terdakwa";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(333, 116);
+            this.label6.Location = new System.Drawing.Point(324, 116);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(22, 13);
             this.label6.TabIndex = 64;
@@ -346,7 +346,7 @@
             this.txtBankSisaDenda.Location = new System.Drawing.Point(63, 162);
             this.txtBankSisaDenda.Name = "txtBankSisaDenda";
             this.txtBankSisaDenda.Size = new System.Drawing.Size(100, 20);
-            this.txtBankSisaDenda.TabIndex = 61;
+            this.txtBankSisaDenda.TabIndex = 23;
             // 
             // label64
             // 
@@ -391,7 +391,7 @@
             this.txtDendaMaksimal.Location = new System.Drawing.Point(197, 61);
             this.txtDendaMaksimal.Name = "txtDendaMaksimal";
             this.txtDendaMaksimal.ReadOnly = true;
-            this.txtDendaMaksimal.Size = new System.Drawing.Size(119, 20);
+            this.txtDendaMaksimal.Size = new System.Drawing.Size(122, 20);
             this.txtDendaMaksimal.TabIndex = 56;
             this.txtDendaMaksimal.TabStop = false;
             this.txtDendaMaksimal.TextChanged += new System.EventHandler(this.txtDendaMaksimal_TextChanged);
@@ -401,16 +401,16 @@
             this.txtAngkaPinalti.BackColor = System.Drawing.SystemColors.Control;
             this.txtAngkaPinalti.Location = new System.Drawing.Point(212, 112);
             this.txtAngkaPinalti.Name = "txtAngkaPinalti";
-            this.txtAngkaPinalti.Size = new System.Drawing.Size(100, 20);
-            this.txtAngkaPinalti.TabIndex = 58;
+            this.txtAngkaPinalti.Size = new System.Drawing.Size(107, 20);
+            this.txtAngkaPinalti.TabIndex = 22;
             // 
             // txtBankSetor
             // 
             this.txtBankSetor.BackColor = System.Drawing.SystemColors.Control;
             this.txtBankSetor.Location = new System.Drawing.Point(212, 90);
             this.txtBankSetor.Name = "txtBankSetor";
-            this.txtBankSetor.Size = new System.Drawing.Size(100, 20);
-            this.txtBankSetor.TabIndex = 57;
+            this.txtBankSetor.Size = new System.Drawing.Size(107, 20);
+            this.txtBankSetor.TabIndex = 21;
             // 
             // label53
             // 
@@ -485,7 +485,7 @@
             this.groupBox6.Location = new System.Drawing.Point(11, 721);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(636, 152);
-            this.groupBox6.TabIndex = 95;
+            this.groupBox6.TabIndex = 97;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Penyidik";
             // 
@@ -504,6 +504,7 @@
             this.dtpJamSidang.Name = "dtpJamSidang";
             this.dtpJamSidang.Size = new System.Drawing.Size(90, 20);
             this.dtpJamSidang.TabIndex = 40;
+            this.dtpJamSidang.TabStop = false;
             // 
             // txtTempatAmbil
             // 
@@ -511,7 +512,7 @@
             this.txtTempatAmbil.Location = new System.Drawing.Point(409, 121);
             this.txtTempatAmbil.Name = "txtTempatAmbil";
             this.txtTempatAmbil.Size = new System.Drawing.Size(181, 20);
-            this.txtTempatAmbil.TabIndex = 44;
+            this.txtTempatAmbil.TabIndex = 20;
             // 
             // txtKesatuanPenyidik
             // 
@@ -519,7 +520,7 @@
             this.txtKesatuanPenyidik.Location = new System.Drawing.Point(98, 127);
             this.txtKesatuanPenyidik.Name = "txtKesatuanPenyidik";
             this.txtKesatuanPenyidik.Size = new System.Drawing.Size(109, 20);
-            this.txtKesatuanPenyidik.TabIndex = 43;
+            this.txtKesatuanPenyidik.TabIndex = 19;
             // 
             // txtPangkatPenyidik
             // 
@@ -527,7 +528,7 @@
             this.txtPangkatPenyidik.Location = new System.Drawing.Point(98, 105);
             this.txtPangkatPenyidik.Name = "txtPangkatPenyidik";
             this.txtPangkatPenyidik.Size = new System.Drawing.Size(109, 20);
-            this.txtPangkatPenyidik.TabIndex = 42;
+            this.txtPangkatPenyidik.TabIndex = 18;
             // 
             // txtNamaPenyidik
             // 
@@ -535,7 +536,7 @@
             this.txtNamaPenyidik.Location = new System.Drawing.Point(98, 83);
             this.txtNamaPenyidik.Name = "txtNamaPenyidik";
             this.txtNamaPenyidik.Size = new System.Drawing.Size(109, 20);
-            this.txtNamaPenyidik.TabIndex = 41;
+            this.txtNamaPenyidik.TabIndex = 17;
             // 
             // label72
             // 
@@ -588,6 +589,7 @@
             this.txtWaktuSidang.Name = "txtWaktuSidang";
             this.txtWaktuSidang.Size = new System.Drawing.Size(200, 20);
             this.txtWaktuSidang.TabIndex = 39;
+            this.txtWaktuSidang.TabStop = false;
             // 
             // label45
             // 
@@ -604,7 +606,7 @@
             this.txtPengadilan.Location = new System.Drawing.Point(10, 32);
             this.txtPengadilan.Name = "txtPengadilan";
             this.txtPengadilan.Size = new System.Drawing.Size(500, 20);
-            this.txtPengadilan.TabIndex = 38;
+            this.txtPengadilan.TabIndex = 16;
             // 
             // groupBox5
             // 
@@ -629,9 +631,31 @@
             this.groupBox10.Location = new System.Drawing.Point(324, 19);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(305, 121);
-            this.groupBox10.TabIndex = 14;
+            this.groupBox10.TabIndex = 96;
             this.groupBox10.TabStop = false;
             this.groupBox10.Enter += new System.EventHandler(this.groupBox10_Enter);
+            // 
+            // ckbLainnya
+            // 
+            this.ckbLainnya.AutoSize = true;
+            this.ckbLainnya.Location = new System.Drawing.Point(6, 54);
+            this.ckbLainnya.Name = "ckbLainnya";
+            this.ckbLainnya.Size = new System.Drawing.Size(72, 17);
+            this.ckbLainnya.TabIndex = 33;
+            this.ckbLainnya.TabStop = false;
+            this.ckbLainnya.Text = "LAINNYA";
+            this.ckbLainnya.UseVisualStyleBackColor = true;
+            // 
+            // cbkBukuUji
+            // 
+            this.cbkBukuUji.AutoSize = true;
+            this.cbkBukuUji.Location = new System.Drawing.Point(6, 31);
+            this.cbkBukuUji.Name = "cbkBukuUji";
+            this.cbkBukuUji.Size = new System.Drawing.Size(97, 17);
+            this.cbkBukuUji.TabIndex = 32;
+            this.cbkBukuUji.TabStop = false;
+            this.cbkBukuUji.Text = "BUKU UJI NO.";
+            this.cbkBukuUji.UseVisualStyleBackColor = true;
             // 
             // label75
             // 
@@ -648,6 +672,7 @@
             this.dtpBerlakuPemda.Name = "dtpBerlakuPemda";
             this.dtpBerlakuPemda.Size = new System.Drawing.Size(186, 20);
             this.dtpBerlakuPemda.TabIndex = 23;
+            this.dtpBerlakuPemda.TabStop = false;
             // 
             // label41
             // 
@@ -664,7 +689,7 @@
             this.txtTerbitPemda.Location = new System.Drawing.Point(149, 44);
             this.txtTerbitPemda.Name = "txtTerbitPemda";
             this.txtTerbitPemda.Size = new System.Drawing.Size(140, 20);
-            this.txtTerbitPemda.TabIndex = 22;
+            this.txtTerbitPemda.TabIndex = 15;
             // 
             // label42
             // 
@@ -690,8 +715,52 @@
             this.groupBox9.Location = new System.Drawing.Point(6, 17);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(309, 121);
-            this.groupBox9.TabIndex = 13;
+            this.groupBox9.TabIndex = 95;
             this.groupBox9.TabStop = false;
+            // 
+            // ckbSTNK
+            // 
+            this.ckbSTNK.AutoSize = true;
+            this.ckbSTNK.Location = new System.Drawing.Point(103, 54);
+            this.ckbSTNK.Name = "ckbSTNK";
+            this.ckbSTNK.Size = new System.Drawing.Size(55, 17);
+            this.ckbSTNK.TabIndex = 31;
+            this.ckbSTNK.TabStop = false;
+            this.ckbSTNK.Text = "STNK";
+            this.ckbSTNK.UseVisualStyleBackColor = true;
+            // 
+            // ckbRANMOR
+            // 
+            this.ckbRANMOR.AutoSize = true;
+            this.ckbRANMOR.Location = new System.Drawing.Point(103, 31);
+            this.ckbRANMOR.Name = "ckbRANMOR";
+            this.ckbRANMOR.Size = new System.Drawing.Size(74, 17);
+            this.ckbRANMOR.TabIndex = 30;
+            this.ckbRANMOR.TabStop = false;
+            this.ckbRANMOR.Text = "RANMOR";
+            this.ckbRANMOR.UseVisualStyleBackColor = true;
+            // 
+            // ckbSTCK
+            // 
+            this.ckbSTCK.AutoSize = true;
+            this.ckbSTCK.Location = new System.Drawing.Point(15, 54);
+            this.ckbSTCK.Name = "ckbSTCK";
+            this.ckbSTCK.Size = new System.Drawing.Size(54, 17);
+            this.ckbSTCK.TabIndex = 29;
+            this.ckbSTCK.TabStop = false;
+            this.ckbSTCK.Text = "STCK";
+            this.ckbSTCK.UseVisualStyleBackColor = true;
+            // 
+            // ckbSIM
+            // 
+            this.ckbSIM.AutoSize = true;
+            this.ckbSIM.Location = new System.Drawing.Point(15, 31);
+            this.ckbSIM.Name = "ckbSIM";
+            this.ckbSIM.Size = new System.Drawing.Size(45, 17);
+            this.ckbSIM.TabIndex = 28;
+            this.ckbSIM.TabStop = false;
+            this.ckbSIM.Text = "SIM";
+            this.ckbSIM.UseVisualStyleBackColor = true;
             // 
             // label74
             // 
@@ -708,6 +777,7 @@
             this.dtpBerlakuSK.Name = "dtpBerlakuSK";
             this.dtpBerlakuSK.Size = new System.Drawing.Size(186, 20);
             this.dtpBerlakuSK.TabIndex = 20;
+            this.dtpBerlakuSK.TabStop = false;
             // 
             // label40
             // 
@@ -724,7 +794,7 @@
             this.txtTerbitSK.Location = new System.Drawing.Point(190, 46);
             this.txtTerbitSK.Name = "txtTerbitSK";
             this.txtTerbitSK.Size = new System.Drawing.Size(100, 20);
-            this.txtTerbitSK.TabIndex = 19;
+            this.txtTerbitSK.TabIndex = 14;
             // 
             // label39
             // 
@@ -754,14 +824,14 @@
             this.groupBox4.Location = new System.Drawing.Point(12, 357);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(635, 104);
-            this.groupBox4.TabIndex = 93;
+            this.groupBox4.TabIndex = 92;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Data Kendaraan";
             // 
             // txtSATPAS
             // 
             this.txtSATPAS.BackColor = System.Drawing.SystemColors.Control;
-            this.txtSATPAS.Location = new System.Drawing.Point(63, 19);
+            this.txtSATPAS.Location = new System.Drawing.Point(98, 22);
             this.txtSATPAS.Name = "txtSATPAS";
             this.txtSATPAS.Size = new System.Drawing.Size(144, 20);
             this.txtSATPAS.TabIndex = 4;
@@ -772,7 +842,7 @@
             this.txtNoMeSIN.Location = new System.Drawing.Point(435, 77);
             this.txtNoMeSIN.Name = "txtNoMeSIN";
             this.txtNoMeSIN.Size = new System.Drawing.Size(100, 20);
-            this.txtNoMeSIN.TabIndex = 11;
+            this.txtNoMeSIN.TabIndex = 10;
             // 
             // txtNoRangka
             // 
@@ -780,7 +850,7 @@
             this.txtNoRangka.Location = new System.Drawing.Point(435, 50);
             this.txtNoRangka.Name = "txtNoRangka";
             this.txtNoRangka.Size = new System.Drawing.Size(100, 20);
-            this.txtNoRangka.TabIndex = 10;
+            this.txtNoRangka.TabIndex = 9;
             // 
             // label27
             // 
@@ -806,7 +876,7 @@
             this.txtMerekKendaraan.Location = new System.Drawing.Point(264, 77);
             this.txtMerekKendaraan.Name = "txtMerekKendaraan";
             this.txtMerekKendaraan.Size = new System.Drawing.Size(100, 20);
-            this.txtMerekKendaraan.TabIndex = 9;
+            this.txtMerekKendaraan.TabIndex = 8;
             // 
             // txtJenisKendaraan
             // 
@@ -814,7 +884,7 @@
             this.txtJenisKendaraan.Location = new System.Drawing.Point(264, 50);
             this.txtJenisKendaraan.Name = "txtJenisKendaraan";
             this.txtJenisKendaraan.Size = new System.Drawing.Size(100, 20);
-            this.txtJenisKendaraan.TabIndex = 8;
+            this.txtJenisKendaraan.TabIndex = 7;
             // 
             // label25
             // 
@@ -840,7 +910,7 @@
             this.txtSamsat.Location = new System.Drawing.Point(98, 77);
             this.txtSamsat.Name = "txtSamsat";
             this.txtSamsat.Size = new System.Drawing.Size(100, 20);
-            this.txtSamsat.TabIndex = 7;
+            this.txtSamsat.TabIndex = 6;
             // 
             // label23
             // 
@@ -857,7 +927,7 @@
             this.txtNoKendaraan.Location = new System.Drawing.Point(98, 50);
             this.txtNoKendaraan.Name = "txtNoKendaraan";
             this.txtNoKendaraan.Size = new System.Drawing.Size(100, 20);
-            this.txtNoKendaraan.TabIndex = 6;
+            this.txtNoKendaraan.TabIndex = 5;
             // 
             // label22
             // 
@@ -888,7 +958,7 @@
             this.groupBox3.Location = new System.Drawing.Point(13, 45);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(633, 71);
-            this.groupBox3.TabIndex = 92;
+            this.groupBox3.TabIndex = 90;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Data Surat Tilang";
             // 
@@ -1089,7 +1159,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(327, 90);
+            this.label13.Location = new System.Drawing.Point(342, 90);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(87, 13);
             this.label13.TabIndex = 43;
@@ -1099,7 +1169,7 @@
             // 
             this.rbtPR.AutoSize = true;
             this.rbtPR.Enabled = false;
-            this.rbtPR.Location = new System.Drawing.Point(423, 103);
+            this.rbtPR.Location = new System.Drawing.Point(438, 103);
             this.rbtPR.Name = "rbtPR";
             this.rbtPR.Size = new System.Drawing.Size(40, 17);
             this.rbtPR.TabIndex = 38;
@@ -1110,7 +1180,7 @@
             // 
             this.rbtLK.AutoSize = true;
             this.rbtLK.Enabled = false;
-            this.rbtLK.Location = new System.Drawing.Point(423, 79);
+            this.rbtLK.Location = new System.Drawing.Point(438, 79);
             this.rbtLK.Name = "rbtLK";
             this.rbtLK.Size = new System.Drawing.Size(38, 17);
             this.rbtLK.TabIndex = 37;
@@ -1241,7 +1311,7 @@
             // 
             // btnSimpanData
             // 
-            this.btnSimpanData.Location = new System.Drawing.Point(674, 1193);
+            this.btnSimpanData.Location = new System.Drawing.Point(653, 1201);
             this.btnSimpanData.Name = "btnSimpanData";
             this.btnSimpanData.Size = new System.Drawing.Size(75, 51);
             this.btnSimpanData.TabIndex = 99;
@@ -1255,19 +1325,19 @@
             this.btnClearForm.Name = "btnClearForm";
             this.btnClearForm.Size = new System.Drawing.Size(75, 23);
             this.btnClearForm.TabIndex = 100;
-            this.btnClearForm.Text = "Clear Form";
+            this.btnClearForm.Text = "Clear All";
             this.btnClearForm.UseVisualStyleBackColor = true;
             this.btnClearForm.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnPrintSuratTilang
+            // btnTampilSuratTilang
             // 
-            this.btnPrintSuratTilang.Location = new System.Drawing.Point(652, 56);
-            this.btnPrintSuratTilang.Name = "btnPrintSuratTilang";
-            this.btnPrintSuratTilang.Size = new System.Drawing.Size(75, 54);
-            this.btnPrintSuratTilang.TabIndex = 101;
-            this.btnPrintSuratTilang.Text = "Tampil Surat\r\nTilang";
-            this.btnPrintSuratTilang.UseVisualStyleBackColor = true;
-            this.btnPrintSuratTilang.Click += new System.EventHandler(this.button2_Click);
+            this.btnTampilSuratTilang.Location = new System.Drawing.Point(652, 56);
+            this.btnTampilSuratTilang.Name = "btnTampilSuratTilang";
+            this.btnTampilSuratTilang.Size = new System.Drawing.Size(75, 54);
+            this.btnTampilSuratTilang.TabIndex = 101;
+            this.btnTampilSuratTilang.Text = "Tampil Surat\r\nTilang";
+            this.btnTampilSuratTilang.UseVisualStyleBackColor = true;
+            this.btnTampilSuratTilang.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox1
             // 
@@ -1284,7 +1354,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 464);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(635, 94);
-            this.groupBox1.TabIndex = 102;
+            this.groupBox1.TabIndex = 93;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data Pelanggaran";
             // 
@@ -1294,6 +1364,7 @@
             this.dtpJamLanggar.Name = "dtpJamLanggar";
             this.dtpJamLanggar.Size = new System.Drawing.Size(139, 20);
             this.dtpJamLanggar.TabIndex = 107;
+            this.dtpJamLanggar.TabStop = false;
             // 
             // dtpWaktuLanggar
             // 
@@ -1301,6 +1372,7 @@
             this.dtpWaktuLanggar.Name = "dtpWaktuLanggar";
             this.dtpWaktuLanggar.Size = new System.Drawing.Size(200, 20);
             this.dtpWaktuLanggar.TabIndex = 106;
+            this.dtpWaktuLanggar.TabStop = false;
             // 
             // txtWilayahHukum
             // 
@@ -1308,7 +1380,7 @@
             this.txtWilayahHukum.Location = new System.Drawing.Point(157, 69);
             this.txtWilayahHukum.Name = "txtWilayahHukum";
             this.txtWilayahHukum.Size = new System.Drawing.Size(402, 20);
-            this.txtWilayahHukum.TabIndex = 110;
+            this.txtWilayahHukum.TabIndex = 13;
             // 
             // label36
             // 
@@ -1325,7 +1397,7 @@
             this.txtPatokan.Location = new System.Drawing.Point(323, 42);
             this.txtPatokan.Name = "txtPatokan";
             this.txtPatokan.Size = new System.Drawing.Size(173, 20);
-            this.txtPatokan.TabIndex = 109;
+            this.txtPatokan.TabIndex = 12;
             // 
             // label34
             // 
@@ -1342,7 +1414,7 @@
             this.txtJalan.Location = new System.Drawing.Point(98, 43);
             this.txtJalan.Name = "txtJalan";
             this.txtJalan.Size = new System.Drawing.Size(170, 20);
-            this.txtJalan.TabIndex = 108;
+            this.txtJalan.TabIndex = 11;
             // 
             // label33
             // 
@@ -1371,66 +1443,6 @@
             this.label29.TabIndex = 111;
             this.label29.Text = "PADA HARI INI";
             // 
-            // ckbSIM
-            // 
-            this.ckbSIM.AutoSize = true;
-            this.ckbSIM.Location = new System.Drawing.Point(15, 31);
-            this.ckbSIM.Name = "ckbSIM";
-            this.ckbSIM.Size = new System.Drawing.Size(45, 17);
-            this.ckbSIM.TabIndex = 28;
-            this.ckbSIM.Text = "SIM";
-            this.ckbSIM.UseVisualStyleBackColor = true;
-            // 
-            // ckbSTCK
-            // 
-            this.ckbSTCK.AutoSize = true;
-            this.ckbSTCK.Location = new System.Drawing.Point(15, 54);
-            this.ckbSTCK.Name = "ckbSTCK";
-            this.ckbSTCK.Size = new System.Drawing.Size(54, 17);
-            this.ckbSTCK.TabIndex = 29;
-            this.ckbSTCK.Text = "STCK";
-            this.ckbSTCK.UseVisualStyleBackColor = true;
-            // 
-            // ckbSTNK
-            // 
-            this.ckbSTNK.AutoSize = true;
-            this.ckbSTNK.Location = new System.Drawing.Point(103, 54);
-            this.ckbSTNK.Name = "ckbSTNK";
-            this.ckbSTNK.Size = new System.Drawing.Size(55, 17);
-            this.ckbSTNK.TabIndex = 31;
-            this.ckbSTNK.Text = "STNK";
-            this.ckbSTNK.UseVisualStyleBackColor = true;
-            // 
-            // ckbRANMOR
-            // 
-            this.ckbRANMOR.AutoSize = true;
-            this.ckbRANMOR.Location = new System.Drawing.Point(103, 31);
-            this.ckbRANMOR.Name = "ckbRANMOR";
-            this.ckbRANMOR.Size = new System.Drawing.Size(74, 17);
-            this.ckbRANMOR.TabIndex = 30;
-            this.ckbRANMOR.Text = "RANMOR";
-            this.ckbRANMOR.UseVisualStyleBackColor = true;
-            // 
-            // ckbLainnya
-            // 
-            this.ckbLainnya.AutoSize = true;
-            this.ckbLainnya.Location = new System.Drawing.Point(6, 54);
-            this.ckbLainnya.Name = "ckbLainnya";
-            this.ckbLainnya.Size = new System.Drawing.Size(72, 17);
-            this.ckbLainnya.TabIndex = 33;
-            this.ckbLainnya.Text = "LAINNYA";
-            this.ckbLainnya.UseVisualStyleBackColor = true;
-            // 
-            // cbkBukuUji
-            // 
-            this.cbkBukuUji.AutoSize = true;
-            this.cbkBukuUji.Location = new System.Drawing.Point(6, 31);
-            this.cbkBukuUji.Name = "cbkBukuUji";
-            this.cbkBukuUji.Size = new System.Drawing.Size(97, 17);
-            this.cbkBukuUji.TabIndex = 32;
-            this.cbkBukuUji.Text = "BUKU UJI NO.";
-            this.cbkBukuUji.UseVisualStyleBackColor = true;
-            // 
             // frmInputSuratTilang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1440,7 +1452,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(740, 533);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnPrintSuratTilang);
+            this.Controls.Add(this.btnTampilSuratTilang);
             this.Controls.Add(this.btnClearForm);
             this.Controls.Add(this.btnSimpanData);
             this.Controls.Add(this.groupBox8);
@@ -1543,7 +1555,7 @@
         private System.Windows.Forms.Button btnScanQRCode;
         private System.Windows.Forms.Button btnSimpanData;
         private System.Windows.Forms.Button btnClearForm;
-        private System.Windows.Forms.Button btnPrintSuratTilang;
+        private System.Windows.Forms.Button btnTampilSuratTilang;
         public System.Windows.Forms.TextBox txtNoRegPenyidikan;
         public System.Windows.Forms.DateTimePicker dtpWaktuPernyataan;
         public System.Windows.Forms.TextBox txtAlamatWali;
@@ -1601,12 +1613,12 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.CheckBox ckbLainnya;
-        private System.Windows.Forms.CheckBox cbkBukuUji;
-        private System.Windows.Forms.CheckBox ckbSTNK;
-        private System.Windows.Forms.CheckBox ckbRANMOR;
-        private System.Windows.Forms.CheckBox ckbSTCK;
-        private System.Windows.Forms.CheckBox ckbSIM;
+        public System.Windows.Forms.CheckBox ckbLainnya;
+        public System.Windows.Forms.CheckBox cbkBukuUji;
+        public System.Windows.Forms.CheckBox ckbSTNK;
+        public System.Windows.Forms.CheckBox ckbRANMOR;
+        public System.Windows.Forms.CheckBox ckbSTCK;
+        public System.Windows.Forms.CheckBox ckbSIM;
 
     }
 }

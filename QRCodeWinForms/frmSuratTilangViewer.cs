@@ -40,12 +40,14 @@ namespace QRCodeWinForms
         public frmSuratTilangViewer(DataPelanggaran pelanggaran)
         {
             InitializeComponent();
+            //mengambil data dari class Pelanggaran
             datpel = pelanggaran;
 
         }
 
         private void frmSuratTilang_Load(object sender, EventArgs e)
         {
+            
             try
             {
                 lblNoRegPenyidikan.Text = datpel.NomorRegister;
@@ -76,10 +78,8 @@ namespace QRCodeWinForms
                 lblJalanLanggar.Text = datpel.LokasiPelanggaran;
                 lblPatokanLanggar.Text = datpel.PatokanLokasi;
                 lblWilayahHukum.Text = datpel.WilayahHukum;
-                lblSKSita.Text = datpel.DisitaSKRanmor;
                 lblMasaBerlakuSK.Text = Convert.ToString(datpel.DisitaSKMasaBerlaku.Date.ToLongDateString());
                 lblTerbitSKSita.Text = datpel.DisitaSKDiterbitkanOleh;
-                lblBukuUjiSita.Text = datpel.DisitaBukuUji;
                 lblBerlakuBukuUji.Text = Convert.ToString(datpel.DisitaBukuUjiMasaBerlaku.Date.ToLongDateString());
                 lblTerbitBukuUji.Text = datpel.DisitaBukuUjiDiterbitkanOleh;
                 lblPengadilanSidang.Text = datpel.LokasiSidang;
@@ -104,10 +104,9 @@ namespace QRCodeWinForms
             }
             catch (Exception ex)
             {
-                //if(datpel == null)
-                MessageBox.Show("Tampil Surat Tilang Gagal! \n Simpan data terlebih dahulu!" + "\n" + ex.Message);
+                MessageBox.Show("Tampil Surat Tilang Gagal! \n" + "\n" + ex.Message);
             }
-            //datpel.ShowDialog();
+
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -199,6 +198,11 @@ namespace QRCodeWinForms
                p.StartInfo.Verb = "Print";
                p.Start();
                /*Modul didapat dari kelompok 2 Project 1*/
+        }
+
+        private void ckbSIM_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
 
     }
