@@ -37,8 +37,8 @@ namespace QRCodeWinForms
             txtTempatLahir.Text = field[4];
             txtTanggalLahir.Text = field[5];
             txtAlamat.Text = field[6];
-            txtPekerjaan.Text = field[7];
-            txtPendidikan.Text = field[8];
+            txtPekerjaan.Text = ConvertPekerjaan(Convert.ToInt16(field[8]));
+            txtPendidikan.Text = ConvertPendidikan(Convert.ToInt16(field[7]));
             txtJenisKelamin.Text = field[9];
         }
 
@@ -87,7 +87,6 @@ namespace QRCodeWinForms
                     pasalPerSIM.Add(x.PasalPelanggaran.NomorPasal);
                     pelanggaranPerSIM.Add(x);
                 }
-
             }
         }
 
@@ -201,6 +200,18 @@ namespace QRCodeWinForms
                     LookPelanggaran(pelanggaranPerSIM);
                 }
             }
+        }
+
+        private static string ConvertPekerjaan(int i)
+        {
+            string[] Pekerjaan = new string[] { "PNS", "SWASTA", "TNI", "POLRI", "PELAJAR", "MHS", "LAINNYA" };
+            return Pekerjaan[i - 1];
+        }
+
+        private static string ConvertPendidikan(int i)
+        {
+            string[] Pendidikan = new string[] { "SD", "SLTP", "SLTA", "PT" };
+            return Pendidikan[i - 1];
         }
 
     }
