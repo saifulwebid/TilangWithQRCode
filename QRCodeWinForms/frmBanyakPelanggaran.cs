@@ -13,8 +13,7 @@ namespace QRCodeWinForms
     public partial class frmBanyakPelanggaran : Form
     {
         string qrData;
-        string[] field = new string[10];
-        
+            
         List<DataPelanggaran> data = new List<DataPelanggaran>();
         List<SIM> dataSIM = new List<SIM>();
         List<DataPelanggaran> dataPelanggar = new List<DataPelanggaran>();
@@ -28,26 +27,9 @@ namespace QRCodeWinForms
             InitializeComponent();
         }
 
-        void SetAllFieldToNull()
-        {
-            for (int i = 0; i < 10; i++)
-                field[i] = null;
-        }
-
-        void PisahString()
-        {
-            int j = 0;
-            for (int i = 0; i < qrData.Length; i++)
-            {
-                if (qrData[i] == '#')
-                    j++;
-                else
-                    field[j] = field[j] + qrData[i];
-            }
-        }
-
         void FillField()
         {
+            string[] field = qrData.Split('#'); 
             txtNoKTP.Text = field[0];
             txtNoSIM.Text = field[1];
             txtGol.Text = field[2];
@@ -62,19 +44,18 @@ namespace QRCodeWinForms
 
         private void cmdScanSIM_Click(object sender, EventArgs e)
         {
-            SetAllFieldToNull();
             frmScanSIM f2 = new frmScanSIM();
             f2.ShowDialog();
             if ((qrData = f2.GetData) != null)
             {
-                PisahString();
                 FillField();
-                TampilDataPelanggaran();
+                GetDataPelanggar();
+                LookPelanggaran(pelanggaranPerSIM);
             }
            
         }
 
-        void TampilDataPelanggaran()
+        void GetDataPelanggar()
         {            
             /*Menyimpan semua sim berdasrkan ktp pelanggar */
             foreach (SIM x in dataSIM)
@@ -108,8 +89,6 @@ namespace QRCodeWinForms
                 }
 
             }
-
-            LookPelanggaran(pelanggaranPerSIM);
         }
 
         void SetTablePasal()
@@ -165,6 +144,7 @@ namespace QRCodeWinForms
                 dgvDataPelanggaranPelanggar.Rows[i].Cells[1].Value = x.LokasiPelanggaran;
                 dgvDataPelanggaranPelanggar.Rows[i].Cells[2].Value = x.NomorKendaraan;
                 dgvDataPelanggaranPelanggar.Rows[i].Cells[3].Value = x.PasalPelanggaran.NomorPasal;
+                dgvDataPelanggaranPelanggar.Rows[i].Cells[4].Value = x.Pelanggar.NomorSIM;
                 i++;
             }
 
