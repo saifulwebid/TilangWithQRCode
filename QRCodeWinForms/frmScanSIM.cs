@@ -98,9 +98,18 @@ namespace QRCodeWinForms
                 else { i++; }
             }
 
-            camDevices.SelectCamera(i);
-            camDevices.Current.NewFrame += Current_NewFrame;
-            camDevices.Current.Start();
+            if (i >= camDevices.Devices.Count)
+            {
+                MessageBox.Show("Webcam Tidak Ditemukan !");
+                this.Close();
+            }
+
+            else
+            {
+                camDevices.SelectCamera(i);
+                camDevices.Current.NewFrame += Current_NewFrame;
+                camDevices.Current.Start();
+            }
 
         }
 
