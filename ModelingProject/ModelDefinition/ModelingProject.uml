@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd"
   name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1445,6 +1445,24 @@
                 LastKnownLocation="ModelingProject.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="9ad2a594-a476-4835-83ac-3fcb5bb4314c"
+            name="UmurWakil"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -2141,44 +2159,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
-          <association
-            Id="bde99157-e429-423e-be4b-5493509956cc"
-            isDerived="false"
-            sourceEndRoleName="Petugas Samsat"
-            targetEndRoleName="Login"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d"
-              LastKnownName="Login"
-              LastKnownLocation="ModelingProject.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f78e3622-7dfb-4b07-990c-2419f697821e"
-                  name="Petugas Samsat"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="5bf59ce7-cf8b-44ff-b7fa-e70566816a1c"
-                  name="Login"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -2307,44 +2287,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
-          <association
-            Id="040c818e-6a5e-4e58-8e7a-11f3e8a86c39"
-            isDerived="false"
-            sourceEndRoleName="Polisi Lalu Lintas"
-            targetEndRoleName="Login"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d"
-              LastKnownName="Login"
-              LastKnownLocation="ModelingProject.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="3cca0c8f-929f-434a-b328-9425e0902f39"
-                  name="Polisi Lalu Lintas"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="dcbd258d-794e-4d23-836e-a1cc4adb7cef"
-                  name="Login"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -2395,44 +2337,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
-          <association
-            Id="c1939354-bd58-4e13-ad1d-4558b36e9993"
-            isDerived="false"
-            sourceEndRoleName="Hakim/Jaksa"
-            targetEndRoleName="Login"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d"
-              LastKnownName="Login"
-              LastKnownLocation="ModelingProject.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="0d28bd8b-8250-4050-956d-6ad62cb5759a"
-                  name="Hakim/Jaksa"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="83e2a6ec-1aa7-48a0-b4ec-6a9e2e58d0b0"
-                  name="Login"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -2441,92 +2345,28 @@
         Id="2e932df2-d396-41db-8c8b-2bae4253ac71"
         name="Membuat SIM Baru"
         isAbstract="false"
-        isLeaf="false">
-        <suppliersInternal>
-          <dependency
-            Id="0fbdbabf-cd80-4271-9579-9d886e9c7411">
-            <useCaseMoniker
-              Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d"
-              LastKnownName="Login"
-              LastKnownLocation="ModelingProject.uml" />
-          </dependency>
-        </suppliersInternal>
-        <subjects>
-          <subsystemMoniker
-            Id="e5955491-ef03-44c4-9b2a-0503b4da066e"
-            LastKnownName="Sistem Tilang Elektronik"
-            LastKnownLocation="ModelingProject.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="52979df0-3d2d-4d14-bbf6-ce456c0e4157"
         name="Membuat Surat Tilang"
         isAbstract="false"
-        isLeaf="false">
-        <suppliersInternal>
-          <dependency
-            Id="9e94d4cb-c8c1-44c5-86fa-7adbd4660efd">
-            <useCaseMoniker
-              Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d"
-              LastKnownName="Login"
-              LastKnownLocation="ModelingProject.uml" />
-          </dependency>
-        </suppliersInternal>
-        <subjects>
-          <subsystemMoniker
-            Id="e5955491-ef03-44c4-9b2a-0503b4da066e"
-            LastKnownName="Sistem Tilang Elektronik"
-            LastKnownLocation="ModelingProject.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="2b8f0e18-9a71-4112-bfe7-fc5b9c41a8ca"
         name="Melihat Rekapitulasi Per SIM"
         isAbstract="false"
-        isLeaf="false">
-        <suppliersInternal>
-          <dependency
-            Id="0efbdf04-e56e-4ff1-9f7d-b0afd3d30712">
-            <useCaseMoniker
-              Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d"
-              LastKnownName="Login"
-              LastKnownLocation="ModelingProject.uml" />
-          </dependency>
-        </suppliersInternal>
-        <subjects>
-          <subsystemMoniker
-            Id="e5955491-ef03-44c4-9b2a-0503b4da066e"
-            LastKnownName="Sistem Tilang Elektronik"
-            LastKnownLocation="ModelingProject.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="c4e920f2-040a-487d-b65c-18c99c48d868"
         name="Melihat Statistik Pelanggaran Per Bulan"
         isAbstract="false"
-        isLeaf="false">
-        <suppliersInternal>
-          <dependency
-            Id="a52f8c90-b58b-4b7c-b40a-99656079abba">
-            <useCaseMoniker
-              Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d"
-              LastKnownName="Login"
-              LastKnownLocation="ModelingProject.uml" />
-          </dependency>
-        </suppliersInternal>
-        <subjects>
-          <subsystemMoniker
-            Id="e5955491-ef03-44c4-9b2a-0503b4da066e"
-            LastKnownName="Sistem Tilang Elektronik"
-            LastKnownLocation="ModelingProject.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <enumeration
@@ -2836,23 +2676,7 @@
         Id="67489ea9-3a7c-4b6b-92bd-c7b3cbab67b6"
         name="Melihat Statistik Pelanggaran Per Pasal"
         isAbstract="false"
-        isLeaf="false">
-        <suppliersInternal>
-          <dependency
-            Id="26377e3e-2ae1-4954-9219-4c36b54f3a55">
-            <useCaseMoniker
-              Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d"
-              LastKnownName="Login"
-              LastKnownLocation="ModelingProject.uml" />
-          </dependency>
-        </suppliersInternal>
-        <subjects>
-          <subsystemMoniker
-            Id="e5955491-ef03-44c4-9b2a-0503b4da066e"
-            LastKnownName="Sistem Tilang Elektronik"
-            LastKnownLocation="ModelingProject.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <interaction
@@ -7055,22 +6879,22 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="66013b0e-3fe7-4622-8a23-0e27a77c6021"
-            name="MessageOccurrenceSpecification5">
-            <covered>
-              <lifelineMoniker
-                Id="3931b069-29de-4cd0-ab00-23543a6e553a"
-                LastKnownName="frmSuratTilangViewer : frmSuratTilangViewer"
-                LastKnownLocation="ModelingProject.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="154ba9a1-2c00-4676-8c97-49c9ad7b9a8b"
             name="MessageOccurrenceSpecification6">
             <covered>
               <lifelineMoniker
                 Id="ebfa0ab2-002a-47cb-9266-c35ab59f820b"
                 LastKnownName="frmInputSuratTilang : frmInputSuratTilang"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="66013b0e-3fe7-4622-8a23-0e27a77c6021"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="3931b069-29de-4cd0-ab00-23543a6e553a"
+                LastKnownName="frmSuratTilangViewer : frmSuratTilangViewer"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>

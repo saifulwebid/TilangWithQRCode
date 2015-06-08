@@ -33,7 +33,7 @@ namespace QRCodeWinForms
         private DateTime _waktuPelanggaran;
         private DateTime _waktuSidang;
         private string _wilayahHukum;
-        private string _SATPAS;
+        private string _satpas;
         private string _lokasiPelanggaran;
         private string _patokanLokasi;
         private string _namaPenyidik;
@@ -69,11 +69,6 @@ namespace QRCodeWinForms
         {
             get { return _disitaSKMasaBerlaku; }
             set { _disitaSKMasaBerlaku = value; }
-        }
-        public string DisitaSKRanmor
-        {
-            get { return _disitaSKRanmor; }
-            set { _disitaSKRanmor = value; }
         }
         public bool IsNew
         {
@@ -171,10 +166,10 @@ namespace QRCodeWinForms
             get { return _samsatKendaraan; }
             set { _samsatKendaraan = value; }
         }
-        public string SATPAS
+        public string Satpas
         {
-            get { return _SATPAS; }
-            set { _SATPAS = value; }
+            get { return _satpas; }
+            set { _satpas = value; }
         }
         public string TempatPengambilanBarangSita
         {

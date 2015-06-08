@@ -140,7 +140,7 @@ namespace QRCodeWinForms
                 datpel.Pelanggar.Golongan = txtGolSIM.Text;
                 datpel.Pelanggar.Pemilik.NomorKTP = txtNoKTPPelanggar.Text;
                 datpel.Pelanggar.NomorSIM = txtNoSIM.Text;
-                datpel.SATPAS = txtSATPAS.Text;
+                datpel.Satpas = txtSATPAS.Text;
                 datpel.NomorKendaraan = txtNoKendaraan.Text;
                 datpel.SamsatKendaraan = txtSamsat.Text;
                 datpel.JenisKendaraan = txtJenisKendaraan.Text;

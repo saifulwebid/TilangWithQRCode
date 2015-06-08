@@ -548,7 +548,7 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 3].Value = dapel.Kesatuan;
                                 currentWorksheet.Cells[rowNumber, 4].Value = dapel.NomorTilang;                                
                                 currentWorksheet.Cells[rowNumber, 5].Value = dapel.Pelanggar.NomorSIM;
-                                currentWorksheet.Cells[rowNumber, 6].Value = dapel.SATPAS;
+                                currentWorksheet.Cells[rowNumber, 6].Value = dapel.Satpas;
                                 currentWorksheet.Cells[rowNumber, 7].Value = dapel.NomorKendaraan;
                                 currentWorksheet.Cells[rowNumber, 8].Value = dapel.SamsatKendaraan;
                                 currentWorksheet.Cells[rowNumber, 9].Value = dapel.JenisKendaraan;
@@ -704,7 +704,7 @@ namespace QRCodeWinForms
                                     pelanggaran.NomorRegister = col2Value.ToString();
                                     pelanggaran.Kesatuan = col3Value.ToString();
                                     pelanggaran.NomorTilang = col4Value.ToString();
-                                    pelanggaran.SATPAS = col6Value.ToString();
+                                    pelanggaran.Satpas = col6Value.ToString();
                                     pelanggaran.NomorKendaraan = col7Value.ToString();
                                     pelanggaran.SamsatKendaraan = col8Value.ToString();
                                     pelanggaran.JenisKendaraan = col9Value.ToString();
