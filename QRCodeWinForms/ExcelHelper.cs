@@ -160,7 +160,7 @@ namespace QRCodeWinForms
                                     {
                                         if (col1Value.Equals(ktp))
                                         {
-                                            pdd.NomorKTP = col1Value.ToString();
+                                            pdd.Nomor = col1Value.ToString();
                                             pdd.Nama = col2Value.ToString();
                                             pdd.TempatLahir = col3Value.ToString();
                                             pdd.TanggalLahir = Convert.ToDateTime(col4Value);
@@ -232,7 +232,7 @@ namespace QRCodeWinForms
                                          && (col5Value != null) && (col6Value != null) && (col7Value != null) && (col8Value != null))
                                     {
                                         Penduduk pdk = new Penduduk();
-                                        pdk.NomorKTP = col1Value.ToString();
+                                        pdk.Nomor = col1Value.ToString();
                                         pdk.Nama = col2Value.ToString();
                                         pdk.TempatLahir = col3Value.ToString();
                                         pdk.TanggalLahir = Convert.ToDateTime(col4Value);
@@ -291,7 +291,7 @@ namespace QRCodeWinForms
                                 (col5Header != null) && (col6Header != null) && (col7Header != null) && (col8Header != null))
                             {
                                 int rowNumber = currentWorksheet.Dimension.End.Row + 1;
-                                currentWorksheet.Cells[rowNumber, 1].Value = pdd.NomorKTP;
+                                currentWorksheet.Cells[rowNumber, 1].Value = pdd.Nomor;
                                 currentWorksheet.Cells[rowNumber, 2].Value = pdd.Nama;
                                 currentWorksheet.Cells[rowNumber, 3].Value = pdd.TempatLahir;
                                 currentWorksheet.Cells[rowNumber, 4].Value = pdd.TanggalLahir;
@@ -357,7 +357,7 @@ namespace QRCodeWinForms
                                         sim.TanggalHabis = Convert.ToDateTime(col5Value);
 
                                         foreach(Penduduk pdd in ListPenduduk) {
-                                            if (pdd.NomorKTP.Equals(col1Value)) {
+                                            if (pdd.Nomor.Equals(col1Value)) {
                                                 sim.Pemilik = pdd;
                                                 break;
                                             }
@@ -405,7 +405,7 @@ namespace QRCodeWinForms
                                 (col5Header != null))
                             {
                                 int rowNumber = currentWorksheet.Dimension.End.Row + 1;
-                                currentWorksheet.Cells[rowNumber, 1].Value = dataSIM.Pemilik.NomorKTP;
+                                currentWorksheet.Cells[rowNumber, 1].Value = dataSIM.Pemilik.Nomor;
                                 currentWorksheet.Cells[rowNumber, 2].Value = dataSIM.NomorSIM;
                                 currentWorksheet.Cells[rowNumber, 3].Value = dataSIM.Golongan;
                                 currentWorksheet.Cells[rowNumber, 4].Value = dataSIM.TanggalBuat;
