@@ -57,7 +57,7 @@ namespace QRCodeWinForms
         void GenerateQrCode()
         {
             /*  Isi dari qrcode,Revisi lagi dibagian ini nanti */
-            string input = tampilSIM.Pemilik.NomorKTP + '#' + tampilSIM.NomorSIM + '#' + tampilSIM.Golongan + '#' + tampilSIM.Pemilik.Nama + '#' + tampilSIM.Pemilik.TempatLahir + '#' + tampilSIM.Pemilik.TanggalLahir + '#' + tampilSIM.Pemilik.Alamat + '#' + tampilSIM.Pemilik.Pekerjaan + '#' + tampilSIM.Pemilik.Pendidikan + '#' + tampilSIM.Pemilik.JenisKelamin;
+            string input = tampilSIM.Pemilik.Nomor + '#' + tampilSIM.NomorSIM + '#' + tampilSIM.Golongan + '#' + tampilSIM.Pemilik.Nama + '#' + tampilSIM.Pemilik.TempatLahir + '#' + tampilSIM.Pemilik.TanggalLahir + '#' + tampilSIM.Pemilik.Alamat + '#' + tampilSIM.Pemilik.Pekerjaan + '#' + tampilSIM.Pemilik.Pendidikan + '#' + tampilSIM.Pemilik.JenisKelamin;
             
             /*Generate qr code dari input ke picturebox*/
             QRCodeGenerator qrGenerator = new QRCodeGenerator();

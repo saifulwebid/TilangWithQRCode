@@ -138,7 +138,7 @@ namespace QRCodeWinForms
                 datpel.Pelanggar.Pemilik.TempatLahir = txtTempatPelanggar.Text;
                 datpel.Pelanggar.Pemilik.TanggalLahir = Convert.ToDateTime(txtTanggalLahir.Text);
                 datpel.Pelanggar.Golongan = txtGolSIM.Text;
-                datpel.Pelanggar.Pemilik.NomorKTP = txtNoKTPPelanggar.Text;
+                datpel.Pelanggar.Pemilik.Nomor = txtNoKTPPelanggar.Text;
                 datpel.Pelanggar.NomorSIM = txtNoSIM.Text;
                 datpel.SATPAS = txtSATPAS.Text;
                 datpel.NomorKendaraan = txtNoKendaraan.Text;
