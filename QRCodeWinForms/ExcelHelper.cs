@@ -9,7 +9,7 @@ namespace QRCodeWinForms
 {
     class ExcelHelper
     {
-        public static void SaveAccount(Account acc)
+        public static void SaveAccount(User acc)
         {
             const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
@@ -53,7 +53,7 @@ namespace QRCodeWinForms
                 }
             }
         }
-        public static Account AccountCheck(string username, string password)
+        public static User AccountCheck(string username, string password)
         {
             const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
@@ -63,7 +63,7 @@ namespace QRCodeWinForms
             {
                 folder = Path.GetDirectoryName(folder);
                 string filePath = Path.Combine(folder, fileName);
-                Account acc = new Account();
+                User acc = new User();
 
                 var existingFile = new FileInfo(filePath);
                 using (var package = new ExcelPackage(existingFile))
