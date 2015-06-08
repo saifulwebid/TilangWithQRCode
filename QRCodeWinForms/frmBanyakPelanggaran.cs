@@ -59,7 +59,7 @@ namespace QRCodeWinForms
             /*Menyimpan semua sim Pelanggar berdasrkan ktp pelanggar */
             foreach (SIM x in dataSIM)
             {
-                if (x.Pemilik.NomorKTP == txtNoKTP.Text)
+                if (x.Pemilik.Nomor == txtNoKTP.Text)
                 {
                     simPelanggar.Add(x);
                 }
