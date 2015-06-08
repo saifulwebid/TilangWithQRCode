@@ -456,13 +456,11 @@ namespace QRCodeWinForms
 
                                     if ((col1Value != null) && (col2Value != null) && (col3Value != null) && (col4Value != null))
                                     {
-                                        listDataPasal.Add(new Pasal
-                                        {
-                                            NomorPasal = col1Value.ToString(),
-                                            Keterangan = col2Value.ToString(),
-                                            Pidana = Convert.ToDouble(col3Value),
-                                            DendaMaksimal = Convert.ToDouble(col4Value)
-                                        });
+                                        Pasal psl = new Pasal();
+                                        psl.NomorPasal = col1Value.ToString();
+                                        psl.Keterangan = col2Value.ToString();
+                                        psl.Pidana = Convert.ToDouble(col3Value);
+                                        psl.DendaMaksimal = Convert.ToDouble(col4Value);
                                     }
                                 }
                             }
