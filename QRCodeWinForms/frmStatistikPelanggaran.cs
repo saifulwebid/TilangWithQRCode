@@ -34,12 +34,19 @@ namespace QRCodeWinForms
             chartStatistikPasal.Series["Banyak Pasal Dilanggar"].Points.Clear(); 
 
             /*Membuat Grafik*/
-            foreach (var grp in dataStatistik[cbbTahun.SelectedIndex].GroupBy(i => i))
+            DrawChart(cbbTahun.SelectedIndex);
+        }
+
+        private void DrawChart(int index)
+        {
+            /*Grafik Statistik Pelanggaran Per bulan */
+            foreach (var grp in dataStatistik[index].GroupBy(i => i))
             {
                 chartStatistikPelanggaran.Series["Banyak Pelanggaran"].Points.AddXY(ConvertToMonth(grp.Key), grp.Count());
             }
 
-            foreach (var grp in dataStatistikPasal[cbbTahun.SelectedIndex].GroupBy(i => i))
+            /*Grafik Statistik Pelanggaran Per Pasal */
+            foreach (var grp in dataStatistikPasal[index].GroupBy(i => i))
             {
                 chartStatistikPasal.Series["Banyak Pasal Dilanggar"].Points.AddXY(grp.Key, grp.Count());
             }

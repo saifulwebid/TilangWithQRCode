@@ -145,6 +145,9 @@
     <EmbeddedResource Include="frmStatistikPelanggaran.resx">
       <DependentUpon>frmStatistikPelanggaran.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSuratTilangViewer.id-ID.resx">
+      <DependentUpon>frmSuratTilangViewer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSuratTilangViewer.resx">
       <DependentUpon>frmSuratTilangViewer.cs</DependentUpon>
     </EmbeddedResource>

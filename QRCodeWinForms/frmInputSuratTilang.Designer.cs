@@ -142,8 +142,6 @@
             this.txtUmurPelanggar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSimpanData = new System.Windows.Forms.Button();
-            this.btnClearForm = new System.Windows.Forms.Button();
-            this.btnTampilSuratTilang = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtpJamLanggar = new System.Windows.Forms.DateTimePicker();
             this.dtpWaktuLanggar = new System.Windows.Forms.DateTimePicker();
@@ -1303,7 +1301,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(210, 7);
+            this.label1.Location = new System.Drawing.Point(225, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(243, 25);
             this.label1.TabIndex = 90;
@@ -1318,26 +1316,6 @@
             this.btnSimpanData.Text = "Simpan Data";
             this.btnSimpanData.UseVisualStyleBackColor = true;
             this.btnSimpanData.Click += new System.EventHandler(this.btnSimpanData_Click);
-            // 
-            // btnClearForm
-            // 
-            this.btnClearForm.Location = new System.Drawing.Point(19, 7);
-            this.btnClearForm.Name = "btnClearForm";
-            this.btnClearForm.Size = new System.Drawing.Size(75, 23);
-            this.btnClearForm.TabIndex = 100;
-            this.btnClearForm.Text = "Clear All";
-            this.btnClearForm.UseVisualStyleBackColor = true;
-            this.btnClearForm.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnTampilSuratTilang
-            // 
-            this.btnTampilSuratTilang.Location = new System.Drawing.Point(652, 56);
-            this.btnTampilSuratTilang.Name = "btnTampilSuratTilang";
-            this.btnTampilSuratTilang.Size = new System.Drawing.Size(75, 54);
-            this.btnTampilSuratTilang.TabIndex = 101;
-            this.btnTampilSuratTilang.Text = "Tampil Surat\r\nTilang";
-            this.btnTampilSuratTilang.UseVisualStyleBackColor = true;
-            this.btnTampilSuratTilang.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox1
             // 
@@ -1445,6 +1423,7 @@
             // 
             // frmInputSuratTilang
             // 
+            this.AcceptButton = this.btnSimpanData;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
@@ -1452,8 +1431,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(740, 533);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnTampilSuratTilang);
-            this.Controls.Add(this.btnClearForm);
             this.Controls.Add(this.btnSimpanData);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);
@@ -1464,7 +1441,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
             this.Name = "frmInputSuratTilang";
-            this.Text = "InputSuratTilang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "INPUT DATA PELANGGARAN";
             this.Load += new System.EventHandler(this.InputSuratTilang_Load);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
@@ -1554,8 +1532,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnScanQRCode;
         private System.Windows.Forms.Button btnSimpanData;
-        private System.Windows.Forms.Button btnClearForm;
-        private System.Windows.Forms.Button btnTampilSuratTilang;
         public System.Windows.Forms.TextBox txtNoRegPenyidikan;
         public System.Windows.Forms.DateTimePicker dtpWaktuPernyataan;
         public System.Windows.Forms.TextBox txtAlamatWali;

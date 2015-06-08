@@ -205,5 +205,10 @@ namespace QRCodeWinForms
 
         }
 
+        private void pnlSuratTilang_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }
