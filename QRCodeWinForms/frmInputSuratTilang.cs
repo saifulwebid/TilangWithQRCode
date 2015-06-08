@@ -47,12 +47,13 @@ namespace QRCodeWinForms
 
         private void TampilData()
         {
-            string[] Split = ResultString.Split('#');
-            CultureInfo provider = CultureInfo.InvariantCulture;
-            DateTime parseddate;
-            provider = new CultureInfo("id-ID");
+            
             try
             {
+                string[] Split = ResultString.Split('#');
+                CultureInfo provider = CultureInfo.InvariantCulture;
+                DateTime parseddate;
+                provider = new CultureInfo("id-ID");
                 txtNamaPelanggar.Text = Split[3];
                 txtAlamatPelanggar.Text = Split[6];
                 txtNoKTPPelanggar.Text = Split[0];

@@ -56,7 +56,7 @@ namespace QRCodeWinForms
 
         void GetDataPelanggar()
         {            
-            /*Menyimpan semua sim berdasrkan ktp pelanggar */
+            /*Menyimpan semua sim Pelanggar berdasrkan ktp pelanggar */
             foreach (SIM x in dataSIM)
             {
                 if (x.Pemilik.NomorKTP == txtNoKTP.Text)
@@ -65,7 +65,7 @@ namespace QRCodeWinForms
                 }
             }
             
-            /*Menyimpan history pelanggaran berdasrkan semua sim yang dimiliki oleh pelanggar */
+            /*Menyimpan history pelanggaran berdasrkan SEMUA SIM yang dimiliki oleh pelanggar */
             for (int j = 0; j < simPelanggar.Count; j++)
             {
                 foreach (DataPelanggaran x in data)
