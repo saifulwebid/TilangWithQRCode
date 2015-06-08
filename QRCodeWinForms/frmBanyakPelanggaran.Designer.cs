@@ -271,7 +271,7 @@
             // 
             // cmdScanSIM
             // 
-            this.cmdScanSIM.Location = new System.Drawing.Point(355, 311);
+            this.cmdScanSIM.Location = new System.Drawing.Point(351, 311);
             this.cmdScanSIM.Name = "cmdScanSIM";
             this.cmdScanSIM.Size = new System.Drawing.Size(75, 23);
             this.cmdScanSIM.TabIndex = 12;
@@ -348,7 +348,7 @@
             // rbAllSim
             // 
             this.rbAllSim.AutoSize = true;
-            this.rbAllSim.Location = new System.Drawing.Point(167, 314);
+            this.rbAllSim.Location = new System.Drawing.Point(163, 314);
             this.rbAllSim.Name = "rbAllSim";
             this.rbAllSim.Size = new System.Drawing.Size(80, 17);
             this.rbAllSim.TabIndex = 18;
@@ -359,7 +359,7 @@
             // rbOneSIM
             // 
             this.rbOneSIM.AutoSize = true;
-            this.rbOneSIM.Location = new System.Drawing.Point(259, 314);
+            this.rbOneSIM.Location = new System.Drawing.Point(255, 314);
             this.rbOneSIM.Name = "rbOneSIM";
             this.rbOneSIM.Size = new System.Drawing.Size(90, 17);
             this.rbOneSIM.TabIndex = 19;
@@ -369,7 +369,7 @@
             // 
             // btnRekap
             // 
-            this.btnRekap.Location = new System.Drawing.Point(436, 311);
+            this.btnRekap.Location = new System.Drawing.Point(432, 311);
             this.btnRekap.Name = "btnRekap";
             this.btnRekap.Size = new System.Drawing.Size(75, 23);
             this.btnRekap.TabIndex = 20;
@@ -381,7 +381,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 524);
+            this.ClientSize = new System.Drawing.Size(525, 524);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnRekap);
             this.Controls.Add(this.rbOneSIM);
