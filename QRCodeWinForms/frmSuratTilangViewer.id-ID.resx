@@ -118,6 +118,42 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>659, 630</value>
+  </data>
+  <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 181</value>
+  </data>
+  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>645, 253</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 165</value>
+  </data>
+  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>659, 312</value>
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 315</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>645, 165</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 75</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1067, 67</value>
+  </data>
+  <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 316</value>
+  </data>
+  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>645, 91</value>
+  </data>
+  <data name="pnlSuratTilang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1080, 820</value>
+  </data>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 146</value>
   </data>
@@ -129,6 +165,16 @@
   </data>
   <data name="label60.Location" type="System.Drawing.Point, System.Drawing">
     <value>277, 146</value>
+  </data>
+  <data name="groupBox10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 132</value>
+  </data>
+  <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 114</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBox10.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ckbLainnya.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -167,15 +213,14 @@
   <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
     <value>154, 37</value>
   </data>
-  <data name="groupBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 132</value>
+  <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 132</value>
   </data>
-  <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>309, 114</value>
+  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 114</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="groupBox10.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
+  <data name="groupBox9.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
   </data>
   <data name="ckbSTNK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -230,18 +275,6 @@
   </data>
   <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
     <value>199, 37</value>
-  </data>
-  <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 132</value>
-  </data>
-  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 114</value>
-  </data>
-  <data name="groupBox9.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>645, 253</value>
   </data>
   <data name="lblTempatAmbilBarangSita.Location" type="System.Drawing.Point, System.Drawing">
     <value>416, 125</value>
@@ -321,15 +354,6 @@
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 131</value>
   </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>645, 172</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 75</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1067, 67</value>
-  </data>
   <data name="lblNoMesinKendaraan.Location" type="System.Drawing.Point, System.Drawing">
     <value>438, 72</value>
   </data>
@@ -390,14 +414,11 @@
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 17</value>
   </data>
-  <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 316</value>
+  <data name="btnPrintSurat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1088, 19</value>
   </data>
-  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>645, 91</value>
-  </data>
-  <data name="pnlSuratTilang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1080, 820</value>
+  <data name="btnPrintSurat.Text" xml:space="preserve">
+    <value>Cetak Surat Tilang</value>
   </data>
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowOnly</value>
@@ -405,7 +426,10 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1184, 321</value>
   </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1200, 360</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>WindowsDefaultBounds</value>
+    <value>WindowsDefaultLocation</value>
   </data>
 </root>

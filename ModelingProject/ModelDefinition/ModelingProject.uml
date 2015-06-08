@@ -7440,6 +7440,30 @@
         Id="693259c5-2562-48f1-ad3f-3b82250b8ba4"
         name="ExecutionEvent" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="e5955491-ef03-44c4-9b2a-0503b4da066e"
+        name="Sistem Tilang Elektronik"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+
+    <packageHasNamedElement>
+      <useCase
+        Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d"
+        name="Login"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e5955491-ef03-44c4-9b2a-0503b4da066e"
+            LastKnownName="Sistem Tilang Elektronik"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

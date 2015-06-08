@@ -181,8 +181,8 @@ namespace QRCodeWinForms
                 datpel.Save(datpel);
                 MessageBox.Show("Penyimpanan Data Pelanggaran Berhasil!");
 
-                btnTampilST.Enabled = true;
-                btnBuatSTBaru.Enabled = true;
+                btnTampil.Enabled = true;
+                btnNewST.Enabled = true;
                 btnSimpanData.Enabled = false;
 
             }
@@ -247,9 +247,9 @@ namespace QRCodeWinForms
 
         private void SetToDefault()
         {
-            btnTampilST.Enabled = false;
+            btnTampil.Enabled = false;
             btnSimpanData.Enabled = true;
-            btnBuatSTBaru.Enabled = false;
+            btnNewST.Enabled = false;
         }
 
         private void cbxPasal_SelectedIndexChanged(object sender, EventArgs e)
@@ -272,21 +272,6 @@ namespace QRCodeWinForms
 
             frmsurat.ShowDialog(); 
         }
-
-        private void btnBuatSTBaru_Click(object sender, EventArgs e)
-        {
-            btnSimpanData.Enabled = true;
-            btnBuatSTBaru.Enabled = false;
-            btnTampilST.Enabled = false;
-            ClearData(this.Controls);
-        }
-
-        private void btnTampilST_Click(object sender, EventArgs e)
-        {
-            TampilSuratTilang();
-            SetToDefault();
-        }
-
         private void groupBox10_Enter(object sender, EventArgs e)
         {
 
@@ -298,6 +283,20 @@ namespace QRCodeWinForms
         private void btnTampilST_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnTampil_Click(object sender, EventArgs e)
+        {
+            TampilSuratTilang();
+            btnNewST.Enabled = true;
+        }
+
+        private void btnNewST_Click(object sender, EventArgs e)
+        {
+            btnSimpanData.Enabled = true;
+            btnNewST.Enabled = false;
+            btnTampil.Enabled = false;
+            ClearData(this.Controls);
         }
     }
 }
