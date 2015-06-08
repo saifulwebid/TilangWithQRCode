@@ -51,7 +51,7 @@ namespace QRCodeWinForms
             }
 
             GenerateQrCode();
-
+            btnCetakSIM.Enabled = false;
         }
 
         void GenerateQrCode()
@@ -77,6 +77,18 @@ namespace QRCodeWinForms
             p.StartInfo.Verb = "Print";
             p.Start();
             /*Modul didapat dari kelompok 2 Project-1*/
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog file = new OpenFileDialog();
+            file.Filter = "Image Files (*.jpg;*.jpeg;*.gif;*.bmp)|*.jpg;*.jpeg;*.gif;*.bmp";
+            if (file.ShowDialog() == DialogResult.OK)
+            {
+                pictFoto.Image = new Bitmap(file.FileName);
+                pictFoto.SizeMode = PictureBoxSizeMode.Zoom;
+                btnCetakSIM.Enabled = true;
+            }
         }
     }
 }
