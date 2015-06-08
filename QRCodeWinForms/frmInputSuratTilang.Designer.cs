@@ -1426,21 +1426,23 @@
             // 
             // btnTampil
             // 
+            this.btnTampil.AutoSize = true;
             this.btnTampil.Location = new System.Drawing.Point(141, 1287);
             this.btnTampil.Name = "btnTampil";
-            this.btnTampil.Size = new System.Drawing.Size(75, 23);
+            this.btnTampil.Size = new System.Drawing.Size(108, 23);
             this.btnTampil.TabIndex = 100;
-            this.btnTampil.Text = "Tampil";
+            this.btnTampil.Text = "Tampil Surat Tilang";
             this.btnTampil.UseVisualStyleBackColor = true;
             this.btnTampil.Click += new System.EventHandler(this.btnTampil_Click);
             // 
             // btnNewST
             // 
-            this.btnNewST.Location = new System.Drawing.Point(572, 1287);
+            this.btnNewST.AutoSize = true;
+            this.btnNewST.Location = new System.Drawing.Point(523, 1287);
             this.btnNewST.Name = "btnNewST";
-            this.btnNewST.Size = new System.Drawing.Size(75, 23);
+            this.btnNewST.Size = new System.Drawing.Size(124, 23);
             this.btnNewST.TabIndex = 101;
-            this.btnNewST.Text = "Buat Baru";
+            this.btnNewST.Text = "Buat Surat Tilang Baru";
             this.btnNewST.UseVisualStyleBackColor = true;
             this.btnNewST.Click += new System.EventHandler(this.btnNewST_Click);
             // 
