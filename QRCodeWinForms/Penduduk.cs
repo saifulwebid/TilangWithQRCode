@@ -8,82 +8,32 @@ namespace QRCodeWinForms
 {
     public class Penduduk
     {
-        private string _nomorKTP;
-        private string _nama;
-        private string _tempatLahir;
-        private DateTime _tanggalLahir;
-        private string _alamat;
-        private string _pekerjaan;
-        private string _pendidikan;
-        private EnumJenisKelamin _jk;
-        private bool _status;
+        public string Alamat { get; set; }
+        public EnumJenisKelamin JenisKelamin { get; set; }
+        public string Nama { get; set; }
+        public string Nomor { get; set; }
+        public EnumPekerjaan Pekerjaan { get; set; }
+        public EnumPendidikan Pendidikan { get; set; }
+        public DateTime TanggalLahir { get; set; }
+        public string TempatLahir { get; set; }
+        private bool isNew;
 
-        public Penduduk()
-        { }
-
-        public Penduduk(string noktp, string nama, string tmptlahir, DateTime tgllahir, string alamat, string pkrjn, string penddkn, EnumJenisKelamin jnskelamin, bool status)
+        /** Constructor **/
+        public Penduduk() { }
+        public Penduduk(bool FromExcel)
         {
-            _nomorKTP = noktp;
-            _nama = nama;
-            _tempatLahir = tmptlahir;
-            _tanggalLahir = tgllahir;
-            _alamat = alamat;
-            _pekerjaan = pkrjn;
-            _pendidikan = penddkn;
-            _jk = jnskelamin;
-            _status = status;
+            if (FromExcel == true)
+            {
+                isNew = false;
+            }
+            else
+            {
+                isNew = true;
+            }
         }
 
-        public string NomorKTP
-        {
-            get { return _nomorKTP; }
-            set { _nomorKTP = value; }
-        }
-        public string Nama
-        {
-            get { return _nama; }
-            set { _nama = value; }
-        }
-        public string TempatLahir
-        {
-            get { return _tempatLahir; }
-            set { _tempatLahir = value; }
-        }
-        public DateTime TanggalLahir
-        {
-            get { return _tanggalLahir; }
-            set { _tanggalLahir = value; }
-        }
-        public string Alamat
-        {
-            get { return _alamat; }
-            set { _alamat = value; }
-        }
-        public string Pekerjaan
-        {
-            get { return _pekerjaan; }
-            set { _pekerjaan = value; }
-        }
-        public string Pendidikan
-        {
-            get { return _pendidikan; }
-            set { _pendidikan = value; }
-        }
-        public EnumJenisKelamin JenisKelamin
-        {
-            get { return _jk; }
-            set { _jk = value; }
-        }
-        public bool isNew
-        {
-            get { return _status; }
-            set { _status = value; }
-        }
-        public List<Penduduk> GetAllPenduduk()
-        {
-            return ExcelHelper.GetAllPenduduk();
-        }
-        public List<SIM> GetAllSIM()
+        /** Methods **/
+        public static List<SIM> GetAllSIM()
         {
             return ExcelHelper.GetAllSIM();
         }
@@ -91,9 +41,9 @@ namespace QRCodeWinForms
         {
             return ExcelHelper.CekPenduduk(noKTP);
         }
-        public void Save(Penduduk dataPenduduk)
+        public void Save()
         {
-            ExcelHelper.SaveDataPenduduk(dataPenduduk);
+            ExcelHelper.SaveDataPenduduk(this);
         }
     }
 }

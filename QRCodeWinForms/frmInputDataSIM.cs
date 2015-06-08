@@ -49,7 +49,7 @@ namespace QRCodeWinForms
                         datapenduduk.JenisKelamin = EnumJenisKelamin.Pria;
                     else if (cmbJenisKelamin.Text == "Wanita")
                         datapenduduk.JenisKelamin = EnumJenisKelamin.Wanita;
-                    datapenduduk.Save(datapenduduk);
+                    datapenduduk.Save();
                 }
 
                 dataSIM.NomorSIM = txtNoSIM.Text;
