@@ -133,8 +133,8 @@ namespace QRCodeWinForms
                 datpel.NomorTilang = txtNoRegTilang.Text;
                 datpel.Pelanggar.Pemilik.Nama = txtNamaPelanggar.Text;
                 datpel.Pelanggar.Pemilik.Alamat = txtAlamatPelanggar.Text;
-                datpel.Pelanggar.Pemilik.Pekerjaan = txtPekerjaan.Text;
-                datpel.Pelanggar.Pemilik.Pendidikan = txtPendidikan.Text;
+                //datpel.Pelanggar.Pemilik.Pekerjaan = txtPekerjaan.Text;
+                //datpel.Pelanggar.Pemilik.Pendidikan = txtPendidikan.Text;
                 datpel.Pelanggar.Pemilik.TempatLahir = txtTempatPelanggar.Text;
                 datpel.Pelanggar.Pemilik.TanggalLahir = Convert.ToDateTime(txtTanggalLahir.Text);
                 datpel.Pelanggar.Golongan = txtGolSIM.Text;
