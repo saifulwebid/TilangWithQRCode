@@ -13,7 +13,7 @@ namespace QRCodeWinForms
         private string _bankSisaDenda;
         private string _disitaSKDiterbitkanOleh;
         private DateTime _disitaSKMasaBerlaku;
-        private string _disitaSKRanmor;
+        private string  _disitaSKRanmor;
         private bool _isNew;
         private string _jenisKendaraan;
         private string _kesatuan;
@@ -38,7 +38,6 @@ namespace QRCodeWinForms
         private string _patokanLokasi;
         private string _namaPenyidik;
         private string _pangkatPenyidik;
-        private string _kesatuanPenyidik;
         private string _tempatPengambilan;
         private DateTime _disitaBukuUjiMasaBerlaku;
         private string _bukuUjiRanmor;
@@ -91,11 +90,7 @@ namespace QRCodeWinForms
             get { return _kesatuan; }
             set { _kesatuan = value; }
         }
-        public string KesatuanPenyidik
-        {
-            get { return _kesatuanPenyidik; }
-            set { _kesatuanPenyidik = value; }
-        }
+
         public string LokasiSidang
         {
             get { return _lokasiSidang; }

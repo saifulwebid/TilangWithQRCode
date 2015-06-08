@@ -147,17 +147,16 @@ namespace QRCodeWinForms
                 datpel.LokasiPelanggaran = txtJalan.Text;
                 datpel.PatokanLokasi = txtPatokan.Text;
                 datpel.WilayahHukum = txtWilayahHukum.Text;
-                datpel.DisitaSKRanmor =txtSKSita.Text;
+                datpel.DisitaSKRanmor = CekCheckBoxSK().ToString();
                 datpel.DisitaSKDiterbitkanOleh = txtTerbitSK.Text;
                 datpel.DisitaSKMasaBerlaku = Convert.ToDateTime(dtpBerlakuSK.Text);
-                datpel.DisitaBukuUji = txtBukuUji.Text;
+                datpel.DisitaBukuUji = CekCheckBoxBK().ToString();
                 datpel.DisitaBukuUjiDiterbitkanOleh = txtTerbitPemda.Text;
                 datpel.DisitaBukuUjiMasaBerlaku = Convert.ToDateTime(dtpBerlakuPemda.Text);
                 datpel.LokasiSidang = txtPengadilan.Text;
                 datpel.WaktuSidang = Convert.ToDateTime(txtWaktuSidang.Text);
                 datpel.NamaPenyidik = txtNamaPenyidik.Text;
                 datpel.PangkatPenyidik = txtPangkatPenyidik.Text;
-                datpel.KesatuanPenyidik = txtKesatuanPenyidik.Text;
                 datpel.TempatPengambilanBarangSita = txtTempatAmbil.Text;
                 datpel.PasalPelanggaran.NomorPasal = cbxPasal.Text;
                 datpel.PasalPelanggaran.DendaMaksimal = Convert.ToDouble(txtDendaMaksimal.Text);
@@ -178,6 +177,8 @@ namespace QRCodeWinForms
 
                 datpel.Save(datpel);
                 MessageBox.Show("Penyimpanan Data Pelanggaran Berhasil!");
+                ClearData(this.Controls);
+                TampilSuratTilang();
 
             }
             catch (Exception ex)
@@ -185,10 +186,40 @@ namespace QRCodeWinForms
                 MessageBox.Show("Penyimpanan Data Pelanggaran Gagal! " + "\n" + ex.Message);
             } 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private int CekCheckBoxSK()
         {
-            ClearData(this.Controls);
+            int coba=0;
+            if (ckbRANMOR.Checked)
+            {
+                coba = coba+ 1;
+            }
+            if (ckbSIM.Checked)
+            {
+                coba = coba + 2;
+            }
+            if (ckbSTCK.Checked)
+            {
+                coba = coba + 4;
+            }
+            if (ckbSTNK.Checked)
+            {
+                coba = coba + 8;
+            }
+            return coba;
+        }
+
+        private int CekCheckBoxBK()
+        {
+            int status = 0;
+            if (ckbLainnya.Checked)
+            {
+                status = status + 1;
+            }
+            if (cbkBukuUji.Checked)
+            {
+                status = status + 2;
+            }
+            return status;
         }
 
         private void ClearData(Control.ControlCollection cc)
@@ -196,8 +227,14 @@ namespace QRCodeWinForms
             foreach (Control ctrl in cc)
             {
                 TextBox tb = ctrl as TextBox;
+                CheckBox cb = ctrl as CheckBox;
+                RadioButton rb = ctrl as RadioButton;
                 if (tb != null)
                     tb.Text = "";
+                if (cb != null)
+                    cb.Checked = false;
+                if (rb != null)
+                    rb.Checked = false;
                 else
                     ClearData(ctrl.Controls);
             }
@@ -214,10 +251,23 @@ namespace QRCodeWinForms
             txtDendaMaksimal.Text = Convert.ToString(item.DendaMaksimal);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void TampilSuratTilang()
         {
             frmSuratTilangViewer frmsurat = new frmSuratTilangViewer(datpel);
-            frmsurat.ShowDialog();        
+
+            //kondisi supaya checkbox form viewer mengikuti checkbox form input
+            frmsurat.ckbSTNK.Checked = ckbSTNK.Checked;
+            frmsurat.ckbSTCK.Checked = ckbSTCK.Checked;
+            frmsurat.ckbSIM.Checked = ckbSIM.Checked;
+            frmsurat.ckbRANMOR.Checked = ckbRANMOR.Checked;
+            frmsurat.ckbLainnya.Checked = ckbLainnya.Checked;
+            frmsurat.ckbBukuUji.Checked = cbkBukuUji.Checked;
+
+            frmsurat.ShowDialog(); 
+        }
+        private void groupBox10_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
