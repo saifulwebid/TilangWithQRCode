@@ -165,12 +165,53 @@ namespace QRCodeWinForms
                                             pdd.TempatLahir = col3Value.ToString();
                                             pdd.TanggalLahir = Convert.ToDateTime(col4Value);
                                             pdd.Alamat = col5Value.ToString();
-                                            pdd.Pekerjaan = col6Value.ToString();
-                                            pdd.Pendidikan = col7Value.ToString();
+
+                                            switch (col6Value.ToString())
+                                            {
+                                                case "Lainnya":
+                                                    pdd.Pekerjaan = EnumPekerjaan.Lainnya;
+                                                    break;
+                                                case "Mahasiswa":
+                                                    pdd.Pekerjaan = EnumPekerjaan.Mahasiswa;
+                                                    break;
+                                                case "Pelajar":
+                                                    pdd.Pekerjaan = EnumPekerjaan.Pelajar;
+                                                    break;
+                                                case "PNS":
+                                                    pdd.Pekerjaan = EnumPekerjaan.PNS;
+                                                    break;
+                                                case "POLRI":
+                                                    pdd.Pekerjaan = EnumPekerjaan.POLRI;
+                                                    break;
+                                                case "Swasta":
+                                                    pdd.Pekerjaan = EnumPekerjaan.Swasta;
+                                                    break;
+                                                case "TNI":
+                                                    pdd.Pekerjaan = EnumPekerjaan.TNI;
+                                                    break;
+                                            }
+
+                                            switch (col7Value.ToString())
+                                            {
+                                                case "PT":
+                                                    pdd.Pendidikan = EnumPendidikan.PT;
+                                                    break;
+                                                case "SD":
+                                                    pdd.Pendidikan = EnumPendidikan.SD;
+                                                    break;
+                                                case "SMA":
+                                                    pdd.Pendidikan = EnumPendidikan.SMA;
+                                                    break;
+                                                case "SMP":
+                                                    pdd.Pendidikan = EnumPendidikan.SMP;
+                                                    break;
+                                            }
+
                                             if (col8Value.ToString() == "Pria")
                                                 pdd.JenisKelamin = EnumJenisKelamin.Pria;
                                             else if (col8Value.ToString() == "Wanita")
                                                 pdd.JenisKelamin = EnumJenisKelamin.Wanita;
+
                                             return pdd;
                                         }
                                     }
@@ -237,12 +278,51 @@ namespace QRCodeWinForms
                                         pdk.TempatLahir = col3Value.ToString();
                                         pdk.TanggalLahir = Convert.ToDateTime(col4Value);
                                         pdk.Alamat = col5Value.ToString();
-                                        pdk.Pekerjaan = col6Value.ToString();
-                                        pdk.Pendidikan = col7Value.ToString();
+
+                                        switch (col6Value.ToString())
+                                        {
+                                            case "Lainnya":
+                                                pdk.Pekerjaan = EnumPekerjaan.Lainnya;
+                                                break;
+                                            case "Mahasiswa":
+                                                pdk.Pekerjaan = EnumPekerjaan.Mahasiswa;
+                                                break;
+                                            case "Pelajar":
+                                                pdk.Pekerjaan = EnumPekerjaan.Pelajar;
+                                                break;
+                                            case "PNS":
+                                                pdk.Pekerjaan = EnumPekerjaan.PNS;
+                                                break;
+                                            case "POLRI":
+                                                pdk.Pekerjaan = EnumPekerjaan.POLRI;
+                                                break;
+                                            case "Swasta":
+                                                pdk.Pekerjaan = EnumPekerjaan.Swasta;
+                                                break;
+                                            case "TNI":
+                                                pdk.Pekerjaan = EnumPekerjaan.TNI;
+                                                break;
+                                        }
+
+                                        switch (col7Value.ToString())
+                                        {
+                                            case "PT":
+                                                pdk.Pendidikan = EnumPendidikan.PT;
+                                                break;
+                                            case "SD":
+                                                pdk.Pendidikan = EnumPendidikan.SD;
+                                                break;
+                                            case "SMA":
+                                                pdk.Pendidikan = EnumPendidikan.SMA;
+                                                break;
+                                            case "SMP":
+                                                pdk.Pendidikan = EnumPendidikan.SMP;
+                                                break;
+                                        }
 
                                         if (col8Value.ToString() == "Pria")
                                             pdk.JenisKelamin = EnumJenisKelamin.Pria;
-                                        else
+                                        else if (col8Value.ToString() == "Wanita")
                                             pdk.JenisKelamin = EnumJenisKelamin.Wanita;
 
                                         listDataPenduduk.Add(pdk);
