@@ -41,6 +41,24 @@
             this.label61 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.ckbLainnya = new System.Windows.Forms.CheckBox();
+            this.ckbBukuUji = new System.Windows.Forms.CheckBox();
+            this.lblBerlakuBukuUji = new System.Windows.Forms.Label();
+            this.lblTerbitBukuUji = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.ckbSTNK = new System.Windows.Forms.CheckBox();
+            this.ckbSTCK = new System.Windows.Forms.CheckBox();
+            this.ckbRANMOR = new System.Windows.Forms.CheckBox();
+            this.ckbSIM = new System.Windows.Forms.CheckBox();
+            this.lblMasaBerlakuSK = new System.Windows.Forms.Label();
+            this.lblTerbitSKSita = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
             this.lblWilayahHukum = new System.Windows.Forms.Label();
             this.lblPatokanLanggar = new System.Windows.Forms.Label();
             this.lblJalanLanggar = new System.Windows.Forms.Label();
@@ -152,27 +170,11 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.btnPrintSurat = new System.Windows.Forms.Button();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.ckbLainnya = new System.Windows.Forms.CheckBox();
-            this.ckbBukuUji = new System.Windows.Forms.CheckBox();
-            this.lblBerlakuBukuUji = new System.Windows.Forms.Label();
-            this.lblTerbitBukuUji = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.ckbSTNK = new System.Windows.Forms.CheckBox();
-            this.ckbSTCK = new System.Windows.Forms.CheckBox();
-            this.ckbRANMOR = new System.Windows.Forms.CheckBox();
-            this.ckbSIM = new System.Windows.Forms.CheckBox();
-            this.lblMasaBerlakuSK = new System.Windows.Forms.Label();
-            this.lblTerbitSKSita = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
             this.pnlSuratTilang.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -180,8 +182,6 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.groupBox9.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSuratTilang
@@ -224,7 +224,7 @@
             // lblBankSisaDenda
             // 
             resources.ApplyResources(this.lblBankSisaDenda, "lblBankSisaDenda");
-            this.lblBankSisaDenda.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblBankSisaDenda.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblBankSisaDenda.Name = "lblBankSisaDenda";
             // 
             // label68
@@ -286,34 +286,159 @@
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
             // 
+            // groupBox10
+            // 
+            resources.ApplyResources(this.groupBox10, "groupBox10");
+            this.groupBox10.Controls.Add(this.ckbLainnya);
+            this.groupBox10.Controls.Add(this.ckbBukuUji);
+            this.groupBox10.Controls.Add(this.lblBerlakuBukuUji);
+            this.groupBox10.Controls.Add(this.lblTerbitBukuUji);
+            this.groupBox10.Controls.Add(this.label75);
+            this.groupBox10.Controls.Add(this.label41);
+            this.groupBox10.Controls.Add(this.label42);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.TabStop = false;
+            // 
+            // ckbLainnya
+            // 
+            resources.ApplyResources(this.ckbLainnya, "ckbLainnya");
+            this.ckbLainnya.Name = "ckbLainnya";
+            this.ckbLainnya.TabStop = false;
+            this.ckbLainnya.UseVisualStyleBackColor = true;
+            // 
+            // ckbBukuUji
+            // 
+            resources.ApplyResources(this.ckbBukuUji, "ckbBukuUji");
+            this.ckbBukuUji.Name = "ckbBukuUji";
+            this.ckbBukuUji.TabStop = false;
+            this.ckbBukuUji.UseVisualStyleBackColor = true;
+            // 
+            // lblBerlakuBukuUji
+            // 
+            resources.ApplyResources(this.lblBerlakuBukuUji, "lblBerlakuBukuUji");
+            this.lblBerlakuBukuUji.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.lblBerlakuBukuUji.Name = "lblBerlakuBukuUji";
+            // 
+            // lblTerbitBukuUji
+            // 
+            resources.ApplyResources(this.lblTerbitBukuUji, "lblTerbitBukuUji");
+            this.lblTerbitBukuUji.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.lblTerbitBukuUji.Name = "lblTerbitBukuUji";
+            // 
+            // label75
+            // 
+            resources.ApplyResources(this.label75, "label75");
+            this.label75.Name = "label75";
+            // 
+            // label41
+            // 
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.Name = "label41";
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
+            // 
+            // groupBox9
+            // 
+            resources.ApplyResources(this.groupBox9, "groupBox9");
+            this.groupBox9.BackColor = System.Drawing.Color.White;
+            this.groupBox9.Controls.Add(this.ckbSTNK);
+            this.groupBox9.Controls.Add(this.ckbSTCK);
+            this.groupBox9.Controls.Add(this.ckbRANMOR);
+            this.groupBox9.Controls.Add(this.ckbSIM);
+            this.groupBox9.Controls.Add(this.lblMasaBerlakuSK);
+            this.groupBox9.Controls.Add(this.lblTerbitSKSita);
+            this.groupBox9.Controls.Add(this.label74);
+            this.groupBox9.Controls.Add(this.label40);
+            this.groupBox9.Controls.Add(this.label39);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.TabStop = false;
+            // 
+            // ckbSTNK
+            // 
+            resources.ApplyResources(this.ckbSTNK, "ckbSTNK");
+            this.ckbSTNK.Name = "ckbSTNK";
+            this.ckbSTNK.TabStop = false;
+            this.ckbSTNK.UseVisualStyleBackColor = true;
+            // 
+            // ckbSTCK
+            // 
+            resources.ApplyResources(this.ckbSTCK, "ckbSTCK");
+            this.ckbSTCK.Name = "ckbSTCK";
+            this.ckbSTCK.TabStop = false;
+            this.ckbSTCK.UseVisualStyleBackColor = true;
+            // 
+            // ckbRANMOR
+            // 
+            resources.ApplyResources(this.ckbRANMOR, "ckbRANMOR");
+            this.ckbRANMOR.Name = "ckbRANMOR";
+            this.ckbRANMOR.TabStop = false;
+            this.ckbRANMOR.UseVisualStyleBackColor = true;
+            // 
+            // ckbSIM
+            // 
+            resources.ApplyResources(this.ckbSIM, "ckbSIM");
+            this.ckbSIM.Name = "ckbSIM";
+            this.ckbSIM.TabStop = false;
+            this.ckbSIM.UseVisualStyleBackColor = true;
+            // 
+            // lblMasaBerlakuSK
+            // 
+            resources.ApplyResources(this.lblMasaBerlakuSK, "lblMasaBerlakuSK");
+            this.lblMasaBerlakuSK.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.lblMasaBerlakuSK.Name = "lblMasaBerlakuSK";
+            // 
+            // lblTerbitSKSita
+            // 
+            resources.ApplyResources(this.lblTerbitSKSita, "lblTerbitSKSita");
+            this.lblTerbitSKSita.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.lblTerbitSKSita.Name = "lblTerbitSKSita";
+            // 
+            // label74
+            // 
+            resources.ApplyResources(this.label74, "label74");
+            this.label74.Name = "label74";
+            // 
+            // label40
+            // 
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.Name = "label40";
+            // 
+            // label39
+            // 
+            resources.ApplyResources(this.label39, "label39");
+            this.label39.Name = "label39";
+            // 
             // lblWilayahHukum
             // 
             resources.ApplyResources(this.lblWilayahHukum, "lblWilayahHukum");
-            this.lblWilayahHukum.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblWilayahHukum.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblWilayahHukum.Name = "lblWilayahHukum";
             // 
             // lblPatokanLanggar
             // 
             resources.ApplyResources(this.lblPatokanLanggar, "lblPatokanLanggar");
-            this.lblPatokanLanggar.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblPatokanLanggar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblPatokanLanggar.Name = "lblPatokanLanggar";
             // 
             // lblJalanLanggar
             // 
             resources.ApplyResources(this.lblJalanLanggar, "lblJalanLanggar");
-            this.lblJalanLanggar.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblJalanLanggar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblJalanLanggar.Name = "lblJalanLanggar";
             // 
             // lblJamLanggar
             // 
             resources.ApplyResources(this.lblJamLanggar, "lblJamLanggar");
-            this.lblJamLanggar.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblJamLanggar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblJamLanggar.Name = "lblJamLanggar";
             // 
             // lblWaktuLanggar
             // 
             resources.ApplyResources(this.lblWaktuLanggar, "lblWaktuLanggar");
-            this.lblWaktuLanggar.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblWaktuLanggar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblWaktuLanggar.Name = "lblWaktuLanggar";
             // 
             // label38
@@ -374,25 +499,25 @@
             // lblAngkaPinalti
             // 
             resources.ApplyResources(this.lblAngkaPinalti, "lblAngkaPinalti");
-            this.lblAngkaPinalti.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblAngkaPinalti.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblAngkaPinalti.Name = "lblAngkaPinalti";
             // 
             // lblBankSetorDenda
             // 
             resources.ApplyResources(this.lblBankSetorDenda, "lblBankSetorDenda");
-            this.lblBankSetorDenda.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblBankSetorDenda.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblBankSetorDenda.Name = "lblBankSetorDenda";
             // 
             // lblDendaMaksimal
             // 
             resources.ApplyResources(this.lblDendaMaksimal, "lblDendaMaksimal");
-            this.lblDendaMaksimal.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblDendaMaksimal.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblDendaMaksimal.Name = "lblDendaMaksimal";
             // 
             // lblPasal
             // 
             resources.ApplyResources(this.lblPasal, "lblPasal");
-            this.lblPasal.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblPasal.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblPasal.Name = "lblPasal";
             // 
             // label77
@@ -467,19 +592,19 @@
             // lblTempatAmbilBarangSita
             // 
             resources.ApplyResources(this.lblTempatAmbilBarangSita, "lblTempatAmbilBarangSita");
-            this.lblTempatAmbilBarangSita.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblTempatAmbilBarangSita.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblTempatAmbilBarangSita.Name = "lblTempatAmbilBarangSita";
             // 
             // lblKesatuanPenyidik
             // 
             resources.ApplyResources(this.lblKesatuanPenyidik, "lblKesatuanPenyidik");
-            this.lblKesatuanPenyidik.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblKesatuanPenyidik.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblKesatuanPenyidik.Name = "lblKesatuanPenyidik";
             // 
             // lblPangkatPenyidik
             // 
             resources.ApplyResources(this.lblPangkatPenyidik, "lblPangkatPenyidik");
-            this.lblPangkatPenyidik.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblPangkatPenyidik.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblPangkatPenyidik.Name = "lblPangkatPenyidik";
             // 
             // lblNamaPenyidik
@@ -490,13 +615,13 @@
             // lblJamSidang
             // 
             resources.ApplyResources(this.lblJamSidang, "lblJamSidang");
-            this.lblJamSidang.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblJamSidang.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblJamSidang.Name = "lblJamSidang";
             // 
             // lblWaktuSidang
             // 
             resources.ApplyResources(this.lblWaktuSidang, "lblWaktuSidang");
-            this.lblWaktuSidang.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblWaktuSidang.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblWaktuSidang.Name = "lblWaktuSidang";
             // 
             // lblPengadilanSidang
@@ -574,25 +699,25 @@
             // lblWaktuPernyataan
             // 
             resources.ApplyResources(this.lblWaktuPernyataan, "lblWaktuPernyataan");
-            this.lblWaktuPernyataan.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblWaktuPernyataan.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblWaktuPernyataan.Name = "lblWaktuPernyataan";
             // 
             // lblAlamatWakil
             // 
             resources.ApplyResources(this.lblAlamatWakil, "lblAlamatWakil");
-            this.lblAlamatWakil.ForeColor = System.Drawing.Color.Lime;
+            this.lblAlamatWakil.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblAlamatWakil.Name = "lblAlamatWakil";
             // 
             // lblUmurWakil
             // 
             resources.ApplyResources(this.lblUmurWakil, "lblUmurWakil");
-            this.lblUmurWakil.ForeColor = System.Drawing.Color.Lime;
+            this.lblUmurWakil.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblUmurWakil.Name = "lblUmurWakil";
             // 
             // lblNamaWakil
             // 
             resources.ApplyResources(this.lblNamaWakil, "lblNamaWakil");
-            this.lblNamaWakil.ForeColor = System.Drawing.Color.Lime;
+            this.lblNamaWakil.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblNamaWakil.Name = "lblNamaWakil";
             // 
             // label66
@@ -677,55 +802,55 @@
             // lblJK
             // 
             resources.ApplyResources(this.lblJK, "lblJK");
-            this.lblJK.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblJK.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblJK.Name = "lblJK";
             // 
             // lblTempatLahirPelanggar
             // 
             resources.ApplyResources(this.lblTempatLahirPelanggar, "lblTempatLahirPelanggar");
-            this.lblTempatLahirPelanggar.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblTempatLahirPelanggar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblTempatLahirPelanggar.Name = "lblTempatLahirPelanggar";
             // 
             // lblTanggalLahirPelanggar
             // 
             resources.ApplyResources(this.lblTanggalLahirPelanggar, "lblTanggalLahirPelanggar");
-            this.lblTanggalLahirPelanggar.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblTanggalLahirPelanggar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblTanggalLahirPelanggar.Name = "lblTanggalLahirPelanggar";
             // 
             // lblUmurPelanggar
             // 
             resources.ApplyResources(this.lblUmurPelanggar, "lblUmurPelanggar");
-            this.lblUmurPelanggar.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblUmurPelanggar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblUmurPelanggar.Name = "lblUmurPelanggar";
             // 
             // lblNoKTP
             // 
             resources.ApplyResources(this.lblNoKTP, "lblNoKTP");
-            this.lblNoKTP.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblNoKTP.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblNoKTP.Name = "lblNoKTP";
             // 
             // lblPendidikanPelanggar
             // 
             resources.ApplyResources(this.lblPendidikanPelanggar, "lblPendidikanPelanggar");
-            this.lblPendidikanPelanggar.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblPendidikanPelanggar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblPendidikanPelanggar.Name = "lblPendidikanPelanggar";
             // 
             // lblPekerjaanPelanggar
             // 
             resources.ApplyResources(this.lblPekerjaanPelanggar, "lblPekerjaanPelanggar");
-            this.lblPekerjaanPelanggar.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblPekerjaanPelanggar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblPekerjaanPelanggar.Name = "lblPekerjaanPelanggar";
             // 
             // lblAlamatPelanggar
             // 
             resources.ApplyResources(this.lblAlamatPelanggar, "lblAlamatPelanggar");
-            this.lblAlamatPelanggar.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblAlamatPelanggar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblAlamatPelanggar.Name = "lblAlamatPelanggar";
             // 
             // lblNamaPelanggar
             // 
             resources.ApplyResources(this.lblNamaPelanggar, "lblNamaPelanggar");
-            this.lblNamaPelanggar.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblNamaPelanggar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblNamaPelanggar.Name = "lblNamaPelanggar";
             // 
             // label16
@@ -792,7 +917,7 @@
             // lblNoRegTilang
             // 
             resources.ApplyResources(this.lblNoRegTilang, "lblNoRegTilang");
-            this.lblNoRegTilang.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblNoRegTilang.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblNoRegTilang.Name = "lblNoRegTilang";
             // 
             // label17
@@ -830,13 +955,13 @@
             // lblNoRegPenyidikan
             // 
             resources.ApplyResources(this.lblNoRegPenyidikan, "lblNoRegPenyidikan");
-            this.lblNoRegPenyidikan.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblNoRegPenyidikan.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblNoRegPenyidikan.Name = "lblNoRegPenyidikan";
             // 
             // lblKesatuan
             // 
             resources.ApplyResources(this.lblKesatuan, "lblKesatuan");
-            this.lblKesatuan.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblKesatuan.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblKesatuan.Name = "lblKesatuan";
             // 
             // label2
@@ -880,61 +1005,61 @@
             // lblNoMesinKendaraan
             // 
             resources.ApplyResources(this.lblNoMesinKendaraan, "lblNoMesinKendaraan");
-            this.lblNoMesinKendaraan.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblNoMesinKendaraan.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblNoMesinKendaraan.Name = "lblNoMesinKendaraan";
             // 
             // lblMerekKendaraan
             // 
             resources.ApplyResources(this.lblMerekKendaraan, "lblMerekKendaraan");
-            this.lblMerekKendaraan.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblMerekKendaraan.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblMerekKendaraan.Name = "lblMerekKendaraan";
             // 
             // lblSamsat
             // 
             resources.ApplyResources(this.lblSamsat, "lblSamsat");
-            this.lblSamsat.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblSamsat.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblSamsat.Name = "lblSamsat";
             // 
             // lblNoRangkaKendaraan
             // 
             resources.ApplyResources(this.lblNoRangkaKendaraan, "lblNoRangkaKendaraan");
-            this.lblNoRangkaKendaraan.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblNoRangkaKendaraan.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblNoRangkaKendaraan.Name = "lblNoRangkaKendaraan";
             // 
             // lblJenisKendaraan
             // 
             resources.ApplyResources(this.lblJenisKendaraan, "lblJenisKendaraan");
-            this.lblJenisKendaraan.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblJenisKendaraan.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblJenisKendaraan.Name = "lblJenisKendaraan";
             // 
             // lblNoRegKendaraan
             // 
             resources.ApplyResources(this.lblNoRegKendaraan, "lblNoRegKendaraan");
-            this.lblNoRegKendaraan.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblNoRegKendaraan.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblNoRegKendaraan.Name = "lblNoRegKendaraan";
             // 
             // lblTanggalPelanggaran
             // 
             resources.ApplyResources(this.lblTanggalPelanggaran, "lblTanggalPelanggaran");
-            this.lblTanggalPelanggaran.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblTanggalPelanggaran.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblTanggalPelanggaran.Name = "lblTanggalPelanggaran";
             // 
             // lblSATPAS
             // 
             resources.ApplyResources(this.lblSATPAS, "lblSATPAS");
-            this.lblSATPAS.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblSATPAS.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblSATPAS.Name = "lblSATPAS";
             // 
             // lblNoSIM
             // 
             resources.ApplyResources(this.lblNoSIM, "lblNoSIM");
-            this.lblNoSIM.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblNoSIM.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblNoSIM.Name = "lblNoSIM";
             // 
             // lblGolSIM
             // 
             resources.ApplyResources(this.lblGolSIM, "lblGolSIM");
-            this.lblGolSIM.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblGolSIM.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblGolSIM.Name = "lblGolSIM";
             // 
             // label27
@@ -995,131 +1120,6 @@
             this.btnPrintSurat.UseVisualStyleBackColor = true;
             this.btnPrintSurat.Click += new System.EventHandler(this.btnPrintSurat_Click);
             // 
-            // groupBox10
-            // 
-            resources.ApplyResources(this.groupBox10, "groupBox10");
-            this.groupBox10.Controls.Add(this.ckbLainnya);
-            this.groupBox10.Controls.Add(this.ckbBukuUji);
-            this.groupBox10.Controls.Add(this.lblBerlakuBukuUji);
-            this.groupBox10.Controls.Add(this.lblTerbitBukuUji);
-            this.groupBox10.Controls.Add(this.label75);
-            this.groupBox10.Controls.Add(this.label41);
-            this.groupBox10.Controls.Add(this.label42);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.TabStop = false;
-            // 
-            // ckbLainnya
-            // 
-            resources.ApplyResources(this.ckbLainnya, "ckbLainnya");
-            this.ckbLainnya.Name = "ckbLainnya";
-            this.ckbLainnya.TabStop = false;
-            this.ckbLainnya.UseVisualStyleBackColor = true;
-            // 
-            // ckbBukuUji
-            // 
-            resources.ApplyResources(this.ckbBukuUji, "ckbBukuUji");
-            this.ckbBukuUji.Name = "ckbBukuUji";
-            this.ckbBukuUji.TabStop = false;
-            this.ckbBukuUji.UseVisualStyleBackColor = true;
-            // 
-            // lblBerlakuBukuUji
-            // 
-            resources.ApplyResources(this.lblBerlakuBukuUji, "lblBerlakuBukuUji");
-            this.lblBerlakuBukuUji.ForeColor = System.Drawing.Color.LawnGreen;
-            this.lblBerlakuBukuUji.Name = "lblBerlakuBukuUji";
-            // 
-            // lblTerbitBukuUji
-            // 
-            resources.ApplyResources(this.lblTerbitBukuUji, "lblTerbitBukuUji");
-            this.lblTerbitBukuUji.ForeColor = System.Drawing.Color.LawnGreen;
-            this.lblTerbitBukuUji.Name = "lblTerbitBukuUji";
-            // 
-            // label75
-            // 
-            resources.ApplyResources(this.label75, "label75");
-            this.label75.Name = "label75";
-            // 
-            // label41
-            // 
-            resources.ApplyResources(this.label41, "label41");
-            this.label41.Name = "label41";
-            // 
-            // label42
-            // 
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.Name = "label42";
-            // 
-            // groupBox9
-            // 
-            resources.ApplyResources(this.groupBox9, "groupBox9");
-            this.groupBox9.BackColor = System.Drawing.Color.White;
-            this.groupBox9.Controls.Add(this.ckbSTNK);
-            this.groupBox9.Controls.Add(this.ckbSTCK);
-            this.groupBox9.Controls.Add(this.ckbRANMOR);
-            this.groupBox9.Controls.Add(this.ckbSIM);
-            this.groupBox9.Controls.Add(this.lblMasaBerlakuSK);
-            this.groupBox9.Controls.Add(this.lblTerbitSKSita);
-            this.groupBox9.Controls.Add(this.label74);
-            this.groupBox9.Controls.Add(this.label40);
-            this.groupBox9.Controls.Add(this.label39);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.TabStop = false;
-            // 
-            // ckbSTNK
-            // 
-            resources.ApplyResources(this.ckbSTNK, "ckbSTNK");
-            this.ckbSTNK.Name = "ckbSTNK";
-            this.ckbSTNK.TabStop = false;
-            this.ckbSTNK.UseVisualStyleBackColor = true;
-            // 
-            // ckbSTCK
-            // 
-            resources.ApplyResources(this.ckbSTCK, "ckbSTCK");
-            this.ckbSTCK.Name = "ckbSTCK";
-            this.ckbSTCK.TabStop = false;
-            this.ckbSTCK.UseVisualStyleBackColor = true;
-            // 
-            // ckbRANMOR
-            // 
-            resources.ApplyResources(this.ckbRANMOR, "ckbRANMOR");
-            this.ckbRANMOR.Name = "ckbRANMOR";
-            this.ckbRANMOR.TabStop = false;
-            this.ckbRANMOR.UseVisualStyleBackColor = true;
-            // 
-            // ckbSIM
-            // 
-            resources.ApplyResources(this.ckbSIM, "ckbSIM");
-            this.ckbSIM.Name = "ckbSIM";
-            this.ckbSIM.TabStop = false;
-            this.ckbSIM.UseVisualStyleBackColor = true;
-            // 
-            // lblMasaBerlakuSK
-            // 
-            resources.ApplyResources(this.lblMasaBerlakuSK, "lblMasaBerlakuSK");
-            this.lblMasaBerlakuSK.ForeColor = System.Drawing.Color.LawnGreen;
-            this.lblMasaBerlakuSK.Name = "lblMasaBerlakuSK";
-            // 
-            // lblTerbitSKSita
-            // 
-            resources.ApplyResources(this.lblTerbitSKSita, "lblTerbitSKSita");
-            this.lblTerbitSKSita.ForeColor = System.Drawing.Color.LawnGreen;
-            this.lblTerbitSKSita.Name = "lblTerbitSKSita";
-            // 
-            // label74
-            // 
-            resources.ApplyResources(this.label74, "label74");
-            this.label74.Name = "label74";
-            // 
-            // label40
-            // 
-            resources.ApplyResources(this.label40, "label40");
-            this.label40.Name = "label40";
-            // 
-            // label39
-            // 
-            resources.ApplyResources(this.label39, "label39");
-            this.label39.Name = "label39";
-            // 
             // frmSuratTilangViewer
             // 
             this.AcceptButton = this.btnPrintSurat;
@@ -1135,6 +1135,10 @@
             this.groupBox8.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox11.ResumeLayout(false);
@@ -1149,10 +1153,6 @@
             this.groupBox1.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
             this.ResumeLayout(false);
 
         }

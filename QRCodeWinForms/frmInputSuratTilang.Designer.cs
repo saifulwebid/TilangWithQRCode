@@ -153,8 +153,8 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.btnSimpanData = new System.Windows.Forms.Button();
-            this.btnTampilST = new System.Windows.Forms.Button();
-            this.btnBuatSTBaru = new System.Windows.Forms.Button();
+            this.btnTampil = new System.Windows.Forms.Button();
+            this.btnNewST = new System.Windows.Forms.Button();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -1424,25 +1424,25 @@
             this.btnSimpanData.UseVisualStyleBackColor = true;
             this.btnSimpanData.Click += new System.EventHandler(this.btnSimpanData_Click);
             // 
-            // btnTampilST
+            // btnTampil
             // 
-            this.btnTampilST.AutoSize = true;
-            this.btnTampilST.Location = new System.Drawing.Point(88, 1287);
-            this.btnTampilST.Name = "btnTampilST";
-            this.btnTampilST.Size = new System.Drawing.Size(108, 23);
-            this.btnTampilST.TabIndex = 102;
-            this.btnTampilST.Text = "Tampil Surat Tilang";
-            this.btnTampilST.UseVisualStyleBackColor = true;
+            this.btnTampil.Location = new System.Drawing.Point(141, 1287);
+            this.btnTampil.Name = "btnTampil";
+            this.btnTampil.Size = new System.Drawing.Size(75, 23);
+            this.btnTampil.TabIndex = 100;
+            this.btnTampil.Text = "Tampil";
+            this.btnTampil.UseVisualStyleBackColor = true;
+            this.btnTampil.Click += new System.EventHandler(this.btnTampil_Click);
             // 
-            // btnBuatSTBaru
+            // btnNewST
             // 
-            this.btnBuatSTBaru.AutoSize = true;
-            this.btnBuatSTBaru.Location = new System.Drawing.Point(523, 1287);
-            this.btnBuatSTBaru.Name = "btnBuatSTBaru";
-            this.btnBuatSTBaru.Size = new System.Drawing.Size(124, 23);
-            this.btnBuatSTBaru.TabIndex = 103;
-            this.btnBuatSTBaru.Text = "Buat Surat Tilang Baru";
-            this.btnBuatSTBaru.UseVisualStyleBackColor = true;
+            this.btnNewST.Location = new System.Drawing.Point(572, 1287);
+            this.btnNewST.Name = "btnNewST";
+            this.btnNewST.Size = new System.Drawing.Size(75, 23);
+            this.btnNewST.TabIndex = 101;
+            this.btnNewST.Text = "Buat Baru";
+            this.btnNewST.UseVisualStyleBackColor = true;
+            this.btnNewST.Click += new System.EventHandler(this.btnNewST_Click);
             // 
             // frmInputSuratTilang
             // 
@@ -1453,8 +1453,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(740, 369);
-            this.Controls.Add(this.btnBuatSTBaru);
-            this.Controls.Add(this.btnTampilST);
+            this.Controls.Add(this.btnNewST);
+            this.Controls.Add(this.btnTampil);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSimpanData);
             this.Controls.Add(this.groupBox8);
@@ -1620,8 +1620,8 @@
         public System.Windows.Forms.CheckBox ckbSTCK;
         public System.Windows.Forms.CheckBox ckbSIM;
         private System.Windows.Forms.Button btnSimpanData;
-        private System.Windows.Forms.Button btnTampilST;
-        private System.Windows.Forms.Button btnBuatSTBaru;
+        private System.Windows.Forms.Button btnTampil;
+        private System.Windows.Forms.Button btnNewST;
 
     }
 }

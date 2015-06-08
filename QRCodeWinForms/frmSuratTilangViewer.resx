@@ -124,9 +124,8 @@
   <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblPendidikanPelanggar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+  <data name="&gt;&gt;label43.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <data name="lblBankSetorDenda.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -134,15 +133,13 @@
   <data name="&gt;&gt;lblBankSisaDenda.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label76.Text" xml:space="preserve">
     <value>Rp</value>
   </data>
   <data name="lblJamLanggar.Text" xml:space="preserve">
     <value>label92</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblTerbitSKSita.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
   </data>
@@ -155,9 +152,6 @@
   <data name="&gt;&gt;lblWaktuPernyataan.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label57.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 13</value>
   </data>
@@ -167,11 +161,14 @@
   <data name="&gt;&gt;label34.Parent" xml:space="preserve">
     <value>groupBox7</value>
   </data>
-  <data name="lblNamaWakil.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
+  <data name="&gt;&gt;lblTerbitSKSita.Name" xml:space="preserve">
+    <value>lblTerbitSKSita</value>
   </data>
   <data name="&gt;&gt;label26.Name" xml:space="preserve">
     <value>label26</value>
+  </data>
+  <data name="lblDendaMaksimal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;lblNoSIM.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -200,11 +197,17 @@
   <data name="label69.Location" type="System.Drawing.Point, System.Drawing">
     <value>416, 80</value>
   </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 13</value>
+  </data>
+  <data name="&gt;&gt;lblPekerjaanPelanggar.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
     <value>129, 13</value>
   </data>
-  <data name="&gt;&gt;lblBankSisaDenda.Parent" xml:space="preserve">
-    <value>groupBox8</value>
+  <data name="&gt;&gt;lblPasal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
     <value>UMUR:</value>
@@ -221,11 +224,8 @@
   <data name="&gt;&gt;label27.Name" xml:space="preserve">
     <value>label27</value>
   </data>
-  <data name="label60.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblNamaPelanggar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>RUANG BAGI TERDAKWA</value>
@@ -233,8 +233,8 @@
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 13</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="&gt;&gt;ckbSTCK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblPendidikanPelanggar.Location" type="System.Drawing.Point, System.Drawing">
     <value>111, 101</value>
@@ -242,17 +242,23 @@
   <data name="lblUmurPelanggar.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblAlamatPelanggar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
   <data name="lblBerlakuBukuUji.Location" type="System.Drawing.Point, System.Drawing">
     <value>91, 101</value>
   </data>
   <data name="&gt;&gt;label22.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
+  <data name="&gt;&gt;lblTempatLahirPelanggar.Name" xml:space="preserve">
+    <value>lblTempatLahirPelanggar</value>
+  </data>
   <data name="lblWilayahHukum.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
-  </data>
-  <data name="&gt;&gt;ckbSTNK.Parent" xml:space="preserve">
-    <value>groupBox9</value>
   </data>
   <data name="lblUmurWakil.Location" type="System.Drawing.Point, System.Drawing">
     <value>49, 157</value>
@@ -281,9 +287,6 @@
   <data name="&gt;&gt;lblAlamatPelanggar.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="label28.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="lblPasal.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 13</value>
   </data>
@@ -292,9 +295,6 @@
   </data>
   <data name="&gt;&gt;label41.Name" xml:space="preserve">
     <value>label41</value>
-  </data>
-  <data name="lblPatokanLanggar.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;rbtprtPerwakilan.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -311,11 +311,8 @@
   <data name="label48.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="ckbSTNK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 57</value>
-  </data>
-  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 13</value>
+  <data name="label74.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
   </data>
   <data name="label50.Text" xml:space="preserve">
     <value>JUMLAH UANG TITIPAN</value>
@@ -325,6 +322,9 @@
   </data>
   <data name="&gt;&gt;lblNoRegKendaraan.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblBerlakuBukuUji.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label50.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -344,17 +344,29 @@
   <data name="lblTerbitBukuUji.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 13</value>
   </data>
+  <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 15</value>
+  </data>
   <data name="&gt;&gt;lblJamSidang.Name" xml:space="preserve">
     <value>lblJamSidang</value>
   </data>
   <data name="&gt;&gt;label52.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;lblJamSidang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>PADA</value>
+  </data>
   <data name="label70.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 77</value>
   </data>
   <data name="ckbSTNK.Text" xml:space="preserve">
     <value>STNK</value>
+  </data>
+  <data name="label52.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="lblJK.Text" xml:space="preserve">
     <value>label80</value>
@@ -370,6 +382,9 @@
   </data>
   <data name="&gt;&gt;label30.Parent" xml:space="preserve">
     <value>groupBox1</value>
+  </data>
+  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>472, 13</value>
   </data>
   <data name="&gt;&gt;label18.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -401,14 +416,14 @@
   <data name="label8.Text" xml:space="preserve">
     <value>ALAMAT:</value>
   </data>
-  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>302, 20</value>
-  </data>
   <data name="label72.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;lblSATPAS.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="lblJalanLanggar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
   <data name="&gt;&gt;label69.Name" xml:space="preserve">
     <value>label69</value>
@@ -418,9 +433,6 @@
   </data>
   <data name="lblWaktuLanggar.Text" xml:space="preserve">
     <value>label91</value>
-  </data>
-  <data name="&gt;&gt;label44.Parent" xml:space="preserve">
-    <value>groupBox11</value>
   </data>
   <data name="&gt;&gt;lblMasaBerlakuSK.Parent" xml:space="preserve">
     <value>groupBox9</value>
@@ -434,6 +446,9 @@
   <data name="&gt;&gt;label31.Parent" xml:space="preserve">
     <value>groupBox8</value>
   </data>
+  <data name="label50.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;label19.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -443,11 +458,14 @@
   <data name="label2.Text" xml:space="preserve">
     <value>TERDAKWA</value>
   </data>
-  <data name="&gt;&gt;lblAngkaPinalti.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblNoSIM.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
   <data name="&gt;&gt;lblKesatuan.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="lblWaktuPernyataan.Text" xml:space="preserve">
+    <value>label120</value>
   </data>
   <data name="&gt;&gt;ckbRANMOR.Parent" xml:space="preserve">
     <value>groupBox9</value>
@@ -464,8 +482,8 @@
   <data name="&gt;&gt;label28.Name" xml:space="preserve">
     <value>label28</value>
   </data>
-  <data name="label52.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="&gt;&gt;lblKesatuanPenyidik.Parent" xml:space="preserve">
+    <value>groupBox11</value>
   </data>
   <data name="&gt;&gt;lblNoRegKendaraan.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -494,20 +512,20 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="label67.Text" xml:space="preserve">
+    <value>Dengan ini saya menyatakan :</value>
+  </data>
   <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
   <data name="lblKesatuanPenyidik.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 13</value>
   </data>
-  <data name="&gt;&gt;lblMerekKendaraan.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;lblWaktuSidang.Parent" xml:space="preserve">
+    <value>groupBox11</value>
   </data>
   <data name="&gt;&gt;rbtprtPerwakilan.Parent" xml:space="preserve">
     <value>groupBox5</value>
-  </data>
-  <data name="label68.Text" xml:space="preserve">
-    <value>Cap Bank</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 50</value>
@@ -533,14 +551,14 @@
   <data name="&gt;&gt;label21.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ckbBukuUji.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
   <data name="&gt;&gt;groupBox7.Parent" xml:space="preserve">
     <value>pnlSuratTilang</value>
   </data>
   <data name="&gt;&gt;label54.Parent" xml:space="preserve">
     <value>groupBox5</value>
-  </data>
-  <data name="label39.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
   </data>
   <data name="&gt;&gt;label37.Parent" xml:space="preserve">
     <value>groupBox7</value>
@@ -550,8 +568,17 @@
 TITIPAN DENDA, SISA UANG TITIPAN DAPAT DIAMBIL
 </value>
   </data>
+  <data name="&gt;&gt;lblUmurPelanggar.Name" xml:space="preserve">
+    <value>lblUmurPelanggar</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
   <data name="lblTanggalPelanggaran.Location" type="System.Drawing.Point, System.Drawing">
     <value>509, 20</value>
+  </data>
+  <data name="&gt;&gt;label38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label75.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 14</value>
@@ -568,8 +595,8 @@ TITIPAN DENDA, SISA UANG TITIPAN DAPAT DIAMBIL
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="lblUmurPelanggar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+  <data name="lblAngkaPinalti.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
   </data>
   <data name="&gt;&gt;label73.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -583,8 +610,14 @@ TITIPAN DENDA, SISA UANG TITIPAN DAPAT DIAMBIL
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label40.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;label44.ZOrder" xml:space="preserve">
     <value>14</value>
+  </data>
+  <data name="&gt;&gt;lblMasaBerlakuSK.Name" xml:space="preserve">
+    <value>lblMasaBerlakuSK</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmSuratTilangViewer</value>
@@ -597,12 +630,6 @@ TITIPAN DENDA, SISA UANG TITIPAN DAPAT DIAMBIL
   </data>
   <data name="lblNamaWakil.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="lblJK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
-  </data>
-  <data name="btnPrintSurat.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
   </data>
   <data name="&gt;&gt;label14.Name" xml:space="preserve">
     <value>label14</value>
@@ -619,9 +646,6 @@ TITIPAN DENDA, SISA UANG TITIPAN DAPAT DIAMBIL
   <data name="&gt;&gt;lblNamaWakil.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="label39.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
@@ -634,9 +658,6 @@ TITIPAN DENDA, SISA UANG TITIPAN DAPAT DIAMBIL
   <data name="lblNoRegTilang.Location" type="System.Drawing.Point, System.Drawing">
     <value>935, 38</value>
   </data>
-  <data name="&gt;&gt;lblTerbitSKSita.Parent" xml:space="preserve">
-    <value>groupBox9</value>
-  </data>
   <data name="label4.Text" xml:space="preserve">
     <value>"BUKTI PELANGGARAN LALULINTAS JALAN TERTENTU"</value>
   </data>
@@ -646,14 +667,8 @@ TITIPAN DENDA, SISA UANG TITIPAN DAPAT DIAMBIL
   <data name="lblTempatLahirPelanggar.Location" type="System.Drawing.Point, System.Drawing">
     <value>246, 125</value>
   </data>
-  <data name="ckbSIM.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;lblJamLanggar.Parent" xml:space="preserve">
     <value>groupBox7</value>
-  </data>
-  <data name="lblPasal.Text" xml:space="preserve">
-    <value>label112</value>
   </data>
   <data name="&gt;&gt;label45.ZOrder" xml:space="preserve">
     <value>13</value>
@@ -661,11 +676,17 @@ TITIPAN DENDA, SISA UANG TITIPAN DAPAT DIAMBIL
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>BERDASARKAN PASAL 16 sub a DAN e UU NO. 2/2002 dan PASAL 39 dan PASAL 40 UU NO. 8/</value>
+  </data>
   <data name="&gt;&gt;label15.Name" xml:space="preserve">
     <value>label15</value>
   </data>
-  <data name="label15.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="lblTanggalLahirPelanggar.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblKesatuanPenyidik.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -675,6 +696,9 @@ TITIPAN DENDA, SISA UANG TITIPAN DAPAT DIAMBIL
   </data>
   <data name="&gt;&gt;label48.Name" xml:space="preserve">
     <value>label48</value>
+  </data>
+  <data name="lblNoKTP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
   <data name="ckbRANMOR.Location" type="System.Drawing.Point, System.Drawing">
     <value>111, 33</value>
@@ -687,9 +711,6 @@ TITIPAN DENDA, SISA UANG TITIPAN DAPAT DIAMBIL
   </data>
   <data name="rbtprtPerwakilan.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 86</value>
-  </data>
-  <data name="&gt;&gt;label72.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="label71.Text" xml:space="preserve">
     <value>PANGKAT/NRP:</value>
@@ -704,23 +725,17 @@ DAPAT DIAMBIL DI</value>
   <data name="label58.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 183</value>
   </data>
-  <data name="&gt;&gt;lblNoRegPenyidikan.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 13</value>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
     <value>JENIS KELAMIN</value>
   </data>
-  <data name="&gt;&gt;lblKesatuanPenyidik.Parent" xml:space="preserve">
-    <value>groupBox11</value>
+  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
+    <value>groupBox8</value>
   </data>
   <data name="ckbSIM.Text" xml:space="preserve">
     <value>SIM</value>
-  </data>
-  <data name="&gt;&gt;lblDendaMaksimal.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="&gt;&gt;lblDendaMaksimal.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -737,11 +752,14 @@ DAPAT DIAMBIL DI</value>
   <data name="lblWaktuLanggar.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblTempatLahirPelanggar.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
   <data name="&gt;&gt;label49.Name" xml:space="preserve">
     <value>label49</value>
   </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblJenisKendaraan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
   <data name="&gt;&gt;label32.Parent" xml:space="preserve">
     <value>groupBox7</value>
@@ -749,8 +767,8 @@ DAPAT DIAMBIL DI</value>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
   </data>
-  <data name="label17.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
   </data>
   <data name="lblNoRegKendaraan.Location" type="System.Drawing.Point, System.Drawing">
     <value>94, 55</value>
@@ -764,8 +782,8 @@ DAPAT DIAMBIL DI</value>
   <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
     <value>pnlSuratTilang</value>
   </data>
-  <data name="label20.Text" xml:space="preserve">
-    <value>SAT PAS</value>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblUmurWakil.Text" xml:space="preserve">
     <value>label118</value>
@@ -789,8 +807,8 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label33.Parent" xml:space="preserve">
     <value>groupBox7</value>
   </data>
-  <data name="lblWilayahHukum.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="btnPrintSurat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 36</value>
   </data>
   <data name="label41.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -798,14 +816,11 @@ NO REGISTER:</value>
   <data name="ckbRANMOR.Text" xml:space="preserve">
     <value>RANMOR</value>
   </data>
-  <data name="&gt;&gt;lblJamLanggar.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;label44.Parent" xml:space="preserve">
+    <value>groupBox11</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -822,8 +837,8 @@ NO REGISTER:</value>
   <data name="lblPengadilanSidang.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
-  <data name="label56.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 90</value>
   </data>
   <data name="&gt;&gt;label22.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -837,6 +852,9 @@ NO REGISTER:</value>
   <data name="label74.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;lblTempatAmbilBarangSita.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
   <data name="lblWilayahHukum.Location" type="System.Drawing.Point, System.Drawing">
     <value>160, 65</value>
   </data>
@@ -845,6 +863,9 @@ NO REGISTER:</value>
   </data>
   <data name="&gt;&gt;lblBerlakuBukuUji.Parent" xml:space="preserve">
     <value>groupBox10</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="lblJalanLanggar.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -867,14 +888,17 @@ NO REGISTER:</value>
   <data name="label54.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label54.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblWilayahHukum.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 101</value>
   </data>
   <data name="lblAlamatWakil.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
   </data>
   <data name="label30.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -930,9 +954,6 @@ NO REGISTER:</value>
   <data name="label73.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="&gt;&gt;lblJalanLanggar.Name" xml:space="preserve">
-    <value>lblJalanLanggar</value>
-  </data>
   <data name="lblSATPAS.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
   </data>
@@ -942,11 +963,8 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label62.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ckbSTCK.Text" xml:space="preserve">
-    <value>STCK</value>
+  <data name="&gt;&gt;lblNoMesinKendaraan.Name" xml:space="preserve">
+    <value>lblNoMesinKendaraan</value>
   </data>
   <data name="label52.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 123</value>
@@ -981,14 +999,14 @@ NO REGISTER:</value>
   <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
     <value>385, 75</value>
   </data>
+  <data name="label67.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
   <data name="ckbLainnya.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;label15.Parent" xml:space="preserve">
     <value>groupBox3</value>
-  </data>
-  <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 407</value>
   </data>
   <data name="&gt;&gt;lblSamsat.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -1007,6 +1025,9 @@ NO REGISTER:</value>
   </data>
   <data name="&gt;&gt;lblJamLanggar.Name" xml:space="preserve">
     <value>lblJamLanggar</value>
+  </data>
+  <data name="&gt;&gt;label77.Parent" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1032,11 +1053,14 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label61.Parent" xml:space="preserve">
     <value>groupBox8</value>
   </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
   <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 76</value>
+  <data name="lblNamaWakil.Text" xml:space="preserve">
+    <value>label117</value>
   </data>
   <data name="&gt;&gt;lblAngkaPinalti.Name" xml:space="preserve">
     <value>lblAngkaPinalti</value>
@@ -1056,11 +1080,11 @@ NO REGISTER:</value>
   <data name="lblKesatuan.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>SIM GOL:</value>
+  </data>
   <data name="&gt;&gt;label40.Parent" xml:space="preserve">
     <value>groupBox9</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
   </data>
   <data name="&gt;&gt;lblWaktuPernyataan.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1074,17 +1098,23 @@ NO REGISTER:</value>
   <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 0</value>
   </data>
-  <data name="&gt;&gt;lblTanggalPelanggaran.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
   </data>
   <data name="&gt;&gt;label75.Parent" xml:space="preserve">
     <value>groupBox10</value>
   </data>
-  <data name="lblPatokanLanggar.Text" xml:space="preserve">
-    <value>label94</value>
+  <data name="&gt;&gt;label38.Name" xml:space="preserve">
+    <value>label38</value>
   </data>
-  <data name="&gt;&gt;ckbSTNK.Name" xml:space="preserve">
-    <value>ckbSTNK</value>
+  <data name="lblTanggalLahirPelanggar.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;label33.Name" xml:space="preserve">
+    <value>label33</value>
+  </data>
+  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 13</value>
   </data>
   <data name="&gt;&gt;lblNamaPenyidik.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1092,11 +1122,17 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label66.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
+  <data name="lblPengadilanSidang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="&gt;&gt;lblUmurPelanggar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;label24.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblNoMesinKendaraan.Text" xml:space="preserve">
+    <value>label90</value>
   </data>
   <data name="&gt;&gt;label62.Name" xml:space="preserve">
     <value>label62</value>
@@ -1119,11 +1155,11 @@ NO REGISTER:</value>
   <data name="&gt;&gt;rbtprtHadirSendiri.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 11</value>
+  </data>
   <data name="lblMerekKendaraan.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 126</value>
   </data>
   <data name="lblMasaBerlakuSK.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 101</value>
@@ -1143,20 +1179,23 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
   <data name="&gt;&gt;lblPangkatPenyidik.Parent" xml:space="preserve">
     <value>groupBox11</value>
   </data>
-  <data name="label47.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;lblPengadilanSidang.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
     <value>118, 139</value>
   </data>
-  <data name="&gt;&gt;lblWaktuSidang.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label22.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="ckbSTCK.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
   </data>
   <data name="&gt;&gt;lblNoRangkaKendaraan.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1197,26 +1236,20 @@ NO REGISTER:</value>
   <data name="&gt;&gt;ckbBukuUji.Parent" xml:space="preserve">
     <value>groupBox10</value>
   </data>
-  <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
-    <value>91, 85</value>
-  </data>
   <data name="&gt;&gt;label53.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
   <data name="lblKesatuan.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 13</value>
   </data>
-  <data name="&gt;&gt;lblTempatAmbilBarangSita.Name" xml:space="preserve">
-    <value>lblTempatAmbilBarangSita</value>
-  </data>
-  <data name="label15.Text" xml:space="preserve">
-    <value>TANGGAL LAHIR:</value>
+  <data name="&gt;&gt;lblNoRegTilang.Name" xml:space="preserve">
+    <value>lblNoRegTilang</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
-  <data name="lblNamaWakil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>645, 157</value>
   </data>
   <data name="&gt;&gt;label47.Parent" xml:space="preserve">
     <value>groupBox11</value>
@@ -1226,6 +1259,9 @@ NO REGISTER:</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label70.Name" xml:space="preserve">
+    <value>label70</value>
   </data>
   <data name="ckbLainnya.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 57</value>
@@ -1247,6 +1283,9 @@ NO REGISTER:</value>
   </data>
   <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
     <value>12</value>
+  </data>
+  <data name="&gt;&gt;lblKesatuan.Name" xml:space="preserve">
+    <value>lblKesatuan</value>
   </data>
   <data name="label54.Location" type="System.Drawing.Point, System.Drawing">
     <value>80, 10</value>
@@ -1284,14 +1323,14 @@ NO REGISTER:</value>
   <data name="lblGolSIM.Text" xml:space="preserve">
     <value>label81</value>
   </data>
-  <data name="lblDendaMaksimal.Text" xml:space="preserve">
-    <value>label114</value>
-  </data>
   <data name="label61.Location" type="System.Drawing.Point, System.Drawing">
     <value>82, 132</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>12</value>
+  </data>
+  <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 104</value>
   </data>
   <data name="lblBankSetorDenda.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -1305,17 +1344,14 @@ NO REGISTER:</value>
   <data name="lblJK.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
-  <data name="&gt;&gt;label69.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="lblBankSisaDenda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
   </data>
   <data name="label28.Text" xml:space="preserve">
     <value>RUANG BANK</value>
   </data>
   <data name="&gt;&gt;lblKesatuanPenyidik.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label76.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
   </data>
   <data name="&gt;&gt;label71.Parent" xml:space="preserve">
     <value>groupBox11</value>
@@ -1335,8 +1371,14 @@ NO REGISTER:</value>
   <data name="lblJamSidang.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 29</value>
+  </data>
   <data name="lblAngkaPinalti.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
+  </data>
+  <data name="&gt;&gt;groupBox9.Parent" xml:space="preserve">
+    <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
     <value>18</value>
@@ -1347,14 +1389,14 @@ NO REGISTER:</value>
   <data name="lblBankSisaDenda.Text" xml:space="preserve">
     <value>label121</value>
   </data>
+  <data name="&gt;&gt;lblTempatLahirPelanggar.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
   <data name="&gt;&gt;lblTerbitSKSita.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblGolSIM.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
-  </data>
-  <data name="lblTempatAmbilBarangSita.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
   </data>
   <data name="label45.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1389,17 +1431,14 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label63.Parent" xml:space="preserve">
     <value>groupBox8</value>
   </data>
-  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 42</value>
+  <data name="&gt;&gt;label58.Name" xml:space="preserve">
+    <value>label58</value>
   </data>
-  <data name="&gt;&gt;label77.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblPendidikanPelanggar.Text" xml:space="preserve">
-    <value>label46</value>
-  </data>
-  <data name="&gt;&gt;label72.Parent" xml:space="preserve">
-    <value>groupBox11</value>
+  <data name="pnlSuratTilang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, -1</value>
   </data>
   <data name="label34.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1425,20 +1464,20 @@ NO REGISTER:</value>
   <data name="lblAlamatWakil.Text" xml:space="preserve">
     <value>label119</value>
   </data>
-  <data name="&gt;&gt;label43.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label42.Parent" xml:space="preserve">
     <value>groupBox10</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 13</value>
+  <data name="label44.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblTempatAmbilBarangSita.Name" xml:space="preserve">
+    <value>lblTempatAmbilBarangSita</value>
   </data>
   <data name="lblJamSidang.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
   </data>
-  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 65</value>
   </data>
   <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -1446,11 +1485,14 @@ NO REGISTER:</value>
   <data name="label21.Text" xml:space="preserve">
     <value>TANGGAL</value>
   </data>
-  <data name="lblNoKTP.Text" xml:space="preserve">
-    <value>label59</value>
+  <data name="lblJK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>534, 29</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
     <value>192, 125</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
   </data>
   <data name="label62.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 13</value>
@@ -1460,6 +1502,9 @@ NO REGISTER:</value>
   </data>
   <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 13</value>
+  </data>
+  <data name="&gt;&gt;lblNoSIM.Parent" xml:space="preserve">
+    <value>groupBox6</value>
   </data>
   <data name="label42.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1478,6 +1523,9 @@ NO REGISTER:</value>
   </data>
   <data name="label60.Text" xml:space="preserve">
     <value>TANDA TANGAN</value>
+  </data>
+  <data name="&gt;&gt;lblJamSidang.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;label76.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -1500,11 +1548,11 @@ NO REGISTER:</value>
   <data name="ckbSIM.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 33</value>
   </data>
-  <data name="label33.Text" xml:space="preserve">
-    <value>DI JALAN</value>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="label57.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label43.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox7.Name" xml:space="preserve">
     <value>groupBox7</value>
@@ -1518,20 +1566,20 @@ NO REGISTER:</value>
   <data name="label56.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 157</value>
   </data>
-  <data name="label69.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label51.Parent" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label69.Parent" xml:space="preserve">
     <value>groupBox11</value>
   </data>
   <data name="lblPatokanLanggar.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
-  </data>
-  <data name="&gt;&gt;label37.Name" xml:space="preserve">
-    <value>label37</value>
   </data>
   <data name="&gt;&gt;lblNamaWakil.Name" xml:space="preserve">
     <value>lblNamaWakil</value>
@@ -1584,17 +1632,14 @@ NO REGISTER:</value>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 75</value>
   </data>
-  <data name="label55.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 13</value>
-  </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 13</value>
   </data>
-  <data name="&gt;&gt;label57.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 29</value>
@@ -1623,13 +1668,10 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label52.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
+  <data name="label49.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 50</value>
   </data>
   <data name="&gt;&gt;lblPengadilanSidang.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label49.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblPengadilanSidang.Text" xml:space="preserve">
@@ -1659,8 +1701,8 @@ NO REGISTER:</value>
   <data name="lblNoRegKendaraan.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="lblNoKTP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+  <data name="&gt;&gt;label72.Parent" xml:space="preserve">
+    <value>groupBox11</value>
   </data>
   <data name="&gt;&gt;ckbLainnya.Name" xml:space="preserve">
     <value>ckbLainnya</value>
@@ -1668,14 +1710,14 @@ NO REGISTER:</value>
   <data name="&gt;&gt;lblMasaBerlakuSK.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label62.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="ckbSTCK.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="label61.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 161</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1691,15 +1733,6 @@ NO REGISTER:</value>
   </data>
   <data name="&gt;&gt;label18.Parent" xml:space="preserve">
     <value>groupBox6</value>
-  </data>
-  <data name="lblTempatLahirPelanggar.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="lblMasaBerlakuSK.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;lblWaktuLanggar.Parent" xml:space="preserve">
     <value>groupBox7</value>
@@ -1718,9 +1751,6 @@ NO REGISTER:</value>
   </data>
   <data name="lblPatokanLanggar.Location" type="System.Drawing.Point, System.Drawing">
     <value>322, 40</value>
-  </data>
-  <data name="&gt;&gt;label36.Name" xml:space="preserve">
-    <value>label36</value>
   </data>
   <data name="label63.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
@@ -1762,9 +1792,6 @@ NO REGISTER:</value>
   <data name="label26.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="label51.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label19.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -1780,23 +1807,14 @@ NO REGISTER:</value>
   <data name="lblDendaMaksimal.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lblTanggalLahirPelanggar.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label31.Text" xml:space="preserve">
-    <value>Nama Teller</value>
-  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 13</value>
   </data>
   <data name="&gt;&gt;lblKesatuan.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 146</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
   </data>
   <data name="&gt;&gt;label23.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -1804,11 +1822,17 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="lblSamsat.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="label57.Size" type="System.Drawing.Size, System.Drawing">
     <value>363, 52</value>
   </data>
   <data name="pnlSuratTilang.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="groupBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
   <data name="label51.Text" xml:space="preserve">
     <value>DENDA MAKSIMAL:</value>
@@ -1816,11 +1840,17 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label63.Name" xml:space="preserve">
     <value>label63</value>
   </data>
-  <data name="&gt;&gt;lblAlamatPelanggar.Name" xml:space="preserve">
-    <value>lblAlamatPelanggar</value>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
     <value>211, 75</value>
@@ -1830,9 +1860,6 @@ NO REGISTER:</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>367, 15</value>
-  </data>
-  <data name="&gt;&gt;label34.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label75.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1849,17 +1876,20 @@ NO REGISTER:</value>
   <data name="&gt;&gt;lblDendaMaksimal.Name" xml:space="preserve">
     <value>lblDendaMaksimal</value>
   </data>
-  <data name="lblTanggalLahirPelanggar.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label58.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="label57.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;label60.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblWaktuPernyataan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>182, 263</value>
-  </data>
   <data name="&gt;&gt;label28.Parent" xml:space="preserve">
     <value>groupBox8</value>
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 309</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 13</value>
@@ -1875,6 +1905,9 @@ NO REGISTER:</value>
   </data>
   <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
     <value>315, 13</value>
+  </data>
+  <data name="lblNoRangkaKendaraan.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
@@ -1894,17 +1927,14 @@ NO REGISTER:</value>
   <data name="label44.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="lblTerbitSKSita.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 13</value>
   </data>
-  <data name="ckbLainnya.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
+  <data name="&gt;&gt;groupBox10.Name" xml:space="preserve">
+    <value>groupBox10</value>
   </data>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 13</value>
+  <data name="lblNoRegPenyidikan.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="groupBox6.Text" xml:space="preserve">
     <value>DATA SIM</value>
@@ -1921,6 +1951,9 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label61.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="lblMerekKendaraan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 75</value>
+  </data>
   <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 13</value>
   </data>
@@ -1933,8 +1966,8 @@ NO REGISTER:</value>
   <data name="lblSamsat.Text" xml:space="preserve">
     <value>label88</value>
   </data>
-  <data name="ckbBukuUji.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="label54.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 13</value>
   </data>
   <data name="&gt;&gt;lblUmurWakil.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1945,8 +1978,8 @@ NO REGISTER:</value>
   <data name="lblTerbitSKSita.Location" type="System.Drawing.Point, System.Drawing">
     <value>227, 30</value>
   </data>
-  <data name="lblAngkaPinalti.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
+  <data name="&gt;&gt;lblWaktuSidang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 13</value>
@@ -1959,6 +1992,9 @@ NO REGISTER:</value>
   </data>
   <data name="&gt;&gt;lblPasal.Parent" xml:space="preserve">
     <value>groupBox4</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>191, 146</value>
   </data>
   <data name="lblPengadilanSidang.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1981,6 +2017,9 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label66.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="lblAlamatPelanggar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 50</value>
+  </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
@@ -1993,20 +2032,17 @@ NO REGISTER:</value>
   <data name="&gt;&gt;lblSATPAS.Name" xml:space="preserve">
     <value>lblSATPAS</value>
   </data>
-  <data name="&gt;&gt;label44.Name" xml:space="preserve">
-    <value>label44</value>
+  <data name="&gt;&gt;label54.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="label23.Text" xml:space="preserve">
     <value>SAMSAT:</value>
   </data>
-  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 13</value>
+  <data name="label62.Text" xml:space="preserve">
+    <value>TELLER/PENERIMA UANG TITIPAN</value>
   </data>
   <data name="lblKesatuanPenyidik.Location" type="System.Drawing.Point, System.Drawing">
     <value>97, 121</value>
-  </data>
-  <data name="&gt;&gt;label40.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ckbSIM.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2020,11 +2056,11 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label31.Name" xml:space="preserve">
     <value>label31</value>
   </data>
-  <data name="&gt;&gt;label71.Name" xml:space="preserve">
-    <value>label71</value>
+  <data name="label64.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;lblPekerjaanPelanggar.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="lblMasaBerlakuSK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
   <data name="label37.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2032,14 +2068,17 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label67.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label36.Text" xml:space="preserve">
-    <value>DALAM WILAYAH HUKUM</value>
+  <data name="lblJamLanggar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
-  <data name="lblWilayahHukum.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
+  <data name="label51.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;lblPatokanLanggar.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;label50.Name" xml:space="preserve">
+    <value>label50</value>
   </data>
   <data name="lblJamLanggar.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -2053,6 +2092,9 @@ NO REGISTER:</value>
   <data name="lblSamsat.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
   </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 78</value>
+  </data>
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -2065,17 +2107,17 @@ NO REGISTER:</value>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;groupBox10.Name" xml:space="preserve">
-    <value>groupBox10</value>
+  <data name="&gt;&gt;label36.Name" xml:space="preserve">
+    <value>label36</value>
   </data>
   <data name="label70.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
+  <data name="label38.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
   <data name="&gt;&gt;lblWaktuSidang.Name" xml:space="preserve">
     <value>lblWaktuSidang</value>
-  </data>
-  <data name="lblMerekKendaraan.Text" xml:space="preserve">
-    <value>label89</value>
   </data>
   <data name="&gt;&gt;lblMerekKendaraan.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2083,11 +2125,8 @@ NO REGISTER:</value>
   <data name="lblNoRegTilang.Text" xml:space="preserve">
     <value>label111</value>
   </data>
-  <data name="&gt;&gt;label44.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblPekerjaanPelanggar.Text" xml:space="preserve">
-    <value>label35</value>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblSamsat.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -2095,8 +2134,8 @@ NO REGISTER:</value>
   <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 13</value>
   </data>
-  <data name="lblJK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>534, 29</value>
+  <data name="label60.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label71.ZOrder" xml:space="preserve">
     <value>9</value>
@@ -2107,8 +2146,8 @@ NO REGISTER:</value>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>473, 26</value>
   </data>
-  <data name="&gt;&gt;lblBerlakuBukuUji.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label69.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblJalanLanggar.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2119,26 +2158,17 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label68.Name" xml:space="preserve">
     <value>label68</value>
   </data>
-  <data name="&gt;&gt;lblNoMesinKendaraan.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
     <value>groupBox2</value>
-  </data>
-  <data name="label33.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
   </data>
   <data name="label75.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="lblNoRangkaKendaraan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 52</value>
-  </data>
   <data name="&gt;&gt;lblSATPAS.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblAlamatPelanggar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+  <data name="&gt;&gt;label37.Name" xml:space="preserve">
+    <value>label37</value>
   </data>
   <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
     <value>519, 13</value>
@@ -2152,11 +2182,14 @@ NO REGISTER:</value>
   <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 13</value>
   </data>
-  <data name="label40.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="label12.Text" xml:space="preserve">
+    <value>THN</value>
   </data>
   <data name="&gt;&gt;label60.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="&gt;&gt;label45.Name" xml:space="preserve">
+    <value>label45</value>
   </data>
   <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
     <value>273, 39</value>
@@ -2164,8 +2197,8 @@ NO REGISTER:</value>
   <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 13</value>
   </data>
-  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblWaktuSidang.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -2173,11 +2206,11 @@ NO REGISTER:</value>
   <data name="&gt;&gt;lblNamaPelanggar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;label52.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
   <data name="lblPasal.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;label75.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="&gt;&gt;pnlSuratTilang.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -2194,8 +2227,8 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label27.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>645, 157</value>
+  <data name="label36.Text" xml:space="preserve">
+    <value>DALAM WILAYAH HUKUM</value>
   </data>
   <data name="&gt;&gt;lblNoMesinKendaraan.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2203,11 +2236,11 @@ NO REGISTER:</value>
   <data name="label53.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 13</value>
   </data>
+  <data name="label77.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 13</value>
+  </data>
   <data name="&gt;&gt;label62.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ckbSIM.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;label72.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2224,6 +2257,9 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label61.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="lblPangkatPenyidik.Text" xml:space="preserve">
+    <value>label106</value>
+  </data>
   <data name="label72.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
@@ -2236,11 +2272,17 @@ NO REGISTER:</value>
   <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblWaktuPernyataan.Text" xml:space="preserve">
-    <value>label120</value>
+  <data name="ckbSIM.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblSamsat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 75</value>
   </data>
   <data name="&gt;&gt;lblNoMesinKendaraan.Parent" xml:space="preserve">
     <value>groupBox6</value>
+  </data>
+  <data name="ckbLainnya.Text" xml:space="preserve">
+    <value>LAINNYA</value>
   </data>
   <data name="label62.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -2266,8 +2308,8 @@ NO REGISTER:</value>
   <data name="label43.Text" xml:space="preserve">
     <value>SELANJUTNYA PENYIDIK ATAS KUASA PENUNTUT UMUM DEMI HUKUM MEWAJIBKAN TERDAKWA</value>
   </data>
-  <data name="lblPengadilanSidang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 31</value>
+  <data name="lblNoMesinKendaraan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2284,11 +2326,8 @@ NO REGISTER:</value>
   <data name="lblWaktuLanggar.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 13</value>
-  </data>
-  <data name="&gt;&gt;lblPasal.Name" xml:space="preserve">
-    <value>lblPasal</value>
+  <data name="&gt;&gt;lblBankSisaDenda.Parent" xml:space="preserve">
+    <value>groupBox8</value>
   </data>
   <data name="&gt;&gt;ckbSTCK.Name" xml:space="preserve">
     <value>ckbSTCK</value>
@@ -2317,14 +2356,17 @@ NO REGISTER:</value>
   <data name="&gt;&gt;groupBox11.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label44.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;lblJamLanggar.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;lblSATPAS.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="label66.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;pnlSuratTilang.Name" xml:space="preserve">
+    <value>pnlSuratTilang</value>
   </data>
   <data name="&gt;&gt;label56.Name" xml:space="preserve">
     <value>label56</value>
@@ -2341,14 +2383,14 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label68.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblJalanLanggar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label51.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label30.Text" xml:space="preserve">
     <value>KESATUAN:</value>
+  </data>
+  <data name="lblUmurPelanggar.Text" xml:space="preserve">
+    <value>label78</value>
   </data>
   <data name="&gt;&gt;btnPrintSurat.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2362,14 +2404,8 @@ NO REGISTER:</value>
   <data name="lblWaktuSidang.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
   </data>
-  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
-    <value>groupBox8</value>
-  </data>
-  <data name="label76.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblNamaPenyidik.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
   </data>
   <data name="lblTempatAmbilBarangSita.Location" type="System.Drawing.Point, System.Drawing">
     <value>416, 116</value>
@@ -2377,11 +2413,8 @@ NO REGISTER:</value>
   <data name="&gt;&gt;lblWilayahHukum.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="lblNoMesinKendaraan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
-  </data>
-  <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 13</value>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
   </data>
   <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
     <value>groupBox5</value>
@@ -2395,8 +2428,8 @@ NO REGISTER:</value>
   <data name="&gt;&gt;lblKesatuan.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;ckbSTCK.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;lblTanggalPelanggaran.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -2419,29 +2452,20 @@ NO REGISTER:</value>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>944, 16</value>
   </data>
-  <data name="&gt;&gt;label54.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="label58.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 407</value>
   </data>
   <data name="&gt;&gt;label16.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 14</value>
-  </data>
-  <data name="&gt;&gt;label38.Name" xml:space="preserve">
-    <value>label38</value>
+  <data name="&gt;&gt;lblJalanLanggar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label30.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label42.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 65</value>
+  <data name="lblWaktuPernyataan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 263</value>
   </data>
   <data name="lblNoRegPenyidikan.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -2500,6 +2524,9 @@ NO REGISTER:</value>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="lblNoRegTilang.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
@@ -2515,8 +2542,8 @@ NO REGISTER:</value>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 13</value>
   </data>
-  <data name="lblWaktuLanggar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+  <data name="&gt;&gt;lblNoRegTilang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblNoMesinKendaraan.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2524,8 +2551,9 @@ NO REGISTER:</value>
   <data name="&gt;&gt;btnPrintSurat.Name" xml:space="preserve">
     <value>btnPrintSurat</value>
   </data>
-  <data name="label54.Text" xml:space="preserve">
-    <value>PERNYATAAN TERDAKWA :</value>
+  <data name="label17.Text" xml:space="preserve">
+    <value>PENYIDIK / PENYIDIK PEMBANTU YANG BERTANDA TANGAN DI BAWAH INI
+MENGINGAT SUMPAH JABATAN MENYATAKAN DENGAN SEBENARNYA BAHWA SEORANG</value>
   </data>
   <data name="lblUmurWakil.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2539,8 +2567,8 @@ NO REGISTER:</value>
   <data name="label38.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblWilayahHukum.Text" xml:space="preserve">
-    <value>label95</value>
+  <data name="label29.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label13.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -2556,11 +2584,14 @@ NO REGISTER:</value>
 Hukum Acara Pidana, 
 saya menunjuk seorang untuk mewakili saya di sidang, yaitu :</value>
   </data>
+  <data name="label43.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 90</value>
+  <data name="&gt;&gt;label62.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;lblPendidikanPelanggar.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -2607,14 +2638,8 @@ saya menunjuk seorang untuk mewakili saya di sidang, yaitu :</value>
   <data name="&gt;&gt;label11.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;lblNamaPenyidik.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="rbtprtHadirSendiri.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 30</value>
-  </data>
-  <data name="&gt;&gt;label39.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label63.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -2622,9 +2647,6 @@ saya menunjuk seorang untuk mewakili saya di sidang, yaitu :</value>
   <data name="rbtprtHadirSendiri.Text" xml:space="preserve">
     <value>Saya akan hadir sendiri di Pengadilan perkara
 pelanggaran tersebut.</value>
-  </data>
-  <data name="label52.Text" xml:space="preserve">
-    <value>DISETORKAN MELALUI BANK:</value>
   </data>
   <data name="&gt;&gt;groupBox8.Name" xml:space="preserve">
     <value>groupBox8</value>
@@ -2641,9 +2663,6 @@ pelanggaran tersebut.</value>
   <data name="&gt;&gt;pnlSuratTilang.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label74.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="label55.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -2656,20 +2675,26 @@ pelanggaran tersebut.</value>
   <data name="label32.Text" xml:space="preserve">
     <value>JAM</value>
   </data>
-  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
-    <value>472, 13</value>
+  <data name="&gt;&gt;lblPasal.Name" xml:space="preserve">
+    <value>lblPasal</value>
+  </data>
+  <data name="label75.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 13</value>
   </data>
   <data name="&gt;&gt;lblPangkatPenyidik.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label77.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 13</value>
+  <data name="lblNoRangkaKendaraan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 52</value>
   </data>
   <data name="&gt;&gt;label53.Name" xml:space="preserve">
     <value>label53</value>
   </data>
-  <data name="label74.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="&gt;&gt;lblNoRangkaKendaraan.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 13</value>
   </data>
   <data name="label24.Text" xml:space="preserve">
     <value>JENIS:</value>
@@ -2695,17 +2720,11 @@ pelanggaran tersebut.</value>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>
   </data>
-  <data name="&gt;&gt;lblAngkaPinalti.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="label38.Text" xml:space="preserve">
     <value>1981 dan PASAL 260 UU NO. 22 TAHUN 2009 TENTANG LLAJ, TELAH DISITA / DITITIPKAN :</value>
   </data>
-  <data name="&gt;&gt;lblWaktuSidang.Parent" xml:space="preserve">
-    <value>groupBox11</value>
-  </data>
-  <data name="&gt;&gt;label71.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblPasal.Text" xml:space="preserve">
+    <value>label112</value>
   </data>
   <data name="label71.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2725,8 +2744,8 @@ pelanggaran tersebut.</value>
   <data name="lblGolSIM.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;lblUmurPelanggar.Name" xml:space="preserve">
-    <value>lblUmurPelanggar</value>
+  <data name="&gt;&gt;ckbSTNK.Name" xml:space="preserve">
+    <value>ckbSTNK</value>
   </data>
   <data name="ckbBukuUji.Text" xml:space="preserve">
     <value>BUKU UJI NO.</value>
@@ -2737,11 +2756,11 @@ pelanggaran tersebut.</value>
   <data name="&gt;&gt;label23.Name" xml:space="preserve">
     <value>label23</value>
   </data>
-  <data name="&gt;&gt;lblPekerjaanPelanggar.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 76</value>
   </data>
-  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label69.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ckbRANMOR.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2758,8 +2777,8 @@ pelanggaran tersebut.</value>
   <data name="&gt;&gt;lblJenisKendaraan.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 104</value>
+  <data name="&gt;&gt;label69.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
     <value>13</value>
@@ -2776,8 +2795,8 @@ pelanggaran tersebut.</value>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 139</value>
   </data>
-  <data name="lblPasal.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label45.Text" xml:space="preserve">
     <value>PADA HARI, TANGGAL</value>
@@ -2794,8 +2813,8 @@ pelanggaran tersebut.</value>
   <data name="lblJamSidang.Location" type="System.Drawing.Point, System.Drawing">
     <value>381, 56</value>
   </data>
-  <data name="lblNoRegKendaraan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1184, 308</value>
@@ -2809,44 +2828,38 @@ pelanggaran tersebut.</value>
   <data name="&gt;&gt;label56.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="lblNoRegPenyidikan.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblPengadilanSidang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 31</value>
   </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>DATA PELANGGAR</value>
-  </data>
-  <data name="&gt;&gt;lblNoRegTilang.Type" xml:space="preserve">
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblNoSIM.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
   </data>
-  <data name="label34.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="lblBankSisaDenda.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
-  </data>
-  <data name="label40.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label62.Text" xml:space="preserve">
-    <value>TELLER/PENERIMA UANG TITIPAN</value>
-  </data>
-  <data name="&gt;&gt;lblUmurPelanggar.Type" xml:space="preserve">
+  <data name="&gt;&gt;label44.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 85</value>
+  </data>
+  <data name="label76.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>Nama Teller</value>
   </data>
   <data name="&gt;&gt;ckbBukuUji.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label55.Text" xml:space="preserve">
-    <value>Nama:</value>
+  <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 14</value>
   </data>
-  <data name="label29.Text" xml:space="preserve">
-    <value>PADA</value>
+  <data name="lblMasaBerlakuSK.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;lblPasal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <data name="label53.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -2854,20 +2867,17 @@ pelanggaran tersebut.</value>
   <data name="label72.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 13</value>
   </data>
-  <data name="&gt;&gt;groupBox8.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;lblNamaPelanggar.Name" xml:space="preserve">
+    <value>lblNamaPelanggar</value>
   </data>
   <data name="label66.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;lblDendaMaksimal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;lblNamaPenyidik.Parent" xml:space="preserve">
     <value>groupBox11</value>
   </data>
-  <data name="&gt;&gt;label18.Name" xml:space="preserve">
-    <value>label18</value>
+  <data name="&gt;&gt;label57.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="lblNoRegTilang.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 13</value>
@@ -2890,23 +2900,23 @@ pelanggaran tersebut.</value>
   <data name="lblAngkaPinalti.Location" type="System.Drawing.Point, System.Drawing">
     <value>184, 146</value>
   </data>
-  <data name="pnlSuratTilang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1081, 820</value>
+  <data name="label68.Text" xml:space="preserve">
+    <value>Cap Bank</value>
   </data>
   <data name="&gt;&gt;label45.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="&gt;&gt;label74.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="lblAlamatWakil.Location" type="System.Drawing.Point, System.Drawing">
     <value>54, 183</value>
   </data>
-  <data name="&gt;&gt;lblJamSidang.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="label53.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 146</value>
   </data>
-  <data name="label54.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 13</value>
+  <data name="&gt;&gt;lblMerekKendaraan.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
     <value>pnlSuratTilang</value>
@@ -2923,11 +2933,8 @@ pelanggaran tersebut.</value>
   <data name="&gt;&gt;lblTerbitBukuUji.Parent" xml:space="preserve">
     <value>groupBox10</value>
   </data>
-  <data name="&gt;&gt;ckbRANMOR.Name" xml:space="preserve">
-    <value>ckbRANMOR</value>
-  </data>
-  <data name="&gt;&gt;label32.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 13</value>
   </data>
   <data name="&gt;&gt;groupBox10.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -2938,17 +2945,11 @@ pelanggaran tersebut.</value>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblBerlakuBukuUji.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
-  </data>
   <data name="&gt;&gt;ckbSTNK.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="label55.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 134</value>
-  </data>
-  <data name="&gt;&gt;lblPendidikanPelanggar.Parent" xml:space="preserve">
-    <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -2959,8 +2960,11 @@ pelanggaran tersebut.</value>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 13</value>
   </data>
-  <data name="&gt;&gt;lblNoRangkaKendaraan.Parent" xml:space="preserve">
-    <value>groupBox6</value>
+  <data name="&gt;&gt;btnPrintSurat.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
   <data name="&gt;&gt;lblAlamatPelanggar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2971,11 +2975,11 @@ pelanggaran tersebut.</value>
   <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 91</value>
   </data>
-  <data name="&gt;&gt;label45.Name" xml:space="preserve">
-    <value>label45</value>
-  </data>
-  <data name="&gt;&gt;label38.Type" xml:space="preserve">
+  <data name="&gt;&gt;label42.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label75.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -2992,23 +2996,23 @@ pelanggaran tersebut.</value>
   <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
     <value>239, 13</value>
   </data>
-  <data name="lblNoKTP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>501, 123</value>
-  </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ckbSTCK.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblPendidikanPelanggar.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblDendaMaksimal.Location" type="System.Drawing.Point, System.Drawing">
     <value>203, 90</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
   <data name="label37.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -3031,8 +3035,11 @@ pelanggaran tersebut.</value>
   <data name="&gt;&gt;lblPendidikanPelanggar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+  <data name="ckbLainnya.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;label39.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox9.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -3043,11 +3050,8 @@ pelanggaran tersebut.</value>
   <data name="label25.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;label21.Name" xml:space="preserve">
-    <value>label21</value>
-  </data>
-  <data name="&gt;&gt;btnPrintSurat.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="label54.Text" xml:space="preserve">
+    <value>PERNYATAAN TERDAKWA :</value>
   </data>
   <data name="&gt;&gt;lblBankSisaDenda.Name" xml:space="preserve">
     <value>lblBankSisaDenda</value>
@@ -3070,8 +3074,8 @@ pelanggaran tersebut.</value>
   <data name="&gt;&gt;lblNoRegTilang.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;label51.Parent" xml:space="preserve">
-    <value>groupBox4</value>
+  <data name="lblDendaMaksimal.Text" xml:space="preserve">
+    <value>label114</value>
   </data>
   <data name="label69.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 26</value>
@@ -3085,14 +3089,11 @@ pelanggaran tersebut.</value>
   <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblTanggalLahirPelanggar.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>333, 11</value>
-  </data>
-  <data name="&gt;&gt;label69.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label15.Text" xml:space="preserve">
+    <value>TANGGAL LAHIR:</value>
   </data>
   <data name="ckbBukuUji.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3100,17 +3101,17 @@ pelanggaran tersebut.</value>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1067, 68</value>
   </data>
-  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
+  <data name="label52.Text" xml:space="preserve">
+    <value>DISETORKAN MELALUI BANK:</value>
   </data>
   <data name="&gt;&gt;lblSamsat.Name" xml:space="preserve">
     <value>lblSamsat</value>
   </data>
-  <data name="lblPekerjaanPelanggar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 76</value>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>302, 20</value>
   </data>
-  <data name="&gt;&gt;label77.Parent" xml:space="preserve">
-    <value>groupBox4</value>
+  <data name="&gt;&gt;label40.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblNoKTP.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3118,8 +3119,8 @@ pelanggaran tersebut.</value>
   <data name="lblNoRegPenyidikan.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 13</value>
   </data>
-  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblUmurPelanggar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
   <data name="&gt;&gt;lblPasal.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -3130,35 +3131,35 @@ pelanggaran tersebut.</value>
   <data name="label19.Text" xml:space="preserve">
     <value>NO:</value>
   </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 29</value>
+  <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
   </data>
-  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 13</value>
+  <data name="label62.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="ckbLainnya.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 17</value>
   </data>
-  <data name="label70.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 122</value>
   </data>
   <data name="&gt;&gt;lblNoRegKendaraan.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblNoMesinKendaraan.Name" xml:space="preserve">
-    <value>lblNoMesinKendaraan</value>
+  <data name="lblTanggalPelanggaran.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
-  <data name="&gt;&gt;label50.Name" xml:space="preserve">
-    <value>label50</value>
+  <data name="&gt;&gt;lblJalanLanggar.Name" xml:space="preserve">
+    <value>lblJalanLanggar</value>
+  </data>
+  <data name="lblPatokanLanggar.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label53.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="label60.Location" type="System.Drawing.Point, System.Drawing">
     <value>279, 132</value>
-  </data>
-  <data name="label65.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>1067, 64</value>
@@ -3187,8 +3188,8 @@ pelanggaran tersebut.</value>
   <data name="&gt;&gt;label70.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="label67.Text" xml:space="preserve">
-    <value>Dengan ini saya menyatakan :</value>
+  <data name="&gt;&gt;lblDendaMaksimal.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label45.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 13</value>
@@ -3208,8 +3209,8 @@ pelanggaran tersebut.</value>
   <data name="lblNoRegTilang.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label34.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="lblSATPAS.Text" xml:space="preserve">
     <value>label83</value>
@@ -3241,11 +3242,11 @@ pelanggaran tersebut.</value>
   <data name="groupBox11.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 664</value>
   </data>
-  <data name="&gt;&gt;groupBox9.Parent" xml:space="preserve">
-    <value>groupBox7</value>
+  <data name="&gt;&gt;lblNoMesinKendaraan.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="label50.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>DATA PELANGGAR</value>
   </data>
   <data name="&gt;&gt;label58.ZOrder" xml:space="preserve">
     <value>13</value>
@@ -3256,14 +3257,14 @@ pelanggaran tersebut.</value>
   <data name="label31.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
-  <data name="lblMerekKendaraan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 75</value>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>318, 122</value>
+  <data name="label55.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
   </data>
-  <data name="&gt;&gt;label23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblTerbitSKSita.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
@@ -3277,26 +3278,20 @@ pelanggaran tersebut.</value>
   <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 26</value>
   </data>
-  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 15</value>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
   </data>
-  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="ckbBukuUji.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label43.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
+  <data name="&gt;&gt;lblTerbitSKSita.Parent" xml:space="preserve">
+    <value>groupBox9</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="ckbSTNK.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="lblGolSIM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 20</value>
   </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -3316,8 +3311,8 @@ pelanggaran tersebut.</value>
   <data name="label16.Text" xml:space="preserve">
     <value>NO KTP:</value>
   </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>416, 161</value>
+  <data name="label39.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblMerekKendaraan.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -3328,12 +3323,14 @@ pelanggaran tersebut.</value>
   <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label17.Text" xml:space="preserve">
-    <value>PENYIDIK / PENYIDIK PEMBANTU YANG BERTANDA TANGAN DI BAWAH INI
-MENGINGAT SUMPAH JABATAN MENYATAKAN DENGAN SEBENARNYA BAHWA SEORANG</value>
+  <data name="ckbSTNK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 57</value>
   </data>
-  <data name="btnPrintSurat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 36</value>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold, Underline</value>
+  </data>
+  <data name="&gt;&gt;ckbSTNK.Parent" xml:space="preserve">
+    <value>groupBox9</value>
   </data>
   <data name="&gt;&gt;label76.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -3359,8 +3356,8 @@ MENGINGAT SUMPAH JABATAN MENYATAKAN DENGAN SEBENARNYA BAHWA SEORANG</value>
   <data name="lblGolSIM.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
   </data>
-  <data name="lblMasaBerlakuSK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 15</value>
   </data>
   <data name="&gt;&gt;label57.Parent" xml:space="preserve">
     <value>groupBox5</value>
@@ -3377,17 +3374,17 @@ MENGINGAT SUMPAH JABATAN MENYATAKAN DENGAN SEBENARNYA BAHWA SEORANG</value>
   <data name="ckbRANMOR.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
   </data>
-  <data name="lblJalanLanggar.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lblPendidikanPelanggar.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
   </data>
   <data name="&gt;&gt;label27.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label70.Text" xml:space="preserve">
-    <value>NAMA:</value>
+  <data name="lblPendidikanPelanggar.Text" xml:space="preserve">
+    <value>label46</value>
   </data>
-  <data name="&gt;&gt;lblTerbitSKSita.Name" xml:space="preserve">
-    <value>lblTerbitSKSita</value>
+  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblNamaPelanggar.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -3398,20 +3395,20 @@ MENGINGAT SUMPAH JABATAN MENYATAKAN DENGAN SEBENARNYA BAHWA SEORANG</value>
   <data name="lblJalanLanggar.Location" type="System.Drawing.Point, System.Drawing">
     <value>80, 40</value>
   </data>
-  <data name="lblWaktuPernyataan.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label37.Text" xml:space="preserve">
-    <value>BERDASARKAN PASAL 16 sub a DAN e UU NO. 2/2002 dan PASAL 39 dan PASAL 40 UU NO. 8/</value>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblNamaPenyidik.Name" xml:space="preserve">
     <value>lblNamaPenyidik</value>
   </data>
-  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>416, 309</value>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 13</value>
   </data>
-  <data name="pnlSuratTilang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, -1</value>
+  <data name="&gt;&gt;label77.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label65.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label17.Name" xml:space="preserve">
     <value>label17</value>
@@ -3431,17 +3428,17 @@ MENGINGAT SUMPAH JABATAN MENYATAKAN DENGAN SEBENARNYA BAHWA SEORANG</value>
   <data name="label23.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 146</value>
+  <data name="lblGolSIM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 20</value>
   </data>
-  <data name="&gt;&gt;lblJamSidang.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 42</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 78</value>
+  <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 126</value>
   </data>
   <data name="&gt;&gt;lblKesatuanPenyidik.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -3452,32 +3449,35 @@ DENDA MAKSIMAL yang tertulis di atas melalui Bank terebut di atas, paling
 lama dalam waktu 2 (dua) hari sebelum tanggal sidang tersebut terhitung
 diterimanya Tilang ini.</value>
   </data>
-  <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 15</value>
+  <data name="lblTempatAmbilBarangSita.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
   </data>
-  <data name="label75.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 13</value>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 51</value>
+  </data>
+  <data name="ckbSTCK.Text" xml:space="preserve">
+    <value>STCK</value>
   </data>
   <data name="lblMerekKendaraan.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
   </data>
-  <data name="lblPengadilanSidang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
+  <data name="lblNamaPenyidik.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
   </data>
-  <data name="&gt;&gt;lblTempatAmbilBarangSita.Parent" xml:space="preserve">
-    <value>groupBox11</value>
+  <data name="&gt;&gt;lblNamaPenyidik.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="ckbSTCK.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;lblPekerjaanPelanggar.Parent" xml:space="preserve">
+    <value>groupBox3</value>
   </data>
-  <data name="lblAlamatPelanggar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 50</value>
+  <data name="&gt;&gt;lblAngkaPinalti.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;lblPatokanLanggar.Name" xml:space="preserve">
     <value>lblPatokanLanggar</value>
   </data>
-  <data name="&gt;&gt;lblTempatLahirPelanggar.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="lblTempatLahirPelanggar.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>645, 100</value>
@@ -3491,8 +3491,8 @@ diterimanya Tilang ini.</value>
   <data name="rbtprtHadirSendiri.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="groupBox8.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="label33.Text" xml:space="preserve">
+    <value>DI JALAN</value>
   </data>
   <data name="label62.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 84</value>
@@ -3512,26 +3512,32 @@ diterimanya Tilang ini.</value>
   <data name="&gt;&gt;lblWaktuPernyataan.Name" xml:space="preserve">
     <value>lblWaktuPernyataan</value>
   </data>
-  <data name="lblSamsat.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label54.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblNamaPelanggar.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 13</value>
+  <data name="label47.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblTerbitBukuUji.Text" xml:space="preserve">
     <value>label100</value>
   </data>
-  <data name="lblNamaWakil.Text" xml:space="preserve">
-    <value>label117</value>
+  <data name="pnlSuratTilang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1081, 820</value>
   </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;label71.Name" xml:space="preserve">
+    <value>label71</value>
   </data>
-  <data name="&gt;&gt;label58.Parent" xml:space="preserve">
-    <value>groupBox5</value>
+  <data name="lblPasal.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="lblWaktuSidang.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
   </data>
   <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>645, 254</value>
@@ -3539,14 +3545,14 @@ diterimanya Tilang ini.</value>
   <data name="&gt;&gt;label28.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="label33.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="lblWaktuSidang.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label56.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="lblJenisKendaraan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ckbSIM.Parent" xml:space="preserve">
     <value>groupBox9</value>
@@ -3554,11 +3560,11 @@ diterimanya Tilang ini.</value>
   <data name="&gt;&gt;lblNoRegPenyidikan.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label24.Name" xml:space="preserve">
-    <value>label24</value>
+  <data name="label39.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="lblDendaMaksimal.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblJK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
   <data name="lblJamLanggar.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3572,8 +3578,8 @@ diterimanya Tilang ini.</value>
   <data name="label14.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="lblSamsat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>68, 75</value>
+  <data name="lblWilayahHukum.Text" xml:space="preserve">
+    <value>label95</value>
   </data>
   <data name="&gt;&gt;rbtprtHadirSendiri.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -3608,8 +3614,8 @@ diterimanya Tilang ini.</value>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
     <value>129, 132</value>
   </data>
-  <data name="lblJamLanggar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+  <data name="label55.Text" xml:space="preserve">
+    <value>Nama:</value>
   </data>
   <data name="&gt;&gt;lblNoRegKendaraan.Name" xml:space="preserve">
     <value>lblNoRegKendaraan</value>
@@ -3620,14 +3626,14 @@ diterimanya Tilang ini.</value>
   <data name="label56.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label25.Name" xml:space="preserve">
-    <value>label25</value>
+  <data name="lblNoKTP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>501, 123</value>
   </data>
-  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="label70.Text" xml:space="preserve">
+    <value>NAMA:</value>
   </data>
-  <data name="&gt;&gt;label58.Name" xml:space="preserve">
-    <value>label58</value>
+  <data name="&gt;&gt;lblNoRegPenyidikan.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="rbtprtHadirSendiri.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 52</value>
@@ -3635,20 +3641,17 @@ diterimanya Tilang ini.</value>
   <data name="lblNamaPelanggar.Location" type="System.Drawing.Point, System.Drawing">
     <value>111, 29</value>
   </data>
-  <data name="lblNoMesinKendaraan.Text" xml:space="preserve">
-    <value>label90</value>
+  <data name="lblBerlakuBukuUji.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
   </data>
-  <data name="lblTanggalLahirPelanggar.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
+  <data name="&gt;&gt;label72.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="lblWilayahHukum.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="lblPangkatPenyidik.Text" xml:space="preserve">
-    <value>label106</value>
-  </data>
-  <data name="&gt;&gt;lblTempatLahirPelanggar.Name" xml:space="preserve">
-    <value>lblTempatLahirPelanggar</value>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3659,20 +3662,20 @@ diterimanya Tilang ini.</value>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 13</value>
   </data>
-  <data name="&gt;&gt;label43.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="btnPrintSurat.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
   <data name="groupBox10.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
-  <data name="label23.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
-  <data name="label64.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblNamaPelanggar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
-  <data name="label38.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="lblMerekKendaraan.Text" xml:space="preserve">
+    <value>label89</value>
   </data>
   <data name="label26.Text" xml:space="preserve">
     <value>NOKA:</value>
@@ -3680,19 +3683,19 @@ diterimanya Tilang ini.</value>
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="lblUmurPelanggar.Text" xml:space="preserve">
-    <value>label78</value>
+  <data name="lblNoRegKendaraan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
   <data name="lblWaktuSidang.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 54</value>
   </data>
-  <data name="label29.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;lblDendaMaksimal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ckbSTCK.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
+  <data name="lblNamaWakil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
   </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblAngkaPinalti.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox6.Name" xml:space="preserve">
@@ -3707,20 +3710,20 @@ diterimanya Tilang ini.</value>
   <data name="&gt;&gt;label73.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="ckbLainnya.Text" xml:space="preserve">
-    <value>LAINNYA</value>
+  <data name="lblPekerjaanPelanggar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 76</value>
   </data>
-  <data name="&gt;&gt;lblNoSIM.Parent" xml:space="preserve">
-    <value>groupBox6</value>
+  <data name="label57.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;lblGolSIM.Name" xml:space="preserve">
-    <value>lblGolSIM</value>
+  <data name="label70.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label45.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 13</value>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
   </data>
   <data name="&gt;&gt;label48.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3731,8 +3734,8 @@ diterimanya Tilang ini.</value>
   <data name="&gt;&gt;label74.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label33.Name" xml:space="preserve">
-    <value>label33</value>
+  <data name="lblNamaWakil.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
   </data>
   <data name="groupBox11.Size" type="System.Drawing.Size, System.Drawing">
     <value>645, 147</value>
@@ -3764,20 +3767,20 @@ diterimanya Tilang ini.</value>
   <data name="&gt;&gt;rbtprtHadirSendiri.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
-    <value>17</value>
+  <data name="lblWaktuLanggar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
   </data>
-  <data name="label16.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+  <data name="lblPatokanLanggar.Text" xml:space="preserve">
+    <value>label94</value>
   </data>
   <data name="&gt;&gt;lblMerekKendaraan.Name" xml:space="preserve">
     <value>lblMerekKendaraan</value>
   </data>
-  <data name="&gt;&gt;label52.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="label20.Text" xml:space="preserve">
+    <value>SAT PAS</value>
   </data>
   <data name="ckbSTNK.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -3785,8 +3788,8 @@ diterimanya Tilang ini.</value>
   <data name="&gt;&gt;lblGolSIM.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="label49.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 50</value>
+  <data name="&gt;&gt;label49.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label77.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -3794,26 +3797,26 @@ diterimanya Tilang ini.</value>
   <data name="&gt;&gt;label75.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 51</value>
+  <data name="label28.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;ckbRANMOR.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="lblTempatLahirPelanggar.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
+  <data name="ckbSIM.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblJenisKendaraan.Text" xml:space="preserve">
     <value>label86</value>
   </data>
-  <data name="&gt;&gt;lblKesatuan.Name" xml:space="preserve">
-    <value>lblKesatuan</value>
+  <data name="&gt;&gt;lblPendidikanPelanggar.Parent" xml:space="preserve">
+    <value>groupBox3</value>
   </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt, style=Bold, Underline</value>
+  <data name="&gt;&gt;label71.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblMasaBerlakuSK.Name" xml:space="preserve">
-    <value>lblMasaBerlakuSK</value>
+  <data name="&gt;&gt;label44.Name" xml:space="preserve">
+    <value>label44</value>
   </data>
   <data name="&gt;&gt;label41.Parent" xml:space="preserve">
     <value>groupBox10</value>
@@ -3821,14 +3824,14 @@ diterimanya Tilang ini.</value>
   <data name="label31.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label67.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="label66.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblSATPAS.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>THN</value>
+  <data name="lblWaktuPernyataan.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label16.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3839,8 +3842,8 @@ diterimanya Tilang ini.</value>
   <data name="label48.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 25</value>
   </data>
-  <data name="&gt;&gt;label20.Name" xml:space="preserve">
-    <value>label20</value>
+  <data name="&gt;&gt;lblAlamatPelanggar.Name" xml:space="preserve">
+    <value>lblAlamatPelanggar</value>
   </data>
   <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
     <value>16</value>
@@ -3848,11 +3851,11 @@ diterimanya Tilang ini.</value>
   <data name="label64.Location" type="System.Drawing.Point, System.Drawing">
     <value>70, 27</value>
   </data>
-  <data name="&gt;&gt;pnlSuratTilang.Name" xml:space="preserve">
-    <value>pnlSuratTilang</value>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;lblGolSIM.Name" xml:space="preserve">
+    <value>lblGolSIM</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>PEKERJAAN:</value>
@@ -3866,20 +3869,20 @@ diterimanya Tilang ini.</value>
   <data name="&gt;&gt;label61.Name" xml:space="preserve">
     <value>label61</value>
   </data>
-  <data name="&gt;&gt;lblNoRegTilang.Name" xml:space="preserve">
-    <value>lblNoRegTilang</value>
+  <data name="&gt;&gt;lblTanggalPelanggaran.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ckbBukuUji.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 17</value>
   </data>
-  <data name="&gt;&gt;lblPengadilanSidang.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;groupBox8.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label72.Name" xml:space="preserve">
     <value>label72</value>
   </data>
-  <data name="label18.Text" xml:space="preserve">
-    <value>SIM GOL:</value>
+  <data name="&gt;&gt;ckbRANMOR.Name" xml:space="preserve">
+    <value>ckbRANMOR</value>
   </data>
   <data name="ckbSIM.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 17</value>
@@ -3890,29 +3893,26 @@ diterimanya Tilang ini.</value>
   <data name="&gt;&gt;lblBerlakuBukuUji.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="lblNoSIM.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="lblNoKTP.Text" xml:space="preserve">
+    <value>label59</value>
   </data>
-  <data name="&gt;&gt;label17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label40.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="btnPrintSurat.Location" type="System.Drawing.Point, System.Drawing">
     <value>1089, 7</value>
   </data>
-  <data name="ckbBukuUji.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="lblNamaPenyidik.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
   </data>
   <data name="label24.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;lblNamaPelanggar.Name" xml:space="preserve">
-    <value>lblNamaPelanggar</value>
+  <data name="label58.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="lblNoRangkaKendaraan.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="label76.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblNamaWakil.Location" type="System.Drawing.Point, System.Drawing">
     <value>49, 134</value>
@@ -3920,11 +3920,11 @@ diterimanya Tilang ini.</value>
   <data name="label74.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 13</value>
   </data>
-  <data name="&gt;&gt;label70.Name" xml:space="preserve">
-    <value>label70</value>
+  <data name="lblPekerjaanPelanggar.Text" xml:space="preserve">
+    <value>label35</value>
   </data>
-  <data name="lblTanggalPelanggaran.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+  <data name="lblNamaPenyidik.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblBerlakuBukuUji.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
