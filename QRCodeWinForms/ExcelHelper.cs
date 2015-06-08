@@ -741,7 +741,7 @@ namespace QRCodeWinForms
 
                                     Pasal pasal = new Pasal();
                                     pasal.NomorPasal = col29Value.ToString();
-                                    pasal.DendaMaksimal = Convert.ToDouble(col30Value);
+                                    //pasal.DendaMaksimal = Convert.ToDouble(col30Value);
                                     pasal.IsNew = false;
                                     pelanggaran.PasalPelanggaran = pasal;
 
