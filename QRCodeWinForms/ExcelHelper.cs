@@ -699,54 +699,53 @@ namespace QRCodeWinForms
                                     object col36Value = currentWorksheet.Cells[rowNumber, 36].Value;
                                     object col37Value = currentWorksheet.Cells[rowNumber, 37].Value;
 
-                                    listDataPelanggaran.Add(new DataPelanggaran
-                                    {
-                                        WaktuPelanggaran = DateTime.FromOADate((double) col1Value),
-                                        NomorRegister = col2Value.ToString(),
-                                        Kesatuan = col3Value.ToString(),
-                                        NomorTilang = col4Value.ToString(),
-                                        Pelanggar = new SIM
-                                        {
-                                            NomorSIM = col5Value.ToString()
-                                        },
-                                        SATPAS = col6Value.ToString(),
-                                        NomorKendaraan = col7Value.ToString(),
-                                        SamsatKendaraan = col8Value.ToString(),
-                                        JenisKendaraan = col9Value.ToString(),
-                                        MerekKendaraan = col10Value.ToString(),
-                                        NomorRangkaKendaraan = col11Value.ToString(),
-                                        NomorMesinKendaraan = col12Value.ToString(),
-                                        LokasiPelanggaran = col13Value.ToString(),
-                                        PatokanLokasi = col14Value.ToString(),
-                                        WilayahHukum = col15Value.ToString(),
-                                        DisitaSKRanmor = col16Value.ToString(),
-                                        DisitaSKDiterbitkanOleh = col17Value.ToString(),
-                                        DisitaSKMasaBerlaku = DateTime.FromOADate((double)col18Value),
-                                        DisitaBukuUji = col19Value.ToString(),
-                                        DisitaBukuUjiDiterbitkanOleh = col20Value.ToString(),
-                                        DisitaBukuUjiMasaBerlaku = DateTime.FromOADate((double)col21Value),
-                                        TempatSidang = col22Value.ToString(),
-                                        //WaktuSidang 23
-                                        //24
-                                        //25
-                                        NamaPenyidik = col26Value.ToString(),
-                                        PangkatPenyidik = col27Value.ToString(),
-                                        TempatPengambilanBarangSita = col28Value.ToString(),
-                                        PasalPelanggaran = new Pasal
-                                        {
-                                            NomorPasal = col29Value.ToString(),
-                                            DendaMaksimal = Convert.ToDouble(col30Value),
-                                            IsNew = false
-                                        },
-                                        //PernyataanHadirSendiri = Convert.ToBoolean(col31Value),
-                                        //32
-                                        //33
-                                        NamaWakil = col34Value.ToString(),
-                                        UmurWakil = col35Value.ToString(),
-                                        AlamatWakil = col36Value.ToString(),
-                                        BankSisaDenda = col37Value.ToString(),
-                                    });
-                                    
+                                    DataPelanggaran pelanggaran = new DataPelanggaran();
+                                    pelanggaran.WaktuPelanggaran = DateTime.FromOADate((double)col1Value);
+                                    pelanggaran.NomorRegister = col2Value.ToString();
+                                    pelanggaran.Kesatuan = col3Value.ToString();
+                                    pelanggaran.NomorTilang = col4Value.ToString();
+                                    pelanggaran.SATPAS = col6Value.ToString();
+                                    pelanggaran.NomorKendaraan = col7Value.ToString();
+                                    pelanggaran.SamsatKendaraan = col8Value.ToString();
+                                    pelanggaran.JenisKendaraan = col9Value.ToString();
+                                    pelanggaran.MerekKendaraan = col10Value.ToString();
+                                    pelanggaran.NomorRangkaKendaraan = col11Value.ToString();
+                                    pelanggaran.NomorMesinKendaraan = col12Value.ToString();
+                                    pelanggaran.LokasiPelanggaran = col13Value.ToString();
+                                    pelanggaran.PatokanLokasi = col14Value.ToString();
+                                    pelanggaran.WilayahHukum = col15Value.ToString();
+                                    pelanggaran.DisitaSKRanmor = col16Value.ToString();
+                                    pelanggaran.DisitaSKDiterbitkanOleh = col17Value.ToString();
+                                    pelanggaran.DisitaSKMasaBerlaku = DateTime.FromOADate((double)col18Value);
+                                    pelanggaran.DisitaBukuUji = col19Value.ToString();
+                                    pelanggaran.DisitaBukuUjiDiterbitkanOleh = col20Value.ToString();
+                                    pelanggaran.DisitaBukuUjiMasaBerlaku = DateTime.FromOADate((double)col21Value);
+                                    pelanggaran.TempatSidang = col22Value.ToString();
+                                    //WaktuSidang 23
+                                    //24
+                                    //25
+                                    pelanggaran.NamaPenyidik = col26Value.ToString();
+                                    pelanggaran.PangkatPenyidik = col27Value.ToString();
+                                    pelanggaran.TempatPengambilanBarangSita = col28Value.ToString();
+                                    //PernyataanHadirSendiri = Convert.ToBoolean(col31Value),
+                                    //32
+                                    //33
+                                    pelanggaran.NamaWakil = col34Value.ToString();
+                                    pelanggaran.UmurWakil = col35Value.ToString();
+                                    pelanggaran.AlamatWakil = col36Value.ToString();
+                                    pelanggaran.BankSisaDenda = col37Value.ToString();
+
+                                    SIM pelanggar = new SIM();
+                                    pelanggar.NomorSIM = col5Value.ToString();
+                                    pelanggaran.Pelanggar = pelanggar;
+
+                                    Pasal pasal = new Pasal();
+                                    pasal.NomorPasal = col29Value.ToString();
+                                    pasal.DendaMaksimal = Convert.ToDouble(col30Value);
+                                    pasal.IsNew = false;
+                                    pelanggaran.PasalPelanggaran = pasal;
+
+                                    listDataPelanggaran.Add(pelanggaran);
                                 }
                             }
                         }
