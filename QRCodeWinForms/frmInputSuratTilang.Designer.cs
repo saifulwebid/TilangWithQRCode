@@ -141,7 +141,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtUmurPelanggar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSimpanData = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtpJamLanggar = new System.Windows.Forms.DateTimePicker();
             this.dtpWaktuLanggar = new System.Windows.Forms.DateTimePicker();
@@ -153,6 +152,9 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.btnSimpanData = new System.Windows.Forms.Button();
+            this.btnTampilST = new System.Windows.Forms.Button();
+            this.btnBuatSTBaru = new System.Windows.Forms.Button();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -178,9 +180,9 @@
             this.groupBox8.Controls.Add(this.label56);
             this.groupBox8.Controls.Add(this.label55);
             this.groupBox8.Controls.Add(this.label58);
-            this.groupBox8.Location = new System.Drawing.Point(11, 1077);
+            this.groupBox8.Location = new System.Drawing.Point(11, 1075);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(636, 205);
+            this.groupBox8.Size = new System.Drawing.Size(636, 208);
             this.groupBox8.TabIndex = 99;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Pernyataan Terdakwa";
@@ -1307,16 +1309,6 @@
             this.label1.TabIndex = 90;
             this.label1.Text = "DATA SURAT TILANG";
             // 
-            // btnSimpanData
-            // 
-            this.btnSimpanData.Location = new System.Drawing.Point(653, 1201);
-            this.btnSimpanData.Name = "btnSimpanData";
-            this.btnSimpanData.Size = new System.Drawing.Size(75, 51);
-            this.btnSimpanData.TabIndex = 99;
-            this.btnSimpanData.Text = "Simpan Data";
-            this.btnSimpanData.UseVisualStyleBackColor = true;
-            this.btnSimpanData.Click += new System.EventHandler(this.btnSimpanData_Click);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dtpJamLanggar);
@@ -1421,6 +1413,37 @@
             this.label29.TabIndex = 111;
             this.label29.Text = "PADA HARI INI";
             // 
+            // btnSimpanData
+            // 
+            this.btnSimpanData.AutoSize = true;
+            this.btnSimpanData.Location = new System.Drawing.Point(12, 1287);
+            this.btnSimpanData.Name = "btnSimpanData";
+            this.btnSimpanData.Size = new System.Drawing.Size(63, 24);
+            this.btnSimpanData.TabIndex = 99;
+            this.btnSimpanData.Text = "Simpan";
+            this.btnSimpanData.UseVisualStyleBackColor = true;
+            this.btnSimpanData.Click += new System.EventHandler(this.btnSimpanData_Click);
+            // 
+            // btnTampilST
+            // 
+            this.btnTampilST.AutoSize = true;
+            this.btnTampilST.Location = new System.Drawing.Point(88, 1287);
+            this.btnTampilST.Name = "btnTampilST";
+            this.btnTampilST.Size = new System.Drawing.Size(108, 23);
+            this.btnTampilST.TabIndex = 102;
+            this.btnTampilST.Text = "Tampil Surat Tilang";
+            this.btnTampilST.UseVisualStyleBackColor = true;
+            // 
+            // btnBuatSTBaru
+            // 
+            this.btnBuatSTBaru.AutoSize = true;
+            this.btnBuatSTBaru.Location = new System.Drawing.Point(523, 1287);
+            this.btnBuatSTBaru.Name = "btnBuatSTBaru";
+            this.btnBuatSTBaru.Size = new System.Drawing.Size(124, 23);
+            this.btnBuatSTBaru.TabIndex = 103;
+            this.btnBuatSTBaru.Text = "Buat Surat Tilang Baru";
+            this.btnBuatSTBaru.UseVisualStyleBackColor = true;
+            // 
             // frmInputSuratTilang
             // 
             this.AcceptButton = this.btnSimpanData;
@@ -1429,7 +1452,9 @@
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(740, 533);
+            this.ClientSize = new System.Drawing.Size(740, 369);
+            this.Controls.Add(this.btnBuatSTBaru);
+            this.Controls.Add(this.btnTampilST);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSimpanData);
             this.Controls.Add(this.groupBox8);
@@ -1531,7 +1556,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnScanQRCode;
-        private System.Windows.Forms.Button btnSimpanData;
         public System.Windows.Forms.TextBox txtNoRegPenyidikan;
         public System.Windows.Forms.DateTimePicker dtpWaktuPernyataan;
         public System.Windows.Forms.TextBox txtAlamatWali;
@@ -1595,6 +1619,9 @@
         public System.Windows.Forms.CheckBox ckbRANMOR;
         public System.Windows.Forms.CheckBox ckbSTCK;
         public System.Windows.Forms.CheckBox ckbSIM;
+        private System.Windows.Forms.Button btnSimpanData;
+        private System.Windows.Forms.Button btnTampilST;
+        private System.Windows.Forms.Button btnBuatSTBaru;
 
     }
 }

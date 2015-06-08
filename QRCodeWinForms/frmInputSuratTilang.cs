@@ -43,6 +43,7 @@ namespace QRCodeWinForms
             cbxPasal.DisplayMember = "NomorPasal";
 
             txtKesatuanPenyidik.Text = txtKesatuan.Text;
+            SetToDefault();
         }
 
         private void TampilData()
@@ -54,6 +55,7 @@ namespace QRCodeWinForms
                 CultureInfo provider = CultureInfo.InvariantCulture;
                 DateTime parseddate;
                 provider = new CultureInfo("id-ID");
+
                 txtNamaPelanggar.Text = Split[3];
                 txtAlamatPelanggar.Text = Split[6];
                 txtNoKTPPelanggar.Text = Split[0];
@@ -178,8 +180,10 @@ namespace QRCodeWinForms
 
                 datpel.Save(datpel);
                 MessageBox.Show("Penyimpanan Data Pelanggaran Berhasil!");
-                ClearData(this.Controls);
-                TampilSuratTilang();
+
+                btnTampilST.Enabled = true;
+                btnBuatSTBaru.Enabled = true;
+                btnSimpanData.Enabled = false;
 
             }
             catch (Exception ex)
@@ -241,9 +245,11 @@ namespace QRCodeWinForms
             }
         }
 
-        private void txtDendaMaksimal_TextChanged(object sender, EventArgs e)
+        private void SetToDefault()
         {
-
+            btnTampilST.Enabled = false;
+            btnSimpanData.Enabled = true;
+            btnBuatSTBaru.Enabled = false;
         }
 
         private void cbxPasal_SelectedIndexChanged(object sender, EventArgs e)
@@ -266,7 +272,30 @@ namespace QRCodeWinForms
 
             frmsurat.ShowDialog(); 
         }
+
+        private void btnBuatSTBaru_Click(object sender, EventArgs e)
+        {
+            btnSimpanData.Enabled = true;
+            btnBuatSTBaru.Enabled = false;
+            btnTampilST.Enabled = false;
+            ClearData(this.Controls);
+        }
+
+        private void btnTampilST_Click(object sender, EventArgs e)
+        {
+            TampilSuratTilang();
+            SetToDefault();
+        }
+
         private void groupBox10_Enter(object sender, EventArgs e)
+        {
+
+        }
+        private void txtDendaMaksimal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void btnTampilST_Click_1(object sender, EventArgs e)
         {
 
         }
