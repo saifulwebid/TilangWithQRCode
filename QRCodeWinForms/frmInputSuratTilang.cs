@@ -150,7 +150,7 @@ namespace QRCodeWinForms
                 datpel.LokasiPelanggaran = txtJalan.Text;
                 datpel.PatokanLokasi = txtPatokan.Text;
                 datpel.WilayahHukum = txtWilayahHukum.Text;
-                datpel.DisitaSKRanmor = CekCheckBoxSK().ToString();
+                datpel.DisitaSK = CekCheckBoxSK().ToString();
                 datpel.DisitaSKDiterbitkanOleh = txtTerbitSK.Text;
                 datpel.DisitaSKMasaBerlaku = Convert.ToDateTime(dtpBerlakuSK.Text);
                 datpel.DisitaBukuUji = CekCheckBoxBK().ToString();

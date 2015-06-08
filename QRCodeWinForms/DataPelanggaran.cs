@@ -13,7 +13,7 @@ namespace QRCodeWinForms
         private string _bankSisaDenda;
         private string _disitaSKDiterbitkanOleh;
         private DateTime _disitaSKMasaBerlaku;
-        private string  _disitaSKRanmor;
+        private string  _disitaSK;
         private bool _isNew;
         private string _jenisKendaraan;
         private string _kesatuan;
@@ -59,6 +59,11 @@ namespace QRCodeWinForms
         {
             get { return _bankSisaDenda; }
             set { _bankSisaDenda = value; }
+        }
+        public string DisitaSK
+        {
+            get { return _disitaSK; }
+            set { _disitaSK = value; }
         }
         public string DisitaSKDiterbitkanOleh
         {
