@@ -32,8 +32,8 @@ namespace QRCodeWinForms
             lblAlamat.Text = tampilSIM.Pemilik.Alamat;
             lblTempatLahir.Text = tampilSIM.Pemilik.TempatLahir;
             lblTanggalLahir.Text = tampilSIM.Pemilik.TanggalLahir.ToLongDateString();
-            lblPendidikan.Text = tampilSIM.Pemilik.Pendidikan;
-            lblPekerjaan.Text = tampilSIM.Pemilik.Pekerjaan;
+            lblPendidikan.Text = tampilSIM.Pemilik.Pendidikan.ToString();
+            lblPekerjaan.Text = tampilSIM.Pemilik.Pekerjaan.ToString();
             lblNoSIM.Text = tampilSIM.NomorSIM;
             lblGolongan.Text = tampilSIM.Golongan;
             lblMasaBerlaku.Text = tampilSIM.TanggalHabis.ToLongDateString();

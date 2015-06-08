@@ -55,8 +55,8 @@ namespace QRCodeWinForms
                 lblKesatuan.Text = datpel.Kesatuan;
                 lblNamaPelanggar.Text = datpel.Pelanggar.Pemilik.Nama;
                 lblAlamatPelanggar.Text = datpel.Pelanggar.Pemilik.Alamat;
-                lblPendidikanPelanggar.Text = datpel.Pelanggar.Pemilik.Pendidikan;
-                lblPekerjaanPelanggar.Text = datpel.Pelanggar.Pemilik.Pekerjaan;
+                lblPendidikanPelanggar.Text = datpel.Pelanggar.Pemilik.Pendidikan.ToString();
+                lblPekerjaanPelanggar.Text = datpel.Pelanggar.Pemilik.Pekerjaan.ToString();
                 lblJK.Text = datpel.Pelanggar.Pemilik.JenisKelamin.ToString();
                 lblTempatLahirPelanggar.Text = datpel.Pelanggar.Pemilik.TempatLahir;
                 lblTanggalLahirPelanggar.Text = Convert.ToString(datpel.Pelanggar.Pemilik.TanggalLahir.Date.ToString("dd MMMM yyyy"));

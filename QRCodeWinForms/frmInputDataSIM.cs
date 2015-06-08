@@ -40,8 +40,8 @@ namespace QRCodeWinForms
                     datapenduduk = new Penduduk();
                     datapenduduk.Nomor = txtNoKTP.Text;
                     datapenduduk.Nama = txtNama.Text;
-                    datapenduduk.Pekerjaan = cmbPekerjaan.Text;
-                    datapenduduk.Pendidikan = cmbPendidikan.Text;
+                    datapenduduk.Pekerjaan = (EnumPekerjaan)cmbPekerjaan.SelectedItem;
+                    datapenduduk.Pendidikan = (EnumPendidikan)cmbPendidikan.SelectedItem;
                     datapenduduk.TempatLahir = txtTempatLahir.Text;
                     datapenduduk.Alamat = txtAlamat.Text;
                     datapenduduk.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
@@ -91,8 +91,8 @@ namespace QRCodeWinForms
             dataSIM.Golongan = "";
             dataSIM.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
             dataSIM.Pemilik.Nama = "";
-            dataSIM.Pemilik.Pekerjaan = "";
-            dataSIM.Pemilik.Pendidikan = "";
+            dataSIM.Pemilik.Pekerjaan = EnumPekerjaan.Lainnya;
+            dataSIM.Pemilik.Pendidikan = EnumPendidikan.SD;
             dataSIM.Pemilik.TempatLahir = "";
             dataSIM.Pemilik.Alamat = "";
             dataSIM.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
