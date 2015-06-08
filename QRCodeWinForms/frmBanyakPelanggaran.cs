@@ -50,7 +50,6 @@ namespace QRCodeWinForms
             {
                 FillField();
                 GetDataPelanggar();
-                LookPelanggaran(pelanggaranPerSIM);
             }
            
         }
@@ -92,9 +91,9 @@ namespace QRCodeWinForms
 
         void SetTablePasal()
         {
-            dgvDataPelanggaranPelanggar.ColumnCount = 2;
-            dgvDataPelanggaranPelanggar.Columns[0].Name = "Pasal yang Dilanggar";
-            dgvDataPelanggaranPelanggar.Columns[1].Name = "Jumlah Melanggar";
+            dgvPasal.ColumnCount = 2;
+            dgvPasal.Columns[0].Name = "Pasal yang Dilanggar";
+            dgvPasal.Columns[1].Name = "Jumlah Melanggar";
         }
 
         void SetTablePelanggaran()
@@ -111,11 +110,12 @@ namespace QRCodeWinForms
         {
             data = ExcelHelper.GetAllPelanggaran();
             dataSIM = ExcelHelper.GetAllSIM();
+            SetTablePasal();
+            SetTablePelanggaran();
         }
 
         void LookPasal(List<string> pasal)
         {
-            SetTablePasal();
             /*Menampilkan Banyak nya pasal yang dilanggar */
             dgvDataPelanggaranPelanggar.Rows.Clear();
             int i = 0, count = 0;
@@ -133,9 +133,8 @@ namespace QRCodeWinForms
 
         void LookPelanggaran(List<DataPelanggaran> Pelanggaran)
         {
-            SetTablePelanggaran();
             dgvDataPelanggaranPelanggar.Rows.Clear();
-            int i = 0, count = 0;
+            int i = 0;
             foreach(DataPelanggaran x in Pelanggaran)
             {
                 dgvDataPelanggaranPelanggar.Rows.Add();
@@ -149,59 +148,7 @@ namespace QRCodeWinForms
 
             txtJumlahPelanggaran.Text = i.ToString();
         }
-
-        private void cbAll_CheckedChanged(object sender, EventArgs e)
-        {
-            if (cbAll.Checked)
-            {
-                if (cbPasal.Checked)
-                {
-                    LookPasal(pasalDilanggar);
-                }
-                else
-                {
-                    LookPelanggaran(dataPelanggar);
-                }
-            }
-            else
-            {
-                if (cbPasal.Checked)
-                {
-                    LookPasal(pasalPerSIM);
-                }
-                else
-                {
-                    LookPelanggaran(pelanggaranPerSIM);
-                }
-            }
-        }
-
-        private void cbPasal_CheckedChanged(object sender, EventArgs e)
-        {
-            if (cbPasal.Checked)
-            {
-                if (cbAll.Checked)
-                {
-                    LookPasal(pasalDilanggar);
-                }
-                else
-                {
-                    LookPasal(pasalPerSIM);
-                }
-            }
-            else
-            {
-                if (cbAll.Checked)
-                {
-                    LookPelanggaran(dataPelanggar);
-                }
-                else
-                {
-                    LookPelanggaran(pelanggaranPerSIM);
-                }
-            }
-        }
-
+       
         private static string ConvertPekerjaan(int i)
         {
             string[] Pekerjaan = new string[] { "PNS", "SWASTA", "TNI", "POLRI", "PELAJAR", "MHS", "LAINNYA" };
@@ -212,6 +159,20 @@ namespace QRCodeWinForms
         {
             string[] Pendidikan = new string[] { "SD", "SLTP", "SLTA", "PT" };
             return Pendidikan[i - 1];
+        }
+
+        private void btnRekap_Click(object sender, EventArgs e)
+        {
+            if (rbAllSim.Checked)
+            {
+                LookPelanggaran(dataPelanggar);
+                LookPasal(pasalDilanggar);
+            }
+            else if (rbOneSIM.Checked)
+            {
+                LookPelanggaran(pelanggaranPerSIM);
+                LookPasal(pasalPerSIM);
+            }
         }
 
     }

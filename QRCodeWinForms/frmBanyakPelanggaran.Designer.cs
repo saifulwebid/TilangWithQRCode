@@ -51,14 +51,21 @@
             this.txtTanggalLahir = new System.Windows.Forms.TextBox();
             this.cmdScanSIM = new System.Windows.Forms.Button();
             this.dgvDataPelanggaranPelanggar = new System.Windows.Forms.DataGridView();
-            this.gbDataPelanggaranPelanggar = new System.Windows.Forms.GroupBox();
             this.lblJumlahPelanggaran = new System.Windows.Forms.Label();
             this.txtJumlahPelanggaran = new System.Windows.Forms.TextBox();
-            this.cbAll = new System.Windows.Forms.CheckBox();
-            this.cbPasal = new System.Windows.Forms.CheckBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dgvPasal = new System.Windows.Forms.DataGridView();
+            this.rbAllSim = new System.Windows.Forms.RadioButton();
+            this.rbOneSIM = new System.Windows.Forms.RadioButton();
+            this.btnRekap = new System.Windows.Forms.Button();
             this.grbIdentitasPelanggar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataPelanggaranPelanggar)).BeginInit();
-            this.gbDataPelanggaranPelanggar.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPasal)).BeginInit();
             this.SuspendLayout();
             // 
             // grbIdentitasPelanggar
@@ -264,9 +271,9 @@
             // 
             // cmdScanSIM
             // 
-            this.cmdScanSIM.Location = new System.Drawing.Point(397, 311);
+            this.cmdScanSIM.Location = new System.Drawing.Point(355, 311);
             this.cmdScanSIM.Name = "cmdScanSIM";
-            this.cmdScanSIM.Size = new System.Drawing.Size(112, 23);
+            this.cmdScanSIM.Size = new System.Drawing.Size(75, 23);
             this.cmdScanSIM.TabIndex = 12;
             this.cmdScanSIM.Text = "Scan SIM";
             this.cmdScanSIM.UseVisualStyleBackColor = true;
@@ -275,27 +282,15 @@
             // dgvDataPelanggaranPelanggar
             // 
             this.dgvDataPelanggaranPelanggar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDataPelanggaranPelanggar.Location = new System.Drawing.Point(6, 18);
+            this.dgvDataPelanggaranPelanggar.Location = new System.Drawing.Point(0, 0);
             this.dgvDataPelanggaranPelanggar.Name = "dgvDataPelanggaranPelanggar";
-            this.dgvDataPelanggaranPelanggar.Size = new System.Drawing.Size(480, 126);
+            this.dgvDataPelanggaranPelanggar.Size = new System.Drawing.Size(484, 126);
             this.dgvDataPelanggaranPelanggar.TabIndex = 13;
-            // 
-            // gbDataPelanggaranPelanggar
-            // 
-            this.gbDataPelanggaranPelanggar.Controls.Add(this.lblJumlahPelanggaran);
-            this.gbDataPelanggaranPelanggar.Controls.Add(this.txtJumlahPelanggaran);
-            this.gbDataPelanggaranPelanggar.Controls.Add(this.dgvDataPelanggaranPelanggar);
-            this.gbDataPelanggaranPelanggar.Location = new System.Drawing.Point(17, 340);
-            this.gbDataPelanggaranPelanggar.Name = "gbDataPelanggaranPelanggar";
-            this.gbDataPelanggaranPelanggar.Size = new System.Drawing.Size(492, 179);
-            this.gbDataPelanggaranPelanggar.TabIndex = 14;
-            this.gbDataPelanggaranPelanggar.TabStop = false;
-            this.gbDataPelanggaranPelanggar.Text = "Data Pelanggaran Pelanggar";
             // 
             // lblJumlahPelanggaran
             // 
             this.lblJumlahPelanggaran.AutoSize = true;
-            this.lblJumlahPelanggaran.Location = new System.Drawing.Point(223, 153);
+            this.lblJumlahPelanggaran.Location = new System.Drawing.Point(242, 496);
             this.lblJumlahPelanggaran.Name = "lblJumlahPelanggaran";
             this.lblJumlahPelanggaran.Size = new System.Drawing.Size(134, 13);
             this.lblJumlahPelanggaran.TabIndex = 11;
@@ -303,43 +298,96 @@
             // 
             // txtJumlahPelanggaran
             // 
-            this.txtJumlahPelanggaran.Location = new System.Drawing.Point(363, 150);
+            this.txtJumlahPelanggaran.Location = new System.Drawing.Point(382, 493);
             this.txtJumlahPelanggaran.Name = "txtJumlahPelanggaran";
             this.txtJumlahPelanggaran.ReadOnly = true;
             this.txtJumlahPelanggaran.Size = new System.Drawing.Size(123, 20);
             this.txtJumlahPelanggaran.TabIndex = 11;
             this.txtJumlahPelanggaran.Text = "0";
             // 
-            // cbAll
+            // tabControl1
             // 
-            this.cbAll.AutoSize = true;
-            this.cbAll.Location = new System.Drawing.Point(23, 315);
-            this.cbAll.Name = "cbAll";
-            this.cbAll.Size = new System.Drawing.Size(148, 17);
-            this.cbAll.TabIndex = 15;
-            this.cbAll.Text = "Lihat Semua Pelanggaran";
-            this.cbAll.UseVisualStyleBackColor = true;
-            this.cbAll.CheckedChanged += new System.EventHandler(this.cbAll_CheckedChanged);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(17, 338);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(492, 153);
+            this.tabControl1.TabIndex = 17;
             // 
-            // cbPasal
+            // tabPage1
             // 
-            this.cbPasal.AutoSize = true;
-            this.cbPasal.Location = new System.Drawing.Point(205, 315);
-            this.cbPasal.Name = "cbPasal";
-            this.cbPasal.Size = new System.Drawing.Size(186, 17);
-            this.cbPasal.TabIndex = 16;
-            this.cbPasal.Text = "Lihat Pasal yang Sudah Dilanggar";
-            this.cbPasal.UseVisualStyleBackColor = true;
-            this.cbPasal.CheckedChanged += new System.EventHandler(this.cbPasal_CheckedChanged);
+            this.tabPage1.Controls.Add(this.dgvDataPelanggaranPelanggar);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(484, 127);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dgvPasal);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(484, 127);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dgvPasal
+            // 
+            this.dgvPasal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPasal.Location = new System.Drawing.Point(0, 0);
+            this.dgvPasal.Name = "dgvPasal";
+            this.dgvPasal.Size = new System.Drawing.Size(484, 126);
+            this.dgvPasal.TabIndex = 14;
+            // 
+            // rbAllSim
+            // 
+            this.rbAllSim.AutoSize = true;
+            this.rbAllSim.Location = new System.Drawing.Point(167, 314);
+            this.rbAllSim.Name = "rbAllSim";
+            this.rbAllSim.Size = new System.Drawing.Size(80, 17);
+            this.rbAllSim.TabIndex = 18;
+            this.rbAllSim.TabStop = true;
+            this.rbAllSim.Text = "Semua SIM";
+            this.rbAllSim.UseVisualStyleBackColor = true;
+            // 
+            // rbOneSIM
+            // 
+            this.rbOneSIM.AutoSize = true;
+            this.rbOneSIM.Location = new System.Drawing.Point(259, 314);
+            this.rbOneSIM.Name = "rbOneSIM";
+            this.rbOneSIM.Size = new System.Drawing.Size(90, 17);
+            this.rbOneSIM.TabIndex = 19;
+            this.rbOneSIM.TabStop = true;
+            this.rbOneSIM.Text = "Scanned SIM";
+            this.rbOneSIM.UseVisualStyleBackColor = true;
+            // 
+            // btnRekap
+            // 
+            this.btnRekap.Location = new System.Drawing.Point(436, 311);
+            this.btnRekap.Name = "btnRekap";
+            this.btnRekap.Size = new System.Drawing.Size(75, 23);
+            this.btnRekap.TabIndex = 20;
+            this.btnRekap.Text = "Rekapitulasi";
+            this.btnRekap.UseVisualStyleBackColor = true;
+            this.btnRekap.Click += new System.EventHandler(this.btnRekap_Click);
             // 
             // frmBanyakPelanggaran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 524);
-            this.Controls.Add(this.cbPasal);
-            this.Controls.Add(this.cbAll);
-            this.Controls.Add(this.gbDataPelanggaranPelanggar);
+            this.ClientSize = new System.Drawing.Size(872, 524);
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.btnRekap);
+            this.Controls.Add(this.rbOneSIM);
+            this.Controls.Add(this.rbAllSim);
+            this.Controls.Add(this.lblJumlahPelanggaran);
+            this.Controls.Add(this.txtJumlahPelanggaran);
             this.Controls.Add(this.cmdScanSIM);
             this.Controls.Add(this.grbIdentitasPelanggar);
             this.Name = "frmBanyakPelanggaran";
@@ -348,8 +396,10 @@
             this.grbIdentitasPelanggar.ResumeLayout(false);
             this.grbIdentitasPelanggar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataPelanggaranPelanggar)).EndInit();
-            this.gbDataPelanggaranPelanggar.ResumeLayout(false);
-            this.gbDataPelanggaranPelanggar.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPasal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,7 +424,6 @@
         private System.Windows.Forms.Label lblJnsKelamin;
         private System.Windows.Forms.Button cmdScanSIM;
         private System.Windows.Forms.DataGridView dgvDataPelanggaranPelanggar;
-        private System.Windows.Forms.GroupBox gbDataPelanggaranPelanggar;
         private System.Windows.Forms.Label lblJumlahPelanggaran;
         private System.Windows.Forms.TextBox txtJumlahPelanggaran;
         private System.Windows.Forms.Label lblGol;
@@ -383,7 +432,12 @@
         private System.Windows.Forms.TextBox txtNoSIM;
         private System.Windows.Forms.Label lblNamaPelanggar;
         private System.Windows.Forms.TextBox txtNamaPelanggar;
-        private System.Windows.Forms.CheckBox cbAll;
-        private System.Windows.Forms.CheckBox cbPasal;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridView dgvPasal;
+        private System.Windows.Forms.RadioButton rbAllSim;
+        private System.Windows.Forms.RadioButton rbOneSIM;
+        private System.Windows.Forms.Button btnRekap;
     }
 }
