@@ -140,7 +140,7 @@ namespace QRCodeWinForms
                 datpel.Pelanggar.Golongan = txtGolSIM.Text;
                 datpel.Pelanggar.Pemilik.Nomor = txtNoKTPPelanggar.Text;
                 datpel.Pelanggar.NomorSIM = txtNoSIM.Text;
-                datpel.SATPAS = txtSATPAS.Text;
+                datpel.Satpas = txtSATPAS.Text;
                 datpel.NomorKendaraan = txtNoKendaraan.Text;
                 datpel.SamsatKendaraan = txtSamsat.Text;
                 datpel.JenisKendaraan = txtJenisKendaraan.Text;
@@ -150,7 +150,7 @@ namespace QRCodeWinForms
                 datpel.LokasiPelanggaran = txtJalan.Text;
                 datpel.PatokanLokasi = txtPatokan.Text;
                 datpel.WilayahHukum = txtWilayahHukum.Text;
-                datpel.DisitaSKRanmor = CekCheckBoxSK().ToString();
+                datpel.DisitaSK = CekCheckBoxSK().ToString();
                 datpel.DisitaSKDiterbitkanOleh = txtTerbitSK.Text;
                 datpel.DisitaSKMasaBerlaku = Convert.ToDateTime(dtpBerlakuSK.Text);
                 datpel.DisitaBukuUji = CekCheckBoxBK().ToString();

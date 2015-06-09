@@ -70,7 +70,7 @@ namespace QRCodeWinForms
                 lblNoRangkaKendaraan.Text = datpel.NomorRangkaKendaraan;
                 lblNoMesinKendaraan.Text = datpel.NomorMesinKendaraan;
                 lblSamsat.Text = datpel.SamsatKendaraan;
-                lblSATPAS.Text = datpel.SATPAS;
+                lblSATPAS.Text = datpel.Satpas;
                 lblTanggalPelanggaran.Text = Convert.ToString(datpel.WaktuPelanggaran.Date.ToLongDateString());
                 lblTempatAmbilBarangSita.Text = datpel.TempatPengambilanBarangSita;
                 lblWaktuLanggar.Text = Convert.ToString(datpel.WaktuPelanggaran.Date.ToLongDateString());
