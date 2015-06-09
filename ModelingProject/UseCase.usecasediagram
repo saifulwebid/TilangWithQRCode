@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ca5fd5db-80b5-4883-94cf-15bbd6e6b856" name="UseCase" linkedPackageId="75508901-13a1-489c-b3ec-f47c0b67208e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ca5fd5db-80b5-4883-94cf-15bbd6e6b856" name="UseCase" linkedPackageId="75508901-13a1-489c-b3ec-f47c0b67208e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="5dcba513-3fa8-486a-a24f-54de8d9ac250" name="Petugas Samsat" isAbstract="false" isLeaf="false">
@@ -20,22 +20,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="494213bb-64a4-4a28-85f6-f9b528fcaf88" />
-          </association>
-          <association Id="51a1f168-565a-442d-87a1-7fe547163c2c" isDerived="false" sourceEndRoleName="Petugas Samsat" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="7e144098-6beb-4972-b6f9-547361f0c7dc" LastKnownName="Login" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="dfedda81-227d-45a3-854e-6031804b2bc5" name="Petugas Samsat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="f78e3622-7dfb-4b07-990c-2419f697821e" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="0ffea437-16b5-4ed9-92fb-36aa8f1712f2" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="5bf59ce7-cf8b-44ff-b7fa-e70566816a1c" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="bde99157-e429-423e-be4b-5493509956cc" />
           </association>
         </targetEnds>
       </actor>
@@ -92,22 +76,6 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="43501bd5-8787-42f4-8cb9-4a5d418b6bc5" />
           </association>
-          <association Id="84ba3df1-003b-4141-97d6-f265a48b71d9" isDerived="false" sourceEndRoleName="Polisi Lalu Lintas" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="7e144098-6beb-4972-b6f9-547361f0c7dc" LastKnownName="Login" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="01f743cc-398d-4139-821a-feb55d432d6e" name="Polisi Lalu Lintas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="3cca0c8f-929f-434a-b328-9425e0902f39" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="945d5958-3b3a-461b-be97-a4ff057df6b2" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="dcbd258d-794e-4d23-836e-a1cc4adb7cef" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="040c818e-6a5e-4e58-8e7a-11f3e8a86c39" />
-          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -131,22 +99,6 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="00bddc10-d5ab-4906-a418-6bca1dab925b" />
           </association>
-          <association Id="214eac75-bb61-494b-b155-118d9673141d" isDerived="false" sourceEndRoleName="Hakim/Jaksa" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="7e144098-6beb-4972-b6f9-547361f0c7dc" LastKnownName="Login" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="b71779ec-cd19-4d8a-970c-ed68e222d0a0" name="Hakim/Jaksa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="0d28bd8b-8250-4050-956d-6ad62cb5759a" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="b29ed9c0-1761-41b8-84e7-7c52cbcbd031" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="83e2a6ec-1aa7-48a0-b4ec-6a9e2e58d0b0" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="c1939354-bd58-4e13-ad1d-4558b36e9993" />
-          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -154,9 +106,9 @@
       <useCase Id="6447c726-636a-4dc2-92cd-6d771a1c3e7b" name="Membuat SIM Baru" isAbstract="false" isLeaf="false">
         <elementDefinition Id="2e932df2-d396-41db-8c8b-2bae4253ac71" />
         <suppliersInternal>
-          <dependency Id="61bf698b-16bd-43ba-9341-32d698050973">
+          <dependency Id="4d5bb804-b7e5-4da8-bcce-9a022629e8a7">
             <useCaseMoniker Id="7e144098-6beb-4972-b6f9-547361f0c7dc" LastKnownName="Login" />
-            <elementDefinition Id="0fbdbabf-cd80-4271-9579-9d886e9c7411" />
+            <elementDefinition Id="370a03f3-73b9-4976-a197-0952c62711af" />
           </dependency>
         </suppliersInternal>
         <subjects>
@@ -168,9 +120,9 @@
       <useCase Id="5c76889f-c726-4e68-9577-d524ace8729d" name="Membuat Surat Tilang" isAbstract="false" isLeaf="false">
         <elementDefinition Id="52979df0-3d2d-4d14-bbf6-ce456c0e4157" />
         <suppliersInternal>
-          <dependency Id="1066a8b8-f878-4196-961d-829c86eaa94b">
+          <dependency Id="8c277d48-65d6-4309-9a7b-95994dd3e275">
             <useCaseMoniker Id="7e144098-6beb-4972-b6f9-547361f0c7dc" LastKnownName="Login" />
-            <elementDefinition Id="9e94d4cb-c8c1-44c5-86fa-7adbd4660efd" />
+            <elementDefinition Id="27bc1306-5f76-40fa-9004-a989e9f0dfd1" />
           </dependency>
         </suppliersInternal>
         <subjects>
@@ -182,9 +134,9 @@
       <useCase Id="795f91e4-e93d-44fe-a3c3-b2e51dd635f2" name="Melihat Rekapitulasi Per SIM" isAbstract="false" isLeaf="false">
         <elementDefinition Id="2b8f0e18-9a71-4112-bfe7-fc5b9c41a8ca" />
         <suppliersInternal>
-          <dependency Id="b8cf1f0e-064b-4c58-bd8c-b2a031048732">
+          <dependency Id="882cea62-f692-42a8-9a07-8053abc27714">
             <useCaseMoniker Id="7e144098-6beb-4972-b6f9-547361f0c7dc" LastKnownName="Login" />
-            <elementDefinition Id="0efbdf04-e56e-4ff1-9f7d-b0afd3d30712" />
+            <elementDefinition Id="694b153f-e4a4-48f2-a099-d6b9aea3b119" />
           </dependency>
         </suppliersInternal>
         <subjects>
@@ -196,9 +148,9 @@
       <useCase Id="33451437-e5c8-48de-ace0-678db140feaa" name="Melihat Statistik Pelanggaran Per Bulan" isAbstract="false" isLeaf="false">
         <elementDefinition Id="c4e920f2-040a-487d-b65c-18c99c48d868" />
         <suppliersInternal>
-          <dependency Id="3b821e82-6426-4a4d-a1fa-f00127534ad5">
+          <dependency Id="0a72a970-dd74-48a7-8c1b-6707ef377ee0">
             <useCaseMoniker Id="7e144098-6beb-4972-b6f9-547361f0c7dc" LastKnownName="Login" />
-            <elementDefinition Id="a52f8c90-b58b-4b7c-b40a-99656079abba" />
+            <elementDefinition Id="259df8ee-7831-4589-82ce-41e64c5c806f" />
           </dependency>
         </suppliersInternal>
         <subjects>
@@ -210,9 +162,9 @@
       <useCase Id="5c0566f9-f496-457e-8f04-8dd54b7987e4" name="Melihat Statistik Pelanggaran Per Pasal" isAbstract="false" isLeaf="false">
         <elementDefinition Id="67489ea9-3a7c-4b6b-92bd-c7b3cbab67b6" />
         <suppliersInternal>
-          <dependency Id="60d77ad2-f7c6-4976-ab36-fbb6de8dbe77">
+          <dependency Id="ded0966c-799b-400b-aa57-cec2e0b018d8">
             <useCaseMoniker Id="7e144098-6beb-4972-b6f9-547361f0c7dc" LastKnownName="Login" />
-            <elementDefinition Id="26377e3e-2ae1-4954-9219-4c36b54f3a55" />
+            <elementDefinition Id="c68cc6fb-28f5-4d73-90ee-ce83bc1b8b44" />
           </dependency>
         </suppliersInternal>
         <subjects>
