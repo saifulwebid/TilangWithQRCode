@@ -80,10 +80,10 @@ namespace QRCodeWinForms
             /* Memindahkan Pasal - Pasal yang dilanggar oleh Pelanggar */
             foreach (DataPelanggaran x in dataPelanggar)
             {
-                pasalDilanggar.Add(x.PasalPelanggaran.NomorPasal);
+                pasalDilanggar.Add(x.PasalPelanggaran.Nomor);
                 if (x.Pelanggar.Nomor == txtNoSIM.Text)
                 {
-                    pasalPerSIM.Add(x.PasalPelanggaran.NomorPasal);
+                    pasalPerSIM.Add(x.PasalPelanggaran.Nomor);
                     pelanggaranPerSIM.Add(x);
                 }
             }
@@ -141,7 +141,7 @@ namespace QRCodeWinForms
                 dgvDataPelanggaranPelanggar.Rows[i].Cells[0].Value = x.WaktuPelanggaran.ToLongDateString();
                 dgvDataPelanggaranPelanggar.Rows[i].Cells[1].Value = x.LokasiPelanggaran;
                 dgvDataPelanggaranPelanggar.Rows[i].Cells[2].Value = x.NomorKendaraan;
-                dgvDataPelanggaranPelanggar.Rows[i].Cells[3].Value = x.PasalPelanggaran.NomorPasal;
+                dgvDataPelanggaranPelanggar.Rows[i].Cells[3].Value = x.PasalPelanggaran.Nomor;
                 dgvDataPelanggaranPelanggar.Rows[i].Cells[4].Value = x.Pelanggar.Nomor;
                 i++;
             }

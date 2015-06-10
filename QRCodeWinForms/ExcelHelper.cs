@@ -537,7 +537,7 @@ namespace QRCodeWinForms
                                     if ((col1Value != null) && (col2Value != null) && (col3Value != null) && (col4Value != null))
                                     {
                                         Pasal psl = new Pasal();
-                                        psl.NomorPasal = col1Value.ToString();
+                                        psl.Nomor = col1Value.ToString();
                                         psl.Keterangan = col2Value.ToString();
                                         psl.Pidana = Convert.ToDouble(col3Value);
                                         psl.DendaMaksimal = Convert.ToDouble(col4Value);
@@ -651,7 +651,7 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 26].Value = dapel.NamaPenyidik;
                                 currentWorksheet.Cells[rowNumber, 27].Value = dapel.PangkatPenyidik;
                                 currentWorksheet.Cells[rowNumber, 28].Value = dapel.TempatPengambilanBarangSita;
-                                currentWorksheet.Cells[rowNumber, 29].Value = dapel.PasalPelanggaran.NomorPasal;
+                                currentWorksheet.Cells[rowNumber, 29].Value = dapel.PasalPelanggaran.Nomor;
                                 currentWorksheet.Cells[rowNumber, 30].Value = dapel.PasalPelanggaran.DendaMaksimal;
                                 currentWorksheet.Cells[rowNumber, 31].Value = dapel.BankSetorDendaMaksimal;
                                 currentWorksheet.Cells[rowNumber, 32].Value = dapel.AngkaPinaltiPelanggaran;
@@ -820,9 +820,9 @@ namespace QRCodeWinForms
                                     pelanggaran.Pelanggar = pelanggar;
 
                                     Pasal pasal = new Pasal();
-                                    pasal.NomorPasal = col29Value.ToString();
+                                    pasal.Nomor = col29Value.ToString();
                                     //pasal.DendaMaksimal = Convert.ToDouble(col30Value);
-                                    pasal.IsNew = false;
+                                    // pasal.IsNew = false; -- tidak ada properti isNew di Pasal
                                     pelanggaran.PasalPelanggaran = pasal;
 
                                     listDataPelanggaran.Add(pelanggaran);

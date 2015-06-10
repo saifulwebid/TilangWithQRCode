@@ -161,7 +161,7 @@ namespace QRCodeWinForms
                 datpel.NamaPenyidik = txtNamaPenyidik.Text;
                 datpel.PangkatPenyidik = txtPangkatPenyidik.Text;
                 datpel.TempatPengambilanBarangSita = txtTempatAmbil.Text;
-                datpel.PasalPelanggaran.NomorPasal = cbxPasal.Text;
+                datpel.PasalPelanggaran.Nomor = cbxPasal.Text;
                 datpel.PasalPelanggaran.DendaMaksimal = Convert.ToDouble(txtDendaMaksimal.Text);
                 datpel.BankSetorDendaMaksimal = txtBankSetor.Text;
                 datpel.AngkaPinaltiPelanggaran = Convert.ToDouble(txtAngkaPinalti.Text);

@@ -75,7 +75,7 @@ namespace QRCodeWinForms
                     if (x.WaktuPelanggaran.Year == tahun[i])
                     {
                         sublist.Add(x.WaktuPelanggaran.Month);
-                        sublist1.Add(x.PasalPelanggaran.NomorPasal);
+                        sublist1.Add(x.PasalPelanggaran.Nomor);
                     }
                 }
                 dataStatistik.Add(sublist);
