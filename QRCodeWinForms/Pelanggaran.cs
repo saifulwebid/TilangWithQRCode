@@ -14,7 +14,6 @@ namespace QRCodeWinForms
         private string _disitaSKDiterbitkanOleh;
         private DateTime _disitaSKMasaBerlaku;
         private string  _disitaSK;
-        private bool _isNew;
         private string _jenisKendaraan;
         private string _kesatuan;
         private string _lokasiSidang;
@@ -74,11 +73,6 @@ namespace QRCodeWinForms
         {
             get { return _disitaSKMasaBerlaku; }
             set { _disitaSKMasaBerlaku = value; }
-        }
-        public bool IsNew
-        {
-            get { return _isNew; }
-            set { _isNew = value; }
         }
         public string JenisKendaraan
         {
@@ -226,10 +220,34 @@ namespace QRCodeWinForms
             get { return _banksetorDendaMaksimal; }
             set { _banksetorDendaMaksimal = value; }
         }
+        private bool isNew = true;
 
-        public void Save(Pelanggaran dapel)
+        /** Constructor **/
+        public Pelanggaran() { }
+        public Pelanggaran(bool FromExcel)
         {
-            ExcelHelper.SavePelanggaran(dapel);
+            if (FromExcel == true)
+            {
+                isNew = false;
+            }
+            else
+            {
+                isNew = true;
+            }
+        }
+
+        /** Methods **/
+        public List<Pelanggaran> GetAll()
+        {
+            return ExcelHelper.GetAllPelanggaran();
+        }
+        public void Save()
+        {
+            if (isNew == true)
+            {
+                ExcelHelper.SavePelanggaran(this);
+                isNew = false;
+            }
         }
     }
 }
