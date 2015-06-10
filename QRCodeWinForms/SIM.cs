@@ -15,8 +15,21 @@ namespace QRCodeWinForms
         public DateTime TanggalHabis { get; set; }
         private bool isNew = true;
 
+        /** Constructor **/
         public SIM() { }
+        public SIM(bool FromExcel)
+        {
+            if (FromExcel == true)
+            {
+                isNew = false;
+            }
+            else
+            {
+                isNew = true;
+            }
+        }
         
+        /** Method **/
         public void Save(SIM dataSIM)
         {
             if (isNew == true)
