@@ -16,7 +16,7 @@ namespace QRCodeWinForms
         public EnumPendidikan Pendidikan { get; set; }
         public DateTime TanggalLahir { get; set; }
         public string TempatLahir { get; set; }
-        private bool isNew;
+        private bool isNew = true;
 
         /** Constructor **/
         public Penduduk() { }
@@ -43,7 +43,11 @@ namespace QRCodeWinForms
         }
         public void Save()
         {
-            ExcelHelper.SaveDataPenduduk(this);
+            if (isNew == true)
+            {
+                ExcelHelper.SaveDataPenduduk(this);
+                isNew = false;
+            }
         }
     }
 }
