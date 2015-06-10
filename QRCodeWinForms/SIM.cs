@@ -30,11 +30,11 @@ namespace QRCodeWinForms
         }
         
         /** Method **/
-        public void Save(SIM dataSIM)
+        public void Save()
         {
             if (isNew == true)
             {
-                ExcelHelper.SaveSIM(dataSIM);
+                ExcelHelper.SaveSIM(this);
                 isNew = false;
             }
         }

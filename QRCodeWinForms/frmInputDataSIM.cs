@@ -60,7 +60,7 @@ namespace QRCodeWinForms
                 
                 if (dataSIM.isValid())
                 {
-                    dataSIM.Save(dataSIM);
+                    dataSIM.Save();
                     MessageBox.Show("Data Berhasil Disimpan");
                     SetFieldToDefault();
                     btnTampilkan.Enabled = true;
