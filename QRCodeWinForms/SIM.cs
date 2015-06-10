@@ -28,8 +28,21 @@ namespace QRCodeWinForms
                 isNew = true;
             }
         }
+        public SIM(string QRData)
+        {
+            // TODO : Implementasikan method ini
+        }
         
         /** Method **/
+        public string GenerateQRData()
+        {
+            // TODO : Implementasikan method ini
+            throw new NotImplementedException();
+        }
+        public static List<Pelanggaran> GetAllPelanggaran()
+        {
+            return ExcelHelper.GetAllPelanggaran();
+        }
         public void Save()
         {
             if (isNew == true)
@@ -38,10 +51,7 @@ namespace QRCodeWinForms
                 isNew = false;
             }
         }
-        public List<Pelanggaran> GetAllPelanggaran()
-        {
-            return ExcelHelper.GetAllPelanggaran();
-        }
+        
         public bool isValid()
         {
             if ((TanggalBuat.Year - Pemilik.TanggalLahir.Year) == 17)
