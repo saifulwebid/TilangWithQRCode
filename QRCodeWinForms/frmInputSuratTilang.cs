@@ -40,7 +40,7 @@ namespace QRCodeWinForms
 
             //combobox
             cbxPasal.DataSource = Pasal.GetAll();
-            cbxPasal.DisplayMember = "NomorPasal";
+            cbxPasal.DisplayMember = "Nomor";
 
             txtKesatuanPenyidik.Text = txtKesatuan.Text;
             SetToDefault();
