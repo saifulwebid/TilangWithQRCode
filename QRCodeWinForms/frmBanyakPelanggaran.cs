@@ -37,8 +37,8 @@ namespace QRCodeWinForms
             txtTempatLahir.Text = field[4];
             txtTanggalLahir.Text = field[5];
             txtAlamat.Text = field[6];
-            txtPekerjaan.Text = ConvertPekerjaan(Convert.ToInt16(field[8]));
-            txtPendidikan.Text = ConvertPendidikan(Convert.ToInt16(field[7]));
+            txtPekerjaan.Text = ConvertPekerjaan(Convert.ToInt16(field[7]));
+            txtPendidikan.Text = ConvertPendidikan(Convert.ToInt16(field[8]));
             txtJenisKelamin.Text = field[9];
         }
 
