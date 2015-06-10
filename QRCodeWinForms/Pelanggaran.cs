@@ -237,7 +237,7 @@ namespace QRCodeWinForms
         }
 
         /** Methods **/
-        public List<Pelanggaran> GetAll()
+        public static List<Pelanggaran> GetAll()
         {
             return ExcelHelper.GetAllPelanggaran();
         }

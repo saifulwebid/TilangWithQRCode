@@ -39,7 +39,7 @@ namespace QRCodeWinForms
             dtpJamLanggar.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
 
             //combobox
-            cbxPasal.DataSource = Pasal.GetAllPasal();
+            cbxPasal.DataSource = Pasal.GetAll();
             cbxPasal.DisplayMember = "NomorPasal";
 
             txtKesatuanPenyidik.Text = txtKesatuan.Text;
@@ -178,7 +178,7 @@ namespace QRCodeWinForms
                 datpel.AlamatWakil = txtAlamatWali.Text;
                 datpel.BankSisaDenda = txtBankSisaDenda.Text;
 
-                datpel.Save(datpel);
+                datpel.Save();
                 MessageBox.Show("Penyimpanan Data Pelanggaran Berhasil!");
 
                 btnTampil.Enabled = true;
