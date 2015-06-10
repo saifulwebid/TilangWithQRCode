@@ -44,15 +44,15 @@ namespace QRCodeWinForms
         }
         public bool isValid()
         {
-            if ((_tanggalBuat.Year - _pemilik.TanggalLahir.Year) == 17)
+            if ((TanggalBuat.Year - Pemilik.TanggalLahir.Year) == 17)
             {
-                if (_tanggalBuat.Month == _pemilik.TanggalLahir.Month)
-                    return (_tanggalBuat.Day >= _pemilik.TanggalLahir.Day);
+                if (TanggalBuat.Month == Pemilik.TanggalLahir.Month)
+                    return (TanggalBuat.Day >= Pemilik.TanggalLahir.Day);
                 else
-                    return (_tanggalBuat.Month > _pemilik.TanggalLahir.Month);
+                    return (TanggalBuat.Month > Pemilik.TanggalLahir.Month);
             }
             else
-                return (_tanggalBuat.Year - _pemilik.TanggalLahir.Year) > 17;
+                return (TanggalBuat.Year - Pemilik.TanggalLahir.Year) > 17;
         }
     }
 }
