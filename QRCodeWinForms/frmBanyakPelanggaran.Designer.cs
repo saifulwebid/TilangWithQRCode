@@ -323,7 +323,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(484, 127);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Detail Pelanggaran";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
@@ -334,7 +334,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(484, 127);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Pasal Yang Sudah Dilanggar";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // dgvPasal
@@ -352,13 +352,13 @@
             this.rbAllSim.Name = "rbAllSim";
             this.rbAllSim.Size = new System.Drawing.Size(80, 17);
             this.rbAllSim.TabIndex = 18;
-            this.rbAllSim.TabStop = true;
             this.rbAllSim.Text = "Semua SIM";
             this.rbAllSim.UseVisualStyleBackColor = true;
             // 
             // rbOneSIM
             // 
             this.rbOneSIM.AutoSize = true;
+            this.rbOneSIM.Checked = true;
             this.rbOneSIM.Location = new System.Drawing.Point(255, 314);
             this.rbOneSIM.Name = "rbOneSIM";
             this.rbOneSIM.Size = new System.Drawing.Size(90, 17);
