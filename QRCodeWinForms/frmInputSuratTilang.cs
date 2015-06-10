@@ -139,7 +139,7 @@ namespace QRCodeWinForms
                 datpel.Pelanggar.Pemilik.TanggalLahir = Convert.ToDateTime(txtTanggalLahir.Text);
                 datpel.Pelanggar.Golongan = txtGolSIM.Text;
                 datpel.Pelanggar.Pemilik.Nomor = txtNoKTPPelanggar.Text;
-                datpel.Pelanggar.NomorSIM = txtNoSIM.Text;
+                datpel.Pelanggar.Nomor = txtNoSIM.Text;
                 datpel.Satpas = txtSATPAS.Text;
                 datpel.NomorKendaraan = txtNoKendaraan.Text;
                 datpel.SamsatKendaraan = txtSamsat.Text;

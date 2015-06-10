@@ -65,7 +65,7 @@ namespace QRCodeWinForms
                 lblJenisKendaraan.Text = datpel.JenisKendaraan;
                 lblMerekKendaraan.Text = datpel.MerekKendaraan;
                 lblNoKTP.Text = datpel.Pelanggar.Pemilik.Nomor;
-                lblNoSIM.Text = datpel.Pelanggar.NomorSIM;
+                lblNoSIM.Text = datpel.Pelanggar.Nomor;
                 lblNoRegKendaraan.Text = datpel.NomorKendaraan;
                 lblNoRangkaKendaraan.Text = datpel.NomorRangkaKendaraan;
                 lblNoMesinKendaraan.Text = datpel.NomorMesinKendaraan;

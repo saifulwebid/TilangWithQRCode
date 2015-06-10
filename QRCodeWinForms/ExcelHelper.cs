@@ -431,7 +431,7 @@ namespace QRCodeWinForms
                                          && (col5Value != null))
                                     {
                                         SIM sim = new SIM();
-                                        sim.NomorSIM = col2Value.ToString();
+                                        sim.Nomor = col2Value.ToString();
                                         sim.Golongan = col3Value.ToString();
                                         sim.TanggalBuat = Convert.ToDateTime(col4Value);
                                         sim.TanggalHabis = Convert.ToDateTime(col5Value);
@@ -486,7 +486,7 @@ namespace QRCodeWinForms
                             {
                                 int rowNumber = currentWorksheet.Dimension.End.Row + 1;
                                 currentWorksheet.Cells[rowNumber, 1].Value = dataSIM.Pemilik.Nomor;
-                                currentWorksheet.Cells[rowNumber, 2].Value = dataSIM.NomorSIM;
+                                currentWorksheet.Cells[rowNumber, 2].Value = dataSIM.Nomor;
                                 currentWorksheet.Cells[rowNumber, 3].Value = dataSIM.Golongan;
                                 currentWorksheet.Cells[rowNumber, 4].Value = dataSIM.TanggalBuat;
                                 currentWorksheet.Cells[rowNumber, 5].Value = dataSIM.TanggalHabis;
@@ -627,7 +627,7 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 2].Value = dapel.NomorRegister;
                                 currentWorksheet.Cells[rowNumber, 3].Value = dapel.Kesatuan;
                                 currentWorksheet.Cells[rowNumber, 4].Value = dapel.NomorTilang;                                
-                                currentWorksheet.Cells[rowNumber, 5].Value = dapel.Pelanggar.NomorSIM;
+                                currentWorksheet.Cells[rowNumber, 5].Value = dapel.Pelanggar.Nomor;
                                 currentWorksheet.Cells[rowNumber, 6].Value = dapel.Satpas;
                                 currentWorksheet.Cells[rowNumber, 7].Value = dapel.NomorKendaraan;
                                 currentWorksheet.Cells[rowNumber, 8].Value = dapel.SamsatKendaraan;
@@ -816,7 +816,7 @@ namespace QRCodeWinForms
                                     pelanggaran.BankSisaDenda = col37Value.ToString();
 
                                     SIM pelanggar = new SIM();
-                                    pelanggar.NomorSIM = col5Value.ToString();
+                                    pelanggar.Nomor = col5Value.ToString();
                                     pelanggaran.Pelanggar = pelanggar;
 
                                     Pasal pasal = new Pasal();

@@ -52,13 +52,13 @@ namespace QRCodeWinForms
                     datapenduduk.Save();
                 }
 
-                dataSIM.NomorSIM = txtNoSIM.Text;
+                dataSIM.Nomor = txtNoSIM.Text;
                 dataSIM.Golongan = cmbGolongan.Text;
                 dataSIM.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
                 dataSIM.TanggalHabis = new DateTime(dataSIM.TanggalBuat.Year + 5, dataSIM.TanggalBuat.Month, dataSIM.TanggalBuat.Day);
                 dataSIM.Pemilik = datapenduduk;
                 
-                if (dataSIM.isValidate())
+                if (dataSIM.isValid())
                 {
                     dataSIM.Save(dataSIM);
                     MessageBox.Show("Data Berhasil Disimpan");
@@ -87,7 +87,7 @@ namespace QRCodeWinForms
 
         private void ClearObject()
         {
-            dataSIM.NomorSIM = "";
+            dataSIM.Nomor = "";
             dataSIM.Golongan = "";
             dataSIM.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
             dataSIM.Pemilik.Nama = "";

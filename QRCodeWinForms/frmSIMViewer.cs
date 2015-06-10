@@ -34,7 +34,7 @@ namespace QRCodeWinForms
             lblTanggalLahir.Text = tampilSIM.Pemilik.TanggalLahir.ToLongDateString();
             lblPendidikan.Text = tampilSIM.Pemilik.Pendidikan.ToString();
             lblPekerjaan.Text = tampilSIM.Pemilik.Pekerjaan.ToString();
-            lblNoSIM.Text = tampilSIM.NomorSIM;
+            lblNoSIM.Text = tampilSIM.Nomor;
             lblGolongan.Text = tampilSIM.Golongan;
             lblMasaBerlaku.Text = tampilSIM.TanggalHabis.ToLongDateString();
             if (tampilSIM.Pemilik.JenisKelamin == EnumJenisKelamin.Pria)
@@ -57,7 +57,7 @@ namespace QRCodeWinForms
         void GenerateQrCode()
         {
             /*  Isi dari qrcode,Revisi lagi dibagian ini nanti */
-            string input = tampilSIM.Pemilik.Nomor + '#' + tampilSIM.NomorSIM + '#' + tampilSIM.Golongan + '#' + tampilSIM.Pemilik.Nama + '#' + tampilSIM.Pemilik.TempatLahir + '#' + tampilSIM.Pemilik.TanggalLahir + '#' + tampilSIM.Pemilik.Alamat + '#' + tampilSIM.Pemilik.Pekerjaan + '#' + tampilSIM.Pemilik.Pendidikan + '#' + tampilSIM.Pemilik.JenisKelamin;
+            string input = tampilSIM.Pemilik.Nomor + '#' + tampilSIM.Nomor + '#' + tampilSIM.Golongan + '#' + tampilSIM.Pemilik.Nama + '#' + tampilSIM.Pemilik.TempatLahir + '#' + tampilSIM.Pemilik.TanggalLahir + '#' + tampilSIM.Pemilik.Alamat + '#' + tampilSIM.Pemilik.Pekerjaan + '#' + tampilSIM.Pemilik.Pendidikan + '#' + tampilSIM.Pemilik.JenisKelamin;
             
             /*Generate qr code dari input ke picturebox*/
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
@@ -66,7 +66,7 @@ namespace QRCodeWinForms
         }
         private void btnCetakSIM_Click(object sender, EventArgs e)
         {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"\\SIM Storage\\"+tampilSIM.NomorSIM+tampilSIM.Pemilik.Nama+".jpg";
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"\\SIM Storage\\"+tampilSIM.Nomor+tampilSIM.Pemilik.Nama+".jpg";
             PrintDialog Print = new PrintDialog();
             System.Drawing.Bitmap image = new System.Drawing.Bitmap(panelSIM.Width, panelSIM.Height);
             panelSIM.DrawToBitmap(image, panelSIM.ClientRectangle);
