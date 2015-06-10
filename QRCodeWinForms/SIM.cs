@@ -8,64 +8,28 @@ namespace QRCodeWinForms
 {
     public class SIM
     {
-        private string _golongan;
-        private string _nomorSIM;
-        private Penduduk _pemilik = new Penduduk();
-        private DateTime _tanggalBuat;
-        private DateTime _tanggalHabis;
-        private bool _isNew;
+        public string Golongan { get; set; }
+        public string Nomor { get; set; }
+        public Penduduk Pemilik { get; set; }
+        public DateTime TanggalBuat { get; set; }
+        public DateTime TanggalHabis { get; set; }
+        private bool isNew = true;
 
-        public SIM()
-        {  }
-
-        public SIM(string gol, string noSIM, Penduduk pemilik, DateTime tanggalbuat, bool status)
-        {
-            _golongan = gol;
-            _nomorSIM = noSIM;
-            _pemilik = pemilik;
-            _tanggalBuat = tanggalbuat;
-            _isNew = status;
-            //_tanggalHabis = _tanggalBuat;
-        }
-        public string Golongan
-        {
-            get { return _golongan; }
-            set { _golongan = value; }
-        }
-        public string NomorSIM
-        {
-            get { return _nomorSIM; }
-            set { _nomorSIM = value; }
-        }
-        public Penduduk Pemilik
-        {
-            get { return _pemilik; }
-            set { _pemilik = value; }
-        }
-        public DateTime TanggalBuat
-        {
-            get { return _tanggalBuat; }
-            set { _tanggalBuat = value; }
-        }
-        public DateTime TanggalHabis
-        {
-            get { return _tanggalHabis; }
-            set { _tanggalHabis = value; }
-        }
-        public bool IsNew
-        {
-            get { return _isNew; }
-            set { _isNew = value; }
-        }
+        public SIM() { }
+        
         public void Save(SIM dataSIM)
         {
-            ExcelHelper.SaveDataSIM(dataSIM);
+            if (isNew == true)
+            {
+                ExcelHelper.SaveDataSIM(dataSIM);
+                isNew = false;
+            }
         }
         public List<DataPelanggaran> GetAllPelanggaran()
         {
             return ExcelHelper.GetAllPelanggaran();
         }
-        public bool isValidate()
+        public bool isValid()
         {
             if ((_tanggalBuat.Year - _pemilik.TanggalLahir.Year) == 17)
             {
