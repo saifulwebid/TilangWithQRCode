@@ -638,7 +638,7 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 13].Value = dapel.LokasiPelanggaran;
                                 currentWorksheet.Cells[rowNumber, 14].Value = dapel.PatokanLokasi;
                                 currentWorksheet.Cells[rowNumber, 15].Value = dapel.WilayahHukum;
-                                currentWorksheet.Cells[rowNumber, 16].Value = dapel.DisitaSKRanmor;
+                                currentWorksheet.Cells[rowNumber, 16].Value = dapel.DisitaSK;
                                 currentWorksheet.Cells[rowNumber, 17].Value = dapel.DisitaSKDiterbitkanOleh;
                                 currentWorksheet.Cells[rowNumber, 18].Value = dapel.DisitaSKMasaBerlaku;
                                 currentWorksheet.Cells[rowNumber, 19].Value = dapel.DisitaBukuUji;
@@ -794,7 +794,7 @@ namespace QRCodeWinForms
                                     pelanggaran.LokasiPelanggaran = col13Value.ToString();
                                     pelanggaran.PatokanLokasi = col14Value.ToString();
                                     pelanggaran.WilayahHukum = col15Value.ToString();
-                                    pelanggaran.DisitaSKRanmor = col16Value.ToString();
+                                    pelanggaran.DisitaSK = col16Value.ToString();
                                     pelanggaran.DisitaSKDiterbitkanOleh = col17Value.ToString();
                                     pelanggaran.DisitaSKMasaBerlaku = DateTime.FromOADate((double)col18Value);
                                     pelanggaran.DisitaBukuUji = col19Value.ToString();
