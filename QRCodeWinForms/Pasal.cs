@@ -8,43 +8,25 @@ namespace QRCodeWinForms
 {
     public class Pasal
     {
-        private double _pidana;
-        private double _dendaMaksimal;
-        private string _keterangan;
-        private string _nomorPasal;
-        private bool _isNew;
+        public double Pidana { get; set; }
+        public double DendaMaksimal { get; set; }
+        public string Keterangan { get; set; }
+        public string Nomor { get; set; }
 
-        public double Pidana
-        {
-            get { return _pidana; }
-            set { _pidana = value; }
-        }
-        public double DendaMaksimal
-        {
-            get { return _dendaMaksimal; }
-            set { _dendaMaksimal = value; }
-        }
-        public string Keterangan
-        {
-            get { return _keterangan; }
-            set { _keterangan = value; }
-        }
-        public string NomorPasal
-        {
-            get { return _nomorPasal; }
-            set { _nomorPasal = value; }
-        }
-        public bool IsNew
-        {
-            get { return _isNew; }
-            set { _isNew = value; }
-        }
+        /** Method **/
         public static List<Pasal> GetAllPasal()
         {
             return ExcelHelper.GetAllPasal();
         }
-        public static List<DataPelanggaran> GetAllPelanggaran()
+
+        /**
+         * Mengembalikan seluruh pelanggaran yang terkait dengan pasal ini.
+         * Sebagai contoh, jika this.Nomor = "182", maka this.GetAllPelanggaran()
+         * akan mengembalikan seluruh DataPelanggaran yang terkait dengan Pasal 182.
+         **/
+        public List<DataPelanggaran> GetAllPelanggaran()
         {
+            // TODO: Fix this.
             return ExcelHelper.GetAllPelanggaran();
         }
     }
