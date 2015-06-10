@@ -19,7 +19,7 @@ namespace QRCodeWinForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (ExcelHelper.AccountCheck(txtUsername.Text, txtPassword.Text) == null)
+            if (ExcelHelper.CheckUser(txtUsername.Text, txtPassword.Text) == null)
             {
                 MessageBox.Show("Data tidak ditemukan !");
             }

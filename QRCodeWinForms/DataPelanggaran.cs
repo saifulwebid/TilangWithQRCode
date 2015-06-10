@@ -229,7 +229,7 @@ namespace QRCodeWinForms
 
         public void Save(DataPelanggaran dapel)
         {
-            ExcelHelper.SaveDataPelanggaran(dapel);
+            ExcelHelper.SavePelanggaran(dapel);
         }
     }
 }

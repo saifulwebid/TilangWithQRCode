@@ -15,7 +15,7 @@ namespace QRCodeWinForms
 
         public User Check(string username, string password)
         {
-            return ExcelHelper.AccountCheck(username, password);
+            return ExcelHelper.CheckUser(username, password);
         }
 
     }

@@ -39,13 +39,13 @@ namespace QRCodeWinForms
         }
         public static Penduduk IsPresent(string noKTP)
         {
-            return ExcelHelper.CekPenduduk(noKTP);
+            return ExcelHelper.CheckPenduduk(noKTP);
         }
         public void Save()
         {
             if (isNew == true)
             {
-                ExcelHelper.SaveDataPenduduk(this);
+                ExcelHelper.SavePenduduk(this);
                 isNew = false;
             }
         }

@@ -34,7 +34,7 @@ namespace QRCodeWinForms
         {
             if (isNew == true)
             {
-                ExcelHelper.SaveDataSIM(dataSIM);
+                ExcelHelper.SaveSIM(dataSIM);
                 isNew = false;
             }
         }
