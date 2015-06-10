@@ -540,10 +540,13 @@ namespace QRCodeWinForms
                                     if ((col1Value != null) && (col2Value != null) && (col3Value != null) && (col4Value != null))
                                     {
                                         Pasal psl = new Pasal();
+
                                         psl.Nomor = col1Value.ToString();
                                         psl.Keterangan = col2Value.ToString();
                                         psl.Pidana = Convert.ToDouble(col3Value);
                                         psl.DendaMaksimal = Convert.ToDouble(col4Value);
+
+                                        listDataPasal.Add(psl);
                                     }
                                 }
                             }
