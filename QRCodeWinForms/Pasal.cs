@@ -14,7 +14,7 @@ namespace QRCodeWinForms
         public string Nomor { get; set; }
 
         /** Method **/
-        public static List<Pasal> GetAllPasal()
+        public static List<Pasal> GetAll()
         {
             return ExcelHelper.GetAllPasal();
         }
@@ -28,6 +28,12 @@ namespace QRCodeWinForms
         {
             // TODO: Fix this.
             return ExcelHelper.GetAllPelanggaran();
+        }
+
+        public static void GetStatistic()
+        {
+            // TODO: Implementasi method ini beserta signature-nya
+            throw new NotImplementedException();
         }
     }
 }
