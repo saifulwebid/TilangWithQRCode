@@ -117,13 +117,13 @@ namespace QRCodeWinForms
         void LookPasal(List<string> pasal)
         {
             /*Menampilkan Banyak nya pasal yang dilanggar */
-            dgvDataPelanggaranPelanggar.Rows.Clear();
+            dgvPasal.Rows.Clear();
             int i = 0, count = 0;
             foreach (var x in pasal.GroupBy(k => k))
             {
-                dgvDataPelanggaranPelanggar.Rows.Add();
-                dgvDataPelanggaranPelanggar.Rows[i].Cells[0].Value = x.Key;
-                dgvDataPelanggaranPelanggar.Rows[i].Cells[1].Value = x.Count();
+                dgvPasal.Rows.Add();
+                dgvPasal.Rows[i].Cells[0].Value = x.Key;
+                dgvPasal.Rows[i].Cells[1].Value = x.Count();
                 i++;
                 count = count + x.Count();
             }
