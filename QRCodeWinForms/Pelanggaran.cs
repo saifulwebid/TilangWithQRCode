@@ -9,18 +9,22 @@ namespace QRCodeWinForms
     public class Pelanggaran
     {
         public string AlamatWakil { get; set; }
-        public double AngkaPinaltiPelanggaran { get; set; }
+        public double AngkaPinaltiPelanggaran { get; set; } // double/integer?
+        public string BankSetorDendaMaksimal { get; set; } // BankSetoranDendaMaksimal ?
         public string BankSisaDenda { get; set; }
-        public string DisitaSK { get; set; }
+        public string DisitaBukuUji { get; set; } // Bitstring --> Integer ?
+        public string DisitaBukuUjiDiterbitkanOleh { get; set; }
+        public DateTime DisitaBukuUjiMasaBerlaku { get; set; }
+        public string DisitaSK { get; set; } // Bitstring --> Integer ?
         public string DisitaSKDiterbitkanOleh { get; set; }
         public DateTime DisitaSKMasaBerlaku { get; set; }
         public string JenisKendaraan { get; set; }
         public string Kesatuan { get; set; }
-        public string LokasiSidang { get; set; }
         public string LokasiPelanggaran { get; set; }
+        public string LokasiSidang { get; set; }
         public string MerekKendaraan { get; set; }
-        public string NamaWakil { get; set; }
         public string NamaPenyidik { get; set; }
+        public string NamaWakil { get; set; }
         public string NomorKendaraan { get; set; }
         public string NomorMesinKendaraan { get; set; }
         public string NomorRangkaKendaraan { get; set; }
@@ -39,10 +43,6 @@ namespace QRCodeWinForms
         public DateTime WaktuPelanggaran { get; set; }
         public DateTime WaktuSidang { get; set; }
         public string WilayahHukum { get; set; }
-        public string DisitaBukuUji { get; set; }
-        public string DisitaBukuUjiDiterbitkanOleh { get; set; }
-        public DateTime DisitaBukuUjiMasaBerlaku { get; set; }
-        public string BankSetorDendaMaksimal { get; set; }
         private bool isNew = true;
 
         /** Constructor **/
