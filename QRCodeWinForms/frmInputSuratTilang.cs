@@ -16,7 +16,7 @@ namespace QRCodeWinForms
     public partial class frmInputSuratTilang : Form
     {
         string ResultString;
-        DataPelanggaran datpel = new DataPelanggaran();
+        Pelanggaran datpel = new Pelanggaran();
        
         public frmInputSuratTilang()
         {

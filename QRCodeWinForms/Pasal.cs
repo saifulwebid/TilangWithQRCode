@@ -24,7 +24,7 @@ namespace QRCodeWinForms
          * Sebagai contoh, jika this.Nomor = "182", maka this.GetAllPelanggaran()
          * akan mengembalikan seluruh DataPelanggaran yang terkait dengan Pasal 182.
          **/
-        public List<DataPelanggaran> GetAllPelanggaran()
+        public List<Pelanggaran> GetAllPelanggaran()
         {
             // TODO: Fix this.
             return ExcelHelper.GetAllPelanggaran();

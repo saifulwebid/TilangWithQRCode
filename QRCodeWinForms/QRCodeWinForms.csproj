@@ -64,7 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="User.cs" />
-    <Compile Include="DataPelanggaran.cs" />
+    <Compile Include="Pelanggaran.cs" />
     <Compile Include="ExcelHelper.cs" />
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>

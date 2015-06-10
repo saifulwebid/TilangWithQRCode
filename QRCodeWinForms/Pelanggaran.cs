@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QRCodeWinForms
 {
-    public class DataPelanggaran
+    public class Pelanggaran
     {
         private string _alamatWakil;
         private double _angkaPinaltiPelanggaran;
@@ -227,7 +227,7 @@ namespace QRCodeWinForms
             set { _banksetorDendaMaksimal = value; }
         }
 
-        public void Save(DataPelanggaran dapel)
+        public void Save(Pelanggaran dapel)
         {
             ExcelHelper.SavePelanggaran(dapel);
         }

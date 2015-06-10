@@ -14,7 +14,7 @@ namespace QRCodeWinForms
     {
         List<List<int>> dataStatistik = new List<List<int>>();
         List<List<string>> dataStatistikPasal = new List<List<string>>();
-        List<DataPelanggaran> data = new List<DataPelanggaran>();
+        List<Pelanggaran> data = new List<Pelanggaran>();
         
         public frmStatistikPelanggaran()
         {
@@ -57,7 +57,7 @@ namespace QRCodeWinForms
             data = ExcelHelper.GetAllPelanggaran();
             List<int> tahun = new List<int>();
             /* Memasukkan data tahun dan tanggal ke dalam list tahun dan tanggal dari list data pelanggaran */
-            foreach (DataPelanggaran x in data)
+            foreach (Pelanggaran x in data)
             {
                 tahun.Add(x.WaktuPelanggaran.Year);
             }
@@ -70,7 +70,7 @@ namespace QRCodeWinForms
                 List<int> sublist = new List<int>();
                 List<string> sublist1 = new List<string>();
               
-                foreach (DataPelanggaran x in data)
+                foreach (Pelanggaran x in data)
                 {
                     if (x.WaktuPelanggaran.Year == tahun[i])
                     {

@@ -14,10 +14,10 @@ namespace QRCodeWinForms
     {
         string qrData;
             
-        List<DataPelanggaran> data = new List<DataPelanggaran>();
+        List<Pelanggaran> data = new List<Pelanggaran>();
         List<SIM> dataSIM = new List<SIM>();
-        List<DataPelanggaran> dataPelanggar = new List<DataPelanggaran>();
-        List<DataPelanggaran> pelanggaranPerSIM = new List<DataPelanggaran>();
+        List<Pelanggaran> dataPelanggar = new List<Pelanggaran>();
+        List<Pelanggaran> pelanggaranPerSIM = new List<Pelanggaran>();
         List<string> pasalDilanggar = new List<string>();
         List<string> pasalPerSIM = new List<string>();
         List<SIM> simPelanggar = new List<SIM>();
@@ -68,7 +68,7 @@ namespace QRCodeWinForms
             /*Menyimpan history pelanggaran berdasrkan SEMUA SIM yang dimiliki oleh pelanggar */
             for (int j = 0; j < simPelanggar.Count; j++)
             {
-                foreach (DataPelanggaran x in data)
+                foreach (Pelanggaran x in data)
                 {
                     if (x.Pelanggar.Nomor == simPelanggar[j].Nomor)
                     {
@@ -78,7 +78,7 @@ namespace QRCodeWinForms
             }
 
             /* Memindahkan Pasal - Pasal yang dilanggar oleh Pelanggar */
-            foreach (DataPelanggaran x in dataPelanggar)
+            foreach (Pelanggaran x in dataPelanggar)
             {
                 pasalDilanggar.Add(x.PasalPelanggaran.Nomor);
                 if (x.Pelanggar.Nomor == txtNoSIM.Text)
@@ -131,11 +131,11 @@ namespace QRCodeWinForms
             txtJumlahPelanggaran.Text = count.ToString();
         }
 
-        void LookPelanggaran(List<DataPelanggaran> Pelanggaran)
+        void LookPelanggaran(List<Pelanggaran> Pelanggaran)
         {
             dgvDataPelanggaranPelanggar.Rows.Clear();
             int i = 0;
-            foreach(DataPelanggaran x in Pelanggaran)
+            foreach(Pelanggaran x in Pelanggaran)
             {
                 dgvDataPelanggaranPelanggar.Rows.Add();
                 dgvDataPelanggaranPelanggar.Rows[i].Cells[0].Value = x.WaktuPelanggaran.ToLongDateString();

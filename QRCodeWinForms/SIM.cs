@@ -38,7 +38,7 @@ namespace QRCodeWinForms
                 isNew = false;
             }
         }
-        public List<DataPelanggaran> GetAllPelanggaran()
+        public List<Pelanggaran> GetAllPelanggaran()
         {
             return ExcelHelper.GetAllPelanggaran();
         }

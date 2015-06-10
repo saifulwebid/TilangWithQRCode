@@ -15,7 +15,7 @@ namespace QRCodeWinForms
 {
     public partial class frmSuratTilangViewer : Form
     {
-        private DataPelanggaran datpel = new DataPelanggaran();
+        private Pelanggaran datpel = new Pelanggaran();
         public frmSuratTilangViewer()
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace QRCodeWinForms
 
         }
 
-        public frmSuratTilangViewer(DataPelanggaran pelanggaran)
+        public frmSuratTilangViewer(Pelanggaran pelanggaran)
         {
             InitializeComponent();
             //mengambil data dari class Pelanggaran

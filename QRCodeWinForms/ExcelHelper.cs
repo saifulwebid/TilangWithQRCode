@@ -554,7 +554,7 @@ namespace QRCodeWinForms
             }
             return null;
         }
-        public static void SavePelanggaran(DataPelanggaran dapel)
+        public static void SavePelanggaran(Pelanggaran dapel)
         {
             const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
@@ -670,7 +670,7 @@ namespace QRCodeWinForms
                 }
             }
         }
-        public static List<DataPelanggaran> GetAllPelanggaran()
+        public static List<Pelanggaran> GetAllPelanggaran()
         {
             const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
@@ -680,7 +680,7 @@ namespace QRCodeWinForms
             {
                 folder = Path.GetDirectoryName(folder);
                 string filePath = Path.Combine(folder, fileName);
-                List<DataPelanggaran> listDataPelanggaran = new List<DataPelanggaran>();
+                List<Pelanggaran> listDataPelanggaran = new List<Pelanggaran>();
 
                 var existingFile = new FileInfo(filePath);
                 using (var package = new ExcelPackage(existingFile))
@@ -782,7 +782,7 @@ namespace QRCodeWinForms
                                     object col36Value = currentWorksheet.Cells[rowNumber, 36].Value;
                                     object col37Value = currentWorksheet.Cells[rowNumber, 37].Value;
 
-                                    DataPelanggaran pelanggaran = new DataPelanggaran();
+                                    Pelanggaran pelanggaran = new Pelanggaran();
                                     pelanggaran.WaktuPelanggaran = DateTime.FromOADate((double)col1Value);
                                     pelanggaran.NomorRegister = col2Value.ToString();
                                     pelanggaran.Kesatuan = col3Value.ToString();
