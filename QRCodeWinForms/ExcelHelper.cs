@@ -9,6 +9,9 @@ namespace QRCodeWinForms
 {
     class ExcelHelper
     {
+        private static string FileName;
+
+        /** Methods **/
         public static void SaveAccount(User acc)
         {
             const string fileName = "data\\DataGabungan.xlsx";
@@ -53,7 +56,7 @@ namespace QRCodeWinForms
                 }
             }
         }
-        public static User AccountCheck(string username, string password)
+        public static User CheckUser(string username, string password)
         {
             const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
@@ -109,7 +112,7 @@ namespace QRCodeWinForms
             }
             return null;
         }
-        public static Penduduk CekPenduduk(string ktp)
+        public static Penduduk CheckPenduduk(string ktp)
         {
             const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
@@ -336,7 +339,7 @@ namespace QRCodeWinForms
             }
             return null;
         }
-        public static void SaveDataPenduduk(Penduduk pdd)
+        public static void SavePenduduk(Penduduk pdd)
         {
             const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
@@ -453,7 +456,7 @@ namespace QRCodeWinForms
             }
             return null;
         }
-        public static void SaveDataSIM(SIM dataSIM)
+        public static void SaveSIM(SIM dataSIM)
         {
             const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
@@ -551,7 +554,7 @@ namespace QRCodeWinForms
             }
             return null;
         }
-        public static void SaveDataPelanggaran(DataPelanggaran dapel)
+        public static void SavePelanggaran(DataPelanggaran dapel)
         {
             const string fileName = "data\\DataGabungan.xlsx";
             const int startRow = 1;
