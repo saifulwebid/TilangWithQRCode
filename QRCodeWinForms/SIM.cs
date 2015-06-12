@@ -64,6 +64,11 @@ namespace QRCodeWinForms
         {
             return ExcelHelper.GetAllPelanggaran();
         }
+
+        public static List<SIM> GetAll()
+        {
+            return ExcelHelper.GetAllSIM();
+        }
         public void Save()
         {
             if (isNew == true)
