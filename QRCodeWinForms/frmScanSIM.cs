@@ -153,14 +153,6 @@ namespace QRCodeWinForms
 
         private void ShowFrame(Bitmap frame)
         {
-            if (pictureBox1.Width < frame.Width)
-            {
-                pictureBox1.Width = frame.Width;
-            }
-            if (pictureBox1.Height < frame.Height)
-            {
-                pictureBox1.Height = frame.Height;
-            }
             pictureBox1.Image = frame;
         }
 

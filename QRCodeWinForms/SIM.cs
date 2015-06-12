@@ -30,7 +30,12 @@ namespace QRCodeWinForms
         }
         public SIM(string QRData)
         {
-            // TODO : Implementasikan method ini
+            // TODO : Isi field-field pada class SIM
+            // ...
+            Penduduk pdk = new Penduduk(true);
+            // TODO : Isi field-field pada class Penduduk
+            Pemilik = pdk;
+            isNew = false;
         }
         
         /** Method **/
