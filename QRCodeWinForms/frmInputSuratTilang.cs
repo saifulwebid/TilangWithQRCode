@@ -165,7 +165,7 @@ namespace QRCodeWinForms
                 datpel.PasalPelanggaran.Nomor = cbxPasal.Text;
                 datpel.PasalPelanggaran.DendaMaksimal = Convert.ToDouble(txtDendaMaksimal.Text);
                 datpel.BankSetorDendaMaksimal = txtBankSetor.Text;
-                datpel.AngkaPinaltiPelanggaran = Convert.ToDouble(txtAngkaPinalti.Text);
+                datpel.AngkaPinaltiPelanggaran = Convert.ToInt16(txtAngkaPinalti.Text);
                 if (rbtHadirSendiri.Checked == true)
                 {
                     datpel.PernyataanHadirSendiri = true;
