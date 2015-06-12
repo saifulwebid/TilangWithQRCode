@@ -28,119 +28,197 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnGenerateSim = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnSuratTilang = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnStatistik = new System.Windows.Forms.Button();
-            this.btnBanyakPelanggaran = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.mstMain = new System.Windows.Forms.MenuStrip();
+            this.aplikasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bukaDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tutupDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manajemenUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.keluarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sIMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buatSIMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.suratTilangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buatSuratTilangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rekapitulasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statistikPerOrangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statistikUmumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mstMain.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // mstMain
             // 
-            this.groupBox1.Controls.Add(this.btnGenerateSim);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 283);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Prasyarat SIM";
+            this.mstMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aplikasiToolStripMenuItem,
+            this.sIMToolStripMenuItem,
+            this.suratTilangToolStripMenuItem,
+            this.rekapitulasiToolStripMenuItem});
+            this.mstMain.Location = new System.Drawing.Point(0, 0);
+            this.mstMain.Name = "mstMain";
+            this.mstMain.Size = new System.Drawing.Size(636, 24);
+            this.mstMain.TabIndex = 5;
+            this.mstMain.Text = "menuStrip1";
             // 
-            // btnGenerateSim
+            // aplikasiToolStripMenuItem
             // 
-            this.btnGenerateSim.Location = new System.Drawing.Point(52, 115);
-            this.btnGenerateSim.Name = "btnGenerateSim";
-            this.btnGenerateSim.Size = new System.Drawing.Size(83, 39);
-            this.btnGenerateSim.TabIndex = 0;
-            this.btnGenerateSim.Text = "Generate SIM";
-            this.btnGenerateSim.UseVisualStyleBackColor = true;
-            this.btnGenerateSim.Click += new System.EventHandler(this.btnGenerateSim_Click);
+            this.aplikasiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bukaDatabaseToolStripMenuItem,
+            this.tutupDatabaseToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.loginToolStripMenuItem,
+            this.logoutToolStripMenuItem,
+            this.manajemenUserToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.keluarToolStripMenuItem});
+            this.aplikasiToolStripMenuItem.Name = "aplikasiToolStripMenuItem";
+            this.aplikasiToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.aplikasiToolStripMenuItem.Text = "&Aplikasi";
             // 
-            // groupBox2
+            // bukaDatabaseToolStripMenuItem
             // 
-            this.groupBox2.Controls.Add(this.btnSuratTilang);
-            this.groupBox2.Location = new System.Drawing.Point(218, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 283);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tindak Langsung";
+            this.bukaDatabaseToolStripMenuItem.Enabled = false;
+            this.bukaDatabaseToolStripMenuItem.Name = "bukaDatabaseToolStripMenuItem";
+            this.bukaDatabaseToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.bukaDatabaseToolStripMenuItem.Text = "&Buka Database...";
             // 
-            // btnSuratTilang
+            // tutupDatabaseToolStripMenuItem
             // 
-            this.btnSuratTilang.Location = new System.Drawing.Point(58, 115);
-            this.btnSuratTilang.Name = "btnSuratTilang";
-            this.btnSuratTilang.Size = new System.Drawing.Size(83, 40);
-            this.btnSuratTilang.TabIndex = 0;
-            this.btnSuratTilang.Text = "Isi Form Surat Tilang";
-            this.btnSuratTilang.UseVisualStyleBackColor = true;
-            this.btnSuratTilang.Click += new System.EventHandler(this.btnSuratTilang_Click);
+            this.tutupDatabaseToolStripMenuItem.Enabled = false;
+            this.tutupDatabaseToolStripMenuItem.Name = "tutupDatabaseToolStripMenuItem";
+            this.tutupDatabaseToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.tutupDatabaseToolStripMenuItem.Text = "&Tutup Database";
             // 
-            // groupBox3
+            // toolStripSeparator1
             // 
-            this.groupBox3.Controls.Add(this.btnStatistik);
-            this.groupBox3.Controls.Add(this.btnBanyakPelanggaran);
-            this.groupBox3.Location = new System.Drawing.Point(424, 12);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 283);
-            this.groupBox3.TabIndex = 3;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Rekapitulasi";
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(169, 6);
             // 
-            // btnStatistik
+            // loginToolStripMenuItem
             // 
-            this.btnStatistik.Location = new System.Drawing.Point(53, 153);
-            this.btnStatistik.Name = "btnStatistik";
-            this.btnStatistik.Size = new System.Drawing.Size(83, 44);
-            this.btnStatistik.TabIndex = 1;
-            this.btnStatistik.Text = "Statistik Pelanggaran";
-            this.btnStatistik.UseVisualStyleBackColor = true;
-            this.btnStatistik.Click += new System.EventHandler(this.btnStatistik_Click);
+            this.loginToolStripMenuItem.Enabled = false;
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.loginToolStripMenuItem.Text = "&Login...";
             // 
-            // btnBanyakPelanggaran
+            // logoutToolStripMenuItem
             // 
-            this.btnBanyakPelanggaran.Location = new System.Drawing.Point(53, 78);
-            this.btnBanyakPelanggaran.Name = "btnBanyakPelanggaran";
-            this.btnBanyakPelanggaran.Size = new System.Drawing.Size(83, 46);
-            this.btnBanyakPelanggaran.TabIndex = 0;
-            this.btnBanyakPelanggaran.Text = "Banyak Pelanggaran";
-            this.btnBanyakPelanggaran.UseVisualStyleBackColor = true;
-            this.btnBanyakPelanggaran.Click += new System.EventHandler(this.btnBanyakPelanggaran_Click);
+            this.logoutToolStripMenuItem.Enabled = false;
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.logoutToolStripMenuItem.Text = "Logo&ut";
+            // 
+            // manajemenUserToolStripMenuItem
+            // 
+            this.manajemenUserToolStripMenuItem.Enabled = false;
+            this.manajemenUserToolStripMenuItem.Name = "manajemenUserToolStripMenuItem";
+            this.manajemenUserToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.manajemenUserToolStripMenuItem.Text = "&Manajemen User...";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(169, 6);
+            // 
+            // keluarToolStripMenuItem
+            // 
+            this.keluarToolStripMenuItem.Name = "keluarToolStripMenuItem";
+            this.keluarToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.keluarToolStripMenuItem.Text = "&Keluar";
+            this.keluarToolStripMenuItem.Click += new System.EventHandler(this.keluarToolStripMenuItem_Click);
+            // 
+            // sIMToolStripMenuItem
+            // 
+            this.sIMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.buatSIMToolStripMenuItem});
+            this.sIMToolStripMenuItem.Name = "sIMToolStripMenuItem";
+            this.sIMToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.sIMToolStripMenuItem.Text = "&SIM";
+            // 
+            // buatSIMToolStripMenuItem
+            // 
+            this.buatSIMToolStripMenuItem.Name = "buatSIMToolStripMenuItem";
+            this.buatSIMToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.buatSIMToolStripMenuItem.Text = "&Buat SIM...";
+            this.buatSIMToolStripMenuItem.Click += new System.EventHandler(this.buatSIMToolStripMenuItem_Click);
+            // 
+            // suratTilangToolStripMenuItem
+            // 
+            this.suratTilangToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.buatSuratTilangToolStripMenuItem});
+            this.suratTilangToolStripMenuItem.Name = "suratTilangToolStripMenuItem";
+            this.suratTilangToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.suratTilangToolStripMenuItem.Text = "Surat &Tilang";
+            // 
+            // buatSuratTilangToolStripMenuItem
+            // 
+            this.buatSuratTilangToolStripMenuItem.Name = "buatSuratTilangToolStripMenuItem";
+            this.buatSuratTilangToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.buatSuratTilangToolStripMenuItem.Text = "&Buat Surat Tilang...";
+            this.buatSuratTilangToolStripMenuItem.Click += new System.EventHandler(this.buatSuratTilangToolStripMenuItem_Click);
+            // 
+            // rekapitulasiToolStripMenuItem
+            // 
+            this.rekapitulasiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statistikPerOrangToolStripMenuItem,
+            this.statistikUmumToolStripMenuItem});
+            this.rekapitulasiToolStripMenuItem.Name = "rekapitulasiToolStripMenuItem";
+            this.rekapitulasiToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.rekapitulasiToolStripMenuItem.Text = "&Rekapitulasi";
+            // 
+            // statistikPerOrangToolStripMenuItem
+            // 
+            this.statistikPerOrangToolStripMenuItem.Name = "statistikPerOrangToolStripMenuItem";
+            this.statistikPerOrangToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.statistikPerOrangToolStripMenuItem.Text = "Statistik Per &Orang...";
+            this.statistikPerOrangToolStripMenuItem.Click += new System.EventHandler(this.statistikPerOrangToolStripMenuItem_Click);
+            // 
+            // statistikUmumToolStripMenuItem
+            // 
+            this.statistikUmumToolStripMenuItem.Name = "statistikUmumToolStripMenuItem";
+            this.statistikUmumToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.statistikUmumToolStripMenuItem.Text = "Statistik &Umum...";
+            this.statistikUmumToolStripMenuItem.Click += new System.EventHandler(this.statistikUmumToolStripMenuItem_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(636, 307);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Controls.Add(this.mstMain);
             this.IsMdiContainer = true;
-            this.MaximizeBox = false;
+            this.MainMenuStrip = this.mstMain;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistem Tilang Elektronik";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.mstMain.ResumeLayout(false);
+            this.mstMain.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button btnGenerateSim;
-        private System.Windows.Forms.Button btnSuratTilang;
-        private System.Windows.Forms.Button btnStatistik;
-        private System.Windows.Forms.Button btnBanyakPelanggaran;
+        private System.Windows.Forms.MenuStrip mstMain;
+        private System.Windows.Forms.ToolStripMenuItem aplikasiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bukaDatabaseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tutupDatabaseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem keluarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sIMToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem suratTilangToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buatSIMToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buatSuratTilangToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rekapitulasiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem statistikPerOrangToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem statistikUmumToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manajemenUserToolStripMenuItem;
     }
 }
 

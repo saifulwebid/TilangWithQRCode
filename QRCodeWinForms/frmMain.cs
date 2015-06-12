@@ -17,28 +17,37 @@ namespace QRCodeWinForms
             InitializeComponent();
         }
 
-        private void btnGenerateSim_Click(object sender, EventArgs e)
+        private void keluarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmInputDataSIM fInputDataSIM = new frmInputDataSIM();
-            fInputDataSIM.ShowDialog();
+            Application.Exit();
         }
 
-        private void btnSuratTilang_Click(object sender, EventArgs e)
-        {
-            frmInputSuratTilang fSuratTilang = new frmInputSuratTilang();
-            fSuratTilang.ShowDialog();
-        }
-
-        private void btnBanyakPelanggaran_Click(object sender, EventArgs e)
+        private void statistikPerOrangToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmBanyakPelanggaran fBanyakPelanggaran = new frmBanyakPelanggaran();
-            fBanyakPelanggaran.ShowDialog();
+            fBanyakPelanggaran.MdiParent = this;
+            fBanyakPelanggaran.Show();
         }
 
-        private void btnStatistik_Click(object sender, EventArgs e)
+        private void buatSIMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInputDataSIM fInputDataSIM = new frmInputDataSIM();
+            fInputDataSIM.MdiParent = this;
+            fInputDataSIM.Show();
+        }
+
+        private void buatSuratTilangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInputSuratTilang fSuratTilang = new frmInputSuratTilang();
+            fSuratTilang.MdiParent = this;
+            fSuratTilang.Show();
+        }
+
+        private void statistikUmumToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmStatistikPelanggaran fStatistik = new frmStatistikPelanggaran();
-            fStatistik.ShowDialog();
+            fStatistik.MdiParent = this;
+            fStatistik.Show();
         }
     }
 }
