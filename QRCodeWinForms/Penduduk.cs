@@ -49,5 +49,17 @@ namespace QRCodeWinForms
                 isNew = false;
             }
         }
+
+        public static int ConvertPekerjaan(EnumPekerjaan jenis)
+        {
+            List<EnumPekerjaan> Pekerjaan = Enum.GetValues(typeof(EnumPekerjaan)).Cast<EnumPekerjaan>().ToList(); //convert enum ke list
+            return Pekerjaan.IndexOf(jenis) + 1;
+        }
+
+        public static int ConvertPendidikan(EnumPendidikan jenis)
+        {
+            List<EnumPendidikan> Pendidikan = Enum.GetValues(typeof(EnumPekerjaan)).Cast<EnumPendidikan>().ToList();
+            return Pendidikan.IndexOf(jenis) + 1;
+        }
     }
 }
