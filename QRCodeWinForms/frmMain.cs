@@ -13,6 +13,8 @@ namespace QRCodeWinForms
     public partial class frmMain : Form
     {
         private User LoggedInUser = null;
+        private string DatabasePath = null;
+        
         public frmMain()
         {
             InitializeComponent();
