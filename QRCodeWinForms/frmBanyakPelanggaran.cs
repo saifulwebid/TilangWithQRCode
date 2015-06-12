@@ -98,12 +98,13 @@ namespace QRCodeWinForms
 
         void SetTablePelanggaran()
         {
-            dgvDataPelanggaranPelanggar.ColumnCount = 5;
+            dgvDataPelanggaranPelanggar.ColumnCount = 6;
             dgvDataPelanggaranPelanggar.Columns[0].Name = "Tanggal";
             dgvDataPelanggaranPelanggar.Columns[1].Name = "Lokasi Pelanggaran   ";
             dgvDataPelanggaranPelanggar.Columns[2].Name = "No Kendaraan";
             dgvDataPelanggaranPelanggar.Columns[3].Name = "Pasal yang Dilanggar";
-            dgvDataPelanggaranPelanggar.Columns[4].Name = "No SIM";
+            dgvDataPelanggaranPelanggar.Columns[4].Name = "Angka Pinalti Pelanggaran";
+            dgvDataPelanggaranPelanggar.Columns[5].Name = "No SIM";
         }
 
         private void frmBanyakPelanggaran_Load(object sender, EventArgs e)
@@ -134,7 +135,7 @@ namespace QRCodeWinForms
         void LookPelanggaran(List<Pelanggaran> Pelanggaran)
         {
             dgvDataPelanggaranPelanggar.Rows.Clear();
-            int i = 0;
+            int i = 0, pinalti = 0;
             foreach(Pelanggaran x in Pelanggaran)
             {
                 dgvDataPelanggaranPelanggar.Rows.Add();
@@ -142,11 +143,15 @@ namespace QRCodeWinForms
                 dgvDataPelanggaranPelanggar.Rows[i].Cells[1].Value = x.LokasiPelanggaran;
                 dgvDataPelanggaranPelanggar.Rows[i].Cells[2].Value = x.NomorKendaraan;
                 dgvDataPelanggaranPelanggar.Rows[i].Cells[3].Value = x.PasalPelanggaran.Nomor;
-                dgvDataPelanggaranPelanggar.Rows[i].Cells[4].Value = x.Pelanggar.Nomor;
+                dgvDataPelanggaranPelanggar.Rows[i].Cells[4].Value = x.AngkaPinaltiPelanggaran.ToString();
+                dgvDataPelanggaranPelanggar.Rows[i].Cells[5].Value = x.Pelanggar.Nomor;
+
+                pinalti = x.AngkaPinaltiPelanggaran + pinalti;
                 i++;
             }
 
             txtJumlahPelanggaran.Text = i.ToString();
+            txtPinalti.Text = pinalti.ToString();
         }
        
         private static string ConvertPekerjaan(int i)

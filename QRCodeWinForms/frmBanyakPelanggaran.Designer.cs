@@ -60,6 +60,8 @@
             this.rbAllSim = new System.Windows.Forms.RadioButton();
             this.rbOneSIM = new System.Windows.Forms.RadioButton();
             this.btnRekap = new System.Windows.Forms.Button();
+            this.txtPinalti = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.grbIdentitasPelanggar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataPelanggaranPelanggar)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -290,7 +292,7 @@
             // lblJumlahPelanggaran
             // 
             this.lblJumlahPelanggaran.AutoSize = true;
-            this.lblJumlahPelanggaran.Location = new System.Drawing.Point(242, 496);
+            this.lblJumlahPelanggaran.Location = new System.Drawing.Point(278, 496);
             this.lblJumlahPelanggaran.Name = "lblJumlahPelanggaran";
             this.lblJumlahPelanggaran.Size = new System.Drawing.Size(134, 13);
             this.lblJumlahPelanggaran.TabIndex = 11;
@@ -298,10 +300,10 @@
             // 
             // txtJumlahPelanggaran
             // 
-            this.txtJumlahPelanggaran.Location = new System.Drawing.Point(382, 493);
+            this.txtJumlahPelanggaran.Location = new System.Drawing.Point(418, 493);
             this.txtJumlahPelanggaran.Name = "txtJumlahPelanggaran";
             this.txtJumlahPelanggaran.ReadOnly = true;
-            this.txtJumlahPelanggaran.Size = new System.Drawing.Size(123, 20);
+            this.txtJumlahPelanggaran.Size = new System.Drawing.Size(87, 20);
             this.txtJumlahPelanggaran.TabIndex = 11;
             this.txtJumlahPelanggaran.Text = "0";
             // 
@@ -377,11 +379,31 @@
             this.btnRekap.UseVisualStyleBackColor = true;
             this.btnRekap.Click += new System.EventHandler(this.btnRekap_Click);
             // 
+            // txtPinalti
+            // 
+            this.txtPinalti.Location = new System.Drawing.Point(163, 493);
+            this.txtPinalti.Name = "txtPinalti";
+            this.txtPinalti.ReadOnly = true;
+            this.txtPinalti.Size = new System.Drawing.Size(87, 20);
+            this.txtPinalti.TabIndex = 21;
+            this.txtPinalti.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 496);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 13);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "JUMLAH ANGKA PINALTI";
+            // 
             // frmBanyakPelanggaran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 524);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtPinalti);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnRekap);
             this.Controls.Add(this.rbOneSIM);
@@ -439,5 +461,7 @@
         private System.Windows.Forms.RadioButton rbAllSim;
         private System.Windows.Forms.RadioButton rbOneSIM;
         private System.Windows.Forms.Button btnRekap;
+        private System.Windows.Forms.TextBox txtPinalti;
+        private System.Windows.Forms.Label label1;
     }
 }
