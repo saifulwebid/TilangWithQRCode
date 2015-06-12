@@ -67,7 +67,11 @@ namespace QRCodeWinForms
         private void btnCetakSIM_Click(object sender, EventArgs e)
         {
             string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\SIM Storage";
-            System.IO.Directory.CreateDirectory(path);
+            if(!System.IO.Directory.Exists(path))
+            {
+                System.IO.Directory.CreateDirectory(path);
+            }
+            
             path = path + "\\" + tampilSIM.Nomor + "_" + tampilSIM.Pemilik.Nama + ".jpg"; ;
             PrintDialog Print = new PrintDialog();
             System.Drawing.Bitmap image = new System.Drawing.Bitmap(panelSIM.Width, panelSIM.Height);
