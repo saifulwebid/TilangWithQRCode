@@ -151,10 +151,10 @@ namespace QRCodeWinForms
                 datpel.LokasiPelanggaran = txtJalan.Text;
                 datpel.PatokanLokasi = txtPatokan.Text;
                 datpel.WilayahHukum = txtWilayahHukum.Text;
-                datpel.DisitaSK = CekCheckBoxSK().ToString();
+                datpel.DisitaSK = CekCheckBoxSK();
                 datpel.DisitaSKDiterbitkanOleh = txtTerbitSK.Text;
                 datpel.DisitaSKMasaBerlaku = Convert.ToDateTime(dtpBerlakuSK.Text);
-                datpel.DisitaBukuUji = CekCheckBoxBK().ToString();
+                datpel.DisitaBukuUji = CekCheckBoxBK();
                 datpel.DisitaBukuUjiDiterbitkanOleh = txtTerbitPemda.Text;
                 datpel.DisitaBukuUjiMasaBerlaku = Convert.ToDateTime(dtpBerlakuPemda.Text);
                 datpel.LokasiSidang = txtPengadilan.Text;
@@ -164,7 +164,7 @@ namespace QRCodeWinForms
                 datpel.TempatPengambilanBarangSita = txtTempatAmbil.Text;
                 datpel.PasalPelanggaran.Nomor = cbxPasal.Text;
                 datpel.PasalPelanggaran.DendaMaksimal = Convert.ToDouble(txtDendaMaksimal.Text);
-                datpel.BankSetorDendaMaksimal = txtBankSetor.Text;
+                datpel.BankSetoranDendaMaksimal = txtBankSetor.Text;
                 datpel.AngkaPinaltiPelanggaran = Convert.ToInt16(txtAngkaPinalti.Text);
                 if (rbtHadirSendiri.Checked == true)
                 {

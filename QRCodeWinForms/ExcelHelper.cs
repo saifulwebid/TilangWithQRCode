@@ -659,7 +659,7 @@ namespace QRCodeWinForms
                                 currentWorksheet.Cells[rowNumber, 28].Value = dapel.TempatPengambilanBarangSita;
                                 currentWorksheet.Cells[rowNumber, 29].Value = dapel.PasalPelanggaran.Nomor;
                                 currentWorksheet.Cells[rowNumber, 30].Value = dapel.PasalPelanggaran.DendaMaksimal;
-                                currentWorksheet.Cells[rowNumber, 31].Value = dapel.BankSetorDendaMaksimal;
+                                currentWorksheet.Cells[rowNumber, 31].Value = dapel.BankSetoranDendaMaksimal;
                                 currentWorksheet.Cells[rowNumber, 32].Value = dapel.AngkaPinaltiPelanggaran;
                                 currentWorksheet.Cells[rowNumber, 33].Value = dapel.PernyataanHadirSendiri;
                                 currentWorksheet.Cells[rowNumber, 34].Value = dapel.NamaWakil;

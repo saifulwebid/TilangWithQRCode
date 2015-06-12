@@ -90,7 +90,7 @@ namespace QRCodeWinForms
                 lblKesatuanPenyidik.Text = datpel.Kesatuan;
                 lblPasal.Text = datpel.PasalPelanggaran.Nomor;
                 lblDendaMaksimal.Text = datpel.PasalPelanggaran.DendaMaksimal.ToString();
-                lblBankSetorDenda.Text = datpel.BankSetorDendaMaksimal;
+                lblBankSetorDenda.Text = datpel.BankSetoranDendaMaksimal;
                 lblAngkaPinalti.Text = datpel.AngkaPinaltiPelanggaran.ToString();
                 if (datpel.PernyataanHadirSendiri == true)
                     rbtprtHadirSendiri.Checked = true;
