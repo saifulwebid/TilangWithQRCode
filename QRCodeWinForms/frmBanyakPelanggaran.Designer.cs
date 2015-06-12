@@ -43,9 +43,9 @@
             this.lblTmptLhr = new System.Windows.Forms.Label();
             this.lblNoKTP = new System.Windows.Forms.Label();
             this.txtJenisKelamin = new System.Windows.Forms.TextBox();
-            this.txtPekerjaan = new System.Windows.Forms.TextBox();
-            this.txtNoKTP = new System.Windows.Forms.TextBox();
             this.txtPendidikan = new System.Windows.Forms.TextBox();
+            this.txtNoKTP = new System.Windows.Forms.TextBox();
+            this.txtPekerjaan = new System.Windows.Forms.TextBox();
             this.txtTempatLahir = new System.Windows.Forms.TextBox();
             this.txtAlamat = new System.Windows.Forms.TextBox();
             this.txtTanggalLahir = new System.Windows.Forms.TextBox();
@@ -84,9 +84,9 @@
             this.grbIdentitasPelanggar.Controls.Add(this.lblTmptLhr);
             this.grbIdentitasPelanggar.Controls.Add(this.lblNoKTP);
             this.grbIdentitasPelanggar.Controls.Add(this.txtJenisKelamin);
-            this.grbIdentitasPelanggar.Controls.Add(this.txtPekerjaan);
-            this.grbIdentitasPelanggar.Controls.Add(this.txtNoKTP);
             this.grbIdentitasPelanggar.Controls.Add(this.txtPendidikan);
+            this.grbIdentitasPelanggar.Controls.Add(this.txtNoKTP);
+            this.grbIdentitasPelanggar.Controls.Add(this.txtPekerjaan);
             this.grbIdentitasPelanggar.Controls.Add(this.txtTempatLahir);
             this.grbIdentitasPelanggar.Controls.Add(this.txtAlamat);
             this.grbIdentitasPelanggar.Controls.Add(this.txtTanggalLahir);
@@ -221,13 +221,13 @@
             this.txtJenisKelamin.Size = new System.Drawing.Size(123, 20);
             this.txtJenisKelamin.TabIndex = 8;
             // 
-            // txtPekerjaan
+            // txtPendidikan
             // 
-            this.txtPekerjaan.Location = new System.Drawing.Point(128, 231);
-            this.txtPekerjaan.Name = "txtPekerjaan";
-            this.txtPekerjaan.ReadOnly = true;
-            this.txtPekerjaan.Size = new System.Drawing.Size(147, 20);
-            this.txtPekerjaan.TabIndex = 7;
+            this.txtPendidikan.Location = new System.Drawing.Point(128, 231);
+            this.txtPendidikan.Name = "txtPendidikan";
+            this.txtPendidikan.ReadOnly = true;
+            this.txtPendidikan.Size = new System.Drawing.Size(147, 20);
+            this.txtPendidikan.TabIndex = 7;
             // 
             // txtNoKTP
             // 
@@ -237,13 +237,13 @@
             this.txtNoKTP.Size = new System.Drawing.Size(254, 20);
             this.txtNoKTP.TabIndex = 2;
             // 
-            // txtPendidikan
+            // txtPekerjaan
             // 
-            this.txtPendidikan.Location = new System.Drawing.Point(128, 205);
-            this.txtPendidikan.Name = "txtPendidikan";
-            this.txtPendidikan.ReadOnly = true;
-            this.txtPendidikan.Size = new System.Drawing.Size(147, 20);
-            this.txtPendidikan.TabIndex = 6;
+            this.txtPekerjaan.Location = new System.Drawing.Point(128, 205);
+            this.txtPekerjaan.Name = "txtPekerjaan";
+            this.txtPekerjaan.ReadOnly = true;
+            this.txtPekerjaan.Size = new System.Drawing.Size(147, 20);
+            this.txtPekerjaan.TabIndex = 6;
             // 
             // txtTempatLahir
             // 
@@ -412,8 +412,8 @@
         private System.Windows.Forms.TextBox txtTempatLahir;
         private System.Windows.Forms.TextBox txtTanggalLahir;
         private System.Windows.Forms.TextBox txtAlamat;
-        private System.Windows.Forms.TextBox txtPendidikan;
         private System.Windows.Forms.TextBox txtPekerjaan;
+        private System.Windows.Forms.TextBox txtPendidikan;
         private System.Windows.Forms.TextBox txtJenisKelamin;
         private System.Windows.Forms.Label lblPendidikan;
         private System.Windows.Forms.Label lblPekerjaan;
