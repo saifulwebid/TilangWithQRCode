@@ -110,7 +110,7 @@ namespace QRCodeWinForms
         private void frmBanyakPelanggaran_Load(object sender, EventArgs e)
         {
             data = Pelanggaran.GetAll();
-            dataSIM = ExcelHelper.GetAllSIM();
+            dataSIM = SIM.GetAll();
             SetTablePasal();
             SetTablePelanggaran();
         }
