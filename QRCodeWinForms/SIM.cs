@@ -41,13 +41,10 @@ namespace QRCodeWinForms
         /** Method **/
         public string GenerateQRData()
         {
-            // TODO : Implementasikan method ini
-            throw new NotImplementedException();
             string[] result = 
             {
-                
                 Pemilik.Nomor, Nomor, Golongan, Pemilik.Nama, Pemilik.TempatLahir,
-                Pemilik.TanggalLahir.ToString(), Pemilik.Alamat, Penduduk.ConvertPekerjaan(Pemilik.Pekerjaan).ToString(), 
+                Pemilik.ConvertTanggalLahir(), Pemilik.Alamat, Penduduk.ConvertPekerjaan(Pemilik.Pekerjaan).ToString(), 
                 Penduduk.ConvertPendidikan(Pemilik.Pendidikan).ToString(), Penduduk.ConvertJenisKelamin(Pemilik.JenisKelamin).ToString()
             };
             return string.Join("#", result);
