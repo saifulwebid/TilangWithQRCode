@@ -154,18 +154,6 @@ namespace QRCodeWinForms
             txtPinalti.Text = pinalti.ToString();
         }
        
-        private static string ConvertPekerjaan(int i)
-        {
-            string[] Pekerjaan = new string[] { "PNS", "SWASTA", "TNI", "POLRI", "PELAJAR", "MHS", "LAINNYA" };
-            return Pekerjaan[i - 1];
-        }
-
-        private static string ConvertPendidikan(int i)
-        {
-            string[] Pendidikan = new string[] { "SD", "SLTP", "SLTA", "PT" };
-            return Pendidikan[i - 1];
-        }
-
         private void btnRekap_Click(object sender, EventArgs e)
         {
             if (rbAllSim.Checked)

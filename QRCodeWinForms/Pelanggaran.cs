@@ -9,7 +9,7 @@ namespace QRCodeWinForms
     public class Pelanggaran
     {
         public string AlamatWakil { get; set; }
-        public double AngkaPinaltiPelanggaran { get; set; } // double/integer?
+        public int AngkaPinaltiPelanggaran { get; set; } // double/integer?
         public string BankSetorDendaMaksimal { get; set; } // BankSetoranDendaMaksimal ?
         public string BankSisaDenda { get; set; }
         public string DisitaBukuUji { get; set; } // Bitstring --> Integer ?
