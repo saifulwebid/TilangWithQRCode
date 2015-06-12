@@ -36,17 +36,17 @@
             // lblPetunjuk
             // 
             this.lblPetunjuk.AutoSize = true;
-            this.lblPetunjuk.Location = new System.Drawing.Point(57, 318);
+            this.lblPetunjuk.Location = new System.Drawing.Point(56, 317);
             this.lblPetunjuk.Name = "lblPetunjuk";
             this.lblPetunjuk.Size = new System.Drawing.Size(227, 13);
             this.lblPetunjuk.TabIndex = 3;
-            this.lblPetunjuk.Text = "Arahkan QR-Code Pada SIM Anda Ke Kamera";
+            this.lblPetunjuk.Text = "Arahkan QR-Code pada SIM Anda ke kamera.";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(331, 303);
+            this.pictureBox1.Size = new System.Drawing.Size(331, 302);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -58,6 +58,9 @@
             this.ClientSize = new System.Drawing.Size(355, 339);
             this.Controls.Add(this.lblPetunjuk);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmScanSIM";
             this.Text = "Scan SIM";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

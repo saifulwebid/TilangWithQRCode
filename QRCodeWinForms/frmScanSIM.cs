@@ -80,7 +80,6 @@ namespace QRCodeWinForms
         {
             base.OnLoad(e);
             SetWebcam();
-
         }
 
         void SetWebcam()
