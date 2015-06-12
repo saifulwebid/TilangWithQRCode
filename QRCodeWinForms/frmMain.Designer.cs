@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnGenerateSim = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnSuratTilang = new System.Windows.Forms.Button();
-            this.btnBanyakPelanggaran = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnStatistik = new System.Windows.Forms.Button();
+            this.btnBanyakPelanggaran = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -50,6 +50,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Prasyarat SIM";
             // 
+            // btnGenerateSim
+            // 
+            this.btnGenerateSim.Location = new System.Drawing.Point(52, 115);
+            this.btnGenerateSim.Name = "btnGenerateSim";
+            this.btnGenerateSim.Size = new System.Drawing.Size(83, 39);
+            this.btnGenerateSim.TabIndex = 0;
+            this.btnGenerateSim.Text = "Generate SIM";
+            this.btnGenerateSim.UseVisualStyleBackColor = true;
+            this.btnGenerateSim.Click += new System.EventHandler(this.btnGenerateSim_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnSuratTilang);
@@ -59,6 +69,16 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tindak Langsung";
+            // 
+            // btnSuratTilang
+            // 
+            this.btnSuratTilang.Location = new System.Drawing.Point(58, 115);
+            this.btnSuratTilang.Name = "btnSuratTilang";
+            this.btnSuratTilang.Size = new System.Drawing.Size(83, 40);
+            this.btnSuratTilang.TabIndex = 0;
+            this.btnSuratTilang.Text = "Isi Form Surat Tilang";
+            this.btnSuratTilang.UseVisualStyleBackColor = true;
+            this.btnSuratTilang.Click += new System.EventHandler(this.btnSuratTilang_Click);
             // 
             // groupBox3
             // 
@@ -71,25 +91,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Rekapitulasi";
             // 
-            // btnGenerateSim
+            // btnStatistik
             // 
-            this.btnGenerateSim.Location = new System.Drawing.Point(52, 115);
-            this.btnGenerateSim.Name = "btnGenerateSim";
-            this.btnGenerateSim.Size = new System.Drawing.Size(83, 39);
-            this.btnGenerateSim.TabIndex = 0;
-            this.btnGenerateSim.Text = "Generate SIM";
-            this.btnGenerateSim.UseVisualStyleBackColor = true;
-            this.btnGenerateSim.Click += new System.EventHandler(this.btnGenerateSim_Click);
-            // 
-            // btnSuratTilang
-            // 
-            this.btnSuratTilang.Location = new System.Drawing.Point(58, 115);
-            this.btnSuratTilang.Name = "btnSuratTilang";
-            this.btnSuratTilang.Size = new System.Drawing.Size(83, 40);
-            this.btnSuratTilang.TabIndex = 0;
-            this.btnSuratTilang.Text = "Isi Form Surat Tilang";
-            this.btnSuratTilang.UseVisualStyleBackColor = true;
-            this.btnSuratTilang.Click += new System.EventHandler(this.btnSuratTilang_Click);
+            this.btnStatistik.Location = new System.Drawing.Point(53, 153);
+            this.btnStatistik.Name = "btnStatistik";
+            this.btnStatistik.Size = new System.Drawing.Size(83, 44);
+            this.btnStatistik.TabIndex = 1;
+            this.btnStatistik.Text = "Statistik Pelanggaran";
+            this.btnStatistik.UseVisualStyleBackColor = true;
+            this.btnStatistik.Click += new System.EventHandler(this.btnStatistik_Click);
             // 
             // btnBanyakPelanggaran
             // 
@@ -101,16 +111,6 @@
             this.btnBanyakPelanggaran.UseVisualStyleBackColor = true;
             this.btnBanyakPelanggaran.Click += new System.EventHandler(this.btnBanyakPelanggaran_Click);
             // 
-            // btnStatistik
-            // 
-            this.btnStatistik.Location = new System.Drawing.Point(53, 153);
-            this.btnStatistik.Name = "btnStatistik";
-            this.btnStatistik.Size = new System.Drawing.Size(83, 44);
-            this.btnStatistik.TabIndex = 1;
-            this.btnStatistik.Text = "Statistik Pelanggaran";
-            this.btnStatistik.UseVisualStyleBackColor = true;
-            this.btnStatistik.Click += new System.EventHandler(this.btnStatistik_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,6 +120,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.IsMdiContainer = true;
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
