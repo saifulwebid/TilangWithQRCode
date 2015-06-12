@@ -41,8 +41,6 @@
             this.label55 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.cbxPasal = new System.Windows.Forms.ComboBox();
             this.txtBankSisaDenda = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
@@ -288,8 +286,6 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.label6);
-            this.groupBox7.Controls.Add(this.label17);
             this.groupBox7.Controls.Add(this.cbxPasal);
             this.groupBox7.Controls.Add(this.txtBankSisaDenda);
             this.groupBox7.Controls.Add(this.label64);
@@ -311,24 +307,6 @@
             this.groupBox7.TabIndex = 98;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Ruang bagi Terdakwa";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(324, 116);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(22, 13);
-            this.label6.TabIndex = 64;
-            this.label6.Text = ",00";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(181, 116);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(21, 13);
-            this.label17.TabIndex = 63;
-            this.label17.Text = "Rp";
             // 
             // cbxPasal
             // 
@@ -1602,8 +1580,6 @@
         public System.Windows.Forms.TextBox txtNamaPelanggar;
         public System.Windows.Forms.TextBox txtAlamatPelanggar;
         public System.Windows.Forms.TextBox txtUmurPelanggar;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.DateTimePicker dtpJamLanggar;
         public System.Windows.Forms.DateTimePicker dtpWaktuLanggar;
