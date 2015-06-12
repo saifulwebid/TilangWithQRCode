@@ -50,6 +50,11 @@ namespace QRCodeWinForms
             }
         }
 
+        public string ConvertTanggalLahir()
+        {
+            return TanggalLahir.Day.ToString() + TanggalLahir.Month.ToString() + (TanggalLahir.Year - 1900).ToString();
+        }
+
         public static int ConvertPekerjaan(EnumPekerjaan jenis)
         {
             List<EnumPekerjaan> Pekerjaan = Enum.GetValues(typeof(EnumPekerjaan)).Cast<EnumPekerjaan>().ToList(); //convert enum ke list
@@ -60,6 +65,11 @@ namespace QRCodeWinForms
         {
             List<EnumPendidikan> Pendidikan = Enum.GetValues(typeof(EnumPekerjaan)).Cast<EnumPendidikan>().ToList();
             return Pendidikan.IndexOf(jenis) + 1;
+        }
+        public static char ConvertJenisKelamin(EnumJenisKelamin jenis)
+        {
+            if (jenis == EnumJenisKelamin.Pria) return 'L';
+            else return 'P';
         }
     }
 }

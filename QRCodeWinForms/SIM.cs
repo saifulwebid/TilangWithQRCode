@@ -43,7 +43,13 @@ namespace QRCodeWinForms
         {
             // TODO : Implementasikan method ini
             throw new NotImplementedException();
-            string[] result = { Pemilik.Nomor, Nomor, Golongan, Pemilik.Nama, Pemilik.TempatLahir, Pemilik.TanggalLahir.ToString(), Pemilik.Alamat, Pemilik.Pekerjaan.ToString(), Pemilik.Pendidikan.ToString(), Pemilik.JenisKelamin.ToString() };
+            string[] result = 
+            {
+                
+                Pemilik.Nomor, Nomor, Golongan, Pemilik.Nama, Pemilik.TempatLahir,
+                Pemilik.TanggalLahir.ToString(), Pemilik.Alamat, Penduduk.ConvertPekerjaan(Pemilik.Pekerjaan).ToString(), 
+                Penduduk.ConvertPendidikan(Pemilik.Pendidikan).ToString(), Penduduk.ConvertJenisKelamin(Pemilik.JenisKelamin).ToString()
+            };
             return string.Join("#", result);
         }
         public static List<Pelanggaran> GetAllPelanggaran()
