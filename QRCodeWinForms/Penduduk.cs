@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace QRCodeWinForms
 {
@@ -50,6 +51,7 @@ namespace QRCodeWinForms
             }
         }
 
+        /*Method Convert untuk Generate QR Code */
         public string ConvertTanggalLahir()
         {
             return TanggalLahir.Day.ToString() + TanggalLahir.Month.ToString() + (TanggalLahir.Year - 1900).ToString();
@@ -69,7 +71,33 @@ namespace QRCodeWinForms
         public static char ConvertJenisKelamin(EnumJenisKelamin jenis)
         {
             if (jenis == EnumJenisKelamin.Pria) return 'L';
-            else return 'P';
+            else return 'P';     
+        }
+
+        /*Method Convert untuk Decode dari Qr Code */
+        public static DateTime ToTanggalLahir(string date)
+        {
+            DateTime parseddate;
+            DateTime.TryParseExact(date, "ddMMyy", null, DateTimeStyles.None, out parseddate);
+            return parseddate;
+        }
+
+        public static EnumPekerjaan ToPekerjaan(int i)
+        {
+            List<EnumPekerjaan> Pekerjaan = Enum.GetValues(typeof(EnumPekerjaan)).Cast<EnumPekerjaan>().ToList();
+            return Pekerjaan[i-1];
+        }
+
+        public static EnumPendidikan ToPendidikan(int i)
+        {
+            List<EnumPendidikan> Pendidikan = Enum.GetValues(typeof(EnumPekerjaan)).Cast<EnumPendidikan>().ToList();
+            return Pendidikan[i - 1];
+        }
+
+        public static EnumJenisKelamin ToJenisKelamin(string jenis)
+        {
+            if (jenis == "L") return EnumJenisKelamin.Pria;
+            else return EnumJenisKelamin.Wanita;
         }
     }
 }

@@ -30,10 +30,21 @@ namespace QRCodeWinForms
         }
         public SIM(string QRData)
         {
-            // TODO : Isi field-field pada class SIM
-            // ...
+            string[] field = QRData.Split('#'); 
+            //Isi field pada class SIM
+            Nomor = field[1];
+            Golongan = field[2];
+            
+            //Isi field-field pada class Penduduk
             Penduduk pdk = new Penduduk(true);
-            // TODO : Isi field-field pada class Penduduk
+            pdk.Nomor = field[0];
+            pdk.Nama = field[3];
+            pdk.TempatLahir = field[4];
+            pdk.TanggalLahir = Penduduk.ToTanggalLahir(field[5]);
+            pdk.Alamat = field[6];
+            pdk.Pekerjaan = Penduduk.ToPekerjaan(Convert.ToInt16(field[7]));
+            pdk.Pendidikan = Penduduk.ToPendidikan(Convert.ToInt16(field[8]));
+            pdk.JenisKelamin = Penduduk.ToJenisKelamin(field[9]);
             Pemilik = pdk;
             isNew = false;
         }

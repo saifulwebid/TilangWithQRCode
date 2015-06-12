@@ -68,6 +68,7 @@ namespace QRCodeWinForms
                 if (DateTime.TryParseExact(Split[5], "ddMMyy", null, DateTimeStyles.None, out parseddate))
                 {
                     txtTanggalLahir.Text = parseddate.ToString("dd MMMM yyyy", provider);
+
                 }
                 txtUmurPelanggar.Text = Convert.ToString(ConvertUmur(parseddate));
                 //kolom jenis kelamin
@@ -87,7 +88,7 @@ namespace QRCodeWinForms
                 MessageBox.Show("QR Code tidak bisa dibaca!");
             }
         }
-            private static string ConvertPekerjaan(int i)
+        private static string ConvertPekerjaan(int i)
         {
             string[] Pekerjaan = new string[] { "PNS", "SWASTA", "TNI", "POLRI", "PELAJAR", "MHS", "LAINNYA" };
             return Pekerjaan[i - 1];
