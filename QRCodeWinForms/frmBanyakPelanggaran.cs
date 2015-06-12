@@ -29,17 +29,17 @@ namespace QRCodeWinForms
 
         void FillField()
         {
-            string[] field = qrData.Split('#'); 
-            txtNoKTP.Text = field[0];
-            txtNoSIM.Text = field[1];
-            txtGol.Text = field[2];
-            txtNamaPelanggar.Text = field[3];
-            txtTempatLahir.Text = field[4];
-            txtTanggalLahir.Text = field[5];
-            txtAlamat.Text = field[6];
-            txtPekerjaan.Text = ConvertPekerjaan(Convert.ToInt16(field[7]));
-            txtPendidikan.Text = ConvertPendidikan(Convert.ToInt16(field[8]));
-            txtJenisKelamin.Text = field[9];
+            SIM sim = new SIM(qrData);
+            txtNoKTP.Text = sim.Pemilik.Nomor;
+            txtNoSIM.Text = sim.Nomor;
+            txtGol.Text = sim.Golongan;
+            txtNamaPelanggar.Text = sim.Pemilik.Nama;
+            txtTempatLahir.Text = sim.Pemilik.TempatLahir;
+            txtTanggalLahir.Text = sim.Pemilik.TanggalLahir.ToLongDateString();
+            txtAlamat.Text = sim.Pemilik.Alamat;
+            txtPekerjaan.Text = sim.Pemilik.Pekerjaan.ToString();
+            txtPendidikan.Text = sim.Pemilik.Pendidikan.ToString();
+            txtJenisKelamin.Text = sim.Pemilik.JenisKelamin.ToString();
         }
 
         private void cmdScanSIM_Click(object sender, EventArgs e)

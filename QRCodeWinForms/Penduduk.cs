@@ -90,7 +90,7 @@ namespace QRCodeWinForms
 
         public static EnumPendidikan ToPendidikan(int i)
         {
-            List<EnumPendidikan> Pendidikan = Enum.GetValues(typeof(EnumPekerjaan)).Cast<EnumPendidikan>().ToList();
+            List<EnumPendidikan> Pendidikan = Enum.GetValues(typeof(EnumPendidikan)).Cast<EnumPendidikan>().ToList();
             return Pendidikan[i - 1];
         }
 
