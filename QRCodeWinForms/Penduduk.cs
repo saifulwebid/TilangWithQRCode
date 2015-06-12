@@ -54,7 +54,7 @@ namespace QRCodeWinForms
         /*Method Convert untuk Generate QR Code */
         public string ConvertTanggalLahir()
         {
-            return TanggalLahir.Day.ToString() + TanggalLahir.Month.ToString() + (TanggalLahir.Year - 1900).ToString();
+            return TanggalLahir.Day.ToString() + TanggalLahir.Month.ToString("00") + (TanggalLahir.Year - 1900).ToString();
         }
 
         public static int ConvertPekerjaan(EnumPekerjaan jenis)
@@ -65,7 +65,7 @@ namespace QRCodeWinForms
 
         public static int ConvertPendidikan(EnumPendidikan jenis)
         {
-            List<EnumPendidikan> Pendidikan = Enum.GetValues(typeof(EnumPekerjaan)).Cast<EnumPendidikan>().ToList();
+            List<EnumPendidikan> Pendidikan = Enum.GetValues(typeof(EnumPendidikan)).Cast<EnumPendidikan>().ToList();
             return Pendidikan.IndexOf(jenis) + 1;
         }
         public static char ConvertJenisKelamin(EnumJenisKelamin jenis)

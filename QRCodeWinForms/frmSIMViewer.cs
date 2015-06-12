@@ -57,12 +57,13 @@ namespace QRCodeWinForms
         void GenerateQrCode()
         {
             /*  Isi dari qrcode,Revisi lagi dibagian ini nanti */
-            string input = tampilSIM.Pemilik.Nomor + '#' + tampilSIM.Nomor + '#' + tampilSIM.Golongan + '#' + tampilSIM.Pemilik.Nama + '#' + tampilSIM.Pemilik.TempatLahir + '#' + tampilSIM.Pemilik.TanggalLahir + '#' + tampilSIM.Pemilik.Alamat + '#' + tampilSIM.Pemilik.Pekerjaan + '#' + tampilSIM.Pemilik.Pendidikan + '#' + tampilSIM.Pemilik.JenisKelamin;
+            //string input = tampilSIM.Pemilik.Nomor + '#' + tampilSIM.Nomor + '#' + tampilSIM.Golongan + '#' + tampilSIM.Pemilik.Nama + '#' + tampilSIM.Pemilik.TempatLahir + '#' + tampilSIM.Pemilik.TanggalLahir + '#' + tampilSIM.Pemilik.Alamat + '#' + tampilSIM.Pemilik.Pekerjaan + '#' + tampilSIM.Pemilik.Pendidikan + '#' + tampilSIM.Pemilik.JenisKelamin;
             
             /*Generate qr code dari input ke picturebox*/
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
-            QRCodeGenerator.QRCode qrCode = qrGenerator.CreateQrCode(input, QRCodeGenerator.ECCLevel.M); //ECC Level merupakan error correction
+            QRCodeGenerator.QRCode qrCode = qrGenerator.CreateQrCode(tampilSIM.GenerateQRData(), QRCodeGenerator.ECCLevel.M); //ECC Level merupakan error correction
             pictureBox2.BackgroundImage = qrCode.GetGraphic(10); //10 adalah besar pixel dari qr code
+            
         }
         private void btnCetakSIM_Click(object sender, EventArgs e)
         {

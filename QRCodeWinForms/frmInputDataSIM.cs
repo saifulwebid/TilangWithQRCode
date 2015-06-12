@@ -79,7 +79,6 @@ namespace QRCodeWinForms
 
         private void btnTampilkan_Click(object sender, EventArgs e)
         {
-            
             frmSIMViewer f2 = new frmSIMViewer(dataSIM);
             f2.ShowDialog();
             btnTampilkan.Enabled = false;
