@@ -61,7 +61,7 @@ namespace QRCodeWinForms
             
             /*Generate qr code dari input ke picturebox*/
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
-            QRCodeGenerator.QRCode qrCode = qrGenerator.CreateQrCode(tampilSIM.GenerateQRData(), QRCodeGenerator.ECCLevel.M); //ECC Level merupakan error correction
+            QRCodeGenerator.QRCode qrCode = qrGenerator.CreateQrCode(tampilSIM.GenerateQRData(), QRCodeGenerator.ECCLevel.H); //ECC Level merupakan error correction
             pictureBox2.BackgroundImage = qrCode.GetGraphic(10); //10 adalah besar pixel dari qr code
             
         }
