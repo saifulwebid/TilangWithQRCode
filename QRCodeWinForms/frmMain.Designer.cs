@@ -78,10 +78,10 @@
             // 
             // bukaDatabaseToolStripMenuItem
             // 
-            this.bukaDatabaseToolStripMenuItem.Enabled = false;
             this.bukaDatabaseToolStripMenuItem.Name = "bukaDatabaseToolStripMenuItem";
             this.bukaDatabaseToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.bukaDatabaseToolStripMenuItem.Text = "&Buka Database...";
+            this.bukaDatabaseToolStripMenuItem.Click += new System.EventHandler(this.bukaDatabaseToolStripMenuItem_Click);
             // 
             // tutupDatabaseToolStripMenuItem
             // 
@@ -89,6 +89,7 @@
             this.tutupDatabaseToolStripMenuItem.Name = "tutupDatabaseToolStripMenuItem";
             this.tutupDatabaseToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.tutupDatabaseToolStripMenuItem.Text = "&Tutup Database";
+            this.tutupDatabaseToolStripMenuItem.Click += new System.EventHandler(this.tutupDatabaseToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -108,6 +109,7 @@
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
             this.logoutToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.logoutToolStripMenuItem.Text = "Logo&ut";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // manajemenUserToolStripMenuItem
             // 
@@ -115,6 +117,7 @@
             this.manajemenUserToolStripMenuItem.Name = "manajemenUserToolStripMenuItem";
             this.manajemenUserToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.manajemenUserToolStripMenuItem.Text = "&Manajemen User...";
+            this.manajemenUserToolStripMenuItem.Click += new System.EventHandler(this.manajemenUserToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection;
+using System.IO;
 
 namespace QRCodeWinForms
 {
@@ -122,6 +124,34 @@ namespace QRCodeWinForms
             frmLogin fLogin = new frmLogin();
             fLogin.MdiParent = this;
             fLogin.Show();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoggedInUser = null;
+        }
+
+        private void bukaDatabaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string fileName = "data\\DataGabungan.xlsx";
+            string folder = Assembly.GetEntryAssembly().Location;
+            if (folder != null)
+            {
+                folder = Path.GetDirectoryName(folder);
+                string filePath = Path.Combine(folder, fileName);
+
+                DatabasePath = filePath;
+            }
+        }
+
+        private void tutupDatabaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DatabasePath = null;
+        }
+
+        private void manajemenUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
