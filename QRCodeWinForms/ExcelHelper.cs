@@ -141,26 +141,23 @@ namespace QRCodeWinForms
                         {
                             for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                             {
-                                object col1Value = currentWorksheet.Cells[rowNumber, 1].Value;
-                                object col2Value = currentWorksheet.Cells[rowNumber, 2].Value;
-                                object col3Value = currentWorksheet.Cells[rowNumber, 3].Value;
-                                object col4Value = currentWorksheet.Cells[rowNumber, 4].Value;
-                                object col5Value = currentWorksheet.Cells[rowNumber, 5].Value;
-                                object col6Value = currentWorksheet.Cells[rowNumber, 6].Value;
-                                object col7Value = currentWorksheet.Cells[rowNumber, 7].Value;
-                                object col8Value = currentWorksheet.Cells[rowNumber, 8].Value;
+                                object[] colValue = new object[9];
+                                for (int i = 1; i <= 8; i++)
+                                {
+                                    colValue[i] = currentWorksheet.Cells[rowNumber, i].Value;
+                                    valid = valid && (colValue[i] != null);
+                                }
 
-                                if ((col1Value != null) && (col2Value != null) && (col3Value != null) && (col4Value != null)
-                                     && (col5Value != null) && (col6Value != null) && (col7Value != null) && (col8Value != null))
+                                if (valid)
                                 {
                                     Penduduk pdk = new Penduduk();
-                                    pdk.Nomor = col1Value.ToString();
-                                    pdk.Nama = col2Value.ToString();
-                                    pdk.TempatLahir = col3Value.ToString();
-                                    pdk.TanggalLahir = Convert.ToDateTime(col4Value);
-                                    pdk.Alamat = col5Value.ToString();
+                                    pdk.Nomor = colValue[1].ToString();
+                                    pdk.Nama = colValue[2].ToString();
+                                    pdk.TempatLahir = colValue[3].ToString();
+                                    pdk.TanggalLahir = Convert.ToDateTime(colValue[4]);
+                                    pdk.Alamat = colValue[5].ToString();
 
-                                    switch (col6Value.ToString())
+                                    switch (colValue[6].ToString())
                                     {
                                         case "Lainnya":
                                             pdk.Pekerjaan = EnumPekerjaan.Lainnya;
@@ -185,7 +182,7 @@ namespace QRCodeWinForms
                                             break;
                                     }
 
-                                    switch (col7Value.ToString())
+                                    switch (colValue[7].ToString())
                                     {
                                         case "PT":
                                             pdk.Pendidikan = EnumPendidikan.PT;
@@ -201,9 +198,9 @@ namespace QRCodeWinForms
                                             break;
                                     }
 
-                                    if (col8Value.ToString() == "Pria")
+                                    if (colValue[8].ToString() == "Pria")
                                         pdk.JenisKelamin = EnumJenisKelamin.Pria;
-                                    else if (col8Value.ToString() == "Wanita")
+                                    else if (colValue[8].ToString() == "Wanita")
                                         pdk.JenisKelamin = EnumJenisKelamin.Wanita;
 
                                     listDataPenduduk.Add(pdk);
@@ -280,24 +277,24 @@ namespace QRCodeWinForms
                         {
                             for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                             {
-                                object col1Value = currentWorksheet.Cells[rowNumber, 1].Value;
-                                object col2Value = currentWorksheet.Cells[rowNumber, 2].Value;
-                                object col3Value = currentWorksheet.Cells[rowNumber, 3].Value;
-                                object col4Value = currentWorksheet.Cells[rowNumber, 4].Value;
-                                object col5Value = currentWorksheet.Cells[rowNumber, 5].Value;
+                                object[] colValue = new object[6];
+                                for (int i = 1; i <= 5; i++)
+                                {
+                                    colValue[i] = currentWorksheet.Cells[rowNumber, i].Value;
+                                    valid = valid && (colValue[i] != null);
+                                }
 
-                                if ((col1Value != null) && (col2Value != null) && (col3Value != null) && (col4Value != null)
-                                     && (col5Value != null))
+                                if (valid)
                                 {
                                     SIM sim = new SIM();
-                                    sim.Nomor = col2Value.ToString();
-                                    sim.Golongan = col3Value.ToString();
-                                    sim.TanggalBuat = Convert.ToDateTime(col4Value);
-                                    sim.TanggalHabis = Convert.ToDateTime(col5Value);
+                                    sim.Nomor = colValue[2].ToString();
+                                    sim.Golongan = colValue[3].ToString();
+                                    sim.TanggalBuat = Convert.ToDateTime(colValue[4]);
+                                    sim.TanggalHabis = Convert.ToDateTime(colValue[5]);
 
                                     foreach (Penduduk pdd in ListPenduduk)
                                     {
-                                        if (pdd.Nomor.Equals(col1Value))
+                                        if (pdd.Nomor.Equals(colValue[1]))
                                         {
                                             sim.Pemilik = pdd;
                                             break;
@@ -373,19 +370,21 @@ namespace QRCodeWinForms
                         {
                             for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                             {
-                                object col1Value = currentWorksheet.Cells[rowNumber, 1].Value;
-                                object col2Value = currentWorksheet.Cells[rowNumber, 2].Value;
-                                object col3Value = currentWorksheet.Cells[rowNumber, 3].Value;
-                                object col4Value = currentWorksheet.Cells[rowNumber, 4].Value;
+                                object[] colValue = new object[5];
+                                for (int i = 1; i <= 4; i++)
+                                {
+                                    colValue[i] = currentWorksheet.Cells[rowNumber, i].Value;
+                                    valid = valid && (colValue[i] != null);
+                                }
 
-                                if ((col1Value != null) && (col2Value != null) && (col3Value != null) && (col4Value != null))
+                                if (valid)
                                 {
                                     Pasal psl = new Pasal();
 
-                                    psl.Nomor = col1Value.ToString();
-                                    psl.Keterangan = col2Value.ToString();
-                                    psl.Pidana = Convert.ToDouble(col3Value);
-                                    psl.DendaMaksimal = Convert.ToDouble(col4Value);
+                                    psl.Nomor = colValue[1].ToString();
+                                    psl.Keterangan = colValue[2].ToString();
+                                    psl.Pidana = Convert.ToDouble(colValue[3]);
+                                    psl.DendaMaksimal = Convert.ToDouble(colValue[4]);
 
                                     listDataPasal.Add(psl);
                                 }
@@ -489,91 +488,64 @@ namespace QRCodeWinForms
                         {
                             for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                             {
-                                object col1Value = currentWorksheet.Cells[rowNumber, 1].Value;
-                                object col2Value = currentWorksheet.Cells[rowNumber, 2].Value;
-                                object col3Value = currentWorksheet.Cells[rowNumber, 3].Value;
-                                object col4Value = currentWorksheet.Cells[rowNumber, 4].Value;
-                                object col5Value = currentWorksheet.Cells[rowNumber, 5].Value;
-                                object col6Value = currentWorksheet.Cells[rowNumber, 6].Value;
-                                object col7Value = currentWorksheet.Cells[rowNumber, 7].Value;
-                                object col8Value = currentWorksheet.Cells[rowNumber, 8].Value;
-                                object col9Value = currentWorksheet.Cells[rowNumber, 9].Value;
-                                object col10Value = currentWorksheet.Cells[rowNumber, 10].Value;
-                                object col11Value = currentWorksheet.Cells[rowNumber, 11].Value;
-                                object col12Value = currentWorksheet.Cells[rowNumber, 12].Value;
-                                object col13Value = currentWorksheet.Cells[rowNumber, 13].Value;
-                                object col14Value = currentWorksheet.Cells[rowNumber, 14].Value;
-                                object col15Value = currentWorksheet.Cells[rowNumber, 15].Value;
-                                object col16Value = currentWorksheet.Cells[rowNumber, 16].Value;
-                                object col17Value = currentWorksheet.Cells[rowNumber, 17].Value;
-                                object col18Value = currentWorksheet.Cells[rowNumber, 18].Value;
-                                object col19Value = currentWorksheet.Cells[rowNumber, 19].Value;
-                                object col20Value = currentWorksheet.Cells[rowNumber, 20].Value;
-                                object col21Value = currentWorksheet.Cells[rowNumber, 21].Value;
-                                object col22Value = currentWorksheet.Cells[rowNumber, 22].Value;
-                                object col23Value = currentWorksheet.Cells[rowNumber, 23].Value;
-                                object col24Value = currentWorksheet.Cells[rowNumber, 24].Value;
-                                object col25Value = currentWorksheet.Cells[rowNumber, 25].Value;
-                                object col26Value = currentWorksheet.Cells[rowNumber, 26].Value;
-                                object col27Value = currentWorksheet.Cells[rowNumber, 27].Value;
-                                object col28Value = currentWorksheet.Cells[rowNumber, 28].Value;
-                                object col29Value = currentWorksheet.Cells[rowNumber, 29].Value;
-                                object col30Value = currentWorksheet.Cells[rowNumber, 30].Value;
-                                object col31Value = currentWorksheet.Cells[rowNumber, 31].Value;
-                                object col32Value = currentWorksheet.Cells[rowNumber, 32].Value;
-                                object col33Value = currentWorksheet.Cells[rowNumber, 33].Value;
-                                object col34Value = currentWorksheet.Cells[rowNumber, 34].Value;
-                                object col35Value = currentWorksheet.Cells[rowNumber, 35].Value;
-                                object col36Value = currentWorksheet.Cells[rowNumber, 36].Value;
-                                object col37Value = currentWorksheet.Cells[rowNumber, 37].Value;
+                                object[] colValue = new object[38];
+                                for (int i = 1; i <= 37; i++)
+                                {
+                                    colValue[i] = currentWorksheet.Cells[rowNumber, i].Value;
+                                    valid = valid && (colValue[i] != null);
+                                }
 
-                                Pelanggaran pelanggaran = new Pelanggaran();
-                                pelanggaran.WaktuPelanggaran = DateTime.FromOADate((double)col1Value);
-                                pelanggaran.NomorRegister = col2Value.ToString();
-                                pelanggaran.Kesatuan = col3Value.ToString();
-                                pelanggaran.NomorTilang = col4Value.ToString();
-                                pelanggaran.Satpas = col6Value.ToString();
-                                pelanggaran.NomorKendaraan = col7Value.ToString();
-                                pelanggaran.SamsatKendaraan = col8Value.ToString();
-                                pelanggaran.JenisKendaraan = col9Value.ToString();
-                                pelanggaran.MerekKendaraan = col10Value.ToString();
-                                pelanggaran.NomorRangkaKendaraan = col11Value.ToString();
-                                pelanggaran.NomorMesinKendaraan = col12Value.ToString();
-                                pelanggaran.LokasiPelanggaran = col13Value.ToString();
-                                pelanggaran.PatokanLokasi = col14Value.ToString();
-                                pelanggaran.WilayahHukum = col15Value.ToString();
-                                pelanggaran.DisitaSK = Convert.ToInt16(col16Value);
-                                pelanggaran.DisitaSKDiterbitkanOleh = col17Value.ToString();
-                                pelanggaran.DisitaSKMasaBerlaku = DateTime.FromOADate((double)col18Value);
-                                pelanggaran.DisitaBukuUji = Convert.ToInt16(col19Value);
-                                pelanggaran.DisitaBukuUjiDiterbitkanOleh = col20Value.ToString();
-                                pelanggaran.DisitaBukuUjiMasaBerlaku = DateTime.FromOADate((double)col21Value);
-                                pelanggaran.TempatSidang = col22Value.ToString();
-                                //WaktuSidang 23
-                                //24
-                                //25
-                                pelanggaran.NamaPenyidik = col26Value.ToString();
-                                pelanggaran.PangkatPenyidik = col27Value.ToString();
-                                pelanggaran.TempatPengambilanBarangSita = col28Value.ToString();
-                                //PernyataanHadirSendiri = Convert.ToBoolean(col31Value),
-                                //32
-                                //33
-                                pelanggaran.NamaWakil = col34Value.ToString();
-                                pelanggaran.UmurWakil = col35Value.ToString();
-                                pelanggaran.AlamatWakil = col36Value.ToString();
-                                pelanggaran.BankSisaDenda = col37Value.ToString();
+                                if (valid)
+                                {
+                                    Pelanggaran pelanggaran = new Pelanggaran();
+                                    pelanggaran.WaktuPelanggaran = DateTime.FromOADate((double)colValue[1]);
+                                    pelanggaran.NomorRegister = colValue[2].ToString();
+                                    pelanggaran.Kesatuan = colValue[3].ToString();
+                                    pelanggaran.NomorTilang = colValue[4].ToString();
+                                    // 5...
+                                    pelanggaran.Satpas = colValue[6].ToString();
+                                    pelanggaran.NomorKendaraan = colValue[7].ToString();
+                                    pelanggaran.SamsatKendaraan = colValue[8].ToString();
+                                    pelanggaran.JenisKendaraan = colValue[9].ToString();
+                                    pelanggaran.MerekKendaraan = colValue[10].ToString();
+                                    pelanggaran.NomorRangkaKendaraan = colValue[11].ToString();
+                                    pelanggaran.NomorMesinKendaraan = colValue[12].ToString();
+                                    pelanggaran.LokasiPelanggaran = colValue[13].ToString();
+                                    pelanggaran.PatokanLokasi = colValue[14].ToString();
+                                    pelanggaran.WilayahHukum = colValue[15].ToString();
+                                    pelanggaran.DisitaSK = Convert.ToInt16(colValue[16]);
+                                    pelanggaran.DisitaSKDiterbitkanOleh = colValue[17].ToString();
+                                    pelanggaran.DisitaSKMasaBerlaku = DateTime.FromOADate((double)colValue[18]);
+                                    pelanggaran.DisitaBukuUji = Convert.ToInt16(colValue[19]);
+                                    pelanggaran.DisitaBukuUjiDiterbitkanOleh = colValue[20].ToString();
+                                    pelanggaran.DisitaBukuUjiMasaBerlaku = DateTime.FromOADate((double)colValue[21]);
+                                    pelanggaran.TempatSidang = colValue[22].ToString();
+                                    //WaktuSidang 23
+                                    //24
+                                    //25
+                                    pelanggaran.NamaPenyidik = colValue[26].ToString();
+                                    pelanggaran.PangkatPenyidik = colValue[27].ToString();
+                                    pelanggaran.TempatPengambilanBarangSita = colValue[28].ToString();
+                                    //PernyataanHadirSendiri = Convert.ToBoolean(colValue[31]),
+                                    //32
+                                    //33
+                                    pelanggaran.NamaWakil = colValue[34].ToString();
+                                    pelanggaran.UmurWakil = colValue[35].ToString();
+                                    pelanggaran.AlamatWakil = colValue[36].ToString();
+                                    pelanggaran.BankSisaDenda = colValue[37].ToString();
 
-                                SIM pelanggar = new SIM();
-                                pelanggar.Nomor = col5Value.ToString();
-                                pelanggaran.Pelanggar = pelanggar;
+                                    SIM pelanggar = new SIM();
+                                    pelanggar.Nomor = colValue[5].ToString();
+                                    pelanggaran.Pelanggar = pelanggar;
 
-                                Pasal pasal = new Pasal();
-                                pasal.Nomor = col29Value.ToString();
-                                //pasal.DendaMaksimal = Convert.ToDouble(col30Value);
-                                // pasal.IsNew = false; -- tidak ada properti isNew di Pasal
-                                pelanggaran.PasalPelanggaran = pasal;
+                                    Pasal pasal = new Pasal();
+                                    pasal.Nomor = colValue[29].ToString();
+                                    //pasal.DendaMaksimal = Convert.ToDouble(colValue[30]);
+                                    // pasal.IsNew = false; -- tidak ada properti isNew di Pasal
+                                    pelanggaran.PasalPelanggaran = pasal;
 
-                                listDataPelanggaran.Add(pelanggaran);
+                                    listDataPelanggaran.Add(pelanggaran);
+                                }
                             }
                         }
                     }
