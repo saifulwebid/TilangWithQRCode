@@ -258,6 +258,7 @@
             // 
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(110, 41);
             this.label10.Name = "label10";
@@ -270,6 +271,7 @@
             // 
             this.label3.BackColor = System.Drawing.Color.Red;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Yellow;
             this.label3.Location = new System.Drawing.Point(110, 3);
             this.label3.Name = "label3";
@@ -405,7 +407,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelSIM);
             this.Controls.Add(this.btnCetakSIM);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSIMViewer";
             this.Text = "SIM Viewer";
             this.Load += new System.EventHandler(this.SIMViewer_Load);

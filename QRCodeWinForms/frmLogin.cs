@@ -17,27 +17,30 @@ namespace QRCodeWinForms
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void ClearText()
         {
-            if (User.Check(txtUsername.Text, txtPassword.Text) == null)
+            txtPassword.Text = "";
+            txtUsername.Text = "";
+            txtUsername.Focus();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            User user = User.Check(txtUsername.Text, txtPassword.Text);
+
+            if (user == null) // User tidak ditemukan
             {
-                MessageBox.Show("Data tidak ditemukan !");
+                MessageBox.Show("Username atau password salah!", "Login gagal", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
             else
             {
-                this.Hide();
-                frmMain f2 = new frmMain();
-                f2.ShowDialog();
-                this.Show();
-                ClearText();
-                
-            }
-        }
+                // TODO : Set agar frmMain dalam status "Logged In".
+                // frmMain harus dikirimi instance "user" untuk status.
+                throw new NotImplementedException();
 
-        public void ClearText()
-        {
-            txtPassword.Text = "Password";
-            txtUsername.Text = "Username";
+                ClearText();
+                this.Close();
+            }
         }
     }
 }

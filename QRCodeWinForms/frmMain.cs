@@ -12,6 +12,9 @@ namespace QRCodeWinForms
 {
     public partial class frmMain : Form
     {
+        private User LoggedInUser = null;
+        private string DatabasePath = null;
+        
         public frmMain()
         {
             InitializeComponent();
@@ -48,6 +51,13 @@ namespace QRCodeWinForms
             frmStatistikPelanggaran fStatistik = new frmStatistikPelanggaran();
             fStatistik.MdiParent = this;
             fStatistik.Show();
+        }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLogin fLogin = new frmLogin();
+            fLogin.MdiParent = this;
+            fLogin.Show();
         }
     }
 }
