@@ -73,6 +73,8 @@ namespace QRCodeWinForms
         {
             if (isNew == true)
             {
+                this.Pemilik.Save();
+
                 ExcelHelper.SaveSIM(this);
                 isNew = false;
             }
