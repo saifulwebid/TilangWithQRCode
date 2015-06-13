@@ -22,12 +22,6 @@ namespace QRCodeWinForms
 
         private void InputSuratTilang_Load(object sender, EventArgs e)
         {
-            dtpJamSidang.CustomFormat = "HH:mm";
-            dtpJamSidang.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-
-            dtpJamLanggar.CustomFormat = "HH:mm";
-            dtpJamLanggar.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-
             cbxPasal.DataSource = Pasal.GetAll();
             cbxPasal.DisplayMember = "Nomor";
 

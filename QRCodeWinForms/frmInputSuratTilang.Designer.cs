@@ -477,6 +477,7 @@
             // 
             // dtpJamSidang
             // 
+            this.dtpJamSidang.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpJamSidang.Location = new System.Drawing.Point(368, 58);
             this.dtpJamSidang.Name = "dtpJamSidang";
             this.dtpJamSidang.ShowUpDown = true;
@@ -1306,6 +1307,7 @@
             // 
             // dtpJamLanggar
             // 
+            this.dtpJamLanggar.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpJamLanggar.Location = new System.Drawing.Point(351, 16);
             this.dtpJamLanggar.Name = "dtpJamLanggar";
             this.dtpJamLanggar.ShowUpDown = true;
