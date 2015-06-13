@@ -179,18 +179,20 @@ namespace QRCodeWinForms
         }
         private int CekCheckBoxSK()
         {
-            int coba=0;
-            if (ckbRANMOR.Checked) {coba = coba+ 1;}
-            if (ckbSIM.Checked) {coba = coba + 2;}
-            if (ckbSTCK.Checked) {coba = coba + 4;}
-            if (ckbSTNK.Checked) {coba = coba + 8;}
+            int status=0;
 
-            return coba;
+            if (ckbRANMOR.Checked) { status = status + 1; }
+            if (ckbSIM.Checked) { status = status + 2; }
+            if (ckbSTCK.Checked) { status = status + 4; }
+            if (ckbSTNK.Checked) { status = status + 8; }
+
+            return status;
         }
 
         private int CekCheckBoxBK()
         {
             int status = 0;
+
             if (ckbLainnya.Checked) {status = status + 1;}
             if (cbkBukuUji.Checked) {status = status + 2;}
 
@@ -267,6 +269,7 @@ namespace QRCodeWinForms
             btnNewST.Enabled = false;
             btnTampil.Enabled = false;
             ClearData(this.Controls);
+            txtNamaPelanggar.Text = "Silahkan Scan QR Code";
         }
     }
 }
