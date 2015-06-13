@@ -35,15 +35,20 @@
             // 
             // lblPetunjuk
             // 
-            this.lblPetunjuk.AutoSize = true;
-            this.lblPetunjuk.Location = new System.Drawing.Point(56, 317);
+            this.lblPetunjuk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPetunjuk.Location = new System.Drawing.Point(12, 317);
             this.lblPetunjuk.Name = "lblPetunjuk";
-            this.lblPetunjuk.Size = new System.Drawing.Size(227, 13);
+            this.lblPetunjuk.Size = new System.Drawing.Size(331, 13);
             this.lblPetunjuk.TabIndex = 3;
             this.lblPetunjuk.Text = "Arahkan QR-Code pada SIM Anda ke kamera.";
+            this.lblPetunjuk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(331, 302);
@@ -58,14 +63,13 @@
             this.ClientSize = new System.Drawing.Size(355, 339);
             this.Controls.Add(this.lblPetunjuk);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmScanSIM";
             this.Text = "Scan SIM";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
