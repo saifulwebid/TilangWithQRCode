@@ -26,11 +26,13 @@ namespace QRCodeWinForms
                     {
                         ExcelWorksheet currentWorksheet = workBook.Worksheets[5];
 
-                        object col1Header = currentWorksheet.Cells[startRow, 1].Value;
-                        object col2Header = currentWorksheet.Cells[startRow, 2].Value;
-                        object col3Header = currentWorksheet.Cells[startRow, 3].Value;
+                        bool valid = true;
+                        for (int i = 1; i <= 3; i++)
+                        {
+                            valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
+                        }
 
-                        if ((col1Header != null) && (col2Header != null) && (col3Header != null))
+                        if (valid)
                         {
                             int rowNumber = currentWorksheet.Dimension.End.Row + 1;
                             currentWorksheet.Cells[rowNumber, 1].Value = acc.Username;
@@ -63,10 +65,13 @@ namespace QRCodeWinForms
                     {
                         ExcelWorksheet currentWorksheet = workBook.Worksheets[5];
 
-                        object col1Header = currentWorksheet.Cells[startRow, 1].Value;
-                        object col2Header = currentWorksheet.Cells[startRow, 2].Value;
+                        bool valid = true;
+                        for (int i = 1; i <= 2; i++)
+                        {
+                            valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
+                        }
 
-                        if ((col1Header != null) && (col2Header != null))
+                        if (valid)
                         {
                             for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                             {
@@ -111,17 +116,13 @@ namespace QRCodeWinForms
                     {
                         ExcelWorksheet currentWorksheet = workBook.Worksheets[1];
 
-                        object col1Header = currentWorksheet.Cells[startRow, 1].Value;
-                        object col2Header = currentWorksheet.Cells[startRow, 2].Value;
-                        object col3Header = currentWorksheet.Cells[startRow, 3].Value;
-                        object col4Header = currentWorksheet.Cells[startRow, 4].Value;
-                        object col5Header = currentWorksheet.Cells[startRow, 5].Value;
-                        object col6Header = currentWorksheet.Cells[startRow, 6].Value;
-                        object col7Header = currentWorksheet.Cells[startRow, 7].Value;
-                        object col8Header = currentWorksheet.Cells[startRow, 8].Value;
+                        bool valid = true;
+                        for (int i = 1; i <= 8; i++)
+                        {
+                            valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
+                        }
 
-                        if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
-                            (col5Header != null) && (col6Header != null) && (col7Header != null) && (col8Header != null))
+                        if (valid)
                         {
                             for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                             {
@@ -217,17 +218,13 @@ namespace QRCodeWinForms
                     {
                         ExcelWorksheet currentWorksheet = workBook.Worksheets[1];
 
-                        object col1Header = currentWorksheet.Cells[startRow, 1].Value;
-                        object col2Header = currentWorksheet.Cells[startRow, 2].Value;
-                        object col3Header = currentWorksheet.Cells[startRow, 3].Value;
-                        object col4Header = currentWorksheet.Cells[startRow, 4].Value;
-                        object col5Header = currentWorksheet.Cells[startRow, 5].Value;
-                        object col6Header = currentWorksheet.Cells[startRow, 6].Value;
-                        object col7Header = currentWorksheet.Cells[startRow, 7].Value;
-                        object col8Header = currentWorksheet.Cells[startRow, 8].Value;
+                        bool valid = true;
+                        for (int i = 1; i <= 8; i++)
+                        {
+                            valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
+                        }
 
-                        if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
-                            (col5Header != null) && (col6Header != null) && (col7Header != null) && (col8Header != null))
+                        if (valid)
                         {
                             for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                             {
@@ -320,17 +317,13 @@ namespace QRCodeWinForms
                     {
                         ExcelWorksheet currentWorksheet = workBook.Worksheets[1];
 
-                        object col1Header = currentWorksheet.Cells[startRow, 1].Value;
-                        object col2Header = currentWorksheet.Cells[startRow, 2].Value;
-                        object col3Header = currentWorksheet.Cells[startRow, 3].Value;
-                        object col4Header = currentWorksheet.Cells[startRow, 4].Value;
-                        object col5Header = currentWorksheet.Cells[startRow, 5].Value;
-                        object col6Header = currentWorksheet.Cells[startRow, 6].Value;
-                        object col7Header = currentWorksheet.Cells[startRow, 7].Value;
-                        object col8Header = currentWorksheet.Cells[startRow, 8].Value;
+                        bool valid = true;
+                        for (int i = 1; i <= 8; i++)
+                        {
+                            valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
+                        }
 
-                        if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
-                            (col5Header != null) && (col6Header != null) && (col7Header != null) && (col8Header != null))
+                        if (valid)
                         {
                             int rowNumber = currentWorksheet.Dimension.End.Row + 1;
                             currentWorksheet.Cells[rowNumber, 1].Value = pdd.Nomor;
@@ -364,14 +357,13 @@ namespace QRCodeWinForms
                     {
                         ExcelWorksheet currentWorksheet = workBook.Worksheets[2];
 
-                        object col1Header = currentWorksheet.Cells[startRow, 1].Value;
-                        object col2Header = currentWorksheet.Cells[startRow, 2].Value;
-                        object col3Header = currentWorksheet.Cells[startRow, 3].Value;
-                        object col4Header = currentWorksheet.Cells[startRow, 4].Value;
-                        object col5Header = currentWorksheet.Cells[startRow, 5].Value;
+                        bool valid = true;
+                        for (int i = 1; i <= 5; i++)
+                        {
+                            valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
+                        }
 
-                        if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
-                            (col5Header != null))
+                        if (valid)
                         {
                             for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                             {
@@ -422,14 +414,13 @@ namespace QRCodeWinForms
                     {
                         ExcelWorksheet currentWorksheet = workBook.Worksheets[2];
 
-                        object col1Header = currentWorksheet.Cells[startRow, 1].Value;
-                        object col2Header = currentWorksheet.Cells[startRow, 2].Value;
-                        object col3Header = currentWorksheet.Cells[startRow, 3].Value;
-                        object col4Header = currentWorksheet.Cells[startRow, 4].Value;
-                        object col5Header = currentWorksheet.Cells[startRow, 5].Value;
+                        bool valid = true;
+                        for (int i = 1; i <= 5; i++)
+                        {
+                            valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
+                        }
 
-                        if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
-                            (col5Header != null))
+                        if (valid)
                         {
                             int rowNumber = currentWorksheet.Dimension.End.Row + 1;
                             currentWorksheet.Cells[rowNumber, 1].Value = dataSIM.Pemilik.Nomor;
@@ -459,12 +450,13 @@ namespace QRCodeWinForms
                     {
                         ExcelWorksheet currentWorksheet = workBook.Worksheets[4];
 
-                        object col1Header = currentWorksheet.Cells[startRow, 1].Value;
-                        object col2Header = currentWorksheet.Cells[startRow, 2].Value;
-                        object col3Header = currentWorksheet.Cells[startRow, 3].Value;
-                        object col4Header = currentWorksheet.Cells[startRow, 4].Value;
+                        bool valid = true;
+                        for (int i = 1; i <= 4; i++)
+                        {
+                            valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
+                        }
 
-                        if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null))
+                        if (valid)
                         {
                             for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                             {
@@ -506,54 +498,13 @@ namespace QRCodeWinForms
                     {
                         ExcelWorksheet currentWorksheet = workBook.Worksheets[3];
 
-                        object col1Header = currentWorksheet.Cells[startRow, 1].Value;
-                        object col2Header = currentWorksheet.Cells[startRow, 2].Value;
-                        object col3Header = currentWorksheet.Cells[startRow, 3].Value;
-                        object col4Header = currentWorksheet.Cells[startRow, 4].Value;
-                        object col5Header = currentWorksheet.Cells[startRow, 5].Value;
-                        object col6Header = currentWorksheet.Cells[startRow, 6].Value;
-                        object col7Header = currentWorksheet.Cells[startRow, 7].Value;
-                        object col8Header = currentWorksheet.Cells[startRow, 8].Value;
-                        object col9Header = currentWorksheet.Cells[startRow, 9].Value;
-                        object col10Header = currentWorksheet.Cells[startRow, 10].Value;
-                        object col11Header = currentWorksheet.Cells[startRow, 11].Value;
-                        object col12Header = currentWorksheet.Cells[startRow, 12].Value;
-                        object col13Header = currentWorksheet.Cells[startRow, 13].Value;
-                        object col14Header = currentWorksheet.Cells[startRow, 14].Value;
-                        object col15Header = currentWorksheet.Cells[startRow, 15].Value;
-                        object col16Header = currentWorksheet.Cells[startRow, 16].Value;
-                        object col17Header = currentWorksheet.Cells[startRow, 17].Value;
-                        object col18Header = currentWorksheet.Cells[startRow, 18].Value;
-                        object col19Header = currentWorksheet.Cells[startRow, 19].Value;
-                        object col20Header = currentWorksheet.Cells[startRow, 20].Value;
-                        object col21Header = currentWorksheet.Cells[startRow, 21].Value;
-                        object col22Header = currentWorksheet.Cells[startRow, 22].Value;
-                        object col23Header = currentWorksheet.Cells[startRow, 23].Value;
-                        object col24Header = currentWorksheet.Cells[startRow, 24].Value;
-                        object col25Header = currentWorksheet.Cells[startRow, 25].Value;
-                        object col26Header = currentWorksheet.Cells[startRow, 26].Value;
-                        object col27Header = currentWorksheet.Cells[startRow, 27].Value;
-                        object col28Header = currentWorksheet.Cells[startRow, 28].Value;
-                        object col29Header = currentWorksheet.Cells[startRow, 29].Value;
-                        object col30Header = currentWorksheet.Cells[startRow, 30].Value;
-                        object col31Header = currentWorksheet.Cells[startRow, 31].Value;
-                        object col32Header = currentWorksheet.Cells[startRow, 32].Value;
-                        object col33Header = currentWorksheet.Cells[startRow, 33].Value;
-                        object col34Header = currentWorksheet.Cells[startRow, 34].Value;
-                        object col35Header = currentWorksheet.Cells[startRow, 35].Value;
-                        object col36Header = currentWorksheet.Cells[startRow, 36].Value;
-                        object col37Header = currentWorksheet.Cells[startRow, 37].Value;
+                        bool valid = true;
+                        for (int i = 1; i <= 37; i++)
+                        {
+                            valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
+                        }
 
-                        if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
-                            (col5Header != null) && (col6Header != null) && (col7Header != null) && (col8Header != null)
-                            && (col9Header != null) && (col10Header != null) && (col11Header != null) && (col12Header != null)
-                            && (col13Header != null) && (col14Header != null) && (col15Header != null) && (col16Header != null)
-                            && (col17Header != null) && (col18Header != null) && (col19Header != null) && (col20Header != null)
-                            && (col21Header != null) && (col22Header != null) && (col23Header != null) && (col24Header != null)
-                            && (col25Header != null) && (col26Header != null) && (col27Header != null) && (col28Header != null)
-                            && (col29Header != null) && (col30Header != null) && (col31Header != null) && (col32Header != null)
-                            && (col33Header != null) && (col34Header != null) && (col35Header != null) && (col36Header != null)
-                            && (col37Header != null))
+                        if (valid)
                         {
                             int rowNumber = currentWorksheet.Dimension.End.Row + 1;
                             currentWorksheet.Cells[rowNumber, 1].Value = dapel.WaktuPelanggaran;
@@ -615,54 +566,13 @@ namespace QRCodeWinForms
                     {
                         ExcelWorksheet currentWorksheet = workBook.Worksheets[3];
 
-                        object col1Header = currentWorksheet.Cells[startRow, 1].Value;
-                        object col2Header = currentWorksheet.Cells[startRow, 2].Value;
-                        object col3Header = currentWorksheet.Cells[startRow, 3].Value;
-                        object col4Header = currentWorksheet.Cells[startRow, 4].Value;
-                        object col5Header = currentWorksheet.Cells[startRow, 5].Value;
-                        object col6Header = currentWorksheet.Cells[startRow, 6].Value;
-                        object col7Header = currentWorksheet.Cells[startRow, 7].Value;
-                        object col8Header = currentWorksheet.Cells[startRow, 8].Value;
-                        object col9Header = currentWorksheet.Cells[startRow, 9].Value;
-                        object col10Header = currentWorksheet.Cells[startRow, 10].Value;
-                        object col11Header = currentWorksheet.Cells[startRow, 11].Value;
-                        object col12Header = currentWorksheet.Cells[startRow, 12].Value;
-                        object col13Header = currentWorksheet.Cells[startRow, 13].Value;
-                        object col14Header = currentWorksheet.Cells[startRow, 14].Value;
-                        object col15Header = currentWorksheet.Cells[startRow, 15].Value;
-                        object col16Header = currentWorksheet.Cells[startRow, 16].Value;
-                        object col17Header = currentWorksheet.Cells[startRow, 17].Value;
-                        object col18Header = currentWorksheet.Cells[startRow, 18].Value;
-                        object col19Header = currentWorksheet.Cells[startRow, 19].Value;
-                        object col20Header = currentWorksheet.Cells[startRow, 20].Value;
-                        object col21Header = currentWorksheet.Cells[startRow, 21].Value;
-                        object col22Header = currentWorksheet.Cells[startRow, 22].Value;
-                        object col23Header = currentWorksheet.Cells[startRow, 23].Value;
-                        object col24Header = currentWorksheet.Cells[startRow, 24].Value;
-                        object col25Header = currentWorksheet.Cells[startRow, 25].Value;
-                        object col26Header = currentWorksheet.Cells[startRow, 26].Value;
-                        object col27Header = currentWorksheet.Cells[startRow, 27].Value;
-                        object col28Header = currentWorksheet.Cells[startRow, 28].Value;
-                        object col29Header = currentWorksheet.Cells[startRow, 29].Value;
-                        object col30Header = currentWorksheet.Cells[startRow, 30].Value;
-                        object col31Header = currentWorksheet.Cells[startRow, 31].Value;
-                        object col32Header = currentWorksheet.Cells[startRow, 32].Value;
-                        object col33Header = currentWorksheet.Cells[startRow, 33].Value;
-                        object col34Header = currentWorksheet.Cells[startRow, 34].Value;
-                        object col35Header = currentWorksheet.Cells[startRow, 35].Value;
-                        object col36Header = currentWorksheet.Cells[startRow, 36].Value;
-                        object col37Header = currentWorksheet.Cells[startRow, 37].Value;
+                        bool valid = true;
+                        for (int i = 1; i <= 37; i++)
+                        {
+                            valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
+                        }
 
-                        if ((col1Header != null) && (col2Header != null) && (col3Header != null) && (col4Header != null) &&
-                            (col5Header != null) && (col6Header != null) && (col7Header != null) && (col8Header != null)
-                            && (col9Header != null) && (col10Header != null) && (col11Header != null) && (col12Header != null)
-                            && (col13Header != null) && (col14Header != null) && (col15Header != null) && (col16Header != null)
-                            && (col17Header != null) && (col18Header != null) && (col19Header != null) && (col20Header != null)
-                            && (col21Header != null) && (col22Header != null) && (col23Header != null) && (col24Header != null)
-                            && (col25Header != null) && (col26Header != null) && (col27Header != null) && (col28Header != null)
-                            && (col29Header != null) && (col30Header != null) && (col31Header != null) && (col32Header != null)
-                            && (col33Header != null) && (col34Header != null) && (col35Header != null) && (col36Header != null)
-                            && (col37Header != null))
+                        if (valid)
                         {
                             for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                             {
