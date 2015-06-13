@@ -9,13 +9,13 @@ namespace QRCodeWinForms
     public class Pelanggaran
     {
         public string AlamatWakil { get; set; }
-        public int AngkaPinaltiPelanggaran { get; set; } // double/integer?
-        public string BankSetoranDendaMaksimal { get; set; } // BankSetoranDendaMaksimal ?
+        public int AngkaPinaltiPelanggaran { get; set; }
+        public string BankSetoranDendaMaksimal { get; set; }
         public string BankSisaDenda { get; set; }
-        public int DisitaBukuUji { get; set; } // Bitstring --> Integer ?
+        public int DisitaBukuUji { get; set; }
         public string DisitaBukuUjiDiterbitkanOleh { get; set; }
         public DateTime DisitaBukuUjiMasaBerlaku { get; set; }
-        public int DisitaSK { get; set; } // Bitstring --> Integer ?
+        public int DisitaSK { get; set; }
         public string DisitaSKDiterbitkanOleh { get; set; }
         public DateTime DisitaSKMasaBerlaku { get; set; }
         public string JenisKendaraan { get; set; }

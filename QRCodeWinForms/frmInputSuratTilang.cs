@@ -38,23 +38,24 @@ namespace QRCodeWinForms
             dtpJamLanggar.CustomFormat = "HH:mm";
             dtpJamLanggar.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
 
-            //combobox
             cbxPasal.DataSource = Pasal.GetAll();
             cbxPasal.DisplayMember = "Nomor";
 
-            txtKesatuanPenyidik.Text = txtKesatuan.Text;
             SetToDefault();
         }
 
         private void TampilData()
         {
-            
-           // try
-            //{
                 string[] Split = ResultString.Split('#');
                 CultureInfo provider = CultureInfo.InvariantCulture;
                 DateTime parseddate;
                 provider = new CultureInfo("id-ID");
+
+                //parse from two digits year to four digits year
+                if (DateTime.TryParseExact(Split[5], "ddMMyy", null, DateTimeStyles.None, out parseddate))
+                {
+                    txtTanggalLahir.Text = parseddate.ToString("dd MMMM yyyy", provider);
+                }
 
                 txtNamaPelanggar.Text = Split[3];
                 txtAlamatPelanggar.Text = Split[6];
@@ -64,13 +65,8 @@ namespace QRCodeWinForms
                 txtNoSIM.Text = Split[1];
                 txtTempatPelanggar.Text = Split[4];
                 txtGolSIM.Text = Split[2];
-                //merubah supaya tanggalnya jadi bukan angka lagi
-                if (DateTime.TryParseExact(Split[5], "ddMMyy", null, DateTimeStyles.None, out parseddate))
-                {
-                    txtTanggalLahir.Text = parseddate.ToString("dd MMMM yyyy", provider);
-                }
                 txtUmurPelanggar.Text = Convert.ToString(ConvertUmur(parseddate));
-                //kolom jenis kelamin
+                //radio button jenis kelamin
                 datpel.Pelanggar.Pemilik = new Penduduk();
                 if (Split[9] == "L")
                 {
@@ -82,13 +78,8 @@ namespace QRCodeWinForms
                     rbtPR.Checked = true;
                     datpel.Pelanggar.Pemilik.JenisKelamin = EnumJenisKelamin.Wanita;
                 }             
-            /*}
-            catch
-            {
-                MessageBox.Show("QR Code tidak bisa dibaca!");
-            }*/
         }
-            private static string ConvertPekerjaan(int i)
+        private static string ConvertPekerjaan(int i)
         {
             string[] Pekerjaan = new string[] { "PNS", "SWASTA", "TNI", "POLRI", "PELAJAR", "MHS", "LAINNYA" };
             return Pekerjaan[i - 1];
@@ -166,14 +157,8 @@ namespace QRCodeWinForms
                 datpel.PasalPelanggaran.DendaMaksimal = Convert.ToDouble(txtDendaMaksimal.Text);
                 datpel.BankSetoranDendaMaksimal = txtBankSetor.Text;
                 datpel.AngkaPinaltiPelanggaran = Convert.ToInt16(txtAngkaPinalti.Text);
-                if (rbtHadirSendiri.Checked == true)
-                {
-                    datpel.PernyataanHadirSendiri = true;
-                }
-                else
-                {
-                    datpel.PernyataanHadirSendiri = false;
-                }
+                if (rbtHadirSendiri.Checked) {datpel.PernyataanHadirSendiri = true;}
+                else { datpel.PernyataanHadirSendiri = false; }
                 datpel.NamaWakil = txtNamaWali.Text;
                 datpel.UmurWakil = txtUmurWali.Text;
                 datpel.AlamatWakil = txtAlamatWali.Text;
@@ -195,36 +180,20 @@ namespace QRCodeWinForms
         private int CekCheckBoxSK()
         {
             int coba=0;
-            if (ckbRANMOR.Checked)
-            {
-                coba = coba+ 1;
-            }
-            if (ckbSIM.Checked)
-            {
-                coba = coba + 2;
-            }
-            if (ckbSTCK.Checked)
-            {
-                coba = coba + 4;
-            }
-            if (ckbSTNK.Checked)
-            {
-                coba = coba + 8;
-            }
+            if (ckbRANMOR.Checked) {coba = coba+ 1;}
+            if (ckbSIM.Checked) {coba = coba + 2;}
+            if (ckbSTCK.Checked) {coba = coba + 4;}
+            if (ckbSTNK.Checked) {coba = coba + 8;}
+
             return coba;
         }
 
         private int CekCheckBoxBK()
         {
             int status = 0;
-            if (ckbLainnya.Checked)
-            {
-                status = status + 1;
-            }
-            if (cbkBukuUji.Checked)
-            {
-                status = status + 2;
-            }
+            if (ckbLainnya.Checked) {status = status + 1;}
+            if (cbkBukuUji.Checked) {status = status + 2;}
+
             return status;
         }
 
