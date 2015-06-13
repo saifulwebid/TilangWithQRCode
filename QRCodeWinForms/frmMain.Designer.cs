@@ -97,7 +97,6 @@
             // 
             // loginToolStripMenuItem
             // 
-            this.loginToolStripMenuItem.Enabled = false;
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
             this.loginToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.loginToolStripMenuItem.Text = "&Login...";
