@@ -371,6 +371,7 @@
             // 
             // btnRekap
             // 
+            this.btnRekap.Enabled = false;
             this.btnRekap.Location = new System.Drawing.Point(432, 311);
             this.btnRekap.Name = "btnRekap";
             this.btnRekap.Size = new System.Drawing.Size(75, 23);

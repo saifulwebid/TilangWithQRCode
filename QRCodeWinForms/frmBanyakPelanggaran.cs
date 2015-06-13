@@ -48,6 +48,7 @@ namespace QRCodeWinForms
             f2.ShowDialog();
             if ((qrData = f2.GetData) != null)
             {
+                btnRekap.Enabled = true;
                 FillField();
                 GetDataPelanggar();
             }
