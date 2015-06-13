@@ -800,10 +800,10 @@ namespace QRCodeWinForms
                                     pelanggaran.LokasiPelanggaran = col13Value.ToString();
                                     pelanggaran.PatokanLokasi = col14Value.ToString();
                                     pelanggaran.WilayahHukum = col15Value.ToString();
-                                    pelanggaran.DisitaSK = col16Value.ToString();
+                                    pelanggaran.DisitaSK = Convert.ToInt16(col16Value);
                                     pelanggaran.DisitaSKDiterbitkanOleh = col17Value.ToString();
                                     pelanggaran.DisitaSKMasaBerlaku = DateTime.FromOADate((double)col18Value);
-                                    pelanggaran.DisitaBukuUji = col19Value.ToString();
+                                    pelanggaran.DisitaBukuUji = Convert.ToInt16(col19Value);
                                     pelanggaran.DisitaBukuUjiDiterbitkanOleh = col20Value.ToString();
                                     pelanggaran.DisitaBukuUjiMasaBerlaku = DateTime.FromOADate((double)col21Value);
                                     pelanggaran.TempatSidang = col22Value.ToString();
