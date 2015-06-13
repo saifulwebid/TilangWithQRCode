@@ -12,8 +12,30 @@ namespace QRCodeWinForms
 {
     public partial class frmMain : Form
     {
-        private User LoggedInUser = null;
-        private string DatabasePath = null;
+        private User loggedInUser = null;
+        private string databasePath = null;
+
+        public User LoggedInUser
+        {
+            get { return loggedInUser; }
+            set
+            {
+                loggedInUser = value;
+            }
+        }
+        public string DatabasePath
+        {
+            get { return databasePath; }
+            set
+            {
+                databasePath = value;
+                ExcelHelper.FileName = value;
+
+                /* Jika database di-close, maka User otomatis logout. */
+                if (value == null)
+                    loggedInUser = null;
+            }
+        }
         
         public frmMain()
         {
