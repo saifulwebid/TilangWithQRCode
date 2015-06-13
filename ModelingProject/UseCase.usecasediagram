@@ -21,6 +21,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="494213bb-64a4-4a28-85f6-f9b528fcaf88" />
           </association>
+          <association Id="8bda2c10-acb2-4aab-b4d9-ded0e0369649" isDerived="false" sourceEndRoleName="Petugas Samsat" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7e144098-6beb-4972-b6f9-547361f0c7dc" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d90a352-d638-4a74-a6b1-dbedf7d36738" name="Petugas Samsat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5bf1f081-8104-476e-abc1-eb2499fce19f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ae564e66-6a69-49dd-a63a-efe0428c6e39" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="06b617c6-9062-4375-99e1-4ec42f417ca0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="294b7ac9-7add-481f-92b9-1433617fcc24" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -76,6 +92,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="43501bd5-8787-42f4-8cb9-4a5d418b6bc5" />
           </association>
+          <association Id="18f094ae-7043-44f8-906c-4a56e5e844f1" isDerived="false" sourceEndRoleName="Polisi Lalu Lintas" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7e144098-6beb-4972-b6f9-547361f0c7dc" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="baffcc8b-337e-40ce-8486-8bd233c3f6d6" name="Polisi Lalu Lintas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2b177dc5-7dc8-4aae-be06-cfc475bd248a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f7e85ef-1409-4156-a18c-f8d5b7dee302" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="53f08550-d04c-4a4d-ae16-3610b59cb751" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ff7e4a3c-2450-49f9-9393-4f80b6b076ea" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -98,6 +130,22 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="00bddc10-d5ab-4906-a418-6bca1dab925b" />
+          </association>
+          <association Id="c94c4657-78f3-4bcc-8641-b6f9d6c75ff0" isDerived="false" sourceEndRoleName="Hakim/Jaksa" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7e144098-6beb-4972-b6f9-547361f0c7dc" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b35fc769-6b7c-4cef-8d9b-c9ac93c5c3f8" name="Hakim/Jaksa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b925aa81-d982-4066-b5ec-a9d242962f47" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0a12dc31-0ce6-4a75-86ae-8867dcb721f6" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="06262401-67f6-49a3-8258-3d2caa73d64f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c49ec765-e150-44c0-8786-9ce5b42a030a" />
           </association>
         </targetEnds>
       </actor>
