@@ -57,12 +57,26 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence Diagram\MenyimpanDataSuratTilang.sequencediagram</DependentUpon>
     </Content>
-    <Content Include="Use Case Diagram\PrimaryUseCase.usecasediagram">
+    <Content Include="Use Case Diagram\HakimJaksa.usecasediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Use Case Diagram\PrimaryUseCase.usecasediagram.layout">
+    <Content Include="Use Case Diagram\HakimJaksa.usecasediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Use Case Diagram\PrimaryUseCase.usecasediagram</DependentUpon>
+      <DependentUpon>Use Case Diagram\HakimJaksa.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Use Case Diagram\Polantas.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Case Diagram\Polantas.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Case Diagram\Polantas.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Use Case Diagram\Samsat.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Case Diagram\Samsat.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Case Diagram\Samsat.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ClassDiagram.classdiagram">

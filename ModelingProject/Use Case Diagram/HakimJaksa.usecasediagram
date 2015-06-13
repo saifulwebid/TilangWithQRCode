@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8cf8508f-353e-465a-a49b-8a4eb048686f" name="Hakim/Jaksa" linkedPackageId="18d6558f-4564-4814-b4be-a9b0c7502c02" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="6c947eef-39ff-43fe-b2a0-d6c41040efa5">
+      <profileInstance Id="52d30613-40b9-4069-adcd-8d147c818e0d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b4e0a7a6-687b-4c0e-a02e-27ec4412e09e">
+      <profileInstance Id="535036c0-1207-46dc-8220-1d3c4fd94e83" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="d231fa3f-2bac-4d02-9fa6-f9640d81487a" name="Hakim/Jaksa" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="adf2483b-6767-4dcf-82f0-99d5d3286c37" />
+        <targetEnds>
+          <association Id="59521ec3-8433-43fc-803b-a9c7091700c1" isDerived="false" sourceEndRoleName="Hakim/Jaksa" targetEndRoleName="Melihat Rekapitulasi Per SIM" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="98e29fe5-4505-43b5-a298-56c7c1249f8f" LastKnownName="Melihat Rekapitulasi Per SIM" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="afaa2c2b-b559-4116-9055-5dd120f72bb9" name="Hakim/Jaksa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e61486ab-8e36-421a-90dd-c815c91634c0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="898a8d0b-cb8a-43f5-9b0a-0f85e7b74fcc" name="Melihat Rekapitulasi Per SIM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="50c30dd4-af88-4187-8710-4ac914c1cc53" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="00bddc10-d5ab-4906-a418-6bca1dab925b" />
+          </association>
+          <association Id="6b7310bd-eb07-4828-a4c9-cee56e2f6ce4" isDerived="false" sourceEndRoleName="Hakim/Jaksa" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="38699313-a3c5-4f09-9214-9718aa0b7082" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="913bd906-cb39-4769-ba97-fb61578f99ef" name="Hakim/Jaksa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b925aa81-d982-4066-b5ec-a9d242962f47" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c4cbe8ff-1690-4442-99d1-ff85fefe68c0" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="06262401-67f6-49a3-8258-3d2caa73d64f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c49ec765-e150-44c0-8786-9ce5b42a030a" />
+          </association>
+          <association Id="f6e2cfbe-b0fa-4a08-9c75-8f7ae4ddafe4" isDerived="false" sourceEndRoleName="Hakim/Jaksa" targetEndRoleName="Logout" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3c8d2de9-47b2-4367-bff3-380da60918a6" LastKnownName="Logout" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2e5233b-504b-4531-a6c3-8d9c1b735d18" name="Hakim/Jaksa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="372285d7-4573-4f1f-a302-9c4559cfc953" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3661035e-6901-4f9a-903e-470feb8075bc" name="Logout" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="04f3fd95-7475-4c9d-91cd-7211cf02de58" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0ee229ff-b3dc-4cc1-b116-39f4d3b2f700" />
+          </association>
+          <association Id="b18156f0-c52f-414b-8f14-872236a2f558" isDerived="false" sourceEndRoleName="Hakim/Jaksa" targetEndRoleName="Memilih Database" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="567d0346-11cd-4748-aa9c-d68fd78a22f4" LastKnownName="Membuka Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d523e1c6-11fc-4707-be1e-cf87d7bae454" name="Hakim/Jaksa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="94e73dc5-ccd9-4e39-9338-5d97f8fb1d08" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="10168921-1212-419d-ab18-81514dfd2747" name="Memilih Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a5ed6b39-f6d7-4992-9c3c-003bc8ce5caa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0a78d821-07aa-4d18-92f7-24293bd69775" />
+          </association>
+          <association Id="e5e86e6d-c168-463e-8986-f41d6bb57d26" isDerived="false" sourceEndRoleName="Hakim/Jaksa" targetEndRoleName="Menutup Database" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f0acf26e-7fde-423c-ad3b-e42660ab424a" LastKnownName="Menutup Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fbb3d4f4-6311-44e7-b2cb-8010a9d2f13d" name="Hakim/Jaksa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bf6dc447-7c8a-4074-85c6-ada44fd0e069" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f1623353-2a65-45fe-8d71-5b4f7c837ef8" name="Menutup Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="776b0a1d-76f1-4e40-9aac-23622f3bfb74" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3973fae1-f127-4256-ae86-1a67fdbb48af" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="9e61cb89-84fd-499b-a4ee-d956a4a28ada" name="Sistem Tilang Elektronik" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e5955491-ef03-44c4-9b2a-0503b4da066e" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="38699313-a3c5-4f09-9214-9718aa0b7082" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d" />
+        <suppliersInternal>
+          <dependency Id="a83f5155-d855-47c8-9b03-4c2179c17808">
+            <useCaseMoniker Id="567d0346-11cd-4748-aa9c-d68fd78a22f4" LastKnownName="Membuka Database" />
+            <elementDefinition Id="5d2ca08c-9121-4f80-bdf1-a3d6b9389ad5" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="9e61cb89-84fd-499b-a4ee-d956a4a28ada" LastKnownName="Sistem Tilang Elektronik" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="3c8d2de9-47b2-4367-bff3-380da60918a6" name="Logout" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5e8edf7c-ef99-42d7-a4d8-b0a46ebf93c3" />
+        <suppliersInternal>
+          <dependency Id="9f8384ab-e245-4429-99c9-5b01df72e670">
+            <useCaseMoniker Id="567d0346-11cd-4748-aa9c-d68fd78a22f4" LastKnownName="Membuka Database" />
+            <elementDefinition Id="59e16478-fd73-494c-80f1-74eed7218c98" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="9e61cb89-84fd-499b-a4ee-d956a4a28ada" LastKnownName="Sistem Tilang Elektronik" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="567d0346-11cd-4748-aa9c-d68fd78a22f4" name="Membuka Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5" />
+        <subjects>
+          <subsystemMoniker Id="9e61cb89-84fd-499b-a4ee-d956a4a28ada" LastKnownName="Sistem Tilang Elektronik" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f0acf26e-7fde-423c-ad3b-e42660ab424a" name="Menutup Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="744c4a5e-6a0b-41fe-b4ef-e019ea367a8d" />
+        <suppliersInternal>
+          <dependency Id="af5cb303-8d60-44f0-9e1e-197aa2de8544">
+            <useCaseMoniker Id="567d0346-11cd-4748-aa9c-d68fd78a22f4" LastKnownName="Membuka Database" />
+            <elementDefinition Id="509fc46c-167e-4eb3-a46e-7709d2b091d1" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="9e61cb89-84fd-499b-a4ee-d956a4a28ada" LastKnownName="Sistem Tilang Elektronik" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="98e29fe5-4505-43b5-a298-56c7c1249f8f" name="Melihat Rekapitulasi Per SIM" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2b8f0e18-9a71-4112-bfe7-fc5b9c41a8ca" />
+        <suppliersInternal>
+          <dependency Id="f0240a83-d411-4c04-ac3c-3355efdeb7bb">
+            <useCaseMoniker Id="38699313-a3c5-4f09-9214-9718aa0b7082" LastKnownName="Login" />
+            <elementDefinition Id="694b153f-e4a4-48f2-a099-d6b9aea3b119" />
+          </dependency>
+          <dependency Id="1ce16b7c-87ed-4153-ba22-4de0b56102c7">
+            <useCaseMoniker Id="567d0346-11cd-4748-aa9c-d68fd78a22f4" LastKnownName="Membuka Database" />
+            <elementDefinition Id="8f8257d0-78ae-4539-84a0-951df5ca3496" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="9e61cb89-84fd-499b-a4ee-d956a4a28ada" LastKnownName="Sistem Tilang Elektronik" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="18d6558f-4564-4814-b4be-a9b0c7502c02" name="ModelingProject">
+    <elementDefinition Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd" />
+  </package>
+</useCaseModelRoot>

@@ -2197,6 +2197,120 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="d3863972-a667-4b38-8565-f89cab3349b4"
+            isDerived="false"
+            sourceEndRoleName="Petugas Samsat"
+            targetEndRoleName="Memilih Database"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5"
+              LastKnownName="Membuka Database"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c2af7b98-0e17-49d9-ad5a-0adabf8de71d"
+                  name="Petugas Samsat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b21a4f63-5d66-42b5-9387-1dcdc9f17842"
+                  name="Memilih Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="424a14c5-b2a7-409b-9f6f-63bc32c5d41d"
+            isDerived="false"
+            sourceEndRoleName="Petugas Samsat"
+            targetEndRoleName="Menutup Database"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="744c4a5e-6a0b-41fe-b4ef-e019ea367a8d"
+              LastKnownName="Menutup Database"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6f57a80d-d9a8-4892-bc45-3846e7257d66"
+                  name="Petugas Samsat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="52a1ab6e-d5d2-43de-b133-b6148d3a8a41"
+                  name="Menutup Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bb5faeb3-088d-4105-8a6d-2441b69d3f50"
+            isDerived="false"
+            sourceEndRoleName="Petugas Samsat"
+            targetEndRoleName="Logout"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5e8edf7c-ef99-42d7-a4d8-b0a46ebf93c3"
+              LastKnownName="Logout"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f9de1054-3bac-4b2d-bf33-2d3046a285dc"
+                  name="Petugas Samsat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d521956a-8443-43fe-8037-ac1f0c23066b"
+                  name="Logout"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -2363,6 +2477,120 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="3d273ef1-43ca-42a2-b694-975a54a75f51"
+            isDerived="false"
+            sourceEndRoleName="Polisi Lalu Lintas"
+            targetEndRoleName="Logout"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5e8edf7c-ef99-42d7-a4d8-b0a46ebf93c3"
+              LastKnownName="Logout"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ff365e7-15c1-46e4-9cdc-0bb2a374fd50"
+                  name="Polisi Lalu Lintas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="27887c5f-cd18-4219-b5e1-e4c9f68a5841"
+                  name="Logout"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b797e22f-4115-41e2-bfc4-6b6ae96aab4f"
+            isDerived="false"
+            sourceEndRoleName="Polisi Lalu Lintas"
+            targetEndRoleName="Memilih Database"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5"
+              LastKnownName="Membuka Database"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d49ff969-163c-499d-9227-65f3d4d5d1f8"
+                  name="Polisi Lalu Lintas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cc24132a-03b7-476a-97b3-2acbad3ea6a4"
+                  name="Memilih Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4364a8e3-3156-48d6-aab3-ddf22a788783"
+            isDerived="false"
+            sourceEndRoleName="Polisi Lalu Lintas"
+            targetEndRoleName="Menutup Database"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="744c4a5e-6a0b-41fe-b4ef-e019ea367a8d"
+              LastKnownName="Menutup Database"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e9fb73fd-7b2f-4040-9f03-df6d3fe960af"
+                  name="Polisi Lalu Lintas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9e8a2bf3-b3f6-416b-ba65-1798eed51e90"
+                  name="Menutup Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -2451,6 +2679,120 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="0ee229ff-b3dc-4cc1-b116-39f4d3b2f700"
+            isDerived="false"
+            sourceEndRoleName="Hakim/Jaksa"
+            targetEndRoleName="Logout"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5e8edf7c-ef99-42d7-a4d8-b0a46ebf93c3"
+              LastKnownName="Logout"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="372285d7-4573-4f1f-a302-9c4559cfc953"
+                  name="Hakim/Jaksa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="04f3fd95-7475-4c9d-91cd-7211cf02de58"
+                  name="Logout"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0a78d821-07aa-4d18-92f7-24293bd69775"
+            isDerived="false"
+            sourceEndRoleName="Hakim/Jaksa"
+            targetEndRoleName="Memilih Database"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5"
+              LastKnownName="Membuka Database"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="94e73dc5-ccd9-4e39-9338-5d97f8fb1d08"
+                  name="Hakim/Jaksa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a5ed6b39-f6d7-4992-9c3c-003bc8ce5caa"
+                  name="Memilih Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3973fae1-f127-4256-ae86-1a67fdbb48af"
+            isDerived="false"
+            sourceEndRoleName="Hakim/Jaksa"
+            targetEndRoleName="Menutup Database"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="744c4a5e-6a0b-41fe-b4ef-e019ea367a8d"
+              LastKnownName="Menutup Database"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bf6dc447-7c8a-4074-85c6-ada44fd0e069"
+                  name="Hakim/Jaksa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="776b0a1d-76f1-4e40-9aac-23622f3bfb74"
+                  name="Menutup Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -2468,7 +2810,20 @@
               LastKnownName="Login"
               LastKnownLocation="ModelingProject.uml" />
           </dependency>
+          <dependency
+            Id="f6be6da4-1867-4250-a0aa-5345371e710b">
+            <useCaseMoniker
+              Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5"
+              LastKnownName="Membuka Database"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
         </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="e5955491-ef03-44c4-9b2a-0503b4da066e"
+            LastKnownName="Sistem Tilang Elektronik"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2483,6 +2838,13 @@
             <useCaseMoniker
               Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d"
               LastKnownName="Login"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="0271195e-7fac-4834-9e60-d5c11888fb75">
+            <useCaseMoniker
+              Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5"
+              LastKnownName="Membuka Database"
               LastKnownLocation="ModelingProject.uml" />
           </dependency>
         </suppliersInternal>
@@ -2502,7 +2864,20 @@
               LastKnownName="Login"
               LastKnownLocation="ModelingProject.uml" />
           </dependency>
+          <dependency
+            Id="8f8257d0-78ae-4539-84a0-951df5ca3496">
+            <useCaseMoniker
+              Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5"
+              LastKnownName="Membuka Database"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
         </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="e5955491-ef03-44c4-9b2a-0503b4da066e"
+            LastKnownName="Sistem Tilang Elektronik"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2517,6 +2892,13 @@
             <useCaseMoniker
               Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d"
               LastKnownName="Login"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="cb18e63e-8aea-4225-bcc8-43f0d5042b00">
+            <useCaseMoniker
+              Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5"
+              LastKnownName="Membuka Database"
               LastKnownLocation="ModelingProject.uml" />
           </dependency>
         </suppliersInternal>
@@ -2837,6 +3219,13 @@
             <useCaseMoniker
               Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d"
               LastKnownName="Login"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="7fe94928-bb70-4537-b666-7a1a234a162f">
+            <useCaseMoniker
+              Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5"
+              LastKnownName="Membuka Database"
               LastKnownLocation="ModelingProject.uml" />
           </dependency>
         </suppliersInternal>
@@ -7442,6 +7831,75 @@
         name="Login"
         isAbstract="false"
         isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="5d2ca08c-9121-4f80-bdf1-a3d6b9389ad5">
+            <useCaseMoniker
+              Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5"
+              LastKnownName="Membuka Database"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="e5955491-ef03-44c4-9b2a-0503b4da066e"
+            LastKnownName="Sistem Tilang Elektronik"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5"
+        name="Membuka Database"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e5955491-ef03-44c4-9b2a-0503b4da066e"
+            LastKnownName="Sistem Tilang Elektronik"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5e8edf7c-ef99-42d7-a4d8-b0a46ebf93c3"
+        name="Logout"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="59e16478-fd73-494c-80f1-74eed7218c98">
+            <useCaseMoniker
+              Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5"
+              LastKnownName="Membuka Database"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="e5955491-ef03-44c4-9b2a-0503b4da066e"
+            LastKnownName="Sistem Tilang Elektronik"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="744c4a5e-6a0b-41fe-b4ef-e019ea367a8d"
+        name="Menutup Database"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="509fc46c-167e-4eb3-a46e-7709d2b091d1">
+            <useCaseMoniker
+              Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5"
+              LastKnownName="Membuka Database"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
         <subjects>
           <subsystemMoniker
             Id="e5955491-ef03-44c4-9b2a-0503b4da066e"

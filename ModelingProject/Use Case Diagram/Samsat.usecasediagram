@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="232ba08b-d4b0-4197-ad4c-170c82a9002f" name="Petugas Samsat" linkedPackageId="2b8e0ef6-a337-4767-ab86-8c08854d4a9f" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="34acb5d9-4b5c-4274-ae3c-c5b24b0c757e">
+      <profileInstance Id="2a3ba725-eaa0-4ace-88fd-4c61840bad92" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="80ced383-67b1-4d0a-a3eb-6754a5c1e213">
+      <profileInstance Id="cd1f7194-af23-47fc-b0a0-eef84567c916" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="e8bc03c9-93f5-41c7-9ef0-d995b04cd512" name="Sistem Tilang Elektronik" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e5955491-ef03-44c4-9b2a-0503b4da066e" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="75dd01a5-e6aa-4b91-8a15-1f92cd116b19" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="062e184f-9ba9-4f8d-a9d6-c9129f3b826d" />
+        <suppliersInternal>
+          <dependency Id="f6cfb852-7231-4461-8c88-d959292a3362">
+            <useCaseMoniker Id="15a21506-fe70-46e2-b506-294e4cef930e" LastKnownName="Membuka Database" />
+            <elementDefinition Id="5d2ca08c-9121-4f80-bdf1-a3d6b9389ad5" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="e8bc03c9-93f5-41c7-9ef0-d995b04cd512" LastKnownName="Sistem Tilang Elektronik" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="80171dad-4a87-4b79-a58c-bcb2b797fcca" name="Logout" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5e8edf7c-ef99-42d7-a4d8-b0a46ebf93c3" />
+        <suppliersInternal>
+          <dependency Id="77e40748-8282-48df-be52-878c1a95521a">
+            <useCaseMoniker Id="15a21506-fe70-46e2-b506-294e4cef930e" LastKnownName="Membuka Database" />
+            <elementDefinition Id="59e16478-fd73-494c-80f1-74eed7218c98" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="e8bc03c9-93f5-41c7-9ef0-d995b04cd512" LastKnownName="Sistem Tilang Elektronik" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4a5dcc25-9994-4fe5-bf86-60c280df1f35" name="Membuat SIM Baru" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2e932df2-d396-41db-8c8b-2bae4253ac71" />
+        <suppliersInternal>
+          <dependency Id="ac6a9a38-802a-4bce-82d5-909cb2aa0ecc">
+            <useCaseMoniker Id="75dd01a5-e6aa-4b91-8a15-1f92cd116b19" LastKnownName="Login" />
+            <elementDefinition Id="370a03f3-73b9-4976-a197-0952c62711af" />
+          </dependency>
+          <dependency Id="f57d1902-4d17-4855-b102-80802324854f">
+            <useCaseMoniker Id="15a21506-fe70-46e2-b506-294e4cef930e" LastKnownName="Membuka Database" />
+            <elementDefinition Id="f6be6da4-1867-4250-a0aa-5345371e710b" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="e8bc03c9-93f5-41c7-9ef0-d995b04cd512" LastKnownName="Sistem Tilang Elektronik" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="15a21506-fe70-46e2-b506-294e4cef930e" name="Membuka Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c0dfa5d4-a4c1-488d-aa8f-e8ad245b2ed5" />
+        <subjects>
+          <subsystemMoniker Id="e8bc03c9-93f5-41c7-9ef0-d995b04cd512" LastKnownName="Sistem Tilang Elektronik" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a32493ac-b32a-45ae-8377-820cf0779d14" name="Menutup Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="744c4a5e-6a0b-41fe-b4ef-e019ea367a8d" />
+        <suppliersInternal>
+          <dependency Id="30f24161-55b8-4663-bb65-be333bba74f0">
+            <useCaseMoniker Id="15a21506-fe70-46e2-b506-294e4cef930e" LastKnownName="Membuka Database" />
+            <elementDefinition Id="509fc46c-167e-4eb3-a46e-7709d2b091d1" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="e8bc03c9-93f5-41c7-9ef0-d995b04cd512" LastKnownName="Sistem Tilang Elektronik" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="783f9821-43d2-4612-a08a-8cfaa03fce23" name="Petugas Samsat" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="59274d51-c712-43b6-9c92-ab6b177de9ae" />
+        <targetEnds>
+          <association Id="0d228052-98a6-4edf-8d1f-e40c4ee5cc05" isDerived="false" sourceEndRoleName="Petugas Samsat" targetEndRoleName="Membuat SIM Baru" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4a5dcc25-9994-4fe5-bf86-60c280df1f35" LastKnownName="Membuat SIM Baru" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b40ab702-16f2-4022-b180-3b0dcaa882de" name="Petugas Samsat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="553d8dcf-1232-4bcc-81c0-0c361ef8c446" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="175aeb31-08a0-452e-959a-2288776ace0d" name="Membuat SIM Baru" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="64b40e34-2616-45f9-ba08-fdc839080c6f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="494213bb-64a4-4a28-85f6-f9b528fcaf88" />
+          </association>
+          <association Id="8971db7f-90cf-43cc-a0c4-bff7a334b243" isDerived="false" sourceEndRoleName="Petugas Samsat" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="75dd01a5-e6aa-4b91-8a15-1f92cd116b19" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c116e3ed-94ca-41c9-8dbe-96448662da71" name="Petugas Samsat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5bf1f081-8104-476e-abc1-eb2499fce19f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3dec703e-b0a8-4565-bbb5-763a09464c9f" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="06b617c6-9062-4375-99e1-4ec42f417ca0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="294b7ac9-7add-481f-92b9-1433617fcc24" />
+          </association>
+          <association Id="39589e1e-1639-4f4f-b854-59f5269aae45" isDerived="false" sourceEndRoleName="Petugas Samsat" targetEndRoleName="Memilih Database" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="15a21506-fe70-46e2-b506-294e4cef930e" LastKnownName="Membuka Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c37e6808-f547-4585-96b8-cb0ff2e10c8a" name="Petugas Samsat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c2af7b98-0e17-49d9-ad5a-0adabf8de71d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="482cde10-489b-423d-9baa-ad1b9a557b7e" name="Memilih Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b21a4f63-5d66-42b5-9387-1dcdc9f17842" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d3863972-a667-4b38-8565-f89cab3349b4" />
+          </association>
+          <association Id="7c1b63e6-fd67-4210-8b38-03d2b774a10d" isDerived="false" sourceEndRoleName="Petugas Samsat" targetEndRoleName="Menutup Database" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a32493ac-b32a-45ae-8377-820cf0779d14" LastKnownName="Menutup Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd7a2237-a852-47d5-94ef-aee9ad68c03f" name="Petugas Samsat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f57a80d-d9a8-4892-bc45-3846e7257d66" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c3580dc3-c759-40b7-9015-ef4e11e589c0" name="Menutup Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="52a1ab6e-d5d2-43de-b133-b6148d3a8a41" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="424a14c5-b2a7-409b-9f6f-63bc32c5d41d" />
+          </association>
+          <association Id="03346b25-6b36-47b2-ada5-70a503cfcfbb" isDerived="false" sourceEndRoleName="Petugas Samsat" targetEndRoleName="Logout" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="80171dad-4a87-4b79-a58c-bcb2b797fcca" LastKnownName="Logout" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba4ca4e2-0650-4685-9255-93a8f162e540" name="Petugas Samsat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f9de1054-3bac-4b2d-bf33-2d3046a285dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="185a8640-ba46-45a1-95c0-7de2318cfc31" name="Logout" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d521956a-8443-43fe-8037-ac1f0c23066b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bb5faeb3-088d-4105-8a6d-2441b69d3f50" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="2b8e0ef6-a337-4767-ab86-8c08854d4a9f" name="ModelingProject">
+    <elementDefinition Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd" />
+  </package>
+</useCaseModelRoot>
