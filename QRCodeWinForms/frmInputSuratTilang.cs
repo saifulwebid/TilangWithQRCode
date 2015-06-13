@@ -43,53 +43,6 @@ namespace QRCodeWinForms
 
             SetToDefault();
         }
-
-        private void TampilData()
-        {
-                string[] Split = ResultString.Split('#');
-                CultureInfo provider = CultureInfo.InvariantCulture;
-                DateTime parseddate;
-                provider = new CultureInfo("id-ID");
-
-                //parse from two digits year to four digits year
-                if (DateTime.TryParseExact(Split[5], "ddMMyy", null, DateTimeStyles.None, out parseddate))
-                {
-                    txtTanggalLahir.Text = parseddate.ToString("dd MMMM yyyy", provider);
-                }
-
-                txtNamaPelanggar.Text = Split[3];
-                txtAlamatPelanggar.Text = Split[6];
-                txtNoKTPPelanggar.Text = Split[0];
-                txtPekerjaan.Text = ConvertPekerjaan(Convert.ToInt32(Split[7])); ;
-                txtPendidikan.Text = ConvertPendidikan(Convert.ToInt32(Split[8]));
-                txtNoSIM.Text = Split[1];
-                txtTempatPelanggar.Text = Split[4];
-                txtGolSIM.Text = Split[2];
-                txtUmurPelanggar.Text = Convert.ToString(ConvertUmur(parseddate));
-                //radio button jenis kelamin
-                datpel.Pelanggar.Pemilik = new Penduduk();
-                if (Split[9] == "L")
-                {
-                    rbtLK.Checked = true;
-                    datpel.Pelanggar.Pemilik.JenisKelamin = EnumJenisKelamin.Pria;
-                }
-                else
-                {
-                    rbtPR.Checked = true;
-                    datpel.Pelanggar.Pemilik.JenisKelamin = EnumJenisKelamin.Wanita;
-                }             
-        }
-        private static string ConvertPekerjaan(int i)
-        {
-            string[] Pekerjaan = new string[] { "PNS", "SWASTA", "TNI", "POLRI", "PELAJAR", "MHS", "LAINNYA" };
-            return Pekerjaan[i - 1];
-        }
-
-        private static string ConvertPendidikan(int i)
-        {
-            string[] Pendidikan = new string[] { "SD", "SLTP", "SLTA", "PT" };
-            return Pendidikan[i - 1];
-        }
         
         private static int ConvertUmur(DateTime ttl)
         {
@@ -109,10 +62,30 @@ namespace QRCodeWinForms
 
         private void btnScanQRCode_Click(object sender, EventArgs e)
         {
+            string QRData;
+
             frmScanSIM f2 = new frmScanSIM();
             f2.ShowDialog();
-            ResultString = f2.GetData;
-            TampilData();
+            QRData = f2.GetData;
+
+            datpel.Pelanggar = new SIM(QRData);
+
+            CultureInfo provider = CultureInfo.InvariantCulture;
+            provider = new CultureInfo("id-ID");
+
+            txtTanggalLahir.Text = datpel.Pelanggar.Pemilik.TanggalLahir.ToString("dd MMMM yyyy", provider);
+            txtNamaPelanggar.Text = datpel.Pelanggar.Pemilik.Nama;
+            txtAlamatPelanggar.Text = datpel.Pelanggar.Pemilik.Alamat;
+            txtNoKTPPelanggar.Text = datpel.Pelanggar.Pemilik.Nomor;
+            txtPekerjaan.Text = datpel.Pelanggar.Pemilik.Pekerjaan.ToString();
+            txtPendidikan.Text = datpel.Pelanggar.Pemilik.Pendidikan.ToString();
+            txtNoSIM.Text = datpel.Pelanggar.Nomor;
+            txtTempatPelanggar.Text = datpel.Pelanggar.Pemilik.TempatLahir;
+            txtGolSIM.Text = datpel.Pelanggar.Golongan;
+            txtUmurPelanggar.Text = Convert.ToString(ConvertUmur(datpel.Pelanggar.Pemilik.TanggalLahir));
+
+            rbtLK.Checked = (datpel.Pelanggar.Pemilik.JenisKelamin == EnumJenisKelamin.Pria);
+            rbtPR.Checked = (datpel.Pelanggar.Pemilik.JenisKelamin == EnumJenisKelamin.Wanita);
         }
 
         private void btnSimpanData_Click(object sender, EventArgs e)
