@@ -68,7 +68,7 @@
             this.label70 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
-            this.txtWaktuSidang = new System.Windows.Forms.DateTimePicker();
+            this.dtpWaktuSidang = new System.Windows.Forms.DateTimePicker();
             this.label45 = new System.Windows.Forms.Label();
             this.txtPengadilan = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -456,7 +456,7 @@
             this.groupBox6.Controls.Add(this.label70);
             this.groupBox6.Controls.Add(this.label69);
             this.groupBox6.Controls.Add(this.label47);
-            this.groupBox6.Controls.Add(this.txtWaktuSidang);
+            this.groupBox6.Controls.Add(this.dtpWaktuSidang);
             this.groupBox6.Controls.Add(this.label45);
             this.groupBox6.Controls.Add(this.txtPengadilan);
             this.groupBox6.Location = new System.Drawing.Point(11, 721);
@@ -562,13 +562,13 @@
             this.label47.TabIndex = 32;
             this.label47.Text = "JAM";
             // 
-            // txtWaktuSidang
+            // dtpWaktuSidang
             // 
-            this.txtWaktuSidang.Location = new System.Drawing.Point(131, 58);
-            this.txtWaktuSidang.Name = "txtWaktuSidang";
-            this.txtWaktuSidang.Size = new System.Drawing.Size(200, 20);
-            this.txtWaktuSidang.TabIndex = 39;
-            this.txtWaktuSidang.TabStop = false;
+            this.dtpWaktuSidang.Location = new System.Drawing.Point(131, 58);
+            this.dtpWaktuSidang.Name = "dtpWaktuSidang";
+            this.dtpWaktuSidang.Size = new System.Drawing.Size(200, 20);
+            this.dtpWaktuSidang.TabIndex = 39;
+            this.dtpWaktuSidang.TabStop = false;
             // 
             // label45
             // 
@@ -1554,7 +1554,7 @@
         public System.Windows.Forms.TextBox txtKesatuanPenyidik;
         public System.Windows.Forms.TextBox txtPangkatPenyidik;
         public System.Windows.Forms.TextBox txtNamaPenyidik;
-        public System.Windows.Forms.DateTimePicker txtWaktuSidang;
+        public System.Windows.Forms.DateTimePicker dtpWaktuSidang;
         public System.Windows.Forms.TextBox txtPengadilan;
         public System.Windows.Forms.DateTimePicker dtpBerlakuPemda;
         public System.Windows.Forms.TextBox txtTerbitPemda;

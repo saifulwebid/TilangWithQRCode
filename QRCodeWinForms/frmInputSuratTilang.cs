@@ -13,7 +13,7 @@ namespace QRCodeWinForms
 {
     public partial class frmInputSuratTilang : Form
     {
-        Pelanggaran datpel = new Pelanggaran();
+        private Pelanggaran datpel = new Pelanggaran();
        
         public frmInputSuratTilang()
         {
@@ -46,17 +46,15 @@ namespace QRCodeWinForms
 
         private void btnScanQRCode_Click(object sender, EventArgs e)
         {
-            string QRData;
+            CultureInfo provider = CultureInfo.InvariantCulture;
+            provider = new CultureInfo("id-ID");
 
             frmScanSIM f2 = new frmScanSIM();
             f2.ShowDialog();
-            QRData = f2.GetData;
+
             try
             {
-                datpel.Pelanggar = new SIM(QRData);
-
-                CultureInfo provider = CultureInfo.InvariantCulture;
-                provider = new CultureInfo("id-ID");
+                datpel.Pelanggar = new SIM(f2.GetData);
 
                 txtTanggalLahir.Text = datpel.Pelanggar.Pemilik.TanggalLahir.ToString("dd MMMM yyyy", provider);
                 txtNamaPelanggar.Text = datpel.Pelanggar.Pemilik.Nama;
@@ -74,7 +72,7 @@ namespace QRCodeWinForms
             }
             catch
             {
-                MessageBox.Show("Qr Code tidak bisa dibaca");
+                MessageBox.Show("QR Code tidak bisa dibaca");
             }
         }
 
@@ -82,19 +80,10 @@ namespace QRCodeWinForms
         {
             try
             {
-                datpel.WaktuPelanggaran = Convert.ToDateTime(dtpWaktuLanggar.Text);
+                datpel.WaktuPelanggaran = dtpWaktuLanggar.Value;
                 datpel.NomorRegister = txtNoRegPenyidikan.Text;
                 datpel.Kesatuan = txtKesatuan.Text;
                 datpel.NomorTilang = txtNoRegTilang.Text;
-                datpel.Pelanggar.Pemilik.Nama = txtNamaPelanggar.Text;
-                datpel.Pelanggar.Pemilik.Alamat = txtAlamatPelanggar.Text;
-                //datpel.Pelanggar.Pemilik.Pekerjaan = txtPekerjaan.Text;
-                //datpel.Pelanggar.Pemilik.Pendidikan = txtPendidikan.Text;
-                datpel.Pelanggar.Pemilik.TempatLahir = txtTempatPelanggar.Text;
-                datpel.Pelanggar.Pemilik.TanggalLahir = Convert.ToDateTime(txtTanggalLahir.Text);
-                datpel.Pelanggar.Golongan = txtGolSIM.Text;
-                datpel.Pelanggar.Pemilik.Nomor = txtNoKTPPelanggar.Text;
-                datpel.Pelanggar.Nomor = txtNoSIM.Text;
                 datpel.Satpas = txtSATPAS.Text;
                 datpel.NomorKendaraan = txtNoKendaraan.Text;
                 datpel.SamsatKendaraan = txtSamsat.Text;
@@ -107,27 +96,25 @@ namespace QRCodeWinForms
                 datpel.WilayahHukum = txtWilayahHukum.Text;
                 datpel.DisitaSK = CekCheckBoxSK();
                 datpel.DisitaSKDiterbitkanOleh = txtTerbitSK.Text;
-                datpel.DisitaSKMasaBerlaku = Convert.ToDateTime(dtpBerlakuSK.Text);
+                datpel.DisitaSKMasaBerlaku = dtpBerlakuSK.Value;
                 datpel.DisitaBukuUji = CekCheckBoxBK();
                 datpel.DisitaBukuUjiDiterbitkanOleh = txtTerbitPemda.Text;
-                datpel.DisitaBukuUjiMasaBerlaku = Convert.ToDateTime(dtpBerlakuPemda.Text);
+                datpel.DisitaBukuUjiMasaBerlaku = dtpBerlakuPemda.Value;
                 datpel.LokasiSidang = txtPengadilan.Text;
-                datpel.WaktuSidang = Convert.ToDateTime(txtWaktuSidang.Text);
+                datpel.WaktuSidang = dtpWaktuSidang.Value;
                 datpel.NamaPenyidik = txtNamaPenyidik.Text;
                 datpel.PangkatPenyidik = txtPangkatPenyidik.Text;
                 datpel.TempatPengambilanBarangSita = txtTempatAmbil.Text;
-                datpel.PasalPelanggaran.Nomor = cbxPasal.Text;
-                datpel.PasalPelanggaran.DendaMaksimal = Convert.ToDouble(txtDendaMaksimal.Text);
+                datpel.PasalPelanggaran = (Pasal)cbxPasal.SelectedItem;
                 datpel.BankSetoranDendaMaksimal = txtBankSetor.Text;
                 datpel.AngkaPinaltiPelanggaran = Convert.ToInt16(txtAngkaPinalti.Text);
-                if (rbtHadirSendiri.Checked) {datpel.PernyataanHadirSendiri = true;}
-                else { datpel.PernyataanHadirSendiri = false; }
+                datpel.PernyataanHadirSendiri = rbtHadirSendiri.Checked;
                 datpel.NamaWakil = txtNamaWali.Text;
                 datpel.UmurWakil = txtUmurWali.Text;
                 datpel.AlamatWakil = txtAlamatWali.Text;
                 datpel.BankSisaDenda = txtBankSisaDenda.Text;
-
                 datpel.Save();
+
                 MessageBox.Show("Penyimpanan Data Pelanggaran Berhasil!");
 
                 btnTampil.Enabled = true;
