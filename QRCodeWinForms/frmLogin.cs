@@ -31,12 +31,13 @@ namespace QRCodeWinForms
             if (user == null) // User tidak ditemukan
             {
                 MessageBox.Show("Username atau password salah!", "Login gagal", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                txtUsername.Focus();
             }
             else
             {
                 // TODO : Set agar frmMain dalam status "Logged In".
                 // frmMain harus dikirimi instance "user" untuk status.
-                throw new NotImplementedException();
+                ((frmMain)this.MdiParent).LoggedInUser = user;
 
                 ClearText();
                 this.Close();
