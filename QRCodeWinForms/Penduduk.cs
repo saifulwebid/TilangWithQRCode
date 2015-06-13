@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Globalization;
 
 namespace QRCodeWinForms
 {
@@ -77,9 +76,17 @@ namespace QRCodeWinForms
         /*Method Convert untuk Decode dari Qr Code */
         public static DateTime ToTanggalLahir(string date)
         {
-            DateTime parseddate;
-            DateTime.TryParseExact(date, "ddMMyy", null, DateTimeStyles.None, out parseddate);
-            return parseddate;
+            DateTime result;
+            int tanggal = 0;
+            int bulan = 0;
+            int tahun = 0;
+
+            tanggal = ((date[0] - '0') * 10) + (date[1] - '0');
+            bulan = ((date[2] - '0') * 10) + (date[3] - '0');
+            tahun = 1900 + ((date[4] - '0') * 10) + (date[5] - '0');
+
+            result = new DateTime(tahun, bulan, tanggal);
+            return result;
         }
 
         public static EnumPekerjaan ToPekerjaan(int i)
