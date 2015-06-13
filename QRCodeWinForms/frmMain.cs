@@ -133,6 +133,9 @@ namespace QRCodeWinForms
 
         private void bukaDatabaseToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            /* TODO: Kode ini nantinya diganti supaya dia muncul window baru
+             * buat minta lokasi file databasenya di mana.
+             */
             string fileName = "data\\DataGabungan.xlsx";
             string folder = Assembly.GetEntryAssembly().Location;
             if (folder != null)
@@ -142,6 +145,9 @@ namespace QRCodeWinForms
 
                 DatabasePath = filePath;
             }
+
+            /* Setelah buka database, langsung login. */
+            loginToolStripMenuItem_Click(sender, e);
         }
 
         private void tutupDatabaseToolStripMenuItem_Click(object sender, EventArgs e)
