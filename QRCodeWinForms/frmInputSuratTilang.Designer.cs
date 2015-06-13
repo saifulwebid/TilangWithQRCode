@@ -372,7 +372,6 @@
             this.txtDendaMaksimal.Size = new System.Drawing.Size(122, 20);
             this.txtDendaMaksimal.TabIndex = 56;
             this.txtDendaMaksimal.TabStop = false;
-            this.txtDendaMaksimal.TextChanged += new System.EventHandler(this.txtDendaMaksimal_TextChanged);
             // 
             // txtAngkaPinalti
             // 
@@ -480,6 +479,7 @@
             // 
             this.dtpJamSidang.Location = new System.Drawing.Point(368, 58);
             this.dtpJamSidang.Name = "dtpJamSidang";
+            this.dtpJamSidang.ShowUpDown = true;
             this.dtpJamSidang.Size = new System.Drawing.Size(90, 20);
             this.dtpJamSidang.TabIndex = 40;
             this.dtpJamSidang.TabStop = false;
@@ -611,7 +611,6 @@
             this.groupBox10.Size = new System.Drawing.Size(305, 121);
             this.groupBox10.TabIndex = 96;
             this.groupBox10.TabStop = false;
-            this.groupBox10.Enter += new System.EventHandler(this.groupBox10_Enter);
             // 
             // ckbLainnya
             // 
@@ -981,7 +980,6 @@
             this.txtNoRegPenyidikan.Name = "txtNoRegPenyidikan";
             this.txtNoRegPenyidikan.Size = new System.Drawing.Size(100, 20);
             this.txtNoRegPenyidikan.TabIndex = 1;
-            this.txtNoRegPenyidikan.TextChanged += new System.EventHandler(this.txtNoRegPenyidikan_TextChanged);
             // 
             // label2
             // 
@@ -1310,6 +1308,7 @@
             // 
             this.dtpJamLanggar.Location = new System.Drawing.Point(351, 16);
             this.dtpJamLanggar.Name = "dtpJamLanggar";
+            this.dtpJamLanggar.ShowUpDown = true;
             this.dtpJamLanggar.Size = new System.Drawing.Size(139, 20);
             this.dtpJamLanggar.TabIndex = 107;
             this.dtpJamLanggar.TabStop = false;

@@ -8,14 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
-using System.Runtime.Versioning;
-using System.Diagnostics;
 
 namespace QRCodeWinForms
 {
     public partial class frmInputSuratTilang : Form
     {
-        string ResultString;
         Pelanggaran datpel = new Pelanggaran();
        
         public frmInputSuratTilang()
@@ -23,18 +20,11 @@ namespace QRCodeWinForms
             InitializeComponent();
         }
 
-        private void txtNoRegPenyidikan_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void InputSuratTilang_Load(object sender, EventArgs e)
         {
-            dtpJamSidang.ShowUpDown = true;
             dtpJamSidang.CustomFormat = "HH:mm";
             dtpJamSidang.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
 
-            dtpJamLanggar.ShowUpDown = true;
             dtpJamLanggar.CustomFormat = "HH:mm";
             dtpJamLanggar.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
 
@@ -150,6 +140,7 @@ namespace QRCodeWinForms
                 MessageBox.Show("Penyimpanan Data Pelanggaran Gagal! " + "\n" + ex.Message);
             } 
         }
+
         private int CekCheckBoxSK()
         {
             int status=0;
@@ -215,19 +206,7 @@ namespace QRCodeWinForms
             frmsurat.ckbLainnya.Checked = ckbLainnya.Checked;
             frmsurat.ckbBukuUji.Checked = cbkBukuUji.Checked;
 
-            frmsurat.ShowDialog(); 
-        }
-        private void groupBox10_Enter(object sender, EventArgs e)
-        {
-
-        }
-        private void txtDendaMaksimal_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void btnTampilST_Click_1(object sender, EventArgs e)
-        {
-
+            frmsurat.ShowDialog();
         }
 
         private void btnTampil_Click(object sender, EventArgs e)
