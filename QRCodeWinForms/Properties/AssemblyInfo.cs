@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("QRCodeWinForms")]
+[assembly: AssemblyTitle("Sistem Tilang Elektronik")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("QRCodeWinForms")]
+[assembly: AssemblyCompany("Kelompok 1 - Proyek 1, D4 Teknik Informatika POLBAN 2014")]
+[assembly: AssemblyProduct("Sistem Tilang Elektronik")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
