@@ -57,12 +57,12 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence Diagram\MenyimpanDataSuratTilang.sequencediagram</DependentUpon>
     </Content>
-    <Content Include="UseCase.usecasediagram">
+    <Content Include="Use Case Diagram\PrimaryUseCase.usecasediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UseCase.usecasediagram.layout">
+    <Content Include="Use Case Diagram\PrimaryUseCase.usecasediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UseCase.usecasediagram</DependentUpon>
+      <DependentUpon>Use Case Diagram\PrimaryUseCase.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ClassDiagram.classdiagram">
@@ -75,6 +75,7 @@
     <Content Include="ModelDefinition\ModelingProject.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Use Case Diagram" />
     <Folder Include="Sequence Diagram" />
   </ItemGroup>
 </Project>

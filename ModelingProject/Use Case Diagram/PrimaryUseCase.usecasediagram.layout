@@ -123,7 +123,7 @@
         <useCaseShapeMoniker Id="c4eaefe0-1b4b-41e3-bee6-78ecae9564e0" />
       </nodes>
     </useCaseDependencyConnector>
-    <useCaseAssociationConnector edgePoints="[(3.84558823529412 : 3.875); (3.65436101097574 : 2.24956859329375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(3.84558823529412 : 3.875); (3.65436101097574 : 2.24956859329375)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="18f094ae-7043-44f8-906c-4a56e5e844f1" />
       <relativeChildShapes />
       <nodes>
@@ -131,7 +131,7 @@
         <useCaseShapeMoniker Id="c4eaefe0-1b4b-41e3-bee6-78ecae9564e0" />
       </nodes>
     </useCaseAssociationConnector>
-    <useCaseAssociationConnector edgePoints="[(1.25 : 1.77380952380952); (3.13383071678876 : 1.9532219730275)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(1.25 : 1.77380952380952); (3.13383071678876 : 1.9532219730275)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="8bda2c10-acb2-4aab-b4d9-ded0e0369649" />
       <relativeChildShapes />
       <nodes>
@@ -139,7 +139,7 @@
         <useCaseShapeMoniker Id="c4eaefe0-1b4b-41e3-bee6-78ecae9564e0" />
       </nodes>
     </useCaseAssociationConnector>
-    <useCaseAssociationConnector edgePoints="[(6.875 : 2.11607142857143); (4.12372934991537 : 2.01781176249698)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(6.875 : 2.11607142857143); (4.12372934991537 : 2.01781176249698)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="c94c4657-78f3-4bcc-8641-b6f9d6c75ff0" />
       <relativeChildShapes />
       <nodes>
