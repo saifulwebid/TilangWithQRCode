@@ -15,7 +15,7 @@ namespace QRCodeWinForms
         /** Methods **/
         public static void SaveAccount(User acc)
         {
-            var existingFile = new FileInfo(FileName);
+            FileInfo existingFile = new FileInfo(FileName);
             using (var package = new ExcelPackage(existingFile))
             {
                 ExcelWorkbook workBook = package.Workbook;
@@ -52,7 +52,7 @@ namespace QRCodeWinForms
         {
             User acc = new User();
 
-            var existingFile = new FileInfo(FileName);
+            FileInfo existingFile = new FileInfo(FileName);
             using (var package = new ExcelPackage(existingFile))
             {
                 ExcelWorkbook workBook = package.Workbook;
@@ -100,7 +100,7 @@ namespace QRCodeWinForms
         {
             Penduduk pdd = new Penduduk();
 
-            var existingFile = new FileInfo(FileName);
+            FileInfo existingFile = new FileInfo(FileName);
             using (var package = new ExcelPackage(existingFile))
             {
                 ExcelWorkbook workBook = package.Workbook;
@@ -206,7 +206,7 @@ namespace QRCodeWinForms
         {
             List<Penduduk> listDataPenduduk = new List<Penduduk>();
 
-            var existingFile = new FileInfo(FileName);
+            FileInfo existingFile = new FileInfo(FileName);
             using (var package = new ExcelPackage(existingFile))
             {
                 ExcelWorkbook workBook = package.Workbook;
@@ -309,7 +309,7 @@ namespace QRCodeWinForms
 
         public static void SavePenduduk(Penduduk pdd)
         {
-            var existingFile = new FileInfo(FileName);
+            FileInfo existingFile = new FileInfo(FileName);
             using (var package = new ExcelPackage(existingFile))
             {
                 ExcelWorkbook workBook = package.Workbook;
@@ -353,7 +353,7 @@ namespace QRCodeWinForms
             List<SIM> listDataSIM = new List<SIM>();
             List<Penduduk> ListPenduduk = GetAllPenduduk();
 
-            var existingFile = new FileInfo(FileName);
+            FileInfo existingFile = new FileInfo(FileName);
             using (var package = new ExcelPackage(existingFile))
             {
                 ExcelWorkbook workBook = package.Workbook;
@@ -411,7 +411,7 @@ namespace QRCodeWinForms
 
         public static void SaveSIM(SIM dataSIM)
         {
-            var existingFile = new FileInfo(FileName);
+            FileInfo existingFile = new FileInfo(FileName);
             using (var package = new ExcelPackage(existingFile))
             {
                 ExcelWorkbook workBook = package.Workbook;
@@ -448,7 +448,7 @@ namespace QRCodeWinForms
         {
             List<Pasal> listDataPasal = new List<Pasal>();
 
-            var existingFile = new FileInfo(FileName);
+            FileInfo existingFile = new FileInfo(FileName);
             using (var package = new ExcelPackage(existingFile))
             {
                 ExcelWorkbook workBook = package.Workbook;
@@ -495,7 +495,7 @@ namespace QRCodeWinForms
 
         public static void SavePelanggaran(Pelanggaran dapel)
         {
-            var existingFile = new FileInfo(FileName);
+            FileInfo existingFile = new FileInfo(FileName);
             using (var package = new ExcelPackage(existingFile))
             {
                 ExcelWorkbook workBook = package.Workbook;
@@ -604,7 +604,7 @@ namespace QRCodeWinForms
         {
             List<Pelanggaran> listDataPelanggaran = new List<Pelanggaran>();
 
-            var existingFile = new FileInfo(FileName);
+            FileInfo existingFile = new FileInfo(FileName);
             using (var package = new ExcelPackage(existingFile))
             {
                 ExcelWorkbook workBook = package.Workbook;
