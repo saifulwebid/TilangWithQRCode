@@ -21,6 +21,12 @@ namespace QRCodeWinForms
             set
             {
                 loggedInUser = value;
+
+                /* Setiap ada perubahan pada User yang disimpan di properti ini,
+                 * pastikan seluruh menu yang ada di frmMain diperiksa ulang sesuai
+                 * dengan jenis User yang masuk ke dalam properti ini.
+                 */
+                InitializeMenuVisibility();
             }
         }
         public string DatabasePath
@@ -34,12 +40,48 @@ namespace QRCodeWinForms
                 /* Jika database di-close, maka User otomatis logout. */
                 if (value == null)
                     loggedInUser = null;
+
+                InitializeMenuVisibility();
             }
         }
         
         public frmMain()
         {
             InitializeComponent();
+            InitializeMenuVisibility();
+        }
+
+        private void InitializeMenuVisibility()
+        {
+            bool DatabaseLoaded = (databasePath != null);
+            bool LoggedIn = (loggedInUser != null);
+            bool SebagaiSamsat = LoggedIn && (loggedInUser.Jenis == EnumJenisUser.Samsat);
+            bool SebagaiPolantas = LoggedIn && (loggedInUser.Jenis == EnumJenisUser.Polantas);
+            bool SebagaiJaksa = LoggedIn && (loggedInUser.Jenis == EnumJenisUser.Jaksa);
+            
+            /** Menu Aplikasi **/
+            bukaDatabaseToolStripMenuItem.Enabled = !DatabaseLoaded;
+            tutupDatabaseToolStripMenuItem.Enabled = !bukaDatabaseToolStripMenuItem.Enabled;
+            loginToolStripMenuItem.Enabled = DatabaseLoaded && !LoggedIn;
+            logoutToolStripMenuItem.Enabled = DatabaseLoaded && !loginToolStripMenuItem.Enabled;
+            // manajemen user
+
+            /** Menu SIM **/
+            buatSIMToolStripMenuItem.Enabled = SebagaiSamsat;
+
+            /** Menu Surat Tilang **/
+            buatSuratTilangToolStripMenuItem.Enabled = SebagaiPolantas;
+
+            /** Menu Rekapitulasi **/
+            statistikPerOrangToolStripMenuItem.Enabled = SebagaiJaksa;
+            statistikUmumToolStripMenuItem.Enabled = SebagaiPolantas;
+
+            /** Top-Level Menu **/
+            sIMToolStripMenuItem.Enabled = buatSIMToolStripMenuItem.Enabled;
+            suratTilangToolStripMenuItem.Enabled = buatSuratTilangToolStripMenuItem.Enabled;
+            rekapitulasiToolStripMenuItem.Enabled = 
+                statistikPerOrangToolStripMenuItem.Enabled ||
+                statistikUmumToolStripMenuItem.Enabled;
         }
 
         private void keluarToolStripMenuItem_Click(object sender, EventArgs e)
