@@ -103,103 +103,16 @@ namespace QRCodeWinForms
 
         public static Penduduk CheckPenduduk(string ktp)
         {
-            Penduduk pdd = new Penduduk();
+            List<Penduduk> list = GetAllPenduduk();
 
-            FileInfo existingFile = new FileInfo(FileName);
-            using (var package = new ExcelPackage(existingFile))
+            foreach (Penduduk x in list)
             {
-                ExcelWorkbook workBook = package.Workbook;
-
-                if (workBook != null)
+                if (x.Nomor.Equals(ktp))
                 {
-                    if (workBook.Worksheets.Count > 0)
-                    {
-                        ExcelWorksheet currentWorksheet = workBook.Worksheets[1];
-
-                        bool valid = true;
-                        for (int i = 1; i <= 8; i++)
-                        {
-                            valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
-                        }
-
-                        if (valid)
-                        {
-                            for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
-                            {
-                                object col1Value = currentWorksheet.Cells[rowNumber, 1].Value;
-                                object col2Value = currentWorksheet.Cells[rowNumber, 2].Value;
-                                object col3Value = currentWorksheet.Cells[rowNumber, 3].Value;
-                                object col4Value = currentWorksheet.Cells[rowNumber, 4].Value;
-                                object col5Value = currentWorksheet.Cells[rowNumber, 5].Value;
-                                object col6Value = currentWorksheet.Cells[rowNumber, 6].Value;
-                                object col7Value = currentWorksheet.Cells[rowNumber, 7].Value;
-                                object col8Value = currentWorksheet.Cells[rowNumber, 8].Value;
-
-                                if ((col1Value != null) && (col2Value != null) && (col3Value != null) && (col4Value != null)
-                                     && (col5Value != null) && (col6Value != null) && (col7Value != null) && (col8Value != null))
-                                {
-                                    if (col1Value.Equals(ktp))
-                                    {
-                                        pdd.Nomor = col1Value.ToString();
-                                        pdd.Nama = col2Value.ToString();
-                                        pdd.TempatLahir = col3Value.ToString();
-                                        pdd.TanggalLahir = Convert.ToDateTime(col4Value);
-                                        pdd.Alamat = col5Value.ToString();
-
-                                        switch (col6Value.ToString())
-                                        {
-                                            case "Lainnya":
-                                                pdd.Pekerjaan = EnumPekerjaan.Lainnya;
-                                                break;
-                                            case "Mahasiswa":
-                                                pdd.Pekerjaan = EnumPekerjaan.Mahasiswa;
-                                                break;
-                                            case "Pelajar":
-                                                pdd.Pekerjaan = EnumPekerjaan.Pelajar;
-                                                break;
-                                            case "PNS":
-                                                pdd.Pekerjaan = EnumPekerjaan.PNS;
-                                                break;
-                                            case "POLRI":
-                                                pdd.Pekerjaan = EnumPekerjaan.POLRI;
-                                                break;
-                                            case "Swasta":
-                                                pdd.Pekerjaan = EnumPekerjaan.Swasta;
-                                                break;
-                                            case "TNI":
-                                                pdd.Pekerjaan = EnumPekerjaan.TNI;
-                                                break;
-                                        }
-
-                                        switch (col7Value.ToString())
-                                        {
-                                            case "PT":
-                                                pdd.Pendidikan = EnumPendidikan.PT;
-                                                break;
-                                            case "SD":
-                                                pdd.Pendidikan = EnumPendidikan.SD;
-                                                break;
-                                            case "SMA":
-                                                pdd.Pendidikan = EnumPendidikan.SMA;
-                                                break;
-                                            case "SMP":
-                                                pdd.Pendidikan = EnumPendidikan.SMP;
-                                                break;
-                                        }
-
-                                        if (col8Value.ToString() == "Pria")
-                                            pdd.JenisKelamin = EnumJenisKelamin.Pria;
-                                        else if (col8Value.ToString() == "Wanita")
-                                            pdd.JenisKelamin = EnumJenisKelamin.Wanita;
-
-                                        return pdd;
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    return x;
                 }
             }
+
             return null;
         }
 
