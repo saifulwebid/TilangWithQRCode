@@ -57,25 +57,31 @@ namespace QRCodeWinForms
             frmScanSIM f2 = new frmScanSIM();
             f2.ShowDialog();
             QRData = f2.GetData;
+            try
+            {
+                datpel.Pelanggar = new SIM(QRData);
 
-            datpel.Pelanggar = new SIM(QRData);
+                CultureInfo provider = CultureInfo.InvariantCulture;
+                provider = new CultureInfo("id-ID");
 
-            CultureInfo provider = CultureInfo.InvariantCulture;
-            provider = new CultureInfo("id-ID");
+                txtTanggalLahir.Text = datpel.Pelanggar.Pemilik.TanggalLahir.ToString("dd MMMM yyyy", provider);
+                txtNamaPelanggar.Text = datpel.Pelanggar.Pemilik.Nama;
+                txtAlamatPelanggar.Text = datpel.Pelanggar.Pemilik.Alamat;
+                txtNoKTPPelanggar.Text = datpel.Pelanggar.Pemilik.Nomor;
+                txtPekerjaan.Text = datpel.Pelanggar.Pemilik.Pekerjaan.ToString();
+                txtPendidikan.Text = datpel.Pelanggar.Pemilik.Pendidikan.ToString();
+                txtNoSIM.Text = datpel.Pelanggar.Nomor;
+                txtTempatPelanggar.Text = datpel.Pelanggar.Pemilik.TempatLahir;
+                txtGolSIM.Text = datpel.Pelanggar.Golongan;
+                txtUmurPelanggar.Text = Convert.ToString(ConvertUmur(datpel.Pelanggar.Pemilik.TanggalLahir));
 
-            txtTanggalLahir.Text = datpel.Pelanggar.Pemilik.TanggalLahir.ToString("dd MMMM yyyy", provider);
-            txtNamaPelanggar.Text = datpel.Pelanggar.Pemilik.Nama;
-            txtAlamatPelanggar.Text = datpel.Pelanggar.Pemilik.Alamat;
-            txtNoKTPPelanggar.Text = datpel.Pelanggar.Pemilik.Nomor;
-            txtPekerjaan.Text = datpel.Pelanggar.Pemilik.Pekerjaan.ToString();
-            txtPendidikan.Text = datpel.Pelanggar.Pemilik.Pendidikan.ToString();
-            txtNoSIM.Text = datpel.Pelanggar.Nomor;
-            txtTempatPelanggar.Text = datpel.Pelanggar.Pemilik.TempatLahir;
-            txtGolSIM.Text = datpel.Pelanggar.Golongan;
-            txtUmurPelanggar.Text = Convert.ToString(ConvertUmur(datpel.Pelanggar.Pemilik.TanggalLahir));
-
-            rbtLK.Checked = (datpel.Pelanggar.Pemilik.JenisKelamin == EnumJenisKelamin.Pria);
-            rbtPR.Checked = (datpel.Pelanggar.Pemilik.JenisKelamin == EnumJenisKelamin.Wanita);
+                rbtLK.Checked = (datpel.Pelanggar.Pemilik.JenisKelamin == EnumJenisKelamin.Pria);
+                rbtPR.Checked = (datpel.Pelanggar.Pemilik.JenisKelamin == EnumJenisKelamin.Wanita);
+            }
+            catch
+            {
+                MessageBox.Show("Qr Code tidak bisa dibaca");
+            }
         }
 
         private void btnSimpanData_Click(object sender, EventArgs e)
