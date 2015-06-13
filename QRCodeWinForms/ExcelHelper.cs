@@ -211,7 +211,6 @@ namespace QRCodeWinForms
                 }
                 return listDataPenduduk;
             }
-            return null;
         }
 
         public static void SavePenduduk(Penduduk pdd)
@@ -308,7 +307,6 @@ namespace QRCodeWinForms
                 }
                 return listDataSIM;
             }
-            return null;
         }
 
         public static void SaveSIM(SIM dataSIM)
@@ -394,7 +392,6 @@ namespace QRCodeWinForms
                 }
                 return listDataPasal;
             }
-            return null;
         }
 
         public static void SavePelanggaran(Pelanggaran dapel)
@@ -552,7 +549,6 @@ namespace QRCodeWinForms
                 }
                 return listDataPelanggaran;
             }
-            return null;
         }
     }
 }
