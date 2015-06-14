@@ -239,9 +239,9 @@ namespace QRCodeWinForms
                             currentWorksheet.Cells[rowNumber, 3].Value = pdd.TempatLahir;
                             currentWorksheet.Cells[rowNumber, 4].Value = pdd.TanggalLahir;
                             currentWorksheet.Cells[rowNumber, 5].Value = pdd.Alamat;
-                            currentWorksheet.Cells[rowNumber, 6].Value = pdd.Pekerjaan;
-                            currentWorksheet.Cells[rowNumber, 7].Value = pdd.Pendidikan;
-                            currentWorksheet.Cells[rowNumber, 8].Value = pdd.JenisKelamin;
+                            currentWorksheet.Cells[rowNumber, 6].Value = pdd.Pekerjaan.ToString();
+                            currentWorksheet.Cells[rowNumber, 7].Value = pdd.Pendidikan.ToString();
+                            currentWorksheet.Cells[rowNumber, 8].Value = pdd.JenisKelamin.ToString();
                         }
                     }
                 }
@@ -437,21 +437,18 @@ namespace QRCodeWinForms
                             currentWorksheet.Cells[rowNumber, 20].Value = dapel.DisitaBukuUjiDiterbitkanOleh;
                             currentWorksheet.Cells[rowNumber, 21].Value = dapel.DisitaBukuUjiMasaBerlaku;
                             currentWorksheet.Cells[rowNumber, 22].Value = dapel.LokasiSidang;
-                            currentWorksheet.Cells[rowNumber, 23].Value = dapel.WaktuSidang.Day;
-                            currentWorksheet.Cells[rowNumber, 24].Value = dapel.WaktuSidang.Date;
-                            currentWorksheet.Cells[rowNumber, 25].Value = dapel.WaktuSidang.Hour;
-                            currentWorksheet.Cells[rowNumber, 26].Value = dapel.NamaPenyidik;
-                            currentWorksheet.Cells[rowNumber, 27].Value = dapel.PangkatPenyidik;
-                            currentWorksheet.Cells[rowNumber, 28].Value = dapel.TempatPengambilanBarangSita;
-                            currentWorksheet.Cells[rowNumber, 29].Value = dapel.PasalPelanggaran.Nomor;
-                            currentWorksheet.Cells[rowNumber, 30].Value = dapel.PasalPelanggaran.DendaMaksimal;
-                            currentWorksheet.Cells[rowNumber, 31].Value = dapel.BankSetoranDendaMaksimal;
-                            currentWorksheet.Cells[rowNumber, 32].Value = dapel.AngkaPinaltiPelanggaran;
-                            currentWorksheet.Cells[rowNumber, 33].Value = dapel.PernyataanHadirSendiri;
-                            currentWorksheet.Cells[rowNumber, 34].Value = dapel.NamaWakil;
-                            currentWorksheet.Cells[rowNumber, 35].Value = dapel.UmurWakil;
-                            currentWorksheet.Cells[rowNumber, 36].Value = dapel.AlamatWakil;
-                            currentWorksheet.Cells[rowNumber, 37].Value = dapel.BankSisaDenda;
+                            currentWorksheet.Cells[rowNumber, 23].Value = dapel.WaktuSidang;
+                            currentWorksheet.Cells[rowNumber, 24].Value = dapel.NamaPenyidik;
+                            currentWorksheet.Cells[rowNumber, 25].Value = dapel.PangkatPenyidik;
+                            currentWorksheet.Cells[rowNumber, 26].Value = dapel.TempatPengambilanBarangSita;
+                            currentWorksheet.Cells[rowNumber, 27].Value = dapel.PasalPelanggaran.Nomor;
+                            currentWorksheet.Cells[rowNumber, 28].Value = dapel.BankSetoranDendaMaksimal;
+                            currentWorksheet.Cells[rowNumber, 29].Value = dapel.AngkaPinaltiPelanggaran;
+                            currentWorksheet.Cells[rowNumber, 30].Value = dapel.PernyataanHadirSendiri;
+                            currentWorksheet.Cells[rowNumber, 31].Value = dapel.NamaWakil;
+                            currentWorksheet.Cells[rowNumber, 32].Value = dapel.UmurWakil;
+                            currentWorksheet.Cells[rowNumber, 33].Value = dapel.AlamatWakil;
+                            currentWorksheet.Cells[rowNumber, 34].Value = dapel.BankSisaDenda;
                         }
                     }
                 }
@@ -462,6 +459,8 @@ namespace QRCodeWinForms
         public static List<Pelanggaran> GetAllPelanggaran()
         {
             List<Pelanggaran> listDataPelanggaran = new List<Pelanggaran>();
+            List<SIM> listSIM = GetAllSIM();
+            List<Pasal> listPasal = GetAllPasal();
 
             FileInfo existingFile = new FileInfo(FileName);
             using (var package = new ExcelPackage(existingFile))
@@ -498,7 +497,16 @@ namespace QRCodeWinForms
                                     pelanggaran.NomorRegister = colValue[2].ToString();
                                     pelanggaran.Kesatuan = colValue[3].ToString();
                                     pelanggaran.NomorTilang = colValue[4].ToString();
-                                    // 5...
+
+                                    foreach (SIM x in listSIM)
+                                    {
+                                        if (x.Nomor.Equals(colValue[5].ToString()))
+                                        {
+                                            pelanggaran.Pelanggar = x;
+                                            break;
+                                        }
+                                    }
+
                                     pelanggaran.Satpas = colValue[6].ToString();
                                     pelanggaran.NomorKendaraan = colValue[7].ToString();
                                     pelanggaran.SamsatKendaraan = colValue[8].ToString();
@@ -515,31 +523,28 @@ namespace QRCodeWinForms
                                     pelanggaran.DisitaBukuUji = Convert.ToInt16(colValue[19]);
                                     pelanggaran.DisitaBukuUjiDiterbitkanOleh = colValue[20].ToString();
                                     pelanggaran.DisitaBukuUjiMasaBerlaku = DateTime.FromOADate((double)colValue[21]);
-                                    pelanggaran.TempatSidang = colValue[22].ToString();
-                                    //WaktuSidang 23
-                                    //24
-                                    //25
-                                    pelanggaran.NamaPenyidik = colValue[26].ToString();
-                                    pelanggaran.PangkatPenyidik = colValue[27].ToString();
-                                    pelanggaran.TempatPengambilanBarangSita = colValue[28].ToString();
-                                    //PernyataanHadirSendiri = Convert.ToBoolean(colValue[31]),
-                                    //32
-                                    //33
-                                    pelanggaran.NamaWakil = colValue[34].ToString();
-                                    pelanggaran.UmurWakil = colValue[35].ToString();
-                                    pelanggaran.AlamatWakil = colValue[36].ToString();
-                                    pelanggaran.BankSisaDenda = colValue[37].ToString();
-                                    
-                                    // TODO : FIX THIS
-                                    SIM pelanggar = new SIM();
-                                    pelanggar.Nomor = colValue[5].ToString();
-                                    pelanggaran.Pelanggar = pelanggar;
+                                    pelanggaran.LokasiSidang = colValue[22].ToString();
+                                    pelanggaran.WaktuSidang = DateTime.FromOADate((double)colValue[23]);
+                                    pelanggaran.NamaPenyidik = colValue[24].ToString();
+                                    pelanggaran.PangkatPenyidik = colValue[25].ToString();
+                                    pelanggaran.TempatPengambilanBarangSita = colValue[26].ToString();
 
-                                    Pasal pasal = new Pasal();
-                                    pasal.Nomor = colValue[29].ToString();
-                                    //pasal.DendaMaksimal = Convert.ToDouble(colValue[30]);
-                                    // pasal.IsNew = false; -- tidak ada properti isNew di Pasal
-                                    pelanggaran.PasalPelanggaran = pasal;
+                                    foreach (Pasal x in listPasal)
+                                    {
+                                        if (x.Nomor.Equals(colValue[27].ToString()))
+                                        {
+                                            pelanggaran.PasalPelanggaran = x;
+                                            break;
+                                        }
+                                    }
+
+                                    pelanggaran.BankSetoranDendaMaksimal = colValue[28].ToString();
+                                    pelanggaran.AngkaPinaltiPelanggaran = Convert.ToInt16(colValue[29]);
+                                    pelanggaran.PernyataanHadirSendiri = Convert.ToBoolean(colValue[30]);
+                                    pelanggaran.NamaWakil = colValue[31].ToString();
+                                    pelanggaran.UmurWakil = colValue[32].ToString();
+                                    pelanggaran.AlamatWakil = colValue[33].ToString();
+                                    pelanggaran.BankSisaDenda = colValue[34].ToString();
 
                                     listDataPelanggaran.Add(pelanggaran);
                                 }

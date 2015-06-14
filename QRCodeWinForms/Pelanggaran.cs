@@ -38,7 +38,6 @@ namespace QRCodeWinForms
         public string SamsatKendaraan { get; set; }
         public string Satpas { get; set; }
         public string TempatPengambilanBarangSita { get; set; }
-        public string TempatSidang { get; set; }
         public string UmurWakil { get; set; }
         public DateTime WaktuPelanggaran { get; set; }
         public DateTime WaktuSidang { get; set; }
