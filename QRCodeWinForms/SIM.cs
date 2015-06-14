@@ -70,9 +70,21 @@ namespace QRCodeWinForms
             };
             return String.Join("#", result);
         }
-        public static List<Pelanggaran> GetAllPelanggaran()
+
+        public List<Pelanggaran> GetAllPelanggaran()
         {
-            return ExcelHelper.GetAllPelanggaran();
+            List<Pelanggaran> all = ExcelHelper.GetAllPelanggaran();
+            List<Pelanggaran> filtered = new List<Pelanggaran>();
+
+            foreach (Pelanggaran x in all)
+            {
+                if (x.Pelanggar.Nomor.Equals(this.Nomor))
+                {
+                    filtered.Add(x);
+                }
+            }
+
+            return filtered;
         }
 
         public static List<SIM> GetAll()
