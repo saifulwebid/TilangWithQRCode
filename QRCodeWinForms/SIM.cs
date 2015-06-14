@@ -72,7 +72,7 @@ namespace QRCodeWinForms
             return String.Join("#", result);
         }
 
-        public List<Pelanggaran> GetAllPelanggaran()
+        /*public List<Pelanggaran> GetAllPelanggaran()
         {
             List<Pelanggaran> all = ExcelHelper.GetAllPelanggaran();
             List<Pelanggaran> filtered = new List<Pelanggaran>();
@@ -86,7 +86,7 @@ namespace QRCodeWinForms
             }
 
             return filtered;
-        }
+        }*/
 
         public static List<SIM> GetAll()
         {

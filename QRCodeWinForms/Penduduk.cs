@@ -33,11 +33,13 @@ namespace QRCodeWinForms
         }
 
         /** Methods **/
+        /*
         public List<SIM> GetAllSIM()
         {
             // TODO : Fix this
             return ExcelHelper.GetAllSIM();
         }
+         */
         public static Penduduk IsPresent(string noKTP)
         {
             return ExcelHelper.CheckPenduduk(noKTP);
