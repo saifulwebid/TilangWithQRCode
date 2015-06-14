@@ -371,42 +371,6 @@
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="b22ae4a8-c011-498e-a4c4-5616aa1172fd"
-            name="GetAllSIM"
-            isLeaf="false"
-            isStatic="true"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="65274595-4461-41b6-843a-37f63e75e0e3"
-                  direction="Return"
-                  isUnique="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="61595e47-d463-4a43-908a-60f091c2c861"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="a9416f94-1ec4-4d87-811d-3fddc211de70"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="b6498c74-af71-4803-8aba-ae5af27f462c"
-                      LastKnownName="SIM"
-                      LastKnownLocation="ModelingProject.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
             Id="6eb61fa2-2175-4668-bd35-afcb206ff580"
             name="Save"
             isLeaf="false"
@@ -1689,50 +1653,6 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation
-            Id="3e929aae-83e4-40b3-8c68-425163e07f81"
-            name="GetAllPelanggaran"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="cd46499b-65d6-4dbd-8933-2d661ee7479e"
-                  direction="Return"
-                  isUnique="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="5eff4cfa-cd1b-4dec-9e3e-99f8cd64b595"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="67bf52c5-4683-4f34-885c-9a36a09b6330"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="3115616d-1ddd-41d7-849e-82c477b0ccfe"
-                      LastKnownName="Pelanggaran"
-                      LastKnownLocation="ModelingProject.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="33a26694-1389-4f52-8eb8-5d9c7a69ed9e"
-            name="GetStatistic"
-            isLeaf="false"
-            isStatic="true"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
           <operation
             Id="e31f910b-e5b9-4652-9284-c1cbc011b353"
             name="GetAll"

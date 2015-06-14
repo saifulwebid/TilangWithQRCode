@@ -197,29 +197,6 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="fefa8263-3940-4642-93b0-dfd7b2576ac3" name="GetAllSIM" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="b22ae4a8-c011-498e-a4c4-5616aa1172fd" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="f2c7d3ed-009f-4ab5-8e0d-c5b6fa065fa6" direction="Return" isUnique="false">
-                  <lowerValueInternal>
-                    <literalString Id="5525acd5-2219-44ef-a31f-9069c9ad51c2" name="Lower" value="1">
-                      <elementDefinition Id="61595e47-d463-4a43-908a-60f091c2c861" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="c1c03b3d-5312-4705-85fd-875df45cdada" name="Upper" value="*">
-                      <elementDefinition Id="a9416f94-1ec4-4d87-811d-3fddc211de70" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="65274595-4461-41b6-843a-37f63e75e0e3" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="70d30e93-c195-4dc0-b28a-5aca5685896b" LastKnownName="SIM" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
           <operation Id="ab1f2087-d584-4377-9775-e8ce7bec2374" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="6eb61fa2-2175-4668-bd35-afcb206ff580" />
           </operation>
@@ -291,11 +268,6 @@
     <packageHasNamedElement>
       <referencedType Id="d2b4bb37-aaf3-438c-9e85-e955667253cb" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
         <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="70d30e93-c195-4dc0-b28a-5aca5685896b" name="SIM" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::SIM">
-        <elementDefinition Id="b6498c74-af71-4803-8aba-ae5af27f462c" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
