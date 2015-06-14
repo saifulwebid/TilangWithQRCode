@@ -118,6 +118,7 @@
             this.manajemenUserToolStripMenuItem.Name = "manajemenUserToolStripMenuItem";
             this.manajemenUserToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.manajemenUserToolStripMenuItem.Text = "&Manajemen User...";
+            this.manajemenUserToolStripMenuItem.Visible = false;
             this.manajemenUserToolStripMenuItem.Click += new System.EventHandler(this.manajemenUserToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
