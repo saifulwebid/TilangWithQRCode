@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="2a0be9b1-761f-4899-bf92-fa6dac8413a1" name="StatistikPerOrang" linkedPackageId="9952f10b-be69-4a1f-9023-a00be1ed9613" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="da914da4-df30-4a9b-b1af-186eef1ef868">
+      <profileInstance Id="5972915c-9799-455e-a081-7cdd864b47f8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a2d786b4-4290-4fc5-894a-8c0ac131233a">
+      <profileInstance Id="68e1bcd1-434d-4378-9bea-4e4dc78ff842" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="fed7eb29-164c-40a8-9670-dd2d1b82a0ad" name="StatistikPerOrang" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="12962109-bc07-4e1f-b328-f4ba657ddd20" />
+        <fragments>
+          <behaviorExecutionSpecification Id="ecbce02f-d954-4637-a4eb-c278ea80cd63" name="BehaviorExecutionSpecification1">
+            <elementDefinition Id="440972e4-100a-410d-b36c-3d70367ca399" />
+            <coveredLifelines>
+              <lifelineMoniker Id="3d61204b-4d6e-4e8d-a432-1381c37af6b1" LastKnownName="  : frmBanyakPelanggaran" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="a6413338-8807-4f98-80b5-fdc5faefd056" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="0f0ba132-1feb-4104-a1c1-47449fcc00fa" LastKnownName="ExecutionOccurrenceSpecification1" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="75df452d-df4f-4315-b97c-afc98c7ea522" LastKnownName="MessageOccurrenceSpecification2" />
+              <messageOccurrenceSpecificationMoniker Id="7353973b-188b-42b4-a8b6-c4acaae9611b" LastKnownName="MessageOccurrenceSpecification3" />
+              <messageOccurrenceSpecificationMoniker Id="ce51f9e9-3ee2-4e3d-8104-e2ff8b852743" LastKnownName="MessageOccurrenceSpecification6" />
+              <messageOccurrenceSpecificationMoniker Id="6457df8c-9ec2-4265-9bc3-8e7cd6193a8a" LastKnownName="MessageOccurrenceSpecification11" />
+              <messageOccurrenceSpecificationMoniker Id="19f5f991-638c-4dcf-be80-a8b181dcf2ce" LastKnownName="MessageOccurrenceSpecification14" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="0f0ba132-1feb-4104-a1c1-47449fcc00fa" name="ExecutionOccurrenceSpecification1">
+            <elementDefinition Id="b177ee9a-3fd2-4edc-916b-d711fef88472" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="eadd1772-057e-48fa-9437-548508495ed6" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3d61204b-4d6e-4e8d-a432-1381c37af6b1" LastKnownName="  : frmBanyakPelanggaran" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="76964935-9860-41e5-9b8d-7f6df06d58f9" name="MessageOccurrenceSpecification1">
+            <elementDefinition Id="20d5d601-34e4-40b8-ac55-712be44cb36f" />
+            <covered>
+              <lifelineMoniker Id="7eb01be7-32c2-4fdb-ad17-dba1a02b8539" LastKnownName="Polisi Lalu Lintas" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="75df452d-df4f-4315-b97c-afc98c7ea522" name="MessageOccurrenceSpecification2">
+            <elementDefinition Id="38e21cc7-427e-4db2-8184-f57c17768a65" />
+            <covered>
+              <lifelineMoniker Id="3d61204b-4d6e-4e8d-a432-1381c37af6b1" LastKnownName="  : frmBanyakPelanggaran" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="9ef297c1-b795-4dad-a4f7-7e125d11bdd9" name="BehaviorExecutionSpecification2">
+            <elementDefinition Id="caa154b2-df6f-48c7-9de1-5beac88fadbc" />
+            <coveredLifelines>
+              <lifelineMoniker Id="7dae4598-c4e5-43bf-8121-14fd330f9b10" LastKnownName="  : SIM" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="420efd83-e717-4aa6-9739-45c5c051ed2c" LastKnownName="ExecutionOccurrenceSpecification4" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="3bb8939a-be1a-4ada-835f-959327fc4c70" LastKnownName="ExecutionOccurrenceSpecification3" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="03f094c0-b872-448b-abc5-180f12cac7c3" LastKnownName="MessageOccurrenceSpecification4" />
+              <messageOccurrenceSpecificationMoniker Id="91d8f59a-ab70-40a2-a000-c5ad11aad30c" LastKnownName="MessageOccurrenceSpecification7" />
+              <messageOccurrenceSpecificationMoniker Id="b4ac22f9-4924-4206-ae8e-514ab16b402b" LastKnownName="MessageOccurrenceSpecification10" />
+              <messageOccurrenceSpecificationMoniker Id="84188982-4d1b-48f3-9638-a5c2ebea2ec4" LastKnownName="MessageOccurrenceSpecification5" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="3bb8939a-be1a-4ada-835f-959327fc4c70" name="ExecutionOccurrenceSpecification3">
+            <elementDefinition Id="9a9efdae-6b08-4de4-997b-9cb3b81abc9b" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="aa3148a0-b203-4cad-ad20-b03f1047a424" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="7dae4598-c4e5-43bf-8121-14fd330f9b10" LastKnownName="  : SIM" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7353973b-188b-42b4-a8b6-c4acaae9611b" name="MessageOccurrenceSpecification3">
+            <elementDefinition Id="f39c6961-2b6a-4049-b650-d2d97a28a550" />
+            <covered>
+              <lifelineMoniker Id="3d61204b-4d6e-4e8d-a432-1381c37af6b1" LastKnownName="  : frmBanyakPelanggaran" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="03f094c0-b872-448b-abc5-180f12cac7c3" name="MessageOccurrenceSpecification4">
+            <elementDefinition Id="bfcee87a-8fb3-49d9-be5f-5c2c95f68607" />
+            <covered>
+              <lifelineMoniker Id="7dae4598-c4e5-43bf-8121-14fd330f9b10" LastKnownName="  : SIM" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="5666b2c9-e12c-4001-9507-b0f2a4972a56" name="BehaviorExecutionSpecification3">
+            <elementDefinition Id="fe473d4c-07dc-4b78-acc4-c4a18618a95a" />
+            <coveredLifelines>
+              <lifelineMoniker Id="7ce1ff31-e7aa-4962-acb0-d5e5b74ba4be" LastKnownName="  : ExcelHelper" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="4dbda62a-2155-440d-b705-fa999df4a0ec" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="497e615e-1129-466d-aef8-81da0a6696d9" LastKnownName="ExecutionOccurrenceSpecification5" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="03e91920-5c48-4edf-8fda-dddc6422ba56" LastKnownName="MessageOccurrenceSpecification8" />
+              <messageOccurrenceSpecificationMoniker Id="4fd699ac-0c75-4ff1-8654-fdfbb053ef27" LastKnownName="MessageOccurrenceSpecification9" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="497e615e-1129-466d-aef8-81da0a6696d9" name="ExecutionOccurrenceSpecification5">
+            <elementDefinition Id="4096d7e8-ca34-4d84-a075-02df9ea164c4" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="6465992e-f9ac-4947-96e8-24c22cc94d04" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="7ce1ff31-e7aa-4962-acb0-d5e5b74ba4be" LastKnownName="  : ExcelHelper" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="03e91920-5c48-4edf-8fda-dddc6422ba56" name="MessageOccurrenceSpecification8">
+            <elementDefinition Id="684c6b9e-55cf-4cd5-8348-fa5ea60454d8" />
+            <covered>
+              <lifelineMoniker Id="7ce1ff31-e7aa-4962-acb0-d5e5b74ba4be" LastKnownName="  : ExcelHelper" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="91d8f59a-ab70-40a2-a000-c5ad11aad30c" name="MessageOccurrenceSpecification7">
+            <elementDefinition Id="66587d7c-0f19-46c4-bde1-02513b6a717e" />
+            <covered>
+              <lifelineMoniker Id="7dae4598-c4e5-43bf-8121-14fd330f9b10" LastKnownName="  : SIM" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="4fd699ac-0c75-4ff1-8654-fdfbb053ef27" name="MessageOccurrenceSpecification9">
+            <elementDefinition Id="14a3eb3d-f3eb-401b-be1b-ffd49ea7dfab" />
+            <covered>
+              <lifelineMoniker Id="7ce1ff31-e7aa-4962-acb0-d5e5b74ba4be" LastKnownName="  : ExcelHelper" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b4ac22f9-4924-4206-ae8e-514ab16b402b" name="MessageOccurrenceSpecification10">
+            <elementDefinition Id="baf49e91-b4c7-4669-b32c-d671eac8c17f" />
+            <covered>
+              <lifelineMoniker Id="7dae4598-c4e5-43bf-8121-14fd330f9b10" LastKnownName="  : SIM" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="4dbda62a-2155-440d-b705-fa999df4a0ec" name="ExecutionOccurrenceSpecification6">
+            <elementDefinition Id="26ee7e47-20e4-46ce-bfe1-8ee5818d3235" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="6f2c8901-0593-474b-9173-9e50650f1099" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="7ce1ff31-e7aa-4962-acb0-d5e5b74ba4be" LastKnownName="  : ExcelHelper" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="ce51f9e9-3ee2-4e3d-8104-e2ff8b852743" name="MessageOccurrenceSpecification6">
+            <elementDefinition Id="ca4cd91e-98b8-4f58-aab8-c4ebab9b0347" />
+            <covered>
+              <lifelineMoniker Id="3d61204b-4d6e-4e8d-a432-1381c37af6b1" LastKnownName="  : frmBanyakPelanggaran" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="84188982-4d1b-48f3-9638-a5c2ebea2ec4" name="MessageOccurrenceSpecification5">
+            <elementDefinition Id="30684877-4254-427f-b002-a353e4d2319f" />
+            <covered>
+              <lifelineMoniker Id="7dae4598-c4e5-43bf-8121-14fd330f9b10" LastKnownName="  : SIM" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="420efd83-e717-4aa6-9739-45c5c051ed2c" name="ExecutionOccurrenceSpecification4">
+            <elementDefinition Id="da3e35a0-89f0-4bed-bfe4-bdd0acccee8d" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3e09e04c-c22a-41fe-ad9c-31836b5adc5f" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="7dae4598-c4e5-43bf-8121-14fd330f9b10" LastKnownName="  : SIM" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="4b150a24-b788-4118-b872-213980a86b4a" name="BehaviorExecutionSpecification4">
+            <elementDefinition Id="d3bdad81-be10-406d-bbb6-62ed2dbabd63" />
+            <coveredLifelines>
+              <lifelineMoniker Id="a443cc84-4434-4884-9136-f120cc250aa4" LastKnownName="  : Pelanggaran" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="ff9526fa-f40f-4b92-9d34-6ddc4bfd7134" LastKnownName="ExecutionOccurrenceSpecification8" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="60d078c8-c798-4d03-9240-8e22dc9ab285" LastKnownName="ExecutionOccurrenceSpecification7" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="44fc11ea-297a-4db0-addb-36ad4260131f" LastKnownName="MessageOccurrenceSpecification12" />
+              <messageOccurrenceSpecificationMoniker Id="3d48927d-b840-4441-a42d-e148c16b0a0c" LastKnownName="MessageOccurrenceSpecification15" />
+              <messageOccurrenceSpecificationMoniker Id="aba1b4d2-1bda-4544-9b0e-abed5076110a" LastKnownName="MessageOccurrenceSpecification18" />
+              <messageOccurrenceSpecificationMoniker Id="b63cdf41-df83-4822-b87a-5dfd6d20bb37" LastKnownName="MessageOccurrenceSpecification13" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="60d078c8-c798-4d03-9240-8e22dc9ab285" name="ExecutionOccurrenceSpecification7">
+            <elementDefinition Id="fe5555de-48ea-4392-850f-c32733d3baa4" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="d2df8c85-26fb-4c33-b65a-1a27fc92bb55" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a443cc84-4434-4884-9136-f120cc250aa4" LastKnownName="  : Pelanggaran" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6457df8c-9ec2-4265-9bc3-8e7cd6193a8a" name="MessageOccurrenceSpecification11">
+            <elementDefinition Id="ff5bb6e9-5c5c-4da5-822a-8765465eb3cd" />
+            <covered>
+              <lifelineMoniker Id="3d61204b-4d6e-4e8d-a432-1381c37af6b1" LastKnownName="  : frmBanyakPelanggaran" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="44fc11ea-297a-4db0-addb-36ad4260131f" name="MessageOccurrenceSpecification12">
+            <elementDefinition Id="314e9182-34c3-4e55-bb97-3d230a3fa5bc" />
+            <covered>
+              <lifelineMoniker Id="a443cc84-4434-4884-9136-f120cc250aa4" LastKnownName="  : Pelanggaran" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="9f5f498d-b83b-49b0-8754-af1adcbdbb55" name="BehaviorExecutionSpecification5">
+            <elementDefinition Id="f8c87751-5799-42b6-be50-62b3e1f3f761" />
+            <coveredLifelines>
+              <lifelineMoniker Id="7ce1ff31-e7aa-4962-acb0-d5e5b74ba4be" LastKnownName="  : ExcelHelper" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="14811869-4baa-4594-8c1d-f44dd059191f" LastKnownName="ExecutionOccurrenceSpecification10" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="cf5ee42c-020e-4c42-94c4-f98d3a8ac9a0" LastKnownName="ExecutionOccurrenceSpecification9" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="95f3c078-52f8-4d51-99a9-62c945c50fbd" LastKnownName="MessageOccurrenceSpecification16" />
+              <messageOccurrenceSpecificationMoniker Id="24c20826-2b1e-4b3d-a72f-f17963fba127" LastKnownName="MessageOccurrenceSpecification17" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="cf5ee42c-020e-4c42-94c4-f98d3a8ac9a0" name="ExecutionOccurrenceSpecification9">
+            <elementDefinition Id="3ce4beb1-8621-46ae-9abf-7cfe5d5d6643" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="cad66c7b-0ea1-4b04-bfaa-6c698d798dad" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="7ce1ff31-e7aa-4962-acb0-d5e5b74ba4be" LastKnownName="  : ExcelHelper" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="95f3c078-52f8-4d51-99a9-62c945c50fbd" name="MessageOccurrenceSpecification16">
+            <elementDefinition Id="450c2aa0-fa68-4495-bee8-89ea45eb9e4a" />
+            <covered>
+              <lifelineMoniker Id="7ce1ff31-e7aa-4962-acb0-d5e5b74ba4be" LastKnownName="  : ExcelHelper" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="3d48927d-b840-4441-a42d-e148c16b0a0c" name="MessageOccurrenceSpecification15">
+            <elementDefinition Id="cb05fe10-e165-4857-b0e7-00495eee1ba8" />
+            <covered>
+              <lifelineMoniker Id="a443cc84-4434-4884-9136-f120cc250aa4" LastKnownName="  : Pelanggaran" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="24c20826-2b1e-4b3d-a72f-f17963fba127" name="MessageOccurrenceSpecification17">
+            <elementDefinition Id="5be92e4c-5cdd-41b9-a2dd-59b0bf3d1ffe" />
+            <covered>
+              <lifelineMoniker Id="7ce1ff31-e7aa-4962-acb0-d5e5b74ba4be" LastKnownName="  : ExcelHelper" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="aba1b4d2-1bda-4544-9b0e-abed5076110a" name="MessageOccurrenceSpecification18">
+            <elementDefinition Id="b027c117-40d9-4e1f-a84f-0575f4fcb9d6" />
+            <covered>
+              <lifelineMoniker Id="a443cc84-4434-4884-9136-f120cc250aa4" LastKnownName="  : Pelanggaran" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="14811869-4baa-4594-8c1d-f44dd059191f" name="ExecutionOccurrenceSpecification10">
+            <elementDefinition Id="8d15923b-f9a5-4457-9ed1-fe2d8aee0ea3" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="71062b8b-4521-4f45-829d-aa08881a463e" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="7ce1ff31-e7aa-4962-acb0-d5e5b74ba4be" LastKnownName="  : ExcelHelper" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="19f5f991-638c-4dcf-be80-a8b181dcf2ce" name="MessageOccurrenceSpecification14">
+            <elementDefinition Id="459548e4-a70c-4003-a94a-898c07316a70" />
+            <covered>
+              <lifelineMoniker Id="3d61204b-4d6e-4e8d-a432-1381c37af6b1" LastKnownName="  : frmBanyakPelanggaran" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b63cdf41-df83-4822-b87a-5dfd6d20bb37" name="MessageOccurrenceSpecification13">
+            <elementDefinition Id="fabeae99-5bc1-4bbf-b0d0-543123beb2e1" />
+            <covered>
+              <lifelineMoniker Id="a443cc84-4434-4884-9136-f120cc250aa4" LastKnownName="  : Pelanggaran" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="ff9526fa-f40f-4b92-9d34-6ddc4bfd7134" name="ExecutionOccurrenceSpecification8">
+            <elementDefinition Id="a937ceb5-fd64-4deb-a409-a14ce359a1fe" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="bd02fb48-6664-459f-a371-ee99ee12a689" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a443cc84-4434-4884-9136-f120cc250aa4" LastKnownName="  : Pelanggaran" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="a6413338-8807-4f98-80b5-fdc5faefd056" name="ExecutionOccurrenceSpecification2">
+            <elementDefinition Id="a1333669-0b34-4be8-8d85-7deaaf89b8e3" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="9efb69ab-ae7d-4e98-8bf8-ac5584c92a21" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3d61204b-4d6e-4e8d-a432-1381c37af6b1" LastKnownName="  : frmBanyakPelanggaran" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="7eb01be7-32c2-4fdb-ad17-dba1a02b8539" name="Polisi Lalu Lintas" isActor="true" lifelineDisplayName="Polisi Lalu Lintas">
+            <elementDefinition Id="2bddcdda-6f50-48f8-9950-107774da2cfd" />
+            <represents>
+              <propertyMoniker Id="85d04231-5ccd-4e07-99f2-3937d9abc149" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="76964935-9860-41e5-9b8d-7f6df06d58f9" LastKnownName="MessageOccurrenceSpecification1" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="3d61204b-4d6e-4e8d-a432-1381c37af6b1" name="  : frmBanyakPelanggaran" isActor="false" lifelineDisplayName="  : frmBanyakPelanggaran">
+            <elementDefinition Id="4625c4aa-fc45-4422-966e-672a352b20f2" />
+            <represents>
+              <propertyMoniker Id="27dc6d93-5924-4f75-bcb1-e0675d707051" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="0f0ba132-1feb-4104-a1c1-47449fcc00fa" LastKnownName="ExecutionOccurrenceSpecification1" />
+              <executionOccurrenceSpecificationMoniker Id="a6413338-8807-4f98-80b5-fdc5faefd056" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="7dae4598-c4e5-43bf-8121-14fd330f9b10" name="  : SIM" isActor="false" lifelineDisplayName="  : SIM">
+            <elementDefinition Id="92ed3223-e6cd-469c-a623-15e42796e68a" />
+            <represents>
+              <propertyMoniker Id="d7171056-73bb-4dbf-9002-c7e969dba2c4" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="3bb8939a-be1a-4ada-835f-959327fc4c70" LastKnownName="ExecutionOccurrenceSpecification3" />
+              <executionOccurrenceSpecificationMoniker Id="420efd83-e717-4aa6-9739-45c5c051ed2c" LastKnownName="ExecutionOccurrenceSpecification4" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="a443cc84-4434-4884-9136-f120cc250aa4" name="  : Pelanggaran" isActor="false" lifelineDisplayName="  : Pelanggaran">
+            <elementDefinition Id="a095dc13-0bec-4417-bd5e-f9cbdb131b16" />
+            <represents>
+              <propertyMoniker Id="749ed4e0-3140-4f12-b0fa-feec04367e52" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="60d078c8-c798-4d03-9240-8e22dc9ab285" LastKnownName="ExecutionOccurrenceSpecification7" />
+              <executionOccurrenceSpecificationMoniker Id="ff9526fa-f40f-4b92-9d34-6ddc4bfd7134" LastKnownName="ExecutionOccurrenceSpecification8" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="7ce1ff31-e7aa-4962-acb0-d5e5b74ba4be" name="  : ExcelHelper" isActor="false" lifelineDisplayName="  : ExcelHelper">
+            <elementDefinition Id="8260a3e6-9d34-4c9a-8e3b-49b354fdbd14" />
+            <represents>
+              <propertyMoniker Id="08858afb-dfb9-44d8-bf55-efc2130dc0d4" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="497e615e-1129-466d-aef8-81da0a6696d9" LastKnownName="ExecutionOccurrenceSpecification5" />
+              <executionOccurrenceSpecificationMoniker Id="4dbda62a-2155-440d-b705-fa999df4a0ec" LastKnownName="ExecutionOccurrenceSpecification6" />
+              <executionOccurrenceSpecificationMoniker Id="cf5ee42c-020e-4c42-94c4-f98d3a8ac9a0" LastKnownName="ExecutionOccurrenceSpecification9" />
+              <executionOccurrenceSpecificationMoniker Id="14811869-4baa-4594-8c1d-f44dd059191f" LastKnownName="ExecutionOccurrenceSpecification10" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="0b51169d-9add-4b6b-b803-34328f733577" name="Form_Load()" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="b77f184f-8b9d-4bc9-a15a-a493daad9808" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="76964935-9860-41e5-9b8d-7f6df06d58f9" LastKnownName="MessageOccurrenceSpecification1" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="75df452d-df4f-4315-b97c-afc98c7ea522" LastKnownName="MessageOccurrenceSpecification2" />
+            </receiveEvent>
+          </message>
+          <message Id="274d033c-ae9c-47ee-b090-12cb3bca9b21" name="Ambil semua data" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ GetAll() : SIM[*]">
+            <elementDefinition Id="6473836f-f9cc-4288-942a-31b890cf2f7d" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="7353973b-188b-42b4-a8b6-c4acaae9611b" LastKnownName="MessageOccurrenceSpecification3" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="03f094c0-b872-448b-abc5-180f12cac7c3" LastKnownName="MessageOccurrenceSpecification4" />
+            </receiveEvent>
+          </message>
+          <message Id="d951e830-b283-4c48-8ec6-dff5ad223b79" name="Ambil semua data di database" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ GetAllSIM() : SIM[*]">
+            <elementDefinition Id="394e1385-ed7f-41af-8405-7c507cda1cb3" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="91d8f59a-ab70-40a2-a000-c5ad11aad30c" LastKnownName="MessageOccurrenceSpecification7" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="03e91920-5c48-4edf-8fda-dddc6422ba56" LastKnownName="MessageOccurrenceSpecification8" />
+            </receiveEvent>
+          </message>
+          <message Id="50235d72-d97d-4f99-9699-4420b0d37841" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="31f6d9db-66e1-4fc6-892d-3724d40c1074" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="4fd699ac-0c75-4ff1-8654-fdfbb053ef27" LastKnownName="MessageOccurrenceSpecification9" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="b4ac22f9-4924-4206-ae8e-514ab16b402b" LastKnownName="MessageOccurrenceSpecification10" />
+            </receiveEvent>
+          </message>
+          <message Id="06d9acc7-f59b-46ac-9f31-da636d3f8978" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="94531efd-193e-4898-a03a-c9abcf730a77" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="84188982-4d1b-48f3-9638-a5c2ebea2ec4" LastKnownName="MessageOccurrenceSpecification5" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="ce51f9e9-3ee2-4e3d-8104-e2ff8b852743" LastKnownName="MessageOccurrenceSpecification6" />
+            </receiveEvent>
+          </message>
+          <message Id="2be662c5-ee35-43be-b56c-84f70c0afd48" name="Ambil semua data" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ GetAll() : Pelanggaran[*]">
+            <elementDefinition Id="b80e94ff-5d96-40bd-9ee1-9daa58138bf1" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="6457df8c-9ec2-4265-9bc3-8e7cd6193a8a" LastKnownName="MessageOccurrenceSpecification11" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="44fc11ea-297a-4db0-addb-36ad4260131f" LastKnownName="MessageOccurrenceSpecification12" />
+            </receiveEvent>
+          </message>
+          <message Id="e615d3a7-cbb4-4055-a919-976d81a89b01" name="Ambil semua di DB" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ GetAllPelanggaran() : Pelanggaran[*]">
+            <elementDefinition Id="6032a042-baa2-407e-a0d0-0849a5b4b757" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="3d48927d-b840-4441-a42d-e148c16b0a0c" LastKnownName="MessageOccurrenceSpecification15" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="95f3c078-52f8-4d51-99a9-62c945c50fbd" LastKnownName="MessageOccurrenceSpecification16" />
+            </receiveEvent>
+          </message>
+          <message Id="db014bde-247c-4d4b-b524-c7a2942cc8ab" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="e461c0fd-cd0f-46fc-bf30-fec9fb05bfd6" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="24c20826-2b1e-4b3d-a72f-f17963fba127" LastKnownName="MessageOccurrenceSpecification17" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="aba1b4d2-1bda-4544-9b0e-abed5076110a" LastKnownName="MessageOccurrenceSpecification18" />
+            </receiveEvent>
+          </message>
+          <message Id="3c9c95cd-094a-4a28-ab0f-f4d829c9c2cc" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="724dc66b-20e0-49a6-95c2-3a4df916f04d" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="b63cdf41-df83-4822-b87a-5dfd6d20bb37" LastKnownName="MessageOccurrenceSpecification13" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="19f5f991-638c-4dcf-be80-a8b181dcf2ce" LastKnownName="MessageOccurrenceSpecification14" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property Id="85d04231-5ccd-4e07-99f2-3937d9abc149" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ad4b9349-4b81-4b1c-be64-1b0661901ace" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="750bb418-c6b0-4eef-8ef0-aad679d5d103" LastKnownName="Polisi Lalu Lintas" />
+            </type_NamedElement>
+          </property>
+          <property Id="27dc6d93-5924-4f75-bcb1-e0675d707051" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d3a10cdd-2ac0-4f11-bdcc-e538d79a5977" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="091f1efa-3fcb-4795-aa1e-514290e6c2ff" LastKnownName="frmBanyakPelanggaran" />
+            </type_NamedElement>
+          </property>
+          <property Id="d7171056-73bb-4dbf-9002-c7e969dba2c4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5a882d3d-ecf2-4e3d-9f25-4b65d6dfe0c5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="321f7439-0aa1-4833-ae00-cbf0aaa0c8d3" LastKnownName="SIM" />
+            </type_NamedElement>
+          </property>
+          <property Id="749ed4e0-3140-4f12-b0fa-feec04367e52" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cae61a16-0670-4ca2-89f5-538d2b56a97d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6c237127-3429-43fd-9b40-24110e38c6db" LastKnownName="Pelanggaran" />
+            </type_NamedElement>
+          </property>
+          <property Id="08858afb-dfb9-44d8-bf55-efc2130dc0d4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dd415074-48fa-4a87-8aa8-9d0bd96d81a1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1d1357b0-b6e0-40cb-af15-1d5e5a9924d2" LastKnownName="ExcelHelper" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="750bb418-c6b0-4eef-8ef0-aad679d5d103" name="Polisi Lalu Lintas" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::Polisi Lalu Lintas">
+        <elementDefinition Id="1fe93577-87b6-4aa7-ad84-d0d868160281" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="091f1efa-3fcb-4795-aa1e-514290e6c2ff" name="frmBanyakPelanggaran" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::frmBanyakPelanggaran">
+        <elementDefinition Id="a36aed73-d99d-49d5-bf2b-58ee7319a065" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="321f7439-0aa1-4833-ae00-cbf0aaa0c8d3" name="SIM" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::SIM">
+        <elementDefinition Id="b6498c74-af71-4803-8aba-ae5af27f462c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6c237127-3429-43fd-9b40-24110e38c6db" name="Pelanggaran" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::Pelanggaran">
+        <elementDefinition Id="3115616d-1ddd-41d7-849e-82c477b0ccfe" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1d1357b0-b6e0-40cb-af15-1d5e5a9924d2" name="ExcelHelper" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::ExcelHelper">
+        <elementDefinition Id="8d05d3e8-a7d6-4308-a73b-9bc8f82d14f4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="eadd1772-057e-48fa-9437-548508495ed6" name="ExecutionEvent">
+        <elementDefinition Id="b7c5d78d-6fb5-46fb-8de0-0eaf87df4b40" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="9efb69ab-ae7d-4e98-8bf8-ac5584c92a21" name="ExecutionEvent">
+        <elementDefinition Id="0452a65b-3e0e-463c-aed0-3a43bace2998" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="aa3148a0-b203-4cad-ad20-b03f1047a424" name="ExecutionEvent">
+        <elementDefinition Id="d5a936a7-77b8-48ab-b0a5-684e9c7880e1" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3e09e04c-c22a-41fe-ad9c-31836b5adc5f" name="ExecutionEvent">
+        <elementDefinition Id="c3b5be7a-c346-4c18-9b1b-b4dd0a4a0735" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="6465992e-f9ac-4947-96e8-24c22cc94d04" name="ExecutionEvent">
+        <elementDefinition Id="a9689220-e9a8-4519-9eee-92f431958962" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="6f2c8901-0593-474b-9173-9e50650f1099" name="ExecutionEvent">
+        <elementDefinition Id="36d6ee61-740f-4647-8685-6c6fa8a0646a" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="d2df8c85-26fb-4c33-b65a-1a27fc92bb55" name="ExecutionEvent">
+        <elementDefinition Id="77e1db67-0c2b-4ddd-84bd-cc2094602978" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="bd02fb48-6664-459f-a371-ee99ee12a689" name="ExecutionEvent">
+        <elementDefinition Id="63924350-76b6-4a1d-981a-8bead1590870" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="cad66c7b-0ea1-4b04-bfaa-6c698d798dad" name="ExecutionEvent">
+        <elementDefinition Id="e7bfb32b-f67e-49de-a479-895b26867626" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="71062b8b-4521-4f45-829d-aa08881a463e" name="ExecutionEvent">
+        <elementDefinition Id="6d6af3ba-a6e7-4167-89f3-2125a2490ae9" />
+      </executionEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="9952f10b-be69-4a1f-9023-a00be1ed9613" name="ModelingProject">
+    <elementDefinition Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd" />
+  </package>
+</SequenceDesignerModel>

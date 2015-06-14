@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="78feddec-7f01-410c-8ef9-b4e8b8d97196" name="Penduduk, SIM, dan Enumerasinya" linkedPackageId="df1ca975-a2c3-469e-ac14-942948bc2c3c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="70bca531-eca6-49e7-a082-d657b2d86d84">
-      <profileInstance Id="424c063d-08cf-4ac0-90a1-8bcd273a7c82" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="c3b258a3-f1fe-4521-8c3a-13355a343a99">
-      <profileInstance Id="1f1fc22d-6dc0-45d3-b00b-ce3a8e0efd21" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="78feddec-7f01-410c-8ef9-b4e8b8d97196" name="Penduduk, SIM, dan Enumerasinya" linkedPackageId="df1ca975-a2c3-469e-ac14-942948bc2c3c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <enumeration Id="51607677-aa18-4aef-8796-a5e9947ae795" name="EnumJenisKelamin" isAbstract="false" isLeaf="false">
@@ -372,7 +358,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="336fecbb-12cf-4152-929f-0799645fb3d8" name="GetAllPelanggaran" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="336fecbb-12cf-4152-929f-0799645fb3d8" name="GetAll" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="5b0dc1c4-0cfe-4138-aa15-61c32d550f6c" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -389,7 +375,7 @@
                   </upperValueInternal>
                   <elementDefinition Id="43877c88-b41e-4b9b-acb7-e4928af5d125" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="1a756175-507c-46be-bc4d-84dfb3680b95" LastKnownName="Pelanggaran" />
+                    <referencedTypeMoniker Id="dc35e773-18d0-47ef-81ad-bbe0eb02b1da" LastKnownName="SIM" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -431,12 +417,26 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
-      <referencedType Id="1a756175-507c-46be-bc4d-84dfb3680b95" name="Pelanggaran" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::Pelanggaran">
-        <elementDefinition Id="3115616d-1ddd-41d7-849e-82c477b0ccfe" />
+      <referencedType Id="dc35e773-18d0-47ef-81ad-bbe0eb02b1da" name="SIM" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::SIM">
+        <elementDefinition Id="b6498c74-af71-4803-8aba-ae5af27f462c" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
   <package Id="df1ca975-a2c3-469e-ac14-942948bc2c3c" name="ModelingProject">
     <elementDefinition Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd" />
+    <profileInstances>
+      <packageHasProfileInstances Id="70bca531-eca6-49e7-a082-d657b2d86d84">
+        <profileInstance Id="424c063d-08cf-4ac0-90a1-8bcd273a7c82" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c3b258a3-f1fe-4521-8c3a-13355a343a99">
+        <profileInstance Id="1f1fc22d-6dc0-45d3-b00b-ce3a8e0efd21" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

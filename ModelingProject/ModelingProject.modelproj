@@ -71,6 +71,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence Diagram\PembuatanSIM\Menyimpan Data SIM.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="Sequence Diagram\Rekapitulasi\StatistikPerOrang.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence Diagram\Rekapitulasi\StatistikPerOrang.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence Diagram\Rekapitulasi\StatistikPerOrang.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="Sequence Diagram\SuratTilang\MenampilkanDataSuratTilang.sequencediagram">
       <SubType>Content</SubType>
     </Content>

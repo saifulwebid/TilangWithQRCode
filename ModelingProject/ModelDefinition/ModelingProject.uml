@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd"
   name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -694,7 +694,7 @@
           </operation>
           <operation
             Id="5b0dc1c4-0cfe-4138-aa15-61c32d550f6c"
-            name="GetAllPelanggaran"
+            name="GetAll"
             isLeaf="false"
             isStatic="true"
             isAbstract="false"
@@ -720,8 +720,8 @@
                   </upperValueInternal>
                   <type_NamedElement>
                     <classMoniker
-                      Id="3115616d-1ddd-41d7-849e-82c477b0ccfe"
-                      LastKnownName="Pelanggaran"
+                      Id="b6498c74-af71-4803-8aba-ae5af27f462c"
+                      LastKnownName="SIM"
                       LastKnownLocation="ModelingProject.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -8892,6 +8892,1123 @@
           <operationMoniker
             Id="bbf24255-148b-417e-a3a3-d30edac9bfef"
             LastKnownName="SavePenduduk"
+            LastKnownLocation="ModelingProject.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a36aed73-d99d-49d5-bf2b-58ee7319a065"
+        name="frmBanyakPelanggaran"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="12962109-bc07-4e1f-b328-f4ba657ddd20"
+        name="StatistikPerOrang"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="440972e4-100a-410d-b36c-3d70367ca399"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="4625c4aa-fc45-4422-966e-672a352b20f2"
+                LastKnownName="  : frmBanyakPelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a1333669-0b34-4be8-8d85-7deaaf89b8e3"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="b177ee9a-3fd2-4edc-916b-d711fef88472"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="38e21cc7-427e-4db2-8184-f57c17768a65"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f39c6961-2b6a-4049-b650-d2d97a28a550"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ca4cd91e-98b8-4f58-aab8-c4ebab9b0347"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ff5bb6e9-5c5c-4da5-822a-8765465eb3cd"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="459548e4-a70c-4003-a94a-898c07316a70"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="b177ee9a-3fd2-4edc-916b-d711fef88472"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b7c5d78d-6fb5-46fb-8de0-0eaf87df4b40"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="4625c4aa-fc45-4422-966e-672a352b20f2"
+                LastKnownName="  : frmBanyakPelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="20d5d601-34e4-40b8-ac55-712be44cb36f"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="2bddcdda-6f50-48f8-9950-107774da2cfd"
+                LastKnownName="Polisi Lalu Lintas"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="38e21cc7-427e-4db2-8184-f57c17768a65"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="4625c4aa-fc45-4422-966e-672a352b20f2"
+                LastKnownName="  : frmBanyakPelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="caa154b2-df6f-48c7-9de1-5beac88fadbc"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="92ed3223-e6cd-469c-a623-15e42796e68a"
+                LastKnownName="  : SIM"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="da3e35a0-89f0-4bed-bfe4-bdd0acccee8d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="9a9efdae-6b08-4de4-997b-9cb3b81abc9b"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="bfcee87a-8fb3-49d9-be5f-5c2c95f68607"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="66587d7c-0f19-46c4-bde1-02513b6a717e"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="baf49e91-b4c7-4669-b32c-d671eac8c17f"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="30684877-4254-427f-b002-a353e4d2319f"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="9a9efdae-6b08-4de4-997b-9cb3b81abc9b"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d5a936a7-77b8-48ab-b0a5-684e9c7880e1"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="92ed3223-e6cd-469c-a623-15e42796e68a"
+                LastKnownName="  : SIM"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f39c6961-2b6a-4049-b650-d2d97a28a550"
+            name="MessageOccurrenceSpecification3">
+            <event>
+              <sendOperationEventMoniker
+                Id="f82b3fe4-99d3-4e9f-8cf8-0aa5fc6a04ed"
+                LastKnownLocation="ModelingProject.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="4625c4aa-fc45-4422-966e-672a352b20f2"
+                LastKnownName="  : frmBanyakPelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bfcee87a-8fb3-49d9-be5f-5c2c95f68607"
+            name="MessageOccurrenceSpecification4">
+            <event>
+              <receiveOperationEventMoniker
+                Id="2b137808-8385-462a-a733-f5a809b1924a"
+                LastKnownLocation="ModelingProject.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="92ed3223-e6cd-469c-a623-15e42796e68a"
+                LastKnownName="  : SIM"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="fe473d4c-07dc-4b78-acc4-c4a18618a95a"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8260a3e6-9d34-4c9a-8e3b-49b354fdbd14"
+                LastKnownName="  : ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="26ee7e47-20e4-46ce-bfe1-8ee5818d3235"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="4096d7e8-ca34-4d84-a075-02df9ea164c4"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="684c6b9e-55cf-4cd5-8348-fa5ea60454d8"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="14a3eb3d-f3eb-401b-be1b-ffd49ea7dfab"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="4096d7e8-ca34-4d84-a075-02df9ea164c4"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a9689220-e9a8-4519-9eee-92f431958962"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8260a3e6-9d34-4c9a-8e3b-49b354fdbd14"
+                LastKnownName="  : ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="684c6b9e-55cf-4cd5-8348-fa5ea60454d8"
+            name="MessageOccurrenceSpecification8">
+            <event>
+              <receiveOperationEventMoniker
+                Id="83f363de-d30d-4cee-8689-3dc1e95ad490"
+                LastKnownLocation="ModelingProject.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8260a3e6-9d34-4c9a-8e3b-49b354fdbd14"
+                LastKnownName="  : ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="66587d7c-0f19-46c4-bde1-02513b6a717e"
+            name="MessageOccurrenceSpecification7">
+            <event>
+              <sendOperationEventMoniker
+                Id="8fac1398-6bbe-476d-b596-c0b3a8b2e79a"
+                LastKnownLocation="ModelingProject.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="92ed3223-e6cd-469c-a623-15e42796e68a"
+                LastKnownName="  : SIM"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="14a3eb3d-f3eb-401b-be1b-ffd49ea7dfab"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="8260a3e6-9d34-4c9a-8e3b-49b354fdbd14"
+                LastKnownName="  : ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="baf49e91-b4c7-4669-b32c-d671eac8c17f"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="92ed3223-e6cd-469c-a623-15e42796e68a"
+                LastKnownName="  : SIM"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="26ee7e47-20e4-46ce-bfe1-8ee5818d3235"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="36d6ee61-740f-4647-8685-6c6fa8a0646a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8260a3e6-9d34-4c9a-8e3b-49b354fdbd14"
+                LastKnownName="  : ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ca4cd91e-98b8-4f58-aab8-c4ebab9b0347"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="4625c4aa-fc45-4422-966e-672a352b20f2"
+                LastKnownName="  : frmBanyakPelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="30684877-4254-427f-b002-a353e4d2319f"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="92ed3223-e6cd-469c-a623-15e42796e68a"
+                LastKnownName="  : SIM"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="da3e35a0-89f0-4bed-bfe4-bdd0acccee8d"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c3b5be7a-c346-4c18-9b1b-b4dd0a4a0735"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="92ed3223-e6cd-469c-a623-15e42796e68a"
+                LastKnownName="  : SIM"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="d3bdad81-be10-406d-bbb6-62ed2dbabd63"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a095dc13-0bec-4417-bd5e-f9cbdb131b16"
+                LastKnownName="  : Pelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a937ceb5-fd64-4deb-a409-a14ce359a1fe"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="fe5555de-48ea-4392-850f-c32733d3baa4"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="314e9182-34c3-4e55-bb97-3d230a3fa5bc"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="cb05fe10-e165-4857-b0e7-00495eee1ba8"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b027c117-40d9-4e1f-a84f-0575f4fcb9d6"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="fabeae99-5bc1-4bbf-b0d0-543123beb2e1"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="fe5555de-48ea-4392-850f-c32733d3baa4"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="77e1db67-0c2b-4ddd-84bd-cc2094602978"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a095dc13-0bec-4417-bd5e-f9cbdb131b16"
+                LastKnownName="  : Pelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ff5bb6e9-5c5c-4da5-822a-8765465eb3cd"
+            name="MessageOccurrenceSpecification11">
+            <event>
+              <sendOperationEventMoniker
+                Id="3ccd1ea7-116f-40ef-90bc-ed3ede7607f4"
+                LastKnownLocation="ModelingProject.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="4625c4aa-fc45-4422-966e-672a352b20f2"
+                LastKnownName="  : frmBanyakPelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="314e9182-34c3-4e55-bb97-3d230a3fa5bc"
+            name="MessageOccurrenceSpecification12">
+            <event>
+              <receiveOperationEventMoniker
+                Id="f9028a3d-2653-4202-90a0-6164e331f97c"
+                LastKnownLocation="ModelingProject.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a095dc13-0bec-4417-bd5e-f9cbdb131b16"
+                LastKnownName="  : Pelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="f8c87751-5799-42b6-be50-62b3e1f3f761"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8260a3e6-9d34-4c9a-8e3b-49b354fdbd14"
+                LastKnownName="  : ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="8d15923b-f9a5-4457-9ed1-fe2d8aee0ea3"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3ce4beb1-8621-46ae-9abf-7cfe5d5d6643"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="450c2aa0-fa68-4495-bee8-89ea45eb9e4a"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5be92e4c-5cdd-41b9-a2dd-59b0bf3d1ffe"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3ce4beb1-8621-46ae-9abf-7cfe5d5d6643"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e7bfb32b-f67e-49de-a479-895b26867626"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8260a3e6-9d34-4c9a-8e3b-49b354fdbd14"
+                LastKnownName="  : ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="450c2aa0-fa68-4495-bee8-89ea45eb9e4a"
+            name="MessageOccurrenceSpecification16">
+            <event>
+              <receiveOperationEventMoniker
+                Id="ee15e51d-4f7f-415d-af0a-2bb554616fe8"
+                LastKnownLocation="ModelingProject.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8260a3e6-9d34-4c9a-8e3b-49b354fdbd14"
+                LastKnownName="  : ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cb05fe10-e165-4857-b0e7-00495eee1ba8"
+            name="MessageOccurrenceSpecification15">
+            <event>
+              <sendOperationEventMoniker
+                Id="e51e9edb-b15b-4ad3-bd96-6ffd422b67bc"
+                LastKnownLocation="ModelingProject.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a095dc13-0bec-4417-bd5e-f9cbdb131b16"
+                LastKnownName="  : Pelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5be92e4c-5cdd-41b9-a2dd-59b0bf3d1ffe"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="8260a3e6-9d34-4c9a-8e3b-49b354fdbd14"
+                LastKnownName="  : ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b027c117-40d9-4e1f-a84f-0575f4fcb9d6"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="a095dc13-0bec-4417-bd5e-f9cbdb131b16"
+                LastKnownName="  : Pelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="8d15923b-f9a5-4457-9ed1-fe2d8aee0ea3"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6d6af3ba-a6e7-4167-89f3-2125a2490ae9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8260a3e6-9d34-4c9a-8e3b-49b354fdbd14"
+                LastKnownName="  : ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="459548e4-a70c-4003-a94a-898c07316a70"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="4625c4aa-fc45-4422-966e-672a352b20f2"
+                LastKnownName="  : frmBanyakPelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fabeae99-5bc1-4bbf-b0d0-543123beb2e1"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="a095dc13-0bec-4417-bd5e-f9cbdb131b16"
+                LastKnownName="  : Pelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a937ceb5-fd64-4deb-a409-a14ce359a1fe"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="63924350-76b6-4a1d-981a-8bead1590870"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a095dc13-0bec-4417-bd5e-f9cbdb131b16"
+                LastKnownName="  : Pelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a1333669-0b34-4be8-8d85-7deaaf89b8e3"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0452a65b-3e0e-463c-aed0-3a43bace2998"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="4625c4aa-fc45-4422-966e-672a352b20f2"
+                LastKnownName="  : frmBanyakPelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="2bddcdda-6f50-48f8-9950-107774da2cfd"
+            name="Polisi Lalu Lintas"
+            isActor="true"
+            lifelineDisplayName="Polisi Lalu Lintas">
+            <represents>
+              <propertyMoniker
+                Id="ad4b9349-4b81-4b1c-be64-1b0661901ace"
+                LastKnownLocation="ModelingProject.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="20d5d601-34e4-40b8-ac55-712be44cb36f"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="4625c4aa-fc45-4422-966e-672a352b20f2"
+            name="  : frmBanyakPelanggaran"
+            isActor="false"
+            lifelineDisplayName="  : frmBanyakPelanggaran">
+            <represents>
+              <propertyMoniker
+                Id="d3a10cdd-2ac0-4f11-bdcc-e538d79a5977"
+                LastKnownLocation="ModelingProject.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="b177ee9a-3fd2-4edc-916b-d711fef88472"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a1333669-0b34-4be8-8d85-7deaaf89b8e3"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="92ed3223-e6cd-469c-a623-15e42796e68a"
+            name="  : SIM"
+            isActor="false"
+            lifelineDisplayName="  : SIM">
+            <represents>
+              <propertyMoniker
+                Id="5a882d3d-ecf2-4e3d-9f25-4b65d6dfe0c5"
+                LastKnownLocation="ModelingProject.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="9a9efdae-6b08-4de4-997b-9cb3b81abc9b"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="da3e35a0-89f0-4bed-bfe4-bdd0acccee8d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="a095dc13-0bec-4417-bd5e-f9cbdb131b16"
+            name="  : Pelanggaran"
+            isActor="false"
+            lifelineDisplayName="  : Pelanggaran">
+            <represents>
+              <propertyMoniker
+                Id="cae61a16-0670-4ca2-89f5-538d2b56a97d"
+                LastKnownLocation="ModelingProject.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="fe5555de-48ea-4392-850f-c32733d3baa4"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a937ceb5-fd64-4deb-a409-a14ce359a1fe"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="8260a3e6-9d34-4c9a-8e3b-49b354fdbd14"
+            name="  : ExcelHelper"
+            isActor="false"
+            lifelineDisplayName="  : ExcelHelper">
+            <represents>
+              <propertyMoniker
+                Id="dd415074-48fa-4a87-8aa8-9d0bd96d81a1"
+                LastKnownLocation="ModelingProject.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="4096d7e8-ca34-4d84-a075-02df9ea164c4"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="26ee7e47-20e4-46ce-bfe1-8ee5818d3235"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3ce4beb1-8621-46ae-9abf-7cfe5d5d6643"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="8d15923b-f9a5-4457-9ed1-fe2d8aee0ea3"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="b77f184f-8b9d-4bc9-a15a-a493daad9808"
+            name="Form_Load()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="20d5d601-34e4-40b8-ac55-712be44cb36f"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="38e21cc7-427e-4db2-8184-f57c17768a65"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6473836f-f9cc-4288-942a-31b890cf2f7d"
+            name="Ambil semua data"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false"
+            signatureText="+ GetAll() : SIM[*]">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f39c6961-2b6a-4049-b650-d2d97a28a550"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bfcee87a-8fb3-49d9-be5f-5c2c95f68607"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="394e1385-ed7f-41af-8405-7c507cda1cb3"
+            name="Ambil semua data di database"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false"
+            signatureText="+ GetAllSIM() : SIM[*]">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="66587d7c-0f19-46c4-bde1-02513b6a717e"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="684c6b9e-55cf-4cd5-8348-fa5ea60454d8"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="31f6d9db-66e1-4fc6-892d-3724d40c1074"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="14a3eb3d-f3eb-401b-be1b-ffd49ea7dfab"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="baf49e91-b4c7-4669-b32c-d671eac8c17f"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="94531efd-193e-4898-a03a-c9abcf730a77"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="30684877-4254-427f-b002-a353e4d2319f"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ca4cd91e-98b8-4f58-aab8-c4ebab9b0347"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="b80e94ff-5d96-40bd-9ee1-9daa58138bf1"
+            name="Ambil semua data"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false"
+            signatureText="+ GetAll() : Pelanggaran[*]">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ff5bb6e9-5c5c-4da5-822a-8765465eb3cd"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="314e9182-34c3-4e55-bb97-3d230a3fa5bc"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6032a042-baa2-407e-a0d0-0849a5b4b757"
+            name="Ambil semua di DB"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false"
+            signatureText="+ GetAllPelanggaran() : Pelanggaran[*]">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cb05fe10-e165-4857-b0e7-00495eee1ba8"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="450c2aa0-fa68-4495-bee8-89ea45eb9e4a"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e461c0fd-cd0f-46fc-bf30-fec9fb05bfd6"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5be92e4c-5cdd-41b9-a2dd-59b0bf3d1ffe"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b027c117-40d9-4e1f-a84f-0575f4fcb9d6"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="724dc66b-20e0-49a6-95c2-3a4df916f04d"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fabeae99-5bc1-4bbf-b0d0-543123beb2e1"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="459548e4-a70c-4003-a94a-898c07316a70"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="ad4b9349-4b81-4b1c-be64-1b0661901ace"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="1fe93577-87b6-4aa7-ad84-d0d868160281"
+                LastKnownName="Polisi Lalu Lintas"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d3a10cdd-2ac0-4f11-bdcc-e538d79a5977"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="a36aed73-d99d-49d5-bf2b-58ee7319a065"
+                LastKnownName="frmBanyakPelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5a882d3d-ecf2-4e3d-9f25-4b65d6dfe0c5"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="b6498c74-af71-4803-8aba-ae5af27f462c"
+                LastKnownName="SIM"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cae61a16-0670-4ca2-89f5-538d2b56a97d"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="3115616d-1ddd-41d7-849e-82c477b0ccfe"
+                LastKnownName="Pelanggaran"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="dd415074-48fa-4a87-8aa8-9d0bd96d81a1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="8d05d3e8-a7d6-4308-a73b-9bc8f82d14f4"
+                LastKnownName="ExcelHelper"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b7c5d78d-6fb5-46fb-8de0-0eaf87df4b40"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0452a65b-3e0e-463c-aed0-3a43bace2998"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d5a936a7-77b8-48ab-b0a5-684e9c7880e1"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c3b5be7a-c346-4c18-9b1b-b4dd0a4a0735"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="f82b3fe4-99d3-4e9f-8cf8-0aa5fc6a04ed">
+        <operation>
+          <operationMoniker
+            Id="5b0dc1c4-0cfe-4138-aa15-61c32d550f6c"
+            LastKnownName="GetAll"
+            LastKnownLocation="ModelingProject.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="2b137808-8385-462a-a733-f5a809b1924a">
+        <operation>
+          <operationMoniker
+            Id="5b0dc1c4-0cfe-4138-aa15-61c32d550f6c"
+            LastKnownName="GetAll"
+            LastKnownLocation="ModelingProject.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a9689220-e9a8-4519-9eee-92f431958962"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="36d6ee61-740f-4647-8685-6c6fa8a0646a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="8fac1398-6bbe-476d-b596-c0b3a8b2e79a">
+        <operation>
+          <operationMoniker
+            Id="92052589-4735-45d2-8240-eafafed87a87"
+            LastKnownName="GetAllSIM"
+            LastKnownLocation="ModelingProject.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="83f363de-d30d-4cee-8689-3dc1e95ad490">
+        <operation>
+          <operationMoniker
+            Id="92052589-4735-45d2-8240-eafafed87a87"
+            LastKnownName="GetAllSIM"
+            LastKnownLocation="ModelingProject.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="77e1db67-0c2b-4ddd-84bd-cc2094602978"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="63924350-76b6-4a1d-981a-8bead1590870"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e7bfb32b-f67e-49de-a479-895b26867626"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6d6af3ba-a6e7-4167-89f3-2125a2490ae9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="e51e9edb-b15b-4ad3-bd96-6ffd422b67bc">
+        <operation>
+          <operationMoniker
+            Id="cd62acc2-72b1-4c99-94cf-adf4793913d0"
+            LastKnownName="GetAllPelanggaran"
+            LastKnownLocation="ModelingProject.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="ee15e51d-4f7f-415d-af0a-2bb554616fe8">
+        <operation>
+          <operationMoniker
+            Id="cd62acc2-72b1-4c99-94cf-adf4793913d0"
+            LastKnownName="GetAllPelanggaran"
+            LastKnownLocation="ModelingProject.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="3ccd1ea7-116f-40ef-90bc-ed3ede7607f4">
+        <operation>
+          <operationMoniker
+            Id="6a6d5959-b564-4a37-ad2f-39267360b631"
+            LastKnownName="GetAll"
+            LastKnownLocation="ModelingProject.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="f9028a3d-2653-4202-90a0-6164e331f97c">
+        <operation>
+          <operationMoniker
+            Id="6a6d5959-b564-4a37-ad2f-39267360b631"
+            LastKnownName="GetAll"
             LastKnownLocation="ModelingProject.uml" />
         </operation>
       </receiveOperationEvent>
