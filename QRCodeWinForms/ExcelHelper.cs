@@ -93,11 +93,11 @@ namespace QRCodeWinForms
                                     }
                                 }
                             }
-                            return null;
                         }
                     }
                 }
             }
+            return null;
         }
 
         public static Penduduk CheckPenduduk(string ktp)
