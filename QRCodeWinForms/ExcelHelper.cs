@@ -7,7 +7,7 @@ using OfficeOpenXml;
 
 namespace QRCodeWinForms
 {
-    class ExcelHelper
+    static class ExcelHelper
     {
         public static string FileName = "";
         private const int startRow = 1;
