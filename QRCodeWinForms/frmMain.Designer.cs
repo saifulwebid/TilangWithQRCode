@@ -45,6 +45,7 @@
             this.rekapitulasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statistikPerOrangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statistikUmumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ofdOpen = new System.Windows.Forms.OpenFileDialog();
             this.mstMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -184,6 +185,10 @@
             this.statistikUmumToolStripMenuItem.Text = "Statistik &Umum...";
             this.statistikUmumToolStripMenuItem.Click += new System.EventHandler(this.statistikUmumToolStripMenuItem_Click);
             // 
+            // ofdOpen
+            // 
+            this.ofdOpen.Filter = "File Microsoft Excel 2010 (*.xlsx)|*.xlsx";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,6 +227,7 @@
         private System.Windows.Forms.ToolStripMenuItem statistikPerOrangToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem statistikUmumToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manajemenUserToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog ofdOpen;
     }
 }
 

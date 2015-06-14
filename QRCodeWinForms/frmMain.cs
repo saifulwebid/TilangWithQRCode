@@ -133,21 +133,18 @@ namespace QRCodeWinForms
 
         private void bukaDatabaseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            /* TODO: Kode ini nantinya diganti supaya dia muncul window baru
-             * buat minta lokasi file databasenya di mana.
-             */
-            string fileName = "data\\DataGabungan.xlsx";
-            string folder = Assembly.GetEntryAssembly().Location;
-            if (folder != null)
-            {
-                folder = Path.GetDirectoryName(folder);
-                string filePath = Path.Combine(folder, fileName);
+            /* Initial directory ada di folder yang sama dengan aplikasi */
+            ofdOpen.InitialDirectory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
 
-                DatabasePath = filePath;
+            DialogResult result = ofdOpen.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                DatabasePath = ofdOpen.FileName;
+
+                /* Setelah buka database, langsung login. */
+                loginToolStripMenuItem_Click(sender, e);
             }
 
-            /* Setelah buka database, langsung login. */
-            loginToolStripMenuItem_Click(sender, e);
         }
 
         private void tutupDatabaseToolStripMenuItem_Click(object sender, EventArgs e)
