@@ -13,7 +13,7 @@ namespace QRCodeWinForms
         private const int startRow = 1;
 
         /** Methods **/
-        public static void SaveAccount(User acc)
+        /*public static void SaveAccount(User acc)
         {
             FileInfo existingFile = new FileInfo(FileName);
             using (var package = new ExcelPackage(existingFile))
@@ -48,7 +48,7 @@ namespace QRCodeWinForms
                 }
                 package.Save();
             }
-        }
+        }*/
 
         public static User CheckUser(string username, string password)
         {
