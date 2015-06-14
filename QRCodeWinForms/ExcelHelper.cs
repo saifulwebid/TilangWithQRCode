@@ -149,7 +149,7 @@ namespace QRCodeWinForms
 
                                 if (valid)
                                 {
-                                    Penduduk pdk = new Penduduk();
+                                    Penduduk pdk = new Penduduk(true);
                                     pdk.Nomor = colValue[1].ToString();
                                     pdk.Nama = colValue[2].ToString();
                                     pdk.TempatLahir = colValue[3].ToString();
@@ -284,7 +284,7 @@ namespace QRCodeWinForms
 
                                 if (valid)
                                 {
-                                    SIM sim = new SIM();
+                                    SIM sim = new SIM(true);
                                     sim.Nomor = colValue[2].ToString();
                                     sim.Golongan = colValue[3].ToString();
                                     sim.TanggalBuat = Convert.ToDateTime(colValue[4]);
@@ -493,7 +493,7 @@ namespace QRCodeWinForms
 
                                 if (valid)
                                 {
-                                    Pelanggaran pelanggaran = new Pelanggaran();
+                                    Pelanggaran pelanggaran = new Pelanggaran(true);
                                     pelanggaran.WaktuPelanggaran = DateTime.FromOADate((double)colValue[1]);
                                     pelanggaran.NomorRegister = colValue[2].ToString();
                                     pelanggaran.Kesatuan = colValue[3].ToString();
