@@ -529,7 +529,8 @@ namespace QRCodeWinForms
                                     pelanggaran.UmurWakil = colValue[35].ToString();
                                     pelanggaran.AlamatWakil = colValue[36].ToString();
                                     pelanggaran.BankSisaDenda = colValue[37].ToString();
-
+                                    
+                                    // TODO : FIX THIS
                                     SIM pelanggar = new SIM();
                                     pelanggar.Nomor = colValue[5].ToString();
                                     pelanggaran.Pelanggar = pelanggar;

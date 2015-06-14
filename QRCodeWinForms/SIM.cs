@@ -17,6 +17,7 @@ namespace QRCodeWinForms
 
         /** Constructor **/
         public SIM() { }
+
         public SIM(bool FromExcel)
         {
             if (FromExcel == true)
@@ -28,10 +29,11 @@ namespace QRCodeWinForms
                 isNew = true;
             }
         }
+
         public SIM(string QRData)
         {
             string[] field = QRData.Split('#'); 
-            //Isi field pada class SIM
+            // Isi field pada class SIM
             Nomor = field[1];
             Golongan = field[2];
             
@@ -58,7 +60,7 @@ namespace QRCodeWinForms
                 Pemilik.ConvertTanggalLahir(), Pemilik.Alamat, Penduduk.ConvertPekerjaan(Pemilik.Pekerjaan).ToString(), 
                 Penduduk.ConvertPendidikan(Pemilik.Pendidikan).ToString(), Penduduk.ConvertJenisKelamin(Pemilik.JenisKelamin).ToString()
             };
-            return string.Join("#", result);
+            return String.Join("#", result);
         }
         public static List<Pelanggaran> GetAllPelanggaran()
         {
@@ -69,6 +71,7 @@ namespace QRCodeWinForms
         {
             return ExcelHelper.GetAllSIM();
         }
+
         public void Save()
         {
             if (isNew == true)
