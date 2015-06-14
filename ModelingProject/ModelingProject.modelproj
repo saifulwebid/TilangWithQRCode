@@ -85,6 +85,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence Diagram\MenyimpanDataSuratTilang.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="Sequence Diagram\UserLogin\CheckUser.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence Diagram\UserLogin\CheckUser.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence Diagram\UserLogin\CheckUser.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="Use Case Diagram\HakimJaksa.usecasediagram">
       <SubType>Content</SubType>
     </Content>
@@ -111,6 +118,7 @@
       <SubType>Content</SubType>
     </Content>
     <Folder Include="Class Diagram" />
+    <Folder Include="Sequence Diagram\UserLogin" />
     <Folder Include="Use Case Diagram" />
     <Folder Include="Sequence Diagram" />
   </ItemGroup>

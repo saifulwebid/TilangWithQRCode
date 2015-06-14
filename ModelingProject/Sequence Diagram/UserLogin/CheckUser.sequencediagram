@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="f7cc5d70-d5de-4f2b-82b0-b7edc9e9cb27" name="Periksa user existing" linkedPackageId="af5540ea-611a-4f7c-b4c7-80c57b819169" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e5914cef-d5ce-4059-9030-60d0943aa6d3">
+      <profileInstance Id="6f06eabf-e879-4617-bdbd-5c838cc57686" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="76f387f6-7664-4070-8b09-e7c6f612b4a1">
+      <profileInstance Id="566cb8ef-0aeb-4ae7-b291-7911162eb2ba" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="3295b519-1f54-47bf-83a6-a0468d1d4262" name="Periksa user existing" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="02d1e7a2-a514-4efc-b8f4-ad92a5a6ca61" />
+        <fragments>
+          <behaviorExecutionSpecification Id="415fa51a-23dd-4321-85a5-bcfb8a1fcc6d" name="BehaviorExecutionSpecification3">
+            <elementDefinition Id="ad942d01-f411-42eb-964c-09b8672c7427" />
+            <coveredLifelines>
+              <lifelineMoniker Id="3a843ee6-41b2-4eaa-b6cd-2e064d0117f5" LastKnownName="User" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="32f715a0-3d8e-431a-be0f-d936e571f376" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="8eb352a1-25eb-4607-acd0-250da9eb5212" LastKnownName="ExecutionOccurrenceSpecification5" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="e3bb1f30-cab7-46ee-9908-9665af7ef1c6" LastKnownName="MessageOccurrenceSpecification4" />
+              <messageOccurrenceSpecificationMoniker Id="29a2d90a-3665-4893-9a9d-85f19e444324" LastKnownName="MessageOccurrenceSpecification5" />
+              <messageOccurrenceSpecificationMoniker Id="c8f3e0d4-9d7d-49e4-9942-0140f91ba316" LastKnownName="MessageOccurrenceSpecification8" />
+              <messageOccurrenceSpecificationMoniker Id="824e93ab-36e4-415d-8eac-838d357c7302" LastKnownName="MessageOccurrenceSpecification13" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="8eb352a1-25eb-4607-acd0-250da9eb5212" name="ExecutionOccurrenceSpecification5">
+            <elementDefinition Id="c3379107-f8a5-46ce-8472-18d74261d9cf" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="5f3a8b67-229d-4756-a0e3-dd55a4c8da81" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3a843ee6-41b2-4eaa-b6cd-2e064d0117f5" LastKnownName="User" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget Id="af9d6dec-24b1-454e-8478-ee57a1a1f4b8" name="LostFoundTarget2">
+            <elementDefinition Id="79ccebae-5017-4c48-8fa1-61d492cbfaca" />
+          </lostFoundTarget>
+          <messageOccurrenceSpecification Id="e3bb1f30-cab7-46ee-9908-9665af7ef1c6" name="MessageOccurrenceSpecification4">
+            <elementDefinition Id="553c7788-dd83-4b3b-ab65-08dccb54d628" />
+            <covered>
+              <lifelineMoniker Id="3a843ee6-41b2-4eaa-b6cd-2e064d0117f5" LastKnownName="User" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="bd905609-f24e-431e-8482-f21e6b0f83a2" name="BehaviorExecutionSpecification4">
+            <elementDefinition Id="5dd461fd-e8f2-4c24-8fb1-4bc4d98c8792" />
+            <coveredLifelines>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="d8c15590-460b-4fca-850f-cf91c00ffdfc" LastKnownName="ExecutionOccurrenceSpecification8" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="0d21ff94-ca25-4623-81e3-e4daebd0c239" LastKnownName="ExecutionOccurrenceSpecification7" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="22f2a270-fe48-4ae0-8592-106dde22fa58" LastKnownName="MessageOccurrenceSpecification6" />
+              <operandOccurrenceSpecificationMoniker Id="8639ce1d-bd44-4baa-9cd5-853fe5925137" LastKnownName="OperandOccurrenceSpecification27" />
+              <operandOccurrenceSpecificationMoniker Id="fd44d548-2936-4c76-be21-6c6eb86ec8fe" LastKnownName="OperandOccurrenceSpecification31" />
+              <messageOccurrenceSpecificationMoniker Id="2a30825f-31ca-4594-9347-da100666168e" LastKnownName="MessageOccurrenceSpecification9" />
+              <messageOccurrenceSpecificationMoniker Id="a1fac90d-b363-4b34-8ef1-1e25e60ad3df" LastKnownName="MessageOccurrenceSpecification12" />
+              <operandOccurrenceSpecificationMoniker Id="2fbaa569-9e4d-42ba-ba1f-16900d5747c9" LastKnownName="OperandOccurrenceSpecification32" />
+              <operandOccurrenceSpecificationMoniker Id="82dd45aa-ef48-4419-b559-02b25920dd0f" LastKnownName="OperandOccurrenceSpecification35" />
+              <operandOccurrenceSpecificationMoniker Id="b8ace645-85ad-45e9-b41d-f542a5681fce" LastKnownName="OperandOccurrenceSpecification36" />
+              <operandOccurrenceSpecificationMoniker Id="aea46c4a-68aa-4f8c-ae54-c574b74742ee" LastKnownName="OperandOccurrenceSpecification28" />
+              <messageOccurrenceSpecificationMoniker Id="4c9a8450-6536-4a4b-97a4-4a0f70a49f94" LastKnownName="MessageOccurrenceSpecification7" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="0d21ff94-ca25-4623-81e3-e4daebd0c239" name="ExecutionOccurrenceSpecification7">
+            <elementDefinition Id="6d30ce52-f9a4-4d6b-99d9-90f5efa14e12" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="d79fccdc-2789-42da-9001-0867c27747ec" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="29a2d90a-3665-4893-9a9d-85f19e444324" name="MessageOccurrenceSpecification5">
+            <elementDefinition Id="db9293c0-6165-4391-902c-877dd5876a5b" />
+            <covered>
+              <lifelineMoniker Id="3a843ee6-41b2-4eaa-b6cd-2e064d0117f5" LastKnownName="User" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="22f2a270-fe48-4ae0-8592-106dde22fa58" name="MessageOccurrenceSpecification6">
+            <elementDefinition Id="10e12ae0-61f7-4c4a-97a9-b1e742e5ddd8" />
+            <covered>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment Id="8d8de22f-092e-45b7-8451-45b7223e219b" name="CombinedFragment1" interactionOperator="Loop">
+            <elementDefinition Id="ad51e02a-bba7-4c9d-b064-d0a2fb5fc82f" />
+            <coveredLifelines>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+              <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="5d04f62c-910d-4405-ba94-0cc86ce552cd" name="InteractionOperand1">
+                <elementDefinition Id="d5e5bbe5-c98b-442b-9b12-8aea647aa0f5" />
+                <coveredLifelines>
+                  <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+                  <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+                </coveredLifelines>
+                <fragments>
+                  <combinedFragment Id="1da32136-cde4-4cbc-8e2a-d49f82cca0a2" name="CombinedFragment1" interactionOperator="Alt">
+                    <elementDefinition Id="d9658c30-5cbb-44da-a899-d50ae507e26b" />
+                    <coveredLifelines>
+                      <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+                      <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand Id="e8e591f2-f1d7-4cd3-b6f8-7a2a5057480b" name="InteractionOperand1">
+                        <elementDefinition Id="961a96e8-fca2-4b6f-8264-692a606e5aba" />
+                        <coveredLifelines>
+                          <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+                          <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+                        </coveredLifelines>
+                        <guard>
+                          <interactionConstraint Id="e399c872-3542-43fd-a9b0-3b6537b01078" guardText="if username and password matches">
+                            <elementDefinition Id="de0c4c9c-6a99-4034-b0d6-5c71204f5d3a" />
+                          </interactionConstraint>
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker Id="80deb692-e976-4c49-bb96-491175e3f94b" LastKnownName="OperandOccurrenceSpecification29" />
+                          <operandOccurrenceSpecificationMoniker Id="8e89d5d3-c417-496d-93da-e5bd88b6834b" LastKnownName="OperandOccurrenceSpecification30" />
+                          <operandOccurrenceSpecificationMoniker Id="fd44d548-2936-4c76-be21-6c6eb86ec8fe" LastKnownName="OperandOccurrenceSpecification31" />
+                          <operandOccurrenceSpecificationMoniker Id="2fbaa569-9e4d-42ba-ba1f-16900d5747c9" LastKnownName="OperandOccurrenceSpecification32" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                      <interactionOperand Id="f0503a94-c680-40da-b9b6-2bc3dbe9d890" name="InteractionOperand2">
+                        <elementDefinition Id="c70c8854-7a1f-4955-a130-75f1b9fd3327" />
+                        <coveredLifelines>
+                          <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+                          <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+                        </coveredLifelines>
+                        <guard>
+                          <interactionConstraint Id="bf2bfcf8-d347-4951-b06b-6af74bd64ef4">
+                            <elementDefinition Id="47265c23-54b9-4b4d-b18b-f139e04133a1" />
+                          </interactionConstraint>
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker Id="ad402917-a3a6-492a-8207-cd70c46c9f20" LastKnownName="OperandOccurrenceSpecification33" />
+                          <operandOccurrenceSpecificationMoniker Id="76d48aeb-5bb4-428b-b3e4-78efd691a2e2" LastKnownName="OperandOccurrenceSpecification34" />
+                          <operandOccurrenceSpecificationMoniker Id="82dd45aa-ef48-4419-b559-02b25920dd0f" LastKnownName="OperandOccurrenceSpecification35" />
+                          <operandOccurrenceSpecificationMoniker Id="b8ace645-85ad-45e9-b41d-f542a5681fce" LastKnownName="OperandOccurrenceSpecification36" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
+                <guard>
+                  <interactionConstraint Id="f7e3dce6-38fa-45fb-9439-c9744e2780f3" guardText="for every row in database">
+                    <elementDefinition Id="43c13682-c1d0-41e8-84e1-de0e79bd12f3" />
+                    <maxInt>
+                      <literalString Id="f17ced02-c6f5-4530-aefa-184d443927f7" name="LiteralString1">
+                        <elementDefinition Id="e6caa2d7-f7ee-402f-b098-f4b33a4f942a" />
+                      </literalString>
+                    </maxInt>
+                    <minInt>
+                      <literalString Id="cc03918e-a0e2-4bed-803d-c119e42ef935" name="LiteralString2">
+                        <elementDefinition Id="69cffcf7-c080-4d7d-ad56-fa614052bd30" />
+                      </literalString>
+                    </minInt>
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="a54cc718-2240-4e96-bf38-eb29380a1025" LastKnownName="OperandOccurrenceSpecification25" />
+                  <operandOccurrenceSpecificationMoniker Id="d5596697-09a2-47d8-afa0-9d5f49bbdb6c" LastKnownName="OperandOccurrenceSpecification26" />
+                  <operandOccurrenceSpecificationMoniker Id="8639ce1d-bd44-4baa-9cd5-853fe5925137" LastKnownName="OperandOccurrenceSpecification27" />
+                  <operandOccurrenceSpecificationMoniker Id="aea46c4a-68aa-4f8c-ae54-c574b74742ee" LastKnownName="OperandOccurrenceSpecification28" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="a54cc718-2240-4e96-bf38-eb29380a1025" name="OperandOccurrenceSpecification25">
+            <elementDefinition Id="531d2796-8e31-4422-aa18-d5cc0451d1db" />
+            <covered>
+              <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="8639ce1d-bd44-4baa-9cd5-853fe5925137" name="OperandOccurrenceSpecification27">
+            <elementDefinition Id="7ee362be-057e-4e17-941b-2fac94e39857" />
+            <covered>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="fd44d548-2936-4c76-be21-6c6eb86ec8fe" name="OperandOccurrenceSpecification31">
+            <elementDefinition Id="80f8169f-7365-436a-8f6e-a6109972d2e2" />
+            <covered>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="80deb692-e976-4c49-bb96-491175e3f94b" name="OperandOccurrenceSpecification29">
+            <elementDefinition Id="0c6e4118-bd95-46ca-909a-50f4ffb32d1d" />
+            <covered>
+              <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="c9ad7e9b-c344-4f15-8af0-925c25ffebd3" name="BehaviorExecutionSpecification5">
+            <elementDefinition Id="88a1c094-8854-42f5-bec6-d19b4bbf05b9" />
+            <coveredLifelines>
+              <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="0c7eb2cf-0211-42a2-a463-33d04372add2" LastKnownName="ExecutionOccurrenceSpecification10" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="3608bf75-59db-475e-9fa6-a54fdab73a80" LastKnownName="ExecutionOccurrenceSpecification9" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="174f44b4-24e8-4ce8-9e74-91a3c5b3c3cd" LastKnownName="MessageOccurrenceSpecification10" />
+              <messageOccurrenceSpecificationMoniker Id="2fac10f7-a79e-407d-967d-96335325b7ce" LastKnownName="MessageOccurrenceSpecification11" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="3608bf75-59db-475e-9fa6-a54fdab73a80" name="ExecutionOccurrenceSpecification9">
+            <elementDefinition Id="b36c43a2-a328-46a6-9c42-260e1cf3613c" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="8c3fd90b-9740-4c32-acfb-cb8b7b99ad94" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2a30825f-31ca-4594-9347-da100666168e" name="MessageOccurrenceSpecification9">
+            <elementDefinition Id="ee037361-9304-4a78-b1da-2206e952e6ac" />
+            <covered>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="174f44b4-24e8-4ce8-9e74-91a3c5b3c3cd" name="MessageOccurrenceSpecification10">
+            <elementDefinition Id="73c4a833-af69-49e3-aa00-dd420e97ba3f" />
+            <covered>
+              <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="a1fac90d-b363-4b34-8ef1-1e25e60ad3df" name="MessageOccurrenceSpecification12">
+            <elementDefinition Id="9b5f6a89-3dd7-4c92-8394-67ddb10c4a6b" />
+            <covered>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2fac10f7-a79e-407d-967d-96335325b7ce" name="MessageOccurrenceSpecification11">
+            <elementDefinition Id="4d20ca88-ea5a-4f4c-b1ff-38bdc19a6123" />
+            <covered>
+              <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="0c7eb2cf-0211-42a2-a463-33d04372add2" name="ExecutionOccurrenceSpecification10">
+            <elementDefinition Id="f3ba38d9-0d41-4bb3-8e16-cbca4ac7e50b" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3dca3aa7-5613-4c12-a83c-78bd82fe7daa" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="8e89d5d3-c417-496d-93da-e5bd88b6834b" name="OperandOccurrenceSpecification30">
+            <elementDefinition Id="a6d03508-7710-4c2f-b761-05ea84bc33da" />
+            <covered>
+              <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="2fbaa569-9e4d-42ba-ba1f-16900d5747c9" name="OperandOccurrenceSpecification32">
+            <elementDefinition Id="dbb6cef8-2864-406e-9a4e-80c684ae203f" />
+            <covered>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="82dd45aa-ef48-4419-b559-02b25920dd0f" name="OperandOccurrenceSpecification35">
+            <elementDefinition Id="878ee1e6-19ff-4d81-b7f5-d57a93fb4097" />
+            <covered>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="ad402917-a3a6-492a-8207-cd70c46c9f20" name="OperandOccurrenceSpecification33">
+            <elementDefinition Id="932ab82e-03aa-4dd9-b2ca-b3ad63884bf7" />
+            <covered>
+              <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="76d48aeb-5bb4-428b-b3e4-78efd691a2e2" name="OperandOccurrenceSpecification34">
+            <elementDefinition Id="e9dd2f0e-1350-47e0-a032-7071483f4d43" />
+            <covered>
+              <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="b8ace645-85ad-45e9-b41d-f542a5681fce" name="OperandOccurrenceSpecification36">
+            <elementDefinition Id="3982764c-0013-44f1-8611-f004f1937885" />
+            <covered>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="aea46c4a-68aa-4f8c-ae54-c574b74742ee" name="OperandOccurrenceSpecification28">
+            <elementDefinition Id="bc10f6e7-5855-4cd6-bc68-4f6a1bf54116" />
+            <covered>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="d5596697-09a2-47d8-afa0-9d5f49bbdb6c" name="OperandOccurrenceSpecification26">
+            <elementDefinition Id="9d71556b-194d-4cb2-9b8c-bc7c3e561680" />
+            <covered>
+              <lifelineMoniker Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" LastKnownName="user : User" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="4c9a8450-6536-4a4b-97a4-4a0f70a49f94" name="MessageOccurrenceSpecification7">
+            <elementDefinition Id="db3e90f6-d2b8-4c8f-9298-6333ebf972f2" />
+            <covered>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c8f3e0d4-9d7d-49e4-9942-0140f91ba316" name="MessageOccurrenceSpecification8">
+            <elementDefinition Id="cdaae39c-7a71-4ba8-abf6-093e87203eb7" />
+            <covered>
+              <lifelineMoniker Id="3a843ee6-41b2-4eaa-b6cd-2e064d0117f5" LastKnownName="User" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="d8c15590-460b-4fca-850f-cf91c00ffdfc" name="ExecutionOccurrenceSpecification8">
+            <elementDefinition Id="65d72bd6-18db-497d-979d-ea7d46aa3118" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="01b13b79-9b63-430c-b635-ebb1ff30c496" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" LastKnownName="ExcelHelper" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="824e93ab-36e4-415d-8eac-838d357c7302" name="MessageOccurrenceSpecification13">
+            <elementDefinition Id="e4fd2255-dd4e-486b-9ab0-8decf2077156" />
+            <covered>
+              <lifelineMoniker Id="3a843ee6-41b2-4eaa-b6cd-2e064d0117f5" LastKnownName="User" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="662c89ed-fbe0-4cd8-8890-352afdf317d4" name="LostFoundTarget3">
+            <elementDefinition Id="2bfeab89-6d7f-45bd-809d-2bcf940860a0" />
+          </lostFoundTarget>
+          <executionOccurrenceSpecification Id="32f715a0-3d8e-431a-be0f-d936e571f376" name="ExecutionOccurrenceSpecification6">
+            <elementDefinition Id="c04ce9d2-1c2f-4d22-bc02-f47d642b9448" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="1624ee69-5651-43c4-8fbb-ed0c4fd7e62f" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3a843ee6-41b2-4eaa-b6cd-2e064d0117f5" LastKnownName="User" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="3a843ee6-41b2-4eaa-b6cd-2e064d0117f5" name="User" isActor="false" lifelineDisplayName="User">
+            <elementDefinition Id="5c7dec90-8b11-4cb3-a9a1-5b7b96f50a18" />
+            <represents>
+              <propertyMoniker Id="fe580dbc-f134-44c1-857c-c30c17459b21" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="8eb352a1-25eb-4607-acd0-250da9eb5212" LastKnownName="ExecutionOccurrenceSpecification5" />
+              <executionOccurrenceSpecificationMoniker Id="32f715a0-3d8e-431a-be0f-d936e571f376" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="84c5ec7f-4af7-41fb-95e1-9ebac6ce3c31" name="ExcelHelper" isActor="false" lifelineDisplayName="ExcelHelper">
+            <elementDefinition Id="7b0b5dec-70db-4686-af69-1821354de7df" />
+            <represents>
+              <propertyMoniker Id="3f901c42-b00d-48f0-a4c9-2f0c2e687d06" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="0d21ff94-ca25-4623-81e3-e4daebd0c239" LastKnownName="ExecutionOccurrenceSpecification7" />
+              <executionOccurrenceSpecificationMoniker Id="d8c15590-460b-4fca-850f-cf91c00ffdfc" LastKnownName="ExecutionOccurrenceSpecification8" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="a59f8fa3-e894-4dd7-8b19-2d400fd27e5b" name="user : User" isActor="false" lifelineDisplayName="user : User">
+            <elementDefinition Id="28103f6a-8289-41c9-8e5c-a409c9583f5c" />
+            <represents>
+              <propertyMoniker Id="e3d74f98-0ae3-43d2-a749-a8e86bb8a0ec" />
+            </represents>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="a54cc718-2240-4e96-bf38-eb29380a1025" LastKnownName="OperandOccurrenceSpecification25" />
+              <operandOccurrenceSpecificationMoniker Id="80deb692-e976-4c49-bb96-491175e3f94b" LastKnownName="OperandOccurrenceSpecification29" />
+              <executionOccurrenceSpecificationMoniker Id="3608bf75-59db-475e-9fa6-a54fdab73a80" LastKnownName="ExecutionOccurrenceSpecification9" />
+              <executionOccurrenceSpecificationMoniker Id="0c7eb2cf-0211-42a2-a463-33d04372add2" LastKnownName="ExecutionOccurrenceSpecification10" />
+              <operandOccurrenceSpecificationMoniker Id="8e89d5d3-c417-496d-93da-e5bd88b6834b" LastKnownName="OperandOccurrenceSpecification30" />
+              <operandOccurrenceSpecificationMoniker Id="ad402917-a3a6-492a-8207-cd70c46c9f20" LastKnownName="OperandOccurrenceSpecification33" />
+              <operandOccurrenceSpecificationMoniker Id="76d48aeb-5bb4-428b-b3e4-78efd691a2e2" LastKnownName="OperandOccurrenceSpecification34" />
+              <operandOccurrenceSpecificationMoniker Id="d5596697-09a2-47d8-afa0-9d5f49bbdb6c" LastKnownName="OperandOccurrenceSpecification26" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="149f9f1c-eec6-47bb-be59-27bfc9ec4d3e" name="Check user" messageKind="Found" messageSort="AsynchCall" createSelfMessage="false" signatureText="+ Check(Username : String, Password : String) : User">
+            <elementDefinition Id="664725f6-e409-4f1b-b1bb-59482d106e1c" />
+            <sendEvent>
+              <lostFoundTargetMoniker Id="af9d6dec-24b1-454e-8478-ee57a1a1f4b8" LastKnownName="LostFoundTarget2" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="e3bb1f30-cab7-46ee-9908-9665af7ef1c6" LastKnownName="MessageOccurrenceSpecification4" />
+            </receiveEvent>
+          </message>
+          <message Id="94f345d6-3e68-43de-ab97-4ce832d61090" name="Check in database" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ CheckUser(Username : String, Password : String) : User">
+            <elementDefinition Id="0911f72b-0103-4613-86e9-4dac9fba1961" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="29a2d90a-3665-4893-9a9d-85f19e444324" LastKnownName="MessageOccurrenceSpecification5" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="22f2a270-fe48-4ae0-8592-106dde22fa58" LastKnownName="MessageOccurrenceSpecification6" />
+            </receiveEvent>
+          </message>
+          <message Id="aa4459e3-a855-43d3-86d1-5aa74b301ed8" name="&lt;&lt;create&gt;&gt;" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false" signatureText="+ User()">
+            <elementDefinition Id="0b40608c-900f-4195-9877-93dd8e4dfc0f" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="2a30825f-31ca-4594-9347-da100666168e" LastKnownName="MessageOccurrenceSpecification9" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="174f44b4-24e8-4ce8-9e74-91a3c5b3c3cd" LastKnownName="MessageOccurrenceSpecification10" />
+            </receiveEvent>
+          </message>
+          <message Id="f7562678-1ee8-4e31-a794-0327ace411a1" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="aea15f9c-89f5-4536-8cdb-e62778bb93c8" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="2fac10f7-a79e-407d-967d-96335325b7ce" LastKnownName="MessageOccurrenceSpecification11" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="a1fac90d-b363-4b34-8ef1-1e25e60ad3df" LastKnownName="MessageOccurrenceSpecification12" />
+            </receiveEvent>
+          </message>
+          <message Id="ad18fb3a-c73e-4b2b-9128-9e7c4614d3db" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="02a82a33-67cb-424d-a9a3-f4d19da08da1" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="4c9a8450-6536-4a4b-97a4-4a0f70a49f94" LastKnownName="MessageOccurrenceSpecification7" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="c8f3e0d4-9d7d-49e4-9942-0140f91ba316" LastKnownName="MessageOccurrenceSpecification8" />
+            </receiveEvent>
+          </message>
+          <message Id="72bf9ae2-b41e-405c-b37b-2f238726d652" name="Return user" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="efb8abfc-78aa-4e2d-b0f9-cd0191e73d77" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="824e93ab-36e4-415d-8eac-838d357c7302" LastKnownName="MessageOccurrenceSpecification13" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="662c89ed-fbe0-4cd8-8890-352afdf317d4" LastKnownName="LostFoundTarget3" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property Id="fe580dbc-f134-44c1-857c-c30c17459b21" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b6acb50e-6381-4da7-8ad7-e1a7de201198" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a06404cc-e87a-4764-8694-0a6c13dfabbf" LastKnownName="User" />
+            </type_NamedElement>
+          </property>
+          <property Id="3f901c42-b00d-48f0-a4c9-2f0c2e687d06" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="836ef05c-e0c1-455a-a20f-8dab0b55932d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="eb7037df-9e8b-485d-9e58-1fe887c005c6" LastKnownName="ExcelHelper" />
+            </type_NamedElement>
+          </property>
+          <property Id="e3d74f98-0ae3-43d2-a749-a8e86bb8a0ec" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3744f03e-f580-47a7-bfda-be1daba6569a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a06404cc-e87a-4764-8694-0a6c13dfabbf" LastKnownName="User" />
+            </type_NamedElement>
+          </property>
+          <property Id="999cd714-d0a7-4d64-94ea-c460424e993f" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="468764d5-83da-4270-a5b8-06e3ec0460a1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="413e36dc-1067-4996-98b1-c4e24bbbb16d" LastKnownName="frmLogin" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a06404cc-e87a-4764-8694-0a6c13dfabbf" name="User" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::User">
+        <elementDefinition Id="39f46669-8760-447a-aef6-ac8dfd05bbac" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="eb7037df-9e8b-485d-9e58-1fe887c005c6" name="ExcelHelper" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::ExcelHelper">
+        <elementDefinition Id="8d05d3e8-a7d6-4308-a73b-9bc8f82d14f4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="413e36dc-1067-4996-98b1-c4e24bbbb16d" name="frmLogin" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::frmLogin">
+        <elementDefinition Id="e9642c50-7135-43b5-8d6b-387c96cc1604" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="5f3a8b67-229d-4756-a0e3-dd55a4c8da81" name="ExecutionEvent">
+        <elementDefinition Id="9a9c2c54-b47f-4a3b-b0ff-c7da7c0664af" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="1624ee69-5651-43c4-8fbb-ed0c4fd7e62f" name="ExecutionEvent">
+        <elementDefinition Id="bcc3a262-30f7-44b6-9635-8195adb681b4" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="d79fccdc-2789-42da-9001-0867c27747ec" name="ExecutionEvent">
+        <elementDefinition Id="472f98eb-f831-46b5-a449-be4e3eeae3a5" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="01b13b79-9b63-430c-b635-ebb1ff30c496" name="ExecutionEvent">
+        <elementDefinition Id="62b6ec0f-80ab-4810-b1b4-bb9264cc928c" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="8c3fd90b-9740-4c32-acfb-cb8b7b99ad94" name="ExecutionEvent">
+        <elementDefinition Id="8e8586cd-18c2-4bdf-afb3-b19ded26a59b" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3dca3aa7-5613-4c12-a83c-78bd82fe7daa" name="ExecutionEvent">
+        <elementDefinition Id="d1b5036e-c677-4999-886b-ac00963f25f3" />
+      </executionEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="af5540ea-611a-4f7c-b4c7-80c57b819169" name="ModelingProject">
+    <elementDefinition Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd" />
+  </package>
+</SequenceDesignerModel>
