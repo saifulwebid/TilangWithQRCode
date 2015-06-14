@@ -49,6 +49,7 @@ namespace QRCodeWinForms
             {
                 lblJenisKelamin.Text = "";
             }
+            label11.Text = "CIMAHI, " + tampilSIM.TanggalBuat.ToLongDateString();
 
             GenerateQrCode();
             btnCetakSIM.Enabled = false;
