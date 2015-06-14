@@ -1,0 +1,1065 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="b6280f81-2fb3-411b-baf1-b484c99d4517" name="ExcelHelper" linkedPackageId="95cba21f-d81b-4b6c-96ce-8ecf0f86040c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="1776c056-00e9-415d-b681-9743f0428aab">
+      <profileInstance Id="060ceb17-bcf0-4116-b47c-754dde6185e2" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5bf9b027-3759-4617-9c82-28c63ae25534">
+      <profileInstance Id="71d5e1cb-f9e7-4c64-ab17-0ad4ade875d5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f7d3e001-c59c-445f-846e-65c7878ee35f" name="ExcelHelper" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8d05d3e8-a7d6-4308-a73b-9bc8f82d14f4" />
+        <ownedAttributesInternal>
+          <property Id="87c4098b-fdb5-473a-853f-3ad71483e356" name="FileName" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3f537d04-abac-42e9-aaed-9917089874c0" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="299c9551-bca2-491e-b726-0cd501f59d99" name="CheckUser" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0c7dfef7-08dc-44a7-bb0b-75ddfd5023a2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="df37b5cc-ea35-4675-961c-055cbd3d3d48" direction="Return" isUnique="false">
+                  <elementDefinition Id="5e76d9ad-e53f-46ce-b797-799a435f0078" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1250e430-60bc-4315-bcd0-c3bc4b12ce5b" LastKnownName="User" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fe3f6f73-8e80-4b66-9c89-11aac580994d" name="Username" direction="In" isUnique="false">
+                  <elementDefinition Id="f443df39-baea-4f72-9098-587d915403ae" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0fbd600f-629e-44e5-bcd8-5701205bf95d" name="Password" direction="In" isUnique="false">
+                  <elementDefinition Id="b195d4ce-e72d-4a61-9ef8-94f1df583aec" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="37c391da-6d8b-4a39-a566-2cd8862e8e8d" name="GetAllPenduduk" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="03c5d0e9-4681-430f-87dd-b16419b7e14f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="303eec1e-fdb7-4dde-b9f5-e429259fd174" direction="Return">
+                  <lowerValueInternal>
+                    <literalString Id="ca361ae5-757b-45e8-baaa-44e67948995a" name="Lower" value="*">
+                      <elementDefinition Id="ba41d752-5a72-4243-ae1d-1137ddfba769" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f366c80e-a4ac-4a8b-8183-04399495118d" name="Upper" value="*">
+                      <elementDefinition Id="bb4edbcf-240b-4934-ab3d-fea7144673f6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="e2aede56-fe63-4829-850b-4f746c3f84db" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="320809ad-4361-41e8-b5c4-74802cd15445" LastKnownName="Penduduk" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="72fb8ea4-87a3-4460-aa3c-2099280a6dd3" name="GetAllSIM" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="92052589-4735-45d2-8240-eafafed87a87" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e6cef172-f874-4ad5-aac4-9b61e41f677a" direction="Return" isUnique="false">
+                  <lowerValueInternal>
+                    <literalString Id="fbc6c41c-971d-4f13-93db-7a118037585b" name="Lower" value="*">
+                      <elementDefinition Id="36c17474-e637-4f04-9e37-f0a0e6bc2ea8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8f5edc7c-9da8-4b90-a76b-c7397c790d78" name="Upper" value="*">
+                      <elementDefinition Id="3673dd29-3b1a-47e6-b40d-9dee025f85c1" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="edf1a22c-28e2-4cb7-8a94-f7a6dd0b9536" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b8948d75-d98a-4a95-8fd9-6be28e4819fe" LastKnownName="SIM" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1573dc87-5d12-45a2-92d2-3a481cb78feb" name="SaveSIM" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b8f4d97e-6cf7-45e6-9925-47d04dbeb8a9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6bec3282-1a96-4f28-8008-047b7c54fc16" name="data" direction="In" isUnique="false">
+                  <elementDefinition Id="6472b238-d86b-4514-85a7-980b7fca941b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b8948d75-d98a-4a95-8fd9-6be28e4819fe" LastKnownName="SIM" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="937a4ea3-f6d7-4c45-a507-741b23d88ca7" name="GetAllPasal" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0ac1629e-770d-4914-97f3-ade568a359c7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d0313d40-8f77-4b45-a3e4-3d3e51023bc1" direction="Return" isUnique="false">
+                  <lowerValueInternal>
+                    <literalString Id="87c6213d-520e-4a7a-9138-ca486056f66f" name="Lower" value="*">
+                      <elementDefinition Id="32fdb09f-58c1-421f-b8d3-9fa6aac981e6" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f132c3fe-9740-4569-ac82-dd79d39816c8" name="Upper" value="*">
+                      <elementDefinition Id="db30c610-696f-4691-8511-50170fa32f82" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="61afec54-53f1-42f5-b221-b7ab136107b8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e2ec9ca6-9937-4a07-8022-0f32eb89e28f" LastKnownName="Pasal" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ec9de350-5985-41a2-91eb-9737d652a773" name="SavePelanggaran" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5d8e5175-0ff2-4902-b8f9-51feb81c3a58" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="54d4c437-8a2c-4a72-9bd0-dadc8c59eb46" name="data" direction="In" isUnique="false">
+                  <elementDefinition Id="e3e8f3d8-163c-4bea-845f-953670a82737" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="42979959-71fa-43df-a324-d9c1f8f995ff" LastKnownName="Pelanggaran" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="051fa8e8-c3bf-4599-979f-5b89a1caf52e" name="GetAllPelanggaran" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cd62acc2-72b1-4c99-94cf-adf4793913d0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f1e69c81-2424-4248-b099-48502aca6e6a" direction="Return" isUnique="false">
+                  <lowerValueInternal>
+                    <literalString Id="646260d4-d235-4b82-93e6-40a812a63635" name="Lower" value="*">
+                      <elementDefinition Id="57a54e09-c71b-4114-acb0-d06482cc6358" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="5a6f6c72-ff6e-424e-9b8b-d9709a34a4fc" name="Upper" value="*">
+                      <elementDefinition Id="9735b4d8-5d06-451b-a20b-3525741f56aa" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a69cde50-b299-4a84-912a-df3be3343e6e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="42979959-71fa-43df-a324-d9c1f8f995ff" LastKnownName="Pelanggaran" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="44176d21-8600-4b38-bf86-ba40abe91faa" name="CheckPenduduk" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9f0ae14d-1738-4054-ab8a-13dc5a6dc097" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0b672de9-df99-4133-9540-a27df2528ae7" name="NomorKTP" direction="In" isUnique="false">
+                  <elementDefinition Id="2b4554d1-7053-4a7f-ac52-30f004f5859d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d425e2cc-b44a-44c3-91bf-1ae8fd862a34" direction="Return" isUnique="false">
+                  <elementDefinition Id="0c5ee490-43ab-4163-bcde-1e1f41f40947" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="320809ad-4361-41e8-b5c4-74802cd15445" LastKnownName="Penduduk" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e4c4ce3e-1d9f-41a1-bb35-ed8a3546c0e6" name="SavePenduduk" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bbf24255-148b-417e-a3a3-d30edac9bfef" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="81a43309-a673-4790-82ed-5ec12885e295" name="data" direction="In" isUnique="false">
+                  <elementDefinition Id="b8834e94-a491-4615-b793-aedf6077bfe0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="320809ad-4361-41e8-b5c4-74802cd15445" LastKnownName="Penduduk" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="1250e430-60bc-4315-bcd0-c3bc4b12ce5b" name="User" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::User">
+        <elementDefinition Id="39f46669-8760-447a-aef6-ac8dfd05bbac" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4a45c86f-c593-483f-be26-31cfc2c48145" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="320809ad-4361-41e8-b5c4-74802cd15445" name="Penduduk" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::Penduduk">
+        <elementDefinition Id="c4b45093-3421-4fb0-9d20-c48a6e6b818c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b8948d75-d98a-4a95-8fd9-6be28e4819fe" name="SIM" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::SIM">
+        <elementDefinition Id="b6498c74-af71-4803-8aba-ae5af27f462c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e2ec9ca6-9937-4a07-8022-0f32eb89e28f" name="Pasal" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::Pasal">
+        <elementDefinition Id="d26db225-5baf-4edc-9ce2-3418865a3aa2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="42979959-71fa-43df-a324-d9c1f8f995ff" name="Pelanggaran" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::Pelanggaran">
+        <elementDefinition Id="3115616d-1ddd-41d7-849e-82c477b0ccfe" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4ad2a50c-fca2-4a75-8328-c39f993379d7" name="Pasal" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d26db225-5baf-4edc-9ce2-3418865a3aa2" />
+        <suppliersInternal>
+          <dependency Id="808534e4-07cf-454f-b357-67761c27b089">
+            <classMoniker Id="f7d3e001-c59c-445f-846e-65c7878ee35f" LastKnownName="ExcelHelper" />
+            <elementDefinition Id="17aa5cd1-e6c9-46d4-9cf3-bf3dbfbf89cf" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="67f4d8bb-be37-45be-ac3b-2d8ebe87f569" isDerived="false" sourceEndRoleName="Pasal" targetEndRoleName="Pelanggaran" isLeaf="false" isAbstract="false">
+            <classMoniker Id="eed59894-a426-468b-8437-7bb2f0ede719" LastKnownName="Pelanggaran" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="03468c59-f9ea-4107-903b-b6232b78fb48" name="Pasal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e44489a6-2401-4f76-9b9a-c5428722988b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0762ba9f-1cc4-4306-93f9-5003da56d04c" name="Pelanggaran" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="e51bd22c-e06a-4bf1-b24d-4c5088061071" name="Lower" value="*">
+                      <elementDefinition Id="4c0d6a24-4265-49cc-adf0-4e3b5f50c0de" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="504e1a48-216b-4bbf-a8bc-ef237a55cd2d" name="Upper" value="*">
+                      <elementDefinition Id="e3455073-3fdc-430c-bb93-807d8c4546ea" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="47801257-f2ac-4701-aab1-858e9458ea68" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7afa6b96-18ef-4813-888b-b612389c1c16" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="91fbf933-fb84-472c-adfa-2deda804c454" name="Nomor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9ed5514a-dc88-4b34-8257-95b3e1604ac4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="1b52d40d-7405-4dc7-9e93-b1f929f94686" name="Keterangan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e71cec9a-9418-41d2-af5b-8446a7516f2e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="2b25b45c-7bb4-4ff3-8492-d55dbedbdf44" name="Denda" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="11cc9ec2-ecc4-452a-a60f-e3ecb7e55ff2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c4f411b7-9a7e-4777-865a-0c0166befa94" LastKnownName="Currency" />
+            </type_NamedElement>
+          </property>
+          <property Id="8f31189c-a851-47f7-a96e-128d5ddac385" name="Pidana" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8f182ed2-10b1-4df9-94c3-58254267364a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bcdb68bb-bd0e-4015-a1e0-dd090c3dbb12" LastKnownName="Double" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="48a5c8c4-040f-41b9-8303-d85f6f945451" name="GetAllPelanggaran" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3e929aae-83e4-40b3-8c68-425163e07f81" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1757ac94-9657-4261-9601-66a518239dbd" direction="Return" isUnique="false">
+                  <lowerValueInternal>
+                    <literalString Id="ee46ffdb-3606-4753-98c0-6fbbf1770e3c" name="Lower" value="*">
+                      <elementDefinition Id="5eff4cfa-cd1b-4dec-9e3e-99f8cd64b595" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="cf698e2a-1052-4821-89d3-5baf0fde648c" name="Upper" value="*">
+                      <elementDefinition Id="67bf52c5-4683-4f34-885c-9a36a09b6330" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="cd46499b-65d6-4dbd-8933-2d661ee7479e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="42979959-71fa-43df-a324-d9c1f8f995ff" LastKnownName="Pelanggaran" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b6d7df56-7a09-46a6-94f3-840955b1325c" name="GetStatistic" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="33a26694-1389-4f52-8eb8-5d9c7a69ed9e" />
+          </operation>
+          <operation Id="1dbc78e5-ec1c-496f-9fc1-2746c986b206" name="GetAll" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e31f910b-e5b9-4652-9284-c1cbc011b353" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a036b4ac-09b6-4d27-a03b-abbac8e30d15" direction="Return" isUnique="false">
+                  <lowerValueInternal>
+                    <literalString Id="07923d9d-e9fc-4056-aa76-09d016026378" name="Lower" value="*">
+                      <elementDefinition Id="e259f600-c36b-4a17-ade5-02d07240e9aa" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d34d1413-4abe-4c92-8543-f6de2a25fbc9" name="Upper" value="*">
+                      <elementDefinition Id="de5760a4-23f1-45d0-88aa-4cfdb36fb2bb" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="1125c3cf-859c-4164-a6a0-1df0bee5b7f0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e2ec9ca6-9937-4a07-8022-0f32eb89e28f" LastKnownName="Pasal" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1ec55288-32e0-4002-91d0-699ab39b2c65" name="Pasal" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="09f3ad4f-2475-4653-a3be-eeaa8828d007" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c4f411b7-9a7e-4777-865a-0c0166befa94" name="Currency" isAbstract="false" isLeaf="false" cachedFullName="Currency">
+        <elementDefinition Id="870bc30d-8277-4b6f-91b3-dbcdb7ad3d8c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bcdb68bb-bd0e-4015-a1e0-dd090c3dbb12" name="Double" isAbstract="false" isLeaf="false" cachedFullName="Double">
+        <elementDefinition Id="ecbdf44a-5bdb-4fef-965b-d60cfaa14e4d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="eed59894-a426-468b-8437-7bb2f0ede719" name="Pelanggaran" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3115616d-1ddd-41d7-849e-82c477b0ccfe" />
+        <suppliersInternal>
+          <dependency Id="50677dac-8768-4fe5-92a0-450e8c5cbb9c">
+            <classMoniker Id="f7d3e001-c59c-445f-846e-65c7878ee35f" LastKnownName="ExcelHelper" />
+            <elementDefinition Id="25b25eb2-4cf9-497f-befb-7bb654380376" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="dae355bf-7664-45ee-9e95-85c94448002f" name="Pelanggar" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b332a3bf-b8e5-4b6d-bc86-34970364215d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b8948d75-d98a-4a95-8fd9-6be28e4819fe" LastKnownName="SIM" />
+            </type_NamedElement>
+          </property>
+          <property Id="ae4e5dc8-c622-487d-82c5-4530ba54485d" name="WaktuPelanggaran" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="03aab830-caed-4765-b5b4-76025e967bf4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="49f7a1c2-f931-4381-860d-0529d644c6da" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="fb88a0c6-fe92-45fe-b128-99b6a6e6ef9e" name="NomorRegister" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a6140230-29b2-4d97-90a4-394efb8049ff" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="1dd84b9e-6e84-4c1f-85cb-76133cf9f3e4" name="Kesatuan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="920db7ec-4c83-412b-8d24-8cdc20d180f5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="0f4e1287-6f48-4067-b3d5-be119a8a96d8" name="NomorTilang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e2dc84e8-ca8f-4e7f-8cd6-5fd7dcca8087" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="5523ad0c-e1a6-408a-b4f0-b286a705334f" name="NomorKendaraan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="21b76225-327e-4359-afa9-04ee8b031d85" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="8359b99c-5fab-41d0-b840-9b9a9a74fbb3" name="JenisKendaraan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1698a771-8237-4319-a1ee-0325e49cc78d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="3dd14db2-a57b-44d7-a2a1-faaf41f209fe" name="MerekKendaraan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="703bdc1a-2e4d-41d3-b0e9-156106e1d202" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="8e4d771b-236e-4af4-b51d-e563569890a8" name="NomorRangkaKendaraan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c5f38c03-a138-4414-af6a-449687977063" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="8b9970f6-fcec-4b44-aaa6-d75fc53a2d73" name="NomorMesinKendaraan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f27cd111-23f2-418f-a574-3e4df64fadf6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="ca207554-5622-46a6-8996-4253779b4e9c" name="SamsatKendaraan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f7fe8404-69bc-4a87-b0ff-faa5cabce200" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="8520cd63-9646-4e10-a4ee-8dd419e4c344" name="DisitaSKMasaBerlaku" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eaec65cc-8ea6-4047-bdac-2beb7188e0de" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="49f7a1c2-f931-4381-860d-0529d644c6da" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="08eb51fa-b092-4ace-97c2-bdb4642c967a" name="DisitaBukuUji" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c6f1bbea-6ab1-471b-94cc-5f7a655d64ae" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c004f109-b949-4457-b526-248cc36aceec" LastKnownName="Bitstring" />
+            </type_NamedElement>
+          </property>
+          <property Id="28366597-a66c-4656-be13-a3d31f9fe860" name="DisitaSK" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5c38cf71-d92b-492a-9770-fe9f36e7b8d1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c004f109-b949-4457-b526-248cc36aceec" LastKnownName="Bitstring" />
+            </type_NamedElement>
+          </property>
+          <property Id="ac911fc1-f585-4d5a-b8a1-96f59e3bdb45" name="DisitaBukuUjiDiterbitkanOleh" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="54c55af2-bcc3-4420-831a-ed8c0cb041d2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="507758f1-2eaa-4290-a0bb-3a25a90eef1f" name="DisitaSKDiterbitkanOleh" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d8f16fe6-b9ce-42e3-9815-a13da4ca3c7d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="97eb95c3-5ebe-448b-a5db-f451ed945140" name="WaktuSidang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="56838e81-a697-4e73-9ad3-17672007f4ad" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="49f7a1c2-f931-4381-860d-0529d644c6da" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="9842ced2-659d-4f41-a351-a83d819134cd" name="LokasiSidang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1c232758-853e-47fe-965e-6f6fcdfddd9b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="5d5318a1-f478-4a0b-8bd3-316cb0bc3274" name="WilayahHukum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8671bde5-339e-4d0e-98c9-62d256651281" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="2e3221b3-93d5-451c-afe9-c1beed891155" name="PasalPelanggaran" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a4ba66a0-9f5a-4821-a1aa-4388b03f2bc6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e2ec9ca6-9937-4a07-8022-0f32eb89e28f" LastKnownName="Pasal" />
+            </type_NamedElement>
+          </property>
+          <property Id="9c9402dc-bed1-4061-8bd5-0b0dfb68716f" name="BankSetoranDendaMaksimal" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="66b80f12-27cf-43e4-9b6b-bd63255f77ce" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="2a2835d0-4a1e-411d-9bb3-656680fd0bf5" name="AngkaPinaltiPelanggaran" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f7fd6dd2-e776-41fa-9df4-eddea41f8b6e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ecca01cb-87ef-408d-8c0a-b687af69907c" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="e4f94ffe-d8a2-42a9-9938-4c006b49e2f3" name="PernyataanHadirSendiri" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2e06e643-7e14-421d-8767-1fd5bba14a68" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e563502b-2453-468f-be7f-0b89a0683e12" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+          <property Id="11657e2f-b75a-4a11-8161-5d4e7de9dc1f" name="NamaWakil" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6e266d26-b187-4968-b02c-60eeede5cb9f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="7d3b4258-3472-4a6e-a2b9-5507f0ef15ea" name="AlamatWakil" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0fbddf8f-54e8-4ce0-ac2d-71d3382ac918" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="7e1ca41d-5417-4b31-9526-6a13f17e45eb" name="isNew" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e88e052f-1aa7-445e-abca-7167972456dd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e563502b-2453-468f-be7f-0b89a0683e12" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+          <property Id="48b45287-3fff-4aaa-a620-10b670c84af0" name="BankSisaDenda" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8261641d-7caf-4a4c-8b8b-883b1bb306bc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="14b72e94-5359-4a6d-9cf2-0e2c144f1f7f" name="DisitaBukuUjiMasaBerlaku" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4b1d26b0-ab9f-4fa8-a166-d367c8c6e465" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="49f7a1c2-f931-4381-860d-0529d644c6da" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="265b6f66-a8ed-405c-b4ac-ab4df001bf1e" name="LokasiPelanggaran" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d258b4ba-6fdc-4fe6-866b-8345b34f6231" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="a1c2a069-4ea0-4818-a484-c91e1212f76e" name="NamaPenyidik" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7692ba59-7aa8-4d83-9ecc-75154d578d03" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="e4b81534-31b7-44d3-bece-8e49d2bc75d2" name="PangkatPenyidik" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="613731dc-afe2-488c-b9e6-15267b6e13b6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="d115aee8-55cb-4e5f-88bd-d84e98097f58" name="PatokanLokasi" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2e0507c5-04ff-42c4-b7d6-c4cc0a68bdcf" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="253ee07c-896b-472f-b859-4173bdfdaf34" name="TempatPengambilanBarangSita" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="14afd2b3-2e41-44b5-8cde-e14c67e44a7c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="e390d733-f7f8-4331-9b14-f5ade9f0062d" name="TempatSidang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a769df91-5e6e-4950-82fb-3be89c546273" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="66524140-0090-4af9-a886-93bf5d427945" name="Satpas" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eb059055-e5ef-4081-86bf-bc9e542891a1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="68443ff6-09ed-437a-a89d-83e86f873adc" name="UmurWakil" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9ad2a594-a476-4835-83ac-3fcb5bb4314c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="3356bec2-ed50-4a78-837c-fa24ddd32475" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="05497bee-d44f-47a7-98ad-ec1c020dd22e" />
+          </operation>
+          <operation Id="7fd529b6-89c0-47c1-a03b-217717caef2f" name="Pelanggaran" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8d7422d9-ceca-4dfd-aca1-f389a74c35c0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d27b99c6-778b-42e8-96e1-aec0616921f7" name="FromExcel" direction="In" isUnique="false">
+                  <elementDefinition Id="fb71bf60-8246-4a69-a9f0-244b63430b73" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e563502b-2453-468f-be7f-0b89a0683e12" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f2dcfe9a-ccea-47c7-a612-94aec6b21ad6" name="Pelanggaran" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="107b005a-3b48-4480-a1e4-835dbe056c5b" />
+          </operation>
+          <operation Id="b865005f-03f7-4e3d-9358-653ad6eb515e" name="GetAll" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6a6d5959-b564-4a37-ad2f-39267360b631" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1cf223d2-d75a-4754-9aee-345ed68bb932" direction="Return" isUnique="false">
+                  <lowerValueInternal>
+                    <literalString Id="8214ad77-aeb3-4e37-b6da-5ec750f9f0a1" name="Lower" value="*">
+                      <elementDefinition Id="ca60eb00-9843-4ff4-8767-46a898eb9ae8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="fbe8a7ad-d574-4342-a425-20a1d5310e90" name="Upper" value="*">
+                      <elementDefinition Id="5a9d9a74-e1a6-4afa-a44a-98998454fd4e" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c5100716-010c-4d0a-8a63-39b2e6879dbe" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="42979959-71fa-43df-a324-d9c1f8f995ff" LastKnownName="Pelanggaran" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="49f7a1c2-f931-4381-860d-0529d644c6da" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="273b5820-88fb-424e-9d34-3a8c6d0ed60f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c004f109-b949-4457-b526-248cc36aceec" name="Bitstring" isAbstract="false" isLeaf="false" cachedFullName="Bitstring">
+        <elementDefinition Id="81f02b29-0dd3-4bd3-953d-3d4fd8f229f0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ecca01cb-87ef-408d-8c0a-b687af69907c" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e563502b-2453-468f-be7f-0b89a0683e12" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="de63eab8-39f7-4513-8bea-8eb0742f952c" name="Penduduk" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c4b45093-3421-4fb0-9d20-c48a6e6b818c" />
+        <suppliersInternal>
+          <dependency Id="b9280255-0862-411d-94b3-42fb29cb54eb">
+            <classMoniker Id="f7d3e001-c59c-445f-846e-65c7878ee35f" LastKnownName="ExcelHelper" />
+            <elementDefinition Id="ac263808-f2a3-4bb9-8dff-3bdfba79ea61" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="ba2056a9-b03b-4be8-a3cd-fe68577057ee" isDerived="false" sourceEndRoleName="Penduduk" targetEndRoleName="SIM" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6b85d947-8655-44e7-a088-aadde5f14ed7" LastKnownName="SIM" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7faec8a7-0350-432b-ad0d-fd031648e2ed" name="Penduduk" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c51c0ffa-e65d-45b2-8fc9-07ed6cce6845" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="564ed68d-3a99-460e-beec-d60c90675723" name="SIM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="30674755-2135-434c-93c1-fcbba8db3c32" name="Lower" value="1">
+                      <elementDefinition Id="9a80d818-118d-4400-9874-e13eb232bd3d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1c06aee1-7d58-486b-925a-202525f60fef" name="Upper" value="*">
+                      <elementDefinition Id="913db065-b093-431c-a9c2-f31d6dcb2da7" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="77779818-0fca-45fe-9271-4d653603c240" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4226b0d8-ba0c-4aee-87a0-2928fa2ad43a" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="96cf8eaf-0058-48f5-bb5b-eb0813b96a35" name="Nama" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="67b3537d-5ede-489a-ac22-9042d25f5c08" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="f678798e-b848-41c0-85a8-b4a81c687962" name="Alamat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="53d40af9-e645-425b-a0d9-27d1ed00dbf4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="1f6963ca-9ec8-4abe-84f6-2a894b2a3ec8" name="TempatLahir" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6c37067c-0011-4306-b0e1-d4dd42a7b137" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="a805f06f-f6ae-4c72-98a8-a8d8b33adac3" name="TanggalLahir" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="10db4f76-2b97-4cde-bbb0-4c44247f0660" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="49f7a1c2-f931-4381-860d-0529d644c6da" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="68fc2d05-031f-4a1f-af8c-71205b6111a1" name="Pendidikan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="041b6f51-72cb-4f6d-b011-2a830222d3cb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8a39e288-eff8-4636-83b1-cec30b68e6ec" LastKnownName="EnumPendidikan" />
+            </type_NamedElement>
+          </property>
+          <property Id="539fa675-6004-464e-8bcd-0e9e497b941b" name="Pekerjaan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="babb7b41-da86-4afa-8496-087a32429c9a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ce961248-e83a-47a4-b149-cccdb98fbd78" LastKnownName="EnumPekerjaan" />
+            </type_NamedElement>
+          </property>
+          <property Id="28f68e49-2759-4242-b7d2-ceceb96a3443" name="Nomor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2e576042-dd5d-48eb-bfe9-55e382bae0d3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="5bf24a9a-13ae-4677-828f-2309c599e8e2" name="JenisKelamin" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ff6706cc-8257-4390-92e4-c6103a413f5f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2b2388e3-25b0-4169-a9a6-8dd482c23fd2" LastKnownName="EnumJenisKelamin" />
+            </type_NamedElement>
+          </property>
+          <property Id="63e9c7ac-9784-4a9a-9cd8-6493bf12a189" name="isNew" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1ec6bd4a-3959-41ef-98bc-30da21e32cf6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e563502b-2453-468f-be7f-0b89a0683e12" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a23024a7-97f6-44d2-80e5-35d0a11f42f7" name="GetAllSIM" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b22ae4a8-c011-498e-a4c4-5616aa1172fd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1b27d0ef-447f-42d0-8818-488157fa73e2" direction="Return" isUnique="false">
+                  <lowerValueInternal>
+                    <literalString Id="4d163a88-8360-4b41-a9bc-1e3b3816b927" name="Lower" value="1">
+                      <elementDefinition Id="61595e47-d463-4a43-908a-60f091c2c861" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="53b8b4e4-664c-45af-a966-e50c12cd871a" name="Upper" value="*">
+                      <elementDefinition Id="a9416f94-1ec4-4d87-811d-3fddc211de70" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="65274595-4461-41b6-843a-37f63e75e0e3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b8948d75-d98a-4a95-8fd9-6be28e4819fe" LastKnownName="SIM" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6acee46d-5509-41cf-b265-5c30de530696" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6eb61fa2-2175-4668-bd35-afcb206ff580" />
+          </operation>
+          <operation Id="d34d93ad-6e13-4d46-861f-4d227e96898c" name="IsPresent" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="11ace901-e68c-4b2d-bda8-aacb80a51499" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6411842e-cf15-4df1-950d-61a53ecf17be" name="NomorKTP" direction="In" isUnique="false">
+                  <elementDefinition Id="b04e1a8e-1019-42f1-a401-728affad196a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="94b7afde-c2ec-4083-a7af-b9254dcfd89f" direction="Return" isUnique="false">
+                  <elementDefinition Id="92e13cc3-c207-43a8-ac70-1707dec0528f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="320809ad-4361-41e8-b5c4-74802cd15445" LastKnownName="Penduduk" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="89201ea5-d1e8-4b2a-a736-c469acf3ee35" name="Penduduk" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ff8f1840-10a4-408c-9aae-2ffb94b00b86" />
+          </operation>
+          <operation Id="ab0893b2-c48a-4327-912a-d112463e8fd1" name="Penduduk" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2a40fdef-3c23-4f2a-9f53-a2d8753b57c2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f4711632-3fe2-40f4-854c-132d32f94ee5" name="FromExcel" direction="In" isUnique="false">
+                  <elementDefinition Id="6975eb52-b9a9-4394-8de7-5f76107fb11f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e563502b-2453-468f-be7f-0b89a0683e12" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="8a39e288-eff8-4636-83b1-cec30b68e6ec" name="EnumPendidikan" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::EnumPendidikan">
+        <elementDefinition Id="1ec3da56-b797-4725-a50d-c46312a02964" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ce961248-e83a-47a4-b149-cccdb98fbd78" name="EnumPekerjaan" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::EnumPekerjaan">
+        <elementDefinition Id="1d137001-b7c8-4113-87fd-4ed2ea66bd03" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2b2388e3-25b0-4169-a9a6-8dd482c23fd2" name="EnumJenisKelamin" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::EnumJenisKelamin">
+        <elementDefinition Id="cd0c84e6-dc87-46e9-8c5d-6539e651420f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6b85d947-8655-44e7-a088-aadde5f14ed7" name="SIM" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b6498c74-af71-4803-8aba-ae5af27f462c" />
+        <suppliersInternal>
+          <dependency Id="65bd9333-5ada-4954-bd55-606b8de3452c">
+            <classMoniker Id="f7d3e001-c59c-445f-846e-65c7878ee35f" LastKnownName="ExcelHelper" />
+            <elementDefinition Id="2da88bf8-a3a0-464c-8016-a4db8118b139" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="262d932e-9560-4387-a4f3-6242486b64a9" isDerived="false" sourceEndRoleName="SIM" targetEndRoleName="Pelanggaran" isLeaf="false" isAbstract="false">
+            <classMoniker Id="eed59894-a426-468b-8437-7bb2f0ede719" LastKnownName="Pelanggaran" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="35cd1522-3b41-48ee-9b49-3b27a18459a6" name="SIM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="74302841-ca82-4cff-b395-117dec1572ea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="55c0f0f3-5c35-42ea-b55a-f44b0ef8f3d4" name="Pelanggaran" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="10a21551-cbb8-4013-9507-82533f4fa440" name="Lower" value="*">
+                      <elementDefinition Id="4cfaa0ac-ae1e-469f-8be7-70a539600eea" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f5f4f738-9af3-4a73-8a51-e5c26272432f" name="Upper" value="*">
+                      <elementDefinition Id="bb95e297-2bb2-422d-bc68-3d4e39b55137" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="73ee37c8-994e-453d-882f-8c490efb79c3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4cc492ab-1088-4f94-8cea-c8945c42144c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="89537717-c1f2-4413-b689-c68424abb05d" name="Nomor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f42f20e5-5daf-4043-9584-ccb4bf0836c3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="6e2ed647-b942-4bb6-81a5-bf74da266bb0" name="Pemilik" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="05a3ce31-411b-4b77-b998-2a4087282886" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="320809ad-4361-41e8-b5c4-74802cd15445" LastKnownName="Penduduk" />
+            </type_NamedElement>
+          </property>
+          <property Id="15e69767-19e2-4410-a4de-aa35c5907e94" name="Golongan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="86bbbccb-c06f-4567-a5c3-cd4cf814ea25" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="1e00515c-cab3-47f2-ba23-9e64b5d4704e" name="TanggalBuat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="08abb61c-4c87-4af9-85de-3e8381f07080" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="49f7a1c2-f931-4381-860d-0529d644c6da" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="16f3c1f7-c2ae-4132-84f5-70d02c190253" name="TanggalHabis" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f0c43a85-5d13-4ccc-8964-0c6120276025" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="49f7a1c2-f931-4381-860d-0529d644c6da" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="cfe99947-adc8-4b1c-9b42-e3eb5d704fa3" name="isNew" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4b209726-7a4d-493b-a820-d1c33b8e19a7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e563502b-2453-468f-be7f-0b89a0683e12" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="90f9eb78-242c-4cbb-8b2c-af8864653155" name="GenerateQRData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5b80a8c0-f04a-42a1-8082-979e091f6e0d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="306f5b60-8ce7-457b-bf39-f18f7d444823" direction="Return">
+                  <elementDefinition Id="52713563-f7c3-4bec-b197-99f867c86a9b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d816f329-bf81-4241-9f9b-6bd4b8b6e46e" name="GetAllPelanggaran" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5b0dc1c4-0cfe-4138-aa15-61c32d550f6c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9a8aec64-7a46-41fb-a7c3-a7472c502b65" direction="Return" isUnique="false">
+                  <lowerValueInternal>
+                    <literalString Id="2a9de3b1-4a8d-42ec-8d17-77c9233109b8" name="Lower" value="*">
+                      <elementDefinition Id="58acbc59-d5fa-4023-a813-d3350a3c24ec" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="0a42669b-704f-4feb-96db-3f7f64d31a6a" name="Upper" value="*">
+                      <elementDefinition Id="eed9b9f9-435a-4ae4-b116-593012394f9d" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="43877c88-b41e-4b9b-acb7-e4928af5d125" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="42979959-71fa-43df-a324-d9c1f8f995ff" LastKnownName="Pelanggaran" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0dd58756-493e-430a-8b07-49e31f6f0c12" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="84b14776-bb2d-4043-a595-2ca1ae6d42be" />
+          </operation>
+          <operation Id="02f81324-4dbe-422f-b874-86e6bfb55830" name="SIM" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bb319278-2501-40e8-a998-4393cb2f28f9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3391574b-7c7c-4bc4-b7dd-5583bc35aeaf" name="QRData" direction="In" isUnique="false">
+                  <elementDefinition Id="b3e108fb-891b-411b-8ec6-6d4597c9f5a0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1bc1eeab-6cc5-4ef3-988c-0617d1772115" name="SIM" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c02800ce-3c1c-4414-84a0-19794a00210b" />
+          </operation>
+          <operation Id="1e8a7b4c-3e5d-43f2-ae4b-f60472c7ed50" name="SIM" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ce8a3cce-6c04-4c9c-846d-40506a9d5037" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="79505b6a-357c-4b5e-af91-d3ebff85fa38" name="FromExcel" direction="In" isUnique="false">
+                  <elementDefinition Id="8cebf335-5bbc-4ec5-be5f-5ff3206f24f4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e563502b-2453-468f-be7f-0b89a0683e12" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="02f017cc-ebb7-4a6f-9906-ed50a2e5a886" name="User" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="39f46669-8760-447a-aef6-ac8dfd05bbac" />
+        <suppliersInternal>
+          <dependency Id="728c4198-3238-4505-be57-3a4e91240963">
+            <classMoniker Id="f7d3e001-c59c-445f-846e-65c7878ee35f" LastKnownName="ExcelHelper" />
+            <elementDefinition Id="12fc8b09-f911-4f02-a8d7-bc2eb163f307" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="9b45adcb-28a0-423f-a6fb-06eedc1381e1" name="Username" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f683d245-0516-4e66-8167-cfae8129b965" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="eaa25607-df5f-4931-b3dc-d1a6b5327f11" name="Password" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2f2ddfe7-03d8-4475-9cba-a0f3023844ff" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="2e8d62c6-0dca-4b28-b5d9-b53805631b11" name="Jenis" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="86aeed0b-c4e2-464a-9290-e94ca351adb9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d988a9d9-1a5f-45e2-9ad4-6584916eb8c4" LastKnownName="EnumJenisUser" />
+            </type_NamedElement>
+          </property>
+          <property Id="5c4f6b42-517c-48fb-8f3a-27965dd96982" name="Nama" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="33e5ed7b-9419-4256-8d0a-5db1891e1114" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0775fa3a-4ef1-4f36-9480-f09d476669b9" name="Check" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="46be9722-4c85-443e-a4b9-a743d4187d3a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5d43a61d-d890-4b51-ae3f-7b2f5e1d3cdf" name="Username" direction="In" isUnique="false">
+                  <elementDefinition Id="90ccaeb0-9f3b-4ece-a898-15393ab2b602" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d23e7fec-27c6-4e8e-888f-9803e5fbd95f" name="Password" direction="In" isUnique="false">
+                  <elementDefinition Id="eeaa2ada-d22c-4d74-a429-01a3f3f4c3b3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5ed294ab-5d3a-479b-bc5d-1ebff8c0118e" direction="Return" isUnique="false">
+                  <elementDefinition Id="83181abb-bb13-4514-b25b-77d52b0bb548" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1250e430-60bc-4315-bcd0-c3bc4b12ce5b" LastKnownName="User" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="42e2d0c3-6340-47ad-83fa-d1a766617b06" name="User" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b6e23232-419c-41ce-a50b-0c0661f39f2f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="d988a9d9-1a5f-45e2-9ad4-6584916eb8c4" name="EnumJenisUser" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::EnumJenisUser">
+        <elementDefinition Id="bd32fce2-8fdb-4c16-a4d1-88903b76f8df" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="95cba21f-d81b-4b6c-96ce-8ecf0f86040c" name="ModelingProject">
+    <elementDefinition Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd" />
+  </package>
+</logicalClassDesignerModel>

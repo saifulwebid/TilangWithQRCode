@@ -22,6 +22,34 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Class Diagram\BigPicture.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class Diagram\BigPicture.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class Diagram\BigPicture.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class Diagram\DataClass.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class Diagram\DataClass.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class Diagram\DataClass.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class Diagram\PendudukSimWithEnum.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class Diagram\PendudukSimWithEnum.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class Diagram\PendudukSimWithEnum.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class Diagram\UserWithEnum.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class Diagram\UserWithEnum.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class Diagram\UserWithEnum.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Sequence Diagram\Memeriksa Penduduk Existing.sequencediagram">
       <SubType>Content</SubType>
     </Content>
@@ -79,16 +107,10 @@
       <DependentUpon>Use Case Diagram\Samsat.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
-    <Content Include="ClassDiagram.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="ClassDiagram.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>ClassDiagram.classdiagram</DependentUpon>
-    </Content>
     <Content Include="ModelDefinition\ModelingProject.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Class Diagram" />
     <Folder Include="Use Case Diagram" />
     <Folder Include="Sequence Diagram" />
   </ItemGroup>

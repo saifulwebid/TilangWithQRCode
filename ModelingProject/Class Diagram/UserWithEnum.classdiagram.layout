@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UserWithEnum">
+  <logicalClassDesignerModelMoniker Id="ea3416b2-30e5-4b03-ba34-e8ceec2329b3" />
+  <nestedChildShapes>
+    <classShape Id="7dfccd17-2883-4cc4-9413-8e9c9923e93f" absoluteBounds="0.5, 0.5, 3.25, 1.863281205296516" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="04b71c87-f9a4-43d3-8b6c-87e61ae4165d" LastKnownName="User" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="86cf78e5-3235-42b7-b74f-1d914dcce245" absoluteBounds="0.515, 0.89000000000000012, 3.2199999999999998, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="f33d8dab-096f-45c1-90b3-504e3151304a" absoluteBounds="0.515, 1.7417968476812042, 3.2199999999999998, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <enumerationShape Id="7d10f3ce-6984-4185-a010-e85039bbc795" absoluteBounds="4.125, 2.75, 1.5, 1.1716406026482584" hideQualifiedName="false" increaseHeight="0" customColor="161, 150, 103">
+      <enumerationMoniker Id="c43a00f2-bf90-423c-a5d5-20da6f374c8f" LastKnownName="EnumJenisUser" />
+      <nestedChildShapes>
+        <LiteralElementListCompartment Id="8e18a7ca-b9a6-4cce-914c-f4871458cab9" absoluteBounds="4.1400000000000006, 3.14, 1.4700000000000002, 0.68164060264825832" name="LiteralsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </enumerationShape>
+    <associationConnector edgePoints="[(2.125 : 2.36328120529652); (2.125 : 3.33582030132413); (4.125 : 3.33582030132413)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="eb816fe7-474e-43da-b386-9a7053bf6d9d" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="7dfccd17-2883-4cc4-9413-8e9c9923e93f" />
+        <enumerationShapeMoniker Id="7d10f3ce-6984-4185-a010-e85039bbc795" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>
