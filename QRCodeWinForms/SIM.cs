@@ -36,6 +36,7 @@ namespace QRCodeWinForms
             // Isi field pada class SIM
             Nomor = field[1];
             Golongan = field[2];
+            TanggalBuat = Converter.DDMMYYToDateTime(field[10]);
             
             //Isi field-field pada class Penduduk
             Penduduk pdk = new Penduduk(true);
