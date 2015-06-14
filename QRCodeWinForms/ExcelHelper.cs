@@ -52,8 +52,6 @@ namespace QRCodeWinForms
 
         public static User CheckUser(string username, string password)
         {
-            User acc = new User();
-
             FileInfo existingFile = new FileInfo(FileName);
             using (var package = new ExcelPackage(existingFile))
             {
@@ -83,6 +81,7 @@ namespace QRCodeWinForms
                                 {
                                     if ((username.Equals(col1Value) == true) && password.Equals(col2Value) == true)
                                     {
+                                        User acc = new User();
                                         acc.Username = col1Value.ToString();
                                         switch (col3Value.ToString())
                                         {
@@ -94,11 +93,11 @@ namespace QRCodeWinForms
                                     }
                                 }
                             }
+                            return null;
                         }
                     }
                 }
             }
-            return null;
         }
 
         public static Penduduk CheckPenduduk(string ktp)
