@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="daaea67a-58dd-4031-a06f-6762766481d2" name="MenampilkanDataSuratTilang" linkedPackageId="91e4e50b-ccb4-4565-befb-df8f733ff382" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="bc976dc5-b47f-44ad-afe5-6c2fbd925d03">
-      <profileInstance Id="f2e5056a-5935-4c82-a8c1-efcd9d716ddd" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="45883469-843f-4613-bf99-b82d26218890">
-      <profileInstance Id="62f68831-c35a-4482-b2a0-c2fcbdb4d16b" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="bd883655-7aa6-4ae4-863a-4d160f61765a" name="MenampilkanDataSuratTilang" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
@@ -22,7 +8,7 @@
           <behaviorExecutionSpecification Id="4aa84e20-b70e-47eb-a8e6-16bdd7e4cd7e" name="BehaviorExecutionSpecification1">
             <elementDefinition Id="0bdfe23b-186f-4a8a-bf64-f6551e9cad1f" />
             <coveredLifelines>
-              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="  : frmInputSuratTilang" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker Id="4bf38fe5-6116-48d9-8ca7-c7737a4437b1" LastKnownName="ExecutionOccurrenceSpecification2" />
@@ -45,25 +31,25 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="  : frmInputSuratTilang" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="49787fb1-5dc0-4335-980d-df15630ab648" name="MessageOccurrenceSpecification1">
             <elementDefinition Id="fcd78111-4c7a-4127-ac27-2218f30d7239" />
             <covered>
-              <lifelineMoniker Id="d7b2fe9f-2e8f-407d-bd48-36cc7a819c18" LastKnownName="polisi Lalu Lintas : Polisi Lalu Lintas" />
+              <lifelineMoniker Id="d7b2fe9f-2e8f-407d-bd48-36cc7a819c18" LastKnownName="Polisi Lalu Lintas" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="abd9538a-fe13-4e04-9bca-8d586b08e9fe" name="MessageOccurrenceSpecification2">
             <elementDefinition Id="d62b29f2-a546-428f-b1d6-063a57c0bd67" />
             <covered>
-              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="  : frmInputSuratTilang" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="61236916-82ec-4b06-8343-1e3c6f745c8f" name="BehaviorExecutionSpecification2">
             <elementDefinition Id="0780f13c-cda6-4269-9d04-e43be4029708" />
             <coveredLifelines>
-              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="frmSuratTilangViewer : frmSuratTilangViewer" />
+              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="  : frmSuratTilangViewer" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker Id="5dfad4d3-c829-4a93-9fc6-7b1fb215d7ac" LastKnownName="ExecutionOccurrenceSpecification4" />
@@ -84,31 +70,31 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="frmSuratTilangViewer : frmSuratTilangViewer" />
+              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="  : frmSuratTilangViewer" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="01f06610-8a13-419d-838d-ef4a71e53f66" name="MessageOccurrenceSpecification3">
             <elementDefinition Id="b028683f-a65a-4fa1-85be-5bd0bb4bf034" />
             <covered>
-              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="  : frmInputSuratTilang" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="10921241-62c5-410b-9a1e-bafebaffa6e4" name="MessageOccurrenceSpecification4">
             <elementDefinition Id="14cc5e91-2281-422c-a828-6727c7aaae28" />
             <covered>
-              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="frmSuratTilangViewer : frmSuratTilangViewer" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="7703e802-abc5-4992-bd75-ff6e8162e743" name="MessageOccurrenceSpecification5">
-            <elementDefinition Id="66013b0e-3fe7-4622-8a23-0e27a77c6021" />
-            <covered>
-              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="frmSuratTilangViewer : frmSuratTilangViewer" />
+              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="  : frmSuratTilangViewer" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="d83d63fb-126e-4b60-90ec-51095cf0d0c5" name="MessageOccurrenceSpecification6">
             <elementDefinition Id="154ba9a1-2c00-4676-8c97-49c9ad7b9a8b" />
             <covered>
-              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="  : frmInputSuratTilang" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7703e802-abc5-4992-bd75-ff6e8162e743" name="MessageOccurrenceSpecification5">
+            <elementDefinition Id="66013b0e-3fe7-4622-8a23-0e27a77c6021" />
+            <covered>
+              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="  : frmSuratTilangViewer" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="5dfad4d3-c829-4a93-9fc6-7b1fb215d7ac" name="ExecutionOccurrenceSpecification4">
@@ -119,13 +105,13 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="frmSuratTilangViewer : frmSuratTilangViewer" />
+              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="  : frmSuratTilangViewer" />
             </covered>
           </executionOccurrenceSpecification>
           <behaviorExecutionSpecification Id="134cb1af-f878-4e19-b4f7-2b2051417545" name="BehaviorExecutionSpecification3">
             <elementDefinition Id="8ee910e0-d9b6-46e1-8492-a1b629ae982f" />
             <coveredLifelines>
-              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="frmSuratTilangViewer : frmSuratTilangViewer" />
+              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="  : frmSuratTilangViewer" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker Id="86047a46-4dd4-4f76-8f6a-5277722392c9" LastKnownName="ExecutionOccurrenceSpecification6" />
@@ -145,19 +131,19 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="frmSuratTilangViewer : frmSuratTilangViewer" />
+              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="  : frmSuratTilangViewer" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="dca10e55-7524-4090-b6f8-e853bdf358aa" name="MessageOccurrenceSpecification7">
             <elementDefinition Id="1a42eff1-396d-411d-858e-5ed02ab272ea" />
             <covered>
-              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="  : frmInputSuratTilang" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="a412950c-0325-42bb-9a68-ad1422d6b456" name="MessageOccurrenceSpecification8">
             <elementDefinition Id="f9811c7e-7741-404f-88fe-49a4c70b4c22" />
             <covered>
-              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="frmSuratTilangViewer : frmSuratTilangViewer" />
+              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="  : frmSuratTilangViewer" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="4bf38fe5-6116-48d9-8ca7-c7737a4437b1" name="ExecutionOccurrenceSpecification2">
@@ -168,7 +154,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="47b361b2-19f1-40d4-8580-18391f433733" LastKnownName="  : frmInputSuratTilang" />
             </covered>
           </executionOccurrenceSpecification>
           <executionOccurrenceSpecification Id="86047a46-4dd4-4f76-8f6a-5277722392c9" name="ExecutionOccurrenceSpecification6">
@@ -179,12 +165,12 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="frmSuratTilangViewer : frmSuratTilangViewer" />
+              <lifelineMoniker Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" LastKnownName="  : frmSuratTilangViewer" />
             </covered>
           </executionOccurrenceSpecification>
         </fragments>
         <lifelines>
-          <lifeline Id="d7b2fe9f-2e8f-407d-bd48-36cc7a819c18" name="polisi Lalu Lintas : Polisi Lalu Lintas" isActor="true" lifelineDisplayName="polisi Lalu Lintas : Polisi Lalu Lintas">
+          <lifeline Id="d7b2fe9f-2e8f-407d-bd48-36cc7a819c18" name="Polisi Lalu Lintas" isActor="true" lifelineDisplayName="Polisi Lalu Lintas">
             <elementDefinition Id="e7356861-9c66-4460-b2a4-00807b59d7f6" />
             <represents>
               <propertyMoniker Id="1b626a7a-a70d-488e-a81e-d56377213edd" />
@@ -193,7 +179,7 @@
               <messageOccurrenceSpecificationMoniker Id="49787fb1-5dc0-4335-980d-df15630ab648" LastKnownName="MessageOccurrenceSpecification1" />
             </topLevelOccurrences>
           </lifeline>
-          <lifeline Id="47b361b2-19f1-40d4-8580-18391f433733" name="frmInputSuratTilang : frmInputSuratTilang" isActor="false" lifelineDisplayName="frmInputSuratTilang : frmInputSuratTilang">
+          <lifeline Id="47b361b2-19f1-40d4-8580-18391f433733" name="  : frmInputSuratTilang" isActor="false" lifelineDisplayName="  : frmInputSuratTilang">
             <elementDefinition Id="ebfa0ab2-002a-47cb-9266-c35ab59f820b" />
             <represents>
               <propertyMoniker Id="b4c9b124-7b0c-4f89-ae13-0864912e5c0e" />
@@ -203,7 +189,7 @@
               <executionOccurrenceSpecificationMoniker Id="4bf38fe5-6116-48d9-8ca7-c7737a4437b1" LastKnownName="ExecutionOccurrenceSpecification2" />
             </topLevelOccurrences>
           </lifeline>
-          <lifeline Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" name="frmSuratTilangViewer : frmSuratTilangViewer" isActor="false" lifelineDisplayName="frmSuratTilangViewer : frmSuratTilangViewer">
+          <lifeline Id="e765ff47-dca2-4f35-8958-0e4d4482f8a4" name="  : frmSuratTilangViewer" isActor="false" lifelineDisplayName="  : frmSuratTilangViewer">
             <elementDefinition Id="3931b069-29de-4cd0-ab00-23543a6e553a" />
             <represents>
               <propertyMoniker Id="16daf08f-0bb2-44d5-b66a-befa765e1b62" />
@@ -226,7 +212,7 @@
               <messageOccurrenceSpecificationMoniker Id="abd9538a-fe13-4e04-9bca-8d586b08e9fe" LastKnownName="MessageOccurrenceSpecification2" />
             </receiveEvent>
           </message>
-          <message Id="a28929f7-1456-4be6-bfe2-14f2564ad3c8" name="Membuat Form Baru" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="a28929f7-1456-4be6-bfe2-14f2564ad3c8" name="Buat form, kirim data pelanggaran" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="d926f0d5-f485-48f2-aaeb-d62e0b7b7aaf" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="01f06610-8a13-419d-838d-ef4a71e53f66" LastKnownName="MessageOccurrenceSpecification3" />
@@ -335,5 +321,19 @@
   </packagedElements>
   <package Id="91e4e50b-ccb4-4565-befb-df8f733ff382" name="ModelingProject">
     <elementDefinition Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd" />
+    <profileInstances>
+      <packageHasProfileInstances Id="bc976dc5-b47f-44ad-afe5-6c2fbd925d03">
+        <profileInstance Id="f2e5056a-5935-4c82-a8c1-efcd9d716ddd" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="45883469-843f-4613-bf99-b82d26218890">
+        <profileInstance Id="62f68831-c35a-4482-b2a0-c2fcbdb4d16b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </SequenceDesignerModel>
