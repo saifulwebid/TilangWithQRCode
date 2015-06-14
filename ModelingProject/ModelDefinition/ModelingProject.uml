@@ -8982,7 +8982,7 @@
             <covered>
               <lifelineMoniker
                 Id="2bddcdda-6f50-48f8-9950-107774da2cfd"
-                LastKnownName="Polisi Lalu Lintas"
+                LastKnownName="Hakim/Jaksa"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -9203,22 +9203,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="ca4cd91e-98b8-4f58-aab8-c4ebab9b0347"
-            name="MessageOccurrenceSpecification6">
-            <covered>
-              <lifelineMoniker
-                Id="4625c4aa-fc45-4422-966e-672a352b20f2"
-                LastKnownName="  : frmBanyakPelanggaran"
-                LastKnownLocation="ModelingProject.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="30684877-4254-427f-b002-a353e4d2319f"
             name="MessageOccurrenceSpecification5">
             <covered>
               <lifelineMoniker
                 Id="92ed3223-e6cd-469c-a623-15e42796e68a"
                 LastKnownName="  : SIM"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ca4cd91e-98b8-4f58-aab8-c4ebab9b0347"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="4625c4aa-fc45-4422-966e-672a352b20f2"
+                LastKnownName="  : frmBanyakPelanggaran"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -9506,9 +9506,9 @@
         <lifelines>
           <lifeline
             Id="2bddcdda-6f50-48f8-9950-107774da2cfd"
-            name="Polisi Lalu Lintas"
+            name="Hakim/Jaksa"
             isActor="true"
-            lifelineDisplayName="Polisi Lalu Lintas">
+            lifelineDisplayName="Hakim/Jaksa">
             <represents>
               <propertyMoniker
                 Id="ad4b9349-4b81-4b1c-be64-1b0661901ace"
@@ -9803,8 +9803,8 @@
             isComposite="false">
             <type_NamedElement>
               <actorMoniker
-                Id="1fe93577-87b6-4aa7-ad84-d0d868160281"
-                LastKnownName="Polisi Lalu Lintas"
+                Id="adf2483b-6767-4dcf-82f0-99d5d3286c37"
+                LastKnownName="Hakim/Jaksa"
                 LastKnownLocation="ModelingProject.uml" />
             </type_NamedElement>
           </property>

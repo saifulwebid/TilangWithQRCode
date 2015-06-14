@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="2a0be9b1-761f-4899-bf92-fa6dac8413a1" name="StatistikPerOrang" linkedPackageId="9952f10b-be69-4a1f-9023-a00be1ed9613" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="da914da4-df30-4a9b-b1af-186eef1ef868">
-      <profileInstance Id="5972915c-9799-455e-a081-7cdd864b47f8" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="a2d786b4-4290-4fc5-894a-8c0ac131233a">
-      <profileInstance Id="68e1bcd1-434d-4378-9bea-4e4dc78ff842" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="fed7eb29-164c-40a8-9670-dd2d1b82a0ad" name="StatistikPerOrang" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
@@ -52,7 +38,7 @@
           <messageOccurrenceSpecification Id="76964935-9860-41e5-9b8d-7f6df06d58f9" name="MessageOccurrenceSpecification1">
             <elementDefinition Id="20d5d601-34e4-40b8-ac55-712be44cb36f" />
             <covered>
-              <lifelineMoniker Id="7eb01be7-32c2-4fdb-ad17-dba1a02b8539" LastKnownName="Polisi Lalu Lintas" />
+              <lifelineMoniker Id="7eb01be7-32c2-4fdb-ad17-dba1a02b8539" LastKnownName="Hakim/Jaksa" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="75df452d-df4f-4315-b97c-afc98c7ea522" name="MessageOccurrenceSpecification2">
@@ -164,16 +150,16 @@
               <lifelineMoniker Id="7ce1ff31-e7aa-4962-acb0-d5e5b74ba4be" LastKnownName="  : ExcelHelper" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="ce51f9e9-3ee2-4e3d-8104-e2ff8b852743" name="MessageOccurrenceSpecification6">
-            <elementDefinition Id="ca4cd91e-98b8-4f58-aab8-c4ebab9b0347" />
-            <covered>
-              <lifelineMoniker Id="3d61204b-4d6e-4e8d-a432-1381c37af6b1" LastKnownName="  : frmBanyakPelanggaran" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="84188982-4d1b-48f3-9638-a5c2ebea2ec4" name="MessageOccurrenceSpecification5">
             <elementDefinition Id="30684877-4254-427f-b002-a353e4d2319f" />
             <covered>
               <lifelineMoniker Id="7dae4598-c4e5-43bf-8121-14fd330f9b10" LastKnownName="  : SIM" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="ce51f9e9-3ee2-4e3d-8104-e2ff8b852743" name="MessageOccurrenceSpecification6">
+            <elementDefinition Id="ca4cd91e-98b8-4f58-aab8-c4ebab9b0347" />
+            <covered>
+              <lifelineMoniker Id="3d61204b-4d6e-4e8d-a432-1381c37af6b1" LastKnownName="  : frmBanyakPelanggaran" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="420efd83-e717-4aa6-9739-45c5c051ed2c" name="ExecutionOccurrenceSpecification4">
@@ -326,7 +312,7 @@
           </executionOccurrenceSpecification>
         </fragments>
         <lifelines>
-          <lifeline Id="7eb01be7-32c2-4fdb-ad17-dba1a02b8539" name="Polisi Lalu Lintas" isActor="true" lifelineDisplayName="Polisi Lalu Lintas">
+          <lifeline Id="7eb01be7-32c2-4fdb-ad17-dba1a02b8539" name="Hakim/Jaksa" isActor="true" lifelineDisplayName="Hakim/Jaksa">
             <elementDefinition Id="2bddcdda-6f50-48f8-9950-107774da2cfd" />
             <represents>
               <propertyMoniker Id="85d04231-5ccd-4e07-99f2-3937d9abc149" />
@@ -465,7 +451,7 @@
           <property Id="85d04231-5ccd-4e07-99f2-3937d9abc149" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ad4b9349-4b81-4b1c-be64-1b0661901ace" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="750bb418-c6b0-4eef-8ef0-aad679d5d103" LastKnownName="Polisi Lalu Lintas" />
+              <referencedTypeMoniker Id="8d440fde-9b46-450e-a952-63b0c6905299" LastKnownName="Hakim/Jaksa" />
             </type_NamedElement>
           </property>
           <property Id="27dc6d93-5924-4f75-bcb1-e0675d707051" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -570,8 +556,27 @@
         <elementDefinition Id="6d6af3ba-a6e7-4167-89f3-2125a2490ae9" />
       </executionEvent>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8d440fde-9b46-450e-a952-63b0c6905299" name="Hakim/Jaksa" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::Hakim/Jaksa">
+        <elementDefinition Id="adf2483b-6767-4dcf-82f0-99d5d3286c37" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="9952f10b-be69-4a1f-9023-a00be1ed9613" name="ModelingProject">
     <elementDefinition Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd" />
+    <profileInstances>
+      <packageHasProfileInstances Id="da914da4-df30-4a9b-b1af-186eef1ef868">
+        <profileInstance Id="5972915c-9799-455e-a081-7cdd864b47f8" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a2d786b4-4290-4fc5-894a-8c0ac131233a">
+        <profileInstance Id="68e1bcd1-434d-4378-9bea-4e4dc78ff842" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </SequenceDesignerModel>
