@@ -78,6 +78,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence Diagram\Rekapitulasi\StatistikPerOrang.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="Sequence Diagram\Rekapitulasi\StatistikUmum.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence Diagram\Rekapitulasi\StatistikUmum.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence Diagram\Rekapitulasi\StatistikUmum.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="Sequence Diagram\SuratTilang\MenampilkanDataSuratTilang.sequencediagram">
       <SubType>Content</SubType>
     </Content>
