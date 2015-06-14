@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.dtpWaktuPernyataan = new System.Windows.Forms.DateTimePicker();
             this.txtAlamatWali = new System.Windows.Forms.TextBox();
             this.label66 = new System.Windows.Forms.Label();
             this.txtUmurWali = new System.Windows.Forms.TextBox();
@@ -152,7 +153,6 @@
             this.btnSimpanData = new System.Windows.Forms.Button();
             this.btnTampil = new System.Windows.Forms.Button();
             this.btnNewST = new System.Windows.Forms.Button();
-            this.dtpWaktuPernyataan = new System.Windows.Forms.DateTimePicker();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -184,6 +184,14 @@
             this.groupBox8.TabIndex = 99;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Pernyataan Terdakwa";
+            // 
+            // dtpWaktuPernyataan
+            // 
+            this.dtpWaktuPernyataan.Enabled = false;
+            this.dtpWaktuPernyataan.Location = new System.Drawing.Point(410, 23);
+            this.dtpWaktuPernyataan.Name = "dtpWaktuPernyataan";
+            this.dtpWaktuPernyataan.Size = new System.Drawing.Size(186, 20);
+            this.dtpWaktuPernyataan.TabIndex = 49;
             // 
             // txtAlamatWali
             // 
@@ -303,6 +311,7 @@
             // 
             // cbxPasal
             // 
+            this.cbxPasal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxPasal.FormattingEnabled = true;
             this.cbxPasal.Location = new System.Drawing.Point(130, 17);
             this.cbxPasal.Name = "cbxPasal";
@@ -1419,14 +1428,6 @@
             this.btnNewST.Text = "Buat Surat Tilang Baru";
             this.btnNewST.UseVisualStyleBackColor = true;
             this.btnNewST.Click += new System.EventHandler(this.btnNewST_Click);
-            // 
-            // dtpWaktuPernyataan
-            // 
-            this.dtpWaktuPernyataan.Enabled = false;
-            this.dtpWaktuPernyataan.Location = new System.Drawing.Point(410, 23);
-            this.dtpWaktuPernyataan.Name = "dtpWaktuPernyataan";
-            this.dtpWaktuPernyataan.Size = new System.Drawing.Size(186, 20);
-            this.dtpWaktuPernyataan.TabIndex = 49;
             // 
             // frmInputSuratTilang
             // 

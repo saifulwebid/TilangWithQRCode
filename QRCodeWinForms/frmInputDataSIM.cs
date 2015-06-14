@@ -55,7 +55,17 @@ namespace QRCodeWinForms
                 dataSIM.Nomor = txtNoSIM.Text;
                 dataSIM.Golongan = cmbGolongan.Text;
                 dataSIM.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
-                dataSIM.TanggalHabis = new DateTime(dataSIM.TanggalBuat.Year + 5, dataSIM.TanggalBuat.Month, dataSIM.TanggalBuat.Day);
+                try
+                {
+                    dataSIM.TanggalHabis = new DateTime(
+                        DateTime.Now.Year + 5, dataSIM.Pemilik.TanggalLahir.Month,
+                        dataSIM.Pemilik.TanggalLahir.Day);
+                }
+                catch (ArgumentOutOfRangeException ex) // tahun kabisat
+                {
+                    dataSIM.TanggalHabis = new DateTime(
+                        DateTime.Now.Year + 5, dataSIM.Pemilik.TanggalLahir.Month + 1, 1);
+                }
                 dataSIM.Pemilik = datapenduduk;
                 
                 if (dataSIM.isValid())
@@ -68,7 +78,7 @@ namespace QRCodeWinForms
                 else
                 {
                     MessageBox.Show("Umur Pendaftar Belum Cukup");
-                    ClearObject();
+                    dataSIM = new SIM();
                 }
             }
             else
@@ -82,22 +92,6 @@ namespace QRCodeWinForms
             frmSIMViewer f2 = new frmSIMViewer(dataSIM);
             f2.ShowDialog();
             btnTampilkan.Enabled = false;
-        }
-
-        private void ClearObject()
-        {
-            dataSIM.Nomor = "";
-            dataSIM.Golongan = "";
-            dataSIM.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
-            dataSIM.Pemilik.Nama = "";
-            dataSIM.Pemilik.Pekerjaan = EnumPekerjaan.Lainnya;
-            dataSIM.Pemilik.Pendidikan = EnumPendidikan.SD;
-            dataSIM.Pemilik.TempatLahir = "";
-            dataSIM.Pemilik.Alamat = "";
-            dataSIM.Pemilik.TanggalLahir = Convert.ToDateTime(dtpTanggalLahir.Text);
-            dataSIM.Pemilik.JenisKelamin = EnumJenisKelamin.Pria;
-            dataSIM.Pemilik.Nomor = "";
-            dataSIM.TanggalHabis = DateTime.Now;
         }
 
         private void SetFieldToDefault()
@@ -140,6 +134,23 @@ namespace QRCodeWinForms
                 cmbPekerjaan.Enabled = false;
                 cmbJenisKelamin.Enabled = false;
             }
+            else
+            {
+                txtNama.Enabled = true;
+                txtAlamat.Enabled = true;
+                txtTempatLahir.Enabled = true;
+                dtpTanggalLahir.Enabled = true;
+                cmbPendidikan.Enabled = true;
+                cmbPekerjaan.Enabled = true;
+                cmbJenisKelamin.Enabled = true;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dataSIM = new SIM();
+            SetFieldToDefault();
+            btnTampilkan.Enabled = false;
         }
     }
 }

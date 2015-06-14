@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartStatistikPelanggaran = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.cbbTahun = new System.Windows.Forms.ComboBox();
             this.lblTahun = new System.Windows.Forms.Label();
@@ -50,17 +50,17 @@
             // 
             // chartStatistikPelanggaran
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartStatistikPelanggaran.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartStatistikPelanggaran.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chartStatistikPelanggaran.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartStatistikPelanggaran.Legends.Add(legend1);
             this.chartStatistikPelanggaran.Location = new System.Drawing.Point(0, 0);
             this.chartStatistikPelanggaran.Name = "chartStatistikPelanggaran";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Banyak Pelanggaran";
-            series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
-            this.chartStatistikPelanggaran.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Banyak Pelanggaran";
+            series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
+            this.chartStatistikPelanggaran.Series.Add(series1);
             this.chartStatistikPelanggaran.Size = new System.Drawing.Size(596, 386);
             this.chartStatistikPelanggaran.TabIndex = 0;
             this.chartStatistikPelanggaran.Text = "chart1";
@@ -68,6 +68,7 @@
             // 
             // cbbTahun
             // 
+            this.cbbTahun.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbTahun.FormattingEnabled = true;
             this.cbbTahun.Location = new System.Drawing.Point(618, 52);
             this.cbbTahun.Name = "cbbTahun";
@@ -88,18 +89,18 @@
             // 
             // chartStatistikPasal
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartStatistikPasal.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartStatistikPasal.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.chartStatistikPasal.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartStatistikPasal.Legends.Add(legend2);
             this.chartStatistikPasal.Location = new System.Drawing.Point(3, 0);
             this.chartStatistikPasal.Name = "chartStatistikPasal";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Banyak Pasal Dilanggar";
-            series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
-            series4.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
-            this.chartStatistikPasal.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Banyak Pasal Dilanggar";
+            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
+            series2.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
+            this.chartStatistikPasal.Series.Add(series2);
             this.chartStatistikPasal.Size = new System.Drawing.Size(590, 383);
             this.chartStatistikPasal.TabIndex = 4;
             this.chartStatistikPasal.Text = "chart1";

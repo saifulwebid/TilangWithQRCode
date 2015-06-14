@@ -301,13 +301,13 @@ namespace QRCodeWinForms
                                     try
                                     {
                                         sim.TanggalHabis = new DateTime(
-                                            DateTime.Now.Year, sim.Pemilik.TanggalLahir.Month,
+                                            DateTime.Now.Year + 5, sim.Pemilik.TanggalLahir.Month,
                                             sim.Pemilik.TanggalLahir.Day);
                                     }
                                     catch (ArgumentOutOfRangeException ex) // tahun kabisat
                                     {
                                         sim.TanggalHabis = new DateTime(
-                                            DateTime.Now.Year, sim.Pemilik.TanggalLahir.Month + 1, 1);
+                                            DateTime.Now.Year + 5, sim.Pemilik.TanggalLahir.Month + 1, 1);
                                     }
 
                                     listDataSIM.Add(sim);
