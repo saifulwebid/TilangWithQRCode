@@ -6339,7 +6339,7 @@
             <coveredLifelines>
               <lifelineMoniker
                 Id="dcef001c-64bb-47a0-b1e9-85bf474b3e9a"
-                LastKnownName="frmInputSuratTilang : frmInputSuratTilang"
+                LastKnownName="  : frmInputSuratTilang"
                 LastKnownLocation="ModelingProject.uml" />
             </coveredLifelines>
             <finish>
@@ -6391,7 +6391,7 @@
             <covered>
               <lifelineMoniker
                 Id="dcef001c-64bb-47a0-b1e9-85bf474b3e9a"
-                LastKnownName="frmInputSuratTilang : frmInputSuratTilang"
+                LastKnownName="  : frmInputSuratTilang"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -6401,7 +6401,7 @@
             <covered>
               <lifelineMoniker
                 Id="c3aca947-8b8d-41b0-b4ca-49cfc0cbfbff"
-                LastKnownName="polisi Lalu Lintas : Polisi Lalu Lintas"
+                LastKnownName="Polisi Lalu Lintas"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -6411,7 +6411,7 @@
             <covered>
               <lifelineMoniker
                 Id="dcef001c-64bb-47a0-b1e9-85bf474b3e9a"
-                LastKnownName="frmInputSuratTilang : frmInputSuratTilang"
+                LastKnownName="  : frmInputSuratTilang"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -6471,7 +6471,7 @@
             <covered>
               <lifelineMoniker
                 Id="dcef001c-64bb-47a0-b1e9-85bf474b3e9a"
-                LastKnownName="frmInputSuratTilang : frmInputSuratTilang"
+                LastKnownName="  : frmInputSuratTilang"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -6501,7 +6501,7 @@
             <covered>
               <lifelineMoniker
                 Id="dcef001c-64bb-47a0-b1e9-85bf474b3e9a"
-                LastKnownName="frmInputSuratTilang : frmInputSuratTilang"
+                LastKnownName="  : frmInputSuratTilang"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -6592,7 +6592,7 @@
             <covered>
               <lifelineMoniker
                 Id="dcef001c-64bb-47a0-b1e9-85bf474b3e9a"
-                LastKnownName="frmInputSuratTilang : frmInputSuratTilang"
+                LastKnownName="  : frmInputSuratTilang"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -6617,7 +6617,7 @@
             <coveredLifelines>
               <lifelineMoniker
                 Id="7ab950f0-e258-433f-a2e1-5f2719f99736"
-                LastKnownName="excelHelper : ExcelHelper"
+                LastKnownName="  : ExcelHelper"
                 LastKnownLocation="ModelingProject.uml" />
             </coveredLifelines>
             <finish>
@@ -6657,7 +6657,7 @@
             <covered>
               <lifelineMoniker
                 Id="7ab950f0-e258-433f-a2e1-5f2719f99736"
-                LastKnownName="excelHelper : ExcelHelper"
+                LastKnownName="  : ExcelHelper"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -6687,7 +6687,7 @@
             <covered>
               <lifelineMoniker
                 Id="7ab950f0-e258-433f-a2e1-5f2719f99736"
-                LastKnownName="excelHelper : ExcelHelper"
+                LastKnownName="  : ExcelHelper"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -6697,7 +6697,7 @@
             <covered>
               <lifelineMoniker
                 Id="7ab950f0-e258-433f-a2e1-5f2719f99736"
-                LastKnownName="excelHelper : ExcelHelper"
+                LastKnownName="  : ExcelHelper"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -6725,7 +6725,7 @@
             <covered>
               <lifelineMoniker
                 Id="7ab950f0-e258-433f-a2e1-5f2719f99736"
-                LastKnownName="excelHelper : ExcelHelper"
+                LastKnownName="  : ExcelHelper"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -6745,7 +6745,7 @@
             <covered>
               <lifelineMoniker
                 Id="dcef001c-64bb-47a0-b1e9-85bf474b3e9a"
-                LastKnownName="frmInputSuratTilang : frmInputSuratTilang"
+                LastKnownName="  : frmInputSuratTilang"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -6781,7 +6781,7 @@
             <covered>
               <lifelineMoniker
                 Id="dcef001c-64bb-47a0-b1e9-85bf474b3e9a"
-                LastKnownName="frmInputSuratTilang : frmInputSuratTilang"
+                LastKnownName="  : frmInputSuratTilang"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -6789,9 +6789,9 @@
         <lifelines>
           <lifeline
             Id="c3aca947-8b8d-41b0-b4ca-49cfc0cbfbff"
-            name="polisi Lalu Lintas : Polisi Lalu Lintas"
+            name="Polisi Lalu Lintas"
             isActor="true"
-            lifelineDisplayName="polisi Lalu Lintas : Polisi Lalu Lintas">
+            lifelineDisplayName="Polisi Lalu Lintas">
             <represents>
               <propertyMoniker
                 Id="b32577a1-a541-4370-aff8-b6a45bc161c9"
@@ -6806,9 +6806,9 @@
           </lifeline>
           <lifeline
             Id="dcef001c-64bb-47a0-b1e9-85bf474b3e9a"
-            name="frmInputSuratTilang : frmInputSuratTilang"
+            name="  : frmInputSuratTilang"
             isActor="false"
-            lifelineDisplayName="frmInputSuratTilang : frmInputSuratTilang">
+            lifelineDisplayName="  : frmInputSuratTilang">
             <represents>
               <propertyMoniker
                 Id="cf813649-1ddd-45e7-8c43-ba8ccfce760f"
@@ -6856,9 +6856,9 @@
           </lifeline>
           <lifeline
             Id="7ab950f0-e258-433f-a2e1-5f2719f99736"
-            name="excelHelper : ExcelHelper"
+            name="  : ExcelHelper"
             isActor="false"
-            lifelineDisplayName="excelHelper : ExcelHelper">
+            lifelineDisplayName="  : ExcelHelper">
             <represents>
               <propertyMoniker
                 Id="7f0ecea2-cc1a-47e2-b1ee-770aaf67345e"

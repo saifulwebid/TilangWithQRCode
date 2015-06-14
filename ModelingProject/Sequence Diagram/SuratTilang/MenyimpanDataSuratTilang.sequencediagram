@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="96298aa2-cd10-485c-8981-880c556cd945" name="MenyimpanDataSuratTilang" linkedPackageId="95c222be-e28a-4887-8c05-5c250fe36320" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="b81bd80c-099c-4985-99e8-2e893976c8ab">
-      <profileInstance Id="a5062525-ab4f-48f3-929e-7dc80424a578" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="5b49ab76-f477-4bfd-a392-4fccbe065b2a">
-      <profileInstance Id="42582810-3cc9-4677-a660-c85dfae77359" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="96828256-fde3-4840-a244-df6f279ed2be" name="MenyimpanDataSuratTilang" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
@@ -22,7 +8,7 @@
           <behaviorExecutionSpecification Id="dbb65c50-1d2e-4342-b2d5-6b213a0ecc73" name="BehaviorExecutionSpecification1">
             <elementDefinition Id="4c011882-c353-4a02-b6ce-ee36cbbfebd9" />
             <coveredLifelines>
-              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="  : frmInputSuratTilang" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker Id="418088f4-61c7-4869-98a7-f49b96c5b714" LastKnownName="ExecutionOccurrenceSpecification2" />
@@ -46,19 +32,19 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="  : frmInputSuratTilang" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="9ca14e0c-c9e6-46b5-b8ae-59097aecca1b" name="MessageOccurrenceSpecification1">
             <elementDefinition Id="689def26-ac39-45d4-9bdf-e9270e47e97d" />
             <covered>
-              <lifelineMoniker Id="c0ff8c45-df33-4d8a-a5da-8009a9097453" LastKnownName="polisi Lalu Lintas : Polisi Lalu Lintas" />
+              <lifelineMoniker Id="c0ff8c45-df33-4d8a-a5da-8009a9097453" LastKnownName="Polisi Lalu Lintas" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="f981f854-5b83-4fe0-bc3a-3994f88b8bc5" name="MessageOccurrenceSpecification2">
             <elementDefinition Id="177adf16-db67-43c5-95ff-70a6ca1e3796" />
             <covered>
-              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="  : frmInputSuratTilang" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="dd743fbf-2cf2-4aac-8637-fc71215200fc" name="BehaviorExecutionSpecification2">
@@ -91,7 +77,7 @@
           <messageOccurrenceSpecification Id="03bff348-35d2-4c69-b034-6545fce5040b" name="MessageOccurrenceSpecification3">
             <elementDefinition Id="261a66a3-caf4-4032-8cdc-11f3c2509fec" />
             <covered>
-              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="  : frmInputSuratTilang" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="9a65cb60-93a0-46c4-b71a-2c2d22de13e4" name="MessageOccurrenceSpecification4">
@@ -109,7 +95,7 @@
           <messageOccurrenceSpecification Id="23febf0e-382e-4ceb-892b-6ac61c144173" name="MessageOccurrenceSpecification6">
             <elementDefinition Id="e13bb705-6e2b-4cdd-9344-fd9b66a1940c" />
             <covered>
-              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="  : frmInputSuratTilang" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="907375de-beb7-4058-9ffa-cdcf87e14ea6" name="ExecutionOccurrenceSpecification4">
@@ -155,7 +141,7 @@
           <messageOccurrenceSpecification Id="95519446-4288-463b-a29b-c6ad4094eca1" name="MessageOccurrenceSpecification7">
             <elementDefinition Id="786f40df-e1c3-4965-a1ca-d3b6d0a8a0ec" />
             <covered>
-              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="  : frmInputSuratTilang" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="8dda7997-279b-46f7-8cc7-39632ceacb0b" name="MessageOccurrenceSpecification8">
@@ -167,7 +153,7 @@
           <behaviorExecutionSpecification Id="5687a599-7aa8-4701-afb8-3b36fc8b7498" name="BehaviorExecutionSpecification4">
             <elementDefinition Id="4100e794-817c-4843-9ab6-0e902b301d57" />
             <coveredLifelines>
-              <lifelineMoniker Id="c53b232c-1c53-4841-90db-8239e32a167b" LastKnownName="excelHelper : ExcelHelper" />
+              <lifelineMoniker Id="c53b232c-1c53-4841-90db-8239e32a167b" LastKnownName="  : ExcelHelper" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker Id="23e7b0b2-5fe7-4514-b74f-8586a5da58dc" LastKnownName="ExecutionOccurrenceSpecification8" />
@@ -188,7 +174,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="c53b232c-1c53-4841-90db-8239e32a167b" LastKnownName="excelHelper : ExcelHelper" />
+              <lifelineMoniker Id="c53b232c-1c53-4841-90db-8239e32a167b" LastKnownName="  : ExcelHelper" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="e37a0987-e233-462e-a692-c4f1432f098f" name="MessageOccurrenceSpecification11">
@@ -200,13 +186,13 @@
           <messageOccurrenceSpecification Id="9bdff222-a2c6-48ea-8467-906132ad5627" name="MessageOccurrenceSpecification12">
             <elementDefinition Id="ac0db7ac-e201-4053-b9f4-4e1ac5aabd65" />
             <covered>
-              <lifelineMoniker Id="c53b232c-1c53-4841-90db-8239e32a167b" LastKnownName="excelHelper : ExcelHelper" />
+              <lifelineMoniker Id="c53b232c-1c53-4841-90db-8239e32a167b" LastKnownName="  : ExcelHelper" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="72d7f530-7382-4ed9-a437-8ca39cd9fe76" name="MessageOccurrenceSpecification13">
             <elementDefinition Id="c5ce67f2-46ad-492e-a7c1-d4ce147a4acd" />
             <covered>
-              <lifelineMoniker Id="c53b232c-1c53-4841-90db-8239e32a167b" LastKnownName="excelHelper : ExcelHelper" />
+              <lifelineMoniker Id="c53b232c-1c53-4841-90db-8239e32a167b" LastKnownName="  : ExcelHelper" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="d3c894ba-87f2-4839-b0f5-95d0e20c1a7a" name="MessageOccurrenceSpecification14">
@@ -223,7 +209,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="c53b232c-1c53-4841-90db-8239e32a167b" LastKnownName="excelHelper : ExcelHelper" />
+              <lifelineMoniker Id="c53b232c-1c53-4841-90db-8239e32a167b" LastKnownName="  : ExcelHelper" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="4b5e3400-872c-4031-a1e2-c7ddc4e0c5cf" name="MessageOccurrenceSpecification9">
@@ -235,7 +221,7 @@
           <messageOccurrenceSpecification Id="ef6b5dfb-c988-42c2-85d6-4f0554606693" name="MessageOccurrenceSpecification10">
             <elementDefinition Id="4946fdde-b160-46e6-8b70-b5445e1bf3f7" />
             <covered>
-              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="  : frmInputSuratTilang" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="726121a4-2ae2-401b-9259-39e656f0e19f" name="ExecutionOccurrenceSpecification6">
@@ -257,12 +243,12 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="frmInputSuratTilang : frmInputSuratTilang" />
+              <lifelineMoniker Id="1ebb346b-62cf-4213-8c8a-23e43f336322" LastKnownName="  : frmInputSuratTilang" />
             </covered>
           </executionOccurrenceSpecification>
         </fragments>
         <lifelines>
-          <lifeline Id="c0ff8c45-df33-4d8a-a5da-8009a9097453" name="polisi Lalu Lintas : Polisi Lalu Lintas" isActor="true" lifelineDisplayName="polisi Lalu Lintas : Polisi Lalu Lintas">
+          <lifeline Id="c0ff8c45-df33-4d8a-a5da-8009a9097453" name="Polisi Lalu Lintas" isActor="true" lifelineDisplayName="Polisi Lalu Lintas">
             <elementDefinition Id="c3aca947-8b8d-41b0-b4ca-49cfc0cbfbff" />
             <represents>
               <propertyMoniker Id="d3422617-42b3-481e-ae17-b7940892cc61" />
@@ -271,7 +257,7 @@
               <messageOccurrenceSpecificationMoniker Id="9ca14e0c-c9e6-46b5-b8ae-59097aecca1b" LastKnownName="MessageOccurrenceSpecification1" />
             </topLevelOccurrences>
           </lifeline>
-          <lifeline Id="1ebb346b-62cf-4213-8c8a-23e43f336322" name="frmInputSuratTilang : frmInputSuratTilang" isActor="false" lifelineDisplayName="frmInputSuratTilang : frmInputSuratTilang">
+          <lifeline Id="1ebb346b-62cf-4213-8c8a-23e43f336322" name="  : frmInputSuratTilang" isActor="false" lifelineDisplayName="  : frmInputSuratTilang">
             <elementDefinition Id="dcef001c-64bb-47a0-b1e9-85bf474b3e9a" />
             <represents>
               <propertyMoniker Id="222d4c10-9358-4128-9cd5-b4bbe20fdfff" />
@@ -293,7 +279,7 @@
               <executionOccurrenceSpecificationMoniker Id="726121a4-2ae2-401b-9259-39e656f0e19f" LastKnownName="ExecutionOccurrenceSpecification6" />
             </topLevelOccurrences>
           </lifeline>
-          <lifeline Id="c53b232c-1c53-4841-90db-8239e32a167b" name="excelHelper : ExcelHelper" isActor="false" lifelineDisplayName="excelHelper : ExcelHelper">
+          <lifeline Id="c53b232c-1c53-4841-90db-8239e32a167b" name="  : ExcelHelper" isActor="false" lifelineDisplayName="  : ExcelHelper">
             <elementDefinition Id="7ab950f0-e258-433f-a2e1-5f2719f99736" />
             <represents>
               <propertyMoniker Id="4f0ae8aa-caee-41da-89e2-34e83c0a03c6" />
@@ -460,5 +446,19 @@
   </packagedElements>
   <package Id="95c222be-e28a-4887-8c05-5c250fe36320" name="ModelingProject">
     <elementDefinition Id="2ec612b4-07aa-4fe2-ae23-b589ed7214dd" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b81bd80c-099c-4985-99e8-2e893976c8ab">
+        <profileInstance Id="a5062525-ab4f-48f3-929e-7dc80424a578" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5b49ab76-f477-4bfd-a392-4fccbe065b2a">
+        <profileInstance Id="42582810-3cc9-4677-a660-c85dfae77359" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </SequenceDesignerModel>
