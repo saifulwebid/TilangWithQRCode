@@ -50,40 +50,40 @@
       <SubType>Content</SubType>
       <DependentUpon>Class Diagram\UserWithEnum.classdiagram</DependentUpon>
     </Content>
-    <Content Include="Sequence Diagram\Memeriksa Penduduk Existing.sequencediagram">
+    <Content Include="Sequence Diagram\PembuatanSIM\Memeriksa Penduduk Existing.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Sequence Diagram\Memeriksa Penduduk Existing.sequencediagram.layout">
+    <Content Include="Sequence Diagram\PembuatanSIM\Memeriksa Penduduk Existing.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Sequence Diagram\Memeriksa Penduduk Existing.sequencediagram</DependentUpon>
+      <DependentUpon>Sequence Diagram\PembuatanSIM\Memeriksa Penduduk Existing.sequencediagram</DependentUpon>
     </Content>
-    <Content Include="Sequence Diagram\Menampilkan SIM.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Sequence Diagram\Menampilkan SIM.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Sequence Diagram\Menampilkan SIM.sequencediagram</DependentUpon>
-    </Content>
-    <Content Include="Sequence Diagram\MenampilkanDataSuratTilang.sequencediagram">
+    <Content Include="Sequence Diagram\PembuatanSIM\Menampilkan SIM.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Sequence Diagram\MenampilkanDataSuratTilang.sequencediagram.layout">
+    <Content Include="Sequence Diagram\PembuatanSIM\Menampilkan SIM.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Sequence Diagram\MenampilkanDataSuratTilang.sequencediagram</DependentUpon>
+      <DependentUpon>Sequence Diagram\PembuatanSIM\Menampilkan SIM.sequencediagram</DependentUpon>
     </Content>
-    <Content Include="Sequence Diagram\Menyimpan Data SIM.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Sequence Diagram\Menyimpan Data SIM.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Sequence Diagram\Menyimpan Data SIM.sequencediagram</DependentUpon>
-    </Content>
-    <Content Include="Sequence Diagram\MenyimpanDataSuratTilang.sequencediagram">
+    <Content Include="Sequence Diagram\PembuatanSIM\Menyimpan Data SIM.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Sequence Diagram\MenyimpanDataSuratTilang.sequencediagram.layout">
+    <Content Include="Sequence Diagram\PembuatanSIM\Menyimpan Data SIM.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Sequence Diagram\MenyimpanDataSuratTilang.sequencediagram</DependentUpon>
+      <DependentUpon>Sequence Diagram\PembuatanSIM\Menyimpan Data SIM.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Sequence Diagram\SuratTilang\MenampilkanDataSuratTilang.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence Diagram\SuratTilang\MenampilkanDataSuratTilang.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence Diagram\SuratTilang\MenampilkanDataSuratTilang.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Sequence Diagram\SuratTilang\MenyimpanDataSuratTilang.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence Diagram\SuratTilang\MenyimpanDataSuratTilang.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence Diagram\SuratTilang\MenyimpanDataSuratTilang.sequencediagram</DependentUpon>
     </Content>
     <Content Include="Sequence Diagram\UserLogin\CheckUser.sequencediagram">
       <SubType>Content</SubType>
@@ -118,6 +118,9 @@
       <SubType>Content</SubType>
     </Content>
     <Folder Include="Class Diagram" />
+    <Folder Include="Sequence Diagram\Rekapitulasi" />
+    <Folder Include="Sequence Diagram\SuratTilang" />
+    <Folder Include="Sequence Diagram\PembuatanSIM" />
     <Folder Include="Sequence Diagram\UserLogin" />
     <Folder Include="Use Case Diagram" />
     <Folder Include="Sequence Diagram" />
