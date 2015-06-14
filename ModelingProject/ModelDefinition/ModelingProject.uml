@@ -5779,7 +5779,7 @@
             <coveredLifelines>
               <lifelineMoniker
                 Id="33754b48-cbb8-4162-8e2f-d4642af73f16"
-                LastKnownName="frmInputDataSIM : frmInputDataSIM"
+                LastKnownName="  : frmInputDataSIM"
                 LastKnownLocation="ModelingProject.uml" />
             </coveredLifelines>
             <finish>
@@ -5827,7 +5827,7 @@
             <covered>
               <lifelineMoniker
                 Id="33754b48-cbb8-4162-8e2f-d4642af73f16"
-                LastKnownName="frmInputDataSIM : frmInputDataSIM"
+                LastKnownName="  : frmInputDataSIM"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -5837,7 +5837,7 @@
             <covered>
               <lifelineMoniker
                 Id="3716df4e-184a-4085-bd6b-16be2fbe50bd"
-                LastKnownName="petugas Samsat : Petugas Samsat"
+                LastKnownName="Petugas Samsat"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -5847,7 +5847,7 @@
             <covered>
               <lifelineMoniker
                 Id="33754b48-cbb8-4162-8e2f-d4642af73f16"
-                LastKnownName="frmInputDataSIM : frmInputDataSIM"
+                LastKnownName="  : frmInputDataSIM"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -5857,7 +5857,7 @@
             <coveredLifelines>
               <lifelineMoniker
                 Id="c9dcd15b-5b22-4b0c-9935-0ac6d63f7a64"
-                LastKnownName="frmSIMViewer : frmSIMViewer"
+                LastKnownName="  : frmSIMViewer"
                 LastKnownLocation="ModelingProject.uml" />
             </coveredLifelines>
             <finish>
@@ -5897,7 +5897,7 @@
             <covered>
               <lifelineMoniker
                 Id="c9dcd15b-5b22-4b0c-9935-0ac6d63f7a64"
-                LastKnownName="frmSIMViewer : frmSIMViewer"
+                LastKnownName="  : frmSIMViewer"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -5907,7 +5907,7 @@
             <covered>
               <lifelineMoniker
                 Id="33754b48-cbb8-4162-8e2f-d4642af73f16"
-                LastKnownName="frmInputDataSIM : frmInputDataSIM"
+                LastKnownName="  : frmInputDataSIM"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -5917,7 +5917,7 @@
             <covered>
               <lifelineMoniker
                 Id="c9dcd15b-5b22-4b0c-9935-0ac6d63f7a64"
-                LastKnownName="frmSIMViewer : frmSIMViewer"
+                LastKnownName="  : frmSIMViewer"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -5927,7 +5927,7 @@
             <covered>
               <lifelineMoniker
                 Id="c9dcd15b-5b22-4b0c-9935-0ac6d63f7a64"
-                LastKnownName="frmSIMViewer : frmSIMViewer"
+                LastKnownName="  : frmSIMViewer"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -5937,7 +5937,7 @@
             <covered>
               <lifelineMoniker
                 Id="33754b48-cbb8-4162-8e2f-d4642af73f16"
-                LastKnownName="frmInputDataSIM : frmInputDataSIM"
+                LastKnownName="  : frmInputDataSIM"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -5955,7 +5955,7 @@
             <covered>
               <lifelineMoniker
                 Id="c9dcd15b-5b22-4b0c-9935-0ac6d63f7a64"
-                LastKnownName="frmSIMViewer : frmSIMViewer"
+                LastKnownName="  : frmSIMViewer"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -5965,7 +5965,7 @@
             <coveredLifelines>
               <lifelineMoniker
                 Id="c9dcd15b-5b22-4b0c-9935-0ac6d63f7a64"
-                LastKnownName="frmSIMViewer : frmSIMViewer"
+                LastKnownName="  : frmSIMViewer"
                 LastKnownLocation="ModelingProject.uml" />
             </coveredLifelines>
             <finish>
@@ -6001,7 +6001,7 @@
             <covered>
               <lifelineMoniker
                 Id="c9dcd15b-5b22-4b0c-9935-0ac6d63f7a64"
-                LastKnownName="frmSIMViewer : frmSIMViewer"
+                LastKnownName="  : frmSIMViewer"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -6011,7 +6011,7 @@
             <covered>
               <lifelineMoniker
                 Id="33754b48-cbb8-4162-8e2f-d4642af73f16"
-                LastKnownName="frmInputDataSIM : frmInputDataSIM"
+                LastKnownName="  : frmInputDataSIM"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -6021,7 +6021,7 @@
             <covered>
               <lifelineMoniker
                 Id="c9dcd15b-5b22-4b0c-9935-0ac6d63f7a64"
-                LastKnownName="frmSIMViewer : frmSIMViewer"
+                LastKnownName="  : frmSIMViewer"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -6039,7 +6039,7 @@
             <covered>
               <lifelineMoniker
                 Id="33754b48-cbb8-4162-8e2f-d4642af73f16"
-                LastKnownName="frmInputDataSIM : frmInputDataSIM"
+                LastKnownName="  : frmInputDataSIM"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -6057,7 +6057,7 @@
             <covered>
               <lifelineMoniker
                 Id="c9dcd15b-5b22-4b0c-9935-0ac6d63f7a64"
-                LastKnownName="frmSIMViewer : frmSIMViewer"
+                LastKnownName="  : frmSIMViewer"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -6065,9 +6065,9 @@
         <lifelines>
           <lifeline
             Id="3716df4e-184a-4085-bd6b-16be2fbe50bd"
-            name="petugas Samsat : Petugas Samsat"
+            name="Petugas Samsat"
             isActor="true"
-            lifelineDisplayName="petugas Samsat : Petugas Samsat">
+            lifelineDisplayName="Petugas Samsat">
             <represents>
               <propertyMoniker
                 Id="3ced1673-275f-4f48-95a1-bb88a9ca596f"
@@ -6082,9 +6082,9 @@
           </lifeline>
           <lifeline
             Id="33754b48-cbb8-4162-8e2f-d4642af73f16"
-            name="frmInputDataSIM : frmInputDataSIM"
+            name="  : frmInputDataSIM"
             isActor="false"
-            lifelineDisplayName="frmInputDataSIM : frmInputDataSIM">
+            lifelineDisplayName="  : frmInputDataSIM">
             <represents>
               <propertyMoniker
                 Id="f6260141-b1ed-4444-90f8-c859786aeb94"
@@ -6103,9 +6103,9 @@
           </lifeline>
           <lifeline
             Id="c9dcd15b-5b22-4b0c-9935-0ac6d63f7a64"
-            name="frmSIMViewer : frmSIMViewer"
+            name="  : frmSIMViewer"
             isActor="false"
-            lifelineDisplayName="frmSIMViewer : frmSIMViewer">
+            lifelineDisplayName="  : frmSIMViewer">
             <represents>
               <propertyMoniker
                 Id="600bd6a5-83c8-4e11-8f2d-95b1d5113d45"
@@ -6153,7 +6153,7 @@
           </message>
           <message
             Id="1c7ae017-3e8d-4260-a85b-ad926504bc5d"
-            name="Membuat Form Baru"
+            name="Buat form, kirim objek SIM"
             messageKind="Complete"
             messageSort="CreateMessage"
             createSelfMessage="false">

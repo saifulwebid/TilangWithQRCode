@@ -2,42 +2,42 @@
 <sequenceDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Menampilkan SIM">
   <SequenceDesignerModelMoniker Id="6a0362fe-f3ea-4efd-907d-a7ecc36556c6" />
   <nestedChildShapes>
-    <lifelineShape Id="c1ba4953-e920-4fbb-b0c1-38a6d57eb1be" absoluteBounds="1.025, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
-      <lifelineMoniker Id="4ebece2a-22d8-4394-b2bb-db250f19b1e5" LastKnownName="petugas Samsat : Petugas Samsat" />
+    <lifelineShape Id="c1ba4953-e920-4fbb-b0c1-38a6d57eb1be" absoluteBounds="1.025, 1, 0.15, 2.3750000000000009" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="4ebece2a-22d8-4394-b2bb-db250f19b1e5" LastKnownName="Petugas Samsat" />
       <relativeChildShapes>
-        <umlLifelineHeadShape Id="30d50bd2-7503-4977-95be-0ceefc3fca1a" absoluteBounds="0.099999999999999867, 0.6, 2, 0.4" customColor="White" visualStyleMode="Modified">
-          <lifelineMoniker Id="4ebece2a-22d8-4394-b2bb-db250f19b1e5" LastKnownName="petugas Samsat : Petugas Samsat" />
+        <umlLifelineHeadShape Id="30d50bd2-7503-4977-95be-0ceefc3fca1a" absoluteBounds="0.51540836215019215, 0.6, 1.1691832756996154, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="4ebece2a-22d8-4394-b2bb-db250f19b1e5" LastKnownName="Petugas Samsat" />
           <relativeChildShapes />
         </umlLifelineHeadShape>
-        <lifelineHoverShape Id="042847ce-6651-41f0-9cbf-87a1af9fcdde" absoluteBounds="1.025, 1, 0, 7">
-          <lifelineMoniker Id="4ebece2a-22d8-4394-b2bb-db250f19b1e5" LastKnownName="petugas Samsat : Petugas Samsat" />
+        <lifelineHoverShape Id="042847ce-6651-41f0-9cbf-87a1af9fcdde" absoluteBounds="1.025, 1, 0, 2.375">
+          <lifelineMoniker Id="4ebece2a-22d8-4394-b2bb-db250f19b1e5" LastKnownName="Petugas Samsat" />
         </lifelineHoverShape>
       </relativeChildShapes>
     </lifelineShape>
-    <lifelineShape Id="dc94692c-e9ad-435f-ad47-22822ecc8bbc" absoluteBounds="3.075, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
-      <lifelineMoniker Id="185d15e4-8b89-408f-b690-926ac10b4fdd" LastKnownName="frmInputDataSIM : frmInputDataSIM" />
+    <lifelineShape Id="dc94692c-e9ad-435f-ad47-22822ecc8bbc" absoluteBounds="3.075, 1, 0.15, 2.3750000000000009" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="185d15e4-8b89-408f-b690-926ac10b4fdd" LastKnownName="  : frmInputDataSIM" />
       <relativeChildShapes>
-        <umlLifelineHeadShape Id="c40cace3-883b-4827-8478-ad6bbe8af35a" absoluteBounds="2.4762879443168639, 0.6, 1.3474241113662719, 0.4" customColor="White" visualStyleMode="Modified">
-          <lifelineMoniker Id="185d15e4-8b89-408f-b690-926ac10b4fdd" LastKnownName="frmInputDataSIM : frmInputDataSIM" />
+        <umlLifelineHeadShape Id="c40cace3-883b-4827-8478-ad6bbe8af35a" absoluteBounds="2.4427412581443786, 0.6, 1.4145174837112426, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="185d15e4-8b89-408f-b690-926ac10b4fdd" LastKnownName="  : frmInputDataSIM" />
           <relativeChildShapes />
         </umlLifelineHeadShape>
-        <lifelineHoverShape Id="850a559d-9015-4421-95c3-573b15ef1798" absoluteBounds="3.075, 1, 0, 7">
-          <lifelineMoniker Id="185d15e4-8b89-408f-b690-926ac10b4fdd" LastKnownName="frmInputDataSIM : frmInputDataSIM" />
+        <lifelineHoverShape Id="850a559d-9015-4421-95c3-573b15ef1798" absoluteBounds="3.075, 1, 0, 2.375">
+          <lifelineMoniker Id="185d15e4-8b89-408f-b690-926ac10b4fdd" LastKnownName="  : frmInputDataSIM" />
         </lifelineHoverShape>
         <umlExecutionSpecificationShape Id="172086a8-8278-4ab1-a4f5-65918ed2c116" absoluteBounds="3.075, 1.3, 0.15, 1.45" customColor="184, 204, 215" visualStyleMode="Modified">
           <behaviorExecutionSpecificationMoniker Id="fa957348-a970-409c-b3a8-fcce4e0752c4" LastKnownName="BehaviorExecutionSpecification1" />
         </umlExecutionSpecificationShape>
       </relativeChildShapes>
     </lifelineShape>
-    <lifelineShape Id="70706050-c402-438a-927a-8e732318be1d" absoluteBounds="5.125, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
-      <lifelineMoniker Id="fb3046da-8cc7-46f4-a074-acb2f61756ae" LastKnownName="frmSIMViewer : frmSIMViewer" />
+    <lifelineShape Id="70706050-c402-438a-927a-8e732318be1d" absoluteBounds="5.125, 1, 0.15, 2.3750000000000009" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="fb3046da-8cc7-46f4-a074-acb2f61756ae" LastKnownName="  : frmSIMViewer" />
       <relativeChildShapes>
-        <umlLifelineHeadShape Id="bcb87a88-b42c-4852-8bf3-5b34ca1d5a11" absoluteBounds="4.2, 0.6, 2, 0.4" customColor="White" visualStyleMode="Modified">
-          <lifelineMoniker Id="fb3046da-8cc7-46f4-a074-acb2f61756ae" LastKnownName="frmSIMViewer : frmSIMViewer" />
+        <umlLifelineHeadShape Id="bcb87a88-b42c-4852-8bf3-5b34ca1d5a11" absoluteBounds="4.58958372592926, 0.6, 1.2208325481414795, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="fb3046da-8cc7-46f4-a074-acb2f61756ae" LastKnownName="  : frmSIMViewer" />
           <relativeChildShapes />
         </umlLifelineHeadShape>
-        <lifelineHoverShape Id="071ce544-1d11-46a7-91f9-e831167589c6" absoluteBounds="5.125, 1, 0, 7">
-          <lifelineMoniker Id="fb3046da-8cc7-46f4-a074-acb2f61756ae" LastKnownName="frmSIMViewer : frmSIMViewer" />
+        <lifelineHoverShape Id="071ce544-1d11-46a7-91f9-e831167589c6" absoluteBounds="5.125, 1, 0, 2.375">
+          <lifelineMoniker Id="fb3046da-8cc7-46f4-a074-acb2f61756ae" LastKnownName="  : frmSIMViewer" />
         </lifelineHoverShape>
         <umlExecutionSpecificationShape Id="5db0c8a8-72e3-47bc-97f7-5b70917e740b" absoluteBounds="5.125, 1.6, 0.15, 0.55000000000000027" customColor="184, 204, 215" visualStyleMode="Modified">
           <behaviorExecutionSpecificationMoniker Id="763708a0-a5c8-441b-9076-b1b4067ff4ef" LastKnownName="BehaviorExecutionSpecification3" />
