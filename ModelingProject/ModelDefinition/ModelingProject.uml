@@ -1374,24 +1374,6 @@
             </type_NamedElement>
           </property>
           <property
-            Id="a769df91-5e6e-4950-82fb-3be89c546273"
-            name="TempatSidang"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
-                LastKnownLocation="ModelingProject.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="eb059055-e5ef-4081-86bf-bc9e542891a1"
             name="Satpas"
             isLeaf="false"

@@ -535,12 +535,6 @@
               <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
             </type_NamedElement>
           </property>
-          <property Id="e390d733-f7f8-4331-9b14-f5ade9f0062d" name="TempatSidang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="a769df91-5e6e-4950-82fb-3be89c546273" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="4a45c86f-c593-483f-be26-31cfc2c48145" LastKnownName="String" />
-            </type_NamedElement>
-          </property>
           <property Id="66524140-0090-4af9-a886-93bf5d427945" name="Satpas" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="eb059055-e5ef-4081-86bf-bc9e542891a1" />
             <type_NamedElement>
