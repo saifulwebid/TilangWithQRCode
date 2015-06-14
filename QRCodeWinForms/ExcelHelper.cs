@@ -407,7 +407,7 @@ namespace QRCodeWinForms
                         ExcelWorksheet currentWorksheet = workBook.Worksheets[3];
 
                         bool valid = true;
-                        for (int i = 1; i <= 37; i++)
+                        for (int i = 1; i <= 34; i++)
                         {
                             valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
                         }
@@ -474,7 +474,7 @@ namespace QRCodeWinForms
                         ExcelWorksheet currentWorksheet = workBook.Worksheets[3];
 
                         bool valid = true;
-                        for (int i = 1; i <= 37; i++)
+                        for (int i = 1; i <= 34; i++)
                         {
                             valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
                         }
@@ -483,8 +483,8 @@ namespace QRCodeWinForms
                         {
                             for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                             {
-                                object[] colValue = new object[38];
-                                for (int i = 1; i <= 37; i++)
+                                object[] colValue = new object[35];
+                                for (int i = 1; i <= 34; i++)
                                 {
                                     colValue[i] = currentWorksheet.Cells[rowNumber, i].Value;
                                     valid = valid && (colValue[i] != null);
