@@ -266,7 +266,7 @@ namespace QRCodeWinForms
                         ExcelWorksheet currentWorksheet = workBook.Worksheets[2];
 
                         bool valid = true;
-                        for (int i = 1; i <= 5; i++)
+                        for (int i = 1; i <= 4; i++)
                         {
                             valid = valid && (currentWorksheet.Cells[startRow, i].Value != null);
                         }
@@ -275,8 +275,8 @@ namespace QRCodeWinForms
                         {
                             for (int rowNumber = startRow + 1; rowNumber <= currentWorksheet.Dimension.End.Row; rowNumber++)
                             {
-                                object[] colValue = new object[6];
-                                for (int i = 1; i <= 5; i++)
+                                object[] colValue = new object[5];
+                                for (int i = 1; i <= 4; i++)
                                 {
                                     colValue[i] = currentWorksheet.Cells[rowNumber, i].Value;
                                     valid = valid && (colValue[i] != null);
@@ -288,7 +288,6 @@ namespace QRCodeWinForms
                                     sim.Nomor = colValue[2].ToString();
                                     sim.Golongan = colValue[3].ToString();
                                     sim.TanggalBuat = Convert.ToDateTime(colValue[4]);
-                                    sim.TanggalHabis = Convert.ToDateTime(colValue[5]);
 
                                     foreach (Penduduk pdd in ListPenduduk)
                                     {
@@ -298,6 +297,19 @@ namespace QRCodeWinForms
                                             break;
                                         }
                                     }
+
+                                    try
+                                    {
+                                        sim.TanggalHabis = new DateTime(
+                                            DateTime.Now.Year, sim.Pemilik.TanggalLahir.Month,
+                                            sim.Pemilik.TanggalLahir.Day);
+                                    }
+                                    catch (ArgumentOutOfRangeException ex) // tahun kabisat
+                                    {
+                                        sim.TanggalHabis = new DateTime(
+                                            DateTime.Now.Year, sim.Pemilik.TanggalLahir.Month + 1, 1);
+                                    }
+
                                     listDataSIM.Add(sim);
                                 }
                             }
