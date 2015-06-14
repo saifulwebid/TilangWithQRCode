@@ -16,38 +16,20 @@ namespace QRCodeWinForms
     public partial class frmSuratTilangViewer : Form
     {
         private Pelanggaran datpel = new Pelanggaran();
+
         public frmSuratTilangViewer()
         {
             InitializeComponent();
         }
 
-        private static int ConvertUmur(DateTime ttl)
-        {
-            DateTime currentdate = new DateTime();
-            currentdate = DateTime.Today;
-
-            if (currentdate.Month >= ttl.Month && currentdate.Date >= ttl.Date)
-            {
-                return currentdate.Year - ttl.Year + 1;
-            }
-            else
-            {
-                return currentdate.Year - ttl.Year;
-            }
-
-        }
-
         public frmSuratTilangViewer(Pelanggaran pelanggaran)
         {
             InitializeComponent();
-            //mengambil data dari class Pelanggaran
             datpel = pelanggaran;
-
         }
 
         private void frmSuratTilang_Load(object sender, EventArgs e)
         {
-            
             try
             {
                 lblNoRegPenyidikan.Text = datpel.NomorRegister;
@@ -74,7 +56,7 @@ namespace QRCodeWinForms
                 lblTanggalPelanggaran.Text = Convert.ToString(datpel.WaktuPelanggaran.Date.ToLongDateString());
                 lblTempatAmbilBarangSita.Text = datpel.TempatPengambilanBarangSita;
                 lblWaktuLanggar.Text = Convert.ToString(datpel.WaktuPelanggaran.Date.ToLongDateString());
-                lblJamLanggar.Text = Convert.ToString(datpel.WaktuPelanggaran.Date.ToShortTimeString());
+                lblJamLanggar.Text = Convert.ToString(datpel.WaktuPelanggaran.TimeOfDay.ToString("hh\\:mm\\:ss") + " WIB");
                 lblJalanLanggar.Text = datpel.LokasiPelanggaran;
                 lblPatokanLanggar.Text = datpel.PatokanLokasi;
                 lblWilayahHukum.Text = datpel.WilayahHukum;
@@ -84,7 +66,7 @@ namespace QRCodeWinForms
                 lblTerbitBukuUji.Text = datpel.DisitaBukuUjiDiterbitkanOleh;
                 lblPengadilanSidang.Text = datpel.LokasiSidang;
                 lblWaktuSidang.Text = datpel.WaktuSidang.Date.ToLongDateString().ToString();
-                lblJamSidang.Text = datpel.WaktuSidang.Date.ToShortTimeString().ToString();
+                lblJamSidang.Text = datpel.WaktuSidang.TimeOfDay.ToString("hh\\:mm\\:ss") + " WIB";
                 lblNamaPenyidik.Text = datpel.NamaPenyidik;
                 lblPangkatPenyidik.Text = datpel.PangkatPenyidik;
                 lblKesatuanPenyidik.Text = datpel.Kesatuan;
@@ -106,83 +88,21 @@ namespace QRCodeWinForms
             {
                 MessageBox.Show("Tampil Surat Tilang Gagal! \n" + "\n" + ex.Message);
             }
-
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private static int ConvertUmur(DateTime ttl)
         {
+            DateTime currentdate = new DateTime();
+            currentdate = DateTime.Today;
 
-        }
-
-        private void radioButton7_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox6_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox25_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label44_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label49_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox5_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label38_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rbtDenda500K_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpJam_ValueChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void txtDenda_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void label29_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void label101_Click(object sender, EventArgs e)
-        {
-
-        }
-        
-        private void pdSuratTilang_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
+            if (currentdate.Month >= ttl.Month && currentdate.Date >= ttl.Date)
+            {
+                return currentdate.Year - ttl.Year + 1;
+            }
+            else
+            {
+                return currentdate.Year - ttl.Year;
+            }
         }
 
         private void btnPrintSurat_Click(object sender, EventArgs e)
@@ -198,16 +118,6 @@ namespace QRCodeWinForms
                p.StartInfo.Verb = "Print";
                p.Start();
                /*Modul didapat dari kelompok 2 Project 1*/
-        }
-
-        private void ckbSIM_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlSuratTilang_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
     }

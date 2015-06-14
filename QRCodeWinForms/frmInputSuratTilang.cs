@@ -80,7 +80,7 @@ namespace QRCodeWinForms
         {
             try
             {
-                datpel.WaktuPelanggaran = dtpWaktuLanggar.Value;
+                datpel.WaktuPelanggaran = dtpWaktuLanggar.Value.Date + dtpJamLanggar.Value.TimeOfDay;
                 datpel.NomorRegister = txtNoRegPenyidikan.Text;
                 datpel.Kesatuan = txtKesatuan.Text;
                 datpel.NomorTilang = txtNoRegTilang.Text;
@@ -96,12 +96,12 @@ namespace QRCodeWinForms
                 datpel.WilayahHukum = txtWilayahHukum.Text;
                 datpel.DisitaSK = CekCheckBoxSK();
                 datpel.DisitaSKDiterbitkanOleh = txtTerbitSK.Text;
-                datpel.DisitaSKMasaBerlaku = dtpBerlakuSK.Value;
+                datpel.DisitaSKMasaBerlaku = dtpBerlakuSK.Value.Date;
                 datpel.DisitaBukuUji = CekCheckBoxBK();
                 datpel.DisitaBukuUjiDiterbitkanOleh = txtTerbitPemda.Text;
-                datpel.DisitaBukuUjiMasaBerlaku = dtpBerlakuPemda.Value;
+                datpel.DisitaBukuUjiMasaBerlaku = dtpBerlakuPemda.Value.Date;
                 datpel.LokasiSidang = txtPengadilan.Text;
-                datpel.WaktuSidang = dtpWaktuSidang.Value;
+                datpel.WaktuSidang = dtpWaktuSidang.Value.Date + dtpJamSidang.Value.TimeOfDay;
                 datpel.NamaPenyidik = txtNamaPenyidik.Text;
                 datpel.PangkatPenyidik = txtPangkatPenyidik.Text;
                 datpel.TempatPengambilanBarangSita = txtTempatAmbil.Text;
@@ -209,6 +209,11 @@ namespace QRCodeWinForms
             btnTampil.Enabled = false;
             ClearData(this.Controls);
             txtNamaPelanggar.Text = "Silahkan Scan QR Code";
+        }
+
+        private void txtKesatuan_TextChanged(object sender, EventArgs e)
+        {
+            txtKesatuanPenyidik.Text = txtKesatuan.Text;
         }
     }
 }

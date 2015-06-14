@@ -197,7 +197,6 @@
             this.pnlSuratTilang.Controls.Add(this.groupBox1);
             this.pnlSuratTilang.Controls.Add(this.groupBox6);
             this.pnlSuratTilang.Name = "pnlSuratTilang";
-            this.pnlSuratTilang.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSuratTilang_Paint);
             // 
             // groupBox8
             // 

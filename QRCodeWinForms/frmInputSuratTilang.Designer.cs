@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.dtpWaktuPernyataan = new System.Windows.Forms.DateTimePicker();
             this.txtAlamatWali = new System.Windows.Forms.TextBox();
             this.label66 = new System.Windows.Forms.Label();
             this.txtUmurWali = new System.Windows.Forms.TextBox();
@@ -153,6 +152,7 @@
             this.btnSimpanData = new System.Windows.Forms.Button();
             this.btnTampil = new System.Windows.Forms.Button();
             this.btnNewST = new System.Windows.Forms.Button();
+            this.dtpWaktuPernyataan = new System.Windows.Forms.DateTimePicker();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -184,13 +184,6 @@
             this.groupBox8.TabIndex = 99;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Pernyataan Terdakwa";
-            // 
-            // dtpWaktuPernyataan
-            // 
-            this.dtpWaktuPernyataan.Location = new System.Drawing.Point(410, 23);
-            this.dtpWaktuPernyataan.Name = "dtpWaktuPernyataan";
-            this.dtpWaktuPernyataan.Size = new System.Drawing.Size(186, 20);
-            this.dtpWaktuPernyataan.TabIndex = 49;
             // 
             // txtAlamatWali
             // 
@@ -496,6 +489,7 @@
             // txtKesatuanPenyidik
             // 
             this.txtKesatuanPenyidik.BackColor = System.Drawing.SystemColors.Control;
+            this.txtKesatuanPenyidik.Enabled = false;
             this.txtKesatuanPenyidik.Location = new System.Drawing.Point(98, 127);
             this.txtKesatuanPenyidik.Name = "txtKesatuanPenyidik";
             this.txtKesatuanPenyidik.Size = new System.Drawing.Size(109, 20);
@@ -964,6 +958,7 @@
             this.txtKesatuan.Name = "txtKesatuan";
             this.txtKesatuan.Size = new System.Drawing.Size(100, 20);
             this.txtKesatuan.TabIndex = 2;
+            this.txtKesatuan.TextChanged += new System.EventHandler(this.txtKesatuan_TextChanged);
             // 
             // label3
             // 
@@ -1425,6 +1420,14 @@
             this.btnNewST.UseVisualStyleBackColor = true;
             this.btnNewST.Click += new System.EventHandler(this.btnNewST_Click);
             // 
+            // dtpWaktuPernyataan
+            // 
+            this.dtpWaktuPernyataan.Enabled = false;
+            this.dtpWaktuPernyataan.Location = new System.Drawing.Point(410, 23);
+            this.dtpWaktuPernyataan.Name = "dtpWaktuPernyataan";
+            this.dtpWaktuPernyataan.Size = new System.Drawing.Size(186, 20);
+            this.dtpWaktuPernyataan.TabIndex = 49;
+            // 
             // frmInputSuratTilang
             // 
             this.AcceptButton = this.btnSimpanData;
@@ -1538,7 +1541,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnScanQRCode;
         public System.Windows.Forms.TextBox txtNoRegPenyidikan;
-        public System.Windows.Forms.DateTimePicker dtpWaktuPernyataan;
         public System.Windows.Forms.TextBox txtAlamatWali;
         public System.Windows.Forms.TextBox txtUmurWali;
         public System.Windows.Forms.TextBox txtNamaWali;
@@ -1601,6 +1603,7 @@
         private System.Windows.Forms.Button btnSimpanData;
         private System.Windows.Forms.Button btnTampil;
         private System.Windows.Forms.Button btnNewST;
+        public System.Windows.Forms.DateTimePicker dtpWaktuPernyataan;
 
     }
 }
