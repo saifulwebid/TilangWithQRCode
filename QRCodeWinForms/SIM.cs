@@ -42,11 +42,11 @@ namespace QRCodeWinForms
             pdk.Nomor = field[0];
             pdk.Nama = field[3];
             pdk.TempatLahir = field[4];
-            pdk.TanggalLahir = Penduduk.ToTanggalLahir(field[5]);
+            pdk.TanggalLahir = Converter.DDMMYYToDateTime(field[5]);
             pdk.Alamat = field[6];
-            pdk.Pekerjaan = Penduduk.ToPekerjaan(Convert.ToInt16(field[7]));
-            pdk.Pendidikan = Penduduk.ToPendidikan(Convert.ToInt16(field[8]));
-            pdk.JenisKelamin = Penduduk.ToJenisKelamin(field[9]);
+            pdk.Pekerjaan = Converter.IntToEnum<EnumPekerjaan>(Convert.ToInt16(field[7]));
+            pdk.Pendidikan = Converter.IntToEnum<EnumPendidikan>(Convert.ToInt16(field[8]));
+            pdk.JenisKelamin = Converter.CharToEnumJenisKelamin(field[9][0]);
             Pemilik = pdk;
             isNew = false;
         }
@@ -56,9 +56,17 @@ namespace QRCodeWinForms
         {
             string[] result = 
             {
-                Pemilik.Nomor, Nomor, Golongan, Pemilik.Nama, Pemilik.TempatLahir,
-                Pemilik.ConvertTanggalLahir(), Pemilik.Alamat, Penduduk.ConvertPekerjaan(Pemilik.Pekerjaan).ToString(), 
-                Penduduk.ConvertPendidikan(Pemilik.Pendidikan).ToString(), Penduduk.ConvertJenisKelamin(Pemilik.JenisKelamin).ToString()
+                Pemilik.Nomor,
+                Nomor,
+                Golongan,
+                Pemilik.Nama,
+                Pemilik.TempatLahir,
+                Converter.DateTimeToDDMMYY(Pemilik.TanggalLahir),
+                Pemilik.Alamat,
+                Converter.EnumToInt<EnumPekerjaan>(Pemilik.Pekerjaan).ToString(), 
+                Converter.EnumToInt<EnumPendidikan>(Pemilik.Pendidikan).ToString(),
+                Converter.EnumJenisKelaminToChar(Pemilik.JenisKelamin).ToString(),
+                Converter.DateTimeToDDMMYY(TanggalBuat)
             };
             return String.Join("#", result);
         }

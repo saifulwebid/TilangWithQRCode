@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converter.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Pelanggaran.cs" />
     <Compile Include="ExcelHelper.cs" />
