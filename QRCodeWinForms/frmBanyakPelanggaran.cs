@@ -92,13 +92,17 @@ namespace QRCodeWinForms
 
         void SetTablePasal()
         {
+            dgvPasal.RowHeadersVisible = false;
             dgvPasal.ColumnCount = 2;
             dgvPasal.Columns[0].Name = "Pasal yang Dilanggar";
             dgvPasal.Columns[1].Name = "Jumlah Melanggar";
+            for (int i = 0; i<2;i++)
+                dgvPasal.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
         }
 
         void SetTablePelanggaran()
         {
+            dgvDataPelanggaranPelanggar.RowHeadersVisible = false;
             dgvDataPelanggaranPelanggar.ColumnCount = 6;
             dgvDataPelanggaranPelanggar.Columns[0].Name = "Tanggal";
             dgvDataPelanggaranPelanggar.Columns[1].Name = "Lokasi Pelanggaran   ";
@@ -106,6 +110,8 @@ namespace QRCodeWinForms
             dgvDataPelanggaranPelanggar.Columns[3].Name = "Pasal yang Dilanggar";
             dgvDataPelanggaranPelanggar.Columns[4].Name = "Angka Pinalti Pelanggaran";
             dgvDataPelanggaranPelanggar.Columns[5].Name = "No SIM";
+            for (int i = 0; i<6;i++)
+                dgvDataPelanggaranPelanggar.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
         }
 
         private void frmBanyakPelanggaran_Load(object sender, EventArgs e)
