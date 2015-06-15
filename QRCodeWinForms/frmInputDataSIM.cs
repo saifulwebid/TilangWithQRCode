@@ -55,6 +55,7 @@ namespace QRCodeWinForms
                 dataSIM.Nomor = txtNoSIM.Text;
                 dataSIM.Golongan = cmbGolongan.Text;
                 dataSIM.TanggalBuat = Convert.ToDateTime(dtpTanggalPembuatan.Text);
+                dataSIM.Pemilik = datapenduduk;
                 try
                 {
                     dataSIM.TanggalHabis = new DateTime(
@@ -66,7 +67,6 @@ namespace QRCodeWinForms
                     dataSIM.TanggalHabis = new DateTime(
                         DateTime.Now.Year + 5, dataSIM.Pemilik.TanggalLahir.Month + 1, 1);
                 }
-                dataSIM.Pemilik = datapenduduk;
                 
                 if (dataSIM.isValid())
                 {
