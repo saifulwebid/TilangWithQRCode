@@ -37,8 +37,8 @@ namespace QRCodeWinForms
             txtTempatLahir.Text = sim.Pemilik.TempatLahir;
             txtTanggalLahir.Text = sim.Pemilik.TanggalLahir.ToLongDateString();
             txtAlamat.Text = sim.Pemilik.Alamat;
-            txtPendidikan.Text = sim.Pemilik.Pekerjaan.ToString();
-            txtPekerjaan.Text = sim.Pemilik.Pendidikan.ToString();
+            txtPekerjaan.Text = sim.Pemilik.Pekerjaan.ToString();
+            txtPendidikan.Text = sim.Pemilik.Pendidikan.ToString();
             txtJenisKelamin.Text = sim.Pemilik.JenisKelamin.ToString();
         }
 
